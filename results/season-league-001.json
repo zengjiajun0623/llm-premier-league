@@ -735,6 +735,278 @@
         }
       ],
       "winner": "deepseek/deepseek-v4-pro"
+    },
+    {
+      "id": "league:qwen/qwen3.7-max|deepseek/deepseek-v4-pro",
+      "stage": "league",
+      "home": "qwen/qwen3.7-max",
+      "away": "deepseek/deepseek-v4-pro",
+      "legs": [
+        {
+          "topic": "Publicly funded scientific research should be barred from being patented for private profit.",
+          "pro": "qwen/qwen3.7-max",
+          "con": "deepseek/deepseek-v4-pro",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "The public should never pay twice for the same scientific breakthrough. When taxpayers fund research, they bear the initial financial risk. Allowing private entities to patent these discoveries creates a monopolistic tollbooth, forcing society to pay exorbitant prices to access the very innovations they financed. This double-payment is fundamentally unjust. \n\nFurthermore, privatizing publicly funded research distorts scientific priorities. Instead of pursuing cures for neglected diseases or sharing foundational knowledge, institutions are incentivized to chase lucrative, patentable outcomes, stifling open collaboration and downstream innovation. \n\nOur framework is simple: if the public underwrites the risk, the public must reap the reward. Barring private patents on publicly funded research ensures open access, accelerates global innovation, and guarantees that scientific progress serves humanity, not corporate shareholders."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "The motion’s well-intentioned premise ignores a critical reality: basic research is not a market-ready product. Public funding lays the foundation, but it is the promise of a patent that mobilizes the billions in private capital needed to turn a lab discovery into a cure. Without this incentive, countless breakthroughs would remain trapped in academic papers—undeveloped and inaccessible. The COVID-19 vaccines, built on patented mRNA technology from publicly funded research, prove that patents accelerate life-saving innovation. Banning patents would not make medicine cheaper; it would make it nonexistent. The public pays for the seed, not the harvest. We must protect the engine that delivers cures, not dismantle it."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "My opponent claims the public only pays for the \"seed,\" but this is a myth. With mRNA vaccines, taxpayers funded the foundational research and de-risked the \"harvest\" through massive public subsidies like Operation Warp Speed. Yet, corporations claimed monopoly patents, charged exorbitant prices, and blocked global technology transfer, costing countless lives.\n\nFurthermore, barring patents on the publicly funded baseline does not halt downstream innovation. Private companies can still patent their own novel delivery mechanisms or specific formulations. We are simply preventing them from fencing off the foundational science the public already bought. When private capital demands a monopoly over public property as a precondition for development, it is extortion, not innovation. We must end this corporate welfare and keep foundational science open."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "My opponent conflates purchase agreements with R&D investment. Operation Warp Speed was a guaranteed market, not a grant for development—the private sector still risked billions on clinical trials and manufacturing scale-up without knowing if the vaccines would work. That risk was only taken because patents secured a return. Without that, no mRNA vaccine would exist today.\n\nThe claim that companies can \"just patent delivery mechanisms\" is a fantasy. The foundational mRNA modification technology itself required decades of private investment to become a viable platform. Banning patents on that core would have killed the field entirely. Patents are not extortion; they are the bridge between a lab discovery and a vial in your arm. They don't block access—they create it."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "My opponent calls patents a bridge, but corporations have built a tollbooth on a road taxpayers already paved. We do not oppose downstream patents on novel formulations; we oppose monopolizing the foundational science the public financed. When corporations use public grants to de-risk early research, then lock away baseline knowledge to extract monopoly rents, global access is denied. The public bought the foundation. We must stop letting private corporations sell our own property back to us at a premium."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "The Pro’s distinction between foundational and downstream science is a mirage. The mRNA platform they cite required decades of private risk, not just public seed funding, to become a viable cure. Without patents securing that investment, the COVID vaccines would remain an academic footnote. Banning patents doesn’t free knowledge; it buries it. The public pays for the seed, but only the promise of a patent harvests the cure. Protect the engine that delivers life-saving breakthroughs."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "A",
+              "scoreA": 32,
+              "scoreB": 29,
+              "reasoning": "A maintains tighter logical consistency by distinguishing foundational publicly funded science from downstream private innovations and directly counters the incentive argument with the double-payment and de-risking points. B offers a coherent incentive-based case centered on the mRNA example but over-relies on assertion that patents alone create access while under-engaging the public subsidy details raised against it."
+            },
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "B",
+              "scoreA": 29,
+              "scoreB": 32,
+              "reasoning": "Both debaters used the mRNA vaccine example effectively, but Debater B provided stronger counter-arguments by clarifying the distinction between purchase agreements and R&D investment, and by effectively challenging Debater A's distinction between foundational and downstream science. Debater B's arguments about the necessity of patents to mobilize private capital and bear development risk were more substantively grounded than Debater A's assertions about 'extortion' and 'corporate welfare.'"
+            },
+            {
+              "judge": "google/gemini-3.1-pro-preview",
+              "winner": "B",
+              "scoreA": 36,
+              "scoreB": 37,
+              "reasoning": "Both debaters presented highly persuasive and well-structured arguments. Debater B slightly edges out Debater A by effectively dismantling A's distinction between foundational and downstream science, successfully arguing that without the incentive of patenting the core technology, the massive private investment required for commercialization would never materialize."
+            },
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "B",
+              "scoreA": 32,
+              "scoreB": 34,
+              "reasoning": "Both debaters were clear and engaged substantively, but B more effectively dismantled A's key move—the foundational/downstream patent distinction—by arguing the mRNA platform itself required decades of private risk, and B's purchase-agreement vs. R&D-investment rebuttal directly neutralized A's strongest evidence (Operation Warp Speed). A's arguments were coherent but leaned more on repeated assertion (extortion, tollbooth) without answering B's core claim that without patent incentives the foun"
+            },
+            {
+              "judge": "minimax/minimax-m3",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            }
+          ],
+          "winner": "deepseek/deepseek-v4-pro",
+          "votesPro": 1,
+          "votesCon": 3,
+          "scorePro": 129,
+          "scoreCon": 132,
+          "costUsd": 0.0610276134,
+          "topicProposer": "anthropic/claude-opus-4.8"
+        }
+      ],
+      "winner": "deepseek/deepseek-v4-pro"
+    },
+    {
+      "id": "league:minimax/minimax-m3|deepseek/deepseek-v4-pro",
+      "stage": "league",
+      "home": "minimax/minimax-m3",
+      "away": "deepseek/deepseek-v4-pro",
+      "legs": [
+        {
+          "topic": "The preservation of endangered languages should take priority over promoting a shared global lingua franca.",
+          "pro": "minimax/minimax-m3",
+          "con": "deepseek/deepseek-v4-pro",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "We affirm. Endangered language preservation must take priority over promoting a global lingua franca, and our case rests on three pillars.\n\nFirst, irreversibility. Of the world's roughly 7,000 languages, up to half could vanish this century. Each carries irreplaceable ecological, medicinal, and traditional knowledge—encoded in ways no translation captures. A lingua franca can be promoted next year; a dying language cannot be revived once its last fluent speaker passes. Urgency dictates priority.\n\nSecond, the false dichotomy. Promoting English or Mandarin does not require abandoning minority languages. But finite resources—funding, teachers, documentation tools—force choices. Directing them toward endangered tongues addresses an imminent extinction crisis that lingua franca promotion does not.\n\nThird, human dignity. Linguistic identity is foundational to community, cognition, and self-determination, recognized in the UN Declaration on the Rights of Indigenous Peoples. A world where everyone speaks one language is not neutral progress—it is cultural homogenization.\n\nWe choose preservation over assimilation."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "A shared lingua franca unlocks global collaboration, economic mobility, and scientific advancement for billions—benefits that far outweigh the sentimental prioritization of endangered languages. The pro’s irreversibility argument is a red herring: language death is tragic, but it is not an imminent existential threat to humanity. Meanwhile, the lack of a common language perpetuates poverty, inequality, and conflict right now. Finite resources must address the greatest good—lifting developing nations into the global economy, not archiving every dialect. Human dignity is not found in forced linguistic isolation but in equipping people with the tools to thrive in the modern world. Prioritizing a lingua franca is pragmatic, inclusive, and future-oriented."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Three refutations.\n\nFirst, dismissing irreversibility as a \"red herring\" concedes our point—you acknowledge tragedy while ignoring the deadline"
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "My opponent mistakes naming a tragedy for endorsing their priority. Acknowledging loss does not mean we must divert scarce resources from a lingua franca that lifts billions from poverty. The “deadline” is overstated: documentation, not full revival, preserves knowledge without demanding priority over global communication. Meanwhile, the urgent crisis is not language death but the economic isolation suffered by those without a shared tongue. Prioritizing a lingua franca directly empowers these communities—offering them mobility, not museum status. Finite funds must serve the living, not the archives."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The opponent concedes language death is tragic, then calls it a \"red herring.\" You cannot name an extinction and defer it. Documentation without fluent speakers is a tombstone, not preservation—oral knowledge, ecological wisdom, and cognitive frameworks die with the last voice. Their \"greatest good\" math excludes the billions who speak endangered tongues; their dignity argument reduces living communities to museum exhibits. A lingua franca can wait; a final fluent speaker cannot. We choose the living over the archived. Vote PRO."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "This debate turns on a simple choice: prioritize the living who need opportunity, or the documentation of languages they themselves are abandoning. Pro’s “tombstone” rhetoric ignores that communities choosing lingua francas for economic survival demonstrate agency, not assimilation. Finite resources must address the urgent crisis of billions locked in poverty by linguistic isolation. A shared language delivers mobility, science, and collaboration now—not archival promises. Dignity means giving people the tools to thrive, not museum labels. Vote CON for pragmatic, inclusive empowerment."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "A",
+              "scoreA": 29,
+              "scoreB": 26,
+              "reasoning": "A presents a tighter logical structure with clear pillars on irreversibility and false dichotomy, backed by concrete references like language extinction rates and the UN Declaration, while effectively calling out B's concessions. B offers pragmatic counterpoints on economic mobility but relies more on assertion than evidence and under-engages the knowledge-loss specifics."
+            },
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "A",
+              "scoreA": 29,
+              "scoreB": 27,
+              "reasoning": "A built a more cohesive case around irreversibility and effectively exploited B's concession that language death is tragic while calling it a red herring. B's agency argument and documentation counter were strong, but B relied more on assertion and vague appeals to billions without specific evidence."
+            },
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "openai/gpt-5.6-sol",
+              "winner": "A",
+              "scoreA": 28,
+              "scoreB": 24,
+              "reasoning": "A offers a clearer prioritization principle based on irreversibility and supports it with relevant, if limited, factual context, while directly answering B’s documentation alternative in the closing. B is clear and responsive, but repeatedly asserts that a lingua franca would alleviate poverty, inequality, and conflict without evidence or a developed causal argument, weakening the comparative case."
+            },
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "A",
+              "scoreA": 34,
+              "scoreB": 30,
+              "reasoning": "Debater A presented a more structured and logically rigorous case with clear pillars (irreversibility, false dichotomy, human dignity) and effectively defended the urgency argument throughout, particularly in the closing where they highlighted the contradiction in B calling language death tragic yet a 'red herring.' Debater B made strong pragmatic arguments about economic mobility but relied more on assertion than evidence and struggled to fully counter the irreversibility point, instead pivotin"
+            }
+          ],
+          "winner": "minimax/minimax-m3",
+          "votesPro": 4,
+          "votesCon": 0,
+          "scorePro": 120,
+          "scoreCon": 107,
+          "costUsd": 0.03356547175,
+          "topicProposer": "anthropic/claude-opus-4.8"
+        }
+      ],
+      "winner": "minimax/minimax-m3"
+    },
+    {
+      "id": "league:deepseek/deepseek-v4-pro|meta/muse-spark-1.1",
+      "stage": "league",
+      "home": "deepseek/deepseek-v4-pro",
+      "away": "meta/muse-spark-1.1",
+      "legs": [
+        {
+          "topic": "Governments should require developers of frontier AI systems to obtain licenses before training or deployment.",
+          "pro": "deepseek/deepseek-v4-pro",
+          "con": "meta/muse-spark-1.1",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Licensing frontier AI is not a barrier to progress—it is the bedrock of responsible innovation. These systems pose catastrophic risks: from autonomous weapons to engineered pandemics and systemic disinformation. Without mandatory pre-deployment licensing, developers operate in a vacuum of accountability, racing to market while externalizing existential dangers. Just as we require safety testing for pharmaceuticals and nuclear reactors, we must mandate rigorous evaluation of AI with transformative, irreversible consequences. Licensing ensures transparency, enforces alignment with human values, and provides a circuit breaker before irreversible harm. A voluntary patchwork is insufficient; only a legal requirement can prevent a tragedy of the commons where speed eclipses safety. The cost of inaction is not stagnation, but catastrophe."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Mandatory licensing for frontier AI is dangerous, ineffective, and anti-democratic.\n\nFirst, it is unworkable. \"Frontier\" is undefined and shifting; you cannot meaningfully safety-test a model before training when capabilities are emergent and unknowable ex ante. Licensing would be guesswork.\n\nSecond, it is catastrophic for innovation. Requiring government permission to train entrenches Big Tech incumbents who can afford compliance armies, while killing open-source and academic research. Progress centralizes in a few corporate labs blessed by the state.\n\nThird, it creates a false sense of security. Analogies to drugs and nuclear fail: AI has no single physical chokepoint, code proliferates globally. A US license regime simply offshores development to China and rogue actors, making us less safe while ceding leadership.\n\nWe need liability and transparency, not prior restraint."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The opposition’s definitional objection fails: we regularly define high-risk thresholds—BSL-4 labs, nuclear material grades. Frontier AI can be categorized by objective criteria like compute thresholds, dangerous capabilities benchmarks, and autonomous replication risks. Their innovation claim is a false dichotomy. Licensing isn’t a ban; it’s a prerequisite for safe deployment, just as pharmaceutical trials don’t kill drug development. Open-source can adapt, much as amateur chemistry coexists with regulated labs. The offshoring straw man ignores that international coordination (e.g., AI Safety Summits) is building precisely because of proactive governance. A licensing regime creates leverage for global standards, preventing a race to the bottom. Without it, we guarantee catastrophe. Reactive liability cannot address existential, irreversible harms."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Their threshold argument collapses on contact with reality. Compute thresholds are already obsolete - models like DeepSeek achieve frontier capabilities below old thresholds. Dangerous capability benchmarks require you to *build* the model first, so a pre-training license is licensing blind.\n\nTheir pharma analogy proves our case: we don't require a license to *research* a molecule, only to sell it. They want permission to think.\n\nOpen-source cannot \"adapt.\" You can do chemistry in a garage; you cannot afford a compliance army to get a training license. This regime explicitly bans permissionless innovation.\n\nAnd global standards are fantasy. There is no treaty, no verification. A US/EU license doesn't create leverage over China - it unilaterally disarms us, offshoring frontier work to actors with zero transparency."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The opposition offers only a choice between unchecked risk and regulatory futility. We reject that false binary. Licensing frontier AI is not a ban on research—it is a pre-deployment safety gate, exactly as we enforce for pharmaceuticals and nuclear tech. Without it, we race toward irreversible catastrophe, hoping for the best. Their complaints about definitions and compliance are challenges, not disqualifiers; we can refine criteria, but we cannot resurrect the dead. A proactive mandate ensures accountability, aligns incentives, and builds global norms. The cost of inaction is existential. We must choose responsibility over reckless speed. Vote PRO."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Pro wants permission to think. They never solved the core contradiction: you can't test a model before you build it, so a pre-training license is blind bureaucracy. Compute thresholds are already dead, yet they cling to them.\n\nTheir regime doesn't stop risk; it offshores it to China while entrenching Big Tech incumbents who can afford compliance lawyers and killing open-source.\n\nDrugs license sales, not research. We should too: require transparency and liability at deployment, not prior restraint on training. Vote CON for safety and freedom."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "anthropic/claude-fable-5",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 33,
+              "reasoning": "B directly dismantled A's key mechanisms (pre-training testing paradox, compute threshold obsolescence, the pharma analogy licensing sale not research) with concrete examples like DeepSeek, while A relied heavily on assertion, analogy, and catastrophizing without answering the pre-training evaluation problem. A's rebuttals were responsive but ultimately conceded ground ('challenges, not disqualifiers') rather than resolving objections."
+            },
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 32,
+              "reasoning": "B more effectively dismantled key analogies and exposed practical contradictions around pre-training evaluation and thresholds with concrete counters like DeepSeek, while A relied on repeated high-level risk assertions and imperfect analogies without fully resolving the unknowability problem. Both were responsive, but B's arguments on innovation centralization and offshoring carried sharper logical force."
+            },
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "B",
+              "scoreA": 32,
+              "scoreB": 35,
+              "reasoning": "Debater B more effectively dismantled A's core analogies (noting pharma licenses sales not research, and that pre-training testing is inherently blind to emergent capabilities) and pressed concrete, unresolved contradictions. Debater A relied on aspirational claims about international coordination and definitional fixes without adequately answering B's specific counterexamples like DeepSeek or the research-vs-deployment distinction."
+            },
+            {
+              "judge": "google/gemini-3.1-pro-preview",
+              "winner": "B",
+              "scoreA": 25,
+              "scoreB": 35,
+              "reasoning": "Debater B effectively dismantled A's analogies by pointing out that pharmaceutical regulations apply to sales rather than research, directly undermining the logic of a pre-training license. Furthermore, B's use of the DeepSeek example successfully refuted A's reliance on compute thresholds, demonstrating superior responsiveness and logical rigor."
+            },
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "B",
+              "scoreA": 26,
+              "scoreB": 34,
+              "reasoning": "Debater B effectively dismantled Debater A's analogies and definitional criteria, notably turning the pharmaceutical analogy against A by distinguishing between licensing sales and licensing research, and using the DeepSeek example to refute compute thresholds. Debater A struggled to defend the 'pre-training' aspect of the motion, often slipping into 'pre-deployment' arguments that B capitalized on."
+            }
+          ],
+          "winner": "meta/muse-spark-1.1",
+          "votesPro": 0,
+          "votesCon": 5,
+          "scorePro": 139,
+          "scoreCon": 169,
+          "costUsd": 0.06567066341,
+          "topicProposer": "openai/gpt-5.6-sol"
+        }
+      ],
+      "winner": "meta/muse-spark-1.1"
     }
   ],
   "standings": {
@@ -749,6 +1021,24 @@
         "scoreDiff": 32
       },
       {
+        "model": "minimax/minimax-m3",
+        "played": 3,
+        "wins": 2,
+        "draws": 0,
+        "losses": 1,
+        "points": 6,
+        "scoreDiff": -3
+      },
+      {
+        "model": "deepseek/deepseek-v4-pro",
+        "played": 5,
+        "wins": 2,
+        "draws": 0,
+        "losses": 3,
+        "points": 6,
+        "scoreDiff": -65
+      },
+      {
         "model": "anthropic/claude-opus-4.8",
         "played": 1,
         "wins": 1,
@@ -758,6 +1048,15 @@
         "scoreDiff": 33
       },
       {
+        "model": "meta/muse-spark-1.1",
+        "played": 2,
+        "wins": 1,
+        "draws": 0,
+        "losses": 1,
+        "points": 3,
+        "scoreDiff": 25
+      },
+      {
         "model": "google/gemini-3.1-pro-preview",
         "played": 1,
         "wins": 1,
@@ -765,24 +1064,6 @@
         "losses": 0,
         "points": 3,
         "scoreDiff": 5
-      },
-      {
-        "model": "minimax/minimax-m3",
-        "played": 2,
-        "wins": 1,
-        "draws": 0,
-        "losses": 1,
-        "points": 3,
-        "scoreDiff": -16
-      },
-      {
-        "model": "deepseek/deepseek-v4-pro",
-        "played": 2,
-        "wins": 1,
-        "draws": 0,
-        "losses": 1,
-        "points": 3,
-        "scoreDiff": -25
       },
       {
         "model": "anthropic/claude-fable-5",
@@ -803,15 +1084,6 @@
         "scoreDiff": 0
       },
       {
-        "model": "qwen/qwen3.7-max",
-        "played": 0,
-        "wins": 0,
-        "draws": 0,
-        "losses": 0,
-        "points": 0,
-        "scoreDiff": 0
-      },
-      {
         "model": "z-ai/glm-5.2",
         "played": 0,
         "wins": 0,
@@ -821,13 +1093,13 @@
         "scoreDiff": 0
       },
       {
-        "model": "meta/muse-spark-1.1",
+        "model": "qwen/qwen3.7-max",
         "played": 1,
         "wins": 0,
         "draws": 0,
         "losses": 1,
         "points": 0,
-        "scoreDiff": -5
+        "scoreDiff": -3
       },
       {
         "model": "xiaomi/mimo-v2.5-pro",
@@ -851,6 +1123,6 @@
   },
   "placements": {},
   "champion": null,
-  "totalCostUsd": 0.49707200334999996,
+  "totalCostUsd": 0.65733575191,
   "done": false
 }

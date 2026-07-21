@@ -75,33 +75,38 @@ export async function executeRun(opts: RunOptions): Promise<RunFile> {
   // Preserve ordering / dedupe by legId.
   const byId = new Map(file.legs.map((l) => [l.legId, l]));
 
-  let completed = 0;
-  for (const pl of plan) {
-    if (byId.has(pl.legId)) {
+  let completed = plan.filter((p) => byId.has(p.legId)).length;
+  const pending = plan.filter((p) => !byId.has(p.legId));
+  // Legs are independent: run a bounded pool concurrently. Node is
+  // single-threaded, so byId/save updates never interleave mid-write.
+  const CONCURRENCY = Math.max(1, Number(process.env.LEG_CONCURRENCY ?? 6));
+  let next = 0;
+  const worker = async () => {
+    while (next < pending.length) {
+      const pl = pending[next++];
+      let result;
+      try {
+        result = await runLeg({
+          legId: pl.legId,
+          cls: pl.cls,
+          instance: pl.instance,
+          prover: pl.prover,
+          refuter: pl.refuter,
+        });
+      } catch (err) {
+        // A flaky provider must not kill the run: skip; the leg replays on resume.
+        console.error(`  !! leg ${pl.legId} deferred: ${(err as Error).message.slice(0, 120)}`);
+        continue;
+      }
+      byId.set(pl.legId, result);
+      file.legs = plan.filter((p) => byId.has(p.legId)).map((p) => byId.get(p.legId)!);
+      file.updatedAt = new Date().toISOString();
+      writeJson(runPath(id), file);
       completed++;
-      continue;
+      opts.onLeg?.(result, completed, plan.length);
     }
-    let result;
-    try {
-      result = await runLeg({
-        legId: pl.legId,
-        cls: pl.cls,
-        instance: pl.instance,
-        prover: pl.prover,
-        refuter: pl.refuter,
-      });
-    } catch (err) {
-      // A flaky provider must not kill the run: skip; the leg replays on resume.
-      console.error(`  !! leg ${pl.legId} deferred: ${(err as Error).message.slice(0, 120)}`);
-      continue;
-    }
-    byId.set(pl.legId, result);
-    file.legs = plan.filter((p) => byId.has(p.legId)).map((p) => byId.get(p.legId)!);
-    file.updatedAt = new Date().toISOString();
-    writeJson(runPath(id), file);
-    completed++;
-    opts.onLeg?.(result, completed, plan.length);
-  }
+  };
+  await Promise.all(Array.from({ length: Math.min(CONCURRENCY, pending.length) }, worker));
 
   // final normalized ordering
   file.legs = plan.filter((p) => byId.has(p.legId)).map((p) => byId.get(p.legId)!);

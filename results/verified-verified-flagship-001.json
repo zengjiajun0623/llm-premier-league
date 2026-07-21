@@ -1,7 +1,7 @@
 {
   "id": "verified-flagship-001",
   "createdAt": "2026-07-21T05:38:47.941Z",
-  "updatedAt": "2026-07-21T06:15:55.648Z",
+  "updatedAt": "2026-07-21T06:25:54.830Z",
   "rounds": 12,
   "roster": [
     "anthropic/claude-fable-5",
@@ -538,6 +538,71 @@
       "costUsd": 0.005324799999999999,
       "transcript": {
         "proverSrc": "def solve(s):\n    result = []\n    for ch in s:\n        o = ord(ch)\n        if 65 <= o <= 90:\n            result.append(chr((o - 65 + 9) % 26 + 65))\n        elif 97 <= o <= 122:\n            result.append(chr((o - 97 + 9) % 26 + 97))\n        else:\n            result.append(ch)\n    return ''.join(result)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r0-subsetsum-z_ai_glm_5_2-vs-deepseek_deepseek_v4_pro",
+      "classId": "subsetsum",
+      "instanceSeed": 1525532555,
+      "prover": "z-ai/glm-5.2",
+      "refuter": "deepseek/deepseek-v4-pro",
+      "winner": "prover",
+      "costUsd": 0.00846924,
+      "transcript": {
+        "proverSrc": "def solve(inp):\n    nums = inp[\"nums\"]\n    target = inp[\"target\"]\n    n = len(nums)\n    for mask in range(1 << n):\n        s = 0\n        for i in range(n):\n            if mask & (1 << i):\n                s += nums[i]\n        if s == target:\n            return [i for i in range(n) if mask & (1 << i)]\n    return None",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r0-textmetrics-meta_muse_spark_1_1-vs-z_ai_glm_5_2",
+      "classId": "textmetrics",
+      "instanceSeed": 566337759,
+      "prover": "meta/muse-spark-1.1",
+      "refuter": "z-ai/glm-5.2",
+      "winner": "prover",
+      "costUsd": 0.005431,
+      "transcript": {
+        "proverSrc": "def solve(s):\n    return {\n        \"length\": len(s),\n        \"bytes\": len(s.encode(\"utf-8\")),\n        \"checksum\": sum(ord(c) for c in s) % 2147483648\n    }",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r0-sortlist-google_gemini_3_1_pro_preview-vs-openai_gpt_5_6_sol",
+      "classId": "sortlist",
+      "instanceSeed": 767389432,
+      "prover": "google/gemini-3.1-pro-preview",
+      "refuter": "openai/gpt-5.6-sol",
+      "winner": "prover",
+      "costUsd": 0.004027,
+      "transcript": {
+        "proverSrc": "def solve(nums):\n    return sorted(nums)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r0-caesar-openai_gpt_5_6_sol-vs-anthropic_claude_opus_4_8",
+      "classId": "caesar",
+      "instanceSeed": 1644277244,
+      "prover": "openai/gpt-5.6-sol",
+      "refuter": "anthropic/claude-opus-4.8",
+      "winner": "prover",
+      "costUsd": 0.00774,
+      "transcript": {
+        "proverSrc": "def solve(s):\n    result = []\n    for char in s:\n        if 'a' <= char <= 'z':\n            result.append('a' if char == 'z' else chr(ord(char) + 1))\n        elif 'A' <= char <= 'Z':\n            result.append('A' if char == 'Z' else chr(ord(char) + 1))\n        else:\n            result.append(char)\n    return ''.join(result)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r0-calc-xiaomi_mimo_v2_5_pro-vs-openai_gpt_5_6_sol",
+      "classId": "calc",
+      "instanceSeed": 786994992,
+      "prover": "xiaomi/mimo-v2.5-pro",
+      "refuter": "openai/gpt-5.6-sol",
+      "winner": "prover",
+      "costUsd": 0.028089746199999998,
+      "transcript": {
+        "proverSrc": "def solve(s): return eval(s) % 1000000007",
         "candidates": []
       }
     }
