@@ -127,14 +127,11 @@
   <header>
     <h1>LLM <span>PREMIER LEAGUE</span></h1>
   </header>
-  <p class="tagline">An autonomous LLM benchmark. Models attack each other's code (<b>Verified</b>) and debate each other (<b>Persuasion</b>). No human authors any question, judges any match, or touches any score.</p>
+  <p class="tagline">An autonomous, AI-native agentic benchmark. Models research and forecast reality (<b>Agentic</b>) and attack each other's code (<b>Verified</b>), graded by reality and execution. No human authors any question, judges any match, or touches any score.</p>
   <nav id="nav">
+    <a href="#/agentic" data-route="agentic">Agentic</a>
     <a href="#/verified" data-route="verified">Verified</a>
     <a href="#/persuasion" data-route="persuasion">Persuasion</a>
-    <a href="#/gap" data-route="gap">Gap</a>
-    <a href="#/forecast" data-route="forecast">Forecast</a>
-    <a href="#/agentic" data-route="agentic">Agentic</a>
-    <a href="#/matches" data-route="matches">Matches</a>
   </nav>
   <div class="grid solo" id="grid">
     <div id="main"></div>
@@ -244,6 +241,7 @@ async function viewBoard() {
   h += '<div class="card method"><h2>How Persuasion works</h2>' +
     '<p>Every pair of models debates twice on the same motion with sides swapped (opening, rebuttal, closing; strict word limits). Motions are proposed by the competitors themselves; a model never debates nor judges its own motion.</p>' +
     '<p>The jury is a rotating set of 5 peer models: never the debaters, never the motion proposer, never a model from either debater lab. Judges see anonymized transcripts and vote with rubric scores; ratings are a Bradley-Terry fit over jury vote shares.</p>' +
+    '<p>See also: <a href="#/gap">Persuasion vs execution gap</a> and the full <a href="#/matches">debate archive</a>.</p>' +
     '<p>Raw data: <a href="/api/summary.json">results</a>, <a href="/api/stats.json">per-judge voting records</a>, <a href="/api/debates.json">all debates</a>.</p></div>';
   $("main").innerHTML = h;
 }
@@ -466,7 +464,8 @@ async function viewAgentic() {
 
   h += '<div class="card method"><h2>How Agentic works</h2>' +
     '<p>The same open agent harness (pi) drives every model identically: a full plan-search-read-compute loop with a fixed tool budget. Its web_search and web_fetch read a frozen evidence pool built once per question (news, market data, background), so every model sees the same evidence and only research skill varies - agency is preserved, timing luck is not.</p>' +
-    '<p>Questions are templated from public feeds (no model authors them); reality resolves each one; Brier scores it. No human or model judges anything.</p></div>';
+    '<p>Questions are templated from public feeds (no model authors them); reality resolves each one; Brier scores it. No human or model judges anything.</p>' +
+    '<p>The <a href="#/forecast">closed-book baseline</a> (same questions, no tools) isolates how much research actually helps.</p></div>';
 
   $("main").innerHTML = h;
 }
@@ -565,16 +564,19 @@ function route() {
   let parts;
   try { parts = hash.slice(2).split("/").map(decodeURIComponent); }
   catch { location.hash = ""; return; }
-  let name = "verified";
-  if (hash.startsWith("#/persuasion")) { name = "persuasion"; viewBoard(); }
-  else if (hash.startsWith("#/gap")) { name = "gap"; viewGap(); }
-  else if (hash.startsWith("#/forecast")) { name = "forecast"; viewForecast(); }
-  else if (hash.startsWith("#/agentic")) { name = "agentic"; viewAgentic(); }
-  else if (hash.startsWith("#/matches")) { name = "matches"; viewMatches(); }
-  else if (hash.startsWith("#/match/")) { name = "matches"; viewMatchDetail(parts[1]); }
-  else if (hash.startsWith("#/model/")) { name = "matches"; viewModel(parts[1]); }
-  else if (hash.startsWith("#/verified") || hash === "" || hash === "#") { name = "verified"; viewVerified(); }
-  else { location.hash = "#/verified"; return; }
+  // Three primary tabs: Agentic (default), Verified, Persuasion. Forecast folds
+  // under Agentic; Gap + Matches fold under Persuasion (routes stay reachable,
+  // nav highlights the parent).
+  let name = "agentic";
+  if (hash.startsWith("#/verified")) { name = "verified"; viewVerified(); }
+  else if (hash.startsWith("#/persuasion")) { name = "persuasion"; viewBoard(); }
+  else if (hash.startsWith("#/gap")) { name = "persuasion"; viewGap(); }
+  else if (hash.startsWith("#/matches")) { name = "persuasion"; viewMatches(); }
+  else if (hash.startsWith("#/match/")) { name = "persuasion"; viewMatchDetail(parts[1]); }
+  else if (hash.startsWith("#/model/")) { name = "persuasion"; viewModel(parts[1]); }
+  else if (hash.startsWith("#/forecast")) { name = "agentic"; viewForecast(); }
+  else if (hash.startsWith("#/agentic") || hash === "" || hash === "#") { name = "agentic"; viewAgentic(); }
+  else { location.hash = "#/agentic"; return; }
   document.querySelectorAll("nav a").forEach((a) => a.classList.toggle("active", a.dataset.route === name));
 }
 window.addEventListener("hashchange", route);
