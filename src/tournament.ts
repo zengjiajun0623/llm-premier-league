@@ -164,20 +164,30 @@ export async function runLeague(cfg: Config, seasonId: string): Promise<Season> 
     queue.push({ pro, con, id, t, round });
   }
 
+  // Matches between disjoint pairs are independent: bounded concurrent pool
+  // (Node is single-threaded, so matches/standings/save never interleave
+  // mid-write). live.json shows one of the in-flight matches at a time.
+  const CONCURRENCY = Math.max(1, Number(process.env.MATCH_CONCURRENCY ?? 3));
   for (let pass = 0; pass < 3 && queue.length; pass++) {
     const deferred: Fixture[] = [];
-    for (const f of queue) {
-      log(`\n[League ${f.round}/${schedule.length}] ${f.pro.split("/")[1]} (PRO) vs ${f.con.split("/")[1]} (CON)${pass ? ` (retry pass ${pass})` : ""}`);
-      try {
-        const leg = await h.playDebate(`League · match ${f.round} of ${schedule.length}`, f.t, f.pro, f.con);
-        season.matches.push({ id: f.id, stage: "league", home: f.pro, away: f.con, legs: [leg], winner: leg.winner });
-        season.standings.League = computeStandings(cfg.competitors, season.matches);
-        h.save();
-      } catch (err) {
-        log(`  !! match deferred (${(err as Error).message.slice(0, 120)})`);
-        deferred.push(f);
+    let next = 0;
+    const snapshot = queue;
+    const worker = async () => {
+      while (next < snapshot.length) {
+        const f = snapshot[next++];
+        log(`\n[League ${f.round}/${schedule.length}] ${f.pro.split("/")[1]} (PRO) vs ${f.con.split("/")[1]} (CON)${pass ? ` (retry pass ${pass})` : ""}`);
+        try {
+          const leg = await h.playDebate(`League · match ${f.round} of ${schedule.length}`, f.t, f.pro, f.con);
+          season.matches.push({ id: f.id, stage: "league", home: f.pro, away: f.con, legs: [leg], winner: leg.winner });
+          season.standings.League = computeStandings(cfg.competitors, season.matches);
+          h.save();
+        } catch (err) {
+          log(`  !! match deferred (${(err as Error).message.slice(0, 120)})`);
+          deferred.push(f);
+        }
       }
-    }
+    };
+    await Promise.all(Array.from({ length: Math.min(CONCURRENCY, snapshot.length) }, worker));
     queue = deferred;
   }
   if (queue.length) {
