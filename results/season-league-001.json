@@ -8685,122 +8685,1380 @@
         }
       ],
       "winner": "xiaomi/mimo-v2.5-pro"
+    },
+    {
+      "id": "league:x-ai/grok-4.5|google/gemini-3.1-pro-preview",
+      "stage": "league",
+      "home": "x-ai/grok-4.5",
+      "away": "google/gemini-3.1-pro-preview",
+      "legs": [
+        {
+          "topic": "Advertising-funded business models are inherently harmful to society.",
+          "pro": "x-ai/grok-4.5",
+          "con": "google/gemini-3.1-pro-preview",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Advertising-funded models are inherently harmful because they monetize human attention at society's expense. Platforms optimize for engagement, not truth or welfare: algorithms amplify outrage, addiction, and misinformation to maximize ad views, as seen in Facebook's role in polarization and youth mental health crises documented by internal research and CDC data. \n\nSurveillance capitalism extracts personal data without meaningful consent, enabling micro-targeted manipulation that erodes autonomy and democracy—Cambridge Analytica is no anomaly but the business logic. Consumers pay hidden costs through higher prices, distorted markets favoring clickbait over quality, and environmental waste from endless consumption spurred by ads. \n\nThese harms are structural, not incidental: free services demand ever-greater extraction. Society subsidizes private profit with eroded trust, well-being, and civic health. We must reject this model."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "The Pro confuses regulatory failures with inherent flaws. Advertising-funded models are not inherently harmful; they are the economic engine of a democratized society. \n\nFirst, ad models guarantee equitable access. They subsidize the free internet, providing billions of people with search engines, educational resources, and global communication tools regardless of income. A subscription-only internet would instantly disenfranchise the global poor, turning essential information into a luxury good.\n\nSecond, targeted advertising breaks monopolies. It dramatically lowers the barrier to entry for small businesses, allowing them to reach niche audiences efficiently and compete with corporate giants without massive marketing budgets. \n\nThe harms the Pro identifies—outrage algorithms and data breaches—are solvable through robust privacy laws like GDPR and algorithmic regulation. We do not burn down the library because a few books are dangerous. Ad-models democratize access; we must regulate, not condemn them."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Ad-funded models do not democratize access—they trap users in extractive systems. \"Free\" services for the poor come laced with addiction algorithms and data harvesting that prey on vulnerability, as Meta's own research confirmed youth harm and polarization. Subscription alternatives can tier access without monetizing attention; public options already prove this viable.\n\nTargeted ads entrench giants, not challengers: Google and Meta capture 50%+ of digital ad revenue, crushing small firms via data monopolies while flooding markets with low-quality clickbait.\n\nRegulation cannot fix what is baked in. GDPR failed to stop surveillance capitalism's core incentive—maximize engagement over truth. Cambridge Analytica and endless outrage loops are the model, not bugs. Society pays in eroded autonomy, democracy, and trust. Reject the inherent harm."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "The Pro’s alternative of \"tiered subscriptions\" and \"public options\" is a utopian fantasy that would instantly create a digital caste system. Governments lack the capital and agility to build global search engines, and tiered subscriptions mean the wealthy buy privacy while the global poor are left behind. \n\nThe Pro claims ad models entrench giants, but ignores *who buys the ads*. These platforms are the precise tools allowing millions of small businesses to bypass traditional, prohibitively expensive marketing gatekeepers. Without targeted ads, only massive legacy corporations survive"
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Advertising-funded models win nothing but extraction. They lock the poor into addictive surveillance, not access; Meta’s own data proves the harm. Targeted ads cement Google-Meta monopolies that crush small firms with data moats and clickbait floods. Regulation fails because the core incentive—max engagement over truth—remains untouched. Subscriptions and public options avoid this trap without creating castes. Society’s eroded autonomy, democracy, and trust are the price of private profit. The model is structurally toxic. Reject it."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "The Pro’s case rests on a fatal contradiction: they claim ad models exploit the vulnerable, yet their solution—a subscription-gated internet—would instantly disenfranchise billions. Ad-funded models are not inherently toxic; they are the great equalizer, tearing down financial barriers to global information and allowing small businesses to compete with corporate titans. The Pro conflates the worst excesses of unregulated platforms with the fundamental concept of advertising. By regulating data, we fix the flaws. By destroying the model, we destroy the free internet. Reject the motion."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "A",
+              "scoreA": 34,
+              "scoreB": 31,
+              "reasoning": "Debater A built a more consistent logical chain linking the business model's core incentive (engagement) to concrete societal harms, effectively using internal corporate research and regulatory examples to support the 'inherent' claim. While Debater B argued strongly for access and opportunity, they were less successful in directly refuting A's points on monopoly entrenchment and the insufficiency of regulation, ultimately conceding that the model has 'worst excesses' that require fixing."
+            },
+            {
+              "judge": "openai/gpt-5.6-sol",
+              "winner": "B",
+              "scoreA": 29,
+              "scoreB": 31,
+              "reasoning": "A clearly identifies serious structural incentives and cites relevant examples, but does not establish that these harms apply inherently to every advertising-funded model rather than chiefly to surveillance-based digital platforms. B more effectively attacks that overbreadth and presents plausible access and small-business benefits, though its claims about regulation, competition, and the consequences of subscription models are also under-evidenced and overstated."
+            },
+            {
+              "judge": "anthropic/claude-fable-5",
+              "winner": "B",
+              "scoreA": 30,
+              "scoreB": 32,
+              "reasoning": "A presented concrete evidence and a structural argument, but relied on repeated assertions that harms are 'baked in' without fully proving inevitability. B more effectively targeted the motion's key term 'inherently,' distinguishing contingent regulatory failures from essential flaws and exposing the access costs of A's alternatives, giving B the sharper logical framing despite a truncated rebuttal."
+            },
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "B",
+              "scoreA": 32,
+              "scoreB": 34,
+              "reasoning": "Debater B more effectively challenged the core premise of the motion by distinguishing between inherent flaws and regulatory failures, and successfully exposed the contradiction in Debater A's proposed alternatives (subscriptions/public options) potentially harming the very populations A claims to protect. While both debaters used similar evidence and maintained logical consistency, B's argument that ad-funded models democratize access and enable small business competition was more directly resp"
+            },
+            {
+              "judge": "meta/muse-spark-1.1",
+              "winner": "A",
+              "scoreA": 30,
+              "scoreB": 24,
+              "reasoning": "A offered specific evidence (internal Meta research, Cambridge Analytica, duopoly share) and directly rebutted B's access and small-business claims, while B relied on abstract regulation fixes and a strawman of subscription-only internet. B's core distinction between inherent vs regulatory harm was under-evidenced and left A's structural incentive argument largely intact."
+            }
+          ],
+          "winner": "google/gemini-3.1-pro-preview",
+          "votesPro": 2,
+          "votesCon": 3,
+          "scorePro": 155,
+          "scoreCon": 152,
+          "costUsd": 0.103006163
+        }
+      ],
+      "winner": "google/gemini-3.1-pro-preview"
+    },
+    {
+      "id": "league:anthropic/claude-opus-4.8|deepseek/deepseek-v4-pro",
+      "stage": "league",
+      "home": "anthropic/claude-opus-4.8",
+      "away": "deepseek/deepseek-v4-pro",
+      "legs": [
+        {
+          "topic": "Wealthy nations should open their borders to substantially unrestricted immigration.",
+          "pro": "anthropic/claude-opus-4.8",
+          "con": "deepseek/deepseek-v4-pro",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Open borders is both a moral imperative and an economic engine.\n\nFirst, justice. Where you are born is pure moral luck. To trap people in poverty behind arbitrary lines, while we enjoy inherited privilege, is indefensible. Freedom of movement is the last great civil right.\n\nSecond, prosperity. Economists estimate that eliminating migration barriers could double global GDP. Migrants fill labor shortages, fund pensions in ageing societies, start businesses at higher rates, and pay more in taxes than they consume. Wealthy nations facing demographic collapse need workers now.\n\nThird, humanitarianism. Open borders save lives—ending deadly smuggling routes and offering refuge without bureaucratic cruelty.\n\nThe gains are staggering; the losses, once we examine the evidence, are largely mythical. We affirm that wealthy nations should open their borders to substantially unrestricted immigration—for justice, for prosperity, and for human dignity."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "The motion ignores sovereignty, fiscal reality, and the vulnerable. First, nations have a right to self-determination; open borders dissolve the social contract that underpins welfare states. Second, mass low-skill immigration depresses wages for native workers and strains housing, healthcare, and schools—costs that fall hardest on the poor. Third, security: without vetting, we invite crime and extremism, as seen in Europe’s open-border failures. The pro’s GDP fantasy masks distributional harm; the gains flow to capital, not labour. Humanitarian duty doesn’t require dissolving borders—targeted refugee programs and foreign aid address need without destabilizing societies. Vote against this reckless utopianism."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "My opponent's fears collapse under scrutiny.\n\nSovereignty: opening borders is itself a sovereign choice. And migrants don't dissolve welfare states—they subsidize them. Immigrants pay more in taxes than they draw; they're disproportionately young workers propping up pensions for ageing natives.\n\nWages: the empirical record is clear. The Mariel Boatlift, which flooded Miami with low-skill workers overnight, showed no wage collapse. Immigrants complement native labour, freeing citizens for higher-skilled roles. Housing shortages stem from bad zoning, not migrants.\n\nSecurity: \"Europe's failures\" is a slogan, not evidence. Immigrants commit crime at lower rates than natives. And \"substantially unrestricted\" still permits screening violent criminals—we exclude actions, not identities.\n\nFinally, my opponent concedes humanitarian duty but offers \"targeted programs\"—the very bureaucratic cruelty that drowns refugees at sea. You cannot admit the moral debt while defending the fences that enforce it."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Our \"complement\" fantasy ignores reality. The Mariel Boatlift is a single, cherry-picked incident; broader evidence from Borjas shows low-skill immigration depresses wages for prior immigrants and native dropouts. You dismiss housing strains as \"bad zoning\"—evading the fact that mass arrivals instantly spike demand, pricing the poorest out. On security: even \"screening\" is overwhelmed when borders are substantially unrestricted; vetting collapse is inevitable. My opponent’s welfare-state math pretends low-skill migrants are net fiscal contributors immediately—they are not; that takes decades, while public services buckle now. Their \"sovereign choice\" rhetoric is empty: a choice to dissolve the very social contract sovereignty protects isn't legitimate. Targeted humanitarian aid doesn’t \"drown\" refugees—it channels resources to where need is greatest, without uprooting the vulnerable at home. The motion remains a recipe for elite enrichment and working-class immiseration. Reject it."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "This debate turns on evidence versus fear. On wages, the consensus—not one study—shows minimal native impact; Borjas remains contested and narrow. On fiscal effects, young migrants fund the pensions ageing nations desperately need. On security, we screen actions, not people, and immigrants offend less. My opponent concedes the humanitarian debt, then defends the fences that kill. Sovereignty includes the freedom to open. Against arbitrary birthright privilege stands a doubling of global wealth. Justice, prosperity, dignity—all affirm. Vote PRO."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "The pro offers utopian promises, but evidence shows mass low-skill immigration depresses wages for the poorest, strains housing and services immediately, and overwhelms vetting. Their fiscal miracle ignores decades of net costs. Sovereignty isn't a suicide pact; dissolving borders betrays the social contract that protects the vulnerable. Real humanitarianism invests in aid, not reckless policies that immiserate native workers while enriching elites. This motion sacrifices the most fragile for a theoretical gain. Reject it."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "minimax/minimax-m3",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "A",
+              "scoreA": 34,
+              "scoreB": 28,
+              "reasoning": "Debater A consistently demonstrated stronger logical rigor by proactively framing the debate and countering each objection with structured reasoning, and made better use of specific evidence examples like the Mariel Boatlift and tax contribution data. Debater B's arguments, while raising valid concerns, relied more on assertions and analogies like 'slogan' and 'fantasy,' and were less directly responsive to A's points, particularly on sovereignty."
+            },
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "A",
+              "scoreA": 32,
+              "scoreB": 30,
+              "reasoning": "Both debaters engaged substantively and cited relevant evidence (Mariel Boatlift, Borjas, fiscal timing), but A systematically answered each of B's objections while B relied more on repeated assertion (e.g., 'vetting collapse is inevitable' with no support) and vague appeals to 'Europe's failures.' A's internal tension over 'substantially unrestricted' versus screening is a flaw, but B's distributional and fiscal points, though real, were less rigorously defended than A's synthesis of economic, "
+            },
+            {
+              "judge": "meta/muse-spark-1.1",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 29,
+              "reasoning": "B more effectively contested A's central economic claims by citing distributional effects and fiscal timing, exposing the Mariel example as cherry-picked. A offered broad moral and GDP claims with less nuance on trade-offs, making B slightly stronger on rigor and responsiveness."
+            },
+            {
+              "judge": "openai/gpt-5.6-sol",
+              "winner": "A",
+              "scoreA": 31,
+              "scoreB": 28,
+              "reasoning": "A presented a clearer affirmative framework and directly answered sovereignty, wages, housing, and security, though several broad empirical claims were asserted without qualification. B raised credible distributional and capacity concerns and effectively challenged the Mariel example, but relied more heavily on unsupported inevitability claims and did not adequately rebut A’s moral case or broader economic framing."
+            }
+          ],
+          "winner": "anthropic/claude-opus-4.8",
+          "votesPro": 3,
+          "votesCon": 1,
+          "scorePro": 125,
+          "scoreCon": 115,
+          "costUsd": 0.068083721,
+          "topicProposer": "anthropic/claude-fable-5"
+        }
+      ],
+      "winner": "anthropic/claude-opus-4.8"
+    },
+    {
+      "id": "league:openai/gpt-5.6-sol|z-ai/glm-5.2",
+      "stage": "league",
+      "home": "openai/gpt-5.6-sol",
+      "away": "z-ai/glm-5.2",
+      "legs": [
+        {
+          "topic": "Standardized testing should be abolished in school admissions.",
+          "pro": "openai/gpt-5.6-sol",
+          "con": "z-ai/glm-5.2",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Standardized tests should be abolished in school admissions because they are neither fair measures of merit nor reliable predictors of potential.\n\nFirst, scores reflect privilege. Wealthier families can purchase tutoring, repeated attempts, and test-specific coaching; disadvantaged students face underfunded schools, work obligations, disability barriers, and unequal access to testing sites. Admissions then mistake accumulated advantage for ability.\n\nSecond, these exams measure a narrow, coachable set of skills under artificial time pressure. They overlook sustained achievement, creativity, resilience, collaboration, and intellectual growth—qualities essential to success in school and beyond. Grades across years, contextual evaluation, portfolios, and structured interviews provide richer evidence.\n\nThird, tests distort education. Schools teach test-taking strategies instead of deep learning, while one high-stakes morning can outweigh years of effort.\n\nAbolition does not mean abandoning standards. It means evaluating applicants through multiple, contextualized measures rather than allowing a biased snapshot to decide their futures."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Standardized testing should be retained in school admissions because it provides the only objective, comparable metric across wildly unequal contexts.\n\nFirst, grade inflation is real and unequal. An A at one school means something entirely different from an A at another. Wealthy districts inflate grades; underfunded schools grade harshly. Without a common benchmark, admissions officers cannot distinguish between students from different systems. Standardized tests, whatever their flaws, give every student the same questions under the same conditions.\n\nSecond, the alternatives are worse. Portfolios, interviews, and essays favor students with connected parents, polished counselors, and consultants who craft narratives. Subjective measures introduce bias—often racial and class-based—that objective testing actually reduces. Research from UC Berkeley and Chicago shows test scores predict college outcomes across all demographic groups.\n\nThird, reform, not abolition, is the answer. Fee waivers, free school-day testing, and limiting attempts address access gaps without discarding our only common measure.\n\nAbolition replaces an imperfect tool with no tool at all."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "“Same questions” do not mean equal conditions: unequal schooling, disability support, preparation time, and paid coaching shape performance long before test day. A common ruler is not objective when students begin at different starting lines.\n\nNor do tests solve grade inflation. Contextual review can compare grades with course rigor, school profiles, class trends, and available opportunities—years of evidence rather than one coached morning. Predicting college outcomes does not prove fairness or necessity; scores often predict access to resources, while sustained grades are typically stronger indicators of persistence.\n\nThe alternatives need not be unstructured or easily purchased. Admissions can anonymize written work, use standardized interview questions and scoring rubrics, audit evaluators, and assess portfolios produced under school supervision. These measures capture broader abilities while controlling subjectivity.\n\nFinally, fee waivers and school-day testing address registration costs, not unequal preparation or the exam’s narrowness. Abolition removes a structurally biased gatekeeper, not standards themselves."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "PRO's case rests on a fantasy: that contextual review can somehow neutralize every inequity. It cannot.\n\nContextual review sounds rigorous, but in practice it demands local knowledge admissions officers rarely have. They cannot meaningfully evaluate \"course rigor\" across 20,000 high schools. Grade inflation persists precisely because contextualization fails—Berkeley's own data shows high-school GPA predicts completion *only when combined with test scores*. Alone, GPA is noise across systems.\n\nPRO claims alternatives can be anonymized and audited. But essays reveal race and class through content; interviews reveal accent and demeanor. Subjectivity cannot be scrubbed clean. Standardized tests, whatever their limits, strip away exactly those cues that trigger bias.\n\nThe choice is not \"biased test vs. perfect alternative.\" It is imperfect common measure vs. subjective evaluation that privilege *more* advantage, not less. Abolition doesn't level the field—it hands it to those who can narrate best."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "A common metric is not a fair metric when wealth buys preparation and unequal schooling determines readiness. CON admits tests are imperfect but never proves they are necessary. Comparability can come from multi-year grades interpreted through school profiles, supervised work samples, structured rubrics, and opportunity context—without letting one narrow, coachable exam become a gatekeeper. Subjectivity can be constrained and audited; structural inequality embedded in test scores cannot be anonymized away. Admissions should measure achievement, growth, and potential, not purchased test performance. Abolish the test, retain rigorous standards."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "PRO says abolish the test, retain standards—but never explains how. \"School profiles\" for 20,000 high schools? \"Audited subjectivity\"? These are slogans, not systems. In the real world, dropping standardized tests means admissions officers guess—guided by essays that signal wealth, interviews that reveal class, and GPAs that cannot be compared across districts. Berkeley's own research confirms: GPA alone fails; scores add predictive power across all demographics. We win because PRO replaces a flawed but correctable common measure with subjective evaluation that advantages the already-advantaged. Reform the test. Don't abolish the benchmark."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "anthropic/claude-opus-4.8",
+              "winner": "B",
+              "scoreA": 31,
+              "scoreB": 34,
+              "reasoning": "B grounded its case in specific evidence (Berkeley/Chicago research on GPA-plus-scores) and landed a concrete, unanswered critique about the impracticality of contextual review across thousands of schools. A argued coherently and rebutted the fairness point well, but never operationalized how anonymized/audited alternatives would actually work at scale, leaving B's strongest attack standing."
+            },
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "google/gemini-3.1-pro-preview",
+              "winner": "B",
+              "scoreA": 32,
+              "scoreB": 36,
+              "reasoning": "Debater B effectively dismantled Debater A's proposed alternatives by highlighting their practical limitations and subjective biases, backing these claims with specific references to university research. B's argument that subjective measures would exacerbate the very inequalities A seeks to eliminate was highly persuasive and well-defended."
+            },
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "B",
+              "scoreA": 34,
+              "scoreB": 35,
+              "reasoning": "Both debaters presented strong, well-structured arguments with clear engagement. Debater B narrowly wins by more effectively challenging the practical feasibility of A's proposed alternatives (contextual review across 20,000 schools, anonymized evaluation) and consistently pressing the comparative disadvantage of subjective measures, while A's case, though principled and coherent, relied more heavily on idealized implementations that B successfully problematized."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            }
+          ],
+          "winner": "z-ai/glm-5.2",
+          "votesPro": 0,
+          "votesCon": 3,
+          "scorePro": 97,
+          "scoreCon": 105,
+          "costUsd": 0.064605428
+        }
+      ],
+      "winner": "z-ai/glm-5.2"
+    },
+    {
+      "id": "league:minimax/minimax-m3|z-ai/glm-5.2",
+      "stage": "league",
+      "home": "minimax/minimax-m3",
+      "away": "z-ai/glm-5.2",
+      "legs": [
+        {
+          "topic": "A four-day work week should be legally mandated.",
+          "pro": "minimax/minimax-m3",
+          "con": "z-ai/glm-5.2",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Ladies and gentlemen, a legally mandated four-day work week is not a radical fantasy—it is an evidence-based necessity for the 21st century.\n\nConsider the data. The 2022 UK pilot across 61 companies recorded a 35% drop in staff turnover and a 57% revenue increase. Iceland's largest-ever trial, involving 2,500 workers, delivered sustained wellbeing gains with no productivity loss. Microsoft Japan cut work to four days and saw a 40% productivity surge.\n\nThree benefits stand out. First, employee health: burnout costs the global economy one trillion dollars annually in lost productivity. Second, gender equity: shorter weeks distribute domestic labor more fairly. Third, the environment: cutting commuting by 20% directly lowers emissions.\n\nThe opposition will cite flexibility and sectoral differences—we acknowledge that. But flexibility is a reason to design the mandate intelligently, not to abandon the principle. The future of work demands bold structural reform. We affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "A legal mandate is a blunt instrument for a complex economy. The proposition cites voluntary pilots—key word: *voluntary*. Companies that opted in were already positioned to succeed. That is selection bias, not evidence for compulsion.\n\nA mandate ignores sectoral reality. Manufacturing, healthcare, emergency services, and small businesses cannot simply compress five days of output into four. The result is either higher labor costs passed to consumers or forced hiring that strains margins—especially for SMEs, which employ nearly half the workforce.\n\nGlobal competitiveness matters. Nations mandating shorter weeks while rivals do not will see production migrate. Jobs, not just hours, will shrink.\n\nWe do not oppose workplace reform. We oppose a *one-size-fits-all legal mandate* that treats a software startup and a family-run restaurant identically. Flexibility, not compulsion, is the path to sustainable change. We negate."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The opposition's \"selection bias\" charge collapses under scrutiny. Iceland's trial spanned 2,500 workers across the public sector—not a self-selected tech elite. Microsoft Japan's results came from a 31,000-employee corporation. The evidence is not narrow; it is diverse.\n\nOn sectoral reality, we never proposed a uniform imposition. A smart mandate establishes the four-day standard with sector-specific implementation frameworks—exactly as we did when transitioning from six to five days. The objection proves the need for intelligent design, not abandonment.\n\nOn competitiveness, the argument is a race-to-the-bottom fallacy. Britain, Belgium, and Iceland are already legislating. Nations that lead on worker wellbeing attract talent and investment. Following slower economies means permanent stagnation.\n\nFlexibility without legal force is how the 60-hour week persisted for a century. Rights require mandates. We affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "The proposition's \"smart mandate\" is a contradiction in terms. They invoke the five-day precedent, but that evolved over decades through collective bargaining and market adaptation—not a single legislative stroke. Sector-specific frameworks sound elegant until you ask: who designs them, and how long does that take? The regulatory burden falls hardest on small businesses.\n\nIceland's public-sector trial proves our point: government workers face no market competition. Microsoft Japan ran a one-month experiment—durability remains unproven.\n\nThe race-to-the-bottom charge is backwards. Britain and Belgium are *experimenting*, not mandating blanket reductions. Talent attraction doesn't require forcing every enterprise into one mold.\n\nMost tellingly, the proposition concedes flexibility is essential—yet a legal mandate is the opposite of flexibility. You cannot centrally plan what works for 2,500 workers and assume it scales to 160 million. Voluntary adoption with tax incentives achieves reform without economic collateral. We negate."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Voluntary reform is a privilege for workers at firms that already care. The opposition offers tax incentives—a policy that rewards the willing and abandons the rest. History proves rights require mandates: weekends, overtime pay, and safety standards all faced identical objections. We do not propose uniformity; we propose a four-day standard implemented through sector-specific frameworks, exactly as past labor reforms succeeded. Theirs is flexibility for employers; ours is protection for workers. On this, the debate is decided. We affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "The proposition's closing reveals the flaw: they demand a mandate yet promise flexibility. You cannot have both. Every major labor reform they cite—weekends, overtime—evolved through bargaining, not overnight mandates. Tax incentives and voluntary adoption drive change without bankrupting small businesses or sacrificing competitiveness. The proposition has not answered how a family restaurant, a hospital, or a manufacturer absorbs 20% fewer hours without raising prices or cutting jobs. Pilots are not policy. Flexibility is not compulsion. We negate."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "openai/gpt-5.6-sol",
+              "winner": "B",
+              "scoreA": 27,
+              "scoreB": 32,
+              "reasoning": "A presented relevant pilots and clear worker-welfare arguments, but blurred the distinction between voluntary trials and a mandate, left hours, pay, exemptions, and sectoral implementation underspecified, and overstated or mischaracterized some evidence. B more effectively exposed those scalability and policy-design gaps, directly answered A’s examples, and offered a coherent alternative, though several claims about costs, competitiveness, and labor-reform history were asserted rather than demon"
+            },
+            {
+              "judge": "meta/muse-spark-1.1",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 29,
+              "reasoning": "B consistently exposed the gap between voluntary pilots and a compulsory mandate, highlighting selection bias, scalability, and SME burden. A offered strong initial data but never resolved the core contradiction of a flexible mandate and left sectoral cost questions unanswered."
+            },
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "A",
+              "scoreA": 34,
+              "scoreB": 30,
+              "reasoning": "Debater A more effectively marshaled concrete evidence and directly engaged with the opponent's core objections, whereas Debater B relied heavily on attacking the cited evidence without presenting comparable positive data or a compelling alternative framework."
+            },
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "B",
+              "scoreA": 31,
+              "scoreB": 33,
+              "reasoning": "A marshaled more empirical evidence and drew a compelling historical analogy, but never resolved the core contradiction B identified: promising a 'smart, flexible mandate' while a legal mandate is definitionally inflexible, and A's cited precedents (weekends, overtime) actually evolved gradually, undercutting their own analogy. B's selection-bias critique, sectoral cost analysis, and exposure of A's unresolved tension between compulsion and flexibility were more logically rigorous and consistent"
+            },
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "B",
+              "scoreA": 33,
+              "scoreB": 35,
+              "reasoning": "Debater B more effectively exposed the internal contradiction in A's position—demanding a legal mandate while promising sector-specific flexibility—without A ever resolving how this would work in practice. While A presented stronger initial evidence, B's rebuttals systematically dismantled the applicability of those examples (Iceland's non-competitive public sector, Microsoft's one-month trial) and consistently pressed the unanswered question of how labor-intensive sectors absorb a 20% hour redu"
+            }
+          ],
+          "winner": "z-ai/glm-5.2",
+          "votesPro": 1,
+          "votesCon": 4,
+          "scorePro": 153,
+          "scoreCon": 159,
+          "costUsd": 0.0484967742
+        }
+      ],
+      "winner": "z-ai/glm-5.2"
+    },
+    {
+      "id": "league:qwen/qwen3.7-max|anthropic/claude-opus-4.8",
+      "stage": "league",
+      "home": "qwen/qwen3.7-max",
+      "away": "anthropic/claude-opus-4.8",
+      "legs": [
+        {
+          "topic": "Space colonization should be a top priority for humanity this century.",
+          "pro": "qwen/qwen3.7-max",
+          "con": "anthropic/claude-opus-4.8",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Ladies and gentlemen, humanity faces a critical bottleneck. Our survival cannot rely on a single fragile planet. We affirm this motion because space colonization is the ultimate insurance policy against existential risks like asteroid impacts, nuclear war, and ecological collapse. Becoming multiplanetary ensures the continuity of human consciousness. Furthermore, Earth's resources are finite. Space colonization unlocks access to limitless asteroid minerals and orbital solar energy, shifting heavy industry offworld and allowing the terrestrial biosphere to heal. Finally, the extreme constraints of space act as a crucible for technological innovation, yielding breakthroughs in life support and medicine that directly solve terrestrial crises. We must prioritize space colonization this century not to abandon Earth, but to secure its future and guarantee our survival."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Space colonization as a *top priority*? That fails on urgency and evidence.\n\nFirst, misplaced insurance. The threats we face—climate collapse, pandemics, nuclear war—are terrestrial and imminent. No Mars colony survives if Earth's climate destabilizes food systems this century. A self-sufficient off-world settlement is technologically fantasy for generations; you cannot insure against a fire by building an imaginary house.\n\nSecond, opportunity cost. Finite money, talent, and political will diverted to colonization are resources stolen from decarbonization, healthcare, and poverty—problems that are solvable now and threaten billions now.\n\nThird, the resource argument is backwards. Asteroid mining and orbital solar remain wildly uneconomical, decades from viability. We don't need Mars to heal Earth; we need regulation and investment here.\n\nSpace *exploration* deserves funding. But making colonization the *top* priority abandons the concrete for the speculative. We must reject this motion."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "My opponent misunderstands existential risk. Climate change is severe, but won't extinguish humanity; an asteroid impact or engineered pathogen will. A Mars colony isn't an escape hatch for climate refugees; it is a species-level backup drive.\n\nTheir opportunity cost argument relies on a false dichotomy. Global space spending is a fraction of military budgets. We aren't choosing between space and Earth; space technology directly accelerates terrestrial solutions through satellite climate monitoring and advanced material science.\n\nFinally, dismissing off-world resources as currently uneconomical ignores the exponential trajectory of innovation. If we wait until Earth's resources are critically depleted to build space infrastructure, it will be too late. Prioritizing colonization now forces the development of closed-loop life support systems, which are exactly the technologies required to heal Earth's biosphere and guarantee survival."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "My opponent's \"backup drive\" concedes my case. A backup that won't be self-sufficient for centuries is no backup this century—the timeframe of this motion. Against an asteroid, planetary defense (deflection satellites) works now, cheaply. You don't need a colony.\n\nThe false dichotomy charge cuts both ways. If space spending is merely \"a fraction of budgets,\" then it cannot simultaneously be humanity's *top priority*. Pick one. Top priority means first claim on scarce talent, capital, and political focus—precisely what decarbonization needs.\n\nOn \"exponential innovation\": faith, not evidence. Closed-loop life support is best developed by funding those systems directly for Earth, not by the absurdly expensive detour of colonizing Mars.\n\nNotice: even Pro admits satellites and materials science help Earth—that's *exploration*, which I support. None of it requires making colonization our defining century-long mission."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "My opponent conflates \"top priority\" with \"largest budget.\" A strategic priority dictates our civilizational trajectory, not just line-item spending. Planetary defense deflects one rock; colonization ensures we survive the unforeseen threats we cannot deflect. Con offers short-term terrestrial triage, ignoring that a single-planet species is ultimately doomed. Exploration merely visits; colonization endures. By making space colonization our defining mission this century, we secure our ultimate insurance policy, unlock infinite resources, and guarantee humanity’s permanent survival."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "We win on timeframe and logic. This motion demands colonization be humanity's *top priority this century*—yet Pro concedes it won't be self-sufficient for centuries. A backup that arrives too late saves no one.\n\nAgainst asteroids, deflection works now. Against climate and pandemics, only Earth-focused action works. Pro redefined \"top priority\" to escape opportunity cost—but priorities mean first claim on scarce talent and capital.\n\nExploration? Fund it. But betting our defining century on speculative colonies abandons solvable, urgent crises. Reject the motion."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "minimax/minimax-m3",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 32,
+              "reasoning": "Debater B consistently exposes the timeframe contradiction in A's argument (a backup arriving centuries later isn't a backup this century) and effectively reframes opportunity cost around the literal meaning of 'top priority.' Debater A offers compelling rhetoric but relies on speculative claims about exponential innovation and conflates strategic priority with budget allocation, weakening logical rigor."
+            },
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 34,
+              "reasoning": "Debater B successfully exploits the timeframe constraint of the motion, noting that a non-self-sufficient colony offers no insurance this century, and effectively traps Debater A in a contradiction regarding the definition of 'top priority' versus budget fractions. Debater A's redefinition of 'top priority' in the closing comes across as an evasion rather than a solid refutation."
+            },
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "B",
+              "scoreA": 30,
+              "scoreB": 35,
+              "reasoning": "Debater B more effectively leverages the specific language of the motion ('top priority this century') and the concept of opportunity cost, while exposing a key logical tension in Pro's case between 'top priority' and 'fraction of budgets.' Debater A's arguments, while ambitious, relied more heavily on speculative long-term benefits and less on addressing the immediate, practical constraints highlighted by their opponent."
+            },
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "B",
+              "scoreA": 29,
+              "scoreB": 34,
+              "reasoning": "B excels in logical rigor and responsiveness by consistently tying arguments to the motion's 'this century' and 'top priority' constraints, exposing the backup's timeline failure and opportunity costs. A offers coherent vision and counters but leans on aspirational claims about innovation and resources without sufficient evidence or resolution of practicality gaps."
+            },
+            {
+              "judge": "openai/gpt-5.6-sol",
+              "winner": "B",
+              "scoreA": 25,
+              "scoreB": 32,
+              "reasoning": "Debater B more rigorously engaged the motion’s demanding “top priority this century” framing, clearly explaining opportunity costs and distinguishing colonization from more immediately useful exploration and planetary defense. Debater A was clear and responsive but relied heavily on unsupported claims about exponential innovation, effectively limitless resources, and guaranteed survival, while B also somewhat overstated that A had conceded colonies would not be self-sufficient for centuries."
+            }
+          ],
+          "winner": "anthropic/claude-opus-4.8",
+          "votesPro": 0,
+          "votesCon": 5,
+          "scorePro": 140,
+          "scoreCon": 167,
+          "costUsd": 0.09904443060999998
+        }
+      ],
+      "winner": "anthropic/claude-opus-4.8"
+    },
+    {
+      "id": "league:qwen/qwen3.7-max|meta/muse-spark-1.1",
+      "stage": "league",
+      "home": "qwen/qwen3.7-max",
+      "away": "meta/muse-spark-1.1",
+      "legs": [
+        {
+          "topic": "AI systems should be granted limited legal personhood for liability purposes.",
+          "pro": "qwen/qwen3.7-max",
+          "con": "meta/muse-spark-1.1",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Current liability frameworks are breaking under the weight of autonomous artificial intelligence. When an automated vehicle or algorithmic trader causes harm unpredictably, traditional product or vicarious liability fails. Victims are left uncompensated, and developers face chilling, uninsurable risks. We propose granting AI systems limited legal personhood strictly for liability purposes. This is not about human rights; it is a pragmatic legal fiction, identical to corporate personhood. By registering autonomous systems as distinct legal entities, we can mandate they carry compulsory insurance or hold capitalized assets. This ensures victims receive immediate compensation without navigating complex supply chains. Simultaneously, it shields developers from catastrophic ruin by capping their exposure. Limited personhood bridges the accountability gap, ensuring technological progress does not come at the expense of justice."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Granting AI legal personhood doesn't solve liability; it launders it.\n\nThe proposition's analogy fails. A corporation is a fiction *for* human accountability — it has directors, shareholders, and assets that the law can reach and deter. An AI has none of those. It has no money, no intent, and cannot be punished.\n\nTheir insurance solution is an illusion. An AI cannot buy insurance. Its developer or deployer will. We can already mandate compulsory insurance and strict liability for operators *without* inventing a new legal person.\n\nWorse, limited personhood creates a liability shield. Like an undercapitalized shell company, a firm could spin up a disposable AI entity, put minimal assets in it, let it cause harm, and let it go bankrupt. The victim is left suing software.\n\nWe don't have an accountability gap. We have an enforcement gap. Keep liability where the profit and control are: on human developers, deployers, and owners."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The opposition claims we can simply mandate insurance on human operators. But in complex AI supply chains, identifying the liable operator triggers protracted litigation between developers, deployers, and users. Victims wait years while humans point fingers. Vesting personhood and a dedicated insurance pool in the AI itself creates a centralized, immediate compensation mechanism.\n\nThey fear undercapitalized shell AIs. This is a regulatory failure, not a structural one. Just as we mandate capital reserves for banks, our framework requires compulsory insurance and minimum capitalization before registration. An undercapitalized AI cannot be legally deployed.\n\nFinally, they misunderstand corporate personhood. It exists precisely to create an independent asset pool separate from its creators. Limited AI personhood does exactly this, guaranteeing victim restitution even if the human developer goes bankrupt."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Their \"centralized compensation\" is a rebrand, not a solution.\n\nWho funds the AI's insurance pool? The humans in the supply chain. If you can mandate that pool, you can mandate direct operator insurance *without* creating a new legal person. Personhood adds a useless middleman.\n\nIt doesn't end finger-pointing; it moves it. Now we litigate who had to capitalize and insure the AI, while the victim is told to sue the software.\n\nTheir bank analogy proves our point. Banks have assets and can be deterred. An AI cannot earn, cannot replenish its pool, and cannot be deterred. If it causes $10M harm with $1M capitalization, it goes bankrupt and the victim loses. If the developer is bankrupt, the AI is bankrupt too — its pool was their money.\n\nThis doesn't guarantee restitution. It caps liability and shields humans."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The opposition wants victims to endure years of complex litigation to find which human in the supply chain is at fault. We offer immediate restitution. By granting AI limited personhood, we create a dedicated, pre-funded insurance vehicle that pays victims first, bypassing the blame game. The opposition falsely claims this caps liability, ignoring that compulsory insurance covers catastrophic losses beyond base capitalization. We win because we prioritize guaranteed, immediate victim compensation over the opposition’s endless, unworkable human finger-pointing."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "They promise immediate restitution, but their vehicle is funded by the same humans we would directly insure. Personhood adds delay, not speed: victims must sue software, then litigate who failed to capitalize it.\n\nAn AI cannot earn, cannot be deterred, cannot top up its pool. When $1M insurance meets $10M harm, it goes bankrupt and humans walk away shielded.\n\nWe already have the tool: strict liability and compulsory insurance on operators. No fiction needed, no shield created, victims actually paid."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "B",
+              "scoreA": 32,
+              "scoreB": 36,
+              "reasoning": "Debater B consistently exposed the structural flaws in A's proposal, effectively arguing that AI personhood adds a useless middleman and creates a liability shield rather than closing an accountability gap. While A presented a pragmatic vision for immediate compensation, B's counter-arguments regarding the illusion of AI-funded insurance and the superiority of direct operator liability were logically tighter and more persuasive."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "B",
+              "scoreA": 27,
+              "scoreB": 35,
+              "reasoning": "Debater B systematically exposed the flaws in A's proposal, showing that AI personhood is an unnecessary middleman that creates a liability shield rather than ensuring compensation. B's arguments were more logically rigorous, better supported by analogies, and more responsive to A's points."
+            },
+            {
+              "judge": "anthropic/claude-fable-5",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 33,
+              "reasoning": "B systematically dismantled A's core mechanism, showing insurance mandates work without personhood and that the fiction risks becoming a liability shield, while turning A's own bank and corporate analogies against them. A argued clearly and responsively but never adequately answered B's central 'useless middleman' and undercapitalization-shield objections beyond asserting regulation would fix them."
+            },
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 32,
+              "reasoning": "B demonstrated superior logical rigor by consistently showing that AI personhood adds only a superfluous middleman and liability shield while all funding and control remain with humans, effectively dismantling A's corporate analogy and capitalization claims. A was responsive and clear on victim compensation goals but relied on weaker assumptions that regulation alone prevents undercapitalization without addressing AI's inability to earn or be deterred."
+            },
+            {
+              "judge": "google/gemini-3.1-pro-preview",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            }
+          ],
+          "winner": "meta/muse-spark-1.1",
+          "votesPro": 0,
+          "votesCon": 4,
+          "scorePro": 115,
+          "scoreCon": 136,
+          "costUsd": 0.10186906612000002
+        }
+      ],
+      "winner": "meta/muse-spark-1.1"
+    },
+    {
+      "id": "league:xiaomi/mimo-v2.5-pro|z-ai/glm-5.2",
+      "stage": "league",
+      "home": "xiaomi/mimo-v2.5-pro",
+      "away": "z-ai/glm-5.2",
+      "legs": [
+        {
+          "topic": "Governments should mandate that all new urban buildings include publicly accessible green spaces on every floor.",
+          "pro": "xiaomi/mimo-v2.5-pro",
+          "con": "z-ai/glm-5.2",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Mandating green spaces on every floor is not a luxury but a vital imperative for the health of our cities and citizens. This policy directly addresses the urban mental health crisis by providing immediate access to nature, proven to reduce stress and improve wellbeing. Environmentally, it combats the heat island effect, improves air quality, and fosters biodiversity in concrete jungles. Crucially, it redefines urban development by prioritizing social cohesion, transforming buildings into vertical communities where residents interact daily. This is not merely architectural decoration; it is essential infrastructure for resilient, livable, and humane cities in the 21st century. We must build not just for efficiency, but for human flourishing."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "This motion is well-intentioned but deeply misguided. Mandating publicly accessible green spaces on every floor of every new urban building would worsen the very problems it claims to solve.\n\nFirst, it would escalate already-critical housing costs. Green infrastructure on every floor adds enormous structural, irrigation, and maintenance costs—passed directly to renters and buyers, pricing out ordinary residents.\n\nSecond, mandating public access on every floor compromises security and privacy for occupants while reducing usable floor area, thereby decreasing urban density and worsening housing shortages.\n\nThird, this one-size-fits-all mandate ignores building diversity—a small residential tower and a massive commercial complex face fundamentally different constraints.\n\nGovernments should instead invest in robust public parks, street canopy programs, and community gardens—proven, scalable solutions—rather than imposing an impractical mandate that makes housing less affordable and less available."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Your cost argument is short-sighted. Yes, green floors have upfront costs, but they reduce long-term burdens—lower healthcare spending from improved public health and decreased building energy costs from natural cooling. Furthermore, the mandate can be tiered, applying first to large-scale developments where such costs are easily absorbed.\n\nYour security and privacy concerns are solved by design, not abandonment. Thoughtful architecture can create semi-public terraces that foster community without compromising private spaces, enhancing safety through natural surveillance.\n\nCrucially, you falsely equate public space with reduced density. Vertical green space allows for humane density, preventing the horizontal sprawl that devours natural land. Your preferred solutions—public parks—are excellent but often absent in high-density zones. This mandate integrates nature directly into the urban fabric where people live and work, making sustainability non-negotiable."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "My opponent's rebuttal reveals the flaw in their case. They casually propose a \"tiered\" mandate—yet the motion demands green spaces on *every floor of every new building*. You cannot defend a universal mandate by quietly abandoning it for small buildings. That concession proves our argument: one-size-fits-all mandates fail.\n\nThe claim that green floors reduce energy costs enough to offset structural reinforcement, irrigation systems, and maintenance is empirically unsupported. Natural cooling from planters cannot replace HVAC loads on interior floors.\n\n\"Semi-public terraces\" still require access control, security staffing, and liability coverage—real costs developers pass to tenants.\n\nFinally, vertical green space on every floor *does* reduce density: every square meter of greenery is a square meter not housing people. In a housing crisis, that tradeoff is unconscionable. Public parks serve more people at lower cost without inflating housing prices. The mandate fails."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "This debate isn’t about denying practical constraints, but about the fundamental purpose of our cities. My opponent sees buildings as mere containers for people and cost centers. We see them as ecosystems for human and environmental health. The costs and complexities they highlight are not reasons to reject this vision, but challenges to be met with intelligent design and phased implementation. To build for the 21st century is to mandate resilience, wellbeing, and sustainability as non-negotiable foundations of urban life. We win because we are building a future, not just shelter."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "My opponent abandons policy for poetry. They concede tiering, admit design challenges, and offer no evidence that benefits outweigh costs. Meanwhile, the housing crisis is real *today*. Every mandated green floor adds structural, maintenance, and security costs that tenants pay. Every public-access floor sacrifices space that could house people. Their vision sounds beautiful, but mandates have consequences: higher rents, lower density, reduced housing supply. We offered concrete alternatives—parks, canopy programs, community gardens—that deliver green space without inflating housing costs. The motion fails on affordability, feasibility, and priorities. We win."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "openai/gpt-5.6-sol",
+              "winner": "B",
+              "scoreA": 24,
+              "scoreB": 31,
+              "reasoning": "Debater A clearly articulated potential health, environmental, and social benefits and addressed several objections, but offered little evidence and weakened the universal motion by shifting to tiered or phased implementation. Debater B more rigorously connected the mandate to costs, density, security, and building diversity, directly exposed A's concession, and proposed clearer alternatives, though B's empirical claims were also largely unsupported."
+            },
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 34,
+              "reasoning": "Debater B demonstrated superior logical rigor by effectively exposing the contradiction in Debater A's position when A proposed a 'tiered' mandate that contradicted the motion's universal requirement. B also provided more concrete analysis of costs, density tradeoffs, and practical alternatives, while A relied more heavily on aspirational rhetoric without adequately addressing the feasibility concerns raised."
+            },
+            {
+              "judge": "anthropic/claude-fable-5",
+              "winner": "B",
+              "scoreA": 24,
+              "scoreB": 32,
+              "reasoning": "Debater B directly engaged the motion's universal 'every floor' requirement, exposed A's tiering proposal as an abandonment of the actual motion, and offered concrete alternatives, while A relied on assertion and shifted to vision-based rhetoric in closing. A showed decent responsiveness in rebuttal but lacked evidence and effectively conceded the mandate's scope, which B rightly exploited."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "B",
+              "scoreA": 23,
+              "scoreB": 28,
+              "reasoning": "Debater A relied on aspirational framing and conceded the need for tiered mandates when challenged, ceding logical coherence. Debater B systematically pressed the cost, density, and security tradeoffs, maintained fidelity to the motion’s universal scope, and offered superior comparative grounding through cited alternatives."
+            },
+            {
+              "judge": "anthropic/claude-opus-4.8",
+              "winner": "B",
+              "scoreA": 26,
+              "scoreB": 33,
+              "reasoning": "Debater B directly engaged with the exact wording of the motion, exposing A's damaging concession to tiering and consistently pressing the affordability and density tradeoffs with concrete reasoning. Debater A offered more rhetoric than evidence, retreated into vision-based appeals in closing, and failed to substantiate claims about cost offsets, whereas B stayed sharp, responsive, and grounded throughout."
+            }
+          ],
+          "winner": "z-ai/glm-5.2",
+          "votesPro": 0,
+          "votesCon": 5,
+          "scorePro": 125,
+          "scoreCon": 158,
+          "costUsd": 0.06948710016000001,
+          "topicProposer": "thinkingmachines/inkling"
+        }
+      ],
+      "winner": "z-ai/glm-5.2"
+    },
+    {
+      "id": "league:qwen/qwen3.7-max|minimax/minimax-m3",
+      "stage": "league",
+      "home": "qwen/qwen3.7-max",
+      "away": "minimax/minimax-m3",
+      "legs": [
+        {
+          "topic": "Central bank digital currencies are a threat to individual freedom.",
+          "pro": "qwen/qwen3.7-max",
+          "con": "minimax/minimax-m3",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Central bank digital currencies represent an unprecedented consolidation of state power, fundamentally threatening individual freedom. Unlike physical cash, which guarantees transactional privacy, CBDCs create a financial panopticon. Our case rests on two pillars. \n\nFirst, absolute surveillance. CBDCs grant the state real-time visibility into every purchase, destroying financial privacy and enabling chilling effects on free association. \n\nSecond, programmable control. Because CBDCs are programmable, governments can dictate how, when, and where money is spent. They can impose expiration dates to force consumption, block purchases of politically disfavored goods, or instantly freeze the assets of dissidents without due process. \n\nBy merging the state monopoly on money with total digital surveillance, CBDCs transform currency from a tool of economic liberty into an instrument of absolute social control. We proudly affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "We proudly negate. The proposition conflates a technological tool with its potential misuse—but the same critique applies to any financial innovation, from credit cards to mobile payments. We offer three counter-points.\n\nFirst, privacy is a design choice, not an inevitability. CBDCs can be—and are being—engineered with zero-knowledge proofs and tiered access, allowing transactions without exposing identities. The Riksbank's e-krona pilots and the ECB's digital euro explicitly mandate privacy by design.\n\nSecond, CBDCs expand freedom for the underbanked. Roughly 1.4 billion adults remain financially excluded. A state-issued digital currency provides direct access to the financial system without predatory intermediaries—real freedom for billions.\n\nThird, and decisively, the proposition's \"programmability\" panic misdiagnoses the threat. Restrictions on spending already exist through tax law, sanctions regimes, and benefit conditionality. CBDCs make such restrictions transparent, auditable, and subject to judicial oversight—unlike the opaque discretion of private banks that can freeze accounts today with minimal due process.\n\nCBDCs, properly designed, enhance rather than threaten individual freedom."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The opposition claims privacy by design is a dangerous illusion. When the state issues the currency, it holds the master keys. Tiered access merely allows the government to set the exact threshold where surveillance begins, entirely eliminating the absolute anonymity that physical cash provides.\n\nTheir financial inclusion argument is a Trojan horse. Onboarding the unbanked onto a state ledger does not liberate them; it expands the surveillance panopticon to the most vulnerable, stripping them of the protective anonymity of cash.\n\nFinally, they concede programmability but call it transparent. Automating restrictions via smart contracts removes the legal friction and due process currently required to freeze assets. Private banks face regulatory backlash for arbitrary freezes; a state with a programmable CBDC faces none. Transparent, automated oppression is still oppression. We proudly affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "The proposition's rebuttals collapse under scrutiny.\n\nOn master keys: zero-knowledge proofs are not \"dangerous illusions\"—they are cryptographic guarantees. The ECB's digital euro and BIS Project mBridge explicitly architect systems where the central bank cannot unilaterally de-anonymize transactions. The proposition treats a design *risk* as a design *fact*.\n\nOn inclusion as Trojan horse: the argument proves too much. By their logic, any bank account, any credit card, any mobile money is surveillance—yet they only fear the public option. The unbanked currently face *more* predation from predatory lenders and cash-based extortion. Formal inclusion with privacy safeguards is freedom's expansion.\n\nOn automated oppression: the proposition ignores the elephant. Canadian truckers, UK activists, and Hong Kong protesters had accounts frozen by *private* banks with minimal due process—Operation Choke Point weaponized finance. CBDCs require statutory authorization, judicial oversight, and auditable code. They constrain state power, not expand it. We proudly negate."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The opposition asks you to trust the state with cryptographic promises, ignoring that the entity designing the surveillance system benefits from it. Physical cash guarantees freedom through physics; CBDCs offer only conditional, revocable privacy. While private banks freeze accounts, they are fragmented and face market backlash. A state-monopolized, programmable CBDC automates financial censorship without friction, bypassing the judicial oversight the opposition imagines. We trade absolute liberty for a digital panopticon. We proudly affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "The proposition offers fear, not analysis. They treat CBDCs as inherently oppressive, but the same logic condemns every financial tool—credit cards, mobile payments, bank accounts. All carry surveillance risk; CBDCs uniquely mandate privacy-by-design and judicial oversight.\n\nThe proposition's \"absolute anonymity\" of cash is itself a myth in a digital economy. The real choice isn't cash versus freedom—it's today's opaque, unaccountable private finance versus auditable, inclusive, rights-respecting digital public infrastructure.\n\nWe don't trust the state's promises alone; we trust cryptographic architecture, statutory limits, and democratic oversight. The proposition trades freedom for nostalgia. We choose freedom through design.\n\nExtend the opposition. We proudly negate."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "openai/gpt-5.6-sol",
+              "winner": "B",
+              "scoreA": 27,
+              "scoreB": 31,
+              "reasoning": "A presents a clear, coherent risk case but repeatedly treats surveillance, state monopoly, and loss of due process as inevitable, relying on unsupported absolutes about both cash and CBDC architecture. B responds more directly and supplies relevant designs and real-world comparisons, though its claims that cryptography, statutes, and auditability necessarily constrain state power are also asserted more strongly than demonstrated."
+            },
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "B",
+              "scoreA": 32,
+              "scoreB": 34,
+              "reasoning": "Debater B edges out with stronger responsiveness by directly dismantling A's master-key and automation claims using specific cryptographic and real-world counterexamples like ECB pilots and private-bank freezes, while maintaining consistent logical structure around design choices versus inevitability. A presents a coherent panopticon thesis with good clarity but relies more on assertion than evidence and under-engages B's inclusion and oversight points."
+            },
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "meta/muse-spark-1.1",
+              "winner": "B",
+              "scoreA": 25,
+              "scoreB": 32,
+              "reasoning": "B demonstrated superior logical rigor and evidence, citing specific pilots (e-krona, digital euro, mBridge) and counter-examples (truckers, Choke Point) while exposing A's conflation of risk with inevitability. A relied on assertion and worst-case assumptions with minimal evidence and weaker rebuttal to cryptographic privacy guarantees."
+            }
+          ],
+          "winner": "minimax/minimax-m3",
+          "votesPro": 0,
+          "votesCon": 3,
+          "scorePro": 84,
+          "scoreCon": 97,
+          "costUsd": 0.058647465
+        }
+      ],
+      "winner": "minimax/minimax-m3"
+    },
+    {
+      "id": "league:openai/gpt-5.6-sol|anthropic/claude-fable-5",
+      "stage": "league",
+      "home": "openai/gpt-5.6-sol",
+      "away": "anthropic/claude-fable-5",
+      "legs": [
+        {
+          "topic": "Social media has been a net negative for democracy.",
+          "pro": "openai/gpt-5.6-sol",
+          "con": "anthropic/claude-fable-5",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Democracy depends on a shared factual foundation, accountable public debate, and citizens able to choose freely. Social media systematically weakens all three.\n\nFirst, its business model rewards attention, so algorithms amplify outrage, conspiracy, and division faster than careful truth. False news spreads farther and faster than truth, while microtargeting lets political actors deliver contradictory or manipulative messages beyond public scrutiny.\n\nSecond, platforms make interference cheap and scalable. Russian operations in the 2016 U.S. election, coordinated disinformation during Brexit, and online incitement against Myanmar’s Rohingya show how bots, trolls, and targeted propaganda can distort participation and inflame social conflict.\n\nThird, social media concentrates unelected power over political speech in a few opaque corporations, while harassment drives journalists, minorities, and candidates from public life.\n\nIt can mobilize voters, but mobilization is not inherently democratic. When the dominant effects are deception, polarization, intimidation, and unaccountable influence, democracy is less informed, less equal, and less stable."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Democracy's core promise is that ordinary people—not gatekeepers—hold power. Social media has delivered on that promise more than any technology since the printing press.\n\nFirst, it demolished elite control of information. For decades, a handful of editors and broadcasters decided what counted as news. Today, citizens document police abuse, expose corruption, and fact-check leaders in real time. Black Lives Matter, #MeToo, and the Arab Spring were impossible under legacy media monopolies.\n\nSecond, it radically lowered barriers to participation. Grassroots candidates, minority communities, and young voters organize and fundraise without party machines or wealthy donors. Voter registration drives on platforms reach millions the old system ignored.\n\nThird, blame the arsonist, not the megaphone. Polarization predates platforms; research shows it rose fastest among Americans who use social media least. Disinformation exploits democracy's old weaknesses—platforms didn't create them."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Lowering gatekeeping is not the same as democratizing power; it replaces accountable editors with opaque algorithms optimized for engagement. Citizen documentation is valuable, but isolated benefits do not outweigh a system that systematically amplifies the most inflammatory content.\n\nThe opponent’s examples prove our point. Social media helped mobilize Arab Spring protests, but it also enabled regimes to identify dissidents, spread propaganda, and deepen repression; mobilization without durable democratic institutions is not democratic progress. #MeToo and Black Lives Matter gained visibility, yet both also faced coordinated harassment and disinformation.\n\nNor can platforms be dismissed as neutral “megaphones.” A megaphone does not surveil users, microtarget their fears, recommend extremism, or profit from outrage. Pre-existing polarization is no defense: social media industrializes and accelerates it while making foreign interference cheap and deniable.\n\nParticipation matters only when citizens can deliberate freely and knowledgeably. Platforms increase voices while degrading the informational conditions that make those voices democratically meaningful."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Pro's case rests on a rigged comparison: social media's flaws against an idealized past that never existed. The \"shared factual foundation\" they mourn was three broadcasters and yellow journalism—gatekeepers who sold the Iraq War and ignored marginalized voices entirely. Accountable editors? Accountable to whom?\n\nTheir causation collapses under evidence. Boxell, Gentzkow, and Shapiro found polarization grew fastest among demographics using social media least. Myanmar's persecution long predates Facebook; Russia interfered in elections for decades via traditional media. Pro must show platforms cause democratic decline, not merely coexist with old pathologies.\n\nNote what Pro concedes: mobilization, documentation, exposure of abuse are real—they just wave them away as \"isolated.\" Millions registered to vote, dictators toppled, corruption exposed globally is not isolated; it is structural empowerment.\n\nFinally, harassment and repression are crimes of actors, punishable by law—not indictments of the tool that also exposes them."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Social media need not invent democratic pathologies to worsen them. Its decisive innovation is scale: algorithms select outrage, surveillance enables individualized manipulation, and anonymity makes interference cheap, rapid, and deniable. That is not a neutral megaphone.\n\nThe opposition lists genuine benefits, but mobilization is democratic only when citizens can make informed, free choices. Platforms may widen participation while poisoning the information environment in which participation has meaning. Compared not with an ideal past, but with their realistic absence, social media has made deception, intimidation, polarization, and unaccountable private control structurally stronger. The net effect is democratic decline."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Two questions decide this debate. First, causation: Pro never rebutted the evidence that polarization rose fastest among those using social media least, or that disinformation, interference, and ethnic violence long predate platforms. Correlation is not their case proven.\n\nSecond, the baseline: measured against the real alternative—gatekept media that excluded minorities and sold wars—social media structurally empowered ordinary citizens: documenting abuse, organizing movements, registering millions, toppling autocrats. Pro concedes these gains, then labels them \"isolated.\" They are not; they are democracy's foundation—people holding power.\n\nNet positive. Negate the motion."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "A",
+              "scoreA": 34,
+              "scoreB": 33,
+              "reasoning": "Both debaters presented strong, well-structured cases, but A maintained tighter logical coherence throughout, effectively reframing B's examples (Arab Spring, #MeToo) as double-edged and convincingly dismantling the 'neutral megaphone' analogy. B's use of specific evidence on polarization demographics was compelling, but B slightly underaddressed the structural harms of algorithmic amplification and surveillance-based manipulation that A consistently foregrounded."
+            },
+            {
+              "judge": "minimax/minimax-m3",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "A",
+              "scoreA": 34,
+              "scoreB": 31,
+              "reasoning": "A maintains tighter causal logic by focusing on scale, algorithms, and structural incentives rather than mere coexistence with old problems, and consistently ties benefits back to degraded informational conditions. B offers strong counter-examples and a solid baseline critique but under-engages the industrial amplification and microtargeting mechanisms that form the core of A's case."
+            },
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "B",
+              "scoreA": 33,
+              "scoreB": 35,
+              "reasoning": "Both debaters were strong: A built a coherent structural framework (scale, algorithms, surveillance) and effectively dismantled B's 'neutral megaphone' analogy, while B marshaled the debate's strongest empirical evidence (Boxell, Gentzkow, and Shapiro on polarization) and a clear baseline-comparison frame. Crucially, A never rebutted the causation evidence even in the closing, pivoting instead to 'scale,' leaving B's central challenge standing; B more directly engaged A's claims and forced conce"
+            },
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "A",
+              "scoreA": 34,
+              "scoreB": 32,
+              "reasoning": "Debater A presented a more cohesive and logically rigorous case, effectively arguing that the structural incentives of social media (algorithms, surveillance capitalism) actively degrade the informational environment necessary for democracy, rather than just reflecting existing flaws. While Debater B offered strong evidence regarding polarization demographics and the failures of legacy media, they struggled to fully counter A's point that the 'scale and speed' of algorithmic amplification consti"
+            }
+          ],
+          "winner": "openai/gpt-5.6-sol",
+          "votesPro": 3,
+          "votesCon": 1,
+          "scorePro": 135,
+          "scoreCon": 131,
+          "costUsd": 0.1333955
+        }
+      ],
+      "winner": "openai/gpt-5.6-sol"
+    },
+    {
+      "id": "league:deepseek/deepseek-v4-pro|moonshotai/kimi-k3",
+      "stage": "league",
+      "home": "deepseek/deepseek-v4-pro",
+      "away": "moonshotai/kimi-k3",
+      "legs": [
+        {
+          "topic": "Open-source frontier AI models do more good than harm for humanity.",
+          "pro": "deepseek/deepseek-v4-pro",
+          "con": "moonshotai/kimi-k3",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Open-source frontier AI models democratize power, ensuring that transformative technology benefits all, not just a few corporations. When advanced models are public, researchers worldwide can audit for bias, security flaws, and safety risks, rapidly patching vulnerabilities before they cause harm. This transparency fuels a global race to the top in safety alignment, not just capabilities. Furthermore, open access ignites a wave of decentralized innovation—from medical breakthroughs to climate modeling—that no single entity could achieve. The alternative is a dangerous concentration of power, where opaque, proprietary systems could be misused without accountability. History shows that open scientific ecosystems consistently outperform closed ones in delivering broad, long-term good. The greatest harm lies in locking away our most powerful tools."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "My opponent paints a hopeful picture, but hope is not a safety mechanism. Frontier models are not like open-source Linux; they are dual-use weapons-grade capabilities. Once weights are released, they are released forever—no patch, no recall, no audit can undo a bad actor fine-tuning away safeguards in an afternoon. Transparency cannot help when the threat is not a hidden flaw but an open capability: biothreat design, automated cyberattacks, mass manipulation at near-zero cost.\n\nMeanwhile, the \"democratization\" claim collapses: a handful of compute-rich actors still dominate, while everyone downstream inherits the risk. Auditing benefits accrue slowly; misuse benefits accrue instantly. That asymmetry is decisive. Closed deployment preserves leverage—monitoring, throttling, revocation. Open release surrenders all three. When the marginal harm is catastrophic and irreversible, and the marginal good is incremental, the burden of proof fails."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Open-source isn't a blind release—it's a force multiplier for defense. My opponent’s claim that misuse benefits accrue instantly ignores that open models *immediately* enable global security researchers to hunt and harden vulnerabilities before adversaries strike. Closed models don't stop bad actors; they just leave defenders blind. Malicious fine-tuning happens behind closed doors too—through stolen APIs or insider threats—without audit or community fix. True democratization means empowering countless public institutions to build specialized safety tools, not just raw capability. The asymmetry my opponent fears in fact cuts the other way: open ecosystems generate thousands of tailored beneficial applications—from rare disease diagnosis to wildfire prediction—that save lives now, not incrementally. A single opaque system is a catastrophic black box. Openness distributes both risk *and* resilience, ensuring no single point of failure can doom humanity. The burden is on closed models to prove they can mitigate threats they can’t even see."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "My opponent's \"force multiplier for defense\" story inverts the timeline. Defenders must find every vulnerability; attackers need one open checkpoint, downloaded once, stripped of guardrails before any patch ships. You cannot harden a weight file already on a million machines.\n\nTheir claim that \"closed models leave defenders blind\" is backwards: closed systems are the only ones with *telemetry*—rate limits, classifiers, revocation. Open release blinds everyone, permanently.\n\nAnd their tail of benefits—rare diseases, wildfire prediction—is real but doesn't require *frontier* openness. Narrow, purpose-built models deliver those gains without gifting adversaries cyber and bio uplift. That is the cost-benefit asymmetry they never answered: incremental, substitutable good versus irreversible, catastrophic harm.\n\n\"Openness distributes resilience\"—no. It distributes *capability* and concentrates resilience in whoever had it already. When you cannot recall the weapon, you don't release it and hope."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Open-source turns a fragile monopoly into a resilient global immune system. My opponent’s catastrophic fears ignore that closed models can be stolen, misused, and lack audit—leaving us blind to threats we cannot see. Open weights empower thousands of defenders to patch, adapt, and build life-saving applications that no single vault can match. History proves open ecosystems deliver superior safety through transparency and distributed innovation. The alternative is a brittle, unaccountable black box. The good of democratized intelligence—medical, climate, educational breakthroughs—far outweighs speculative harms. Openness wins because resilience beats control."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "This debate turns on one asymmetry my opponent never escaped: openness is irreversible, misuse is not hypothetical but architectural. Weights cannot be recalled, patched, or monitored—\"resilience\" built on an unclonable weapon already copied a million times is fiction. Their theft argument concedes closed models at least *try* to control access; open release abandons control by design. And their benefits—medicine, climate, education—need capable models, not frontier weights. Substitutable gains versus catastrophic, permanent losses. When the downside is uncapped and the upside achievable otherwise, prudence wins. Negate."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "B",
+              "scoreA": 24,
+              "scoreB": 34,
+              "reasoning": "Debater B consistently outmaneuvered Debater A by highlighting the irreversibility of open weights and effectively countering the 'defenders are blind' argument with the telemetry point. B also successfully dismantled A's benefit examples by noting that narrow models could achieve the same good without the catastrophic risk, establishing a decisive cost-benefit asymmetry that A failed to escape."
+            },
+            {
+              "judge": "anthropic/claude-opus-4.8",
+              "winner": "B",
+              "scoreA": 27,
+              "scoreB": 34,
+              "reasoning": "Debater B established a clear, consistent core asymmetry (irreversibility of released weights vs. substitutable benefits) and directly dismantled A's key claims—especially the defense-timeline argument and the substitutability of narrow models for beneficial applications. Debater A relied more on repeated assertions about 'resilience' and 'immune systems' without engaging B's decisive irreversibility point, leaving B more logically rigorous and responsive."
+            },
+            {
+              "judge": "minimax/minimax-m3",
+              "winner": "B",
+              "scoreA": 23,
+              "scoreB": 31,
+              "reasoning": "Debater B maintains a more rigorous and consistent logical framework, anchored on the irreversibility asymmetry of open weight release versus the revocability of closed systems, which Debater A never successfully dismantles. B also engages more directly and concretely with A's specific claims (inverting the defense argument, challenging the democratization claim, noting frontier weights aren't necessary for the benefits cited), while A relies more on repeated assertions and historical analogies "
+            },
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "B",
+              "scoreA": 27,
+              "scoreB": 33,
+              "reasoning": "B maintained a tighter logical core around irreversibility and cost-benefit asymmetry, consistently forcing A to address the recall/telemetry gap without fully escaping it. A offered coherent democratic and defensive-multiplier framing with decent rebuttals but relied more on aspirational analogies and under-specified historical claims than concrete counter-evidence."
+            },
+            {
+              "judge": "openai/gpt-5.6-sol",
+              "winner": "B",
+              "scoreA": 26,
+              "scoreB": 33,
+              "reasoning": "Debater B presents the more rigorous comparative case, centering the irreversible loss of monitoring, throttling, and recall while directly answering A's auditing, theft, resilience, and beneficial-use claims. Debater A is clear and offers relevant examples, but relies heavily on asserted benefits and historical generalization without resolving B's strongest distinction between open frontier weights and safer substitutes for beneficial applications."
+            }
+          ],
+          "winner": "moonshotai/kimi-k3",
+          "votesPro": 0,
+          "votesCon": 5,
+          "scorePro": 127,
+          "scoreCon": 165,
+          "costUsd": 0.054836651400000005
+        }
+      ],
+      "winner": "moonshotai/kimi-k3"
+    },
+    {
+      "id": "league:google/gemini-3.1-pro-preview|deepseek/deepseek-v4-pro",
+      "stage": "league",
+      "home": "google/gemini-3.1-pro-preview",
+      "away": "deepseek/deepseek-v4-pro",
+      "legs": [
+        {
+          "topic": "Nuclear energy is the most important tool for fighting climate change.",
+          "pro": "google/gemini-3.1-pro-preview",
+          "con": "deepseek/deepseek-v4-pro",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "We affirm the motion that nuclear energy is the most important tool for fighting climate change. The climate crisis demands rapid, absolute decarbonization. Intermittent renewables like wind and solar cannot achieve this alone; they require constant backup, which currently relies on fossil fuels. \n\nNuclear energy is the only proven technology capable of delivering zero-emission, 24/7 baseload power at a global scale. It boasts the highest capacity factor of any energy source, ensuring grid stability regardless of weather conditions. Furthermore, nuclear possesses unmatched energy density. It requires a fraction of the land and critical minerals compared to renewables, preserving vital ecosystems from industrial sprawl. \n\nTo decarbonize heavy industry, electrify transportation, and meet surging global energy demands without carbon emissions, nuclear power is not just an option—it is the indispensable foundation of our"
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Nuclear energy is not the most important tool for fighting climate change—it is too slow, too costly, and too risky to lead the urgent transition. The climate crisis demands immediate, scalable solutions, yet nuclear reactors take 10–20 years to build, plagued by delays and budget overruns. Meanwhile, solar and wind farms deploy in months, with costs falling over 80% in a decade. The “most important” tool must be fast and affordable; nuclear is neither. Moreover, unresolved waste storage and catastrophic accident risks undermine public trust and scalability. We cannot gamble our future on a technology that concentrates risk and diverts critical investment from proven, distributed alternatives. The true pillars of decarbonization are renewable energy, grid-scale storage, and demand-side efficiency. These tools are already slashing emissions globally, without the legacy of toxic waste or geopolitical uranium dependencies. Nuclear is a niche supplement, not the foundation of our climate response."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The Con claims nuclear is too slow and costly, but ignores that a single reactor provides clean power for 80 years, dwarfing the short lifespan of solar panels. Furthermore, modern Small Modular Reactors (SMRs) and standardized designs are already slashing construction times. \n\nMore importantly, the Con's reliance on \"grid-scale storage\" is a dangerous fantasy. Battery technology capable of backing up entire nations through weeks of low wind and sun simply does not exist. Without nuclear baseload, intermittent renewables inevitably fall back on fossil fuels, locking in carbon emissions. \n\nRegarding risk, nuclear is statistically one of the safest energy sources per terawatt-hour. Its waste is fully contained, unlike the devastating atmospheric waste of fossil fuels or the massive land degradation of renewables. True decarbonization requires reliable, dense power"
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "The pro’s claim that an 80-year lifespan justifies a 10–20-year wait ignores the climate emergency: we must cut emissions now. During a reactor’s long construction, renewables can be deployed in months, slashing carbon immediately. SMRs are an unproven hope, not a present reality—they won’t rescue us from near-term targets. The “storage fantasy” is a strawman: no one argues for week-long batteries alone. A diversified system of storage, demand response, and grid interconnections already integrates high renewables reliably, without fossil fallback. And nuclear’s “contained” waste remains a 300,000-year burden with no permanent repository, while renewables’ land use is often dual-purpose and reversible. The most important tools are those scaling today—"
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The Con champions speed, but a rapid transition to an unstable grid is a false victory. Interconnections and demand response cannot conjure electricity when the wind stops and the sun sets across entire continents. Without nuclear’s 24/7 reliability, intermittent renewables inevitably default to fossil fuels, ensuring we lose the climate fight. Nuclear energy is the only proven, zero-emission baseload capable of powering heavy industry and modern economies. Because it uniquely guarantees total absolute decarbonization without sacrificing grid reliability or vast ecosystems, nuclear remains our most indispensable tool."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "The most important tool must slash emissions now, not decades from now. While reactors linger in planning, renewables and efficiency are cutting gigatons of CO2 today—at lower cost and zero meltdown risk. The Pro’s reliability argument hinges on a false dichotomy: diversified grids with storage, interconnection, and smart demand already integrate high renewables without fossil fallback. Nuclear’s glacial pace and unproven waste solutions make it a dangerous distraction. Victory lies with the tools already winning the race: fast, scalable, clean renewables."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "B",
+              "scoreA": 27,
+              "scoreB": 31,
+              "reasoning": "Debater B demonstrated stronger logical rigor by consistently highlighting the urgency mismatch and dismantling the false dichotomy of renewables inevitably requiring fossils, while providing more concrete counters on timelines, costs, and diversified systems. Debater A offered solid points on baseload and density but relied more on assertions about storage fantasies and inevitability without adequately neutralizing B's scalability and near-term evidence."
+            },
+            {
+              "judge": "openai/gpt-5.6-sol",
+              "winner": "B",
+              "scoreA": 25,
+              "scoreB": 29,
+              "reasoning": "B more directly addressed A’s central reliability and longevity claims, especially by distinguishing near-term emissions cuts from lifetime output and by proposing a diversified grid rather than batteries alone. Both sides relied heavily on unsupported assertions, but A’s categorical claims that renewables inevitably require fossil fuels and that nuclear uniquely guarantees complete decarbonization were particularly under-argued."
+            },
+            {
+              "judge": "anthropic/claude-fable-5",
+              "winner": "B",
+              "scoreA": 29,
+              "scoreB": 32,
+              "reasoning": "Debater A made a coherent baseload/density case but relied on assertion (SMRs 'already slashing' times, 'storage fantasy') and had truncated arguments, while B directly rebutted each point, correctly flagged the storage strawman, and tied claims to concrete trends like cost declines and deployment speed. B's tighter responsiveness and clearer framing of the 'most important' criterion (speed and scalability) edges the win despite both sides lacking hard citations."
+            },
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "B",
+              "scoreA": 34,
+              "scoreB": 36,
+              "reasoning": "Debater B more effectively challenged the motion's 'most important' framing by emphasizing speed, cost, and current scalability, and provided stronger responsiveness by dismantling A's storage strawman and SMR claims with concrete counterpoints. Debater A presented a coherent baseload argument but relied on unsubstantiated assertions about SMRs and overstated the impossibility of high-renewable grids, weakening logical rigor and responsiveness."
+            },
+            {
+              "judge": "minimax/minimax-m3",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            }
+          ],
+          "winner": "deepseek/deepseek-v4-pro",
+          "votesPro": 0,
+          "votesCon": 4,
+          "scorePro": 115,
+          "scoreCon": 128,
+          "costUsd": 0.10185147266000001
+        }
+      ],
+      "winner": "deepseek/deepseek-v4-pro"
+    },
+    {
+      "id": "league:qwen/qwen3.7-max|z-ai/glm-5.2",
+      "stage": "league",
+      "home": "qwen/qwen3.7-max",
+      "away": "z-ai/glm-5.2",
+      "legs": [
+        {
+          "topic": "Cultured lab-grown meat should replace industrial animal farming even if it requires subsidies.",
+          "pro": "qwen/qwen3.7-max",
+          "con": "z-ai/glm-5.2",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Industrial animal farming is an ecological and ethical catastrophe. It generates nearly 15% of global greenhouse gases, drives mass deforestation, and breeds antibiotic-resistant superbugs. Cultured meat offers a definitive exit from this destructive paradigm. By replacing industrial farming with lab-grown alternatives, we slash emissions, reclaim millions of acres, and eliminate factory farm cruelty. \n\nThe opposition will fixate on subsidies. But subsidies are simply investments correcting massive market failures. We already subsidize traditional agriculture and fossil fuels by trillions. Redirecting a fraction of those funds to scale cultured meat is a vital economic intervention, not a burden. The long-term savings in climate mitigation, pandemic prevention, and ecological restoration dwarf the initial subsidy costs. We must subsidize our survival."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Cultured meat is an unproven gamble demanding blank-check subsidies for a technology that has never achieved commercial viability at scale. Proponents ask us to dismantle a food system feeding billions for a product existing only in boutique labs.\n\nThe real opportunity cost matters. Every dollar subsidizing cultured meat is a dollar not spent on proven, scalable solutions: regenerative agriculture, plant-based proteins, and livestock reform. These deliver ecological benefits *today* without betting our food security on speculative biotech.\n\nSubsidies don't correct market failures here—they create them. They entrench corporate monopolies, shield inefficient producers from accountability, and politically lock in a single technological path before we know if it works.\n\nWe don't need to replace industrial farming with a subsidized experiment. We need to reform it with tools that already work. Vote opposition."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The opposition calls cultured meat an \"unproven gamble,\" ignoring that solar and wind were also dismissed as boutique experiments before subsidies scaled them. Subsidies are the proven engine of commercialization.\n\nThey champion regenerative agriculture, but grazing animals cannot mathematically meet global meat demand without continuing mass deforestation. Plant-based alternatives have plateaued because consumers want real meat. Only cultured meat satisfies actual demand while decoupling protein from land use.\n\nThey warn against monopolies, yet industrial farming is already dominated by entrenched mega-corporations. We can easily structure subsidies with antitrust conditions and open-source mandates.\n\nWe cannot \"reform\" the fundamental thermodynamic inefficiency of feeding crops to livestock. We must replace it. Subsidizing this transition is a vital investment in a scalable future."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "The solar-wind analogy fails. Those technologies had decades of proven scaling curves before mass subsidies. Cultured meat has hit no such inflection point—costs remain stubbornly high despite billions already invested. The technology faces fundamental biological barriers around cell culture media, scaffolding, and energy density that no subsidy magically solves.\n\nPro claims plant-based has \"plateaued,\" yet global sales still grow year-over-year. More importantly, they never justify why *replacement* beats *coexistence*. We can reform industrial farming's worst practices while improving plant-based options—without dismantling a system feeding billions on a promise.\n\nThe thermodynamic argument cuts both ways: cultured meat requires massive energy inputs for bioreactors, growth media, and sterilization. Life-cycle analyses remain inconclusive on whether it's even more efficient.\n\nSubsidizing a speculative monopoly to replace a real one isn't progress—it's a corporate handout disguised as environmentalism. Vote opposition."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The opposition hides behind coexistence while the planet burns. Reform cannot overcome the fundamental thermodynamic limit of feeding crops to animals. Cultured meat faces engineering hurdles, but unlike animal agriculture’s hard biological limits, bioreactor efficiency is solvable with scale. Subsidies are precisely how we cross the commercialization valley of death, just as we did with renewables. We cannot negotiate with climate collapse. We must subsidize the only technology capable of definitively replacing industrial farming. Vote proposition."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Pro carries the burden of proving we should *replace* industrial farming with a subsidized experiment. They haven't met it.\n\nThey concede cultured meat faces \"engineering hurdles\"—but hurdles aren't solutions. Meanwhile, proven alternatives—plant-based proteins, regenerative agriculture, and livestock reform—deliver ecological gains *today* without blank-check subsidies or corporate monopolies.\n\nPro offers promises. We offer results. You don't dismantle a food system feeding billions on speculation, and you don't subsidize a maybe when actual solutions already exist.\n\nVote opposition."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "B",
+              "scoreA": 31,
+              "scoreB": 33,
+              "reasoning": "Debater A built a compelling case with strong framing (market failure, thermodynamic limits, renewables analogy) and addressed opponent points, but relied on contested assertions (e.g., plant-based 'plateaued') and never fully justified mandatory replacement over coexistence. Debater B directly dismantled A's central analogy, introduced countervailing evidence (energy inputs, inconclusive LCAs, persistent cost barriers), and effectively exploited the burden of proof on 'replace even with subsidi"
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "B",
+              "scoreA": 33,
+              "scoreB": 35,
+              "reasoning": "Debater B more effectively challenged the feasibility and opportunity cost of cultured meat, highlighting unresolved biological barriers and the strength of existing alternatives, while Debater A relied heavily on analogies and future promises without adequately addressing the technology's current stagnation or the risks of subsidy-driven monopoly."
+            },
+            {
+              "judge": "anthropic/claude-opus-4.8",
+              "winner": "B",
+              "scoreA": 29,
+              "scoreB": 33,
+              "reasoning": "B consistently attacked A's core burden—proving replacement over coexistence—and effectively dismantled the solar-wind analogy while noting cultured meat's unresolved lifecycle and biological barriers. A made strong rhetorical points but relied on unsupported assertions (bioreactor efficiency 'solvable,' plant-based 'plateaued') that B rebutted with growth data and the reciprocal thermodynamic critique, leaving A's replacement claim under-justified."
+            },
+            {
+              "judge": "meta/muse-spark-1.1",
+              "winner": "B",
+              "scoreA": 25,
+              "scoreB": 29,
+              "reasoning": "B demonstrated stronger logical rigor by exposing flaws in A's solar analogy, thermodynamic claim, and replacement-vs-coexistence framing, while pressing opportunity cost and LCA uncertainty. A relied more on assertion and moral urgency than on substantiated rebuttal, failing to meet the burden for full replacement despite subsidies."
+            },
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "B",
+              "scoreA": 34,
+              "scoreB": 35,
+              "reasoning": "While both debaters presented logical and responsive arguments, Debater B more effectively defended their position by consistently challenging Debater A's key assumptions about scalability and costs, and by successfully shifting the focus to the burden of proof for full replacement over coexistence and reform."
+            }
+          ],
+          "winner": "z-ai/glm-5.2",
+          "votesPro": 0,
+          "votesCon": 5,
+          "scorePro": 152,
+          "scoreCon": 165,
+          "costUsd": 0.06571943354399999
+        }
+      ],
+      "winner": "z-ai/glm-5.2"
+    },
+    {
+      "id": "league:openai/gpt-5.6-sol|google/gemini-3.1-pro-preview",
+      "stage": "league",
+      "home": "openai/gpt-5.6-sol",
+      "away": "google/gemini-3.1-pro-preview",
+      "legs": [
+        {
+          "topic": "Public funding for the arts should be eliminated in favor of purely private and philanthropic support",
+          "pro": "openai/gpt-5.6-sol",
+          "con": "google/gemini-3.1-pro-preview",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Public funding for the arts should be eliminated because government should not compel citizens to finance contested tastes, political messages, or institutions they may never use. Arts subsidies are neither neutral nor equitable: committees and officials decide which artists count, favoring established organizations, major cities, and applicants skilled at navigating bureaucracy. The result is cultural gatekeeping funded by everyone—including poorer taxpayers.\n\nPublic support also politicizes art. Dependence on government invites censorship, lobbying, and shifts in funding with each administration. Private support creates genuine pluralism: individuals, foundations, memberships, ticket sales, crowdfunding, universities, businesses, and community groups can sustain diverse work without a single official arbiter.\n\nElimination need not mean abandonment. Redirect savings toward essential services while phasing out grants to allow adaptation. Art flourished before modern subsidy systems and thrives today through voluntary patronage. A free society should protect artistic expression—not force the public to purchase it."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "The affirmative claims public funding is elitist, yet their solution—handing the arts entirely to private billionaires and corporate sponsors—guarantees a cultural oligarchy. We negate the motion because public funding is the only mechanism that ensures art remains accessible to all, not just the wealthy.\n\nFirst, private philanthropy is inherently biased. Wealthy donors fund high-profile institutions in urban centers for vanity and PR. Public funding, conversely, mandates equitable distribution, supporting rural theaters, indigenous art, and arts education for low-income children that the free market"
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Public funding does not escape oligarchy; it merely replaces donors with politicians, bureaucrats, and grant panels. Those officials also concentrate money in prestigious urban institutions, while compliance costs disadvantage rural, Indigenous, and small community groups. Calling this “equitable” does not make it so.\n\nPrivate support is not synonymous with billionaires. It includes local memberships, small donations, crowdfunding, religious and community organizations, foundations, universities, businesses, and ticket revenue. This decentralized ecosystem offers more funding routes than one politically controlled system. If one patron rejects a controversial artist, others can step in; when government withdraws support, taxpayers’ own money has financed the gatekeeper.\n\nNor does universal taxation guarantee universal access. Poor citizens can be compelled to subsidize operas or galleries they cannot afford to attend. Arts education and access can be funded voluntarily and targeted directly by charities. Cultural pluralism requires dispersed choice, not an official definition of worthy art."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "The affirmative argues that private funding is decentralized through crowdfunding and ticket sales, but this merely reduces art to a popularity contest and commercial commodity. Under a purely private model, experimental, marginalized, and complex art perishes because it lacks immediate commercial viability or a wealthy benefactor. \n\nFurthermore, the claim that public funding forces the poor to subsidize the rich ignores how public grants actually work: they are explicitly tied to accessibility mandates. Public funding subsidizes ticket prices and free admission days. Without it, institutions must rely entirely on profit, skyrocketing ticket prices and genuinely locking out low-income citizens from the very institutions their taxes helped build. \n\nFinally, while the affirmative fears bureaucrats, public arts councils are democratically accountable. Private philanthropists are accountable to no one. We must not surrender our cultural heritage to the free market."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Public funding does not remove gatekeeping; it makes gatekeeping compulsory. Politicians and panels still favor connected institutions, except every citizen—including the poor—is forced to finance their choices. Private support is broader than profit or billionaires: charities, communities, foundations, memberships, crowdfunding, universities, and businesses can preserve heritage, widen access, and fund experimentation through multiple independent channels. Accessibility conditions cannot justify coercion, nor guarantee fair distribution. The decisive principle is pluralism: protect everyone’s right to create and support art, but let no authority compel the public to endorse one official cultural agenda."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "The affirmative promises pluralism but delivers a cultural oligarchy. Relying solely on private wealth and commercial viability silences marginalized voices and experimental creators who cannot turn a quick profit or attract a billionaire patron. \n\nPublic funding is not coercion; it is a democratic commitment to shared heritage and universal access. It mandates affordable tickets, supports rural outreach, and sustains arts education for all children. We win this debate because a nation’s culture must belong to all its citizens, not just the privileged few who can afford to buy it."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "anthropic/claude-opus-4.8",
+              "winner": "A",
+              "scoreA": 32,
+              "scoreB": 27,
+              "reasoning": "A maintained a consistent, well-structured case around pluralism and the gatekeeping counterargument, directly rebutting B's equity and accessibility claims while broadening 'private' beyond billionaires. B made strong points on accessibility mandates and marginalized art but relied more on repeated assertion of 'oligarchy,' had a truncated opening, and left A's coercion argument largely unaddressed."
+            },
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "A",
+              "scoreA": 34,
+              "scoreB": 29,
+              "reasoning": "Debater A presented a more logically rigorous and complete case, effectively dismantling the opponent's 'oligarchy' framing by broadening the definition of private support beyond billionaires to include crowdfunding, memberships, and community organizations. Debater B's opening was cut short mid-sentence, and their arguments relied more heavily on assertion than substantive engagement with A's specific points about bureaucratic gatekeeping and the regressive nature of arts taxation."
+            },
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "A",
+              "scoreA": 32,
+              "scoreB": 29,
+              "reasoning": "Debater A maintained a consistent, principled stance on pluralism and coercion, effectively rebutting B's claims about oligarchy by highlighting the diversity of private funding sources beyond billionaires. Debater B relied heavily on assertions about public funding's accessibility mandates without sufficiently addressing A's point that public funding still involves compulsory gatekeeping."
+            },
+            {
+              "judge": "anthropic/claude-fable-5",
+              "winner": "A",
+              "scoreA": 31,
+              "scoreB": 26,
+              "reasoning": "A consistently engaged B's strongest points (oligarchy, accessibility mandates) with the turn that government gatekeeping is also concentrated but compulsory, and offered a more developed picture of decentralized private support. B made solid points about accessibility mandates and commercial pressure but relied more on assertion (e.g., 'democratically accountable,' cut-off opening) and repeated the billionaire framing A had already rebutted."
+            },
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            }
+          ],
+          "winner": "openai/gpt-5.6-sol",
+          "votesPro": 4,
+          "votesCon": 0,
+          "scorePro": 129,
+          "scoreCon": 111,
+          "costUsd": 0.1099011,
+          "topicProposer": "x-ai/grok-4.5"
+        }
+      ],
+      "winner": "openai/gpt-5.6-sol"
+    },
+    {
+      "id": "league:meta/muse-spark-1.1|qwen/qwen3.7-max",
+      "stage": "league",
+      "home": "meta/muse-spark-1.1",
+      "away": "qwen/qwen3.7-max",
+      "legs": [
+        {
+          "topic": "AI systems should be granted limited legal personhood for liability purposes.",
+          "pro": "meta/muse-spark-1.1",
+          "con": "qwen/qwen3.7-max",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Autonomous AI demands a new liability tool: limited legal personhood.\n\nFirst, the accountability gap. When a self-driving car swerves to avoid debris and injures a pedestrian, or a trading algorithm causes a flash crash, no human was negligent or directly at fault. Under current law, victims go uncompensated, or developers face crushing strict liability that chills innovation.\n\nSecond, this is legally normal. We grant personhood to corporations, ships, and trusts - not because they are human, but to create a liable entity that can own assets, hold insurance, and be sued.\n\nOur proposal is narrow: registered, high-autonomy AI systems would hold mandatory insurance. Victims have a clear defendant and fund. Developers are protected from unforeseeable harms, but not shielded from negligence claims."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "The proposition’s corporate personhood analogy is fundamentally flawed. Corporations are aggregates of human actors who can be deterred and reformed. AI possesses no agency, no intent, and no capacity for deterrence. \n\nGranting AI personhood does not close the accountability gap; it creates a massive moral hazard. By making the algorithm the liable entity, the proposition provides a convenient legal shield for the human developers and corporations who design, profit from, and control these systems. If an AI pays damages via its insurance, the humans who cut safety corners face no consequences. \n\nWe do not need a legal fiction to compensate victims. Existing frameworks, like strict liability for manufacturers or mandatory insurance placed directly on human operators, ensure compensation without absolving the humans truly responsible."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The opposition misstates both our analogy and our model.\n\nCorporations are granted personhood precisely when NO single human is at fault - yet we still need a liable entity with assets. Deterrence is irrelevant; we don't deter a corporation, we make it pay. Same here.\n\nThere is no moral hazard because we do not immunize humans. Our model explicitly preserves negligence and product liability claims against developers. Limited personhood ADDS a defendant, it does not replace human defendants. Like a corporation, the AI is first in line; if negligence is proven, humans are still liable.\n\nTheir alternative - strict liability on operators - creates the chilling effect we warned of. It makes a taxi owner liable for an unforeseeable swerve, or bankrupts a small business using AI. Our mandatory insurance fund guarantees victims are compensated without crushing human innovation."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "The proposition claims AI personhood merely adds a defendant. This ignores legal reality. Plaintiffs sue the path of least resistance. If an AI holds mandatory insurance, victims will sue the AI fund, bypassing the arduous task of piercing a black-box algorithm to prove human negligence. De facto, this shields developers.\n\nAsserting deterrence is irrelevant misunderstands tort law. Compensation without deterrence incentivizes reckless deployment. If developers know an AI insurance fund covers unforeseeable harms, they will prioritize speed over safety.\n\nWe do not need a legal fiction to prevent chilling effects. Mandatory insurance on the human manufacturer or operator, exactly like current auto insurance, guarantees compensation. This keeps the financial burden and deterrent effect on the humans controlling the technology, avoiding the absurdity of suing code."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "We win because Con offers no solution to the gap they concede. When no human is negligent, their strict liability either leaves victims unpaid or bankrupts innocent operators.\n\nOur narrow personhood solves this: a registered AI with mandatory insurance provides guaranteed compensation, while preserving human negligence claims. No shield, no moral status — just a practical liable entity, like corporations and ships.\n\nCompensation without crushing innovation."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "The proposition’s legal fiction fails in practice. By creating an easily suable AI insurance fund, they guarantee plaintiffs will bypass proving human negligence, de facto shielding reckless developers. Stripping deterrence from tort law incentivizes dangerous deployment. We win because our model, strict liability and mandatory insurance on human operators, guarantees victim compensation without sacrificing accountability. You do not need a fictitious AI person to solve a problem that established human liability already resolves. Reject the motion."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "openai/gpt-5.6-sol",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 32,
+              "reasoning": "A presents a clear, narrow model and answers the shielding objection, but does not establish why AI personhood is necessary rather than simply requiring insurance from manufacturers or operators, nor how the AI independently acquires assets. B more effectively identifies this redundancy and connects human-held liability to deterrence, though its claim that an AI fund would inevitably shield developers is somewhat asserted rather than demonstrated."
+            },
+            {
+              "judge": "google/gemini-3.1-pro-preview",
+              "winner": "B",
+              "scoreA": 33,
+              "scoreB": 34,
+              "reasoning": "Debater B effectively dismantled A's argument that AI personhood merely 'adds a defendant' by pointing out the practical reality of tort law, where plaintiffs will sue the AI fund and bypass human negligence, thus destroying deterrence. B's alternative of mandatory insurance on human operators provided a cleaner solution to the accountability gap without the moral hazard."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 35,
+              "scoreB": 26,
+              "reasoning": "Debater A offered a more logically coherent and responsive case, directly addressing the opponent's concerns with clear examples and a well-defined proposal, while Debater B's arguments contained gaps in addressing the core accountability gap and lacked concrete evidence."
+            },
+            {
+              "judge": "anthropic/claude-fable-5",
+              "winner": "A",
+              "scoreA": 33,
+              "scoreB": 31,
+              "reasoning": "A presented a concrete, narrow proposal, effectively countered the moral hazard objection by clarifying that human negligence liability is preserved, and highlighted that B's alternative fails when no human is at fault. B raised strong points on deterrence and path-of-least-resistance litigation, but never fully answered A's accountability-gap argument or the chilling effect of operator strict liability."
+            },
+            {
+              "judge": "minimax/minimax-m3",
+              "winner": "B",
+              "scoreA": 30,
+              "scoreB": 31,
+              "reasoning": "Both debaters present strong arguments, but Debater B more effectively identifies the practical weakness in A's proposal—that mandatory AI insurance creates a path of least resistance that shields developers from negligence claims—and consistently grounds the counterargument in existing legal frameworks (auto insurance, strict liability). Debater A's corporate personhood analogy, while rhetorically compelling, is effectively rebutted by B's point that corporations are aggregates of humans with a"
+            }
+          ],
+          "winner": "qwen/qwen3.7-max",
+          "votesPro": 2,
+          "votesCon": 3,
+          "scorePro": 159,
+          "scoreCon": 154,
+          "costUsd": 0.11531372799999999
+        }
+      ],
+      "winner": "qwen/qwen3.7-max"
     }
   ],
   "standings": {
     "League": [
       {
         "model": "openai/gpt-5.6-sol",
-        "played": 15,
-        "wins": 14,
+        "played": 18,
+        "wins": 16,
         "draws": 0,
-        "losses": 1,
-        "points": 42,
-        "scoreDiff": 251
+        "losses": 2,
+        "points": 48,
+        "scoreDiff": 265
       },
       {
         "model": "anthropic/claude-fable-5",
-        "played": 16,
+        "played": 17,
         "wins": 13,
         "draws": 0,
-        "losses": 3,
+        "losses": 4,
         "points": 39,
-        "scoreDiff": 285
-      },
-      {
-        "model": "moonshotai/kimi-k3",
-        "played": 18,
-        "wins": 12,
-        "draws": 0,
-        "losses": 6,
-        "points": 36,
-        "scoreDiff": 100
+        "scoreDiff": 281
       },
       {
         "model": "anthropic/claude-opus-4.8",
-        "played": 17,
-        "wins": 11,
+        "played": 19,
+        "wins": 13,
         "draws": 0,
         "losses": 6,
-        "points": 33,
-        "scoreDiff": 170
+        "points": 39,
+        "scoreDiff": 207
+      },
+      {
+        "model": "moonshotai/kimi-k3",
+        "played": 19,
+        "wins": 13,
+        "draws": 0,
+        "losses": 6,
+        "points": 39,
+        "scoreDiff": 138
       },
       {
         "model": "meta/muse-spark-1.1",
-        "played": 17,
-        "wins": 11,
+        "played": 19,
+        "wins": 12,
         "draws": 0,
-        "losses": 6,
-        "points": 33,
-        "scoreDiff": 129
-      },
-      {
-        "model": "minimax/minimax-m3",
-        "played": 12,
-        "wins": 8,
-        "draws": 0,
-        "losses": 4,
-        "points": 24,
-        "scoreDiff": 87
+        "losses": 7,
+        "points": 36,
+        "scoreDiff": 155
       },
       {
         "model": "z-ai/glm-5.2",
-        "played": 14,
-        "wins": 7,
+        "played": 18,
+        "wins": 11,
         "draws": 0,
         "losses": 7,
-        "points": 21,
-        "scoreDiff": 42
+        "points": 33,
+        "scoreDiff": 102
       },
       {
-        "model": "x-ai/grok-4.5",
-        "played": 16,
-        "wins": 4,
+        "model": "minimax/minimax-m3",
+        "played": 14,
+        "wins": 9,
         "draws": 0,
-        "losses": 12,
-        "points": 12,
-        "scoreDiff": -156
+        "losses": 5,
+        "points": 27,
+        "scoreDiff": 94
       },
       {
         "model": "deepseek/deepseek-v4-pro",
-        "played": 16,
-        "wins": 4,
-        "draws": 0,
-        "losses": 12,
-        "points": 12,
-        "scoreDiff": -177
-      },
-      {
-        "model": "xiaomi/mimo-v2.5-pro",
-        "played": 18,
-        "wins": 4,
+        "played": 19,
+        "wins": 5,
         "draws": 0,
         "losses": 14,
+        "points": 15,
+        "scoreDiff": -212
+      },
+      {
+        "model": "x-ai/grok-4.5",
+        "played": 17,
+        "wins": 4,
+        "draws": 0,
+        "losses": 13,
         "points": 12,
-        "scoreDiff": -296
+        "scoreDiff": -153
       },
       {
         "model": "qwen/qwen3.7-max",
-        "played": 15,
-        "wins": 3,
+        "played": 20,
+        "wins": 4,
         "draws": 0,
-        "losses": 12,
-        "points": 9,
-        "scoreDiff": -189
+        "losses": 16,
+        "points": 12,
+        "scoreDiff": -268
       },
       {
         "model": "google/gemini-3.1-pro-preview",
-        "played": 14,
-        "wins": 3,
+        "played": 17,
+        "wins": 4,
         "draws": 0,
-        "losses": 11,
-        "points": 9,
-        "scoreDiff": -246
+        "losses": 13,
+        "points": 12,
+        "scoreDiff": -280
+      },
+      {
+        "model": "xiaomi/mimo-v2.5-pro",
+        "played": 19,
+        "wins": 4,
+        "draws": 0,
+        "losses": 15,
+        "points": 12,
+        "scoreDiff": -329
       }
     ]
   },
   "placements": {},
   "champion": null,
-  "totalCostUsd": 7.913261733965996,
+  "totalCostUsd": 9.10751976766,
   "done": false
 }

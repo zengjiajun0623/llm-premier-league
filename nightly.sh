@@ -27,6 +27,10 @@ capped() {
   SANDBOX=podman capped 7200 npx tsx src/verified/run.ts --id "verified-nightly-$(date +%Y%m%d)" --rounds 1
   # League 3 (persuasion): capped debate chunk (~45 min wall clock, resume-safe).
   capped 2700 npm start --silent -- run --mode league
+  # League 2 (forecasting): pose one fresh templated question set, then settle any
+  # matured questions across all sets (background league; board fills over days).
+  capped 900 npx tsx src/forecast/run.ts pose --id "forecast-$(date +%Y%m%d)" >> "$LOG" 2>&1 || true
+  npx tsx src/forecast/run.ts resolve >> "$LOG" 2>&1 || true
   # Refit happens at read time; export + deploy the public site.
   ./publish.sh
   echo "=== nightly done $(date) ==="
