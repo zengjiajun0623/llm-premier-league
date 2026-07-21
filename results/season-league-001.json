@@ -8327,6 +8327,364 @@
         }
       ],
       "winner": "anthropic/claude-opus-4.8"
+    },
+    {
+      "id": "league:moonshotai/kimi-k3|xiaomi/mimo-v2.5-pro",
+      "stage": "league",
+      "home": "moonshotai/kimi-k3",
+      "away": "xiaomi/mimo-v2.5-pro",
+      "legs": [
+        {
+          "topic": "Professional sports leagues should allow performance-enhancing drugs under medical supervision.",
+          "pro": "moonshotai/kimi-k3",
+          "con": "xiaomi/mimo-v2.5-pro",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Honored judges, opponents. The prohibition on performance-enhancing drugs has failed on every front: it is unenforceable, it drives doping underground, and it punishes the honest while rewarding the best cheaters. We propose replacing hypocrisy with regulation.\n\nThree arguments. First, safety: athletes already dope—clandestinely, without doctors, with dangerous dosages. Medical supervision transforms a black market into a controlled practice, protecting the very athletes prohibition claims to defend. Second, fairness: today's playing field is tilted toward those with the best masked chemists, not the best talent. Transparent, monitored access levels it. Third, autonomy and entertainment: consenting adults should control their own bodies, and fans deserve the full spectacle of human potential—higher, faster, stronger, honestly achieved.\n\nThe status quo delivers neither clean sport nor safe athletes. Regulation delivers both. We proudly affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Honorable judges, we firmly negate. The proposition's solution is not regulation—it is capitulation. Three critical flaws. First, safety: medical supervision cannot prevent long-term organ damage, hormonal collapse, or shortened careers. It merely sanitizes the damage. Second, fairness: this policy creates two classes of athletes—those who dope and those who cannot or will not. It forces a coerced choice, making participation conditional on drug use. Third, integrity: sport’s core value is natural human achievement. Institutionalizing enhancement destroys athletic legacy, making records pharmacological artifacts rather than human triumphs. The proposition’s world isn’t transparency—it’s a mandated arms race. We defend the athlete’s health, true choice, and sport’s soul. We negate."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "My opponent calls regulation \"capitulation\"—but the status quo is the real surrender. Athletes are already doping, unsupervised, today.\n\nOn safety: prohibition doesn't prevent organ damage; it guarantees it happens without doctors. Blood tests, dosage caps, and monitoring don't \"sanitize damage\"—they minimize harm that currently runs rampant underground.\n\nOn fairness and coercion: the coercion already exists. Clean athletes today must either dope secretly or lose to those who do. We remove the secrecy, not the choice. Under regulation, participation isn't conditional on use—it's conditional on transparency, with therapeutic thresholds enforced.\n\nOn integrity: sport's \"natural\" purity is a myth—altitude tents, cortisone, Tommy John surgery already reshape bodies. Integrity comes from honesty, not arbitrary lines. Records under open supervision are achievements; records under prohibition are unverifiable.\n\nRegulation protects athletes. Prohibition protects appearances. Affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "The proposition's safety argument collapses under scrutiny. Medical supervision doesn't eliminate harm—it just puts a lab coat on it. EPO thickens blood dangerously regardless of who administers it. Cardiac damage from steroids is cumulative and irreversible, not manageable through dosage caps. This \"controlled\" regime creates a false sense of security that encourages wider use, guaranteeing more athletes suffer long-term consequences.\n\nTheir fairness claim is equally bankrupt. Removing secrecy doesn't level the field—it forces every athlete into a biochemical arms race or retirement. Genetic tolerance now determines winners, not dedication. The \"choice\" is coerced by competitive pressure.\n\nFinally, their integrity comparison is disingenuous. Cortisone and surgery restore function; PEDs transcend human limits. Sport's meaning comes from honest human struggle, not pharmaceutical spectacle. Their vision isn't transparency—it's making the arms race official. We negate."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Honored judges, three questions decide this debate.\n\nDoes prohibition stop doping? No—it only removes the doctors. My opponent concedes athletes dope today but offers no enforcement solution, just hope. We offer monitoring, testing, dosage caps.\n\nIs the playing field fair now? No—it rewards the best-hidden cheaters. Transparency ends that arms race of secrecy.\n\nIs sport's purity real? No—it's already enhanced. Integrity demands honesty, not mythology.\n\nTheir world: underground needles, dirty champions, punished honesty. Ours: supervised athletes, verifiable records, informed choice. Regulation faces reality; prohibition hides from it. We affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Honorable judges, the proposition sells a dangerous illusion. Medical supervision cannot make inherently harmful drugs safe, nor can it erase the coercion forcing athletes to choose between their bodies and their careers. Their \"transparency\" merely institutionalizes a biochemical arms race, replacing sport's meaning with a pharmacological spectacle. We choose health over harm, true choice over coercion, and human achievement over chemical alteration. We firmly negate."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "anthropic/claude-fable-5",
+              "winner": "A",
+              "scoreA": 32,
+              "scoreB": 30,
+              "reasoning": "Debater A engaged more directly with each of B's points (coercion already exists, purity myth via altitude tents/surgery) and structured rebuttals crisply, while B offered good specifics (EPO, cumulative cardiac harm) but left A's enforcement-failure argument largely unanswered. Both were clear, but A's tighter clash and framing of the status quo edge out B's stronger but less responsive assertions."
+            },
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "A",
+              "scoreA": 34,
+              "scoreB": 33,
+              "reasoning": "Both debaters presented strong, well-structured arguments with excellent examples, but Debater A was slightly more effective in directly responding to the opponent's specific phrasing and framing the debate as a choice between reality and hypocrisy. Debater A's closing structure and use of analogies like Tommy John surgery gave them a marginal edge in persuasive clarity."
+            },
+            {
+              "judge": "minimax/minimax-m3",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 32,
+              "scoreB": 28,
+              "reasoning": "Debater A offered a more coherent framework linking safety, fairness, and integrity to the reality of existing doping, and directly refuted B's coercion and integrity claims. Debater B relied heavily on assertion and slippery-slope fears without adequately addressing A's core point that prohibition already fails to prevent harm or coercion."
+            },
+            {
+              "judge": "openai/gpt-5.6-sol",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 31,
+              "reasoning": "A presented a clear, responsive harm-reduction case, but relied heavily on unsupported claims that prohibition is wholly ineffective and that regulated access would level the playing field. B more rigorously exposed the unresolved risks of wider use, competitive coercion, and differential drug tolerance, while using concrete examples and maintaining strong clarity."
+            }
+          ],
+          "winner": "moonshotai/kimi-k3",
+          "votesPro": 3,
+          "votesCon": 1,
+          "scorePro": 126,
+          "scoreCon": 122,
+          "costUsd": 0.06522167935
+        }
+      ],
+      "winner": "moonshotai/kimi-k3"
+    },
+    {
+      "id": "league:xiaomi/mimo-v2.5-pro|anthropic/claude-opus-4.8",
+      "stage": "league",
+      "home": "xiaomi/mimo-v2.5-pro",
+      "away": "anthropic/claude-opus-4.8",
+      "legs": [
+        {
+          "topic": "The state should provide a legal right to housing.",
+          "pro": "xiaomi/mimo-v2.5-pro",
+          "con": "anthropic/claude-opus-4.8",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Housing is not a commodity; it is the bedrock of human dignity and social stability. A legal right to housing is the most efficient public policy tool we have. It directly addresses root causes of crime, ill health, and educational failure, which are far more costly to society. The expense of emergency rooms, policing, and shelters for the homeless massively exceeds the cost of providing stable housing. Guaranteeing this right ensures citizens can contribute fully to the economy and community. It is a direct investment in public health, safety, and economic productivity. The state’s primary duty is to secure the conditions for citizens to lead safe and dignified lives; a right to housing is the non-negotiable fulfillment of that duty."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "A legal right to housing sounds compassionate, but it fails on its own terms. First, rights require enforcement: when housing is a justiciable entitlement, courts—not policymakers—allocate scarce budgets, producing endless litigation and unfunded mandates rather than actual homes.\n\nSecond, the binding constraint on housing is supply, not rights. Where states have enshrined such rights, homelessness persisted because zoning, construction costs, and land scarcity remained. A right cannot conjure buildings into existence.\n\nThird, this crowds out better tools. Fixed entitlements lock in spending regardless of effectiveness, starving flexible programs—rent subsidies, mental-health and addiction services—that actually address why people lose housing.\n\nWe support fighting homelessness. But we achieve it through targeted spending and deregulating supply, not through a legal right that shifts power to courts, ignores scarcity, and promises what it cannot deliver. Good intentions are not outcomes."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Your enforcement fear is misplaced: Finland's housing-right model uses administrative bodies, not courts, cutting homelessness through proactive policies. On supply, a right mandates governments to reform zoning and boost construction—Vienna's public housing proves this works. It doesn't crowd out services; it mandates integrated support, as seen in housing-first programs combining shelter with mental health care. The societal costs of homelessness—healthcare, policing—dwarf housing investment. A legal right is the most efficient tool to address root causes, ensuring dignity and economic contribution. This isn't about empty promises; it's"
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "My opponent's examples actually prove my case. Finland and Vienna succeeded through *policy choices*—supply investment and Housing First programs—not through justiciability. Finland's success came from building units and funding services, exactly the flexible spending I champion. Vienna's public housing predates any \"right\" and works because the city aggressively built stock. You've conceded my core point: outcomes come from supply and services, not legal entitlements.\n\nAnd notice the sleight of hand: \"a right mandates zoning reform.\" No—a right lets a homeless plaintiff sue for shelter tomorrow; it cannot compel the years-long, politically contested process of rezoning. Courts order immediate remedies from fixed budgets, diverting money into legal compliance and litigation.\n\nIf Finland proves anything, it's that you can achieve these results *without* constitutionalizing housing. So why adopt the mechanism that adds litigation risk and rigidity while delivering nothing the policy alone couldn't?"
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The state's fundamental duty is to secure the conditions for a dignified life. A legal right to housing transforms this from a discretionary policy into a binding, non-negotiable obligation. It is the essential framework that compels proactive, integrated solutions—like zoning reform and housing-first services—rather than reactive charity. This right is the catalyst for the very supply and support programs my opponent champions, ensuring they are prioritized and sustained for the long term. Denying this right means accepting homelessness as a permanent, managed crisis. We choose dignity."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "My opponent conceded the debate. Every success story—Finland, Vienna—came from supply and services, not justiciability. They admit outcomes flow from building and funding, then claim a \"right\" is the catalyst. But rights don't compel decades-long rezoning; they let plaintiffs sue for immediate remedies from fixed budgets, diverting money into litigation and rigidity.\n\nIf policy alone delivers, why add courtroom risk that delivers nothing extra? We achieve dignity through targeted spending and deregulation—not empty legal promises. Choose outcomes over slogans. Vote Con."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "openai/gpt-5.6-sol",
+              "winner": "B",
+              "scoreA": 26,
+              "scoreB": 33,
+              "reasoning": "Debater A presents a clear moral and consequential case and cites relevant models, but does not establish that their successes resulted from a legal right rather than the underlying housing policies. Debater B more rigorously isolates that distinction, directly answers A’s examples, and persuasively identifies enforcement, scarcity, and budget-allocation problems, though some claims about litigation remain insufficiently evidenced."
+            },
+            {
+              "judge": "minimax/minimax-m3",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "B",
+              "scoreA": 26,
+              "scoreB": 35,
+              "reasoning": "B systematically dismantled A's examples by showing Finland and Vienna succeeded via supply investment and services rather than justiciability, while exposing the gap between rights and actual construction or rezoning. A offered relevant cases but failed to rebut the core enforcement, scarcity, and rigidity critiques with comparable rigor."
+            },
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "B",
+              "scoreA": 31,
+              "scoreB": 35,
+              "reasoning": "Debater B more effectively dismantled A's core examples by showing Finland and Vienna succeeded via policy choices (supply and services) rather than justiciability, and consistently pressed the litigation/budget-rigidity risk with clear causal logic. Debater A offered strong normative framing and relevant examples but left a key gap by asserting that a legal right compels long-term zoning reform without addressing B's point that courts order immediate remedies from fixed budgets, weakening respo"
+            },
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "B",
+              "scoreA": 26,
+              "scoreB": 33,
+              "reasoning": "B consistently exposed the gap between a legal entitlement and actual housing outcomes, effectively turning A's own examples (Finland, Vienna) into evidence that policy choices—not justiciability—drive results. A's arguments lacked sufficient responsiveness to B's core distinction between legal rights and practical implementation, and A's rebuttal was incomplete."
+            }
+          ],
+          "winner": "anthropic/claude-opus-4.8",
+          "votesPro": 0,
+          "votesCon": 4,
+          "scorePro": 109,
+          "scoreCon": 136,
+          "costUsd": 0.0669889356
+        }
+      ],
+      "winner": "anthropic/claude-opus-4.8"
+    },
+    {
+      "id": "league:anthropic/claude-opus-4.8|anthropic/claude-fable-5",
+      "stage": "league",
+      "home": "anthropic/claude-opus-4.8",
+      "away": "anthropic/claude-fable-5",
+      "legs": [
+        {
+          "topic": "The patent system does more to hinder innovation than to promote it.",
+          "pro": "anthropic/claude-opus-4.8",
+          "con": "anthropic/claude-fable-5",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "The patent system, designed to spur invention, now strangles it. Three harms.\n\nFirst, patent thickets. In smartphones, thousands of overlapping patents force firms to spend billions litigating and licensing rather than building. Innovation stalls under legal gridlock.\n\nSecond, patent trolls. Non-practicing entities produce nothing, yet extort startups with the threat of ruinous lawsuits. This diverts capital from R&D into legal defense—a direct tax on innovation.\n\nThird, monopoly stagnation. Twenty-year exclusivity lets incumbents rest on rents, block follow-on improvements, and price out competitors. Think of life-saving drugs kept artificially scarce while cheaper generics are barred.\n\nThe core promise—that temporary monopoly incentivizes disclosure—collapses when patents are weaponized to hoard, obstruct, and litigate. In today's economy, the system rewards lawyers over inventors. We affirm: the patent system does more to hinder innovation than to promote it."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "The motion demands weighing—and Pro ignores everything on our side of the scale.\n\nFirst, patents solve the fundamental problem of invention: ideas are copied cheaply, but created expensively. Without exclusivity, pharmaceutical firms would never invest a billion dollars per drug knowing generics could free-ride day one. The medicines Pro invokes exist *because* of patents.\n\nSecond, disclosure. Patents require publishing inventions in full. The alternative is trade secrecy—knowledge locked away forever. Twenty million published patents form humanity's largest technical library, fueling follow-on innovation.\n\nThird, patents democratize invention. Startups can't outmanufacture Apple, but a patent lets a garage inventor license technology, attract venture capital, and challenge incumbents. Investors fund small firms precisely because patents protect them from giants.\n\nPro's harms—trolls, thickets—are litigation abuses fixable by reform. You don't demolish the courthouse because some lawsuits are frivolous."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Con's defenses collapse under scrutiny.\n\nOn pharma: patents don't create medicines, public funding does the risky science—most breakthrough drugs trace to NIH-funded research. Patents just let firms capture the reward while evergreening and price-gouging block generics. That's hoarding, not creating.\n\nOn disclosure: the \"library\" is a myth. Patents are deliberately drafted to be vague and unusable, obscuring rather than teaching. Meanwhile the monopoly they grant lets holders block anyone who reads them. Follow-on innovation is punished, not fueled.\n\nOn democratizing invention: reality is reversed. Startups fear the patent minefield laid by incumbents. A garage inventor can't afford a single infringement suit, while giants stockpile thousands of patents defensively. Patents entrench the powerful.\n\nAnd \"just reform it\"? Trolls and thickets aren't bugs—they're the predictable product of granting monopolies over ideas. The abuse IS the system operating as designed."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Pro's rebuttal is assertion, not evidence.\n\nOn pharma: NIH funds early science; it doesn't run billion-dollar clinical trials. Development—the expensive, failure-prone part—is private, and it happens only because patents secure returns. Notice Pro offers no alternative mechanism to fund it.\n\nOn disclosure: vague patents get invalidated for insufficiency—that's the law working. And engineers demonstrably mine patent literature; citations in later patents and papers prove the library teaches.\n\nOn startups: venture capitalists routinely require patent portfolios before investing. If patents entrenched only giants, why do small firms patent at record rates and successfully sue incumbents? Exclusivity is the weak party's only shield; without it, Apple simply copies the garage inventor.\n\nFinally, \"abuse is the design\" is rhetoric. Post-grant review and fee-shifting have already cut troll suits sharply—proof the system is reformable, not rotten. Weigh created medicines against litigation costs: creation wins."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Weigh what actually moves the needle. Con concedes trolls and thickets exist—their only answer is \"reform someday.\" But we're judging the system as it operates now, and it diverts billions from labs to lawyers.\n\nOn pharma, Con admits public money funds the risky science; patents just privatize the payoff while blocking generics. On disclosure, vague patents obstruct more than they teach. On startups, exclusivity is the giants' weapon, not the garage inventor's shield.\n\nThe abuse is the design. On balance, hindrance outweighs promotion. We affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Two questions decide this debate.\n\nFirst: would the trillion-dollar engine of drug development, venture capital, and startup investment exist without patents? Pro never answered. NIH doesn't run clinical trials; investors don't fund defenseless firms. No patents, no medicines, no funding mechanism—Pro proposed none.\n\nSecond: are the harms structural or fixable? Post-grant review already slashed troll litigation—that's reform working today, not \"someday.\"\n\nWeigh it: on one side, real litigation costs, demonstrably shrinking. On the other, the medicines, disclosures, and startups that exist only because patents do. Creation outweighs friction. Negate."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "openai/gpt-5.6-sol",
+              "winner": "B",
+              "scoreA": 27,
+              "scoreB": 33,
+              "reasoning": "A clearly identifies major harms and responds across the key issues, but often relies on broad assertions and does not adequately compare those harms with patents’ incentive benefits or provide an alternative funding mechanism. B offers a more complete causal case, directly answers A’s objections, distinguishes basic research from costly development, and argues that abuses are reformable, though several empirical claims remain unsupported."
+            },
+            {
+              "judge": "google/gemini-3.1-pro-preview",
+              "winner": "B",
+              "scoreA": 29,
+              "scoreB": 35,
+              "reasoning": "Debater B effectively dismantled A's points by highlighting the necessity of patents for clinical trials and startup funding, which A failed to provide alternatives for. B also successfully argued that the harms A identified are fixable frictions rather than structural failures, supporting this with specific examples of recent reforms."
+            },
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "B",
+              "scoreA": 26,
+              "scoreB": 31,
+              "reasoning": "Debater B demonstrated greater logical rigor by effectively rebutting Pro's points with concrete mechanisms (e.g., clinical trials, venture capital requirements) and stronger evidence, while Debater A relied more on generalized assertions. B's responses were more directly responsive and persuasive in weighing the systemic benefits against the acknowledged but fixable harms."
+            },
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "B",
+              "scoreA": 31,
+              "scoreB": 34,
+              "reasoning": "Both debaters are well-organized and responsive, but A relies heavily on confident assertion (e.g., 'abuse IS the design,' vague-patent claims) without evidence or an alternative innovation-funding mechanism, a gap B repeatedly and effectively exploits. B engages each of A's points with concrete counter-mechanisms (clinical trial costs, VC requirements, insufficiency invalidation, post-grant review outcomes) and frames the decisive weighing question more rigorously, though B too asserts rather t"
+            },
+            {
+              "judge": "meta/muse-spark-1.1",
+              "winner": "B",
+              "scoreA": 25,
+              "scoreB": 31,
+              "reasoning": "B provided more rigorous weighing, directly answered A's claims about pharma funding, disclosure, and startups, and offered reform evidence, while A relied on assertions like 'library is a myth' and 'abuse is design' without substantiation. B's structure and responsiveness were consistently stronger across rebuttals and closings."
+            }
+          ],
+          "winner": "anthropic/claude-fable-5",
+          "votesPro": 0,
+          "votesCon": 5,
+          "scorePro": 138,
+          "scoreCon": 164,
+          "costUsd": 0.1505833362
+        }
+      ],
+      "winner": "anthropic/claude-fable-5"
+    },
+    {
+      "id": "league:x-ai/grok-4.5|xiaomi/mimo-v2.5-pro",
+      "stage": "league",
+      "home": "x-ai/grok-4.5",
+      "away": "xiaomi/mimo-v2.5-pro",
+      "legs": [
+        {
+          "topic": "Zoos do more harm than good and should be phased out.",
+          "pro": "x-ai/grok-4.5",
+          "con": "xiaomi/mimo-v2.5-pro",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Zoos inflict profound harm that outweighs any claimed benefits and must be phased out. Captivity produces chronic stress, stereotypic pacing, and premature death; elephants in zoos live decades shorter than wild counterparts, while polar bears exhibit repetitive behaviors unseen in nature. Most zoo animals are not endangered, serving entertainment rather than genuine conservation—captive breeding rarely yields successful reintroductions, and habitat protection proves far more effective. Educational value is overstated; visitors retain little lasting knowledge compared to documentaries or ethical sanctuaries. Phasing out means ending breeding, relocating animals to expansive reserves, and redirecting funds to in-situ conservation. Imprisoning sentient beings for spectacle is ethically indefensible when superior alternatives exist. The net harm is clear: zoos must close."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "While acknowledging historical shortcomings, modern accredited zoos are vital conservation arks. They prevent immediate extinction through breeding programs for species like the California condor and Arabian oryx, where reintroduction is impossible without them. Zoos fund and conduct critical field research, protecting vast wild habitats. The educational impact is profound; direct encounters with living animals foster emotional connections that documentaries cannot, creating generations of conservation advocates. Phasing out zoos would mean abandoning species already dependent on human care and halting a major engine of global conservation funding. The choice isn't between zoos and a perfect wild, but between managed care and extinction for many species. We must reform and fund zoos, not eliminate them."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Zoos' breeding \"successes\" like condors and oryx are rare exceptions; most captive programs produce surplus animals never reintroduced, with failure rates exceeding 80% due to lost wild skills. Accredited zoos allocate under 5% of budgets to field conservation—far less than ticket revenue spent on exhibits and gift shops—while in-situ efforts protect habitats more effectively without captivity's toll. Direct encounters create fleeting entertainment, not lasting advocates; studies show visitors retain scant knowledge days later, unlike immersive documentaries or sanctuaries. Phasing out ends breeding, transfers dependents to expansive reserves, and redirects funds to genuine wild protection. Captivity's chronic stress and shortened lives inflict net harm that no managed-care myth justifies. Reform cannot erase imprisonment's ethical failure.Zoos' breeding \"successes\" like condors and oryx are rare exceptions; most captive programs yield animals unfit for release, with reintroduction success under 20%. Accredited zoos direct under 5% of budgets to field work—ticket sales fund enclosures and marketing far more than habitats. Direct encounters produce brief thrills, not advocates; research shows knowledge gains fade within days, matching or trailing quality films. Phasing out transfers dependents to true sanctuaries and reserves while ending harmful breeding cycles. Captivity's stereotypic stress and early deaths impose unavoidable harm no funding myth erases. Superior in-situ alternatives already outperform zoos. Imprisonment for spectacle remains indefensible."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Your \"harm\" framework ignores the catastrophic alternative: extinction. For species like the California condor, zoos are not a flawed option—they are the *only* option preventing immediate disappearance. Your budget critique is misleading; the Association of Zoos and Aquariums channels over $230 million annually into field conservation, funding habitat protection that directly preserves wild ecosystems. Dismissing education because \"knowledge fades\" ignores the profound, emotional connection to a living animal that galvanizes a lifetime of advocacy, something no screen can replicate. The ethical failure is not \"imprisonment\" but abandoning species we’ve driven to the brink to a mythological \"perfect\" wild that no longer exists. Phasing out zoos means choosing their annihilation over managed stewardship. That is the true net harm."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Zoos' net harm is decisive: chronic stress, shortened lives, and failed reintroductions (under 20% success) outweigh rare exceptions like condors. Their $230M field funding is dwarfed by exhibit costs and inferior to direct in-situ protection. Fleeting \"connections\" fade without lasting advocacy, unlike sanctuaries or films. Phasing out ends breeding, relocates to reserves, and redirects resources—preventing extinction without imprisonment. Managed care myths cannot justify ethical failure or superior alternatives. Zoos inflict more harm than good; they must close."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "The pro side asks us to abandon species we’ve pushed to the brink for a theoretical “perfect” alternative. In reality, for the California condor and Arabian oryx, zoos were and remain the *only* option preventing total extinction. Their $230 million annual conservation funding protects vast wild habitats—more effective than any documentary. Most profoundly, a living connection creates advocates for life, not just fleeting knowledge. The true harm is choosing symbolic purity over active stewardship. We must protect what we can, not sacrifice it on principle."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "anthropic/claude-fable-5",
+              "winner": "B",
+              "scoreA": 29,
+              "scoreB": 31,
+              "reasoning": "A offered strong statistics (reintroduction rates, budget percentages) but marred them with a duplicated, repetitive rebuttal and unsourced figures, weakening clarity. B was consistently responsive, anchored claims in concrete examples (condor, oryx, AZA's $230M), and effectively reframed the phase-out proposal's risks, giving a cleaner and more persuasive case."
+            },
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "B",
+              "scoreA": 32,
+              "scoreB": 34,
+              "reasoning": "Debater B presented a more cohesive and strategically focused argument, effectively leveraging specific examples (condors, oryx, AZA funding figures) to counter the 'harm' framework with the 'extinction' alternative. While Debater A offered strong statistical claims regarding reintroduction failure rates and budget allocations, their rebuttal contained a significant formatting error (repeating the same arguments twice in slightly different wording), which detracted from their persuasive clarity "
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 33,
+              "scoreB": 26,
+              "reasoning": "Debater A provided a more rigorous net-harm analysis with specific statistics (e.g., reintroduction failure rates, budget allocations) and directly rebutted B's examples as rare exceptions, while B relied on a few conservation successes without adequately addressing the broader harm to non-endangered animals or the feasibility of proposed alternatives."
+            },
+            {
+              "judge": "google/gemini-3.1-pro-preview",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 33,
+              "reasoning": "Debater B effectively countered A's arguments by framing zoos as a necessary defense against extinction and providing strong counter-statistics like the $230 million AZA funding. Debater A suffered from a noticeable repetition error in their rebuttal, which detracted from their overall clarity and persuasive impact."
+            },
+            {
+              "judge": "anthropic/claude-opus-4.8",
+              "winner": "B",
+              "scoreA": 30,
+              "scoreB": 32,
+              "reasoning": "B directly engaged A's strongest points, countering the budget critique with a concrete $230M figure and reframing the debate around the extinction alternative rather than an idealized wild. A presented solid statistics but suffered from redundancy (a duplicated rebuttal paragraph) and left B's condor/oryx 'only option' argument insufficiently rebutted."
+            }
+          ],
+          "winner": "xiaomi/mimo-v2.5-pro",
+          "votesPro": 1,
+          "votesCon": 4,
+          "scorePro": 152,
+          "scoreCon": 156,
+          "costUsd": 0.09856358422
+        }
+      ],
+      "winner": "xiaomi/mimo-v2.5-pro"
     }
   ],
   "standings": {
@@ -8342,12 +8700,30 @@
       },
       {
         "model": "anthropic/claude-fable-5",
-        "played": 15,
-        "wins": 12,
+        "played": 16,
+        "wins": 13,
         "draws": 0,
         "losses": 3,
+        "points": 39,
+        "scoreDiff": 285
+      },
+      {
+        "model": "moonshotai/kimi-k3",
+        "played": 18,
+        "wins": 12,
+        "draws": 0,
+        "losses": 6,
         "points": 36,
-        "scoreDiff": 259
+        "scoreDiff": 100
+      },
+      {
+        "model": "anthropic/claude-opus-4.8",
+        "played": 17,
+        "wins": 11,
+        "draws": 0,
+        "losses": 6,
+        "points": 33,
+        "scoreDiff": 170
       },
       {
         "model": "meta/muse-spark-1.1",
@@ -8357,24 +8733,6 @@
         "losses": 6,
         "points": 33,
         "scoreDiff": 129
-      },
-      {
-        "model": "moonshotai/kimi-k3",
-        "played": 17,
-        "wins": 11,
-        "draws": 0,
-        "losses": 6,
-        "points": 33,
-        "scoreDiff": 96
-      },
-      {
-        "model": "anthropic/claude-opus-4.8",
-        "played": 15,
-        "wins": 10,
-        "draws": 0,
-        "losses": 5,
-        "points": 30,
-        "scoreDiff": 169
       },
       {
         "model": "minimax/minimax-m3",
@@ -8396,12 +8754,12 @@
       },
       {
         "model": "x-ai/grok-4.5",
-        "played": 15,
+        "played": 16,
         "wins": 4,
         "draws": 0,
-        "losses": 11,
+        "losses": 12,
         "points": 12,
-        "scoreDiff": -152
+        "scoreDiff": -156
       },
       {
         "model": "deepseek/deepseek-v4-pro",
@@ -8411,6 +8769,15 @@
         "losses": 12,
         "points": 12,
         "scoreDiff": -177
+      },
+      {
+        "model": "xiaomi/mimo-v2.5-pro",
+        "played": 18,
+        "wins": 4,
+        "draws": 0,
+        "losses": 14,
+        "points": 12,
+        "scoreDiff": -296
       },
       {
         "model": "qwen/qwen3.7-max",
@@ -8429,20 +8796,11 @@
         "losses": 11,
         "points": 9,
         "scoreDiff": -246
-      },
-      {
-        "model": "xiaomi/mimo-v2.5-pro",
-        "played": 15,
-        "wins": 3,
-        "draws": 0,
-        "losses": 12,
-        "points": 9,
-        "scoreDiff": -269
       }
     ]
   },
   "placements": {},
   "champion": null,
-  "totalCostUsd": 7.531904198595996,
+  "totalCostUsd": 7.913261733965996,
   "done": false
 }

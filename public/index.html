@@ -20,10 +20,7 @@
   header { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; padding: 6px 0 14px; border-bottom: 2px solid var(--ink); margin-bottom: 14px; }
   h1 { font-size: 22px; letter-spacing: 2px; font-weight: 800; }
   h1 span { color: var(--green); }
-  .pill { font-size: 12px; font-weight: 700; letter-spacing: 1px; padding: 3px 10px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
-  .pill.live { background: var(--green); border-color: var(--green); color: #fff; cursor: pointer; }
-  .pill.live::before { content: "●"; margin-right: 6px; animation: blink 1.2s infinite; }
-  @keyframes blink { 50% { opacity: 0.25; } }
+  .pill { font-size: 12px; font-weight: 700; letter-spacing: 1px; padding: 3px 10px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); } }
   .meta { margin-left: auto; font-size: 12px; color: var(--muted); }
   .tagline { font-size: 14px; color: #333129; margin: 2px 0 14px; max-width: 720px; line-height: 1.5; }
   .tagline b { color: var(--green); }
@@ -34,7 +31,6 @@
   .grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 20px; }
   @media (max-width: 860px) { .grid { grid-template-columns: 1fr; } }
   .grid.solo { grid-template-columns: 1fr; }
-  .grid.solo #side { display: none; }
   .card { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 16px; margin-bottom: 20px; overflow-x: auto; }
   .card h2 { font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; font-weight: 700; }
   .stage-chip { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; background: var(--ink); color: #fff; padding: 2px 8px; border-radius: 4px; margin-bottom: 10px; }
@@ -71,11 +67,6 @@
   a.mlink:hover { color: var(--green); border-bottom-color: var(--green); }
   tr.rowlink { cursor: pointer; }
   tr.rowlink:hover td { background: var(--bg); }
-  .ko-match { display: flex; justify-content: space-between; gap: 8px; padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 13px; flex-wrap: wrap; }
-  .ko-match:last-child { border-bottom: none; }
-  .ko-stage { font-size: 10px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); min-width: 70px; }
-  .winner { font-weight: 800; color: var(--green); }
-  .champ { font-size: 15px; font-weight: 800; margin-top: 10px; color: var(--green); }
   .empty { color: var(--muted); font-size: 13px; font-style: italic; }
   .back { display: inline-block; font-size: 12px; font-weight: 700; color: var(--muted); text-decoration: none; margin-bottom: 12px; }
   .back:hover { color: var(--ink); }
