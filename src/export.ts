@@ -4,7 +4,7 @@
 process.env.API_DIVISION ??= "flagship"; // public site = one league, no dev division
 import { mkdirSync, rmSync, writeFileSync, copyFileSync } from "node:fs";
 import { join } from "node:path";
-import { summary, debateList, stats, debateDetail } from "./api.js";
+import { summary, debateList, stats, debateDetail, verifiedSummary, gapTable } from "./api.js";
 import { ROOT } from "./paths.js";
 
 const out = process.argv[2] ?? join(ROOT, "dist");
@@ -18,6 +18,9 @@ const list = debateList() as { slug: string }[];
 writeFileSync(join(out, "api", "summary.json"), JSON.stringify(summary()));
 writeFileSync(join(out, "api", "debates.json"), JSON.stringify(list));
 writeFileSync(join(out, "api", "stats.json"), JSON.stringify(stats()));
+// Verified board is division-independent: always included regardless of API_DIVISION.
+writeFileSync(join(out, "api", "verified.json"), JSON.stringify(verifiedSummary()));
+writeFileSync(join(out, "api", "gap.json"), JSON.stringify(gapTable()));
 // A static snapshot has no live match; the leaderboard and archive carry the site.
 writeFileSync(join(out, "api", "live.json"), JSON.stringify({ status: "idle" }));
 for (const d of list) {

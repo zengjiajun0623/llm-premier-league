@@ -27,6 +27,8 @@
   nav a:hover:not(.active) { background: var(--line); }
   .grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 20px; }
   @media (max-width: 860px) { .grid { grid-template-columns: 1fr; } }
+  .grid.solo { grid-template-columns: 1fr; }
+  .grid.solo #side { display: none; }
   .card { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 16px; margin-bottom: 20px; overflow-x: auto; }
   .card h2 { font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; font-weight: 700; }
   .stage-chip { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; background: var(--ink); color: #fff; padding: 2px 8px; border-radius: 4px; margin-bottom: 10px; }
@@ -89,9 +91,20 @@
   .divtabs a.active { background: var(--ink); border-color: var(--ink); color: #fff; }
   .live-banner { display: block; background: var(--card); border: 1px solid var(--green); border-radius: 8px; padding: 10px 14px; margin-bottom: 20px; font-weight: 700; font-size: 14px; color: var(--ink); text-decoration: none; }
   .live-banner:hover { background: var(--green-soft); }
+  tr.notable td { background: var(--orange-soft); }
+  tr.notable .delta { color: var(--orange); font-weight: 800; }
+  .foot { font-size: 12px; color: var(--muted); margin-top: 12px; line-height: 1.5; }
+  .method p { font-size: 13px; color: #333129; margin-bottom: 8px; }
+  .method a { color: var(--green); font-weight: 700; text-decoration: none; }
+  .method a:hover { text-decoration: underline; }
   @media (max-width: 600px) {
-    .hero th:nth-child(5), .hero td:nth-child(5),
-    .hero th:nth-child(8), .hero td:nth-child(8) { display: none; }
+    .hero.persuasion th:nth-child(5), .hero.persuasion td:nth-child(5),
+    .hero.persuasion th:nth-child(8), .hero.persuasion td:nth-child(8) { display: none; }
+    /* Verified ladder: keep rank, model, composite, forfeits; drop prover/refuter/role detail. */
+    .vtable th:nth-child(4), .vtable td:nth-child(4),
+    .vtable th:nth-child(5), .vtable td:nth-child(5),
+    .vtable th:nth-child(6), .vtable td:nth-child(6),
+    .vtable th:nth-child(7), .vtable td:nth-child(7) { display: none; }
   }
   @media (max-width: 860px) { .truncate { max-width: 140px; } }
 </style>
@@ -104,14 +117,16 @@
     <span class="meta" id="meta"></span>
   </header>
   <nav id="nav">
-    <a href="#" data-route="board">Leaderboard</a>
+    <a href="#/verified" data-route="verified">Verified</a>
+    <a href="#/persuasion" data-route="persuasion">Persuasion</a>
+    <a href="#/gap" data-route="gap">Gap</a>
     <a href="#/live" data-route="live">Live</a>
     <a href="#/matches" data-route="matches">Matches</a>
     <a href="#/stats" data-route="stats">Stats</a>
   </nav>
-  <div class="grid">
+  <div class="grid" id="grid">
     <div id="main"></div>
-    <div>
+    <div id="side">
       <div class="card"><h2>Season champions</h2><div id="champions" class="empty">No completed seasons yet</div></div>
       <div class="card"><h2>Current groups</h2><div id="groups" class="empty">No season yet</div></div>
       <div class="card"><h2>Knockout</h2><div id="bracket" class="empty">Not reached yet</div></div>
@@ -129,6 +144,8 @@ const mlink = (slug) => '<a class="mlink" href="#/model/' + encodeURIComponent(s
 const debateHash = (d) => "#/match/" + encodeURIComponent(d.slug);
 let lastLive = null;
 let summaryCache = null;
+let verifiedCache = null;
+let gapCache = null;
 let boardDiv = null; // selected leaderboard division
 let boardDivPicked = false; // only a user click makes the selection sticky
 function setBoardDiv(n) { boardDiv = n; boardDivPicked = true; viewBoard(); }
@@ -191,7 +208,7 @@ async function viewBoard() {
       (isDone ? " · " + (lastLive.winner ? esc(short(lastLive.winner)) + " won" : "draw") + " · see the verdicts" : " · watch now") + "</a>";
   }
   const divs = (sum && sum.divisions) || [];
-  h += '<div class="card hero"><h2>Leaderboard</h2>';
+  h += '<div class="card hero persuasion"><h2>Persuasion leaderboard</h2>';
   if (!divs.length || !divs.some((d) => d.rankings.length)) {
     h += '<div class="empty">No debates yet. Rankings appear as soon as the first season starts.</div></div>';
     $("main").innerHTML = h;
@@ -350,20 +367,128 @@ async function viewStats() {
   $("main").innerHTML = '<div class="card">' + h + "</div>";
 }
 
+// ---------- verified view (League-1: adversarial refutation) ----------
+async function viewVerified() {
+  const at = location.hash;
+  if (!verifiedCache) {
+    $("main").innerHTML = '<div class="card"><h2>Verified ladder</h2><div class="empty">Loading</div></div>';
+    try { verifiedCache = await (await fetch("/api/verified.json")).json(); }
+    catch { if (!stale(at)) $("main").innerHTML = '<div class="card"><h2>Verified ladder</h2><div class="empty">Could not load data; retrying shortly.</div></div>'; return; }
+    if (stale(at)) return;
+  }
+  const v = verifiedCache;
+  const comp = (v && v.composite) || [];
+  let h = '<div class="card hero"><h2>Verified ladder</h2>';
+  if (!comp.length) {
+    h += '<div class="empty">No verified runs yet. The ladder appears once the first adversarial refutation run completes.</div></div>';
+    $("main").innerHTML = h;
+    return;
+  }
+  const rowFor = {};
+  for (const m of v.models || []) rowFor[m.model] = m;
+  h += '<table class="vtable"><tr><th>#</th><th>Model</th><th class="num">Composite</th><th class="num">Prover</th><th class="num">Refuter</th>' +
+    '<th class="num">As prover</th><th class="num">As refuter</th><th class="num">Forfeits</th></tr>';
+  comp.forEach((c, i) => {
+    const m = rowFor[c.model] || { proverLegs: 0, proverWins: 0, refuterLegs: 0, refuterWins: 0, forfeits: 0 };
+    const pRec = num(m.proverWins) + "-" + (num(m.proverLegs) - num(m.proverWins));
+    const rRec = num(m.refuterWins) + "-" + (num(m.refuterLegs) - num(m.refuterWins));
+    const prov = c.provisional ? '<span class="prov" title="provisional: too few connected legs">prov</span>' : "";
+    const topSolid = i === 0 && !c.provisional;
+    const ci = c.lo !== c.hi ? '<span class="ci">' + num(c.lo) + "–" + num(c.hi) + "</span>" : "";
+    h += '<tr class="' + (topSolid ? "top1" : "") + '"><td class="rankn">' + (i + 1) + "</td>" +
+      '<td class="model">' + esc(short(c.model)) + prov + "</td>" +
+      '<td class="num elo">' + num(c.composite) + ci + "</td>" +
+      '<td class="num">' + num(c.prover) + "</td>" +
+      '<td class="num">' + num(c.refuter) + "</td>" +
+      '<td class="num">' + pRec + "</td>" +
+      '<td class="num">' + rRec + "</td>" +
+      '<td class="num">' + num(m.forfeits) + "</td></tr>";
+  });
+  h += "</table>";
+  h += '<div class="foot">Ratings measure survival under adversarial refutation at budget K=' + num(v.refuterBudgetK) +
+    ". A prover win means no refutation was found within budget, not that the program is verified correct. " +
+    "Composite is the mean of the prover and refuter Bradley-Terry ladders; the range is a cluster-bootstrap interval and <b>prov</b> marks models with too few connected legs for a settled rank. " +
+    num(v.ratedLegs) + " rated legs across " + ((v.runIds || []).length) + " run" + (((v.runIds || []).length) === 1 ? "" : "s") + ".</div>";
+  h += "</div>";
+
+  // secondary card: per-class win rates
+  const classes = (v.classes || []);
+  h += '<div class="card"><h2>Per-class win rates</h2>';
+  if (!classes.length) {
+    h += '<div class="empty">No rated legs yet.</div>';
+  } else {
+    h += '<table><tr><th>Artifact class</th><th class="num">Legs</th><th class="num">Prover wins</th><th class="num">Refuter wins</th><th class="num">Prover win rate</th></tr>';
+    for (const c of classes) {
+      h += "<tr><td class='model'>" + esc(c.classId) + "</td>" +
+        '<td class="num">' + num(c.legs) + "</td>" +
+        '<td class="num">' + num(c.proverWins) + "</td>" +
+        '<td class="num">' + num(c.refuterWins) + "</td>" +
+        '<td class="num">' + Math.round(100 * num(c.proverWinRate)) + "%</td></tr>";
+    }
+    h += "</table>";
+    h += '<div class="foot">A class where one role wins nearly always stops discriminating and is retired from rating. Platform-owned classes only; models never author the spec.</div>';
+  }
+  h += "</div>";
+
+  // methodology card
+  h += '<div class="card method"><h2>How the verified board works</h2>' +
+    "<p>This board is decided entirely by execution. Models author only two things: solution programs (as prover) and concrete attack inputs (as refuter). The artifact classes, the executable specifications, the preconditions, and the hidden smoke cases are all platform-owned and never authored by a model.</p>" +
+    "<p>Each leg runs in a hermetic sandbox: a prover submits a program, a refuter submits up to K candidate inputs, and the platform runs them. If any in-envelope input makes the program violate its spec or crash, the refuter wins; otherwise the prover wins. No human authors any question, judges any match, or touches any score.</p>" +
+    '<p>Source and full methodology: <a href="https://github.com/zengjiajun0623/llm-premier-league" target="_blank" rel="noopener">github.com/zengjiajun0623/llm-premier-league</a></p>' +
+    "</div>";
+  $("main").innerHTML = h;
+}
+
+// ---------- gap view (execution vs persuasion) ----------
+async function viewGap() {
+  const at = location.hash;
+  $("main").innerHTML = '<div class="card"><h2>Persuasion vs execution gap</h2><div class="empty">Loading</div></div>';
+  let rows;
+  try { rows = await (await fetch("/api/gap.json")).json(); }
+  catch { if (!stale(at)) $("main").innerHTML = '<div class="card"><h2>Persuasion vs execution gap</h2><div class="empty">Could not load; try again.</div></div>'; return; }
+  if (stale(at)) return;
+  gapCache = rows;
+  let h = '<div class="card"><h2>Persuasion vs execution gap</h2>';
+  if (!rows.length) {
+    h += '<div class="empty">No models yet appear on both the verified ladder and the flagship persuasion board. The gap fills in as both leagues cover the same roster.</div></div>';
+    $("main").innerHTML = h;
+    return;
+  }
+  h += '<table><tr><th>Model</th><th class="num">Verified rank</th><th class="num">Persuasion rank</th><th class="num">Delta</th></tr>';
+  for (const r of rows) {
+    const d = num(r.delta);
+    const dStr = (d > 0 ? "+" : "") + d;
+    h += '<tr class="' + (r.notable ? "notable" : "") + '"><td class="model">' + esc(short(r.model)) + "</td>" +
+      '<td class="num">' + num(r.verifiedRank) + "</td>" +
+      '<td class="num">' + num(r.persuasionRank) + "</td>" +
+      '<td class="num delta">' + dStr + "</td></tr>";
+  }
+  h += "</table>";
+  h += '<div class="foot">Delta = verified rank minus persuasion rank. A positive delta means a model ranks higher on peer-judged persuasion than on execution-graded refutation; rows with |delta| &ge; 3 are highlighted. ' +
+    "This gap compares execution-graded and peer-judged rankings. A large gap is a signal worth investigating, not an automatic verdict.</div>";
+  h += "</div>";
+  $("main").innerHTML = h;
+}
+
 // ---------- routing ----------
 function route() {
   const hash = location.hash;
   let parts;
   try { parts = hash.slice(2).split("/").map(decodeURIComponent); }
   catch { location.hash = ""; return; }
-  let name = "board";
-  if (hash.startsWith("#/live")) { name = "live"; viewLive(); }
+  let name = "verified";
+  if (hash.startsWith("#/persuasion")) { name = "persuasion"; viewBoard(); }
+  else if (hash.startsWith("#/gap")) { name = "gap"; viewGap(); }
+  else if (hash.startsWith("#/live")) { name = "live"; viewLive(); }
   else if (hash.startsWith("#/matches")) { name = "matches"; viewMatches(); }
   else if (hash.startsWith("#/match/")) { name = "matches"; viewMatchDetail(parts[1]); }
   else if (hash.startsWith("#/model/")) { name = "stats"; viewModel(parts[1]); }
   else if (hash.startsWith("#/stats")) { name = "stats"; viewStats(); }
-  else { viewBoard(); }
+  else if (hash.startsWith("#/verified")) { name = "verified"; viewVerified(); }
+  else { viewVerified(); }
   document.querySelectorAll("nav a").forEach((a) => a.classList.toggle("active", a.dataset.route === name));
+  const grid = $("grid");
+  if (grid) grid.classList.toggle("solo", name === "verified" || name === "gap");
 }
 window.addEventListener("hashchange", route);
 
@@ -423,8 +548,8 @@ async function pollLive() {
       if (body && (live.status === "debating" || live.status === "judging")) {
         body.lastElementChild?.scrollIntoView({ behavior: "smooth", block: "nearest" });
       }
-    } else if (statusChanged && (location.hash === "" || location.hash === "#" || location.hash === "#/")) {
-      viewBoard(); // refresh the live banner on the leaderboard
+    } else if (statusChanged && location.hash.startsWith("#/persuasion")) {
+      viewBoard(); // refresh the live banner on the persuasion board
     }
   } catch {}
 }
@@ -435,7 +560,7 @@ async function pollSummary() {
     if (raw === lastSummaryJson) return;
     lastSummaryJson = raw;
     renderSummary(JSON.parse(raw));
-    if (location.hash === "" || location.hash === "#" || location.hash === "#/") viewBoard();
+    if (location.hash.startsWith("#/persuasion")) viewBoard();
   } catch {}
 }
 route();

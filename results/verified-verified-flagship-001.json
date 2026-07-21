@@ -1,0 +1,91 @@
+{
+  "id": "verified-flagship-001",
+  "createdAt": "2026-07-21T05:38:47.941Z",
+  "updatedAt": "2026-07-21T05:44:09.591Z",
+  "rounds": 12,
+  "roster": [
+    "anthropic/claude-fable-5",
+    "anthropic/claude-opus-4.8",
+    "openai/gpt-5.6-sol",
+    "moonshotai/kimi-k3",
+    "z-ai/glm-5.2",
+    "x-ai/grok-4.5",
+    "qwen/qwen3.7-max",
+    "google/gemini-3.1-pro-preview",
+    "deepseek/deepseek-v4-pro",
+    "meta/muse-spark-1.1",
+    "minimax/minimax-m3",
+    "xiaomi/mimo-v2.5-pro"
+  ],
+  "sandbox": "podman",
+  "refuterBudgetK": 10,
+  "legs": [
+    {
+      "legId": "verified-flagship-001-r0-sortlist-moonshotai_kimi_k3-vs-minimax_minimax_m3",
+      "classId": "sortlist",
+      "instanceSeed": 438540487,
+      "prover": "moonshotai/kimi-k3",
+      "refuter": "minimax/minimax-m3",
+      "winner": "prover",
+      "costUsd": 0.00182994,
+      "transcript": {
+        "proverSrc": "def solve(nums):\n    return sorted(nums, reverse=True)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r0-caesar-minimax_minimax_m3-vs-z_ai_glm_5_2",
+      "classId": "caesar",
+      "instanceSeed": 971208823,
+      "prover": "minimax/minimax-m3",
+      "refuter": "z-ai/glm-5.2",
+      "winner": "prover",
+      "costUsd": 0.003874215,
+      "transcript": {
+        "proverSrc": "def solve(s):\n    result = []\n    for c in s:\n        if 'A' <= c <= 'Z':\n            result.append(chr((ord(c) - ord('A') + 8) % 26 + ord('A')))\n        elif 'a' <= c <= 'z':\n            result.append(chr((ord(c) - ord('a') + 8) % 26 + ord('a')))\n        else:\n            result.append(c)\n    return ''.join(result)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r0-subsetsum-minimax_minimax_m3-vs-google_gemini_3_1_pro_preview",
+      "classId": "subsetsum",
+      "instanceSeed": 1992487336,
+      "prover": "minimax/minimax-m3",
+      "refuter": "google/gemini-3.1-pro-preview",
+      "winner": "refuter",
+      "costUsd": 0.0062328,
+      "transcript": {
+        "proverSrc": "```python\ndef solve(inp):\n    nums = inp[\"nums\"]\n    target = inp[\"target\"]\n    n = len(nums)\n    for mask in range(1 << n):\n        s = 0\n        for i in range(n):\n            if mask &",
+        "candidates": []
+      },
+      "proverForfeit": true,
+      "forfeitReason": "smoke crash: exit 1:   File \"<string>\", line 2\n    ```python\n    ^\nSyntaxError: invalid syntax\n"
+    },
+    {
+      "legId": "verified-flagship-001-r0-textmetrics-anthropic_claude_opus_4_8-vs-minimax_minimax_m3",
+      "classId": "textmetrics",
+      "instanceSeed": 593636678,
+      "prover": "anthropic/claude-opus-4.8",
+      "refuter": "minimax/minimax-m3",
+      "winner": "prover",
+      "costUsd": 0.0037559,
+      "transcript": {
+        "proverSrc": "def solve(s):\n    return {\n        \"length\": len(s),\n        \"bytes\": len(s.encode(\"utf-8\")),\n        \"checksum\": sum(ord(c) for c in s) % 2147483648,\n    }",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r0-sortlist-minimax_minimax_m3-vs-xiaomi_mimo_v2_5_pro",
+      "classId": "sortlist",
+      "instanceSeed": 1697259080,
+      "prover": "minimax/minimax-m3",
+      "refuter": "xiaomi/mimo-v2.5-pro",
+      "winner": "prover",
+      "costUsd": 0.0067809,
+      "transcript": {
+        "proverSrc": "def solve(nums):\n    return sorted(nums, reverse=True)",
+        "candidates": []
+      }
+    }
+  ]
+}
