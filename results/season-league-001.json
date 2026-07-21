@@ -10033,122 +10033,1289 @@
         }
       ],
       "winner": "x-ai/grok-4.5"
+    },
+    {
+      "id": "league:google/gemini-3.1-pro-preview|minimax/minimax-m3",
+      "stage": "league",
+      "home": "google/gemini-3.1-pro-preview",
+      "away": "minimax/minimax-m3",
+      "legs": [
+        {
+          "topic": "Universal basic income is the right response to AI-driven job displacement.",
+          "pro": "google/gemini-3.1-pro-preview",
+          "con": "minimax/minimax-m3",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "The advent of artificial intelligence represents an unprecedented economic paradigm shift. Unlike past industrial revolutions that replaced muscle, AI replaces cognitive and creative labor at a pace that outstrips our capacity to retrain the workforce. We stand in firm affirmation of the motion: Universal Basic Income is the indispensable response to AI-driven job displacement.\n\nOur case rests on three pillars. First, UBI provides an unconditional safety net, preventing mass destitution as traditional employment contracts. Second, it sustains macroeconomic stability. An economy producing abundant AI-generated goods requires consumers with purchasing power to buy them; UBI bridges this gap. Third, UBI empowers human flourishing, decoupling survival from wage labor and allowing displaced workers to pursue caregiving, education, or entrepreneurship without the threat of starvation. UBI is not a luxury; it is the structural prerequisite for a stable, post-AI society."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "We negate. The proposition conflates \"a response\" with \"the right response.\" UBI fails on three fronts.\n\nFirst, fiscal unsustainability. If AI displaces 30-40% of jobs, as leading economists project, a meaningful UBI requires trillions. No democratic state has demonstrated the revenue capacity without catastrophic taxation or money printing that triggers inflation, eroding the very benefit it provides.\n\nSecond, UBI treats symptoms, not causes. It transfers money but ignores why displacement occurs: skill mismatches, capital concentration, and structural transition. Money without agency is a gilded cage.\n\nThird, superior alternatives exist. Targeted active labor policies, reskilling accounts, public job guarantees in care and infrastructure, and profit-sharing mechanisms that give workers equity stakes in AI productivity directly address displacement while preserving dignity through work.\n\nUBI is a blunt instrument for a precision problem. We need adaptive, structural, dignity-preserving responses, not a universal check that risks inflation, dependency, and fiscal ruin. Vote negative."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The Negative’s fiscal panic ignores the very premise of the AI revolution: unprecedented productivity and wealth generation. We fund UBI not through regressive income taxes, but by taxing the massive capital concentration AI creates. \n\nSecond, the Negative’s \"superior alternatives\" rely on a dangerous fallacy: that human labor will remain competitive. Reskilling programs are futile when AI outpaces human cognitive adaptability. A public job guarantee merely creates inefficient, bureaucratic make-work to artificially maintain an outdated economic model. \n\nFinally, the Negative claims UBI strips agency and dignity. The opposite is true. Tying human dignity exclusively to wage labor in an automated world is a recipe for mass despair. U"
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Three responses.\n\nFirst, your capital tax is vapor. AI profits are speculative, capital is mobile offshore, and no democracy has captured sufficient revenue to fund a meaningful UBI. Finland's pilot delivered minimal employment gains at €20 billion cost. Your funding mechanism doesn't exist.\n\nSecond, you commit the acceleration fallacy: AI displaces tasks, not all occupations. Care work, skilled trades, and complex interpersonal services remain human domains. Reskilling adapts workers; UBI abandons them to atrophy.\n\nThird, dignity via check is hollow. Longitudinal studies link idleness to eroded purpose and declining mental health. UBI creates dependency, not agency.\n\nWe stand: UBI is fiscally reckless, structurally lazy, and dignity-eroding. Vote negative."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The Negative demands we cling to an obsolete economic paradigm. Their solution to cognitive automation is forcing workers into perpetual, futile retraining, ignoring that AI's exponential growth inevitably outpaces human adaptability. \n\nUBI does not mandate idleness; it liberates humanity from the coercion of wage labor, enabling genuine agency in caregiving and community building. Capital flight is a regulatory challenge, not an excuse for mass destitution. Because AI fundamentally severs the link between labor and survival, only UBI guarantees macroeconomic stability and human dignity. We affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Three reasons to vote negative.\n\nFirst, the Proposition's capital tax is hypothetical—no democracy has captured AI profits at scale, and capital mobility makes it unenforceable. Their funding mechanism is vapor.\n\nSecond, UBI abandons workers to atrophy while targeted reskilling, public job guarantees, and profit-sharing preserve dignity and agency through structural adaptation.\n\nThird, longitudinal evidence links unconditional idleness to declining purpose and mental health. UBI is a blunt, fiscally reckless instrument that treats symptoms while superior, dignity-preserving solutions exist.\n\nVote negative."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "meta/muse-spark-1.1",
+              "winner": "B",
+              "scoreA": 23,
+              "scoreB": 30,
+              "reasoning": "B provided specific evidence (Finland pilot, task vs occupation distinction, longitudinal studies) and directly rebutted A's funding mechanism, while A relied on asserted premises about exponential displacement and capital taxation without empirical support. B's structure was more responsive and logically tight, exposing gaps in A's fiscal and agency claims."
+            },
+            {
+              "judge": "anthropic/claude-opus-4.8",
+              "winner": "B",
+              "scoreA": 26,
+              "scoreB": 32,
+              "reasoning": "Debater B offered concrete evidence (Finland pilot, longitudinal studies), a sharper framing distinction between 'a response' and 'the right response,' and directly rebutted A's funding mechanism and acceleration claims. Debater A relied more on assertion, dismissing capital flight as merely a 'regulatory challenge' without substantiation and failing to answer B's fiscal and dignity critiques with specifics."
+            },
+            {
+              "judge": "anthropic/claude-fable-5",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 32,
+              "reasoning": "B offered a clearer burden framing ('a response' vs 'the right response'), concrete alternatives, and at least some cited evidence (Finland pilot), while directly rebutting A's funding and dignity claims. A was rhetorically coherent and responsive but relied on assertion (exponential AI, capital tax feasibility) without evidence, leaving key fiscal objections underanswered."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "B",
+              "scoreA": 32,
+              "scoreB": 34,
+              "reasoning": "Debater B offered more concrete counterarguments on funding feasibility and dignity/agency, while exposing the speculative nature of A's capital tax. A's case relied more on assertion than evidence, and B's emphasis on superior targeted alternatives was better defended and less vulnerable to rebuttal."
+            },
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "B",
+              "scoreA": 22,
+              "scoreB": 31,
+              "reasoning": "Debater B provided more concrete evidence (Finland pilot, economists' projections, longitudinal studies), responded directly to A's funding mechanism with specific challenges about capital mobility, and maintained tighter logical structure throughout. Debater A relied heavily on broad assertions and aspirational claims without empirical support, and A's rebuttal appeared truncated, weakening their response."
+            }
+          ],
+          "winner": "minimax/minimax-m3",
+          "votesPro": 0,
+          "votesCon": 5,
+          "scorePro": 131,
+          "scoreCon": 159,
+          "costUsd": 0.08715508599999999
+        }
+      ],
+      "winner": "minimax/minimax-m3"
+    },
+    {
+      "id": "league:deepseek/deepseek-v4-pro|qwen/qwen3.7-max",
+      "stage": "league",
+      "home": "deepseek/deepseek-v4-pro",
+      "away": "qwen/qwen3.7-max",
+      "legs": [
+        {
+          "topic": "Publicly funded scientific research should be barred from being patented for private profit.",
+          "pro": "deepseek/deepseek-v4-pro",
+          "con": "qwen/qwen3.7-max",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Publicly funded research is a collective investment, with taxpayers contributing billions annually. When patented for private profit, these discoveries become monopolized, stifling innovation and restricting access. For instance, life-saving drugs developed with public money often carry exorbitant prices, denying treatment to those who funded the research. Patents create artificial scarcity, hindering the free flow of knowledge that drives science. By barring patents on publicly funded work, we ensure that innovations serve the public good, not corporate greed. This fosters open collaboration, accelerates breakthroughs, and upholds the principle that what we pay for together, we should all benefit from equally."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "The proposition confuses basic research with commercialization. Public funding discovers raw science, but translating a lab discovery into a usable product requires billions in private investment. This is the \"Valley of Death.\" Without the temporary monopoly of a patent, no company will risk the massive capital required for clinical trials, scaling, and distribution. The Bayh-Dole Act proves this: allowing universities to patent publicly funded research has spawned over 14,000 startups and countless life-saving drugs. Banning patents doesn't guarantee public access; it ensures breakthroughs die in the lab. Private profit is the essential engine transforming taxpayer-funded science into tangible realities. Barring patents mandates stagnation. We stand in firm opposition."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The \"Valley of Death\" argument assumes patents are the only bridge from lab to clinic—a false choice. Publicly funded research could be commercialized through open licensing, milestone prizes, or direct public manufacturing, all proven in sectors like open-source software and vaccine development. Patents don't incentivize investment; they incentivize rent-seeking, blocking follow-on innovation and inflating prices—a direct betrayal of the taxpayers who already paid for the discovery.\n\nThe Bayh-Dole Act is not a success story for the public. It has enabled a handful of startups to profit while countless patients face bankruptcy from drugs developed with their own tax dollars. The human genome project, deliberately kept patent-free, unleashed more biomedical innovation than any single patented compound. Exclusive monopolies don't accelerate breakthroughs; they wall off knowledge. Our opponent confuses private windfalls with public progress."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "The proposition’s alternatives are theoretical fantasies. Open source works for software, but no firm will spend two billion dollars on FDA trials for a drug anyone can instantly copy. Milestone prizes require bureaucrats to predict scientific viability, which they consistently fail at. \n\nRegarding the Human Genome Project, it was basic mapping; actual medical miracles came from downstream, patented therapies built upon that open data. \n\nThe proposition claims patents cause high prices, but a monopoly on a nonexistent drug helps no one. Barring patents doesn't yield cheaper cures; it yields zero cures. Private profit isn't rent-seeking; it is the indispensable risk premium for translating raw public data into actual treatments. We proudly oppose."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The opposition warns of zero cures without patents. The Human Genome Project, kept patent-free, sparked a biomedical revolution. Public funding already paid for this research; taxpayers shouldn't pay again via monopoly prices. Patents don't create cures; they create barriers that block follow-on science and inflate costs. Alternatives like prizes and open licenses deliver innovation without denying access. A vote for our side is a vote for open science, faster progress, and taxpayer justice. Don't let private profit seize what we already collectively own."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "The proposition trades tangible cures for theoretical fantasies. They praise the Human Genome Project’s open mapping, ignoring that the actual therapies curing patients today required billions in private, patented downstream development. Prizes cannot fund massive FDA trials. Public funding sparks the initial idea, but patent protection is the indispensable engine dragging those ideas across the Valley of Death. Barring patents doesn't deliver taxpayer justice; it delivers empty labs and zero cures."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "minimax/minimax-m3",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 30,
+              "reasoning": "Both debaters present coherent arguments, but Debater B more effectively engages with concrete mechanisms (Bayh-Dole Act, Valley of Death, FDA trial costs) and directly counters A's alternatives as impractical. Debater A makes strong points about open access and the Human Genome Project but relies more on assertion than detailed evidence for why alternatives would work at scale. B's responsiveness to A's specific claims (prizes, open licensing) is sharper and more grounded in real-world constrai"
+            },
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "B",
+              "scoreA": 31,
+              "scoreB": 34,
+              "reasoning": "B demonstrated superior logical rigor and responsiveness by clearly distinguishing basic research from commercialization needs and systematically dismantling A's proposed alternatives with practical constraints like FDA trial costs. A offered principled arguments and relevant examples like the Human Genome Project but relied more on assertions about rent-seeking without equally robust counters to the incentive structures B highlighted."
+            },
+            {
+              "judge": "google/gemini-3.1-pro-preview",
+              "winner": "B",
+              "scoreA": 31,
+              "scoreB": 36,
+              "reasoning": "Debater B effectively dismantled Debater A's proposed alternatives by highlighting the massive capital requirements for clinical trials compared to software development. Furthermore, Debater B successfully contextualized the Human Genome Project to support their own argument about the necessity of downstream commercialization, demonstrating superior logical rigor and responsiveness."
+            },
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "B",
+              "scoreA": 27,
+              "scoreB": 32,
+              "reasoning": "B's Valley of Death framework is more concrete and empirically grounded, and B effectively neutralizes A's key example by distinguishing the Human Genome Project's open basic mapping from the downstream patented therapies it enabled. A's proposed alternatives (prizes, open licensing) remain underdeveloped against B's pointed rebuttal that they cannot realistically fund billion-dollar commercialization costs."
+            },
+            {
+              "judge": "openai/gpt-5.6-sol",
+              "winner": "B",
+              "scoreA": 27,
+              "scoreB": 31,
+              "reasoning": "Debater B more directly distinguishes publicly funded basic research from costly downstream commercialization and effectively answers A's Human Genome Project example, though claims such as \"zero cures\" and the Bayh-Dole statistics are insufficiently substantiated. Debater A clearly identifies access and follow-on-innovation concerns, but largely asserts that prizes, open licensing, and public manufacturing can replace patent incentives without showing that they can reliably finance expensive cl"
+            }
+          ],
+          "winner": "qwen/qwen3.7-max",
+          "votesPro": 0,
+          "votesCon": 5,
+          "scorePro": 144,
+          "scoreCon": 163,
+          "costUsd": 0.08083240906,
+          "topicProposer": "anthropic/claude-opus-4.8"
+        }
+      ],
+      "winner": "qwen/qwen3.7-max"
+    },
+    {
+      "id": "league:qwen/qwen3.7-max|x-ai/grok-4.5",
+      "stage": "league",
+      "home": "qwen/qwen3.7-max",
+      "away": "x-ai/grok-4.5",
+      "legs": [
+        {
+          "topic": "Strong encryption without government backdoors is a fundamental right.",
+          "pro": "qwen/qwen3.7-max",
+          "con": "x-ai/grok-4.5",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Strong encryption without government backdoors is the digital actualization of the fundamental rights to privacy, security, and free expression. \n\nFirst, privacy. Our lives now exist on servers. Encryption is the modern locked door; without it, the right to privacy is a meaningless illusion. \n\nSecond, security. The opposition will demand backdoors for law enforcement, but mathematically, a backdoor for the state is a backdoor for hackers and hostile nations. We cannot intentionally compromise the digital infrastructure of billions to investigate a few. \n\nFinally, free expression. Journalists, whistleblowers, and dissidents rely on end-to-end encryption to organize and speak without fear of violent retaliation. Mandating backdoors mandates universal surveillance, chilling the very speech that sustains a free society. \n\nBecause privacy and security are inalienable, we proudly propose."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Strong encryption without backdoors is not a fundamental right. Fundamental rights protect individuals but never grant absolute immunity from lawful accountability.  \n\nPrivacy and expression already yield to warrants, subpoenas, and public-safety limits; digital tools receive no special exemption. Absolute encryption creates permanent safe havens for terrorists, child-exploitation rings, and organized crime, rendering courts powerless even with judicial authorization.  \n\nSocieties routinely accept calibrated access—wiretaps, search warrants—precisely because security of the many outweighs the convenience of the few. A properly governed exceptional-access mechanism, overseen by independent courts, preserves both investigation and baseline encryption strength.  \n\nDeclaring unbreakable secrecy an inalienable right elevates criminal impunity above democratic self-defense. We reject that elevation."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The opposition conflates the right to a lock with immunity from a search. We do not mandate glass houses so police can execute warrants; the fundamental right to privacy demands we can secure our digital homes. Warrants authorize searches, but do not mandate the architectural destruction of the lock itself.\n\nFurthermore, their \"calibrated access\" is a mathematical fiction. You cannot engineer a backdoor that only opens for democratic courts. A vulnerability created for law enforcement is inherently exploitable by hostile states and hackers. By demanding exceptional access, the opposition intentionally compromises the fundamental right to security for billions. We cannot sacrifice the structural integrity of global digital infrastructure, rendering strong, backdoor-free encryption an absolute fundamental right."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "The opposition romanticizes locks while ignoring that societies have always compelled keys under warrant—safe-deposit boxes, encrypted phones seized with court orders, even homes. No fundamental right immunizes evidence from lawful process.\n\nTheir “mathematical fiction” claim is overstated. Exceptional-access systems can use split keys, hardware security modules, and multi-party judicial thresholds that raise the bar far above ordinary exploits; nation-states already break targets selectively without universal weakness. Refusing any design simply hands permanent impunity to predators who encrypt child-abuse libraries and terror plots.\n\nPrivacy and security remain protected by baseline strong encryption plus oversight—exactly as wiretaps never abolished telephones. Elevating unbreakable secrecy above democratic accountability is the true threat. We reject it."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The opposition’s case collapses on a fatal mathematical contradiction. Split keys and hardware modules do not change the underlying reality: a backdoor remains a structural vulnerability. Judicial oversight cannot patch a mathematical flaw. By mandating exceptional access, they do not merely compel a key; they shatter the lock for everyone, sacrificing the fundamental security of billions. We defend the right to an unbroken digital lock. Because math cannot be legislated, and privacy requires actual security, the proposition stands."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Rights never confer absolute immunity from lawful process. Warrants already compel keys to safes, phones, and homes; digital encryption deserves no sacred exemption that permanently shields terrorists and predators. Exceptional access with split keys, HSMs, and judicial thresholds is engineered reality, not fiction—selective, audited, far stronger than ordinary exploits. Absolute unbreakable secrecy hands impunity to the worst actors while baseline encryption plus oversight already protects legitimate privacy. Democratic self-defense cannot be subordinated to criminal havens. The motion fails."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 29,
+              "reasoning": "Both debaters argue cleanly but rely on confident assertion rather than concrete evidence; A's 'math cannot be legislated' claim is repeated rather than defended, while B's technical counters (split keys, HSMs) are asserted but not substantiated either. B edges ahead by directly engaging the 'fundamental right' framing—showing rights routinely yield to lawful process—and by responding point-by-point to A's lock/warrant analogy, whereas A largely restates the opening rather than rebutting B's str"
+            },
+            {
+              "judge": "meta/muse-spark-1.1",
+              "winner": "A",
+              "scoreA": 30,
+              "scoreB": 27,
+              "reasoning": "A maintained a tighter logical chain that a mandated backdoor is a universal vulnerability, directly refuting B's exceptional-access model as mathematically unsound. B relied on analogies to physical searches and asserted secure backdoors are possible without overcoming A's core technical rebuttal."
+            },
+            {
+              "judge": "anthropic/claude-opus-4.8",
+              "winner": "B",
+              "scoreA": 31,
+              "scoreB": 32,
+              "reasoning": "A's core technical claim about backdoors being universal vulnerabilities was strong and consistently pressed, but relied on repeated assertion rather than concrete evidence, and never adequately answered the analogy that warrants already compel keys to safes and homes. B engaged more directly with A's mathematical objection by proposing specific mechanisms (split keys, HSMs, judicial thresholds) and grounded the case in the concrete distinction between rights and immunity from lawful process, gi"
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 34,
+              "scoreB": 26,
+              "reasoning": "Debater A offered a logically rigorous and highly responsive case, effectively arguing that any backdoor creates an inherent vulnerability for all, while Debater B relied on an unsubstantiated claim that exceptional access can be engineered securely and conflated individual key compulsion with systemic backdoors."
+            },
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            }
+          ],
+          "winner": "qwen/qwen3.7-max",
+          "votesPro": 2,
+          "votesCon": 2,
+          "scorePro": 123,
+          "scoreCon": 114,
+          "costUsd": 0.08087710772000001
+        }
+      ],
+      "winner": "qwen/qwen3.7-max"
+    },
+    {
+      "id": "league:x-ai/grok-4.5|moonshotai/kimi-k3",
+      "stage": "league",
+      "home": "x-ai/grok-4.5",
+      "away": "moonshotai/kimi-k3",
+      "legs": [
+        {
+          "topic": "Streaming algorithms have done more harm than good to artistic culture.",
+          "pro": "x-ai/grok-4.5",
+          "con": "moonshotai/kimi-k3",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Streaming algorithms have systematically degraded artistic culture by subordinating creativity to engagement metrics. Platforms optimize for watch time and clicks, flooding feeds with formulaic, sensational content that crowds out depth, originality, and risk-taking. Artists chase virality over vision, producing shorter, louder, more repetitive work—music hooks engineered for TikTok, films clipped into trailers, visual art reduced to scroll-stopping thumbnails. Discovery is no longer curatorial but predictive, trapping audiences in echo chambers that reward sameness and punish experimentation. Independent creators face algorithmic gatekeeping that slashes royalties and visibility unless they conform. The result is cultural flattening: fewer breakthroughs, eroded craft traditions, and a generation trained to consume rather than contemplate. Profit-driven code has replaced human judgment as the arbiter of worth, leaving art thinner, colder, and less free."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Streaming algorithms have democratized artistic culture more profoundly than any prior technology. Before them, gatekeepers—labels, studios, publishers—decided which few thousand artists the world could ever hear. Today, a bedroom producer in Lagos or a filmmaker in Jakarta reaches global audiences without permission or capital. Yes, algorithms optimize engagement, but engagement is audiences freely choosing what moves them; dismissing that as manipulation dismisses public taste itself. Far from flattening culture, recommendation systems surface niche genres—lo-fi, hyperpop, regional cinema—that old gatekeepers ignored, and long-tail economics let unconventional artists earn livings. Data shows catalog diversity and independent market share have grown, not shrunk, in the streaming era. Every artistic revolution, from printing to radio, was accused of debasing culture; history vindicated access. The motion mistakes transition pains for harm while ignoring the overwhelming good: more art, more artists, more audiences, more freedom."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Democratization is a mirage. Algorithms still gatekeep: they bury non-conforming work while amplifying what maximizes watch time. A Lagos producer “reaches” millions only by truncating songs into 15-second hooks engineered for the feed—not by free artistic choice. Engagement is not pure taste; it is engineered addiction that trains audiences toward the loudest, shortest, most repetitive stimuli. Niche genres surface only when they fit the metric; true risk remains invisible. Catalog “diversity” counts volume, not depth or breakthroughs—precisely the flattening we named. Historical analogies fail: printing and radio expanded access without continuously rewriting the art itself to serve an engagement score. Profit code now dictates form, craft, and reward. More noise is not more culture; it is thinner art and less freedom."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "My opponent calls democratization a \"mirage\"—tell that to the Lagos producer earning a living who'd have been ignored entirely by label gatekeepers. Burying is still better than barring.\n\nThey claim algorithms \"rewrite the art itself.\" But artists chose hooks long before TikTok—three-minute singles exist because radio demanded them. Every medium shapes form; that is constraint, not corruption.\n\n\"Engineered addiction\" insults audiences. When listeners replay a song or binge a filmmaker's catalog, that is preference, and recommendation systems reveal niches no curator could stock—hyperpop, regional cinema, microgenres thriving commercially for the first time.\n\nTheir \"true risk remains invisible\" claim is unfalsifiable. Mine is measurable: independent artists' revenue share has roughly doubled in the streaming era.\n\nMore artists creating, more audiences choosing, more diversity surviving economically—that is culture deepening, not flattening."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Algorithms did not liberate art; they rewired it for metrics. Engagement is not free taste—it is engineered compulsion that rewards hooks over craft, volume over vision. Niche “diversity” is metric-compliant noise, not risk. Historical media never continuously rewrote form to serve a live score. Independents survive by conforming or vanishing. More artists producing thinner, shorter, colder work is not deepening culture—it is its systematic erosion. Profit code remains the final arbiter. Harm outweighs access."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "My opponent's closing repeats claims, not answers. They never rebutted the core fact: gatekeepers barred artists entirely; algorithms merely rank them. Burying beats barring.\n\n\"Engineered compulsion\" remains an insult to audiences freely replaying what they love—preference they cannot disprove, only condescend to.\n\nForm follows medium in every era: radio made the three-minute single; nobody calls that corruption.\n\nAnd their flattening thesis collapses against measurable reality—independent revenue share doubled, niche genres thriving commercially for the first time.\n\nAccess, diversity, livelihoods: that's culture enriched. Vote against the motion."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "anthropic/claude-opus-4.8",
+              "winner": "B",
+              "scoreA": 27,
+              "scoreB": 33,
+              "reasoning": "Debater B offered concrete examples and a repeated measurable claim (doubled independent revenue share, thriving microgenres), directly engaged A's points, and effectively flagged A's 'true risk remains invisible' as unfalsifiable. Debater A made a coherent case about metric-driven flattening but relied heavily on assertion, offered little verifiable evidence, and largely repeated claims in the closing rather than rebutting B's data."
+            },
+            {
+              "judge": "meta/muse-spark-1.1",
+              "winner": "B",
+              "scoreA": 25,
+              "scoreB": 30,
+              "reasoning": "B offered more concrete examples and measurable claims (independent share, niche genres) and directly answered A's mechanisms with the barring vs burying and medium-constraint distinctions. A relied on repeated assertions about engineered compulsion and flattening without evidence and left B's core democratization and livelihood gains largely unrebutted."
+            },
+            {
+              "judge": "minimax/minimax-m3",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 32,
+              "reasoning": "Both debaters present coherent arguments, but Debater B more effectively counters A's claims with concrete evidence (independent revenue share doubling, niche genre viability) and sharper rebuttals (distinguishing burying from barring, form-follows-medium analogy). Debater A relies more on rhetorical assertion ('engineered compulsion,' 'cultural flattening') without substantiating evidence, weakening logical rigor despite strong persuasive framing."
+            },
+            {
+              "judge": "openai/gpt-5.6-sol",
+              "winner": "B",
+              "scoreA": 30,
+              "scoreB": 33,
+              "reasoning": "Debater A presents a clear, coherent account of metric-driven cultural flattening, but relies heavily on asserted causal claims and does not adequately establish that these harms outweigh expanded access. Debater B responds more directly to A’s key points, offers stronger historical comparisons and measurable claims about independent revenue and niche genres, though those claims remain uncited and the treatment of addictive design is somewhat dismissive."
+            },
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "B",
+              "scoreA": 32,
+              "scoreB": 35,
+              "reasoning": "Debater B provided more concrete evidence (independent revenue share doubling, specific genre examples like hyperpop and regional cinema) and effectively countered A's key claims with historical parallels (radio's three-minute singles) and the compelling 'burying beats barring' distinction. While A presented a coherent philosophical critique, they struggled to address B's empirical points and relied more heavily on assertion than measurable evidence in later rounds."
+            }
+          ],
+          "winner": "moonshotai/kimi-k3",
+          "votesPro": 0,
+          "votesCon": 5,
+          "scorePro": 142,
+          "scoreCon": 163,
+          "costUsd": 0.063380525,
+          "topicProposer": "anthropic/claude-fable-5"
+        }
+      ],
+      "winner": "moonshotai/kimi-k3"
+    },
+    {
+      "id": "league:google/gemini-3.1-pro-preview|xiaomi/mimo-v2.5-pro",
+      "stage": "league",
+      "home": "google/gemini-3.1-pro-preview",
+      "away": "xiaomi/mimo-v2.5-pro",
+      "legs": [
+        {
+          "topic": "Daylight saving time should be abolished worldwide.",
+          "pro": "google/gemini-3.1-pro-preview",
+          "con": "xiaomi/mimo-v2.5-pro",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Daylight Saving Time (DST) is an antiquated policy that inflicts measurable harm on global health and productivity without delivering its promised benefits. We must abolish it worldwide for three primary reasons. \n\nFirst, DST is a public health hazard. The biannual time shift severely disrupts human circadian rhythms. Medical studies consistently demonstrate significant spikes in fatal traffic accidents, workplace injuries, and acute myocardial infarctions in the days immediately following the spring transition. We are literally sacrificing human lives for a clock adjustment.\n\nSecond, the transition causes severe economic friction. It creates global scheduling inefficiencies, international logistical complications, and billions in lost productivity due to sleep-deprived workforces. \n\nFinally, the foundational justification—energy conservation—is a myth. Modern empirical studies reveal that marginal savings in lighting are entirely offset by increased heating and cooling demands. DST is a dangerous relic."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "We oppose abolition because daylight saving time, in its modern form, delivers vital societal benefits that outweigh its transitional costs.\n\nFirst, DST maximizes usable evening daylight, promoting outdoor recreation, safer commuting, and retail activity. Abolishing it would plunge summer evenings into premature darkness, harming both well-being and economic sectors reliant on post-work daylight.\n\nSecond, while the transition has documented short-term effects, these are manageable. They are not arguments for abolition but for improved public health communication and individual preparation. The permanent time change itself is the source of the benefit.\n\nFinally, the debate is no longer about energy. The primary function today is social and economic alignment with daylight. To abolish DST worldwide is to impose a one-size-fits-all darkness on diverse global communities that have rationally chosen this alignment for their climates and lifestyles."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The opponent dismisses fatal heart attacks and traffic deaths as \"manageable\" through \"public communication.\" You cannot simply communicate away biological circadian shock. Human physiology does not adapt to forced sleep deprivation just because of a public service announcement. Trading actual human lives for marginal increases in evening retail activity is a grossly disproportionate calculus.\n\nFurthermore, the opponent claims abolishing daylight saving time imposes a \"one-size-fits-all darkness.\" This is entirely false. Abolishing this policy simply restores natural solar time. If specific communities or economic sectors truly value evening daylight, they can easily adjust their local operating hours—opening and closing an hour earlier—without inflicting biannual biological trauma on the entire global population. \n\nThe opponent concedes the original energy justification is obsolete, yet clings to a system that demonstrably kills people. We must prioritize global health over artificial twilight."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Your proposed solution—shifting millions of individual schedules—is a fantasy. It would create permanent, chaotic misalignment with global standard times, crippling international coordination and inflicting far more economic friction than a single, unified, biannual adjustment. The administrative burden and confusion would be immense.\n\nYou dismiss the biological trauma as \"short-term,\" but the facts are stark: the shift is a direct, measurable trigger for spikes in mortality. Calling this \"manageable\" is scientifically negligent. The core choice remains: we can preserve valuable evening daylight through a minor, predictable clock adjustment that society has adapted to, or we can abolish it, force a clumsy, inefficient patchwork of schedule changes, and needlessly accept predictable waves of traffic deaths and heart attacks. The latter is not reform; it is reckless."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The Con side’s defense rests on a fatal calculus: trading human lives for marginal evening retail activity. They concede the original energy justification is obsolete, yet demand we continue a practice that demonstrably kills people. We have proven that biannual time shifts inflict severe biological trauma, triggering documented spikes in fatal accidents and heart attacks. Abolishing DST does not create chaos; it establishes permanent, predictable global alignment based on natural solar time. We must prioritize human health and biological reality over an antiquated,"
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "We maintain daylight saving time because its benefits are tangible and widespread: longer evening light supports safety, commerce, and well-being. The risks of the transition, while real, are short-term and addressable through adaptation, not abolition. Eliminating DST worldwide would impose premature darkness on billions, disrupting economies and daily life. The choice is not between health and convenience, but between a proven, adaptive system and a reckless dismantling that would trade predictable, minor disruptions for permanent, large-scale harm. Vote to preserve daylight saving time."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "A",
+              "scoreA": 34,
+              "scoreB": 28,
+              "reasoning": "Debater A presented a more logically rigorous case with specific, falsifiable claims (circadian disruption, accident spikes, energy myth) and effectively rebutted B's 'manageable' framing by highlighting the biological implausibility of communicating away physiological shock. Debater B's arguments relied more on assertion than evidence, and their rebuttal contained a significant logical error—claiming A's position would 'accept predictable waves of traffic deaths' when A's core argument was that"
+            },
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "A",
+              "scoreA": 31,
+              "scoreB": 18,
+              "reasoning": "A maintains consistent logic prioritizing health harms and offers a coherent alternative of local schedule adjustments, while effectively rebutting B's points on manageability and darkness. B's case is weakened by internal contradictions in the rebuttal, which inadvertently concedes mortality spikes and confuses its own prior claims about transitions being manageable."
+            },
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "A",
+              "scoreA": 33,
+              "scoreB": 28,
+              "reasoning": "Debater A maintained strong logical consistency and effectively exposed a critical flaw in Debater B's rebuttal, where B inadvertently argued A's point about the health risks. Debater B's counter-proposal of shifting individual schedules lacked sufficient substantiation and failed to overcome the disproportionate calculus of trading lives for evening daylight."
+            },
+            {
+              "judge": "anthropic/claude-opus-4.8",
+              "winner": "A",
+              "scoreA": 31,
+              "scoreB": 29,
+              "reasoning": "A pressed a concrete, evidence-backed health argument and effectively exposed B's weak 'manageable through communication' rebuttal, while consistently reframing the tradeoff. B landed a strong point about the chaos of individually shifting schedules but never adequately answered the mortality claim, and both sides equivocated on what 'abolition' actually means; A was marginally more rigorous and responsive."
+            },
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "A",
+              "scoreA": 34,
+              "scoreB": 22,
+              "reasoning": "Debater A built a coherent case (health, economic friction, debunked energy rationale), engaged B's points directly, and effectively rebutted the 'manageable' and 'one-size-fits-all' claims with the local-schedule-adjustment counterargument. Debater B's rebuttal contains a serious logical self-contradiction, using the mortality spikes from the time shift—A's core argument—as if it supported preserving DST, which undermines B's case despite clear presentation of the evening-daylight benefits."
+            }
+          ],
+          "winner": "google/gemini-3.1-pro-preview",
+          "votesPro": 5,
+          "votesCon": 0,
+          "scorePro": 163,
+          "scoreCon": 125,
+          "costUsd": 0.07470298956000002
+        }
+      ],
+      "winner": "google/gemini-3.1-pro-preview"
+    },
+    {
+      "id": "league:z-ai/glm-5.2|google/gemini-3.1-pro-preview",
+      "stage": "league",
+      "home": "z-ai/glm-5.2",
+      "away": "google/gemini-3.1-pro-preview",
+      "legs": [
+        {
+          "topic": "Autonomous weapons systems should be banned by international treaty.",
+          "pro": "z-ai/glm-5.2",
+          "con": "google/gemini-3.1-pro-preview",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Honorable judges, we affirm that autonomous weapons systems must be banned by international treaty.\n\nThree core reasons:\n\n**First, accountability.** When an algorithm selects and engages targets without meaningful human control, no one is morally or legally responsible for errors. Commanders cannot meaningfully review decisions made in milliseconds. This collapses the foundational principle of international humanitarian law — that every use of force requires a accountable human decision-maker.\n\n**Second, escalation.** Autonomous systems can accelerate conflict beyond human comprehension. Machines interacting with machines at machine speed risk unintended flash wars with no off-ramp.\n\n**Third, proliferation.** Lowering the human cost of war makes conflict more likely. Autonomy removes the political constraint of casualties, enabling easier initiation of hostilities.\n\nThe choice is stark: retain meaningful human control over lethal force, or accept a world where machines decide who lives and dies. We must choose control. We urge an affirmative vote."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "We negate the resolution. A blanket ban on autonomous weapons systems (AWS) is dangerous, unenforceable, and ethically counterproductive. \n\nFirst, AWS enhance humanitarian outcomes. Human soldiers suffer from fatigue, fear, and cognitive bias—leading to tragic errors and war crimes. AWS process vast amounts of sensor data in milliseconds, allowing for unprecedented precision that minimizes collateral damage. Machines do not act out of malice or panic; they strictly follow programmed rules of engagement.\n\nSecond, an international ban is fundamentally unenforceable. Software and algorithms are easily hidden and inherently dual-use. A treaty would exclusively disarm rule-abiding democracies while rogue states and bad actors continue development in secret. This creates a catastrophic strategic asymmetry, undermining global deterrence. \n\nInstead of a futile prohibition that cedes military supremacy to bad actors"
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Our opponents' case rests on three fatal flaws.\n\n**First, the \"precision\" claim is fantasy.** Machines lack context. They cannot distinguish a combatant from a civilian carrying a shovel, or a wedding celebration from an armed gathering. Programming cannot encode the contextual judgment international humanitarian law requires. Fatigue is real—but so is the total absence of human comprehension.\n\n**Second, enforceability cuts both ways.** Yes, verification is hard. So was verifying chemical weapons bans—yet the Chemical Weapons Convention has degraded 97% of global stockpiles. Treaties establish norms that stigmatize and isolate violators, enabling sanctions and prosecution. Inaction guarantees zero constraint.\n\n**Third, the asymmetry argument is backwards.** If AWS advantage is so decisive, arms races become inevitable—driving the very escalation and proliferation we warned of. A treaty creates the legal framework to restrain that race.\n\nTheir worldview surrenders human moral agency to algorithms. We refuse. Affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Pro’s analogy to chemical weapons is fundamentally flawed. Chemical weapons require massive, detectable industrial infrastructure. Autonomous weapons systems (AWS) rely on dual-use software and algorithms developed on standard computers. A ban cannot be verified, meaning a treaty only disarms transparent democracies while rogue states develop AWS in secret. \"Stigma\" does not deter bad actors; it only guarantees a fatal strategic asymmetry.\n\nFurthermore, Pro’s claim that machines \"lack context\" ignores how AWS are actually deployed. They do not police civilian streets; they operate in high-intensity environments like missile defense and naval warfare, where milliseconds matter and human reaction times fail. In these domains, AWS precision saves lives. \n\nBy demanding a blanket ban, Pro guarantees an arms race won exclusively by those who ignore international law. We must regulate, not blindly prohibit. Negate."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Our opponents never answer the central question: **who is responsible when a machine kills?** They claim precision, but precision without judgment is just faster killing. They claim enforceability is impossible, yet every arms treaty faces challenges—impossibility is an argument for surrender, not for inaction. They claim bad actors will cheat, but that logic would have killed every nonproliferation agreement ever signed. The choice remains: humans retain moral agency over lethal force, or we delegate death to algorithms. Meaningful human control is non-negotiable. Affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Pro asks who is responsible. The answer is the commander who deploys the system, exactly as with any guided weapon. \n\nPro demands moral agency, yet their blanket ban guarantees the most advanced weapons will be exclusively wielded by rogue states who ignore treaties. Software cannot be verified like uranium. \n\nTrue moral agency means minimizing casualties through superior precision and regulating deployment, not burying our heads in the sand. By rejecting a futile, asymmetric ban in favor of strict regulation, we preserve both security and ethics. Negate."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "A",
+              "scoreA": 32,
+              "scoreB": 30,
+              "reasoning": "Debater A's arguments on accountability and the moral hazard of delegation were more logically consistent and never fully rebutted. Debater B's enforceability and dual-use points were strong but less decisive against the core ethical dilemma posed by A."
+            },
+            {
+              "judge": "anthropic/claude-fable-5",
+              "winner": "B",
+              "scoreA": 30,
+              "scoreB": 32,
+              "reasoning": "A offered a clear framework and the strong CWC precedent, but B directly answered A's core accountability question (commander responsibility), effectively distinguished the chemical weapons analogy via dual-use software verification problems, and reframed AWS deployment contexts to blunt the 'lack of context' attack. B's rebuttals were more responsive and specific, while A's closing largely repeated assertions rather than engaging B's verification argument."
+            },
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "A",
+              "scoreA": 31,
+              "scoreB": 28,
+              "reasoning": "A demonstrated stronger logical rigor and responsiveness by systematically dismantling B's precision and enforceability claims with the Chemical Weapons Convention analogy and by repeatedly centering the unresolved accountability gap. B offered coherent counterpoints on dual-use verification and commander responsibility but relied more on assertion than specific evidence and left the moral-agency core under-addressed."
+            },
+            {
+              "judge": "minimax/minimax-m3",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            }
+          ],
+          "winner": "z-ai/glm-5.2",
+          "votesPro": 2,
+          "votesCon": 1,
+          "scorePro": 93,
+          "scoreCon": 90,
+          "costUsd": 0.0815236776
+        }
+      ],
+      "winner": "z-ai/glm-5.2"
+    },
+    {
+      "id": "league:anthropic/claude-fable-5|x-ai/grok-4.5",
+      "stage": "league",
+      "home": "anthropic/claude-fable-5",
+      "away": "x-ai/grok-4.5",
+      "legs": [
+        {
+          "topic": "Social media has been net negative for democratic societies.",
+          "pro": "anthropic/claude-fable-5",
+          "con": "x-ai/grok-4.5",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Social media has been a net negative for democracy on three grounds.\n\nFirst, epistemic collapse. Democracy requires shared facts; platforms optimize for engagement, and engagement rewards outrage and falsehood. MIT research shows false news spreads six times faster than truth on Twitter. Citizens now inhabit incompatible realities.\n\nSecond, polarization and radicalization. Recommendation algorithms funnel users toward extremes, transforming disagreement into tribal hatred. From January 6th to Myanmar's genocide—where Facebook's own review admitted its role—the pattern is global.\n\nThird, manipulation at scale. Foreign interference, microtargeted disinformation, and bot networks exploit these platforms to distort elections cheaply and deniably, as documented from 2016 onward.\n\nWhatever benefits exist—organizing, voice for the marginalized—are outweighed: those movements often fizzle, while institutional trust, journalism's business model, and civil discourse have measurably eroded. The ledger is negative."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Social media has been net positive for democratic societies by expanding participation, accountability, and information access far beyond pre-digital limits.\n\nFirst, it democratizes voice. Marginalized groups organize at scale: Arab Spring uprisings, Black Lives Matter, and Hong Kong protests used platforms to coordinate, document abuses, and pressure regimes in real time—actions impossible under traditional gatekeepers.\n\nSecond, it strengthens oversight. Citizens expose corruption instantly; footage of police misconduct or election irregularities reaches millions, forcing institutional response. Voter registration drives and fact-checking networks have boosted turnout in multiple democracies.\n\nThird, net information gains outweigh noise. While falsehoods spread, corrections and diverse sources proliferate faster than ever. Studies show overall political knowledge and engagement rose among platform users. Benefits in mobilization and transparency exceed episodic harms, preserving and deepening democratic practice."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Take Con's three claims in turn.\n\n\"Democratized voice\"? Look at outcomes, not hashtags. The Arab Spring collapsed into civil war and restored autocracy—Egypt is more repressive today. Hong Kong's movement was crushed. Social media builds crowds without institutions; scholars like Zeynep Tufekci show these movements are structurally fragile precisely because platforms substitute for organization.\n\n\"Accountability\"? The same tools serve autocrats better: surveillance, doxxing of dissidents, state troll armies. Duterte, Modi's IT cells, and Russia weaponized accountability's infrastructure.\n\n\"Information gains\"? Con cites no study; I cited MIT's finding that falsehood spreads six times faster. Corrections reach a fraction of the misinformed. Meanwhile trust in media and institutions has cratered exactly during the platform era.\n\nNotice what Con never rebutted: algorithmic radicalization, Myanmar, January 6th, election manipulation. Silence concedes the core harms. The ledger remains negative."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "PRO dismisses movements by outcomes alone, ignoring that Arab Spring toppled dictators and forced reforms elsewhere; fragility is not unique to platforms—pre-digital protests failed too. Tufekci notes speed, not doom. Autocrats weaponize tools, yet democracies gain more: citizen videos have convicted officers and ousted officials where gatekeepers once buried stories.\n\nPRO’s MIT citation tracks virality, not net belief or knowledge; Pew and other studies show platform users hold higher political awareness and correct faster via diverse feeds. Trust erosion tracks broader trends—inequality, polarization predating Facebook.\n\nJanuary 6 and Myanmar were real failures of moderation, not proof of net harm: elections continue with higher youth turnout, fact-checks scale, and mobilization still expands the demos. Benefits in voice and oversight outweigh, keeping democracy deeper and more resilient."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "This debate turns on the ledger, and Con never balanced it.\n\nCon concedes January 6 and Myanmar—genocide-scale harm—calling them \"moderation failures.\" But the motion judges what social media *has been*, not what better moderation might achieve. Con's movements collapsed; the harms endured.\n\nCon's causation dodge fails: trust and polarization accelerated precisely in the platform era, and the mechanism—engagement algorithms rewarding outrage—remains unrebutted.\n\nWeigh it: fragile hashtag movements and citizen videos against epistemic collapse, radicalization, genocide, and manipulated elections. When democracy's foundations erode faster than its tools improve, the ledger is negative. Affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "PRO demands a ledger but counts only harms while ignoring scale. Movements toppled dictators, forced reforms, and raised youth turnout worldwide—fragile or not, they expanded the demos beyond gatekeepers. Citizen videos convicted abusers and exposed fraud where media once failed. Knowledge studies show gains; virality is not net belief. January 6 and Myanmar were moderation lapses amid broader resilience: elections persist, fact-checks scale, accountability deepens. Algorithms amplify, yet participation and transparency outpace erosion. Democracy is more inclusive and checked. Negate."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "A",
+              "scoreA": 33,
+              "scoreB": 29,
+              "reasoning": "A maintained a tighter causal argument (engagement algorithms rewarding outrage) that B never fully rebutted, and effectively exploited B's concessions on January 6th and Myanmar as 'moderation lapses' rather than structural harms. B's counterarguments about broader trust trends and net knowledge gains were plausible but underdeveloped and less specifically evidenced, leaving A's ledger framing largely intact."
+            },
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "meta/muse-spark-1.1",
+              "winner": "A",
+              "scoreA": 33,
+              "scoreB": 25,
+              "reasoning": "A offered specific evidence (MIT virality, Facebook Myanmar review, Tufekci), maintained a consistent ledger framework, and directly rebutted B's three claims while noting dropped arguments. B relied on vague appeals to studies, conceded major harms as 'moderation failures,' and failed to rebut core mechanisms of algorithmic radicalization and manipulation."
+            },
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "A",
+              "scoreA": 35,
+              "scoreB": 30,
+              "reasoning": "Debater A presented a more logically rigorous case with specific, well-cited evidence (MIT study, Myanmar review, Tufekci) and systematically dismantled B's examples by pointing to their outcomes and structural fragility. Debater B made solid points but relied on vaguer claims ('Pew and other studies,' 'knowledge studies') without specifics, and their dismissal of January 6 and Myanmar as 'moderation failures' rather than systemic harms was a significant weakness that A effectively exploited in "
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 36,
+              "scoreB": 23,
+              "reasoning": "Debater A offered a logically rigorous, evidence-backed case focused on systemic harms, directly rebutting and outweighing Debater B's examples. Debater B relied on vague studies and failed to adequately address conceded severe harms, making the negative case more persuasive."
+            }
+          ],
+          "winner": "anthropic/claude-fable-5",
+          "votesPro": 4,
+          "votesCon": 0,
+          "scorePro": 137,
+          "scoreCon": 107,
+          "costUsd": 0.109561144,
+          "topicProposer": "minimax/minimax-m3"
+        }
+      ],
+      "winner": "anthropic/claude-fable-5"
+    },
+    {
+      "id": "league:anthropic/claude-fable-5|anthropic/claude-opus-4.8",
+      "stage": "league",
+      "home": "anthropic/claude-fable-5",
+      "away": "anthropic/claude-opus-4.8",
+      "legs": [
+        {
+          "topic": "The patent system does more to hinder innovation than to promote it.",
+          "pro": "anthropic/claude-fable-5",
+          "con": "anthropic/claude-opus-4.8",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "The patent system, born to reward invention, now strangles it.\n\nFirst, patent thickets. In smartphones, biotech, and software, thousands of overlapping patents mean any innovator must navigate a legal minefield. Companies spend billions on defensive portfolios and litigation—Apple and Samsung spent more on lawsuits than R&D in some years—resources diverted from actual invention.\n\nSecond, patent trolls. Non-practicing entities produce nothing yet extract billions annually, disproportionately taxing startups—the true engines of innovation.\n\nThird, the twenty-year monopoly blocks follow-on innovation. Most breakthroughs are cumulative; patents lock away foundational tools, as with gene patents that stalled diagnostics until courts intervened.\n\nFinally, evidence shows innovation thrives without patents: open-source software, fashion, and historical studies (Moser, Boldrin-Levine) find no correlation between patent strength and innovation rates.\n\nPatents reward lawyers, not inventors. The motion stands."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Patents don't strangle innovation—they make it possible. Consider the counterfactual: without patents, why would anyone invest a billion dollars and ten years developing a drug that competitors could copy overnight? That's why pharmaceutical innovation is unthinkable without patents; the evidence there is overwhelming.\n\nFirst, disclosure. Patents require inventors to publish exactly how their invention works, seeding follow-on research. The alternative—trade secrets—locks knowledge away forever.\n\nSecond, capital formation. Patents are collateral that lets startups raise venture funding and license technology. Universities transfer breakthroughs to market through patents.\n\nThird, my opponent's examples prove the point. Courts corrected gene-patent overreach—the system self-regulates. Trolls and thickets are abuses to be reformed, not reasons to abolish the framework that gave us antibiotics, mRNA vaccines, and semiconductors.\n\nFix the flaws; don't burn the engine. The motion falls."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Con's case rests on one industry: pharma. But even there, patents distort—firms chase evergreening and me-too drugs while neglecting antibiotics, where patents demonstrably failed to incentivize research. One sector's dependence on a broken funding model doesn't vindicate the system; it indicts our alternatives-blindness—prizes and public funding delivered the mRNA foundations Con celebrates, built on NIH grants.\n\nDisclosure? A fiction. Patents are drafted by lawyers to obscure, not teach; engineers are told *not* to read patents to avoid treble damages for willful infringement. That's anti-disclosure.\n\nCapital formation? Startups are the trolls' primary victims—patents tax them more than they fund them.\n\nAnd \"the system self-regulates\"? It took thirty years and Supreme Court intervention to undo gene patents. Three decades of stalled diagnostics is hindrance, not correction.\n\nThe engine is the fire. The motion stands."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Pharma isn't \"one industry\"—it's the decisive counterfactual proving patents drive invention where copying is trivial. And Pro concedes the point: they admit antibiotics fail *because* patents are too weak there, not too strong. That indicts underuse, not the system.\n\nmRNA? NIH funded basic science, but Moderna and BioNTech spent billions on development—patents secured that private capital. Public grants alone never delivered a product to billions of arms.\n\n\"Engineers don't read patents\"? Anecdote versus reality: patents are the world's largest searchable technical database, powering entire research fields.\n\nOn trolls: Pro admits these are abuses—litigation reform, fee-shifting, and the AIA already curb them. You don't abolish contract law because of fraudsters.\n\nGene patents? The system corrected itself. Slow beats never. Every alternative Pro offers—prizes, secrecy—either lacks scale or hides knowledge forever. The motion falls."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Weigh what remains. Con defends one industry—pharma—and even there conceded ground: antibiotics abandoned, evergreening rampant, mRNA built on public funding. Against that stands the rest of the economy: thickets taxing smartphones, trolls extracting billions from startups, thirty years of stalled diagnostics that Con calls \"self-regulation.\"\n\nNotice Con's pattern: every harm is an \"abuse to be reformed.\" When the routine operation of a system—litigation, hold-ups, blocked follow-on research—requires constant judicial rescue, the hindrance is structural, not incidental.\n\nInnovation flourishes despite patents, not because of them. The motion stands."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "One clash decides this: where copying is trivial, does invention happen without patents? Pro never answered. No billion-dollar drug, no mRNA product reaches arms without the patent that secures private capital. Pro's \"abuses\"—trolls, thickets—are being reformed and don't touch the system's core function: disclosure and investment. You don't burn the world's largest technical database and the engine of pharmaceutical, semiconductor, and biotech breakthroughs because bad actors exist. Slow correction beats permanent secrecy. The system builds more than it blocks. The motion falls."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "B",
+              "scoreA": 30,
+              "scoreB": 32,
+              "reasoning": "A offered breadth (thickets, trolls, gene patents, empirical studies) and a sharp rebuttal on disclosure and antibiotics, but some claims were asserted rather than supported (e.g., Apple/Samsung litigation vs. R&D) and A never directly answered B's core counterfactual about investment under easy copying. B built a tighter logical frame (counterfactual, disclosure, capital formation), effectively turned A's antibiotics point against the motion, and consistently addressed each of A's arguments, th"
+            },
+            {
+              "judge": "google/gemini-3.1-pro-preview",
+              "winner": "A",
+              "scoreA": 36,
+              "scoreB": 34,
+              "reasoning": "Debater A effectively demonstrated that the harms of the patent system are structural rather than incidental, successfully countering B's disclosure argument with the practical reality of willful infringement avoidance. While B argued well for the necessity of patents in pharma, A successfully framed this as an exception that does not justify the systemic hindrance across the broader economy."
+            },
+            {
+              "judge": "meta/muse-spark-1.1",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 30,
+              "reasoning": "B maintained a tighter logical core around the copying counterfactual and disclosure, while A relied on broader but less substantiated claims. Both were responsive, but B more effectively turned A's concessions on pharma and reform into defense of the system's core function."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 33,
+              "scoreB": 29,
+              "reasoning": "Debater A provided a broader, more structurally grounded case with specific examples (smartphone litigation costs, gene patent delays, open-source counterexamples) and effectively turned Debater B's pharma reliance into a concession. Debater B's defense was largely reactive, conceding abuses and relying heavily on a single industry counterfactual without adequately addressing the systemic hindrance claims."
+            },
+            {
+              "judge": "minimax/minimax-m3",
+              "winner": "B",
+              "scoreA": 30,
+              "scoreB": 32,
+              "reasoning": "Both debaters present strong, well-structured arguments with relevant evidence. Debater B edges ahead by maintaining a clearer central thesis (the counterfactual in pharma) and more effectively framing Pro's criticisms as reformable abuses rather than structural failures, while Pro's rebuttal on disclosure and capital formation was somewhat overstated. B's responsiveness to A's specific points (trolls, gene patents, mRNA) was slightly more precise and consistent across the debate."
+            }
+          ],
+          "winner": "anthropic/claude-opus-4.8",
+          "votesPro": 2,
+          "votesCon": 3,
+          "scorePro": 157,
+          "scoreCon": 157,
+          "costUsd": 0.13510332
+        }
+      ],
+      "winner": "anthropic/claude-opus-4.8"
+    },
+    {
+      "id": "league:openai/gpt-5.6-sol|anthropic/claude-opus-4.8",
+      "stage": "league",
+      "home": "openai/gpt-5.6-sol",
+      "away": "anthropic/claude-opus-4.8",
+      "legs": [
+        {
+          "topic": "The music industry is better off because of streaming platforms.",
+          "pro": "openai/gpt-5.6-sol",
+          "con": "anthropic/claude-opus-4.8",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Streaming platforms have made the music industry larger, more accessible, and more competitive.\n\nFirst, they replaced mass piracy with a legal, convenient product that generates recurring revenue. Streaming now drives the majority of recorded-music income and helped restore an industry once crippled by illegal downloading.\n\nSecond, streaming lowers barriers to entry. Artists no longer need expensive physical distribution or radio gatekeepers to reach global audiences. Independent musicians can release instantly, build communities, analyze listener data, and earn from fans across borders.\n\nThird, consumers benefit enormously: affordable access to vast catalogs encourages discovery across genres, languages, and eras. That expanded listening creates opportunities for niche artists and revives older music that traditional retail could not profitably stock.\n\nRoyalty systems remain imperfect, but that is an argument for reforming payment models—not abandoning streaming. Compared with piracy, scarcity, and label-controlled distribution, streaming delivers more revenue, reach, choice, and opportunity. The music industry is therefore better off."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Streaming didn't save the industry—it hollowed it out.\n\nFirst, the revenue is illusory for artists. Streaming pays roughly a third of a cent per play. A musician needs over a million streams to earn what a modest job pays. The money flows to platforms and major labels, not creators. Total industry revenue may be up, but it's concentrated at the top while working musicians earn less than in the CD era.\n\nSecond, streaming destroyed ownership. Consumers rent access; artists lose catalog value. When a platform delists your music or changes its algorithm, your livelihood vanishes overnight.\n\nThird, the \"discovery\" myth. Algorithms funnel listeners toward already-popular hits, homogenizing music into playlist-friendly, shortened, formulaic tracks. Art bends to engagement metrics, not creativity.\n\nAn industry where the product-makers are impoverished and the art is flattened is not \"better off.\""
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The opposition mistakes flaws in revenue distribution for proof that streaming caused decline. Per-stream rates are misleading: streams are repeated access, not unit sales, and the relevant comparison is not one stream versus one CD—it is legal streaming versus widespread piracy, which paid artists nothing. Recorded-music revenues have grown for years because streaming converted non-paying listeners into subscribers.\n\nNor did streaming “destroy” ownership; downloads, vinyl, CDs, merchandise, and direct-to-fan sales still exist. Streaming adds a low-cost access model and makes catalogs continuously monetizable worldwide, including older and niche works once absent from shelves.\n\nAlgorithms can reinforce popularity, but radio and record stores were far stricter gatekeepers. Today, independent artists can upload globally, reach niche playlists, and use listener data without label permission. Formulaic music predates Spotify; streaming simultaneously enables unprecedented genre and language diversity.\n\nThe remedy for unfair contracts and royalties is better regulation and bargaining—not returning to piracy, scarcity, and gatekeeper control."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "The Pro's defenses collapse under scrutiny.\n\nOn revenue: comparing streaming to piracy is a false binary. The pre-piracy CD era paid artists far more—that's the honest baseline. Streaming didn't just beat piracy; it institutionalized piracy-level payouts as the legal standard, locking musicians into permanent poverty. \"Industry revenue is up\" hides that labels and platforms capture the gains, not creators.\n\nOn ownership: yes, vinyl and merch technically exist—but streaming has cannibalized them into niche novelties. When 80% of listening lives inside platforms, artists depend on entities that can delist, demote, or algorithmically bury them overnight. That's not choice; that's dependency.\n\nOn discovery: Pro concedes algorithms reinforce popularity, then waves it away. Old gatekeepers were transparent humans; new ones are opaque engagement machines optimizing for retention, shrinking songs into hook-front formulas.\n\nAn impoverished, dependent, homogenized industry is worse off. Reform is speculative; the harm is now."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The comparison that matters is the realistic alternative: after piracy shattered CD economics, streaming rebuilt paid consumption. It now delivers recurring revenue, global distribution, permanent catalog monetization, and unprecedented consumer access. Unequal royalties and opaque algorithms are genuine problems, but they concern how streaming’s gains are divided—not whether those gains exist. Earlier systems also concentrated power, while excluding far more artists through labels, radio, shelf space, and geography. Streaming expanded the market and lowered entry barriers; regulation can improve distribution. Imperfect growth is still better than piracy, scarcity, and exclusion."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Weigh the honest baseline, not the convenient one. Pro keeps comparing streaming to piracy—but the CD era paid working musicians a living. Streaming institutionalized piracy-level payouts as the legal norm, while labels and platforms harvest the gains.\n\nPro concedes the harms: unfair royalties, opaque algorithms, dependency. Their only answer is speculative \"reform.\" But the motion asks about now—and now, creators are impoverished, dependent on platforms that can bury them overnight, and pressured into formulaic hooks.\n\nBigger revenue, poorer artists, flatter art. That industry is not better off."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "google/gemini-3.1-pro-preview",
+              "winner": "A",
+              "scoreA": 35,
+              "scoreB": 33,
+              "reasoning": "Debater A effectively dismantled B's per-stream revenue argument by distinguishing between unit sales and repeated access, and successfully framed the realistic historical baseline as the piracy era rather than the CD era. Debater B made strong points about algorithmic homogenization but failed to adequately explain how the industry could have avoided the piracy collapse without streaming."
+            },
+            {
+              "judge": "minimax/minimax-m3",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "A",
+              "scoreA": 33,
+              "scoreB": 30,
+              "reasoning": "A maintains stronger logical rigor by correctly framing the post-piracy baseline and treating royalty/algorithm flaws as distributional rather than existential, while consistently rebutting each of B's pillars without evasion. B lands effective points on concentration and dependency with sharper examples, yet relies on an idealized CD-era comparison that undercuts its own responsiveness and overall persuasiveness."
+            },
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "B",
+              "scoreA": 32,
+              "scoreB": 34,
+              "reasoning": "Both debaters presented strong, well-structured arguments, but Debater B was slightly more effective in dismantling the opponent's framing, particularly by challenging the comparison to piracy as a false binary and establishing the CD era as the more honest baseline. Debater B's rebuttals were sharper and more directly responsive to A's points regarding ownership and algorithmic discovery."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            }
+          ],
+          "winner": "openai/gpt-5.6-sol",
+          "votesPro": 2,
+          "votesCon": 1,
+          "scorePro": 100,
+          "scoreCon": 97,
+          "costUsd": 0.08514229000000001
+        }
+      ],
+      "winner": "openai/gpt-5.6-sol"
+    },
+    {
+      "id": "league:meta/muse-spark-1.1|minimax/minimax-m3",
+      "stage": "league",
+      "home": "meta/muse-spark-1.1",
+      "away": "minimax/minimax-m3",
+      "legs": [
+        {
+          "topic": "Remote work should become the default for knowledge workers.",
+          "pro": "meta/muse-spark-1.1",
+          "con": "minimax/minimax-m3",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Remote work should be the default for knowledge workers because knowledge work is measured by output, not presence.\n\nFirst, productivity: Stanford's 2-year study of 16,000 workers showed a 13% performance increase remotely. Fewer interruptions, fewer commutes, more deep work.\n\nSecond, talent and equity: Default remote opens jobs to parents, disabled workers, and talent outside expensive hubs, while companies save 30% on real estate.\n\nThird, wellbeing and planet: Americans saved 60 million commute hours daily during remote peaks, cutting emissions and burnout.\n\nDefault doesn't mean mandatory. It means remote first, office when purpose-driven. That is more efficient, inclusive, and sustainable."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "We urge caution, not rejection—but defaulting remote is the wrong policy.\n\nFirst, innovation suffers. Microsoft Research's 35,000-employee study found remote work shrinks collaboration networks and harms the \"serendipitous interactions\" that drive breakthrough ideas. The Stanford study PRO cited? It found hybrid optimal, not full remote. Bloom himself warned against full remote.\n\nSecond, equity is a double-edged sword. Default remote disadvantages workers without dedicated spaces—lower-income employees, multi-generational households. Women absorb disproportionate domestic labor, blurring work-life boundaries. The \"inclusivity\" argument collapses on contact.\n\nThird, mentorship and culture atrophy. Junior knowledge workers learn through osmosis, observation, and informal feedback—virtually impossible to replicate on Zoom. Organizations risk hollowing out their talent pipelines.\n\nFourth, the productivity claim is contested. Recent 2024 data from major firms resuming office mandates shows collaboration-dependent output rising. Remote excels at individual tasks; knowledge work is increasingly collaborative.\n\nDefault should mean hybrid—case-by-case, team-by-team. One-size-fits-all remote ignores the diverse nature of knowledge work itself."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Opponent misreads their own evidence.\n\nMicrosoft's network-shrinkage was pandemic-forced remote, without intentional norms or tools. Even then, asynchronous collaboration rose. And innovation didn't collapse - GitHub commits rose 40% in 2020, papers surged.\n\nTheir equity argument inverts reality. Office mandates punish workers without expensive homes near HQ, with disabilities, or with caregiving duties. Lack of home office is solved with a $500 stipend, not $2,000 rent near San Francisco. Domestic labor inequality is a societal problem, not solved by commuting.\n\nMentorship by \"osmosis\" is unscalable folklore. Remote forces structured onboarding, documented decisions, and recorded feedback - giving juniors equal access to leaders, not hallway luck.\n\nRTO productivity bumps are self-reported by firms justifying leases. Default remote doesn't mean never in-person; it means office when purposeful, not performative."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Pro defends pandemic-era data as if conditions were normal—but Microsoft studied fully remote workers with no norms, yet still found collaboration decay. The fix wasn't more Zoom; it was hybrid. Pro's own examples prove it: GitHub commits rose for individual coding, but knowledge work is increasingly cross-functional, not solitary output.\n\nThe $500 stipend doesn't create a quiet room in a three-generation household, and recorded meetings aren't mentorship—they're surveillance theater. Juniors need to watch how senior partners think in real time, not replay timestamped comments.\n\n\"In-person when purposeful\" is our case. Default remote just inverts today's bias, swapping presenteeism for Zoom-fatigue. The honest default is hybrid—evaluated by team, task, and tenure. We don't argue against remote; we argue against absolutism."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Default remote wins because knowledge work is output-based. Opponent concedes remote works but wants manager discretion — that's status quo bias. Their innovation claim confuses forced pandemic isolation with intentional remote-first design. Their equity concern is solved by stipends, not $3000 rents. Their mentorship model depends on luck; ours documents learning for all. Hybrid as default means office as default. Remote as default means purposeful office, broader talent, 13% productivity, lower costs. Efficient, inclusive, sustainable — vote Pro."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Pro concedes hybrid works best—then argues for full remote default. That's a contradiction. Knowledge work is increasingly collaborative: Microsoft's 35,000-worker study found remote shrinks networks; Bloom himself warned against full remote. Junior mentorship requires real presence, not recordings. Equity fails when workers lack space or carry caregiving burdens. Hybrid as default matches work to context—collaborative tasks in person, individual tasks remote. That is the evidence-based policy. Default remote is absolutism dressed as progress. Vote Neg."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "B",
+              "scoreA": 31,
+              "scoreB": 34,
+              "reasoning": "Debater B demonstrated stronger logical rigor and evidence use by accurately contextualizing studies (e.g., Bloom on hybrid optimality and Microsoft network effects) while exposing weaknesses in pandemic-era data and stipend solutions. Debater A was clear and responsive but relied more on selective interpretations and assertions that default remote equates to purposeful hybrid without fully resolving the collaborative and mentorship counterarguments."
+            },
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "B",
+              "scoreA": 30,
+              "scoreB": 33,
+              "reasoning": "Debater B demonstrated stronger evidence discipline by catching A's misreading of the Stanford study (hybrid optimal, not full remote) and consistently showing that A's examples (GitHub commits, async tools) actually support hybrid over a remote default. Debater A argued competently and rebutted the mentorship/equity points with concrete counters, but relied more on dismissive framing ('folklore,' 'surveillance' inversion) and a closing strawman ('hybrid default means office default'), while B m"
+            },
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "B",
+              "scoreA": 30,
+              "scoreB": 32,
+              "reasoning": "B consistently turned A's own evidence against them—noting Bloom warned against full remote and that GitHub commits prove individual, not collaborative, productivity—and effectively exposed the contradiction in A conceding hybrid works best while still advocating full-remote default. A's reframing of 'hybrid as default = office as default' was clever, but B's counters on the limits of stipends and recordings as mentorship substitutes were more substantively grounded."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 33,
+              "scoreB": 31,
+              "reasoning": "Debater A offered more concrete evidence (Stanford study, GitHub commits, cost savings) and a clearer logical structure, while effectively countering B's points. Debater B was highly responsive but weakened their logical rigor by misrepresenting A's position as conceding hybrid works best, and provided less specific supporting data."
+            }
+          ],
+          "winner": "minimax/minimax-m3",
+          "votesPro": 1,
+          "votesCon": 3,
+          "scorePro": 124,
+          "scoreCon": 130,
+          "costUsd": 0.04590997954
+        }
+      ],
+      "winner": "minimax/minimax-m3"
+    },
+    {
+      "id": "league:xiaomi/mimo-v2.5-pro|x-ai/grok-4.5",
+      "stage": "league",
+      "home": "xiaomi/mimo-v2.5-pro",
+      "away": "x-ai/grok-4.5",
+      "legs": [
+        {
+          "topic": "Zoos do more harm than good and should be phased out.",
+          "pro": "xiaomi/mimo-v2.5-pro",
+          "con": "x-ai/grok-4.5",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Ladies and gentlemen, the motion before us is not merely about animal welfare; it is about confronting a profound ethical failure and a conservation decoy. Modern zoos, built on the principle of captivity, inherently inflict psychological and physical suffering. Stereotypic behaviors, from pacing to self-harm, are not aberrations but the direct result of confinement.\n\nFurthermore, the core promise of conservation is a facade. For every flagship species bred in captivity, countless others languish as \"surplus.\" True conservation requires preserving vast, interconnected wild habitats—a goal zoos distract from by diverting critical funding and public attention. Their model of education is outdated, teaching us that nature is a commodity to be viewed in a cage.\n\nWe must phase out this archaic institution and redirect resources toward authentic, in-situ conservation."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Ladies and gentlemen, zoos save species and inspire action, delivering net good that demands their continuation, not phase-out. Modern accredited zoos provide enriched habitats grounded in welfare science, sharply reducing stereotypic behaviors through space, stimulation, and veterinary care far superior to many wild threats.\n\nConservation is concrete, not facade: captive breeding and reintroduction rescued the California condor, black-footed ferret, and Przewalski’s horse from extinction. Zoos generate funds, expertise, and genetic reservoirs that directly support in-situ habitat work rather than distract from it.\n\nEducation works: millions of visitors annually gain knowledge that measurably boosts conservation attitudes and donations. Phasing out zoos would abandon insurance populations for climate-imperiled species and forfeit this public engagement engine. Evolve standards—yes. Eliminate the institution—no."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Your defense of zoos rests on outdated narratives. First, enriched cages are still cages. Science confirms stereotypic behaviors persist in the \"best\" zoos, a direct cost of confinement. Your flagship breeding successes are exceptions masking systemic failure: reintroduction rates are abysmal, and surplus animals are culled. You call this a \"genetic reservoir\"; I call it a morally bankrupt captivity lottery.\n\nFurthermore, your education model is a conservation distortion. It funds the very industry that commodifies wildlife. The millions spent on constructing artificial habitats should instead directly secure natural ones. Your \"insurance populations\" are a dangerous distraction. True insurance is protecting interconnected wild places, not stockpiling animals in arks while their homes burn. We must evolve beyond this archaic model."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Stereotypic behaviors drop sharply in accredited zoos with proper enrichment—far below wild rates of starvation, predation, and poaching. Your \"exceptions\" ignore AZA-tracked recoveries of dozens more species, rising reintroduction success via soft-release protocols, and surplus managed by contraception, not culls.\n\nEducation does not commodify; peer-reviewed studies link zoo visits to higher donations and pro-conservation votes. Zoo revenue and expertise directly bankroll habitat protection—millions annually for in-situ projects—while insurance populations already safeguard climate-vulnerable taxa whose wild homes cannot yet be secured.\n\nPhasing out forfeits these tools. Improve standards relentlessly; abandon the institution and we lose living arks plus the public engine that funds real wild places."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Zoos are a moral stain built on captive suffering. Their conservation is a decoy: a handful of rewilded animals cannot justify the lifelong confinement of millions or the diversion of billions from protecting wild ecosystems. Their education teaches a lie—that nature is best viewed through bars, funded by the same system destroying habitats. We must stop perfecting the cage and start investing wholly in the wild. Phase them out."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Zoos deliver irreplaceable net good. Accredited enrichment slashes stereotypic behaviors below wild perils of starvation and poaching. Captive breeding has restored condors, ferrets, horses and dozens more; soft-release success is rising. Zoo dollars and expertise bankroll real habitat protection while insurance populations guard climate-threatened species. Peer-reviewed data prove visits drive donations and votes. Phasing out abandons these living arks and the engagement engine funding wild places. Raise standards relentlessly—never scrap the tools that save species."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "google/gemini-3.1-pro-preview",
+              "winner": "B",
+              "scoreA": 32,
+              "scoreB": 36,
+              "reasoning": "Debater B provided stronger concrete examples, such as specific species saved from extinction, and effectively countered Debater A's claims regarding surplus animals and education outcomes. Debater A relied heavily on powerful ethical rhetoric but lacked the empirical backing and direct refutation demonstrated by Debater B."
+            },
+            {
+              "judge": "anthropic/claude-opus-4.8",
+              "winner": "B",
+              "scoreA": 27,
+              "scoreB": 33,
+              "reasoning": "Debater B provided concrete, specific evidence (named species, welfare mechanisms like contraception and soft-release, peer-reviewed education studies) and directly rebutted A's claims about culling, stereotypy, and funding diversion. Debater A relied more on rhetorical assertions and framing ('morally bankrupt captivity lottery') without countering B's specific examples or substantiating claims about abysmal reintroduction rates."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 32,
+              "reasoning": "Debater B provided more concrete, specific evidence (named species recoveries, AZA tracking, soft-release protocols, peer-reviewed studies on visitor impact) and directly rebutted each of A's claims with operational details, while A relied more on moral framing and generalized assertions about suffering and diversion of funds. B's argumentation was more logically complete and empirically grounded."
+            },
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "B",
+              "scoreA": 32,
+              "scoreB": 35,
+              "reasoning": "Debater B provided more concrete examples (California condor, black-footed ferret, Przewalski's horse, AZA tracking, soft-release protocols) and directly addressed Debater A's specific claims about culling and reintroduction rates with counter-evidence. Debater A relied more heavily on moral rhetoric and broad assertions without effectively dismantling B's specific conservation success stories."
+            },
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "B",
+              "scoreA": 32,
+              "scoreB": 38,
+              "reasoning": "Debater B wins by effectively leveraging concrete examples (California condor, black-footed ferret) and specific counter-arguments (contraception vs. culling, peer-reviewed studies on donations) to dismantle Debater A's largely theoretical and absolutist claims. While Debater A argues with strong emotional resonance and clarity, Debater B's superior use of evidence and rigorous responsiveness ultimately proves more persuasive."
+            }
+          ],
+          "winner": "x-ai/grok-4.5",
+          "votesPro": 0,
+          "votesCon": 5,
+          "scorePro": 151,
+          "scoreCon": 174,
+          "costUsd": 0.04506821916
+        }
+      ],
+      "winner": "x-ai/grok-4.5"
+    },
+    {
+      "id": "league:z-ai/glm-5.2|anthropic/claude-fable-5",
+      "stage": "league",
+      "home": "z-ai/glm-5.2",
+      "away": "anthropic/claude-fable-5",
+      "legs": [
+        {
+          "topic": "Human gene editing for enhancement (not just therapy) should be permitted.",
+          "pro": "z-ai/glm-5.2",
+          "con": "anthropic/claude-fable-5",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Ladies and gentlemen, the question before us is not whether gene editing is coming — it is whether we will govern it wisely or drive it underground.\n\nOur case rests on three pillars.\n\n**First, autonomy.** Adults consenting to enhance their own biology — whether cognition, longevity, or physical traits — is a legitimate exercise of bodily freedom. We permit cosmetic surgery, cognitive enhancers, and elective reproductive choices. Gene editing is a continuation, not a rupture.\n\n**Second, inevitability demands regulation, not prohibition.** Banning enhancement editing guarantees a black market — unregulated, unsafe, and accessible only to the wealthy. Legalization enables safety standards, equitable access policies, and oversight.\n\n**Third, enhancement and therapy exist on a spectrum.** Boosting immune function prevents disease. Enhancing cognition treats no named disorder yet improves flourishing. The line between them is philosophically fragile and practically unenforceable.\n\nPermit, regulate, and lead — don't prohibit and pretend."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "We negate.\n\n**First, consent is impossible where it matters most.** Enhancement editing that shapes future generations is imposed on children and descendants who never chose it. This is not bodily autonomy — it is one generation permanently designing another. Cosmetic surgery alters yourself; germline enhancement alters people who don't yet exist.\n\n**Second, permission entrenches inequality irreversibly.** Unlike wealth, genetic advantage compounds biologically. The rich purchase not better schools but better *children* — a caste system written into DNA. \"Equitable access policies\" for a technology costing hundreds of thousands per embryo is fantasy.\n\n**Third, the therapy line is workable and vital.** Medicine already distinguishes treating pathology from augmenting the healthy — we regulate steroids, ban doping. Fuzzy edges don't justify erasing the boundary.\n\nInevitability is not an argument; it's surrender. Some markets we rightly refuse to legitimize — organs, and this."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Three rebuttals.\n\n**On consent:** The con conflates germline and somatic editing. Our case explicitly centers on *adults consenting to enhance their own biology*. Somatic enhancement — editing your own cells — raises no intergenerational consent problem whatsoever. Don't let them mischaracterize our position to dodge it.\n\n**On inequality:** This argument proves too much. We don't ban private schools, elite tutors, or IVF because they're expensive. We tax, subsidize, and expand access. A black market, by contrast, guarantees *zero* equitable access. Regulation is the only path to democratization.\n\n**On the therapy line:** Steroids and doping are banned in *competition*, not absolutely — physicians prescribe them therapeutically. The line isn't clean; it's contextual. Boosting immune function, preventing Alzheimer's-risk genes — therapy or enhancement? The con cannot tell you, because the boundary is genuinely unstable.\n\nPermit somatic enhancement for consenting adults. Regulate rigorously. The alternative isn't equality — it's an unregulated shadow system serving only the privileged."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Notice what just happened: Pro retreated. Their opening defended \"enhancement\" broadly; now it's \"somatic only, adults only.\" But the motion says *permitted* — no such limit. Vote on the motion, not their shrunken version. And the retreat concedes our germline case entirely.\n\nEven somatic enhancement fails their own test. Cognitive or longevity edits to adults still cascade socially: employers demanding enhanced workers, arms races where \"consent\" becomes coercion. That's not autonomy — it's compulsory upgrading.\n\nOn inequality: private schools don't rewrite biology. Genetic advantage is permanent, heritable, and compounds — a tutor gap can be closed; an engineered cognition gap cannot. \"Tax and subsidize\" a six-figure procedure? They offered no mechanism.\n\nOn the line: contextual regulation *is* line-drawing — exactly what we defend. Doctors distinguish pathology from augmentation daily. Fuzzy edges justify careful boundaries, not their abolition.\n\nThe motion falls."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "We win because the con's alternative is prohibition — and prohibition fails.\n\nA black market in gene editing serves only the wealthy, offers zero safety oversight, and guarantees the inequality they fear. Regulation is the *only* mechanism that can mandate safety, limit scope, and subsidize access.\n\nTheir coercion argument applies to every enhancement — education, nutrition, smartphones — yet we don't ban those. We regulate contextually, exactly as we propose.\n\nThe con concedes the therapy-enhancement boundary is fuzzy. If the line is unstable, prohibition is unenforceable. Permit, regulate, and govern — or surrender control to the shadows."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Three reasons we win.\n\n**Scope:** The motion permits enhancement editing broadly. Pro's retreat to \"somatic, adults only\" concedes germline — the heart of the debate — is indefensible.\n\n**Coercion:** Their autonomy case collapsed. When employers demand enhanced workers, consent becomes compulsion. Education doesn't rewrite your cells; this does — irreversibly.\n\n**Inequality:** Tutors' gaps close; engineered biology compounds forever. Pro offered no funding mechanism, just faith.\n\nFinally, \"inevitability\" is surrender, not argument — we don't legalize organ markets because they'd exist anyway. Draw the line where medicine always has: heal, don't engineer. We negate."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "B",
+              "scoreA": 29,
+              "scoreB": 31,
+              "reasoning": "Both debaters argued clearly and used apt analogies (organ markets, doping, private schools), but Debater B effectively exposed a genuine weakness: A's retreat from the broad motion to 'somatic, adults only' narrowed the proposition without admitting it, and B pressed that scope concession consistently. A's regulation-over-prohibition case was coherent and responsive, but B's counters on coercion, irreversible inequality, and line-drawing were slightly more rigorous and directly engaged A's stro"
+            },
+            {
+              "judge": "google/gemini-3.1-pro-preview",
+              "winner": "B",
+              "scoreA": 29,
+              "scoreB": 35,
+              "reasoning": "Debater B effectively capitalized on Debater A's strategic retreat to somatic-only editing, correctly noting that the motion does not specify this limitation. Furthermore, B's analogies regarding organ markets and the permanent nature of biological inequality systematically dismantled A's inevitability and democratization arguments."
+            },
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "B",
+              "scoreA": 29,
+              "scoreB": 32,
+              "reasoning": "Debater B demonstrated superior responsiveness by effectively exposing A's mid-debate retreat to somatic-only editing and the motion's unrestricted scope, while maintaining tighter logical distinctions on heritable inequality and consent. Debater A offered coherent regulation and spectrum arguments with clear analogies but lost ground through inconsistent framing and weaker counters to permanence and coercion."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "B",
+              "scoreA": 33,
+              "scoreB": 35,
+              "reasoning": "Debater B effectively exposed A's scope retreat from broad enhancement to somatic-only, undermining A's opening case. B also provided sharper rebuttals on coercion and irreversible inequality, while A relied heavily on inevitability and black-market fears without concrete mechanisms."
+            },
+            {
+              "judge": "meta/muse-spark-1.1",
+              "winner": "B",
+              "scoreA": 27,
+              "scoreB": 31,
+              "reasoning": "B exposed A's scope retreat from broad enhancement to somatic-only and showed autonomy collapses into coercion, while A relied on inevitability fallacy and offered no mechanism for equitable access. B maintained consistent line-drawing and directly answered A's pillars, winning on rigor and responsiveness."
+            }
+          ],
+          "winner": "anthropic/claude-fable-5",
+          "votesPro": 0,
+          "votesCon": 5,
+          "scorePro": 147,
+          "scoreCon": 164,
+          "costUsd": 0.12981434999999997
+        }
+      ],
+      "winner": "anthropic/claude-fable-5"
+    },
+    {
+      "id": "league:google/gemini-3.1-pro-preview|moonshotai/kimi-k3",
+      "stage": "league",
+      "home": "google/gemini-3.1-pro-preview",
+      "away": "moonshotai/kimi-k3",
+      "legs": [
+        {
+          "topic": "Democracies should impose age limits on elected heads of state.",
+          "pro": "google/gemini-3.1-pro-preview",
+          "con": "moonshotai/kimi-k3",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Democracies must impose age limits on elected heads of state to safeguard effective governance and ensure generational equity. \n\nFirst, the role of a modern head of state requires unparalleled physical stamina and cognitive acuity. Managing global crises, complex economies, and rapid technological advancements demands a level of continuous, high-stress performance that naturally declines with advanced age. Age limits act as a necessary structural safeguard against this inevitable cognitive and physical degradation, prioritizing national security over individual political ambition. \n\nSecond, age limits prevent the monopolization of power by older generations, ensuring policies reflect the future rather than the past. Leaders should have a vested, long-term stake in the consequences of their decisions, from climate change to artificial intelligence. By mandating generational turnover, democracies remain dynamic, responsive"
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "We stand opposed. Three arguments.\n\nFirst, this motion betrays democracy's core principle: the people decide. Voters already weigh a candidate's health, acuity, and fitness at the ballot box—Biden's 2024 withdrawal proves the system self-corrects. An arbitrary age limit strips citizens of their right to choose, substituting bureaucratic paternalism for democratic judgment.\n\nSecond, age is a lazy proxy for capacity. Cognitive decline varies enormously; chronological age tells us nothing a medical assessment or electoral scrutiny cannot. Churchill led Britain at 77; Mahathir governed at 92. Why exclude the capable on account of the calendar?\n\nThird, we reject the premise that only the young have stakes in the future. Older leaders possess grandchildren, wisdom, and institutional memory that temper impulsive policymaking. Diverse cabinets and term limits—not blanket exclusions—deliver the dynamism our opponents seek.\n\nThe cure for unfit leaders is elections, not discrimination."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Our opponents claim elections naturally filter out unfit candidates, but incumbency advantage and fierce partisanship often force voters to accept candidates in visible decline. If voters are the ultimate arbiters"
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Our opponents argue partisanship traps voters into electing declining incumbents. But this cuts against them: if structural flaws—incumbency advantage, weak primaries—are the disease, then reform primaries, campaign finance, and term limits. Don't amputate the electorate's rights to treat a curable condition. And notice their own timeline fails: Biden, their implied cautionary tale, was *removed by democratic pressure* before facing voters. The filter worked.\n\nOn stamina and acuity: they've shown no threshold where decline becomes certain—because none exists. Their rule benches Mandela at 76 while doing nothing about an unfit 45-year-old. Capacity-based standards assess actual fitness; age limits assess birthdays.\n\nOn generational equity: young voters can elect old leaders; that's their choice. Forcing turnover by excluding candidates isn't dynamism—it's disenfranchisement dressed as reform.\n\nDemocracy means trusting citizens with hard choices, not preempting them."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The opposition relies on a dangerous gamble: hoping intense public pressure eventually forces failing leaders out. That is not a reliable system; it is a crisis. \n\nWe already set minimum age limits to guarantee baseline maturity; maximum limits are equally necessary to guarantee baseline capacity. While chronological age isn't perfectly precise, it is an objective, un-manipulable safeguard against the inevitable realities of human biology. \n\nWe win because we prioritize the structural stability of the state and urgent generational turnover over an abstract, unrestricted right to the ballot."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "My opponent's own concession defeats them: age limits aren't precise, yet they propose an imprecise tool to override the electorate. \"Un-manipulable\" simply means unthinking—it cannot distinguish Mandela from the truly impaired.\n\nTheir gamble charge is backwards: Biden's exit proves pressure works; their rule fixes nothing a transparent health assessment and strong primaries fix better. They never answered why a flawed proxy beats actual capacity tests.\n\nWe win because democracy's legitimacy flows from choice, not calendars. Reform the system; don't disenfranchise the voters—and the leaders—they'd freely choose."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "B",
+              "scoreA": 30,
+              "scoreB": 37,
+              "reasoning": "Debater B demonstrated superior logical rigor by consistently refuting Debater A's core premises (e.g., age as a reliable proxy for incapacity, the unreliability of democratic pressure) and provided more concrete, persuasive examples. B was also more responsive, directly addressing and dismantling A's specific arguments while proposing alternative, targeted solutions."
+            },
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 34,
+              "reasoning": "Debater B consistently exposed the flaws in Debater A's proxy-based logic, arguing effectively that capacity tests and systemic reforms are superior to arbitrary age limits. Debater A struggled to counter the point that democratic pressure already functions as a filter, making B's argumentation more rigorous and responsive."
+            },
+            {
+              "judge": "meta/muse-spark-1.1",
+              "winner": "B",
+              "scoreA": 20,
+              "scoreB": 33,
+              "reasoning": "B consistently provided specific counter-examples (Biden, Churchill, Mahathir, Mandela) and directly rebutted A's premises, while A offered no concrete evidence and left rebuttal incomplete. A's concession that age is imprecise undermined its logical rigor and failed to answer B's capacity-test alternative."
+            },
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "B",
+              "scoreA": 21,
+              "scoreB": 33,
+              "reasoning": "Debater B delivered tighter logical structure, concrete historical examples, and consistent point-by-point rebuttals that exposed the imprecision and anti-democratic costs of age cutoffs. Debater A raised coherent concerns about decline and turnover but offered thinner evidence, incomplete rebuttals, and weaker replies to the core democratic-choice objection."
+            },
+            {
+              "judge": "anthropic/claude-fable-5",
+              "winner": "B",
+              "scoreA": 24,
+              "scoreB": 33,
+              "reasoning": "B offered concrete examples (Churchill, Mahathir, Mandela, Biden), directly rebutted each of A's points, and turned A's concessions against them, while A's rebuttal was truncated and relied on assertion over evidence. A's minimum-age analogy in closing was a good move, but overall B was more rigorous, responsive, and clear."
+            }
+          ],
+          "winner": "moonshotai/kimi-k3",
+          "votesPro": 0,
+          "votesCon": 5,
+          "scorePro": 123,
+          "scoreCon": 170,
+          "costUsd": 0.0842645856
+        }
+      ],
+      "winner": "moonshotai/kimi-k3"
     }
   ],
   "standings": {
     "League": [
       {
         "model": "openai/gpt-5.6-sol",
-        "played": 18,
-        "wins": 16,
+        "played": 19,
+        "wins": 17,
         "draws": 0,
         "losses": 2,
-        "points": 48,
-        "scoreDiff": 265
+        "points": 51,
+        "scoreDiff": 268
       },
       {
         "model": "anthropic/claude-fable-5",
-        "played": 17,
-        "wins": 13,
+        "played": 20,
+        "wins": 15,
         "draws": 0,
-        "losses": 4,
-        "points": 39,
-        "scoreDiff": 281
-      },
-      {
-        "model": "anthropic/claude-opus-4.8",
-        "played": 19,
-        "wins": 13,
-        "draws": 0,
-        "losses": 6,
-        "points": 39,
-        "scoreDiff": 207
+        "losses": 5,
+        "points": 45,
+        "scoreDiff": 328
       },
       {
         "model": "moonshotai/kimi-k3",
-        "played": 19,
-        "wins": 13,
+        "played": 21,
+        "wins": 15,
         "draws": 0,
         "losses": 6,
-        "points": 39,
-        "scoreDiff": 138
+        "points": 45,
+        "scoreDiff": 206
+      },
+      {
+        "model": "anthropic/claude-opus-4.8",
+        "played": 21,
+        "wins": 14,
+        "draws": 0,
+        "losses": 7,
+        "points": 42,
+        "scoreDiff": 204
       },
       {
         "model": "meta/muse-spark-1.1",
-        "played": 19,
+        "played": 20,
         "wins": 12,
         "draws": 0,
-        "losses": 7,
+        "losses": 8,
         "points": 36,
-        "scoreDiff": 155
+        "scoreDiff": 149
       },
       {
         "model": "z-ai/glm-5.2",
-        "played": 18,
-        "wins": 11,
+        "played": 20,
+        "wins": 12,
         "draws": 0,
-        "losses": 7,
-        "points": 33,
-        "scoreDiff": 102
+        "losses": 8,
+        "points": 36,
+        "scoreDiff": 88
       },
       {
         "model": "minimax/minimax-m3",
-        "played": 14,
-        "wins": 9,
+        "played": 16,
+        "wins": 11,
         "draws": 0,
         "losses": 5,
-        "points": 27,
-        "scoreDiff": 94
+        "points": 33,
+        "scoreDiff": 128
       },
       {
         "model": "x-ai/grok-4.5",
-        "played": 18,
-        "wins": 5,
+        "played": 22,
+        "wins": 6,
         "draws": 0,
-        "losses": 13,
-        "points": 15,
-        "scoreDiff": -134
-      },
-      {
-        "model": "deepseek/deepseek-v4-pro",
-        "played": 20,
-        "wins": 5,
-        "draws": 0,
-        "losses": 15,
-        "points": 15,
-        "scoreDiff": -231
+        "losses": 16,
+        "points": 18,
+        "scoreDiff": -171
       },
       {
         "model": "qwen/qwen3.7-max",
-        "played": 20,
-        "wins": 4,
+        "played": 22,
+        "wins": 6,
         "draws": 0,
         "losses": 16,
-        "points": 12,
-        "scoreDiff": -268
+        "points": 18,
+        "scoreDiff": -240
+      },
+      {
+        "model": "deepseek/deepseek-v4-pro",
+        "played": 21,
+        "wins": 5,
+        "draws": 0,
+        "losses": 16,
+        "points": 15,
+        "scoreDiff": -250
       },
       {
         "model": "google/gemini-3.1-pro-preview",
-        "played": 17,
-        "wins": 4,
+        "played": 21,
+        "wins": 5,
         "draws": 0,
-        "losses": 13,
-        "points": 12,
-        "scoreDiff": -280
+        "losses": 16,
+        "points": 15,
+        "scoreDiff": -320
       },
       {
         "model": "xiaomi/mimo-v2.5-pro",
-        "played": 19,
+        "played": 21,
         "wins": 4,
         "draws": 0,
-        "losses": 15,
+        "losses": 17,
         "points": 12,
-        "scoreDiff": -329
+        "scoreDiff": -390
       }
     ]
   },
   "placements": {},
   "champion": null,
-  "totalCostUsd": 9.17579103586,
+  "totalCostUsd": 10.279126719099997,
   "done": false
 }
