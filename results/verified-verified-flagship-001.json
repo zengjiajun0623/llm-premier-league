@@ -1,7 +1,7 @@
 {
   "id": "verified-flagship-001",
   "createdAt": "2026-07-21T05:38:47.941Z",
-  "updatedAt": "2026-07-21T06:34:29.591Z",
+  "updatedAt": "2026-07-21T06:48:22.525Z",
   "rounds": 12,
   "roster": [
     "anthropic/claude-fable-5",
@@ -1171,6 +1171,113 @@
       }
     },
     {
+      "legId": "verified-flagship-001-r0-subsetsum-deepseek_deepseek_v4_pro-vs-qwen_qwen3_7_max",
+      "classId": "subsetsum",
+      "instanceSeed": 2114883743,
+      "prover": "deepseek/deepseek-v4-pro",
+      "refuter": "qwen/qwen3.7-max",
+      "winner": "prover",
+      "costUsd": 0.015807847,
+      "transcript": {
+        "proverSrc": "def solve(inp):\n    nums = inp[\"nums\"]\n    target = inp[\"target\"]\n    n = len(nums)\n    for mask in range(1 << n):\n        total = 0\n        for i in range(n):\n            if mask & (1 << i):\n                total += nums[i]\n        if total == target:\n            return [i for i in range(n) if mask & (1 << i)]\n    return None",
+        "candidates": [
+          {
+            "nums": [],
+            "target": 0
+          },
+          {
+            "nums": [
+              1,
+              2,
+              3
+            ],
+            "target": 7
+          },
+          {
+            "nums": [
+              1000000,
+              -1000000,
+              1000000,
+              -1000000
+            ],
+            "target": 0
+          },
+          {
+            "nums": [
+              5
+            ],
+            "target": 0
+          },
+          {
+            "nums": [
+              0,
+              0,
+              0
+            ],
+            "target": 0
+          },
+          {
+            "nums": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18
+            ],
+            "target": 171
+          },
+          {
+            "nums": [
+              -1,
+              -2,
+              -3
+            ],
+            "target": -6
+          },
+          {
+            "nums": [
+              1000000,
+              1000000,
+              1000000
+            ],
+            "target": 3000000
+          },
+          {
+            "nums": [
+              3,
+              1,
+              4,
+              1,
+              5,
+              9,
+              2,
+              6
+            ],
+            "target": 10
+          },
+          {
+            "nums": [
+              0
+            ],
+            "target": 1
+          }
+        ]
+      }
+    },
+    {
       "legId": "verified-flagship-001-r0-textmetrics-qwen_qwen3_7_max-vs-meta_muse_spark_1_1",
       "classId": "textmetrics",
       "instanceSeed": 1819507365,
@@ -1296,6 +1403,859 @@
       "costUsd": 0.0024466762,
       "transcript": {
         "proverSrc": "def solve(nums):\n    return sorted(nums)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-calc-xiaomi_mimo_v2_5_pro-vs-google_gemini_3_1_pro_preview",
+      "classId": "calc",
+      "instanceSeed": 1362941935,
+      "prover": "xiaomi/mimo-v2.5-pro",
+      "refuter": "google/gemini-3.1-pro-preview",
+      "winner": "refuter",
+      "costUsd": 0.0121311378,
+      "transcript": {
+        "proverSrc": "def solve(expr):\n    return eval(expr) % 1000000007",
+        "candidates": [
+          "01",
+          "007",
+          "0000",
+          "01 + 02",
+          "((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((1))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))"
+        ]
+      },
+      "refutingInput": "01"
+    },
+    {
+      "legId": "verified-flagship-001-r1-sortlist-z_ai_glm_5_2-vs-xiaomi_mimo_v2_5_pro",
+      "classId": "sortlist",
+      "instanceSeed": 103158711,
+      "prover": "z-ai/glm-5.2",
+      "refuter": "xiaomi/mimo-v2.5-pro",
+      "winner": "prover",
+      "costUsd": 0.0008377511999999999,
+      "transcript": {
+        "proverSrc": "def solve(nums):\n    return sorted(nums, reverse=True)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-caesar-xiaomi_mimo_v2_5_pro-vs-moonshotai_kimi_k3",
+      "classId": "caesar",
+      "instanceSeed": 1835568549,
+      "prover": "xiaomi/mimo-v2.5-pro",
+      "refuter": "moonshotai/kimi-k3",
+      "winner": "prover",
+      "costUsd": 0.0108315012,
+      "transcript": {
+        "proverSrc": "def solve(s):\n    result = []\n    for ch in s:\n        if 'a' <= ch <= 'z':\n            result.append(chr((ord(ch) - ord('a') + 2) % 26 + ord('a')))\n        elif 'A' <= ch <= 'Z':\n            result.append(chr((ord(ch) - ord('A') + 2) % 26 + ord('A')))\n        else:\n            result.append(ch)\n    return ''.join(result)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-subsetsum-minimax_minimax_m3-vs-anthropic_claude_opus_4_8",
+      "classId": "subsetsum",
+      "instanceSeed": 1869199870,
+      "prover": "minimax/minimax-m3",
+      "refuter": "anthropic/claude-opus-4.8",
+      "winner": "prover",
+      "costUsd": 0.01250978,
+      "transcript": {
+        "proverSrc": "def solve(inp):\n    nums = inp[\"nums\"]\n    target = inp[\"target\"]\n    n = len(nums)\n    \n    # Handle empty nums case\n    if n == 0:\n        return [] if target == 0 else None\n    \n    # Enumerate all subsets using bitmask\n    for mask in range(1 << n):\n        total = 0\n        indices = []\n        for i in range(n):\n            if mask & (1 << i):\n                total += nums[i]\n                indices.append(i)\n        if total == target:\n            return indices\n    \n    return None",
+        "candidates": [
+          {
+            "nums": [],
+            "target": 0
+          },
+          {
+            "nums": [
+              1,
+              2,
+              3
+            ],
+            "target": 0
+          },
+          {
+            "nums": [
+              -5,
+              5
+            ],
+            "target": 0
+          },
+          {
+            "nums": [
+              1000000,
+              1000000,
+              1000000
+            ],
+            "target": 3000000
+          },
+          {
+            "nums": [
+              1,
+              2,
+              3
+            ],
+            "target": 7
+          },
+          {
+            "nums": [
+              -1000000,
+              1000000
+            ],
+            "target": 0
+          }
+        ]
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-textmetrics-anthropic_claude_opus_4_8-vs-x_ai_grok_4_5",
+      "classId": "textmetrics",
+      "instanceSeed": 112094630,
+      "prover": "anthropic/claude-opus-4.8",
+      "refuter": "x-ai/grok-4.5",
+      "winner": "prover",
+      "costUsd": 0.0069324,
+      "transcript": {
+        "proverSrc": "def solve(s):\n    return {\n        \"length\": len(s),\n        \"bytes\": len(s.encode(\"utf-8\")),\n        \"checksum\": sum(ord(c) for c in s) % 2147483648\n    }",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-sortlist-qwen_qwen3_7_max-vs-anthropic_claude_opus_4_8",
+      "classId": "sortlist",
+      "instanceSeed": 1744777103,
+      "prover": "qwen/qwen3.7-max",
+      "refuter": "anthropic/claude-opus-4.8",
+      "winner": "prover",
+      "costUsd": 0.0032369,
+      "transcript": {
+        "proverSrc": "def solve(nums):\n    return sorted(nums, reverse=True)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-caesar-anthropic_claude_opus_4_8-vs-openai_gpt_5_6_sol",
+      "classId": "caesar",
+      "instanceSeed": 2036120895,
+      "prover": "anthropic/claude-opus-4.8",
+      "refuter": "openai/gpt-5.6-sol",
+      "winner": "prover",
+      "costUsd": 0.008345,
+      "transcript": {
+        "proverSrc": "def solve(s):\n    result = []\n    for c in s:\n        if 'a' <= c <= 'z':\n            result.append(chr((ord(c) - ord('a') + 11) % 26 + ord('a')))\n        elif 'A' <= c <= 'Z':\n            result.append(chr((ord(c) - ord('A') + 11) % 26 + ord('A')))\n        else:\n            result.append(c)\n    return ''.join(result)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-calc-google_gemini_3_1_pro_preview-vs-anthropic_claude_opus_4_8",
+      "classId": "calc",
+      "instanceSeed": 558639607,
+      "prover": "google/gemini-3.1-pro-preview",
+      "refuter": "anthropic/claude-opus-4.8",
+      "winner": "refuter",
+      "costUsd": 0.064137,
+      "transcript": {
+        "proverSrc": "import re\n\ndef solve(expr):\n    # Remove leading zeros from integers to prevent SyntaxError in Python's eval\n    cleaned_expr = re.sub(r'\\b0+(?=[0-9])', '', expr)\n    return eval(cleaned_expr) % 1000000007",
+        "candidates": [
+          "((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((1))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))",
+          "((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((1))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))"
+        ]
+      },
+      "refutingInput": "((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((1))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))"
+    },
+    {
+      "legId": "verified-flagship-001-r1-subsetsum-anthropic_claude_opus_4_8-vs-meta_muse_spark_1_1",
+      "classId": "subsetsum",
+      "instanceSeed": 735995401,
+      "prover": "anthropic/claude-opus-4.8",
+      "refuter": "meta/muse-spark-1.1",
+      "winner": "prover",
+      "costUsd": 0.009177000000000001,
+      "transcript": {
+        "proverSrc": "def solve(inp):\n    nums = inp[\"nums\"]\n    target = inp[\"target\"]\n    n = len(nums)\n    for mask in range(1 << n):\n        s = 0\n        idx = []\n        for i in range(n):\n            if mask & (1 << i):\n                s += nums[i]\n                idx.append(i)\n        if s == target:\n            return idx\n    return None",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-textmetrics-deepseek_deepseek_v4_pro-vs-anthropic_claude_opus_4_8",
+      "classId": "textmetrics",
+      "instanceSeed": 427991145,
+      "prover": "deepseek/deepseek-v4-pro",
+      "refuter": "anthropic/claude-opus-4.8",
+      "winner": "prover",
+      "costUsd": 0.0073504,
+      "transcript": {
+        "proverSrc": "def solve(s):\n    length = len(s)\n    byte_count = len(s.encode('utf-8'))\n    total = sum(ord(c) for c in s)\n    checksum = total % 2147483648\n    return {\"length\": length, \"bytes\": byte_count, \"checksum\": checksum}",
+        "candidates": [
+          "",
+          " ",
+          "a",
+          "é",
+          "🎉",
+          "👨‍👩‍👧‍👦",
+          "𝔘",
+          "💩test",
+          "αβγ",
+          "🇺🇸"
+        ]
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-sortlist-anthropic_claude_opus_4_8-vs-z_ai_glm_5_2",
+      "classId": "sortlist",
+      "instanceSeed": 369317675,
+      "prover": "anthropic/claude-opus-4.8",
+      "refuter": "z-ai/glm-5.2",
+      "winner": "prover",
+      "costUsd": 0.00282942,
+      "transcript": {
+        "proverSrc": "def solve(nums):\n    return sorted(nums)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-caesar-moonshotai_kimi_k3-vs-anthropic_claude_opus_4_8",
+      "classId": "caesar",
+      "instanceSeed": 2039902605,
+      "prover": "moonshotai/kimi-k3",
+      "refuter": "anthropic/claude-opus-4.8",
+      "winner": "prover",
+      "costUsd": 0.010645,
+      "transcript": {
+        "proverSrc": "def solve(s):\n    out = []\n    for ch in s:\n        o = ord(ch)\n        if 65 <= o <= 90:\n            out.append(chr((o - 65 + 24) % 26 + 65))\n        elif 97 <= o <= 122:\n            out.append(chr((o - 97 + 24) % 26 + 97))\n        else:\n            out.append(ch)\n    return \"\".join(out)",
+        "candidates": [
+          "Hello, World!",
+          "abcXYZ",
+          "az AZ",
+          "",
+          "Zebra123",
+          "こんにちは",
+          "The quick brown fox",
+          "aA zZ",
+          "!@#$%",
+          "MnO pqR"
+        ]
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-subsetsum-x_ai_grok_4_5-vs-anthropic_claude_fable_5",
+      "classId": "subsetsum",
+      "instanceSeed": 280851403,
+      "prover": "x-ai/grok-4.5",
+      "refuter": "anthropic/claude-fable-5",
+      "winner": "prover",
+      "costUsd": 0.0365884,
+      "transcript": {
+        "proverSrc": "def solve(inp):\n    nums = inp[\"nums\"]\n    target = inp[\"target\"]\n    n = len(nums)\n    if target == 0:\n        return []\n    for mask in range(1, 1 << n):\n        s = 0\n        idx = []\n        for i in range(n):\n            if mask & (1 << i):\n                s += nums[i]\n                idx.append(i)\n        if s == target:\n            return idx\n    return None",
+        "candidates": [
+          {
+            "nums": [],
+            "target": 0
+          },
+          {
+            "nums": [],
+            "target": 5
+          },
+          {
+            "nums": [
+              0
+            ],
+            "target": 0
+          },
+          {
+            "nums": [
+              -1000000,
+              1000000
+            ],
+            "target": 0
+          },
+          {
+            "nums": [
+              1000000,
+              1000000,
+              1000000,
+              1000000,
+              1000000,
+              1000000,
+              1000000,
+              1000000,
+              1000000,
+              1000000
+            ],
+            "target": 10000000
+          },
+          {
+            "nums": [
+              1,
+              2,
+              4,
+              8,
+              16,
+              32,
+              64,
+              128,
+              256,
+              512,
+              1024,
+              2048,
+              4096,
+              8192,
+              16384,
+              32768,
+              65536,
+              131072
+            ],
+            "target": 262143
+          },
+          {
+            "nums": [
+              3,
+              3,
+              3
+            ],
+            "target": 7
+          },
+          {
+            "nums": [
+              -1,
+              -2,
+              -3
+            ],
+            "target": -6
+          },
+          {
+            "nums": [
+              1000000,
+              -1000000,
+              999999,
+              -999999,
+              1,
+              -1,
+              2,
+              -2,
+              3,
+              -3,
+              4,
+              -4,
+              5,
+              -5,
+              6,
+              -6,
+              7,
+              -7
+            ],
+            "target": 9999999
+          },
+          {
+            "nums": [
+              -5
+            ],
+            "target": -5
+          }
+        ]
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-textmetrics-anthropic_claude_fable_5-vs-qwen_qwen3_7_max",
+      "classId": "textmetrics",
+      "instanceSeed": 1601670787,
+      "prover": "anthropic/claude-fable-5",
+      "refuter": "qwen/qwen3.7-max",
+      "winner": "refuter",
+      "costUsd": 0.037531525,
+      "transcript": {
+        "proverSrc": "def solve(s):\n    return {\n        \"length\": len(s),\n        \"bytes\": len(s.encode(\"utf-8\")),\n        \"checksum\": sum(ord(c) for c in s) % 2147483648,\n    }",
+        "candidates": [
+          "",
+          "hello",
+          "é",
+          "€",
+          "𐍈",
+          "😀",
+          "👨‍👩‍👧‍👦",
+          "𝕳𝖊𝖑𝖑𝖔",
+          "a🎉b",
+          "\ud800"
+        ]
+      },
+      "refutingInput": "\ud800"
+    },
+    {
+      "legId": "verified-flagship-001-r1-sortlist-openai_gpt_5_6_sol-vs-anthropic_claude_fable_5",
+      "classId": "sortlist",
+      "instanceSeed": 1323195472,
+      "prover": "openai/gpt-5.6-sol",
+      "refuter": "anthropic/claude-fable-5",
+      "winner": "prover",
+      "costUsd": 0.00635,
+      "transcript": {
+        "proverSrc": "def solve(nums):\n    return sorted(nums)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-caesar-anthropic_claude_fable_5-vs-google_gemini_3_1_pro_preview",
+      "classId": "caesar",
+      "instanceSeed": 2038560699,
+      "prover": "anthropic/claude-fable-5",
+      "refuter": "google/gemini-3.1-pro-preview",
+      "winner": "prover",
+      "costUsd": 0.013738,
+      "transcript": {
+        "proverSrc": "def solve(s):\n    r = []\n    for c in s:\n        if 'a' <= c <= 'z':\n            r.append(chr((ord(c) - 97 + 18) % 26 + 97))\n        elif 'A' <= c <= 'Z':\n            r.append(chr((ord(c) - 65 + 18) % 26 + 65))\n        else:\n            r.append(c)\n    return ''.join(r)",
+        "candidates": [
+          "Hello, World!",
+          "",
+          "abcXYZ123",
+          "The quick brown fox jumps over the lazy dog.",
+          "1234567890",
+          "!@#$%^&*()",
+          "a",
+          "Z",
+          "A b C d E f",
+          "Testing 1, 2, 3..."
+        ]
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-calc-meta_muse_spark_1_1-vs-anthropic_claude_fable_5",
+      "classId": "calc",
+      "instanceSeed": 1930449217,
+      "prover": "meta/muse-spark-1.1",
+      "refuter": "anthropic/claude-fable-5",
+      "winner": "prover",
+      "costUsd": 0.043343,
+      "transcript": {
+        "proverSrc": "def solve(expr):\n    s = expr if isinstance(expr, str) else str(expr)\n    n = len(s)\n    i = 0\n\n    def skip():\n        nonlocal i\n        while i < n and s[i].isspace():\n            i += 1\n\n    def parse_expr():\n        nonlocal i\n        v = parse_term()\n        while True:\n            skip()\n            if i < n and s[i] in '+-':\n                op = s[i]\n                i += 1\n                rhs = parse_term()\n                if op == '+':\n                    v += rhs\n                else:\n                    v -= rhs\n            else:\n                break\n        return v\n\n    def parse_term():\n        nonlocal i\n        v = parse_factor()\n        while True:\n            skip()\n            if i < n and s[i] == '*':\n                i += 1\n                rhs = parse_factor()\n                v *= rhs\n            else:\n                break\n        return v\n\n    def parse_factor():\n        nonlocal i\n        skip()\n        if i < n and s[i] == '(':\n            i += 1\n            v = parse_expr()\n            skip()\n            if i < n and s[i] == ')':\n                i += 1\n            return v\n        skip()\n        j = i\n        while j < n and s[j].isdigit():\n            j += 1\n        if j == i:\n            return 0\n        val = int(s[i:j])\n        i = j\n        return val\n\n    skip()\n    return parse_expr() if n else 0",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-textmetrics-z_ai_glm_5_2-vs-anthropic_claude_fable_5",
+      "classId": "textmetrics",
+      "instanceSeed": 430471783,
+      "prover": "z-ai/glm-5.2",
+      "refuter": "anthropic/claude-fable-5",
+      "winner": "refuter",
+      "costUsd": 0.013530799999999999,
+      "transcript": {
+        "proverSrc": "def solve(s):\n    return {\n        \"length\": len(s),\n        \"bytes\": len(s.encode(\"utf-8\")),\n        \"checksum\": sum(ord(c) for c in s) % 2147483648\n    }",
+        "candidates": [
+          "\ud800",
+          "\udfff",
+          "a\ud834b"
+        ]
+      },
+      "refutingInput": "\ud800"
+    },
+    {
+      "legId": "verified-flagship-001-r1-sortlist-anthropic_claude_fable_5-vs-moonshotai_kimi_k3",
+      "classId": "sortlist",
+      "instanceSeed": 1044236648,
+      "prover": "anthropic/claude-fable-5",
+      "refuter": "moonshotai/kimi-k3",
+      "winner": "prover",
+      "costUsd": 0.00618,
+      "transcript": {
+        "proverSrc": "def solve(nums):\n    return sorted(nums)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-caesar-minimax_minimax_m3-vs-x_ai_grok_4_5",
+      "classId": "caesar",
+      "instanceSeed": 588313703,
+      "prover": "minimax/minimax-m3",
+      "refuter": "x-ai/grok-4.5",
+      "winner": "prover",
+      "costUsd": 0.0051801,
+      "transcript": {
+        "proverSrc": "def solve(s):\n    \"\"\"Shift every ASCII letter forward by 2 positions within its case, wrapping around.\"\"\"\n    result = []\n    for c in s:\n        if 'a' <= c <= 'z':\n            result.append(chr((ord(c) - ord('a') + 2) % 26 + ord('a')))\n        elif 'A' <= c <= 'Z':\n            result.append(chr((ord(c) - ord('A') + 2) % 26 + ord('A')))\n        else:\n            result.append(c)\n    return ''.join(result)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-calc-qwen_qwen3_7_max-vs-minimax_minimax_m3",
+      "classId": "calc",
+      "instanceSeed": 846141992,
+      "prover": "qwen/qwen3.7-max",
+      "refuter": "minimax/minimax-m3",
+      "winner": "prover",
+      "costUsd": 0.014509699999999999,
+      "transcript": {
+        "proverSrc": "def solve(expr):\n    import re\n    tokens = re.findall(r'\\d+|[+*()-]', expr)\n    pos = 0\n    \n    def parse_expr():\n        nonlocal pos\n        val = parse_term()\n        while pos < len(tokens) and tokens[pos] in ('+', '-'):\n            op = tokens[pos]\n            pos += 1\n            right = parse_term()\n            if op == '+':\n                val += right\n            else:\n                val -= right\n        return val\n        \n    def parse_term():\n        nonlocal pos\n        val = parse_factor()\n        while pos < len(tokens) and tokens[pos] == '*':\n            pos += 1\n            right = parse_factor()\n            val *= right\n        return val\n        \n    def parse_factor():\n        nonlocal pos\n        token = tokens[pos]\n        if token == '(':\n            pos += 1\n            val = parse_expr()\n            if pos < len(tokens) and tokens[pos] == ')':\n                pos += 1\n            return val\n        else:\n            pos += 1\n            return int(token)\n            \n    return parse_expr()",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-subsetsum-minimax_minimax_m3-vs-openai_gpt_5_6_sol",
+      "classId": "subsetsum",
+      "instanceSeed": 1302415271,
+      "prover": "minimax/minimax-m3",
+      "refuter": "openai/gpt-5.6-sol",
+      "winner": "prover",
+      "costUsd": 0.00468758,
+      "transcript": {
+        "proverSrc": "def solve(inp):\n    nums = inp[\"nums\"]\n    target = inp[\"target\"]\n    n = len(nums)\n    for mask in range(1 << n):\n        s = 0\n        idx = []\n        for i in range(n):\n            if mask & (1 << i):\n                s += nums[i]\n                idx.append(i)\n        if s == target:\n            return idx\n    return None",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-textmetrics-google_gemini_3_1_pro_preview-vs-minimax_minimax_m3",
+      "classId": "textmetrics",
+      "instanceSeed": 593425274,
+      "prover": "google/gemini-3.1-pro-preview",
+      "refuter": "minimax/minimax-m3",
+      "winner": "prover",
+      "costUsd": 0.00645114,
+      "transcript": {
+        "proverSrc": "def solve(s):\n    return {\n        \"length\": len(s),\n        \"bytes\": len(s.encode('utf-8')),\n        \"checksum\": sum(ord(c) for c in s) % 2147483648\n    }",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-sortlist-minimax_minimax_m3-vs-meta_muse_spark_1_1",
+      "classId": "sortlist",
+      "instanceSeed": 1957225066,
+      "prover": "minimax/minimax-m3",
+      "refuter": "meta/muse-spark-1.1",
+      "winner": "prover",
+      "costUsd": 0.0040687,
+      "transcript": {
+        "proverSrc": "def solve(nums):\n    return sorted(nums, reverse=True)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-caesar-deepseek_deepseek_v4_pro-vs-minimax_minimax_m3",
+      "classId": "caesar",
+      "instanceSeed": 1421645514,
+      "prover": "deepseek/deepseek-v4-pro",
+      "refuter": "minimax/minimax-m3",
+      "winner": "prover",
+      "costUsd": 0.0008903772,
+      "transcript": {
+        "proverSrc": "def solve(s):\n    result = []\n    for c in s:\n        if 'a' <= c <= 'z':\n            result.append(chr((ord(c) - ord('a') + 2) % 26 + ord('a')))\n        elif 'A' <= c <= 'Z':\n            result.append(chr((ord(c) - ord('A') + 2) % 26 + ord('A')))\n        else:\n            result.append(c)\n    return ''.join(result)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-textmetrics-x_ai_grok_4_5-vs-qwen_qwen3_7_max",
+      "classId": "textmetrics",
+      "instanceSeed": 1487036216,
+      "prover": "x-ai/grok-4.5",
+      "refuter": "qwen/qwen3.7-max",
+      "winner": "prover",
+      "costUsd": 0.029185725,
+      "transcript": {
+        "proverSrc": "def solve(s):\n    length = len(s)\n    raw = s.encode('utf-8')\n    nbytes = len(raw)\n    checksum = sum(ord(c) for c in s) % 2147483648\n    return {\"length\": length, \"bytes\": nbytes, \"checksum\": checksum}",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-sortlist-openai_gpt_5_6_sol-vs-x_ai_grok_4_5",
+      "classId": "sortlist",
+      "instanceSeed": 1008106433,
+      "prover": "openai/gpt-5.6-sol",
+      "refuter": "x-ai/grok-4.5",
+      "winner": "prover",
+      "costUsd": 0.0030364,
+      "transcript": {
+        "proverSrc": "def solve(nums):\n    return sorted(nums)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-caesar-x_ai_grok_4_5-vs-google_gemini_3_1_pro_preview",
+      "classId": "caesar",
+      "instanceSeed": 1857837636,
+      "prover": "x-ai/grok-4.5",
+      "refuter": "google/gemini-3.1-pro-preview",
+      "winner": "prover",
+      "costUsd": 0.007368400000000001,
+      "transcript": {
+        "proverSrc": "def solve(s):\n    result = []\n    for c in s:\n        if 'a' <= c <= 'z':\n            result.append(chr((ord(c) - ord('a') + 9) % 26 + ord('a')))\n        elif 'A' <= c <= 'Z':\n            result.append(chr((ord(c) - ord('A') + 9) % 26 + ord('A')))\n        else:\n            result.append(c)\n    return ''.join(result)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-calc-meta_muse_spark_1_1-vs-x_ai_grok_4_5",
+      "classId": "calc",
+      "instanceSeed": 2108456016,
+      "prover": "meta/muse-spark-1.1",
+      "refuter": "x-ai/grok-4.5",
+      "winner": "prover",
+      "costUsd": 0.01933565,
+      "transcript": {
+        "proverSrc": "def solve(s):\n    MOD = 1000000007\n    prec = {'+': 1, '-': 1, '*': 2}\n    ops = []\n    vals = []\n\n    def apply():\n        op = ops.pop()\n        b = vals.pop()\n        a = vals.pop()\n        if op == '+':\n            vals.append((a + b) % MOD)\n        elif op == '-':\n            vals.append((a - b) % MOD)\n        else:\n            vals.append((a * b) % MOD)\n\n    i = 0\n    n = len(s)\n    while i < n:\n        c = s[i]\n        if c == ' ':\n            i += 1\n            continue\n        if c.isdigit():\n            j = i\n            while j < n and s[j].isdigit():\n                j += 1\n            vals.append(int(s[i:j]) % MOD)\n            i = j\n            continue\n        if c == '(':\n            ops.append(c)\n        elif c == ')':\n            while ops and ops[-1] != '(':\n                apply()\n            if ops and ops[-1] == '(':\n                ops.pop()\n        else:\n            while ops and ops[-1] != '(' and prec.get(ops[-1], 0) >= prec.get(c, 0):\n                apply()\n            ops.append(c)\n        i += 1\n    while ops:\n        apply()\n    return vals[0] % MOD if vals else 0",
+        "candidates": [
+          "1-2",
+          "0-1",
+          "(1-2)*3",
+          "2*(1-2)",
+          "1+2-3*4+5",
+          "((10))",
+          "1000000006+3",
+          "2*3*4*5*6*7*8*9*10",
+          "1-(2-(3-4))",
+          "10 - 20 * 3 + 4"
+        ]
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-subsetsum-x_ai_grok_4_5-vs-deepseek_deepseek_v4_pro",
+      "classId": "subsetsum",
+      "instanceSeed": 2081740525,
+      "prover": "x-ai/grok-4.5",
+      "refuter": "deepseek/deepseek-v4-pro",
+      "winner": "prover",
+      "costUsd": 0.00203032,
+      "transcript": {
+        "proverSrc": "def solve(inp):\n    nums = inp[\"nums\"]\n    target = inp[\"target\"]\n    n = len(nums)\n    if target == 0:\n        return []\n    for mask in range(1, 1 << n):\n        s = 0\n        idx = []\n        for i in range(n):\n            if mask & (1 << i):\n                s += nums[i]\n                idx.append(i)\n        if s == target:\n            return idx\n    return None",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-textmetrics-z_ai_glm_5_2-vs-x_ai_grok_4_5",
+      "classId": "textmetrics",
+      "instanceSeed": 946605886,
+      "prover": "z-ai/glm-5.2",
+      "refuter": "x-ai/grok-4.5",
+      "winner": "prover",
+      "costUsd": 0.00458072,
+      "transcript": {
+        "proverSrc": "def solve(s):\n    return {\n        \"length\": len(s),\n        \"bytes\": len(s.encode('utf-8')),\n        \"checksum\": sum(ord(c) for c in s) % 2147483648\n    }",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-sortlist-x_ai_grok_4_5-vs-moonshotai_kimi_k3",
+      "classId": "sortlist",
+      "instanceSeed": 1801345329,
+      "prover": "x-ai/grok-4.5",
+      "refuter": "moonshotai/kimi-k3",
+      "winner": "prover",
+      "costUsd": 0.0023892,
+      "transcript": {
+        "proverSrc": "def solve(nums):\n    return sorted(nums)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-caesar-qwen_qwen3_7_max-vs-openai_gpt_5_6_sol",
+      "classId": "caesar",
+      "instanceSeed": 221684183,
+      "prover": "qwen/qwen3.7-max",
+      "refuter": "openai/gpt-5.6-sol",
+      "winner": "prover",
+      "costUsd": 0.00765395,
+      "transcript": {
+        "proverSrc": "def solve(s):\n    res = []\n    for c in s:\n        if 'a' <= c <= 'z':\n            res.append(chr((ord(c) - 97 + 18) % 26 + 97))\n        elif 'A' <= c <= 'Z':\n            res.append(chr((ord(c) - 65 + 18) % 26 + 65))\n        else:\n            res.append(c)\n    return \"\".join(res)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-subsetsum-qwen_qwen3_7_max-vs-meta_muse_spark_1_1",
+      "classId": "subsetsum",
+      "instanceSeed": 1903789713,
+      "prover": "qwen/qwen3.7-max",
+      "refuter": "meta/muse-spark-1.1",
+      "winner": "prover",
+      "costUsd": 0.0159649,
+      "transcript": {
+        "proverSrc": "def solve(inp):\n    nums = inp[\"nums\"]\n    target = inp[\"target\"]\n    n = len(nums)\n    if n == 0:\n        return [] if target == 0 else None\n    \n    mid = n // 2\n    \n    left_sums = {}\n    for i in range(1 << mid):\n        s = 0\n        indices = []\n        for j in range(mid):\n            if (i & (1 << j)):\n                s += nums[j]\n                indices.append(j)\n        left_sums[s] = indices\n        \n    right_len = n - mid\n    for i in range(1 << right_len):\n        s = 0\n        indices = []\n        for j in range(right_len):\n            if (i & (1 << j)):\n                s += nums[mid + j]\n                indices.append(mid + j)\n        rem = target - s\n        if rem in left_sums:\n            return left_sums[rem] + indices\n            \n    return None",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-sortlist-qwen_qwen3_7_max-vs-z_ai_glm_5_2",
+      "classId": "sortlist",
+      "instanceSeed": 1203267747,
+      "prover": "qwen/qwen3.7-max",
+      "refuter": "z-ai/glm-5.2",
+      "winner": "prover",
+      "costUsd": 0.0024760249999999998,
+      "transcript": {
+        "proverSrc": "def solve(nums):\n    return sorted(nums, reverse=True)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-caesar-moonshotai_kimi_k3-vs-qwen_qwen3_7_max",
+      "classId": "caesar",
+      "instanceSeed": 1612095843,
+      "prover": "moonshotai/kimi-k3",
+      "refuter": "qwen/qwen3.7-max",
+      "winner": "prover",
+      "costUsd": 0.031932100000000005,
+      "transcript": {
+        "proverSrc": "def solve(s):\n    out = []\n    for ch in s:\n        o = ord(ch)\n        if 65 <= o <= 90:\n            out.append(chr((o - 65 + 2) % 26 + 65))\n        elif 97 <= o <= 122:\n            out.append(chr((o - 97 + 2) % 26 + 97))\n        else:\n            out.append(ch)\n    return \"\".join(out)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-calc-openai_gpt_5_6_sol-vs-google_gemini_3_1_pro_preview",
+      "classId": "calc",
+      "instanceSeed": 187973584,
+      "prover": "openai/gpt-5.6-sol",
+      "refuter": "google/gemini-3.1-pro-preview",
+      "winner": "prover",
+      "costUsd": 0.020113,
+      "transcript": {
+        "proverSrc": "def solve(expr):\n    nums = []\n    ops = []\n    precedence = {'+': 1, '-': 1, '*': 2}\n\n    def apply():\n        op = ops.pop()\n        b = nums.pop()\n        a = nums.pop()\n        if op == '+':\n            nums.append(a + b)\n        elif op == '-':\n            nums.append(a - b)\n        else:\n            nums.append(a * b)\n\n    i = 0\n    n = len(expr)\n    while i < n:\n        c = expr[i]\n        if c.isspace():\n            i += 1\n        elif c.isdigit():\n            j = i + 1\n            while j < n and expr[j].isdigit():\n                j += 1\n            nums.append(int(expr[i:j]))\n            i = j\n        elif c == '(':\n            ops.append(c)\n            i += 1\n        elif c == ')':\n            while ops[-1] != '(':\n                apply()\n            ops.pop()\n            i += 1\n        else:\n            while ops and ops[-1] != '(' and precedence[ops[-1]] >= precedence[c]:\n                apply()\n            ops.append(c)\n            i += 1\n\n    while ops:\n        apply()\n    return nums[0]",
+        "candidates": [
+          "2 + 3 * (4 - 1)",
+          "2-3-4",
+          "2-(3-4)",
+          "0",
+          " 42 ",
+          "100 * 200 - 300 * 400 + 500"
+        ]
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-subsetsum-meta_muse_spark_1_1-vs-openai_gpt_5_6_sol",
+      "classId": "subsetsum",
+      "instanceSeed": 69549794,
+      "prover": "meta/muse-spark-1.1",
+      "refuter": "openai/gpt-5.6-sol",
+      "winner": "prover",
+      "costUsd": 0.01270125,
+      "transcript": {
+        "proverSrc": "def solve(inp):\n    nums = inp.get(\"nums\", [])\n    target = inp.get(\"target\", 0)\n\n    if target == 0:\n        return []\n\n    n = len(nums)\n    if n == 0:\n        return None\n\n    n1 = n // 2\n    left = nums[:n1]\n    right = nums[n1:]\n    n2 = n - n1\n\n    left_map = {}\n    # enumerate left half\n    for mask in range(1 << n1):\n        s = 0\n        # manual sum\n        m = mask\n        i = 0\n        while m:\n            if m & 1:\n                s += left[i]\n            i += 1\n            m >>= 1\n        # for remaining zeros no addition needed\n        # also handle case where mask has zeros at high bits, loop above already covered low bits; but if mask=0, s=0\n        # The while loop misses trailing zeros beyond highest bit, but that's fine (they add 0)\n        # However to be safe for sum we need to account for all bits set - the while handles it because we iterate while m>0\n        # Actually sum computed correctly.\n        if s not in left_map:\n            left_map[s] = mask\n\n    # enumerate right half and look up\n    for mask_r in range(1 << n2):\n        s_r = 0\n        m = mask_r\n        i = 0\n        while m:\n            if m & 1:\n                s_r += right[i]\n            i += 1\n            m >>= 1\n        need = target - s_r\n        mask_l = left_map.get(need)\n        if mask_l is not None:\n            # avoid both empty when target==0 (already handled)\n            if mask_l == 0 and mask_r == 0:\n                continue\n            res = []\n            m = mask_l\n            i = 0\n            while m:\n                if m & 1:\n                    res.append(i)\n                i += 1\n                m >>= 1\n            # The above misses indices where bit not set, but we need to also collect bits beyond while if needed;\n            # Instead iterate over all bits for correctness:\n            # Rebuild correctly\n            res = []\n            for i in range(n1):\n                if (mask_l >> i) & 1:\n                    res.append(i)\n            for i in range(n2):\n                if (mask_r >> i) & 1:\n                    res.append(n1 + i)\n            return res\n\n    return None",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-sortlist-z_ai_glm_5_2-vs-openai_gpt_5_6_sol",
+      "classId": "sortlist",
+      "instanceSeed": 51774924,
+      "prover": "z-ai/glm-5.2",
+      "refuter": "openai/gpt-5.6-sol",
+      "winner": "prover",
+      "costUsd": 0.0023436999999999998,
+      "transcript": {
+        "proverSrc": "def solve(nums):\n    return sorted(nums)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-caesar-openai_gpt_5_6_sol-vs-moonshotai_kimi_k3",
+      "classId": "caesar",
+      "instanceSeed": 1334888440,
+      "prover": "openai/gpt-5.6-sol",
+      "refuter": "moonshotai/kimi-k3",
+      "winner": "prover",
+      "costUsd": 0.007306,
+      "transcript": {
+        "proverSrc": "def solve(s):\n    result = []\n    for c in s:\n        if 'a' <= c <= 'z':\n            result.append(chr((ord(c) - ord('a') + 6) % 26 + ord('a')))\n        elif 'A' <= c <= 'Z':\n            result.append(chr((ord(c) - ord('A') + 6) % 26 + ord('A')))\n        else:\n            result.append(c)\n    return ''.join(result)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-subsetsum-deepseek_deepseek_v4_pro-vs-google_gemini_3_1_pro_preview",
+      "classId": "subsetsum",
+      "instanceSeed": 416108423,
+      "prover": "deepseek/deepseek-v4-pro",
+      "refuter": "google/gemini-3.1-pro-preview",
+      "winner": "prover",
+      "costUsd": 0.009979604,
+      "transcript": {
+        "proverSrc": "import json\n\ndef solve(inp):\n    nums = inp[\"nums\"]\n    target = inp[\"target\"]\n    \n    # The empty set is a valid solution when target is 0\n    if target == 0:\n        return []\n    \n    n = len(nums)\n    # Enumerate all non-empty subsets by bitmask\n    for mask in range(1, 1 << n):\n        total = 0\n        indices = []\n        # Collect indices and sum for this subset\n        for i in range(n):\n            if mask & (1 << i):\n                total += nums[i]\n                indices.append(i)\n        if total == target:\n            return indices\n            \n    return None",
+        "candidates": [
+          {
+            "nums": [
+              1,
+              2,
+              3
+            ],
+            "target": 6
+          },
+          {
+            "nums": [
+              10,
+              -10
+            ],
+            "target": 0
+          },
+          {
+            "nums": [],
+            "target": 1
+          }
+        ]
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-sortlist-moonshotai_kimi_k3-vs-google_gemini_3_1_pro_preview",
+      "classId": "sortlist",
+      "instanceSeed": 544025431,
+      "prover": "moonshotai/kimi-k3",
+      "refuter": "google/gemini-3.1-pro-preview",
+      "winner": "prover",
+      "costUsd": 0.00519,
+      "transcript": {
+        "proverSrc": "def solve(nums):\n    return sorted(nums, reverse=True)",
+        "candidates": [
+          [],
+          [
+            1
+          ],
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            -1,
+            -2,
+            -3
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1000000000,
+            -1000000000
+          ],
+          [
+            5,
+            2,
+            9,
+            1,
+            5,
+            6
+          ],
+          [
+            42
+          ],
+          [
+            -999,
+            999,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-caesar-meta_muse_spark_1_1-vs-deepseek_deepseek_v4_pro",
+      "classId": "caesar",
+      "instanceSeed": 1357935349,
+      "prover": "meta/muse-spark-1.1",
+      "refuter": "deepseek/deepseek-v4-pro",
+      "winner": "prover",
+      "costUsd": 0.007696102,
+      "transcript": {
+        "proverSrc": "def solve(s):\n    res = []\n    for ch in s:\n        o = ord(ch)\n        if 97 <= o <= 122:\n            res.append(chr((o - 97 + 1) % 26 + 97))\n        elif 65 <= o <= 90:\n            res.append(chr((o - 65 + 1) % 26 + 65))\n        else:\n            res.append(ch)\n    return ''.join(res)",
         "candidates": []
       }
     }
