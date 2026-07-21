@@ -79,3 +79,12 @@ cost/leg $0.0029 (band: <$0.10), void rate 0% (band: <10%), forfeit rate 10%,
 refutations reproduced 3/3. Role split confirmed informative (gemini: weakest
 prover, top refuter). Refutation legs ~30x cheaper per rating bit than judged
 debate. Proceeding to M3.
+
+## M7 record (2026-07-21)
+
+Pipeline live. First real autonomous admission: qwen3.7-max proposed
+"longest-increasing-subarray"; gates passed (mutation 2/2 caught, constant
+baseline fails 97%, band >= 30%). Wired into the ladder rotation with
+proposer exclusion; it gets rated in the next verified round. Follow-up:
+re-propose the five bootstrap classes through the same gates and retire any
+that fail (queued for a coming night).

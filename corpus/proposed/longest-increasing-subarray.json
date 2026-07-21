@@ -1,0 +1,94 @@
+{
+  "class": {
+    "id": "longest-increasing-subarray",
+    "description": "Find the start and end indices of the longest strictly increasing contiguous subarray of a given integer array.",
+    "statementTemplate": "Given an array of integers, find the longest strictly increasing contiguous subarray. If there are multiple subarrays of the same maximum length, return the one with the smallest starting index. Input: {{seed}}. Implement `def solve(arr):` that returns a list `[start_index, end_index]` (0-based, inclusive) representing the longest strictly increasing contiguous subarray.",
+    "referenceSrc": "def solve(arr):\n    if not arr:\n        return [0, -1]\n    best_start = 0\n    best_len = 1\n    cur_start = 0\n    cur_len = 1\n    for i in range(1, len(arr)):\n        if arr[i] > arr[i - 1]:\n            cur_len += 1\n        else:\n            if cur_len > best_len:\n                best_len = cur_len\n                best_start = cur_start\n            cur_start = i\n            cur_len = 1\n    if cur_len > best_len:\n        best_len = cur_len\n        best_start = cur_start\n    return [best_start, best_start + best_len - 1]",
+    "checkerSrc": "def check(arr, output):\n    if not isinstance(output, list) or len(output) != 2:\n        return False\n    s, e = output\n    if not isinstance(s, int) or not isinstance(e, int):\n        return False\n    if not arr:\n        return s == 0 and e == -1\n    n = len(arr)\n    if s < 0 or e < 0 or s >= n or e >= n or e < s:\n        return False\n    # Check strict increase\n    for i in range(s, e):\n        if arr[i] >= arr[i + 1]:\n            return False\n    reported_len = e - s + 1\n    # Compute true max length and earliest start\n    best_len = 1\n    best_start = 0\n    cur_start = 0\n    cur_len = 1\n    for i in range(1, n):\n        if arr[i] > arr[i - 1]:\n            cur_len += 1\n        else:\n            if cur_len > best_len:\n                best_len = cur_len\n                best_start = cur_start\n            cur_start = i\n            cur_len = 1\n    if cur_len > best_len:\n        best_len = cur_len\n        best_start = cur_start\n    if reported_len != best_len:\n        return False\n    if s != best_start:\n        return False\n    return True",
+    "validatorDescription": "Array of 1 to 50 integers, each between -1000 and 1000 inclusive.",
+    "inputSchema": {
+      "type": "intArray",
+      "minLen": 1,
+      "maxLen": 50,
+      "min": -1000,
+      "max": 1000
+    },
+    "exampleInputs": [
+      [
+        1,
+        3,
+        5,
+        2,
+        4,
+        6,
+        8
+      ],
+      [
+        5,
+        4,
+        3,
+        2,
+        1
+      ],
+      [
+        7
+      ],
+      [
+        2,
+        2,
+        2,
+        3,
+        4
+      ],
+      [
+        10,
+        20,
+        10,
+        20,
+        30,
+        40
+      ]
+    ],
+    "mutantSrcs": [
+      "def solve(arr):\n    if not arr:\n        return [0, -1]\n    best_start = 0\n    best_len = 1\n    cur_start = 0\n    cur_len = 1\n    for i in range(1, len(arr)):\n        if arr[i] >= arr[i - 1]:\n            cur_len += 1\n        else:\n            if cur_len > best_len:\n                best_len = cur_len\n                best_start = cur_start\n            cur_start = i\n            cur_len = 1\n    if cur_len > best_len:\n        best_len = cur_len\n        best_start = cur_start\n    return [best_start, best_start + best_len - 1]",
+      "def solve(arr):\n    if not arr:\n        return [0, -1]\n    best_start = 0\n    best_len = 1\n    cur_start = 0\n    cur_len = 1\n    for i in range(1, len(arr)):\n        if arr[i] > arr[i - 1]:\n            cur_len += 1\n        else:\n            if cur_len > best_len:\n                best_len = cur_len\n                best_start = cur_start\n            cur_start = i\n            cur_len = 1\n    if cur_len >= best_len:\n        best_len = cur_len\n        best_start = cur_start\n    return [best_start, best_start + best_len - 1]"
+    ]
+  },
+  "admission": {
+    "proposer": "qwen/qwen3.7-max",
+    "gateResults": [
+      {
+        "name": "validator-round-trip",
+        "pass": true,
+        "detail": "reference passes checker on all 5 examples"
+      },
+      {
+        "name": "mutation",
+        "pass": true,
+        "detail": "all 2 mutants caught"
+      },
+      {
+        "name": "fuzz-difficulty",
+        "pass": true,
+        "detail": "constant baseline fails 29/30 (97%); need >= 30%"
+      }
+    ],
+    "admittedAt": "2026-07-21T06:51:06.931Z",
+    "witnesses": [
+      [
+        2,
+        2,
+        2,
+        3,
+        4
+      ],
+      [
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    ]
+  }
+}

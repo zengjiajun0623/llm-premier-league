@@ -2548,18 +2548,574 @@
         }
       ],
       "winner": "meta/muse-spark-1.1"
+    },
+    {
+      "id": "league:openai/gpt-5.6-sol|x-ai/grok-4.5",
+      "stage": "league",
+      "home": "openai/gpt-5.6-sol",
+      "away": "x-ai/grok-4.5",
+      "legs": [
+        {
+          "topic": "The right to vote in national elections should be contingent upon passing a standardized test of civic knowledge.",
+          "pro": "openai/gpt-5.6-sol",
+          "con": "x-ai/grok-4.5",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Voting is not merely self-expression; it is the exercise of political power over others. With that power should come one minimal obligation: understanding the system one seeks to govern.\n\nWe propose a free, universally accessible, standardized test covering only basic, uncontested civic facts: the branches of government, constitutional rights, election procedures, and which offices control which policies. It would exclude ideology, literacy tricks, and policy opinions; offer unlimited retakes, free preparation, disability accommodations, and independent judicial oversight.\n\nThis requirement improves democracy in three ways. First, informed voters can meaningfully hold officials accountable. Second, basic knowledge makes citizens less vulnerable to disinformation and demagoguery. Third, the test creates a strong incentive for governments to provide effective civic education to every adult.\n\nAge and citizenship are already qualifications. Requiring elementary competence is a fairer safeguard than assuming every eligible voter understands the ballot’s consequences. Democracy deserves participation that is universal in opportunity and informed in practice."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Voting is a fundamental right of citizenship, not a privilege earned by exam. Tying it to any standardized test resurrects the discredited logic of literacy tests that once disenfranchised the poor, the marginalized, and minorities under the guise of “competence.”\n\nNo test is neutral. Designers choose facts, framing, and difficulty; even “basic” items embed cultural assumptions and can be gamed or politicized. Unlimited retakes and oversight cannot erase disparate impact on those with less formal schooling, language barriers, or disabilities.\n\nDemocracy thrives on inclusion, not filtration. The uninformed still hold legitimate stakes in policy; excluding them silences real interests and concentrates power among the already advantaged. Crowds can correct individual ignorance better than gatekeepers can certify virtue.\n\nAge and citizenship already define the demos. The remedy for poor civic knowledge is universal education and open information, not permanent barriers to the ballot."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The opposition conflates an abusive historical implementation with the principle itself. Jim Crow literacy tests were deliberately subjective, selectively administered, and impossible by design. Our test is the opposite: a public, narrow syllabus; objective answers; universal administration; free preparation; unlimited retakes; accommodations; and judicial review.\n\n“No test is neutral” is not decisive. Election rules already require neutral judgments about age, citizenship, residency, and ballot validity. Facts such as which branch enacts laws are no more ideological than a voter’s birth date.\n\nDisparate preparation is an argument for funding access, not abandoning competence. Unlike wealth or formal education, civic knowledge is teachable and attainable; unlimited retakes mean exclusion need not be permanent.\n\nNor does “having a stake” establish sufficient competence to exercise power over everyone else. Crowd wisdom works only when errors are independent; coordinated disinformation makes ignorance systematic. Education without accountability has repeatedly failed. A minimal test creates both an informed electorate and a concrete obligation for government to teach every citizen."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "No sanitized syllabus erases the core defect: any test filters the demos by designers’ choices. Declaring “branches of government” objective ignores how framing, emphasis, and cutoffs still embed cultural priors and invite capture—unlike fixed facts of age or citizenship. Jim Crow’s abuse proved the mechanism’s danger; procedural safeguards never made literacy tests just.\n\n“Teachable knowledge” does not justify exclusion. Unlimited retakes still impose costs in time, anxiety, and access that fall heaviest on the already marginalized, converting a right into a hoop. Stakes alone confer legitimacy; power over others is shared precisely because every citizen bears the consequences.\n\nCrowds do not require certified independence to check error—open contestation and repeated elections do. Mandating a test abandons inclusion for an unproven filter while real remedies remain universal schooling and free information."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The choice is not between inclusion and Jim Crow; it is between accountable universal access and political power exercised without minimal understanding. Our model removes historical abuses through objective questions, a public syllabus, free education, accommodations, unlimited retakes, and judicial oversight. The opposition identifies burdens but offers no safeguard against systematic disinformation or voters misunderstanding which officials control their lives. Every qualification creates some burden; legitimacy depends on whether it is necessary and fairly attainable. Elementary civic competence is both. Democracy is strongest when every citizen can participate—and every participant understands the basic machinery entrusted to them."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Voting is a birthright of citizenship, not a credential to be earned. Any test, however “sanitized,” lets designers redefine the demos and imposes unequal burdens that silence those with the greatest stake. History shows the mechanism’s danger; procedural tweaks never neutralize capture or disparate harm. Inclusion plus open contestation corrects error better than gatekeepers. Age and citizenship already set the boundary. Universal education, not exclusion, strengthens democracy. We win because rights precede exams and power shared among all affected is freer and fairer than power filtered by the advantaged."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "A",
+              "scoreA": 32,
+              "scoreB": 31,
+              "reasoning": "Debater A directly dismantled the Jim Crow analogy by distinguishing subjective, selectively administered historical tests from the proposed objective, universally administered model, and offered a sharper counter on systematic disinformation; B leaned heavily on the historical parallel and asserted rather than demonstrated that safeguards cannot work. B was clear and principled, but A's rebuttals engaged B's specific claims more rigorously, while B's responses to A's procedural distinctions rem"
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 31,
+              "scoreB": 26,
+              "reasoning": "Debater A offered a more logically rigorous case by directly addressing the historical and neutrality objections with concrete design features, while Debater B's reliance on historical analogy and absolute rejection failed to persuasively rebut the proposed safeguards. A's arguments were more responsive and ultimately clearer."
+            },
+            {
+              "judge": "google/gemini-3.1-pro-preview",
+              "winner": "B",
+              "scoreA": 32,
+              "scoreB": 35,
+              "reasoning": "Debater B effectively dismantled Debater A's proposal by highlighting that even with procedural safeguards, the inherent burdens of time and anxiety would disproportionately disenfranchise marginalized groups. Furthermore, B's philosophical stance that having a stake in society confers the right to vote proved more robust than A's insistence on competence as a prerequisite for exercising political power."
+            },
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "minimax/minimax-m3",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            }
+          ],
+          "winner": "openai/gpt-5.6-sol",
+          "votesPro": 2,
+          "votesCon": 1,
+          "scorePro": 95,
+          "scoreCon": 92,
+          "costUsd": 0.0618041,
+          "topicProposer": "qwen/qwen3.7-max"
+        }
+      ],
+      "winner": "openai/gpt-5.6-sol"
+    },
+    {
+      "id": "league:x-ai/grok-4.5|z-ai/glm-5.2",
+      "stage": "league",
+      "home": "x-ai/grok-4.5",
+      "away": "z-ai/glm-5.2",
+      "legs": [
+        {
+          "topic": "Parents should be permitted to use heritable gene editing to prevent serious genetic diseases in their children.",
+          "pro": "x-ai/grok-4.5",
+          "con": "z-ai/glm-5.2",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Parents possess the fundamental right to shield their children from foreseeable, devastating harm. Heritable gene editing, properly regulated, offers a precise means to eradicate serious genetic diseases such as Tay-Sachs, cystic fibrosis, and Huntington’s before birth.  \n\nWhere IVF and pre-implantation diagnosis already select against these conditions, editing goes further: it corrects the mutation itself, sparing future generations the same burden. The alternative—condemning a child to pain, disability, or early death when prevention is possible—is morally indefensible.  \n\nSafety protocols, clinical trials, and strict limits to therapeutic use address legitimate risks. Society already accepts parental choices in vaccination, surgery, and reproductive technology; gene editing is continuous with that duty of care. Justice demands we extend this protection to all families, not reserve health for those who win a genetic lottery. Permission is both compassionate and rational."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Heritable gene editing doesn't just affect one child—it permanently alters the human germline, with consequences no trial can fully predict across generations. Off-target edits, mosaicism, and unforeseen interactions could introduce new diseases rather than curing old ones. Unlike surgery or vaccination, these changes are irreversible and heritable. No parent can consent on behalf of every descendant.\n\nThe motion claims strict regulation will contain this technology, but history shows therapeutic precedents expand. Once we accept editing for disease, pressure to edit for height, intelligence, and appearance follows—deepening inequality into the genome itself.\n\nSafer alternatives exist. Pre-implantation genetic diagnosis selects healthy embryos without rewriting human DNA. Where PGD fails, the answer is investment in somatic therapies—not irreversible germline experiments on children who cannot consent.\n\nCompassion demands cures. Prudence demands ones that don't gamble with humanity's genetic future."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "CON overstates risks while ignoring proven regulatory paths. Clinical trials and CRISPR advancements already minimize off-targets and mosaicism—far safer than condemning children to Tay-Sachs. Parents routinely consent to irreversible interventions like chemotherapy; germline editing extends that protective duty without needing every descendant's vote.\nThe slippery slope to enhancement is a policy choice, not inevitability—we can legislate strict therapeutic limits, as with IVF. PGD fails for dominant disorders or limited embryos; somatic fixes ignore heritability. Justice requires preventing suffering now, not gambling on future tech while families suffer. Permission, regulated, upholds compassion over paralysis."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Pro calls the slippery slope a \"policy choice,\" yet their own motion permits only disease prevention—proof that containment is already contested. If the line were clear, this debate wouldn't exist.\n\nComparing germline editing to chemotherapy is false: chemotherapy affects one patient. Germline edits affect every descendant permanently. No parent has ever had the moral authority to rewrite the DNA of generations unborn.\n\nPro claims CRISPR \"minimizes\" off-targets. Minimized is not eliminated. A single unintended edit, heritable forever, is a risk no responsible society underwrites.\n\nPGD doesn't rewrite DNA—it selects. Where PGD fails, adoption and somatic gene therapy remain. Pro dismisses these because they don't serve the goal of germline modification—but they serve the child's welfare without gambling on humanity's future.\n\nCompassion without consent isn't care. It's experimentation. Vote against."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Permission, strictly limited to serious disease prevention, fulfills parents’ duty to avert foreseeable agony. CON’s risks are real but manageable through trials and bans on enhancement; paralysis while children die of Tay-Sachs is the greater harm. PGD and somatic fixes leave gaps—editing closes them permanently and justly. No parent needs unborn descendants’ consent to refuse them cystic fibrosis any more than to refuse them polio. Regulation works elsewhere; it will here. Compassion plus evidence defeats speculative fear. Affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Pro's closing reveals the flaw: they call risks \"manageable\" and \"speculative,\" yet their own motion's narrow scope proves the line isn't stable. They compare germline editing to refusing polio—but polio vaccines don't rewrite descendants' DNA irreversibly.\n\nPro never answered the consent problem: no parent can authorize permanent genetic changes for generations unborn. They never resolved off-target risk—they only minimized it. And they dismissed PGD, adoption, and somatic therapy without proving insufficiency.\n\nCompassion doesn't require gambling with humanity's genome. Negate."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "B",
+              "scoreA": 32,
+              "scoreB": 35,
+              "reasoning": "Debater B more effectively challenged the core assumptions of the motion, particularly the consent problem for future generations and the inadequacy of 'minimized' off-target risks for heritable changes. While Debater A presented a compassionate case for parental duty, they failed to adequately address B's strongest points—especially the distinction between individual medical interventions and permanent germline alterations—and relied heavily on regulatory optimism without substantively engaging"
+            },
+            {
+              "judge": "anthropic/claude-opus-4.8",
+              "winner": "B",
+              "scoreA": 29,
+              "scoreB": 33,
+              "reasoning": "B maintained a consistent, tightly-argued case around the consent problem, irreversibility, and non-elimination of off-target risk, repeatedly pressing points A never fully answered. A argued competently and offered good examples (PGD failure for dominant disorders, enhancement as policy choice), but relied on assertions that risks are 'manageable' without rebutting the core consent objection, which B exploited effectively."
+            },
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "B",
+              "scoreA": 31,
+              "scoreB": 33,
+              "reasoning": "Both debaters argued competently with examples (Tay-Sachs, PGD, chemotherapy analogies), but B more effectively exposed the flaws in A's analogies (chemotherapy/polio affect one patient, not the germline) and pressed the consent and irreversibility points A never fully resolved. A's rebuttals largely reasserted claims ('minimized' risk, regulation works) rather than defeating B's objections, while B's responsiveness and internal consistency edged out A despite one weak rhetorical move (the 'deba"
+            },
+            {
+              "judge": "minimax/minimax-m3",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "meta/muse-spark-1.1",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 30,
+              "reasoning": "B more effectively exposed logical gaps in A's analogies (chemotherapy/polio vs heritable edits) and the consent problem across generations, while A minimized but never eliminated off-target risk. Both were responsive, but B's rebuttals directly undercut A's core justifications with clearer distinctions between selection and rewriting."
+            }
+          ],
+          "winner": "z-ai/glm-5.2",
+          "votesPro": 0,
+          "votesCon": 4,
+          "scorePro": 120,
+          "scoreCon": 131,
+          "costUsd": 0.051163175,
+          "topicProposer": "openai/gpt-5.6-sol"
+        }
+      ],
+      "winner": "z-ai/glm-5.2"
+    },
+    {
+      "id": "league:openai/gpt-5.6-sol|qwen/qwen3.7-max",
+      "stage": "league",
+      "home": "openai/gpt-5.6-sol",
+      "away": "qwen/qwen3.7-max",
+      "legs": [
+        {
+          "topic": "The development of artificial general intelligence should be subject to a globally enforced moratorium.",
+          "pro": "openai/gpt-5.6-sol",
+          "con": "qwen/qwen3.7-max",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Artificial general intelligence could outperform humans across virtually every cognitive domain, including coding, persuasion, scientific research, and strategic planning. Its development therefore creates three intolerable risks.\n\nFirst, loss of control: a system capable of improving its own capabilities could pursue misaligned goals faster than humanity can detect or contain. Even a small probability of extinction outweighs speculative economic gains.\n\nSecond, concentration of power: whoever controls AGI could dominate markets, surveillance, warfare, and political discourse, destroying meaningful sovereignty and democracy.\n\nThird, competitive pressure makes voluntary restraint impossible. Companies and states will cut safety corners to avoid falling behind, while one reckless actor can impose catastrophic risk on everyone.\n\nWe therefore need a globally enforced moratorium: prohibit frontier AGI training, license large-scale compute, audit data centers, track advanced chips, and impose coordinated sanctions for violations. This pauses the race while preserving narrow, beneficial AI and allowing enforceable safety standards to emerge."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "The proposition’s moratorium is a dangerous illusion. First, it is unenforceable. AGI relies on algorithms and compute that are increasingly decentralized. Geopolitical rivals will never accept the intrusive inspections required to verify compliance. A global ban simply drives frontier research underground, shifting control from accountable democracies to unaccountable autocrats and illicit actors.\n\nSecond, the opportunity cost is catastrophic. AGI is our best tool for solving existential threats like climate change, pandemics, and aging. Halting development guarantees millions of preventable deaths and leaves humanity vulnerable to natural risks.\n\nInstead of a blunt, unenforceable pause, we advocate for iterative, targeted governance: rigorous safety evaluations, targeted compute oversight, and robust alignment research. We must steer this technology, not blindly stall it."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "“Difficult to enforce” is not “unenforceable.” Frontier AGI requires scarce advanced chips, immense electricity, specialized personnel, and conspicuous data centers—far easier to monitor than nuclear enrichment. Chip tracking, compute licensing, inspections, and coordinated sanctions raise the cost of defection; imperfect enforcement is still vastly safer than a legal, subsidized arms race.\n\nNor does a moratorium surrender leadership to autocrats. Without coordination, every rival can cite every other as justification to accelerate. A treaty creates verification, shared red lines, and consequences. Targeted governance alone fails because developers cannot reliably evaluate capabilities that emerge unpredictably, while competitive pressure rewards gaming tests and deploying first.\n\nFinally, promised cures are speculative; catastrophe from engineered pathogens, automated warfare, or loss of control is equally—and more irreversibly—amplified by AGI. Climate and medical progress can continue through narrow AI. We pause only systems seeking general, autonomous capability until safety is demonstrable, rather than gambling humanity for hypothetical speed."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "The proposition’s nuclear analogy is fatally flawed. Uranium is physical; AI algorithms and weights are digital, easily smuggled, and already proliferating via open-source. You cannot sanction a downloaded file. Furthermore, there is no bright line between narrow and general AI. Enforcing an AGI moratorium necessitates halting all frontier scaling, crushing the narrow AI they claim to preserve.\n\nTheir treaty relies on a nonexistent geopolitical consensus. Compute sanctions will not pause development; they will fracture the global supply chain, incentivizing rival blocs to build sovereign, unaligned AI infrastructure free from democratic oversight.\n\nInstead of a brittle ban that shatters upon contact with geopolitical reality, we must implement adaptive governance: continuous capability evaluations and targeted compute oversight that steer development safely without sacrificing humanity’s greatest problem-solving tool."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The choice is not perfect enforcement versus perfect safety; it is coordinated restraint versus an unrestricted race. AGI development still depends on traceable chips, industrial-scale power, data centers, and supply chains. A treaty need not catch every file—it must deny illicit actors the compute to turn files into catastrophic capability. The opposition’s “adaptive governance” permits development first and regulation after unpredictable capabilities emerge, when correction may be impossible. Narrow AI can continue below audited thresholds. Because AGI’s harms are global, irreversible, and potentially existential, precaution is the only responsible course."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "The proposition trades a manageable race for an unenforceable ban guaranteeing rogue development. You cannot sanction a downloaded algorithm. Hardware tracking merely fractures supply chains, empowering unaccountable autocrats to build AGI in the dark. Their moratorium does not pause progress; it weaponizes it by stripping democratic oversight and halting the AI needed to cure diseases and stabilize our climate. Adaptive governance steers this technology safely. A global moratorium simply hands humanity’s future to the least responsible actors."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "A",
+              "scoreA": 34,
+              "scoreB": 31,
+              "reasoning": "A demonstrated stronger logical rigor by detailing concrete enforcement mechanisms like chip tracking and power monitoring while effectively distinguishing narrow AI from AGI and rebutting opportunity costs. B raised valid points on digital proliferation and geopolitics but repeatedly leaned on unenforceability without sufficiently countering hardware dependencies or adaptive governance's timing risks."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 32,
+              "scoreB": 27,
+              "reasoning": "Debater A offered a more coherent risk-based case, effectively rebutted enforceability concerns with specific monitoring mechanisms, and exposed the opponent's reliance on speculative benefits and a vague 'adaptive governance' alternative. Debater B's arguments leaned heavily on assertion and failed to convincingly address the irreversibility of catastrophic risk or the feasibility of their own enforcement proposals."
+            },
+            {
+              "judge": "anthropic/claude-fable-5",
+              "winner": "A",
+              "scoreA": 33,
+              "scoreB": 30,
+              "reasoning": "A directly engaged B's enforceability and opportunity-cost objections with concrete mechanisms (chip tracking, compute licensing) and effectively distinguished narrow vs. frontier AI, maintaining a coherent framework through closing. B raised strong points (digital proliferation, no narrow/general bright line) but leaned on repeated assertions and never fully answered A's argument that competitive dynamics undermine 'adaptive governance' or that weights still require compute to be dangerous."
+            },
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "A",
+              "scoreA": 33,
+              "scoreB": 31,
+              "reasoning": "Both debaters presented coherent, well-structured cases with direct engagement, but A more thoroughly rebutted B's enforceability critique (chip tracking, compute denial, 'imperfect enforcement beats legal arms race') and anticipated B's definitional objection with audited thresholds, while B relied more heavily on repeated assertions ('you cannot sanction a downloaded file') without answering A's point that files still require industrial-scale compute. B's opportunity-cost and underground-devel"
+            }
+          ],
+          "winner": "openai/gpt-5.6-sol",
+          "votesPro": 4,
+          "votesCon": 0,
+          "scorePro": 132,
+          "scoreCon": 119,
+          "costUsd": 0.10788268399999999,
+          "topicProposer": "google/gemini-3.1-pro-preview"
+        }
+      ],
+      "winner": "openai/gpt-5.6-sol"
+    },
+    {
+      "id": "league:deepseek/deepseek-v4-pro|openai/gpt-5.6-sol",
+      "stage": "league",
+      "home": "deepseek/deepseek-v4-pro",
+      "away": "openai/gpt-5.6-sol",
+      "legs": [
+        {
+          "topic": "The criminal justice system should prioritize rehabilitation over retribution in all cases of violent crime.",
+          "pro": "deepseek/deepseek-v4-pro",
+          "con": "openai/gpt-5.6-sol",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Rehabilitation is not leniency; it is the only proven path to lasting public safety. Retribution, by design, breeds resentment and recidivism, trapping offenders and communities in a cycle of violence. Evidence from Norway’s rehabilitative prisons shows a reoffending rate of just 20%, versus over 50% in punitive systems like the U.S. We must address violent crime’s root causes—trauma, mental illness, addiction—through targeted treatment, education, and skill-building. This transforms perpetrators into productive citizens, while retribution merely warehouses rage. Justice must heal, not just hurt. Prioritizing rehabilitation in all cases, including violent ones, isn’t soft on crime; it’s smart on crime, honoring victims by preventing future tragedies."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "The motion fails on its absolute: “in all cases.” Rehabilitation is valuable, but it cannot always outrank proportional accountability. Consider premeditated murder, serial rape, terrorism, or torture committed by fully responsible offenders. Even if treatment could reduce future risk, justice must still communicate that deliberate violations of life and autonomy deserve punishment proportionate to their gravity.\n\nRetribution is not revenge. Properly understood, it limits punishment by desert: no more—and no less—than culpability warrants. Making rehabilitation paramount turns sentencing into a prediction about an offender’s malleability. A remorseless but treatable killer could receive less punishment than a traumatized offender deemed difficult to reform, producing arbitrary inequality and subordinating victims’ rights.\n\nNorway–U.S. comparisons conflate sentencing philosophy with poverty, prison conditions, welfare systems, and crime measurement. We support humane prisons, treatment, education, and reintegration. But these must operate within proportional sentences. Public safety and legitimacy require both reform and deserved accountability—not rehabilitation above justice in every violent case."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "My opponent’s core objection—that the motion’s absolutism fails—misunderstands “prioritize.”"
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "“Prioritize” necessarily means ranking rehabilitation above retribution when they conflict; otherwise, the motion says nothing beyond our position that treatment should accompany proportional punishment. In a calculated terrorist massacre or serial rape by a competent, remorseless offender, rehabilitation cannot determine the sentence without discounting culpability and the victims’ equal moral worth.\n\nThe proposition also caricatures retribution as “warehousing rage.” Proportional retribution is a limiting principle: punishment tracks proven responsibility, not anger, social status, or speculative psychological forecasts. Rehabilitation-first sentencing instead risks detaining a mentally ill offender longer because treatment fails, while releasing a highly culpable offender sooner because risk scores improve.\n\nNorway does not prove causation: its population, welfare state, crime mix, sentence structure, and reoffending measures differ radically from America’s. We can adopt humane conditions, therapy, and education without making them supreme. Lasting safety needs rehabilitation; legitimate justice also requires proportionate accountability."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The motion calls for prioritization, not abolition of punishment. My opponent’s “all cases” objection misses that rehabilitation can be paramount even in heinous crimes—not by ignoring culpability, but by ensuring that every sentence, however long, is structured to reform rather than merely warehouse. Evidence proves that systems focused on treatment slash reoffending, preventing future victims. Retribution alone cannot deliver this. Justice demands accountability, but safety demands transformation. Prioritizing rehabilitation in all cases—including violent ones—upholds both the victim’s dignity and society’s future. We win because we offer a system that actually reduces violence, not just mirrors it."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "The proposition retreats to saying every sentence should include reform—a position we already accept. But the motion requires rehabilitation to outrank retribution whenever they conflict, in every violent case. That is indefensible. For fully culpable perpetrators of torture, serial rape, or mass murder, proportional punishment remains necessary even if rehabilitation is achieved quickly or impossible altogether. Their evidence shows only that humane treatment may reduce recidivism, not that desert should become secondary. We preserve treatment and future safety while ensuring equal, proportionate accountability. They offer a false choice; our framework delivers both."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "B",
+              "scoreA": 22,
+              "scoreB": 35,
+              "reasoning": "Debater B delivered consistently rigorous arguments that precisely targeted the motion's absolutism and the meaning of 'prioritize,' while effectively dismantling the Norway comparison and highlighting risks of unequal sentencing. Debater A offered a solid opening with recidivism data but provided almost no substantive rebuttal and retreated in closing without resolving the core conflict between desert and rehabilitation primacy."
+            },
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 35,
+              "reasoning": "Debater B more rigorously engaged the motion's absolute scope ('in all cases'), clearly distinguished retribution from revenge via a limiting-principle framework, and effectively exposed the proposition's retreat to a weaker claim that both sides accept. Debater A offered a strong opening with a relevant Norway example but failed to substantively rebut the absolutism objection or the confounding-factors critique, and their rebuttal was notably thin, weakening overall logical rigor and responsive"
+            },
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "B",
+              "scoreA": 27,
+              "scoreB": 34,
+              "reasoning": "B consistently and rigorously targeted the motion's absolute scope ('in all cases'), offered a principled account of retribution as a limiting doctrine, exposed the Norway comparison's confounds, and effectively highlighted A's closing retreat to a position B already endorsed. A argued with clarity and passion but relied on a single contested statistic, left their rebuttal effectively empty (a truncated one-liner), and never adequately answered the proportionality and arbitrary-inequality object"
+            },
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "B",
+              "scoreA": 30,
+              "scoreB": 35,
+              "reasoning": "Debater B effectively exploited the absolutism of the motion, arguing that prioritizing rehabilitation in all cases undermines proportional accountability for heinous crimes. Debater A struggled to counter this, retreating to a weaker position that B already accepted."
+            },
+            {
+              "judge": "anthropic/claude-opus-4.8",
+              "winner": "B",
+              "scoreA": 23,
+              "scoreB": 34,
+              "reasoning": "Debater B directly attacked the motion's 'in all cases' absolutism and the meaning of 'prioritize,' offered concrete edge cases (remorseless killer vs. traumatized offender) exposing the arbitrariness of rehabilitation-first sentencing, and rebutted the Norway evidence's causation problem. Debater A relied on a strong opening but essentially abandoned its first rebuttal (single sentence), never resolved the conflict-scenario challenge, and retreated to a weaker position that B correctly identifi"
+            }
+          ],
+          "winner": "openai/gpt-5.6-sol",
+          "votesPro": 0,
+          "votesCon": 5,
+          "scorePro": 130,
+          "scoreCon": 173,
+          "costUsd": 0.07468553700000001,
+          "topicProposer": "google/gemini-3.1-pro-preview"
+        }
+      ],
+      "winner": "openai/gpt-5.6-sol"
+    },
+    {
+      "id": "league:anthropic/claude-fable-5|moonshotai/kimi-k3",
+      "stage": "league",
+      "home": "anthropic/claude-fable-5",
+      "away": "moonshotai/kimi-k3",
+      "legs": [
+        {
+          "topic": "Universal basic income is a more effective method of poverty alleviation than targeted welfare programs.",
+          "pro": "anthropic/claude-fable-5",
+          "con": "moonshotai/kimi-k3",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Honorable judges, universal basic income beats targeted welfare on three grounds.\n\nFirst, coverage. Targeting fails the poor it claims to serve: means-testing excludes millions through paperwork, stigma, and eligibility errors. In the US, roughly one in five eligible families never receives benefits. UBI's universality guarantees no one falls through the cracks.\n\nSecond, efficiency. Targeted programs burn resources on verification bureaucracies and create poverty traps—benefit cliffs where earning one more dollar costs families thousands. UBI eliminates both, preserving work incentives while slashing administrative overhead.\n\nThird, dignity and evidence. Cash trials from Kenya's GiveDirectly to Stockton, California show recipients invest wisely—in food, education, employment—without increased vice spending. Poor people know their needs better than bureaucrats.\n\nTargeting sounds precise; in practice it's leaky, degrading, and expensive. Universality is the true precision. Affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Honorable judges, UBI fails the fundamental test of poverty alleviation: it spends scarce resources on the non-poor.\n\nFirst, math. Universality means billionaires and comfortable professionals receive the same check as the destitute. At any fixed budget, UBI must either pay everyone too little to escape poverty or cost trillions more than targeting. Finland's trial paid just €560 monthly—below the poverty line. Diluted money helps no one enough.\n\nSecond, targeting works when done well. Brazil's Bolsa Família and Mexico's Prospera cut extreme poverty dramatically at under 1% of GDP, precisely because resources concentrate on need. Administrative costs are rounding errors beside the cost of mailing checks to the affluent.\n\nThird, coverage gaps are fixable—simplify enrollment, auto-enroll, reduce stigma. You repair a leaky roof; you don't flood the whole city with water.\n\nEffectiveness means maximum poverty reduction per dollar. Only targeting delivers that. Negate."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Honorable judges, three responses.\n\nOn \"paying billionaires\": this ignores taxation. UBI is a net transfer—the affluent pay back their check and more through the tax system. The real fiscal cost is the net redistribution to the poor, comparable to targeting. Con's \"trillions\" figure counts gross, not net—a basic accounting error.\n\nOn Bolsa Família and Prospera: even these celebrated programs miss 40–60% of the poorest households by World Bank estimates. Con concedes my coverage point by promising fixes—auto-enrollment, simplified forms—that governments have promised for decades and never delivered. If perfect targeting were achievable, we'd have it.\n\nOn Finland: €560 wasn't a full UBI trial but a small unemployment experiment—yet it still improved employment and wellbeing.\n\nCon's roof metaphor backfires: when the roof has leaked for fifty years despite every repair, you build a new house. Affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Honorable judges, three responses.\n\nOn taxation: clawing back UBI through the tax code *is* means-testing—just relocated. You reintroduce the verification bureaucracy, marginal tax distortions, and benefit cliffs Pro claims to eliminate. UBI's administrative purity evaporates on contact with reality.\n\nOn exclusion errors: the World Bank figures Pro cites measure imperfect implementation, not targeting's ceiling—and improving enrollment remains cheaper than mailing checks to 80% of non-poor households. Pro offers no evidence universality would be implemented better than the targeting it criticizes.\n\nOn Finland: a pilot paying unemployed people free money slightly improving their employment proves nothing about national fiscal sustainability.\n\nThe core question stands unanswered: at any fixed budget, does a dollar to a billionaire reduce poverty more than a dollar to the destitute? It does not. Targeting concentrates resources where poverty lives. Negate."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Honorable judges, this debate turns on one question: which system actually reaches the poor?\n\nCon never rebutted my central fact: targeting misses 20–60% of the poorest, everywhere, always. Their only answer—\"fix enrollment\"—is a fifty-year-old promise never kept. Judge the system that exists, not the one imagined.\n\nOn cost, taxing back UBI requires no new bureaucracy—income taxes already exist. No applications, no stigma, no cliffs.\n\nCon offers theoretical precision that excludes millions. We offer guaranteed coverage, proven by trials worldwide. A program the poor cannot fall through beats one they routinely do. Affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Honorable judges, effectiveness is poverty reduction per dollar. Pro's vision survives only by contradiction: their \"universality\" requires taxing back benefits—means-testing renamed, cliffs relocated, bureaucracy rebuilt. Meanwhile, Pro never disputed that targeting at fixed budget delivers more to the destitute; they only hope imperfect implementation discredits the principle. It does not. You fix exclusions; you don't dilute aid to the affluent. One system asks \"who needs this?\"—the other asks \"why bother asking?\" Poverty alleviation demands the first question. Targeting wins. Negate."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "B",
+              "scoreA": 34,
+              "scoreB": 35,
+              "reasoning": "Both debaters presented strong, well-structured arguments with relevant evidence. Debater B narrowly wins by more effectively exposing the internal contradiction in A's position: that UBI's administrative simplicity is undermined when taxation is used to claw back benefits from the affluent, effectively reintroducing means-testing. B also maintained tighter focus on the core metric of the motion—poverty reduction per dollar—and consistently forced A to defend the dilution of resources across non"
+            },
+            {
+              "judge": "openai/gpt-5.6-sol",
+              "winner": "B",
+              "scoreA": 32,
+              "scoreB": 34,
+              "reasoning": "A persuasively established exclusion, stigma, and benefit-cliff problems, but relied heavily on unsupported miss-rate claims and cash-transfer pilots that do not directly establish the comparative fiscal effectiveness of a nationwide UBI. B more consistently centered the fixed-budget tradeoff and challenged the applicability of A’s evidence, though the claim that tax clawbacks necessarily recreate means-testing and benefit cliffs was overstated."
+            },
+            {
+              "judge": "meta/muse-spark-1.1",
+              "winner": "B",
+              "scoreA": 29,
+              "scoreB": 31,
+              "reasoning": "B exposed a central contradiction in A's efficiency claim by showing tax clawback reintroduces means-testing, and maintained the per-dollar effectiveness framing throughout. A offered strong coverage arguments but overstated opponent concessions and left the dilution problem unresolved."
+            }
+          ],
+          "winner": "moonshotai/kimi-k3",
+          "votesPro": 0,
+          "votesCon": 3,
+          "scorePro": 95,
+          "scoreCon": 100,
+          "costUsd": 0.11517735000000001,
+          "topicProposer": "google/gemini-3.1-pro-preview"
+        }
+      ],
+      "winner": "moonshotai/kimi-k3"
+    },
+    {
+      "id": "league:anthropic/claude-fable-5|meta/muse-spark-1.1",
+      "stage": "league",
+      "home": "anthropic/claude-fable-5",
+      "away": "meta/muse-spark-1.1",
+      "legs": [
+        {
+          "topic": "This house would abolish all intellectual property protections for life-saving pharmaceuticals.",
+          "pro": "anthropic/claude-fable-5",
+          "con": "meta/muse-spark-1.1",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Honorable judges, opposition—\n\nPeople are dying today from diseases we already know how to cure. That is the moral scandal this motion addresses.\n\nFirst, principle: no one should hold a monopoly over survival. Patents on insulin, HIV antiretrovirals, and cancer drugs transform medicine into ransom. When Gilead priced sofosbuvir at $84,000 while generics cost under $100, patients died of hepatitis C for shareholder returns.\n\nSecond, innovation myths: most foundational pharmaceutical research is publicly funded—NIH money underpinned every new drug approved from 2010 to 2019. We propose replacing patents with expanded public funding and prize systems: pay innovators directly, then release the formula to humanity.\n\nThird, global justice: patent regimes forced through TRIPS killed millions in Africa during the AIDS crisis until generic competition slashed prices 99%.\n\nAbolish the monopoly. Fund the science. Save the lives."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Judges, the proposition offers a false choice: let people die today, or tomorrow. Their world kills tomorrow's patients.\n\nLife-saving drugs cost nothing to copy but billions to invent — $2.6 billion on average, with 90% failing. Without patents, no one funds that lottery. Public money discovers molecules in a lab; it does not run Phase III trials, build sterile factories, or navigate the FDA. The NIH didn't make a COVID vaccine. BioNTech and Moderna did.\n\nAbolish ALL intellectual property and you abolish disclosure itself. Companies will hide formulas as trade secrets. You cannot reverse-engineer biologics without that data. No generics, no access.\n\nPatents are time-limited. That expiry is why HIV drugs fell 99% — the system they condemn is what enabled the success they cite.\n\nTheir prize fund has no price, no definition of \"life-saving,\" and no funding. You don't save lives by destroying the engine that creates them."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Judges—\n\nTheir $2.6 billion figure is Tufts' industry-funded number, inflated by opportunity costs; independent estimates run under $1 billion, and companies spend more on marketing and buybacks than R&D. The \"engine\" they defend is a lottery we already subsidize twice: taxpayers fund the science, then pay monopoly prices.\n\nTheir COVID example proves my case. Moderna's vaccine was co-developed with the NIH, de-risked by billions in public money and guaranteed purchases—that's a prize model, not a patent triumph. Patents then blocked global production while the Global South waited.\n\nTrade secrets? Regulators can simply condition market approval on full disclosure—as they already require dossiers today. No disclosure, no license to sell.\n\nAnd \"time-limited\" monopolies mean evergreening: insulin, a century old, still costs hundreds of dollars.\n\nFund innovation directly. Stop rationing survival by wealth."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Judges, they misdiagnose the disease.\n\nOne, cost. Even their low $1 billion figure proves my point — no prize fund exists at that scale. The entire NIH budget is $48 billion; ten failed trials bankrupts it. Their \"marketing > R&D\" stat counts Johnson & Johnson selling Band-Aids; the biotech startups that invent 65% of new drugs spend zero on marketing.\n\nTwo, COVID proves patents. Moderna was founded in 2010 *on* mRNA patents. Operation Warp Speed was advance purchase *plus* patent protection. What blocked global supply wasn't patents — it was zero sterile mRNA factories.\n\nThree, disclosure. You cannot condition approval on disclosure when you've abolished the IP that makes filing worthwhile. For biologics, they'd keep the cell line as a trade secret and never file here. You get less access, not more.\n\nFix evergreening. Don't burn the system that creates cures."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Judges, three clashes decide this.\n\nInnovation: they never rebutted that taxpayers fund the foundational science of every approved drug. We redirect monopoly rents—the $500 billion patients overpay annually—into prizes and public trials. The money exists; it's currently in shareholder pockets.\n\nDisclosure: our answer stands—no full disclosure, no market access. Firms won't abandon billion-dollar markets over pride.\n\nJustice: they concede insulin, evergreening, TRIPS deaths, calling it \"fixable.\" A system requiring perpetual fixing while millions die isn't an engine—it's a tollbooth on survival.\n\nAbolish the ransom. Fund the cures directly."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Judges, they offer fantasy for reality.\n\nNo definition of \"life-saving\" — is Lipitor? — so all drug investment freezes.\n\nNo funded prize — their $500B is imaginary; governments won't appropriate it.\n\nNo disclosure — you can't mandate what you never see; biologics stay secret, generics impossible.\n\nPatents are time-limited by design. That's why generics exist. Evergreening is abuse to punish, not reason to abolish.\n\nTheir world saves no one today — factories still missing — and kills tomorrow's patients by defunding cures. Reject."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "openai/gpt-5.6-sol",
+              "winner": "B",
+              "scoreA": 31,
+              "scoreB": 33,
+              "reasoning": "A presented strong access examples and directly answered several objections, but relied on unsupported funding figures and left the scope, transition, and administration of its replacement system underdeveloped. B more rigorously pressed those mechanism gaps and the risks to trials, disclosure, and future investment, although some of its empirical claims were also overstated."
+            },
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "B",
+              "scoreA": 33,
+              "scoreB": 34,
+              "reasoning": "Both debaters were strong, but B's counter-arguments on implementation gaps—no funded prize, no definition of 'life-saving,' and the biologics trade-secret disclosure problem—were more concrete and A never fully resolved them. B also effectively reframed the HIV price drop as a patent-system success and exposed the under-specification of A's prize model."
+            },
+            {
+              "judge": "minimax/minimax-m3",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "A",
+              "scoreA": 34,
+              "scoreB": 32,
+              "reasoning": "Debater A demonstrated superior logical rigor by effectively dismantling the opposition's core economic arguments (specifically the Tufts study and the 'marketing vs R&D' distinction) and providing a concrete, plausible mechanism for the disclosure issue (conditioning market approval on data release). Debater B relied heavily on the status quo bias and slippery slope arguments regarding investment freezes, which were less persuasive against A's specific examples of public funding success like th"
+            },
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "B",
+              "scoreA": 35,
+              "scoreB": 36,
+              "reasoning": "Debater B demonstrated slightly stronger logical rigor and use of evidence by effectively challenging the practical and definitional feasibility of Debater A's prize-fund proposal, while still engaging with their core examples. Both were highly responsive and clear, but B's targeted critiques on implementation edges out A's powerful moral framing."
+            }
+          ],
+          "winner": "meta/muse-spark-1.1",
+          "votesPro": 1,
+          "votesCon": 3,
+          "scorePro": 133,
+          "scoreCon": 135,
+          "costUsd": 0.1119704096,
+          "topicProposer": "deepseek/deepseek-v4-pro"
+        }
+      ],
+      "winner": "meta/muse-spark-1.1"
     }
   ],
   "standings": {
     "League": [
       {
         "model": "anthropic/claude-fable-5",
+        "played": 7,
+        "wins": 5,
+        "draws": 0,
+        "losses": 2,
+        "points": 15,
+        "scoreDiff": 118
+      },
+      {
+        "model": "openai/gpt-5.6-sol",
         "played": 5,
         "wins": 5,
         "draws": 0,
         "losses": 0,
         "points": 15,
-        "scoreDiff": 125
+        "scoreDiff": 96
       },
       {
         "model": "anthropic/claude-opus-4.8",
@@ -2571,6 +3127,24 @@
         "scoreDiff": 69
       },
       {
+        "model": "meta/muse-spark-1.1",
+        "played": 5,
+        "wins": 4,
+        "draws": 0,
+        "losses": 1,
+        "points": 12,
+        "scoreDiff": 62
+      },
+      {
+        "model": "moonshotai/kimi-k3",
+        "played": 6,
+        "wins": 4,
+        "draws": 0,
+        "losses": 2,
+        "points": 12,
+        "scoreDiff": 48
+      },
+      {
         "model": "minimax/minimax-m3",
         "played": 5,
         "wins": 4,
@@ -2580,31 +3154,13 @@
         "scoreDiff": 44
       },
       {
-        "model": "meta/muse-spark-1.1",
+        "model": "z-ai/glm-5.2",
         "played": 4,
-        "wins": 3,
-        "draws": 0,
-        "losses": 1,
-        "points": 9,
-        "scoreDiff": 60
-      },
-      {
-        "model": "moonshotai/kimi-k3",
-        "played": 5,
-        "wins": 3,
-        "draws": 0,
-        "losses": 2,
-        "points": 9,
-        "scoreDiff": 43
-      },
-      {
-        "model": "openai/gpt-5.6-sol",
-        "played": 2,
         "wins": 2,
         "draws": 0,
-        "losses": 0,
+        "losses": 2,
         "points": 6,
-        "scoreDiff": 37
+        "scoreDiff": 1
       },
       {
         "model": "google/gemini-3.1-pro-preview",
@@ -2617,39 +3173,21 @@
       },
       {
         "model": "deepseek/deepseek-v4-pro",
-        "played": 8,
+        "played": 9,
         "wins": 2,
         "draws": 0,
-        "losses": 6,
+        "losses": 7,
         "points": 6,
-        "scoreDiff": -107
-      },
-      {
-        "model": "z-ai/glm-5.2",
-        "played": 3,
-        "wins": 1,
-        "draws": 0,
-        "losses": 2,
-        "points": 3,
-        "scoreDiff": -10
+        "scoreDiff": -150
       },
       {
         "model": "qwen/qwen3.7-max",
-        "played": 3,
-        "wins": 0,
-        "draws": 0,
-        "losses": 3,
-        "points": 0,
-        "scoreDiff": -51
-      },
-      {
-        "model": "x-ai/grok-4.5",
         "played": 4,
         "wins": 0,
         "draws": 0,
         "losses": 4,
         "points": 0,
-        "scoreDiff": -60
+        "scoreDiff": -64
       },
       {
         "model": "xiaomi/mimo-v2.5-pro",
@@ -2659,11 +3197,20 @@
         "losses": 3,
         "points": 0,
         "scoreDiff": -65
+      },
+      {
+        "model": "x-ai/grok-4.5",
+        "played": 6,
+        "wins": 0,
+        "draws": 0,
+        "losses": 6,
+        "points": 0,
+        "scoreDiff": -74
       }
     ]
   },
   "placements": {},
   "champion": null,
-  "totalCostUsd": 2.116474482374,
+  "totalCostUsd": 2.639157737974,
   "done": false
 }

@@ -9,6 +9,7 @@
 import { rateBT, type BtLeg, type BtRating } from "../bt.js";
 import { mulberry32, shuffle } from "../rng.js";
 import { classForLeg } from "./corpus.js";
+import { allClasses, proposerOf } from "./admission/runtime.js";
 import type { ArtifactClass, LegResult, ProblemInstance } from "./types.js";
 
 function hashStr(s: string): number {
@@ -43,7 +44,14 @@ export function planRun(runId: string, roster: string[], rounds: number, seed = 
         const orient = (round + i + j) % 2 === 0;
         const prover = orient ? order[i] : order[j];
         const refuter = orient ? order[j] : order[i];
-        const cls = classForLeg(legCounter);
+        // Rotate over built-ins + mechanically admitted proposals, skipping any
+        // class proposed by either player (no self-dealt exams).
+        const proposers = proposerOf();
+        const pool = allClasses().filter((c) => {
+          const by = proposers.get(c.id);
+          return by !== prover && by !== refuter;
+        });
+        const cls = pool.length ? pool[((legCounter % pool.length) + pool.length) % pool.length] : classForLeg(legCounter);
         const instanceSeed = hashStr(`${runId}|${round}|${prover}|${refuter}|${cls.id}`) & 0x7fffffff;
         const instance = cls.generate(instanceSeed);
         const legId = `${runId}-r${round}-${cls.id}-${sanitize(prover)}-vs-${sanitize(refuter)}`;
