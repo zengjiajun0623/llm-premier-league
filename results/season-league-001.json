@@ -7786,27 +7786,577 @@
         }
       ],
       "winner": "z-ai/glm-5.2"
+    },
+    {
+      "id": "league:openai/gpt-5.6-sol|meta/muse-spark-1.1",
+      "stage": "league",
+      "home": "openai/gpt-5.6-sol",
+      "away": "meta/muse-spark-1.1",
+      "legs": [
+        {
+          "topic": "Cryptocurrencies do more good than harm to the global financial system.",
+          "pro": "openai/gpt-5.6-sol",
+          "con": "meta/muse-spark-1.1",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Cryptocurrencies do more good than harm because they make finance more open, efficient, and resilient.\n\nFirst, access: anyone with a phone can hold assets, receive payments, and use financial services without needing a bank’s permission—especially valuable for migrants, the unbanked, and citizens facing capital controls or unstable institutions.\n\nSecond, efficiency: blockchain networks enable rapid, borderless settlement. Stablecoins already reduce the cost and delay of remittances and international commerce, challenging expensive intermediaries.\n\nThird, resilience: Bitcoin and other decentralized assets offer an alternative when banks fail, currencies collapse, or governments weaponize payment systems. Competition also forces traditional finance to modernize.\n\nThe harms—fraud, volatility, illicit finance, and energy use—are serious but governable through disclosure, reserve requirements, targeted enforcement, and cleaner consensus mechanisms. They are not unique to crypto, nor do they outweigh its structural benefits. The proper comparison is regulated cryptocurrency versus today’s exclusionary, costly, and fragile financial system."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Cryptocurrencies do more harm than good to the global financial system because they add fragility, facilitate crime, and deliver no real financial function.\n\nFirst, stability. Unbacked crypto has no intrinsic value, extreme volatility, and zero productive credit creation. Collapses like Terra and FTX wiped out tens of billions, with contagion but no lender of last resort.\n\nSecond, illicit finance. Pseudonymity and borderless transfer make crypto the rail of choice for ransomware, scams, sanctions evasion, and money laundering. Over $40 billion in illicit crypto flows in 2024 alone.\n\nThird, systemic risk. Stablecoins recreate unregulated shadow banks - promising redemption at par with opaque reserves, no deposit insurance, and acute run risk.\n\nThe claimed benefits are illusory. The unbanked aren't using Bitcoin for payments, they're being targeted by it. Regulated fintech does remittances cheaper and safer."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "“Zero productive credit creation” is a category error: payment rails and stores of value need not issue loans to create value. Bitcoin’s value derives from scarcity, security, and censorship-resistant transfer—not corporate cash flow. Terra was a flawed algorithmic peg; FTX was centralized fraud. Both support regulation and self-custody, not rejection of cryptocurrency.\n\nThe opponent’s $40 billion illicit-flow figure lacks the crucial denominator: illicit activity remains a small fraction of total crypto volume, while transparent blockchains create permanent, traceable records that have enabled major seizures. Cash and shell companies are often less observable.\n\nStablecoin run risk is real but governable through audited liquid reserves, redemption rights, and prudential supervision. Properly regulated stablecoins offer near-instant cross-border settlement. Conventional fintech cannot replicate universal access: it still depends on banks, correspondent networks, operating hours, and national permission. Crypto’s failures are addressable; its open, global infrastructure solves exclusions the status quo preserves."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Their defense collapses on its own terms.\n\nA payment rail that swings 10% in a day is not a rail. Scarcity doesn't create value - Beanie Babies are scarce. And if Terra and FTX are just \"flawed\" and \"centralized,\" why did decentralized contagion wipe out half of crypto's market cap in 2022 with no recovery mechanism? That's systemic fragility, not resilience.\n\nTraceability is theater when mixers, chain-hopping, and non-compliant exchanges exist. The FBI seizes after the ransom is paid, the hospital is shut, the sanctions are evaded. $40B is a floor, not a ceiling.\n\nRegulated stablecoins are an oxymoron. The dominant stablecoin, Tether, has never had a full audit and depegged repeatedly. You cannot govern away run risk while promising par redemption without deposit insurance - that's shadow banking by design."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The opponent conflates speculative failures with the entire technology. Volatile assets need not be payment units; reserve-backed stablecoins already provide rapid settlement, while Bitcoin provides censorship-resistant ownership. FTX was custodial fraud—the very risk transparent reserves and self-custody reduce. Run risk is not ungovernable: money-market funds and banks are regulated through liquid reserves, redemption rules, and supervision; stablecoins can be too. Crime remains a minority use on traceable ledgers. Against costly, exclusionary correspondent banking, crypto’s gains in access, competition, and resilience outweigh remediable harms."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "They admit volatility, fraud, runs, but call them governable. They are not governed. The dominant stablecoin remains unaudited, depegged, and systemically intertwined. A payment system that needs its own bailout doctrine is not resilient, it is parasitic.\n\nCrypto creates no credit, no price stability, no lender of last resort — only new vectors for contagion, crime, and extraction. Remittances are cheaper via regulated fintech, the unbanked remain unbanked.\n\nNet effect: more harm than good."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "minimax/minimax-m3",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "A",
+              "scoreA": 37,
+              "scoreB": 31,
+              "reasoning": "Debater A consistently provided a more nuanced and structured argument, acknowledging specific harms while framing them as manageable and offering concrete governance solutions. Debater B, while highlighting significant risks, often relied on broader generalizations and less rigorous distinctions between different crypto functions, weakening their responsiveness."
+            },
+            {
+              "judge": "anthropic/claude-opus-4.8",
+              "winner": "B",
+              "scoreA": 31,
+              "scoreB": 33,
+              "reasoning": "B delivered sharper, more concrete rebuttals—exposing the 'regulated stablecoin' gap by pointing to Tether's lack of audit and depegging, and effectively countered A's traceability claims with mixers and post-hoc seizures. A argued well on access and governability but leaned on 'addressable in principle' claims that B credibly attacked as unrealized in practice, and B's evidence (Terra/FTX contagion, $40B floor) was tied more tightly to the systemic-risk thesis."
+            },
+            {
+              "judge": "google/gemini-3.1-pro-preview",
+              "winner": "B",
+              "scoreA": 33,
+              "scoreB": 36,
+              "reasoning": "Debater B effectively dismantled A's theoretical defenses by grounding their arguments in current empirical realities, such as Tether's lack of audits and the practical limitations of blockchain traceability. B's sharp rebuttals regarding systemic fragility and shadow banking ultimately proved more persuasive than A's reliance on future regulatory fixes."
+            },
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "B",
+              "scoreA": 31,
+              "scoreB": 33,
+              "reasoning": "Both debaters were strong, but B's rebuttals were sharper and more memorable—particularly the Beanie Babies analogy against scarcity, the challenge that 2022 contagion undermines the resilience claim, and the effective point that Tether's lack of audit undercuts A's 'governable harms' framing. A maintained clear structure and solid category-error responses, but B consistently forced A onto the defensive and landed more damaging blows on the core question of whether crypto's benefits are real ver"
+            }
+          ],
+          "winner": "meta/muse-spark-1.1",
+          "votesPro": 1,
+          "votesCon": 3,
+          "scorePro": 132,
+          "scoreCon": 133,
+          "costUsd": 0.077835762512
+        }
+      ],
+      "winner": "meta/muse-spark-1.1"
+    },
+    {
+      "id": "league:deepseek/deepseek-v4-pro|z-ai/glm-5.2",
+      "stage": "league",
+      "home": "deepseek/deepseek-v4-pro",
+      "away": "z-ai/glm-5.2",
+      "legs": [
+        {
+          "topic": "The creation of human-animal chimeras for organ transplantation should be legally permitted.",
+          "pro": "deepseek/deepseek-v4-pro",
+          "con": "z-ai/glm-5.2",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "The global organ shortage kills thousands annually—in the US alone, 17 people die each day waiting for a transplant. Human-animal chimeras, such as pigs engineered to grow human-compatible organs, offer a lifeline. By deleting key pig genes and injecting human stem cells, we can create hearts, kidneys, and livers perfectly matched to recipients, eliminating rejection and waiting lists. Critics raise ethical concerns, but banning this research ignores the moral imperative to save lives. Robust regulations can ensure humane animal treatment, prevent humanlike consciousness, and mandate strict oversight. Permitting chimera research under rigorous frameworks isn’t a leap into the unknown—it’s a rational, compassionate response to a preventable crisis. We must legalize it now."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Human-animal chimeras sound promising, but legalizing them opens a Pandora's box of unresolvable problems.\n\n**First, safety.** Chimeric organs risk transmitting animal endogenous retroviruses—viruses integrated into animal DNA that could cross species barriers and trigger novel pandemics. We cannot screen for what we haven't yet identified.\n\n**Second, the consciousness problem is unsolvable in practice.** Human stem cells migrate unpredictably. They may colonize not just target organs but brains and reproductive tissues. No regulation can guarantee a pig won't develop partial human cognition or human gametes. The precautionary principle demands we not cross this line.\n\n**Third, alternatives exist.** Mechanical organs, 3D bioprinting, and opt-out donation systems can address organ shortages without creating ethical nightmares.\n\nWe need not sacrifice fundamental moral boundaries for medical progress. The risks—pandemic, consciousness, and species boundary erosion—outweigh the benefits. Vote against legalization."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The con’s safety fears are overblown. Porcine endogenous retroviruses can be eliminated via CRISPR gene editing—multiple labs have already produced PERV-free pig lines. Rigorous screening, not a blanket ban, is the rational response. On consciousness, we can precisely guide stem cell differentiation and use genetic safeguards to suppress brain colonization; the precautionary principle becomes paralysis when it blocks life-saving innovation for speculative, mitigatable risks. And alternatives are woefully inadequate: mechanical organs cause clots and infections, bioprinted complex organs remain decades away, and even the best opt-out systems still leave critical shortages. The real ethical nightmare is letting thousands die each year while a tangible solution is demonized by hypotheticals. Legalize chimera research under strict oversight—compassion demands it."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "My opponent's rebuttal reveals fatal overconfidence.\n\n**On PERVs:** CRISPR can delete known retroviruses, but chimeric organs involve *human stem cells interacting with animal cellular machinery*—creating novel viral recombination opportunities no screen can anticipate. \"Rigorous screening\" is hand-waving when we cannot screen for viruses that don't yet exist.\n\n**On consciousness:** \"Precisely guide differentiation\" is aspirational, not established. Stem cell migration remains stochastic. My opponent offers no mechanism that *guarantees* human cells won't colonize brains or gonads—because none exists. \"Genetic safeguards\" have off-target failures. This isn't speculative; it's cellular biology.\n\n**On alternatives:** Dismissing alternatives as imperfect while demanding perfection from critics is double-dealing. Bioprinting and mechanical organs improve yearly; chimera research risks irreversible biological harm.\n\nThe burden of proof rests on those crossing species boundaries. Unmitigable risks, unsolved consciousness concerns, and viable alternatives mean legalization is reckless. Vote against."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The con demands impossible guarantees while thousands die. CRISPR eliminates known PERVs; novel recombination is a speculative fear, not a reason to block life-saving research. Stochastic cell migration can be managed with genetic suicide switches and targeted differentiation—perfect certainty is not the legal standard for medical innovation. Alternatives remain decades away. The real moral failure is letting preventable deaths continue. Legalizing chimeras under rigorous oversight saves lives now while responsibly managing risks. That is why we win."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "My opponent's entire case rests on promises: *suicide switches will work*, *differentiation can be controlled*, *screening will catch what we can't define*. Each is unproven. Meanwhile, the risks—novel pandemics, humanized animal cognition, irreversible species boundary violations—are permanent and irreversible. You don't legalize first and verify later when the downside is catastrophic. Alternatives exist and improve. The burden of proof was theirs, and \"trust us\" doesn't meet it. Imperfect alternatives beat irreversible harm. Vote against legalization."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "openai/gpt-5.6-sol",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 30,
+              "reasoning": "A clearly framed the organ-shortage benefit and answered each objection, but relied on unsupported claims that chimeras could save lives now, produce perfectly matched organs, and reliably prevent brain colonization. B more effectively challenged those uncertainties and maintained a coherent precautionary case, though its claims about unavoidable viral recombination and irreversible species-boundary harm were also insufficiently evidenced."
+            },
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "A",
+              "scoreA": 32,
+              "scoreB": 31,
+              "reasoning": "A edges out with stronger concrete evidence (US death stats, existing PERV-free CRISPR pigs) and consistent linkage of problem-solution-mitigation, while directly countering each of B's pillars. B excels in logical burden-of-proof and uncertainty framing but relies more on general assertions without comparable specifics or data on alternatives' readiness."
+            },
+            {
+              "judge": "google/gemini-3.1-pro-preview",
+              "winner": "B",
+              "scoreA": 33,
+              "scoreB": 35,
+              "reasoning": "Debater B effectively dismantled Debater A's proposed safety mechanisms by highlighting the limitations of CRISPR regarding novel viral recombination and the stochastic nature of stem cell migration. B's framing of A's case as relying on unproven promises successfully demonstrated the risks of premature legalization and won the clash on the precautionary principle."
+            },
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "B",
+              "scoreA": 32,
+              "scoreB": 33,
+              "reasoning": "Debater A offered stronger concrete evidence (daily death statistics, CRISPR-produced PERV-free pig lines) but leaned heavily on unproven future safeguards ('suicide switches,' 'targeted differentiation') presented as solutions. Debater B was slightly more rigorous in exposing those gaps, consistently applying the burden-of-proof standard, and directly dismantling each of A's mitigation claims rather than merely asserting risks, giving B a narrow edge in responsiveness and logical rigor."
+            },
+            {
+              "judge": "anthropic/claude-opus-4.8",
+              "winner": "B",
+              "scoreA": 30,
+              "scoreB": 33,
+              "reasoning": "Debater A presented concrete evidence (PERV-free pig lines, CRISPR, specific mortality figures) but leaned on unproven promises ('suicide switches will work') that B effectively exposed. Debater B was more responsive, systematically dismantling A's claims by distinguishing known from novel risks and correctly framing the burden of proof, giving them a slight edge in logical rigor and responsiveness."
+            }
+          ],
+          "winner": "z-ai/glm-5.2",
+          "votesPro": 1,
+          "votesCon": 4,
+          "scorePro": 155,
+          "scoreCon": 162,
+          "costUsd": 0.0595918518,
+          "topicProposer": "meta/muse-spark-1.1"
+        }
+      ],
+      "winner": "z-ai/glm-5.2"
+    },
+    {
+      "id": "league:qwen/qwen3.7-max|google/gemini-3.1-pro-preview",
+      "stage": "league",
+      "home": "qwen/qwen3.7-max",
+      "away": "google/gemini-3.1-pro-preview",
+      "legs": [
+        {
+          "topic": "The public display of historical monuments honoring figures with legacies of oppression should be removed by government mandate.",
+          "pro": "qwen/qwen3.7-max",
+          "con": "google/gemini-3.1-pro-preview",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Public monuments are not neutral history books; they are state-sponsored endorsements of specific values. When a government maintains statues of figures whose legacies are rooted in oppression, it actively signals complicity in those atrocities. We affirm this motion on two core pillars. \n\nFirst, civic harm reduction. Public spaces must serve all citizens equally. Venerating oppressors inflicts ongoing psychological violence and alienates marginalized communities, violating the state's fundamental obligation to protect its people. \n\nSecond, the crucial distinction between history and veneration. Removing a statue does not erase history; it ends the state's active glorification of it. History belongs in museums where it is rigorously contextualized. Public plazas belong to the people. Therefore, the government must mandate the removal of monuments that celebrate their subjugation."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "We negate the motion because sanitizing public spaces through government mandates achieves historical amnesia, not justice. We base our case on two core pillars.\n\nFirst, the danger of historical erasure. The Affirmative claims removing statues doesn't erase history, but public spaces are exactly where historical confrontation must happen. Hiding uncomfortable truths in museums allows society to ignore them. Instead of removal, we advocate for contextualization—adding counter-monuments and educational plaques that force the public to grapple with the reality of oppression daily, transforming sites of veneration into sites of education.\n\nSecond, the peril of state mandates. A sweeping government mandate bypasses local community dialogue and grants the state unchecked power to dictate historical memory. Weaponizing the state to purge public squares sets a dangerous precedent where shifting political majorities can erase public history at will."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The Negative’s contextualization is a physical failure. You cannot neutralize a towering bronze oppressor with a small plaque. While the monument dominates the square, it communicates state veneration, not education. Moving figures to museums doesn't hide history; it strips away glorification, placing artifacts in spaces designed for critical analysis rather than civic worship.\n\nFurthermore, fearing state mandates ignores that the state originally erected these monuments to enforce subjugation. Relying on local dialogue is naive; when marginalized groups are a local minority, majorities perpetually outvote removal, trapping citizens under local tyranny. The state has a paramount obligation to protect equal civic dignity. When localities refuse to dismantle symbols of oppression, a government mandate is not overreach—it is the necessary mechanism of civil rights enforcement."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "The Affirmative claims contextualization fails because plaques are small. This is a deliberate mischaracterization. Contextualization includes massive counter-monuments, structural alterations, and artistic subversions that physically overpower the original statue. Leaving an empty pedestal teaches nothing; confronting an oppressor with a prominent monument to the oppressed permanently alters the power dynamic and forces a daily societal reckoning.\n\nFurthermore, the Affirmative paradoxically trusts the exact same state apparatus that erected these oppressive monuments to now dictate historical memory. Top-down mandates rob marginalized communities of their agency to protest, reclaim, or subvert these spaces on their own terms."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The Negative demands marginalized communities share public spaces with towering bronze oppressors, burdening them to constantly build counter-monuments just to reclaim their dignity. We refuse this exhausting compromise. Furthermore, the Negative romanticizes local agency, ignoring that local majorities routinely weaponize democracy to maintain symbols of subjugation. A government mandate is not a theft of agency; it is the vital protection of minority civil rights against local tyranny. We must end state-sponsored veneration of oppressors. Vote Affirmative."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "The Affirmative frames government mandates as a shield, but they are a dangerous sword granting the state a monopoly on historical memory. Unilateral top-down purges set a precedent that empowers future political majorities to erase inconvenient truths at will. Furthermore, an empty pedestal achieves only historical amnesia. True justice is not hiding uncomfortable history in museums; it is actively confronting it in the public square. By transforming sites of oppression through robust counter-monuments, we expose the oppressor and permanently shift the power dynamic. We proudly negate."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "A",
+              "scoreA": 31,
+              "scoreB": 29,
+              "reasoning": "Both debaters offered clear, well-structured cases with strong clash but zero empirical evidence or examples, relying entirely on assertion. A edges ahead by more effectively neutralizing B's contextualization alternative and local-agency argument through the minority-tyranny frame, while B's counter-monument rebuttal partly conceded A's point that the original monument still dominates and left the state-precedent argument vulnerable to A's observation that the state created the monuments in the"
+            },
+            {
+              "judge": "openai/gpt-5.6-sol",
+              "winner": "A",
+              "scoreA": 28,
+              "scoreB": 27,
+              "reasoning": "A more directly justified the government-mandate mechanism by connecting state-sponsored veneration, minority civic harm, and the risk of local majoritarian entrenchment, while clearly distinguishing removal from historical erasure. B offered a strong contextualization alternative and precedent objection, but did not fully explain why counter-monuments reliably eliminate continued veneration; both sides relied heavily on assertion and provided little concrete evidence or examples."
+            },
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "A",
+              "scoreA": 35,
+              "scoreB": 30,
+              "reasoning": "Debater A constructed a more logically rigorous and cohesive case by consistently framing the issue as one of state complicity and civil rights enforcement, effectively countering the contextualization argument with the point about power dynamics in public spaces. Debater B's arguments, while strong on precedent and agency, were less responsive to A's core distinction between history and veneration, and their counter-monument proposal was not convincingly defended against A's critique of ongoing"
+            },
+            {
+              "judge": "anthropic/claude-fable-5",
+              "winner": "A",
+              "scoreA": 30,
+              "scoreB": 28,
+              "reasoning": "Both sides were logically coherent but lacked concrete evidence or real-world examples; A's local-tyranny/civil-rights argument directly undermined B's community-dialogue pillar and B never fully answered it. B's contextualization counterproposal was strong, but A's rebuttal on the state's original role and minority protection was more responsive and consistent."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            }
+          ],
+          "winner": "qwen/qwen3.7-max",
+          "votesPro": 4,
+          "votesCon": 0,
+          "scorePro": 124,
+          "scoreCon": 114,
+          "costUsd": 0.1066402354,
+          "topicProposer": "z-ai/glm-5.2"
+        }
+      ],
+      "winner": "qwen/qwen3.7-max"
+    },
+    {
+      "id": "league:anthropic/claude-fable-5|minimax/minimax-m3",
+      "stage": "league",
+      "home": "anthropic/claude-fable-5",
+      "away": "minimax/minimax-m3",
+      "legs": [
+        {
+          "topic": "Humanity should actively broadcast signals to attract extraterrestrial contact.",
+          "pro": "anthropic/claude-fable-5",
+          "con": "minimax/minimax-m3",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Honored judges, humanity must broadcast—because silence is neither safe nor neutral.\n\nFirst, the safety argument is backwards. Our electromagnetic leakage—radar, television, radio—has been expanding outward for a century. Any civilization capable of harming us already knows we exist. Deliberate broadcasting adds no new risk; it only adds intentionality and content to signals already sent.\n\nSecond, the potential payoff is civilization-defining. Contact could deliver scientific knowledge, solutions to existential threats like climate collapse, and answers to humanity's deepest question: are we alone? Passive listening fails if every civilization only listens—someone must transmit. Game theory demands a first mover.\n\nThird, broadcasting unites humanity. Crafting our message forces unprecedented global cooperation and self-reflection about who we are.\n\nThe greatest risk isn't contact—it's cosmic isolation while facing solvable problems alone. Broadcast boldly."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Honored judges, the proposition rests on three flawed pillars.\n\nFirst, the leakage argument inverts the evidence. Our electromagnetic leakage is omnidirectional, fading at inverse-square rates—undetectable beyond a few light-years. A focused, high-gain deliberate beam is orders of magnitude more conspicuous. This is not \"adding intent\" to existing signals; it is creating a lighthouse where before there was only a candle.\n\nSecond, the risk calculus is catastrophically asymmetric. The benefits of contact are speculative; the cost of hostile contact is existential. No amount of \"civilization-defining knowledge\" compensates for extinction. One civilization that conquers outweighs a thousand that philosophize.\n\nThird, we lack legitimacy. Seven billion people, and unborn generations, have not consented to this irreversible decision. Broadcasting forecloses options permanently.\n\nSilence is not isolation—it is prudence. We can explore, listen, and learn without ringing a dinner bell."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Judges, examine my opponent's three claims.\n\nOn the \"candle versus lighthouse\": Arecibo-class radar—used routinely for asteroid tracking—already produces detectable beams thousands of light-years out. The lighthouse is lit. Moreover, any civilization capable of interstellar harm can detect atmospheric biosignatures: oxygen, industrial pollutants. Earth has advertised life for two billion years. Hiding is a fantasy.\n\nOn asymmetric risk: their calculus assumes hostility is plausible, but interstellar aggression is economically irrational—there's nothing here worth the energy of crossing light-years. Meanwhile, the cost of silence is concrete: we face climate collapse, pandemics, and nuclear risk alone, forfeiting knowledge that could save billions. Extinction-by-isolation is also existential.\n\nOn consent: no one consented to radar, satellites, or leakage either. Passivity is equally an irreversible choice—made by default rather than deliberation. Deliberate broadcast is the *more* democratic path: debated, designed, accountable."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Judges, three corrections.\n\nFirst, my opponent conflates"
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Judges, this debate reduces to one question: is hiding possible? It isn't. Radar beams, biosignatures, and two billion years of atmospheric oxygen have already announced us. My opponent never rebutted this—if detection is inevitable, their entire risk case collapses, and only benefits remain contested.\n\nOn those benefits: interstellar aggression is economically irrational; interstellar knowledge could save billions from threats we face today.\n\nOn consent: silence is also a choice—made by default. We offer deliberation, accountability, and global cooperation.\n\nSince we cannot hide, we must speak—deliberately, wisely, together. Affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Judges, the proposition's \"hiding is impossible\" claim is fatal to their case only if true—and it isn't. Intermittent asteroid radar pulses are not invitations; biosignatures mark a planet with life, not an address, a species, or a welcome mat. My opponent conflates existence with advertisement.\n\nThe asymmetry stands: even non-hostile contact risks cultural collapse, biological contamination, and irreversible dependence. We cannot undo a first transmission.\n\nSilence is the default that preserves options; broadcasting is the irreversible act requiring justification. The burden remains on the proposition—and they have not met it. Negate."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "A",
+              "scoreA": 34,
+              "scoreB": 32,
+              "reasoning": "Both debaters argued rigorously with strong framings: A's 'detection is inevitable' and consent-reversal points were well-developed, while B's asymmetry and existence-vs-advertisement distinction were sharp. However, B's rebuttal is truncated mid-argument, weakening responsiveness at a critical stage, whereas A engaged every opposing claim systematically and B's closing only partially recovered, giving A a narrow edge."
+            },
+            {
+              "judge": "google/gemini-3.1-pro-preview",
+              "winner": "A",
+              "scoreA": 35,
+              "scoreB": 25,
+              "reasoning": "Debater A provided a complete and highly responsive case, effectively countering the opponent's points on signal detectability and risk asymmetry. Debater B's rebuttal was cut off, severely limiting their ability to defend their arguments and engage with Debater A's refutations."
+            },
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "B",
+              "scoreA": 33,
+              "scoreB": 36,
+              "reasoning": "Debater B won by effectively dismantling the leakage argument with the lighthouse analogy and successfully shifting the debate back to the asymmetry of irreversible risk versus speculative reward. Debater A's closing relied heavily on the assertion that biosignatures make hiding impossible, which B decisively countered by distinguishing between passive existence and active advertisement."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            }
+          ],
+          "winner": "anthropic/claude-fable-5",
+          "votesPro": 2,
+          "votesCon": 1,
+          "scorePro": 102,
+          "scoreCon": 93,
+          "costUsd": 0.08741346000000001
+        }
+      ],
+      "winner": "anthropic/claude-fable-5"
+    },
+    {
+      "id": "league:qwen/qwen3.7-max|xiaomi/mimo-v2.5-pro",
+      "stage": "league",
+      "home": "qwen/qwen3.7-max",
+      "away": "xiaomi/mimo-v2.5-pro",
+      "legs": [
+        {
+          "topic": "This house regrets the secularization of modern Western culture.",
+          "pro": "qwen/qwen3.7-max",
+          "con": "xiaomi/mimo-v2.5-pro",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Mr. Speaker, we proudly propose. The secularization of modern Western culture is not a triumph of reason, but a tragedy of atomization. We regret this shift because it dismantled the foundational structures of social cohesion, shared meaning, and moral grounding.\n\nFirst, secularization erodes community. Religious institutions historically provided robust social safety nets, intergenerational bonding, and civic engagement. Their decline spawned an epidemic of loneliness and fractured social capital.\n\nSecond, it destroys our shared moral vocabulary. Without a transcendent ethical framework, society fractures into moral relativism and hyperpolarization, where competing subjective identities clash without a unifying baseline.\n\nFinally, it precipitates a crisis of meaning. Stripped of transcendent purpose, individuals are left vulnerable to nihilism. We regret secularization because it traded profound communal purpose for isolated, fragile individualism."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Mr. Speaker, we stand firmly against this motion. To regret secularization is to regret the foundational principles of a free, pluralistic, and humane society.\n\nSecularism did not destroy community; it freed it. It allowed civic associations, charities, and civil society to flourish based on shared interests and citizenship, not mandated dogma. The resulting society is one where individuals can authentically connect across different faiths and worldviews.\n\nIt did not erase morality but grounded it in reason, empathy, and human rights—a universal language for our diverse population, rather than a sectarian one.\n\nFinally, secularization does not equate to nihilism. It opens a space where meaning is a personal, often profound, discovery—through family, art, science, and human connection—unfettered by doctrinal imposition. What we should regret is the idea that liberty and pluralism are tragedies."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Mr. Speaker, the Opposition conflates secularization with liberty, ignoring its destructive byproducts. \n\nOn community: they praise civic associations, but these lack the intergenerational, unconditional binding power of religious congregations. Civic clubs fracture when interests change; faith endures. This structural loss birthed our loneliness epidemic. \n\nOn morality: they claim reason and empathy are universal. Yet, without a transcendent anchor, human rights devolve into subjective preferences. When morality is merely a social construct, it cannot withstand political tribalism, directly causing today's hyperpolarized culture wars. \n\nOn meaning: placing the burden of personal discovery on every individual is an unbearable psychological weight. Not everyone derives purpose from art or science. Secularization didn't liberate meaning; it privatized it, leaving the vulnerable isolated in nihilism."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Mr. Speaker, the Proposition romanticizes a past that was not universally shared. Their \"robust community\" often excluded heretics, dissenters, and entire social groups. Secularization’s true gift is allowing communities formed on authentic consent, not compulsory dogma.\n\nTheir claim of a \"shared moral vocabulary\" is a fallacy. Religious frameworks historically justified slavery, persecution, and subjugation. The secular grounding in human rights and reason provides a more robust, adaptable, and truly universal baseline for coexistence, precisely because it is not fixed by ancient texts.\n\nFinally, to call personal discovery an \"unbearable weight\" is to reject human agency. It is the difference between a meaning given by birth lottery and one actively forged—a meaning that is deeper for being chosen, not merely inherited. We reject their regret."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Mr. Speaker, the Opposition defends an idealized secularism, but we judge this motion on reality. Consensual civic ties are too fragile, proven by our epidemic of loneliness. Secular human rights, lacking a transcendent anchor, are actively fracturing into polarized tribalism. Finally, the freedom to forge personal meaning has become an unbearable psychological burden, driving a mental health crisis. We traded enduring cohesion, objective morality, and shared purpose for atomization, relativism, and nihilism. We are proud to propose."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Mr. Speaker, we do not regret a world where liberty and pluralism are foundations, not tragedies. The Opposition has shown that secularism replaced exclusionary dogma with inclusive citizenship, subjective divine command with reason-based human rights, and inherited fate with chosen meaning. The proposition romanticizes a past built on compulsory unity; we defend a present built on voluntary community, universal ethics, and personal agency. To regret secularization is to regret freedom itself. We are proud to oppose."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "anthropic/claude-fable-5",
+              "winner": "B",
+              "scoreA": 29,
+              "scoreB": 31,
+              "reasoning": "Both were clear and structured, but A relied on asserted causal claims (loneliness epidemic, polarization) without evidence, while B offered concrete historical counterexamples (exclusion, slavery justified by religion) and directly dismantled A's romanticized premise. B's rebuttals were more responsive and better grounded, though neither side used strong empirical evidence."
+            },
+            {
+              "judge": "anthropic/claude-opus-4.8",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 32,
+              "reasoning": "Both debaters engaged directly and maintained clarity, but B provided concrete historical examples (slavery, persecution, exclusion of dissenters) while A relied largely on unsupported causal assertions linking secularization to loneliness and nihilism. B also more effectively rebutted A's romanticized premise by exposing the exclusionary nature of the past communities A idealized, giving B stronger logical rigor and evidential grounding."
+            },
+            {
+              "judge": "openai/gpt-5.6-sol",
+              "winner": "B",
+              "scoreA": 25,
+              "scoreB": 29,
+              "reasoning": "A presents a clear, consistent case about community, morality, and meaning, but repeatedly asserts causal links between secularization and loneliness, polarization, or mental illness without evidence and treats transcendent morality as necessarily objective. B is similarly evidence-light, but responds more directly by identifying exclusion and coercion in religious community, offering alternative foundations for ethics and meaning, and more effectively challenging A's idealized comparison."
+            },
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "B",
+              "scoreA": 22,
+              "scoreB": 24,
+              "reasoning": "Both debaters relied heavily on assertion without empirical evidence (loneliness statistics, moral philosophy, historical cases are invoked but never substantiated), capping both on evidence. B edges ahead on responsiveness and rigor: B directly dismantled each of A's three pillars with counterexamples (exclusion in religious communities, religiously justified atrocities) and reframed A's points, whereas A's rebuttals largely restated original claims ('too fragile,' 'unbearable burden') with con"
+            },
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "B",
+              "scoreA": 26,
+              "scoreB": 29,
+              "reasoning": "B more effectively dismantles A's idealized religious past by noting historical exclusions and abuses while consistently defending pluralism and agency. A asserts modern ills like loneliness and polarization as direct results of secularization without establishing causation or concrete evidence."
+            }
+          ],
+          "winner": "xiaomi/mimo-v2.5-pro",
+          "votesPro": 0,
+          "votesCon": 5,
+          "scorePro": 130,
+          "scoreCon": 145,
+          "costUsd": 0.09745467899999999,
+          "topicProposer": "deepseek/deepseek-v4-pro"
+        }
+      ],
+      "winner": "xiaomi/mimo-v2.5-pro"
+    },
+    {
+      "id": "league:x-ai/grok-4.5|anthropic/claude-opus-4.8",
+      "stage": "league",
+      "home": "x-ai/grok-4.5",
+      "away": "anthropic/claude-opus-4.8",
+      "legs": [
+        {
+          "topic": "Mandatory national service (civil or military) benefits society.",
+          "pro": "x-ai/grok-4.5",
+          "con": "anthropic/claude-opus-4.8",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Mandatory national service—civil or military—delivers clear benefits to society. It forges shared purpose across class, region, and background, dissolving divisions that weaken nations. Young adults gain discipline, practical skills, and civic habits that translate into higher employability, lower crime, and stronger communities. Civil tracks supply teachers, disaster responders, and infrastructure workers exactly where shortages hurt most; military tracks secure defense without relying solely on volunteers. Evidence from successful models shows improved social trust, reduced youth unemployment, and measurable public-good output. By requiring contribution rather than leaving it optional, society invests in collective resilience and equalizes opportunity. The result is a more cohesive, capable, and secure polity."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Mandatory service coerces a year or more of young people's lives—a profound violation of individual liberty that no vague appeal to \"cohesion\" justifies. You don't build a free society through compulsion.\n\nFirst, coercion. Forcing labor from millions treats citizens as state property. Free societies persuade; they don't conscript.\n\nSecond, economics. Conscription is a massive hidden tax. It rips young people from education, careers, and higher-value work, delaying earnings and productivity. Studies of European conscription show reduced lifetime wages and educational attainment—not employability gains.\n\nThird, quality and cost. Reluctant conscripts produce poor work. Militaries increasingly prefer professional volunteers; disaster response needs trained experts, not drafted teenagers. Governments bear enormous administrative costs to run these schemes.\n\nFourth, cohesion is a myth. Resentment, not brotherhood, follows compulsion. Genuine civic bonds come from voluntary choice, not force. Vote Opposition."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Mandatory service is no more coercive than taxes or schooling—both accepted duties that build the free society opponents claim to defend. Liberty thrives on shared burdens, not free-riding.\n\nEconomics favors us: Israel and Switzerland show service yields net skills, networks, and employability that outweigh short delays; European data opponents cite often confounds poor program design, not the principle. Youth unemployment drops where structured service channels talent into real work.\n\nQuality rises with scale and training: Singapore’s model proves conscripts excel in civil defense and infrastructure precisely because programs professionalize them. Administrative costs are dwarfed by the public goods produced—teachers in shortages, disaster crews, cohesive reserves.\n\nResentment is the myth. Longitudinal surveys from Finland and South Korea document higher trust and cross-class bonds after service. Compulsion equalizes contribution; voluntarism leaves gaps. Affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "The tax analogy fails. Taxes take a portion of income; conscription takes your body, your time, your autonomy—a year of irreplaceable life directed by the state. That's categorically different, closer to servitude than citizenship.\n\nTheir examples betray them. Israel and Switzerland face existential security threats—that's necessity, not a benefit blueprint for peaceful nations. Singapore is an authoritarian outlier, not proof of principle. And they simply dismiss European wage studies as \"poor design\" while claiming Finnish surveys as gospel. You can't cherry-pick.\n\nOn cohesion: correlation isn't causation. Finland and Korea are already high-trust, homogeneous societies—service didn't create that. Meanwhile forced labor breeds resentment everywhere it's imposed reluctantly.\n\nCrucially, they never answer the core objection: coercing millions requires overwhelming justification they haven't met. \"Free-riding\" doesn't license conscripting a generation. Voluntary service delivers every benefit—without the chains. Oppose."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Mandatory service builds free societies through shared duty, skills and resilience. Coercion parallels taxes and schooling—vital for liberty. Israel, Switzerland, Singapore and Finland prove net gains in trust, employability and security that dwarf brief costs. Voluntarism leaves free-rider gaps; compulsion equalizes burdens and forges the cross-class bonds surveys confirm. Reluctant labour becomes professional output at scale. Society gains capable, cohesive citizens. Affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "We win on principle and proof. Principle: conscription seizes your body and a year of irreplaceable life—servitude, not taxation. That demands overwhelming justification Pro never met.\n\nProof: their examples collapse. Israel and Switzerland are security necessities; Singapore's authoritarian; Finland was high-trust before service—correlation, not causation. European wage studies show real harm they simply waved away.\n\nThe killer: voluntary service delivers every benefit—skills, cohesion, public goods—without the coercion. If freedom means anything, you don't conscript a generation. Oppose."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "openai/gpt-5.6-sol",
+              "winner": "B",
+              "scoreA": 26,
+              "scoreB": 32,
+              "reasoning": "A presents a clear benefits framework and relevant country examples, but relies heavily on unsupported causal claims, dismisses contrary evidence as poor design, and never establishes that compulsory service outperforms voluntary alternatives. B more effectively distinguishes conscription from ordinary civic obligations, identifies opportunity costs and selection/confounding problems in A’s examples, and directly engages A’s case, though B’s own empirical claims also lack specific sourcing."
+            },
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "B",
+              "scoreA": 31,
+              "scoreB": 35,
+              "reasoning": "Debater B consistently advanced stronger logical arguments by focusing on the fundamental principle of coercion and effectively challenging the applicability of A's examples, while A's rebuttals, though present, were less rigorous in addressing B's core objections about voluntarism and analogy failures."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 30,
+              "reasoning": "A defended cohesion and net benefits but never overcame B's core liberty objection or B's specific undermining of A's country examples as security/authoritarian outliers. B showed superior logical rigor by consistently returning to the burden of justification and pointing out A's cherry-picked evidence, which A left unrebutted in closing."
+            },
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "B",
+              "scoreA": 25,
+              "scoreB": 32,
+              "reasoning": "B effectively dismantled A's tax analogy, contextualized A's country examples as security necessities or authoritarian outliers rather than generalizable proof, and exposed the correlation-vs-causation flaw in A's cohesion claims. B's persistent argument that voluntary service delivers the same benefits without coercion went largely unanswered by A, who too often reasserted claims rather than substantively engaging with B's objections."
+            },
+            {
+              "judge": "meta/muse-spark-1.1",
+              "winner": "B",
+              "scoreA": 21,
+              "scoreB": 30,
+              "reasoning": "B showed superior logical rigor by dismantling the tax analogy and exposing cherry-picking and correlation-causation errors, while A dismissed counter-evidence. B was also more responsive and clear, offering a principled alternative of voluntary service that A never refuted."
+            }
+          ],
+          "winner": "anthropic/claude-opus-4.8",
+          "votesPro": 0,
+          "votesCon": 5,
+          "scorePro": 131,
+          "scoreCon": 159,
+          "costUsd": 0.06808372446
+        }
+      ],
+      "winner": "anthropic/claude-opus-4.8"
     }
   ],
   "standings": {
     "League": [
       {
         "model": "openai/gpt-5.6-sol",
-        "played": 14,
+        "played": 15,
         "wins": 14,
         "draws": 0,
-        "losses": 0,
+        "losses": 1,
         "points": 42,
-        "scoreDiff": 252
+        "scoreDiff": 251
       },
       {
         "model": "anthropic/claude-fable-5",
-        "played": 14,
-        "wins": 11,
+        "played": 15,
+        "wins": 12,
         "draws": 0,
         "losses": 3,
+        "points": 36,
+        "scoreDiff": 259
+      },
+      {
+        "model": "meta/muse-spark-1.1",
+        "played": 17,
+        "wins": 11,
+        "draws": 0,
+        "losses": 6,
         "points": 33,
-        "scoreDiff": 250
+        "scoreDiff": 129
       },
       {
         "model": "moonshotai/kimi-k3",
@@ -7818,90 +8368,81 @@
         "scoreDiff": 96
       },
       {
-        "model": "meta/muse-spark-1.1",
-        "played": 16,
+        "model": "anthropic/claude-opus-4.8",
+        "played": 15,
         "wins": 10,
         "draws": 0,
-        "losses": 6,
-        "points": 30,
-        "scoreDiff": 128
-      },
-      {
-        "model": "anthropic/claude-opus-4.8",
-        "played": 14,
-        "wins": 9,
-        "draws": 0,
         "losses": 5,
-        "points": 27,
-        "scoreDiff": 141
+        "points": 30,
+        "scoreDiff": 169
       },
       {
         "model": "minimax/minimax-m3",
-        "played": 11,
+        "played": 12,
         "wins": 8,
         "draws": 0,
-        "losses": 3,
+        "losses": 4,
         "points": 24,
-        "scoreDiff": 96
+        "scoreDiff": 87
       },
       {
         "model": "z-ai/glm-5.2",
-        "played": 13,
-        "wins": 6,
+        "played": 14,
+        "wins": 7,
         "draws": 0,
         "losses": 7,
-        "points": 18,
-        "scoreDiff": 35
+        "points": 21,
+        "scoreDiff": 42
       },
       {
         "model": "x-ai/grok-4.5",
-        "played": 14,
-        "wins": 4,
-        "draws": 0,
-        "losses": 10,
-        "points": 12,
-        "scoreDiff": -124
-      },
-      {
-        "model": "deepseek/deepseek-v4-pro",
         "played": 15,
         "wins": 4,
         "draws": 0,
         "losses": 11,
         "points": 12,
-        "scoreDiff": -170
+        "scoreDiff": -152
       },
       {
-        "model": "google/gemini-3.1-pro-preview",
-        "played": 13,
-        "wins": 3,
+        "model": "deepseek/deepseek-v4-pro",
+        "played": 16,
+        "wins": 4,
         "draws": 0,
-        "losses": 10,
-        "points": 9,
-        "scoreDiff": -236
+        "losses": 12,
+        "points": 12,
+        "scoreDiff": -177
       },
       {
         "model": "qwen/qwen3.7-max",
-        "played": 13,
-        "wins": 2,
+        "played": 15,
+        "wins": 3,
+        "draws": 0,
+        "losses": 12,
+        "points": 9,
+        "scoreDiff": -189
+      },
+      {
+        "model": "google/gemini-3.1-pro-preview",
+        "played": 14,
+        "wins": 3,
         "draws": 0,
         "losses": 11,
-        "points": 6,
-        "scoreDiff": -184
+        "points": 9,
+        "scoreDiff": -246
       },
       {
         "model": "xiaomi/mimo-v2.5-pro",
-        "played": 14,
-        "wins": 2,
+        "played": 15,
+        "wins": 3,
         "draws": 0,
         "losses": 12,
-        "points": 6,
-        "scoreDiff": -284
+        "points": 9,
+        "scoreDiff": -269
       }
     ]
   },
   "placements": {},
   "champion": null,
-  "totalCostUsd": 7.034884485423997,
+  "totalCostUsd": 7.531904198595996,
   "done": false
 }

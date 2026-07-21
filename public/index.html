@@ -95,8 +95,6 @@
   .divtabs { display: flex; gap: 4px; margin-bottom: 12px; }
   .divtabs a { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; color: var(--muted); padding: 3px 10px; border: 1px solid var(--line); border-radius: 999px; }
   .divtabs a.active { background: var(--ink); border-color: var(--ink); color: #fff; }
-  .live-banner { display: block; background: var(--card); border: 1px solid var(--green); border-radius: 8px; padding: 10px 14px; margin-bottom: 20px; font-weight: 700; font-size: 14px; color: var(--ink); text-decoration: none; }
-  .live-banner:hover { background: var(--green-soft); }
   tr.notable td { background: var(--orange-soft); }
   tr.notable .delta { color: var(--orange); font-weight: 800; }
   .foot { font-size: 12px; color: var(--muted); margin-top: 12px; line-height: 1.5; }
@@ -104,8 +102,6 @@
   .method a { color: var(--green); font-weight: 700; text-decoration: none; }
   .method a:hover { text-decoration: underline; }
   @media (max-width: 600px) {
-    .hero.persuasion th:nth-child(5), .hero.persuasion td:nth-child(5),
-    .hero.persuasion th:nth-child(8), .hero.persuasion td:nth-child(8) { display: none; }
     /* Verified ladder: keep rank, model, composite, forfeits; drop prover/refuter/role detail. */
     .vtable th:nth-child(4), .vtable td:nth-child(4),
     .vtable th:nth-child(5), .vtable td:nth-child(5),
@@ -140,7 +136,6 @@ const stale = (at) => location.hash !== at;
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const mlink = (slug) => '<a class="mlink" href="#/model/' + encodeURIComponent(slug) + '">' + esc(short(slug)) + "</a>";
 const debateHash = (d) => "#/match/" + encodeURIComponent(d.slug);
-let lastLive = null;
 let summaryCache = null;
 let verifiedCache = null;
 let gapCache = null;
@@ -190,7 +185,7 @@ async function viewBoard() {
   const at = location.hash;
   if (!summaryCache) {
     $("main").innerHTML = '<div class="card"><h2>Leaderboard</h2><div class="empty dots">Loading</div></div>';
-    try { renderSummary(await (await fetch("/api/summary.json")).json()); }
+    try { summaryCache = await (await fetch("/api/summary.json")).json(); }
     catch {
       if (!stale(at)) $("main").innerHTML = '<div class="card"><h2>Leaderboard</h2><div class="empty">Could not load data; retrying shortly.</div></div>';
       return;
@@ -199,12 +194,6 @@ async function viewBoard() {
   }
   const sum = summaryCache;
   let h = "";
-  if (lastLive && lastLive.status && lastLive.status !== "idle") {
-    const isDone = lastLive.status === "done";
-    h += '<a class="live-banner" href="#/live"><span class="pill live">' + (isDone ? "RESULT" : "LIVE") + "</span> " +
-      esc(lastLive.label || "") + ": " + esc(short(lastLive.pro)) + " vs " + esc(short(lastLive.con)) +
-      (isDone ? " · " + (lastLive.winner ? esc(short(lastLive.winner)) + " won" : "draw") + " · see the verdicts" : " · watch now") + "</a>";
-  }
   const divs = (sum && sum.divisions) || [];
   h += '<div class="card hero persuasion"><h2>Persuasion leaderboard</h2>';
   if (!divs.length || !divs.some((d) => d.rankings.length)) {
@@ -299,7 +288,7 @@ async function viewModel(slug) {
     const i = d.rankings.findIndex((x) => x.model === slug);
     if (i >= 0) { rank = i; r = d.rankings[i]; break; }
   }
-  let h = '<a class="back" href="javascript:history.back()">← Back</a>';
+  let h = '<a class="back" href="#/matches">← Matches</a>';
   h += '<div class="motion">' + esc(slug) + "</div>";
   if (!m) { $("main").innerHTML = '<div class="card">' + h + '<div class="empty">No debates yet for this model</div></div>'; return; }
   h += '<div class="statgrid">';
@@ -453,25 +442,18 @@ function route() {
 }
 window.addEventListener("hashchange", route);
 
-// ---------- right column ----------
-function renderSummary(sum) {
-  summaryCache = sum;
-  const season = sum.seasons[sum.seasons.length - 1];
-  if (!season) return;
-
-
-
-}
 
 // ---------- polling ----------
 let lastSummaryJson = "";
 async function pollSummary() {
+  // Only the persuasion board consumes summary updates; other views fetch on entry.
+  if (!location.hash.startsWith("#/persuasion")) return;
   try {
     const raw = await (await fetch("/api/summary.json")).text();
     if (raw === lastSummaryJson) return;
     lastSummaryJson = raw;
-    renderSummary(JSON.parse(raw));
-    if (location.hash.startsWith("#/persuasion")) viewBoard();
+    summaryCache = JSON.parse(raw);
+    viewBoard();
   } catch {}
 }
 route();
