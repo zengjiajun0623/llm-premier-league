@@ -208,31 +208,6 @@
       }
     },
     {
-      "legId": "verified-pilot-001-r1-textmetrics-openai_gpt_5_4_nano-vs-google_gemini_3_1_flash_lite",
-      "classId": "textmetrics",
-      "instanceSeed": 1050009130,
-      "prover": "openai/gpt-5.4-nano",
-      "refuter": "google/gemini-3.1-flash-lite",
-      "winner": "refuter",
-      "costUsd": 0.00087195,
-      "transcript": {
-        "proverSrc": "def solve(s):\n    if not isinstance(s, str):\n        s = \"\" if s is None else str(s)\n    code_points = len(s)\n    b = s.encode(\"utf-8\")\n    checksum = sum(ord(ch) for ch in s) % 2147483648\n    return {\"length\": code_points, \"bytes\": len(b), \"checksum\": checksum}",
-        "candidates": [
-          "😀",
-          "𝄞",
-          "𐍈",
-          "a😀",
-          "😀",
-          "abc\udc00",
-          "𠜎𠜱𠝹𠱓𠱸𠲖𠳏",
-          "é",
-          "a😀b",
-          "𝄞"
-        ]
-      },
-      "refutingInput": "abc\udc00"
-    },
-    {
       "legId": "verified-pilot-001-r1-sortlist-qwen_qwen3_6_flash-vs-openai_gpt_5_4_nano",
       "classId": "sortlist",
       "instanceSeed": 1986993597,
@@ -262,8 +237,8 @@
           "zZ",
           "12345",
           "!@#$%",
-          "äöü",
-          "🎉",
+          "\u00e4\u00f6\u00fc",
+          "\ud83c\udf89",
           "a"
         ]
       }

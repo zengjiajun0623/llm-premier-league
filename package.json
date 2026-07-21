@@ -11,7 +11,8 @@
     "propose": "tsx src/verified/admission/propose.ts",
     "propose:sim": "LLM_SIM=1 SANDBOX=local tsx src/verified/admission/propose.ts --sim --proposer lab/admit",
     "enroll": "tsx src/enroll.ts",
-    "verify": "./verify.sh"
+    "verify": "./verify.sh",
+    "audit": "tsx src/verified/audit.ts"
   },
   "devDependencies": {
     "tsx": "^4.19.0",

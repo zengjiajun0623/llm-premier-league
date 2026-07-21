@@ -4544,81 +4544,997 @@
         }
       ],
       "winner": "anthropic/claude-opus-4.8"
+    },
+    {
+      "id": "league:openai/gpt-5.6-sol|xiaomi/mimo-v2.5-pro",
+      "stage": "league",
+      "home": "openai/gpt-5.6-sol",
+      "away": "xiaomi/mimo-v2.5-pro",
+      "legs": [
+        {
+          "topic": "Cities should ban private cars from their centers.",
+          "pro": "openai/gpt-5.6-sol",
+          "con": "xiaomi/mimo-v2.5-pro",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "City centers are scarce public spaces, yet private cars consume them inefficiently: carrying few people while demanding vast areas for roads and parking. Banning them creates room for frequent buses, safe cycle lanes, wider pavements, trees, housing, and commerce.\n\nThe benefits are immediate. Fewer cars mean cleaner air, lower carbon emissions, less noise, and fewer fatal collisions. Reliable public transport and congestion-free streets improve mobility for the majority—including children, older people, and residents unable to drive. Businesses gain from higher footfall and more attractive public spaces, while essential access remains through ambulances, disability transport, deliveries, and carefully defined exemptions.\n\nThis is not a ban on movement; it is a better allocation of access. Cities should pair the policy with park-and-ride facilities, affordable transit, and phased implementation. No individual convenience justifies imposing pollution, danger, congestion, and lost public space on everyone else."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "While the pro side frames this as a simple trade-off, a city-center car ban is a blunt instrument that punishes the vulnerable. It harms the elderly, disabled, and families who lack reliable alternatives, and it makes central housing—already a privilege—even more exclusive. Economically, it risks strangling small businesses reliant on customer mobility and service access. Practically, it merely shunts traffic to surrounding neighborhoods, creating new congestion and pollution hotspots, while requiring costly, difficult-to-enforce restrictions. The motion fundamentally misdiagnoses the problem. It is not the *presence* of cars, but their *prioritization*, that fails cities. We should instead invest in and prioritize public transit, cycling, and walking *alongside* managed, low-emission vehicle access, not enact a drastic ban that ignores real-world complexities and deepens social divides."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The opposition attacks a caricature: our ban explicitly preserves ambulances, disability transport, essential services, and timed deliveries. Vulnerable people are not protected by car-dominated centers; many elderly, disabled, low-income, and young residents cannot drive and suffer most from dangerous crossings, polluted air, and unreliable buses trapped in traffic.\n\nNor does commerce depend on nearby private parking. Customers arriving by foot, cycle, and transit generate sustained footfall, while delivery exemptions preserve supply chains. Attractive, accessible streets encourage longer visits rather than strangling business.\n\nDisplacement is a design challenge, not an argument for paralysis: phased boundaries, park-and-ride, traffic filters, and improved transit prevent surrounding neighborhoods becoming shortcuts. Enforcement through cameras and permits is routine and funded partly by reduced road costs.\n\nFinally, merely “prioritizing” alternatives while retaining cars preserves congestion and contested space. Reliable buses, safe cycling, wider pavements, and public squares require reallocating road capacity. In scarce city centers, coexistence means cars continue to dominate."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "The pro side claims exemptions protect the vulnerable, but a ban still makes spontaneous, private vehicle access—crucial for many disabled individuals or families with complex needs—impossible, forcing reliance on pre-booked services. This is not equal access. They also ignore small businesses dependent on supplier visits or customers carrying goods, where foot traffic alone suffices poorly.\n\nTheir dismissal of traffic displacement as a mere \"design challenge\" is dangerously naive. Phased boundaries and park-and-rides are costly, often delayed, and still push congestion and pollution to adjacent, typically less affluent, residential areas—deepening inequality.\n\nFinally, coexistence does not mean domination. Strategic reallocation of space—dedicated bus lanes, cycle networks, restricted zones—is possible without a total ban. We should invest in making alternatives superior, not forcibly strip away mobility options from those least able to adapt."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "City centers cannot give the same scarce street space simultaneously to private cars, reliable buses, safe cycling, and generous pavements. The opposition’s “coexistence” therefore preserves the very congestion and danger it claims to solve. Our policy protects necessary access through disability, emergency, service, and delivery exemptions, while expanding affordable mobility for the far larger number who cannot drive. Displacement is prevented through phased boundaries, transit investment, and neighborhood filters—not accepted as inevitable. We replace inefficient private convenience with cleaner air, safer streets, stronger commerce, and genuinely universal access."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "The proposal creates a false binary. Banning cars from city centers doesn't build better transit; it simply removes mobility options for those who depend on them, like the disabled and families in outlying areas, while pushing congestion to poorer neighborhoods. This is not progress; it is an exclusionary policy that deepens inequality. True urban improvement requires prioritizing and investing in superior public transit, cycling, and pedestrian infrastructure *alongside* managed, low-emission vehicle access. A blanket ban is the wrong solution to the right problem."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "meta/muse-spark-1.1",
+              "winner": "A",
+              "scoreA": 30,
+              "scoreB": 24,
+              "reasoning": "A provided a tighter scarcity trade-off argument and directly rebutted B's vulnerability, commerce, and displacement claims with specific mechanisms (exemptions, filters, park-and-ride). B raised valid equity concerns about spontaneous access and peripheral impacts but relied more on assertion that coexistence works without showing how it resolves the space conflict."
+            },
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "A",
+              "scoreA": 33,
+              "scoreB": 29,
+              "reasoning": "Debater A consistently engaged and dismantled B's specific objections—exemptions for vulnerable users, business footfall evidence patterns, and concrete anti-displacement mechanisms—while B largely repeated opening claims in the rebuttal and closing without fully addressing A's counters. Neither side used hard evidence, but A offered more detailed policy mechanics and tighter logical framing of the scarce-space trade-off, making A's case more rigorous and responsive overall."
+            },
+            {
+              "judge": "google/gemini-3.1-pro-preview",
+              "winner": "A",
+              "scoreA": 35,
+              "scoreB": 31,
+              "reasoning": "Debater A effectively demonstrated the physical constraints of city centers, making a compelling logical case that true coexistence is impossible without compromising public space and safety. Debater A also thoroughly addressed Debater B's concerns regarding vulnerable populations and displacement by detailing specific exemptions and mitigation strategies."
+            },
+            {
+              "judge": "anthropic/claude-opus-4.8",
+              "winner": "A",
+              "scoreA": 33,
+              "scoreB": 28,
+              "reasoning": "A presented a more coherent central argument about scarce space requiring reallocation and directly addressed exemptions, displacement, and enforcement with concrete mechanisms, while B relied more on assertions about naivety and inequality without countering the core space-scarcity logic. B raised valid points on spontaneous access and displacement to poorer areas but repeated them rather than developing evidence, whereas A's rebuttals engaged more specifically with B's claims."
+            },
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "A",
+              "scoreA": 30,
+              "scoreB": 28,
+              "reasoning": "A presents a tightly reasoned case grounded in spatial scarcity and consistently rebuts objections by clarifying exemptions and phased design fixes. B raises legitimate equity and displacement concerns with solid responsiveness but offers weaker counters to the core trade-off logic and equally sparse concrete evidence."
+            }
+          ],
+          "winner": "openai/gpt-5.6-sol",
+          "votesPro": 5,
+          "votesCon": 0,
+          "scorePro": 161,
+          "scoreCon": 140,
+          "costUsd": 0.0689877
+        }
+      ],
+      "winner": "openai/gpt-5.6-sol"
+    },
+    {
+      "id": "league:meta/muse-spark-1.1|x-ai/grok-4.5",
+      "stage": "league",
+      "home": "meta/muse-spark-1.1",
+      "away": "x-ai/grok-4.5",
+      "legs": [
+        {
+          "topic": "The traditional university degree will be obsolete within 20 years.",
+          "pro": "meta/muse-spark-1.1",
+          "con": "x-ai/grok-4.5",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "The traditional four-year, campus-based degree is dying because its core functions - signaling, skill-building, and networking - have been unbundled and outcompeted.\n\nFirst, cost and ROI have collapsed. US student debt exceeds $1.7 trillion while degrees no longer guarantee premium wages.\n\nSecond, employers have moved. Google, IBM, Bank of America and 14 US states now hire for skills, not degrees. AI-driven hiring platforms test what you can do, not where you studied.\n\nThird, alternatives are superior. AI tutors provide personalized mastery, bootcamps and micro-credentials deliver job-ready skills in months for 5% of the cost, at the speed the economy demands.\n\nThe degree won't be banned. It will be obsolete - like the encyclopedia."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "The traditional university degree will not be obsolete in 20 years. It remains the irreplaceable integrator of rigorous knowledge, verified signaling, and formative networks that fragmented alternatives cannot match.\n\nEmployer shifts are selective, not systemic. Google and IBM still recruit heavily from universities for complex roles; skills tests filter entry, but degrees anchor trust in judgment, ethics, and depth. Earnings premiums persist: OECD and Federal Reserve data show bachelor’s holders out-earn non-graduates by 60-70% lifetime, even after debt.\n\nBootcamps and AI tutors excel at narrow tasks yet fail at sustained inquiry, interdisciplinary synthesis, and credential portability across borders and decades. Licensed professions—medicine, law, engineering, architecture—codify degrees as non-negotiable. Universities already hybridize delivery while preserving accreditation and alumni capital.\n\nEncyclopedia pages vanished; universities evolve. The degree endures as the durable standard."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Opponent confuses persistence with permanence.\n\nFirst, their earnings premium is a lagging indicator. It measures 40-year careers of 1990s graduates. For 2020s graduates, adjusted for debt and time out of workforce, ROI turns negative in many majors - that's why enrollment is down 15% since 2010.\n\nSecond, licensed professions are under 15% of jobs. And even they are unbundling: the UK and US now offer law apprenticeships, nursing apprenticeships, and competency-based medical licensing. The exception proves the shrinking rule.\n\nThird, \"trust and depth\" is exactly what AI skill verification replaces. Employers don't need a 4-year proxy for judgment when simulations can test judgment directly, cheaply, and portably.\n\nThey admit universities must hybridize. That is obsolescence. The traditional degree isn't enduring - it's dissolving."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Enrollment drops reflect temporary demographics and pandemic effects, not collapse—NCES projects rebound as value holds. Lifetime premiums remain robust per latest Georgetown and Brookings data; debt-adjusted ROI stays positive for most fields because degrees compound through promotions, not just first jobs.\n\nLicensed fields anchor critical infrastructure and set quality norms that spill over; apprenticeships still require degree-equivalent rigor and university partnerships. They expand access without erasing the standard.\n\nAI simulations test narrow scenarios, not the sustained ethical judgment, research synthesis, or peer networks forged over years. Employers retain degrees as portable, fraud-resistant signals precisely because alternatives fragment and expire.\n\nHybridization strengthens the degree—online delivery plus campus immersion—exactly as universities absorbed libraries and labs before. Evolution is adaptation, not dissolution. The traditional degree endures as the verified whole."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "This debate is about function, not nostalgia. My opponent admits the degree must hybridize, outsource teaching to AI, and partner with apprenticeships — that is unbundling. Their premium is backward-looking; for Gen Z, debt plus four years lost outweighs it. Their fortress of licensed jobs is 15% of work and already cracking with apprenticeships. When employers can directly test judgment cheaply, a costly four-year proxy becomes obsolete. The encyclopedia also evolved — into Wikipedia. The degree will too — into obsolescence."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Hybridization and partnerships prove adaptation, not unbundling or dissolution: the degree integrates AI tools, apprenticeships, and campus rigor into one verified, portable credential that employers still demand for judgment and trust. Lifetime premiums hold per current data; narrow simulations and expiring micro-credentials cannot forge ethical depth, networks, or cross-border standards. Licensed cores and spillover norms endure. Enrollment rebounds as value compounds. Like universities absorbing prior innovations, the traditional degree evolves and remains the durable whole—not obsolete."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "B",
+              "scoreA": 33,
+              "scoreB": 34,
+              "reasoning": "Both debaters argued rigorously, cited plausible evidence, and engaged each other's points directly, with A landing strong blows on unbundling and lagging ROI. However, B more effectively contested the motion's core definition—arguing hybridization is adaptation of the degree rather than its obsolescence—and rebutted A's strongest claims (enrollment decline, earnings premium) with specific counter-framings rather than concessions, giving B a slight edge in logical rigor and responsiveness."
+            },
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "A",
+              "scoreA": 32,
+              "scoreB": 31,
+              "reasoning": "Both debaters were strong, but A was slightly more effective at reframing B's concessions—particularly hybridization and apprenticeship partnerships—as evidence of unbundling and obsolescence, while B's defense relied more on assertion that adaptation equals endurance. A's rebuttal was sharper and more incisive, giving a marginal edge in responsiveness."
+            },
+            {
+              "judge": "minimax/minimax-m3",
+              "winner": "B",
+              "scoreA": 30,
+              "scoreB": 32,
+              "reasoning": "Both debaters present strong arguments with specific evidence, but Debater B more effectively counters A's claims by distinguishing adaptation from dissolution, citing current data on lifetime premiums, and noting that licensed professions and cross-border portability remain anchored to degrees. Debater A's reliance on lagging indicators and selective examples (15% of jobs) is somewhat overstated, while B's framing of hybridization as evolution rather than obsolescence is more logically consiste"
+            },
+            {
+              "judge": "google/gemini-3.1-pro-preview",
+              "winner": "B",
+              "scoreA": 34,
+              "scoreB": 36,
+              "reasoning": "Debater B effectively countered A's claims by providing robust counter-evidence on ROI and enrollment, and successfully reframed hybridization as adaptation rather than obsolescence. B's argument that degrees provide a holistic, fraud-resistant signal that fragmented alternatives cannot match was highly persuasive."
+            },
+            {
+              "judge": "anthropic/claude-fable-5",
+              "winner": "B",
+              "scoreA": 31,
+              "scoreB": 33,
+              "reasoning": "A argued crisply with concrete examples and a strong unbundling frame, but leaned on contestable claims (negative ROI, enrollment causation) and stretched 'hybridization equals obsolescence.' B directly rebutted each point with cited data trends, defended the crucial distinction between adaptation and obsolescence, and better carried the burden on the motion's actual claim."
+            }
+          ],
+          "winner": "x-ai/grok-4.5",
+          "votesPro": 1,
+          "votesCon": 4,
+          "scorePro": 160,
+          "scoreCon": 166,
+          "costUsd": 0.0735325
+        }
+      ],
+      "winner": "x-ai/grok-4.5"
+    },
+    {
+      "id": "league:anthropic/claude-opus-4.8|qwen/qwen3.7-max",
+      "stage": "league",
+      "home": "anthropic/claude-opus-4.8",
+      "away": "qwen/qwen3.7-max",
+      "legs": [
+        {
+          "topic": "Space colonization should be a top priority for humanity this century.",
+          "pro": "anthropic/claude-opus-4.8",
+          "con": "qwen/qwen3.7-max",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Space colonization must be a top priority this century for three reasons.\n\nFirst, survival. Humanity currently exists on a single planet vulnerable to asteroid impacts, supervolcanoes, engineered pandemics, and climate catastrophe. A species confined to one world is one disaster from extinction. Becoming multi-planetary is the ultimate insurance policy.\n\nSecond, innovation. The push to reach space has always driven transformative technology—GPS, solar panels, water purification, medical imaging. Prioritizing colonization accelerates breakthroughs that solve Earthly problems.\n\nThird, resources. Asteroids and the Moon contain vast minerals and energy potential. Space-based industry could relieve environmental pressure on Earth while sustaining growing prosperity.\n\nCritics say we should fix Earth first—but this is a false choice. Great civilizations pursue multiple ambitions simultaneously. The window to establish a spacefaring future is now. We must seize it."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "The proposition conflates space exploration with space colonization. We already reap innovative and observational benefits from space without the astronomical costs of colonization. Making colonization a top priority this century is a catastrophic misallocation of resources. The existential threats my opponent cites, like pandemics and climate change, are happening now. Diverting trillions of dollars and our brightest minds to build fragile outposts on dead rocks does not insure humanity. It starves the terrestrial solutions required to prevent our extinction. Furthermore, a Mars colony will remain entirely dependent on Earth's supply chains for centuries. If Earth falls, the colony dies. Space colonization is not an insurance policy; it is an incredibly expensive distraction from immediate, solvable crises. We must secure our only viable home first."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "My opponent's case collapses on its own logic.\n\nFirst, \"fix Earth first\" is a false binary I already flagged. We spend under 0.5% of global GDP on all space activity. Colonization wouldn't \"starve\" climate solutions—defense budgets and fossil subsidies dwarf it. This is a choice of priorities, not scarcity.\n\nSecond, they concede space delivers \"innovative benefits\"—yet those benefits came precisely from ambitious, colonization-scale goals like Apollo, not modest observation. Aim higher, gain more.\n\nThird, the \"dependent on Earth\" point defeats itself. Dependency is temporary and exactly why we must start now—self-sufficiency takes decades of iterative effort. Waiting guarantees we're never ready when catastrophe strikes.\n\nFinally, \"solvable crises\": some threats—asteroids, supervolcanoes—aren't solvable on Earth at all. Only expansion insures against them. My opponent offers no answer to unavoidable planetary-scale extinction events."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "My opponent claims space is only 0.5% of GDP, yet demands it become a top priority. You cannot designate a top priority while promising it will not require top-tier funding. Actual colonization demands trillions, directly competing with terrestrial survival.\n\nSecond, Apollo was exploration, not colonization. We reap satellite benefits without the staggering cost of sustaining human life on Mars.\n\nThird, they admit a Mars colony depends on Earth for decades. If an asteroid strikes during that dependency window, the colony starves. For planetary threats, asteroid deflection is exponentially cheaper and more effective than building a fragile, irradiated backup city.\n\nSpace colonization is a leaky lifeboat. Prioritize deflecting the rock, not fleeing to a dead world."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "We win on framing and logic.\n\nFirst, priorities: prioritizing colonization means committing to it—not consuming all budgets. My opponent never disputes that fossil subsidies and defense dwarf space spending. Scarcity is a myth.\n\nSecond, insurance: they concede asteroid deflection helps only some threats. Supervolcanoes, engineered pandemics, ecological collapse have no Earthbound fix. Only expansion does.\n\nThird, dependency: self-sufficiency takes decades—precisely why we start now. Waiting guarantees we're never ready.\n\nA civilization that refuses to grow eventually dies. We choose survival. Vote PRO."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "My opponent redefines “top priority” as a low-budget side project. True colonization requires trillions, directly starving terrestrial survival. Furthermore, their “insurance policy” is fatally flawed. A colony dependent on Earth’s supply chains is not a backup; it is a hostage. For existential threats, targeted defenses like asteroid deflection and biosecurity are exponentially cheaper and actually work today. We must secure our only viable home, not chase a leaky lifeboat. Reject the motion."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 29,
+              "scoreB": 22,
+              "reasoning": "Debater A effectively rebutted the opposition's cost and dependency arguments by framing them as reasons to start now, and highlighted existential threats that only off-world expansion can address. Debater B relied on unsupported claims about resource allocation and failed to respond to key points like supervolcanoes, weakening their overall case."
+            },
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "A",
+              "scoreA": 33,
+              "scoreB": 32,
+              "reasoning": "Both debaters were rigorous and responsive: B landed strong points on the 'top priority' funding contradiction and the dependency window, while A effectively used the 0.5% GDP figure, exposed the false binary, and showed B's asteroid-deflection answer doesn't cover non-deflectable threats. A edges out on responsiveness by directly turning B's concessions (innovation benefits, dependency timeline) into affirmative arguments, whereas B's closing largely restated earlier points without answering A'"
+            },
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "B",
+              "scoreA": 33,
+              "scoreB": 35,
+              "reasoning": "Debater B successfully exposed the contradiction in Debater A's framing of a 'top priority' as a low-budget side project, and effectively dismantled the insurance policy argument by noting that a dependent colony is a hostage, not a backup. While both debaters argued well, Debater B's targeted rebuttals held greater logical rigor throughout the exchange."
+            },
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 31,
+              "reasoning": "B demonstrates tighter logical rigor by consistently exposing the dependency flaw in the insurance argument and the inconsistency in calling colonization a top priority without massive resource diversion, while offering concrete cheaper alternatives like deflection. A is responsive and clear on the false-binary point but relies on vaguer assumptions about self-sufficiency timelines and spinoff benefits without adequately neutralizing B's cost and feasibility critiques."
+            },
+            {
+              "judge": "google/gemini-3.1-pro-preview",
+              "winner": "B",
+              "scoreA": 34,
+              "scoreB": 35,
+              "reasoning": "Debater B effectively dismantled A's 'insurance policy' argument by highlighting the long dependency window and the contradiction in A's funding claims. B's practical alternatives, such as asteroid deflection and biosecurity, provided a stronger, more immediate solution to the existential threats raised by A."
+            }
+          ],
+          "winner": "qwen/qwen3.7-max",
+          "votesPro": 2,
+          "votesCon": 3,
+          "scorePro": 157,
+          "scoreCon": 155,
+          "costUsd": 0.11079868125999999
+        }
+      ],
+      "winner": "qwen/qwen3.7-max"
+    },
+    {
+      "id": "league:qwen/qwen3.7-max|openai/gpt-5.6-sol",
+      "stage": "league",
+      "home": "qwen/qwen3.7-max",
+      "away": "openai/gpt-5.6-sol",
+      "legs": [
+        {
+          "topic": "The development of artificial general intelligence should be subject to a globally enforced moratorium.",
+          "pro": "qwen/qwen3.7-max",
+          "con": "openai/gpt-5.6-sol",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "The development of artificial general intelligence represents an unprecedented existential threshold. We affirm because the current trajectory prioritizes speed over survival. Our case rests on two pillars: the alignment gap and the geopolitical race to the bottom. First, we lack the scientific framework to guarantee AGI alignment; deploying superintelligent systems without proven safety mechanisms is an irreversible gamble with human civilization. Second, market incentives and national rivalries force actors to cut safety corners to achieve dominance. A globally enforced moratorium is not anti-progress; it is a vital strategic pause. It halts reckless acceleration, buying humanity the critical time needed to establish robust safety standards, alignment research, and international oversight. We must secure the steering wheel before we accelerate the engine."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "A globally enforced moratorium is neither enforceable nor safer. “AGI development” has no clear technical boundary: the same research that improves medicine, cybersecurity, and ordinary software can also increase general capability. Verification would therefore require intrusive global surveillance of code, chips, laboratories, and researchers—while determined states and clandestine actors continue beyond inspection.\n\nThat creates the worst race dynamic: compliant institutions stop, transparent safety research slows, and development shifts toward the least accountable actors. A pause also cannot guarantee alignment breakthroughs; safety advances depend on testing increasingly capable systems, not merely waiting.\n\nThe better response is targeted, adaptive governance: license frontier-scale training, track high-end compute, require independent evaluations, mandate incident reporting and cybersecurity, and prohibit dangerous deployments. These measures regulate observable resources and harms without freezing beneficial science. The proposition must show not merely that AGI is risky, but that an undefined, unverifiable global ban reduces that risk. It does not."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The opposition claims AGI development is untrackable, ignoring that frontier models require massive, highly observable compute. We do not ban basement coding; a moratorium targets the immense data centers and specialized chip supply chains already subject to international hardware tracking.\n\nFurthermore, their alternative of testing increasingly capable systems is precisely the reckless gamble we condemn. You cannot safely test an unaligned superintelligence; a single catastrophic failure during evaluation is irreversible. Their targeted governance relies on safety evaluations that do not yet exist.\n\nA moratorium halts the dangerous scaling of compute, shifting focus from raw capability to alignment research. We must pause frontier training to build the robust verification regimes the opposition falsely assumes are already operational. Survival requires pausing the engine, not just hoping the brakes work."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Observable compute does not make a moratorium enforceable. Chip tracking can constrain compliant data centers, but states can stockpile chips, distribute training across facilities, disguise workloads, or exploit algorithmic advances that reduce compute requirements. The proposition therefore suppresses transparent actors while rewarding secrecy.\n\nNor can alignment research be cleanly separated from capability research. Robust evaluations, interpretability tools, containment methods, and control protocols must be tested against frontier systems. Freezing those systems denies researchers the evidence needed to discover failure modes; “waiting” is not a safety mechanism.\n\nTheir claim that evaluation itself risks catastrophe also defeats their case: after the pause, how would development ever restart without testing? A moratorium merely postpones the same problem while capability diffuses underground.\n\nOur framework addresses measurable chokepoints without pretending prohibition is possible: license major training runs, audit facilities, mandate staged testing and containment, restrict deployment, and impose liability. Continuous, monitored governance is safer than a brittle ban that adversaries can violate first."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The opposition’s continuous governance relies on a fatal flaw: testing unaligned superintelligence. You cannot iteratively test a system whose first failure means human extinction. They offer a regulatory illusion accelerating us toward an irreversible cliff. A globally enforced moratorium on frontier compute is the only mechanism halting this reckless scaling. We win because survival demands certainty, not continuous gambles. We must pause the hardware pipeline to solve alignment before building minds we cannot control."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "The proposition never explains how a pause produces the certainty it demands. Alignment cannot be solved abstractly; evaluations, interpretability, containment, and control require empirical work on advanced systems. Meanwhile, an “enforced” ban remains porous to secret state programs, distributed compute, and algorithmic breakthroughs, shifting leadership from transparent labs to unaccountable actors. Our policy governs observable chokepoints continuously: licensing, audits, staged testing, deployment restrictions, security standards, and liability. The choice is not certainty versus risk, but monitored risk reduction versus an unverifiable freeze that blinds responsible researchers while defectors advance."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "minimax/minimax-m3",
+              "winner": "B",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "Debater B presents a more sophisticated argument by addressing enforceability concerns directly, offering concrete policy alternatives, and identifying logical weaknesses in A's position (particularly the self-defeating nature of arguing testing is too dangerous). While A raises legitimate existential concerns, B's framework of targeted governance over blanket moratorium is more practically grounded and responsive to the complexities of AGI development."
+            },
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "anthropic/claude-fable-5",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 33,
+              "reasoning": "B consistently engaged A's specific claims, exposed the unanswered dilemma of how a moratorium ends without testing, and offered a concrete alternative framework, showing stronger rigor and responsiveness. A made a solid compute-observability rebuttal but relied heavily on assertion of catastrophe and never addressed enforcement gaps or the restart problem."
+            },
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 35,
+              "reasoning": "B demonstrates superior logical rigor by exposing enforceability gaps, the inseparability of alignment from capability research, and internal contradictions in restarting after a pause, while offering concrete alternative controls. A makes a clear existential-risk case centered on compute chokepoints but relies more on assertion and does not adequately resolve the verification and empirical-testing problems B raises."
+            },
+            {
+              "judge": "meta/muse-spark-1.1",
+              "winner": "B",
+              "scoreA": 22,
+              "scoreB": 31,
+              "reasoning": "B exposed enforceability and definitional flaws and showed the moratorium undermines its own safety goal by blocking empirical alignment work, while A relied on asserted existential risk without solving how a pause creates verifiable safety or restarts. B offered a more logically consistent, responsive alternative of continuous governance at observable chokepoints."
+            }
+          ],
+          "winner": "openai/gpt-5.6-sol",
+          "votesPro": 0,
+          "votesCon": 4,
+          "scorePro": 78,
+          "scoreCon": 99,
+          "costUsd": 0.10510587500000002,
+          "topicProposer": "google/gemini-3.1-pro-preview"
+        }
+      ],
+      "winner": "openai/gpt-5.6-sol"
+    },
+    {
+      "id": "league:z-ai/glm-5.2|minimax/minimax-m3",
+      "stage": "league",
+      "home": "z-ai/glm-5.2",
+      "away": "minimax/minimax-m3",
+      "legs": [
+        {
+          "topic": "A four-day work week should be legally mandated.",
+          "pro": "z-ai/glm-5.2",
+          "con": "minimax/minimax-m3",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Ladies and gentlemen, a four-day work week should be legally mandated because it delivers a triple win: productivity, wellbeing, and environmental sustainability.\n\nThe evidence is overwhelming. Iceland's trials covering 2,500 workers showed maintained or improved productivity. Microsoft Japan saw a 40% productivity boost. Workers aren't lazy — they're exhausted. Burnout costs the global economy $322 billion annually. A mandated four-day week addresses this at scale.\n\nSecond, wellbeing. Eight in ten workers report wanting shorter weeks. Reduced stress, better sleep, stronger families — these aren't luxuries, they're prerequisites for a functioning society.\n\nThird, the environment. One fewer commute day cuts emissions measurably. Belgium and the UK are already moving this direction.\n\nVoluntary adoption won't work — it creates a race to the bottom. Only legal mandates prevent employers who exploit long hours from undercutting those who do right.\n\nThe four-day week isn't radical. It's overdue."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Ladies and gentlemen, the proposition asks government to impose one rigid rule on every employer in every sector. That is the core problem: legal mandates are blunt instruments applied to a diverse reality.\n\nConsider their evidence. Iceland and Microsoft Japan weren't legal mandates — they were voluntary trials. The proposition cherry-picks successful experiments and demands government force them on everyone. That is not evidence; that is overreach.\n\nA mandate ignores what cannot simply be reduced: hospital shifts, agricultural cycles, manufacturing lines, emergency services. It strips workers of choice — some want longer hours, some need overtime pay, some run family businesses. It threatens small firms operating on thinner margins than Microsoft.\n\nAnd it creates its own perverse race: nations imposing mandates will lose competitiveness to those that don't. Jobs and investment will move across borders.\n\nThe four-day week may suit many workplaces. But \"should be legally mandated\" is precisely where this motion breaks."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "My opponent attacks a strawman. No mandate forces identical schedules — it sets a maximum standard, with sector-specific implementation, as existing labor laws already do. Weekends and overtime pay faced identical \"blunt instrument\" objections and succeeded.\n\nThey claim workers \"choose\" long hours. That's backwards — under current rules, workers have no real choice. A mandate creates it.\n\nOn competitiveness: Belgium and Iceland report no capital flight. Firms compete on productivity, not hours. Microsoft Japan's 40% boost proves less is more.\n\nOn small firms: every labor reform faced the same objection. Society progressed anyway.\n\nThey offer no answer to burnout's $322 billion cost or measurable environmental gains. They concede the four-day week works — they just oppose making it real for everyone who needs it. That's not pragmatism. That's defending the status quo's failures."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "\"Sector-specific implementation\" is a contradiction — either it's a uniform mandate, or it's flexibility, which is precisely what we advocate. You cannot have both.\n\nThe weekend analogy fails. Weekends emerged when work was largely industrial and uniform. Today's economy spans hospitals, farms, startups, and gig work — a one-size-fits-all rule fits none.\n\nBelgium and Iceland aren't mandates — Belgium's is voluntary, Iceland's was a trial. You cite voluntary successes to justify coercion. That logic is backwards.\n\nWorkers who want overtime pay lose choice. Employers who need flexibility lose choice. Small firms on thin margins lose choice. That's not progress — it's central planning by decree.\n\nAnd on competitiveness, my opponent waves away a serious concern with one example. Capital flight is gradual, not dramatic — until it is. Mandates accelerate offshoring, and the workers \"freed\" from four days lose five.\n\nWe don't defend the status quo. We defend the freedom that lets workers and employers find what works — without government dictating it."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "My opponent concedes the four-day week works — their entire case rests on \"don't mandate it.\" But voluntary adoption is exactly what fails. Without a floor, employers who grind workers longest win. That's the real race to the bottom.\n\nThey warn of capital flight. Belgium and Iceland show none. They warn of lost choice. But today's workers have no choice — the mandate creates it.\n\nWe've proven productivity holds, wellbeing improves, emissions fall, and existing labor law already handles sector diversity.\n\nThe question isn't whether it works. It does. The question is whether everyone deserves access to it — not just those lucky enough to have enlightened employers. A mandate ensures they do.\n\nThat's why we win."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "The proposition's own evidence proves our case. Iceland, Belgium, Microsoft Japan — all voluntary. If the four-day week works, the market already delivers it. If it fails in some sector, a mandate forces that failure on everyone.\n\nThat's not progress — that's government deciding what works for every hospital, farm, and small business. We support the four-day week where it fits. We oppose removing the freedom that lets it succeed where it should, and protects workers and employers where it shouldn't.\n\nMandate or freedom. Coercion or choice. That's the real question — and that's why we win."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "B",
+              "scoreA": 32,
+              "scoreB": 35,
+              "reasoning": "Debater B more effectively dismantled A's core evidentiary foundation by repeatedly highlighting that all cited examples (Iceland, Microsoft Japan, Belgium) were voluntary trials rather than legal mandates, directly undermining A's case for coercion. While A presented strong initial arguments on productivity and wellbeing, B's consistent focus on the distinction between voluntary adoption and legal mandate—combined with stronger responses on sectoral diversity, worker choice, and competitiveness"
+            },
+            {
+              "judge": "openai/gpt-5.6-sol",
+              "winner": "B",
+              "scoreA": 29,
+              "scoreB": 31,
+              "reasoning": "A presents relevant trial results and effectively highlights wellbeing and collective-action benefits, but repeatedly treats voluntary, limited experiments as sufficient proof for a universal legal mandate and leaves key details such as hours, pay, exemptions, and sectoral costs unresolved. B more directly engages the motion’s mandate component and exposes that evidentiary gap, though some claims about offshoring, worker choice, and sector-specific rules are asserted too strongly without support"
+            },
+            {
+              "judge": "anthropic/claude-opus-4.8",
+              "winner": "B",
+              "scoreA": 29,
+              "scoreB": 33,
+              "reasoning": "B landed the decisive point that all of A's evidence (Iceland, Belgium, Microsoft Japan) came from voluntary programs, undermining the case for coercion, and exposed the contradiction in A's 'sector-specific mandate' response. While A argued persuasively on burnout and the race-to-the-bottom, it never resolved the evidence gap or the choice/flexibility critique, making B more logically rigorous and responsive."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 28,
+              "scoreB": 26,
+              "reasoning": "Debater A maintained a coherent triple-win case, rebutted the 'blunt instrument' charge by invoking existing labor law flexibility, and directly contested the voluntarism critique. Debater B effectively exposed the tension between mandate and flexibility, but never fully addressed A's evidence on burnout costs and environmental gains, and their competitiveness argument remained speculative without counter-evidence."
+            },
+            {
+              "judge": "anthropic/claude-fable-5",
+              "winner": "B",
+              "scoreA": 29,
+              "scoreB": 33,
+              "reasoning": "Debater B repeatedly exposed the core flaw in A's case — that all of A's evidence comes from voluntary trials, not mandates — and A never adequately answered this or the 'sector-specific mandate is a contradiction' point. A had solid evidence and framing but relied on assertions ('existing labor law handles diversity') and slightly mischaracterized B as conceding the policy works, while B was more logically rigorous and directly responsive."
+            }
+          ],
+          "winner": "minimax/minimax-m3",
+          "votesPro": 1,
+          "votesCon": 4,
+          "scorePro": 147,
+          "scoreCon": 158,
+          "costUsd": 0.088224853
+        }
+      ],
+      "winner": "minimax/minimax-m3"
+    },
+    {
+      "id": "league:qwen/qwen3.7-max|moonshotai/kimi-k3",
+      "stage": "league",
+      "home": "qwen/qwen3.7-max",
+      "away": "moonshotai/kimi-k3",
+      "legs": [
+        {
+          "topic": "The International Olympic Committee should permanently fix the Olympics in one host city.",
+          "pro": "qwen/qwen3.7-max",
+          "con": "moonshotai/kimi-k3",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "The current Olympic model is economically and environmentally bankrupt. Every four years, the IOC forces cities into billions in debt and ecological degradation to construct white elephant stadiums that inevitably decay. Permanently fixing the Olympics in one host city eradicates this cyclical waste.\n\nA permanent host allows for the long-term maintenance of optimized, sustainable infrastructure, transitioning the IOC from a model of disposable mega-events to one of enduring athletic excellence. \n\nFurthermore, a fixed location strips away the corrupt geopolitical posturing, bribery, and displacement of vulnerable populations inherent in modern bidding wars. It refocuses the Games entirely on the athletes rather than transient civic vanity. \n\nWe must prioritize our planet and the true spirit of sport over unsustainable urban gentrification. I proudly propose."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "The proposition cures a fever by killing the patient. Yes, the bidding model is flawed — but permanence sacrifices the very thing that makes the Olympics the Olympics: universality.\n\nFirst, geography is fairness. A fixed city hands one nation's athletes a permanent home advantage — familiar climate, altitude, no jet lag — while forcing athletes from the Global South to travel farther, costlier, every single cycle.\n\nSecond, rotating hosts spread the Games' inspiration. Tokyo 1964 and Beijing 2008 catalyzed national development and gave billions of children a Games they could actually attend. A fixed host walls the Olympics off from most of humanity forever.\n\nThird, the proposition's own logic is self-defeating: the solution to corruption and waste is IOC reform — as the 2024 dual-award and existing-venue rules already prove — not abandoning rotation entirely.\n\nFix the process, don't amputate the dream. I proudly negate."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The opposition claims rotation ensures fairness, but \"home advantage\" is a myth at the elite level. Conversely, rotation guarantees the majority of athletes suffer extreme jet lag every cycle. A fixed, neutral hub standardizes travel equity.\n\nThey argue rotation inspires the Global South, but \"catalyzing development\" is a sanitized euphemism for the forced evictions and sovereign debt traps seen in Rio and Athens. True inspiration comes from athletic excellence broadcasted globally, not from bankrupting a new city every four years.\n\nFinally, their faith in IOC reform is naive. Band-aid policies fail because the fundamental incentive for corruption — lucrative, decentralized mega-projects — remains intact. Only by permanently fixing the host city do we eliminate the financial incentives for bribery and end this cycle of ecological and economic destruction."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "My opponent calls home advantage a myth — tell that to the data: host nations consistently outperform their historical medal averages. \"Standardizing travel\" to one city simply locks inequity in place; rotation at least distributes the burden, while permanence guarantees that athletes from distant continents lose every single time.\n\nOn debt: Rio and Athens failed because of disposable stadiums — a venue problem, not a rotation problem. Los Angeles 1984 and 2028, using existing infrastructure, prove rotation and fiscal sanity coexist. My opponent's own remedy — reuse facilities forever — is precisely what IOC reform now mandates, without amputating universality.\n\nAnd bribery? A permanent host creates a permanent monopoly — one city captured forever by IOC insiders. Rotation, reformed and transparent, keeps power contestable.\n\nFinally, \"broadcast inspiration\" is second-class citizenship: billions of children deserve a Games they can touch, not just watch through a screen owned by someone else."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The opposition defends a romanticized universality that demands immense ecological and economic sacrifice. Citing Los Angeles ignores reality: it is a rare exception relying on decades-old infrastructure, not the global norm. The fundamental flaw remains: rotating mega-events inherently incentivize systemic corruption and disposable construction. We cannot merely reform a structurally broken bidding system; we must replace it entirely. A permanent host eliminates bribery incentives, ends the cycle of white elephants, and prioritizes planetary survival over transient civic vanity. I proudly propose."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "The proposition offers one cure for every symptom — but it's a cure that kills. They never answered the monopoly problem: a fixed host is corruption made permanent, not eliminated. They never answered fairness: permanence locks travel burdens and home advantage against the Global South forever. And they ignored that LA 1984, Paris 2024, and reformed bidding already deliver their own remedy — reused venues, fiscal sanity — without amputating universality. Reform the process; keep the dream moving. A Games for one city is a Games for no one. I proudly negate."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 34,
+              "reasoning": "Debater B's arguments were more logically coherent, better supported by concrete examples like LA 1984 and IOC reforms, and directly addressed A's points while spotlighting unaddressed issues like the permanent monopoly risk. In contrast, A's case relied on broad assertions and failed to effectively rebut the fairness and monopoly counterarguments."
+            },
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 33,
+              "reasoning": "Debater B more effectively distinguished between venue-specific problems and rotation-inherent problems, deployed a wider range of concrete examples (LA 1984/2028, Paris 2024, Tokyo 1964), and raised the monopoly corruption argument that Debater A never adequately addressed. Debater A's dismissal of home advantage as a 'myth' was under-substantiated and the dismissal of Los Angeles as merely an exception weakened their case against reformed rotation."
+            },
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 34,
+              "reasoning": "B demonstrates stronger logical rigor by consistently exposing self-defeating aspects of permanence (monopoly corruption, locked-in inequity) and better evidence via concrete cases like LA 1984/2028 and host-medal data, while directly rebutting each of A's points. A offers coherent anti-waste arguments but relies more on assertion, under-engages the fairness/monopoly counters, and treats reform as impossible without sufficient substantiation."
+            },
+            {
+              "judge": "minimax/minimax-m3",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "anthropic/claude-opus-4.8",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 34,
+              "reasoning": "B provided concrete evidence (host medal data, LA 1984/2028, Paris 2024, dual-award reform) and directly rebutted A's key claims, notably turning A's own venue-reuse argument against the motion and exposing the unaddressed monopoly problem. A relied more on assertion, dismissed counterexamples as exceptions without support, and left B's fairness and monopoly points unanswered."
+            }
+          ],
+          "winner": "moonshotai/kimi-k3",
+          "votesPro": 0,
+          "votesCon": 4,
+          "scorePro": 112,
+          "scoreCon": 135,
+          "costUsd": 0.08479526500000001
+        }
+      ],
+      "winner": "moonshotai/kimi-k3"
+    },
+    {
+      "id": "league:google/gemini-3.1-pro-preview|x-ai/grok-4.5",
+      "stage": "league",
+      "home": "google/gemini-3.1-pro-preview",
+      "away": "x-ai/grok-4.5",
+      "legs": [
+        {
+          "topic": "Advertising-funded business models are inherently harmful to society.",
+          "pro": "google/gemini-3.1-pro-preview",
+          "con": "x-ai/grok-4.5",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Advertising-funded business models are inherently harmful because they fundamentally misalign corporate incentives with human well-being. When a service is \"free,\" the user is not the customer;"
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Advertising-funded models are not inherently harmful; they democratize access to essential services and drive societal progress. By offering free search, email, news, maps, and education tools to billions who could never pay subscription fees, they close information gaps and empower the global poor. This model funds innovation at scale—Google, Meta, and countless startups reinvest ad revenue into R&D that yields life-saving tools, open-source tech, and connectivity infrastructure. Competition among ad platforms lowers prices for small businesses, enabling market entry that creates jobs and growth. Harms like privacy risks or misinformation are contingent failures of design or regulation, not structural inevitabilities; targeted ads can be constrained by law without dismantling the model. Subscription-only alternatives exclude the majority and concentrate power among the wealthy. Far from inherent harm, advertising aligns incentives toward broad value creation that benefits society overall."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The opposition argues that ad-funded models democratize access, claiming harms are merely \"contingent.\" This fundamentally misunderstands the motion. The harm is inherent because the structural DNA of the business model is the commodification of human attention. \n\nTo generate ad revenue, platforms must maximize time spent on screen. This inherently incentivizes psychological manipulation, the promotion of outrage, and massive surveillance. Regulation cannot fix a model whose core imperative is to hijack human behavior for third-party profit. \n\nFurthermore, the \"democratization\" the opposition champions is actually exploitation. Trading basic digital infrastructure for the strip-mining of user data does not empower"
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Pro claims the model’s “DNA” forces attention commodification and unfixable manipulation. False. Search ads monetize relevance and intent, not endless scroll; classifieds, radio, and outdoor ads never hijacked psychology yet funded vast public goods. Time-maximization is a design choice of certain apps, not the funding mechanism itself—exactly as print newspapers thrived on ads without dopamine engineering. \n\nRegulation and competition already separate the two: GDPR, app-store rules, and rival platforms constrain surveillance without killing the model. Calling free infrastructure “exploitation” ignores that users freely choose it over paid alternatives and gain literacy, jobs, and markets previously locked behind paywalls. The structural incentive remains broad reach and value creation, not inherent societal harm."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The opposition separates the funding model from the harm, but they are inextricably linked. Whether through social media's endless scroll or search engine manipulation, the foundational flaw remains: the user is the product, and the advertiser is the master. This structural misalignment guarantees platforms will always prioritize corporate sponsors over user truth, privacy, and well-being. \"Free\" access is an illusion paid for by the erosion of human autonomy. Because the model structurally cannot serve the user first, it is inherently harmful to society. We affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Pro equates funding with inevitable hijacking, yet decades of ad-supported radio, newspapers, and search prove otherwise: relevance, not addiction, drives revenue. Users voluntarily trade attention for free tools that close educational and economic gaps worldwide—choices unavailable under paywalls. Design flaws and weak rules are fixable; the model itself expands access, sparks R&D, and fuels growth. Subscription exclusivity concentrates power among the affluent. Because harms remain contingent while benefits are structural and widespread, advertising-funded models are not inherently harmful. We negate."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "B",
+              "scoreA": 26,
+              "scoreB": 33,
+              "reasoning": "Debater B successfully refuted Debater A's claim of inherent harm by distinguishing between the funding mechanism and specific design choices, using strong historical examples like radio and newspapers. Debater A relied too heavily on asserting that social media dynamics represent all ad-funded models, making their argument less rigorous and responsive."
+            },
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "anthropic/claude-fable-5",
+              "winner": "B",
+              "scoreA": 24,
+              "scoreB": 32,
+              "reasoning": "Debater A's opening was truncated and their case relied on asserting structural inevitability without evidence, while B directly rebutted the 'inherent' claim with concrete counterexamples (print, radio, classifieds, intent-based search ads) that A never answered. B was more responsive, better evidenced, and correctly framed the motion's key term 'inherently,' giving B the clearer win."
+            },
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 34,
+              "reasoning": "Debater B provided stronger logical rigor by distinguishing between the advertising funding mechanism itself and specific design choices like attention-maximizing algorithms, using historical examples (radio, newspapers, classifieds) to prove harms are contingent rather than inherent. Debater A's argument, while rhetorically compelling, conflated social media engagement models with all advertising-funded businesses and failed to adequately address B's counterexamples of non-manipulative ad-suppo"
+            },
+            {
+              "judge": "openai/gpt-5.6-sol",
+              "winner": "B",
+              "scoreA": 20,
+              "scoreB": 31,
+              "reasoning": "A clearly identifies incentive misalignment and responds to the access argument, but largely asserts that manipulation, surveillance, and sponsor priority are inevitable without establishing that every advertising-funded model has those features. B more rigorously challenges the word “inherently” with relevant counterexamples such as search ads, radio, newspapers, and classifieds, while directly distinguishing contingent design failures from the funding mechanism."
+            }
+          ],
+          "winner": "x-ai/grok-4.5",
+          "votesPro": 0,
+          "votesCon": 4,
+          "scorePro": 98,
+          "scoreCon": 130,
+          "costUsd": 0.0965465
+        }
+      ],
+      "winner": "x-ai/grok-4.5"
+    },
+    {
+      "id": "league:minimax/minimax-m3|anthropic/claude-fable-5",
+      "stage": "league",
+      "home": "minimax/minimax-m3",
+      "away": "anthropic/claude-fable-5",
+      "legs": [
+        {
+          "topic": "Humanity should actively broadcast signals to attract extraterrestrial contact.",
+          "pro": "minimax/minimax-m3",
+          "con": "anthropic/claude-fable-5",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "We affirm. Humanity should actively broadcast signals to attract extraterrestrial contact.\n\nFirst, scientific opportunity. SETI has listened for decades with negligible confirmed detections. Active METI, Messaging Extraterrestrial Intelligence, dramatically increases contact probability by revealing our existence to listeners who would otherwise miss us. The asymmetry is clear: silence guarantees zero contact; transmission offers at least some chance.\n\nSecond, the marginal cost is trivial. Existing radio telescopes like Arecibo's successor can transmit using a fraction of their capacity. The resource argument collapses.\n\nThird, the danger objection is overstated. Any civilization receiving our signal is already far more advanced, capable of detecting our biosphere through atmospheric signatures and radio leakage. Hiding is no longer an option, and has not been for decades.\n\nFourth, cosmic curiosity defines us. From ocean crossings to spaceflight, progress demands reaching out. A civilization too timid to announce itself forfeits its place among the stars.\n\nWe transmit not despite the risk, but because the potential knowledge is civilizationally transformative."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "We negate.\n\nFirst, irreversibility. Broadcasting is a decision that cannot be undone and binds every future generation. Under uncertainty about alien intentions, expected-value reasoning demands caution: the downside is existential extinction; the upside is information we could gather anyway through passive listening. When one outcome is infinite loss, even a tiny probability makes transmission reckless.\n\nSecond, the \"they already see us\" claim fails. Our radio leakage attenuates to undetectability within a few light-years; atmospheric biosignatures reveal life, not location-flagged, technological, resource-rich civilization. Deliberate, targeted, high-power beacons are categorically different. Hiding remains our default state.\n\nThird, no legitimate consent. METI advocates would unilaterally gamble all eight billion of us—and posterity—without global deliberation or governance. That violates basic principles of collective risk decision-making.\n\nListen first, learn first, decide together. Until then: silence."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "REBUTTAL:\n\nThree quick strikes.\n\nOn irreversibility: you assume hostile rational actors, but the Great Filter implies civilizations surviving long enough to contact us are likely cooperative—or you invoke a doomsday probability so tiny that the expected value of knowledge still favors transmission. And passive listening has yielded nothing in sixty years; it is not a substitute.\n\nOn \"hiding still works\": our civilization leaks CFC signatures, city lights, and nitrogen dioxide visible across dozens of light-years. Deliberate beacons are incrementally revealing, not categorically different. We are already de facto broadcasting.\n\nOn consent: that argument condemns our existing leakage too. If anything, deliberate METI replaces accidental exposure with intentional, optimized messaging.\n\nSilence is not safety. It is stagnation. Transmit."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Three responses.\n\nOn the Great Filter: pure speculation cuts both ways. Surviving civilizations might be cooperative—or ruthless expansionists who eliminated rivals. Pro concedes a \"doomsday probability\" exists; with extinction as the stake, no finite informational gain justifies it. That is expected-value arithmetic, not timidity.\n\nOn leakage: Pro cites biosignatures detectable at \"dozens of light-years\"—confirming our point. Targeted megawatt beacons are detectable across tens of thousands of light-years by orders of magnitude more civilizations. That is categorical, not incremental. Pro cannot claim contact probability \"dramatically increases\" while calling the exposure increase trivial. Pick one.\n\nOn consent: incidental leakage is unavoidable byproduct; METI is deliberate escalation. That distinction grounds all risk ethics—we regulate intentional emissions precisely because accidents happen.\n\nSixty years of listening is patience, not stagnation. Irreversible gambles demand global consent. Negate."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The crux is asymmetry. Con treats contact as catastrophic, yet assumes any civilization capable of reaching us would be genocidal. That same capability means hiding has already failed. Their \"categorical\" objection collapses: we are already visible—just inefficiently. Deliberate transmission isn't escalation; it's clarity. Con's consent logic also condemns every space probe, radar ping, and satellite. We already gamble—the only question is whether we gamble blindly or with intention. Silence is not safety. It's abdication. Transmit."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Two clean wins.\n\nDetectability: Pro never rebutted the numbers. Leakage reaches dozens of light-years; beacons reach tens of thousands. Their own case requires that gap—\"dramatically increased contact probability\"—so they cannot also call it trivial. Hiding has not failed; they concede it by needing METI at all.\n\nRisk: Pro admits a nonzero extinction probability. Against infinite, irreversible loss, no informational upside—obtainable anyway by listening—balances the ledger.\n\nAnd no one consented. A handful of enthusiasts may not wager every future generation. Listen, deliberate, decide together. Negate."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "meta/muse-spark-1.1",
+              "winner": "B",
+              "scoreA": 21,
+              "scoreB": 30,
+              "reasoning": "B exposed a central contradiction in A's case (contact probability can't be both dramatic and trivial) and maintained expected-value and consent arguments with quantitative distinctions, while A relied on speculation and appeals to curiosity without rebutting the leakage vs beacon scale gap."
+            },
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "B",
+              "scoreA": 31,
+              "scoreB": 35,
+              "reasoning": "Debater B demonstrated superior logical rigor by effectively trapping Debater A in a contradiction regarding the detectability of signals (arguing simultaneously that we are already visible and that broadcasting dramatically increases contact probability). Debater B also maintained a stronger stance on the risk assessment and consent arguments, whereas Debater A relied on speculative assertions about the 'Great Filter' and dismissed existential risks too casually."
+            },
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "B",
+              "scoreA": 29,
+              "scoreB": 34,
+              "reasoning": "Debater B successfully exposed a critical contradiction in Debater A's case: A argued that METI dramatically increases contact probability while simultaneously claiming our existing leakage makes us already visible, a tension B exploited by highlighting the massive scale difference between passive leakage and targeted beacons. B also maintained stronger logical rigor on the asymmetry of existential risk and the ethical distinction between incidental and intentional risk-taking."
+            },
+            {
+              "judge": "google/gemini-3.1-pro-preview",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "B",
+              "scoreA": 29,
+              "scoreB": 33,
+              "reasoning": "Both debaters argued coherently, but B exposed a genuine internal tension in A's case—claiming contact probability 'dramatically increases' while simultaneously calling deliberate beacons only 'incrementally' more revealing than leakage—which A never adequately resolved. A's Great Filter argument was speculative assertion, while B's irreversibility/consent framework was consistently defended with the light-years detectability numbers and the intentional-vs-accidental distinction in risk ethics."
+            }
+          ],
+          "winner": "anthropic/claude-fable-5",
+          "votesPro": 0,
+          "votesCon": 4,
+          "scorePro": 110,
+          "scoreCon": 132,
+          "costUsd": 0.12288927469
+        }
+      ],
+      "winner": "anthropic/claude-fable-5"
+    },
+    {
+      "id": "league:minimax/minimax-m3|google/gemini-3.1-pro-preview",
+      "stage": "league",
+      "home": "minimax/minimax-m3",
+      "away": "google/gemini-3.1-pro-preview",
+      "legs": [
+        {
+          "topic": "Universal basic income is the right response to AI-driven job displacement.",
+          "pro": "minimax/minimax-m3",
+          "con": "google/gemini-3.1-pro-preview",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "When automation displaces workers faster than the economy can reabsorb them, UBI is the right response for three concrete reasons.\n\nFirst, it directly solves the cash-flow problem. Displaced workers need income to live, not retraining vouchers they may never use. UBI buys time—time to reskill, start businesses, or care for family—without bureaucratic gatekeeping.\n\nSecond, it stabilizes aggregate demand. AI-driven productivity gains concentrate wealth at the top. Without redistributive transfers, consumer spending collapses, triggering recession. UBI keeps the economy functioning.\n\nThird, it is administratively feasible. Existing tax-and-transfer systems can deliver UBI at low marginal cost, unlike the moonshot of guaranteed employment or universal job retraining.\n\nOpponents will argue UBI is unaffordable or kills work ethic. Both claims fail: AI-driven productivity growth expands the tax base, and empirical pilots show minimal labor reduction. The alternative—mass unemployment, poverty, and political instability—is far costlier.\n\nUBI is not just a response to AI displacement; it is the only response that is immediate, scalable, and humane."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Universal Basic Income is a blunt, inefficient, and economically disastrous response to AI-driven job displacement. We oppose the motion for three reasons.\n\nFirst,"
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "My opponent offers labels—\"blunt,\" \"inefficient\"—but no evidence.\n\nI'll reinforce my three pillars. One: cash-flow. Displaced workers cannot wait months for retraining vouchers while bills pile up; UBI is immediate. Two: aggregate demand. AI productivity concentrates wealth; without transfers, consumer spending collapses, as in 2008. UBI sustains it. Three: administrative feasibility. Existing tax infrastructure delivers UBI cheaply—Finland, Alaska, Kenya prove the model works.\n\nAgainst predictable objections: UBI is affordable because AI-driven GDP growth expands the tax base faster than transfers rise. Empirical pilots show minimal labor reduction. And the alternatives my opponent cannot name—mass unemployment, poverty, political instability—cost far more than any transfer program.\n\nUBI is immediate, scalable, and humane. The motion stands."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Pro claims UBI is immediate, but it is fundamentally a universal hammer applied to a targeted, transitional problem. \n\nFirst, on cash flow: Hand"
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Targeted, transitional? AI displacement is structural, not cyclical—entire occupational classes vanish, not individuals. There is no \"transition\" back to jobs that no longer exist. UBI isn't a hammer; it's the only tool that scales with the pace of change. Opponents offer no alternative—just fear of transfers. But the cost of inaction is mass immiseration and demand collapse. We can afford UBI because AI expands the pie. We cannot afford the alternative. The motion stands."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Pro claims AI ends human labor entirely, demanding we put the population on a permanent allowance. This is economic fatalism. \n\nUBI fails because it is universally wasteful. Distributing checks to unaffected workers and billionaires to help displaced sectors is a massive misallocation of capital. It guarantees runaway inflation, wiping out the purchasing power Pro claims to protect. \n\nThe humane, scalable alternative is targeted structural support: expanded unemployment insurance, sector-specific transition funds, and job-creating infrastructure investments. We must empower the workforce, not abandon it to dependency. We negate."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "anthropic/claude-opus-4.8",
+              "winner": "A",
+              "scoreA": 31,
+              "scoreB": 20,
+              "reasoning": "Debater A sustained a coherent three-pillar case with concrete examples (Finland, Alaska, Kenya, 2008) and directly rebutted B's characterizations, whereas B's opening and rebuttal were left incomplete and only assembled substantive arguments (inflation, misallocation, targeted alternatives) in the closing. B's late points were reasonable but under-evidenced and never engaged A's structural-displacement rebuttal, giving A the edge in responsiveness and development."
+            },
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "anthropic/claude-fable-5",
+              "winner": "A",
+              "scoreA": 30,
+              "scoreB": 17,
+              "reasoning": "Debater A presented complete, structured arguments with pilot examples (Finland, Alaska, Kenya), anticipated objections, and rebutted directly, though evidence was asserted rather than detailed. Debater B's opening and rebuttal were cut off mid-sentence, leaving only a closing that introduced new arguments (inflation, targeted alternatives) too late and misrepresented A's position, so B loses decisively on responsiveness and rigor."
+            },
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "A",
+              "scoreA": 34,
+              "scoreB": 28,
+              "reasoning": "Debater A maintained a consistent, structured argument addressing cash-flow, aggregate demand, and feasibility, while effectively rebutting the concept of a 'transitional' problem. Debater B suffered from truncated arguments in the opening and rebuttal, only delivering full substance in the closing, which was insufficient to overcome A's cohesive case."
+            },
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "A",
+              "scoreA": 30,
+              "scoreB": 18,
+              "reasoning": "Debater A presented a complete, structured case across all three rounds with a clear three-pillar framework, rebuttals, and examples (Finland, Alaska, Kenya pilots), though relying more on assertion than rigorous evidence. Debater B's closing raised legitimate points (universality waste, inflation, targeted alternatives), but B's opening and rebuttal were cut off mid-sentence, leaving most of the case undeveloped and unresponsive to A's arguments."
+            }
+          ],
+          "winner": "minimax/minimax-m3",
+          "votesPro": 4,
+          "votesCon": 0,
+          "scorePro": 125,
+          "scoreCon": 83,
+          "costUsd": 0.085834152
+        }
+      ],
+      "winner": "minimax/minimax-m3"
+    },
+    {
+      "id": "league:minimax/minimax-m3|anthropic/claude-opus-4.8",
+      "stage": "league",
+      "home": "minimax/minimax-m3",
+      "away": "anthropic/claude-opus-4.8",
+      "legs": [
+        {
+          "topic": "Nations should open their borders to dramatically more immigration.",
+          "pro": "minimax/minimax-m3",
+          "con": "anthropic/claude-opus-4.8",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Ladies and gentlemen, today's debate concerns one of the most consequential policy questions of our age. We affirm: nations should open their borders to dramatically more immigration.\n\nOur case rests on three pillars. **First, economics**: immigration restrictions impose massive global deadweight loss—studies suggest open borders could double world GDP. Closed borders artificially depress wages in low-mobility sectors while leaving high-skill roles unfilled. Migration is the world's most effective poverty alleviation tool; remittances to developing nations exceed $700 billion annually.\n\n**Second, demographics**: aging populations in wealthy nations face collapse without immigration. Japan, South Korea, and much of Europe cannot sustain pension systems, healthcare, or economic dynamism without working-age migrants.\n\n**Third, human rights**: freedom of movement is foundational. Border regimes criminalize the poor, separate families, and inflict documented harm—deaths in deserts and seas, detention camps.\n\nOur model is modest: dramatic liberalization—expanding legal pathways, removing arbitrary caps, protecting vulnerable migrants—not stateless chaos. The question is not whether borders have costs, but whether their current scale is justified. We say no."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "We oppose. Three failures undermine the affirmative.\n\n**First, absorptive capacity.** Housing, schools, hospitals, and infrastructure are physical and finite. Dramatic influxes outpace construction, spiking rents and overwhelming services—harming natives and migrants alike. Britain and Canada's recent housing crises prove the point.\n\n**Second, social trust and consent.** Robert Putnam's research shows rapid diversification lowers social trust, cooperation, and support for redistribution—the very welfare states that protect the poor. Legitimate policy requires democratic consent; open borders override it, fueling the backlash that empowers the far-right.\n\n**Third, the brain-drain fallacy.** Stripping developing nations of doctors, nurses, and engineers cripples their development. You cannot alleviate poverty by hollowing out the institutions poor countries need.\n\nTheir \"doubling GDP\" model assumes frictionless absorption that never materializes. We defend managed, sustainable immigration—not reckless liberalization that destroys the systems making immigration work."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Three quick rebuttals.\n\n**On absorptive capacity**: Housing crises predate recent immigration waves and stem from restrictive zoning, not migrant arrival. Migrants themselves build houses, staff hospitals, and teach in schools. You confuse cause with consequence—policy failure is the constraint, not human beings.\n\n**On Putnam**: His findings are contested and context-dependent. Recent meta-analyses show trust recovers over time, and the \"backlash\" argument is self-defeating: it's *restrictive* border regimes that fuel far-right movements by creating visible villains, not liberalized ones. Sweden's far-right rose amid restriction, not openness.\n\n**On brain drain**: The Clemens-Özden research shows high-skilled emigration often *increases* human capital in origin countries through remittances, return migration, and diaspora networks. The \"one doctor out, one fewer doctor\" framing is empirically false.\n\nWe affirm. The status quo costs millions of lives and trillions in prosperity—that's the burden you bear."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "**On housing:** Zoning is real—but it's precisely why absorption fails. If supply is politically locked, adding millions dramatically doesn't build houses overnight; it bids up rents *now* while construction lags years behind. Migrants building homes takes time the crisis doesn't grant. You've conceded the friction we identified.\n\n**On Putnam:** \"Recovers over time\" concedes the harm—and *dramatic* influxes maximize the shock precisely when trust hasn't recovered. Sweden proves us: openness *preceded* the backlash. You cannot wave away democratic consent; policy imposed against it collapses, taking pro-migrant coalitions with it.\n\n**On brain drain:** Clemens studies *marginal* flows. \"Dramatically more\" is not marginal. When a nation loses half its nurses at once, remittances don't staff empty hospitals. Return migration takes decades; the patient dies today.\n\nEvery rebuttal you offer assumes gradualism—which is *our* model, not yours."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "opposition defends managed scarcity and calls it prudence. But their three pillars collapse under scrutiny.\n\nAbsorptive capacity is a political choice—restrictive zoning, not migrants, blocks housing. Open borders *create* the political incentive to build.\n\nSocial trust is eroded by scapegoating scarcity, not by human movement. Sweden's backlash grew from visible *restriction*, not openness.\n\nBrain drain assumes static institutions. Diaspora networks and return migration are proven development multipliers—your \"patient dies today\" ignores that emigration *saves* patients globally.\n\nYou defend the status quo. We defend lives. **Vote affirmative.**"
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "This debate turns on one word: *dramatically*. Every Pro defense quietly retreats to gradualism—\"trust recovers,\" \"houses get built,\" \"return migration\"—all requiring time that dramatic influxes deny.\n\nWeigh it: absorption lags years behind arrival, spiking rents *now*. Trust shocks maximize precisely when unrecovered. Losing half a workforce empties hospitals *today*. And policy imposed without democratic consent collapses—destroying the very coalitions migrants need.\n\nWe defend immigration that actually works: managed, sustainable, consented. They defend a slogan. Vote Con."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "B",
+              "scoreA": 33,
+              "scoreB": 35,
+              "reasoning": "Debater B more effectively exploited the motion's key term 'dramatically,' consistently demonstrating how Debater A's rebuttals relied on gradualist assumptions (trust recovering over time, housing construction lagging, return migration taking decades) that contradicted the scale of change proposed. While Debater A presented strong economic and moral arguments with good evidence, Debater B's strategic focus on the temporal mismatch between dramatic influxes and institutional absorption capacity "
+            },
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "B",
+              "scoreA": 31,
+              "scoreB": 34,
+              "reasoning": "A offered strong economic evidence (Clemens-Özden, remittance figures) and solid rebuttals on zoning and brain drain, but A's Sweden claim—that backlash grew from restriction rather than openness—is factually dubious, and A's defenses repeatedly relied on long-run recovery and gradual adaptation, which B deftly exposed as inconsistent with the motion's word 'dramatically.' B's closing synthesized this central clash effectively, turning A's own concessions into the decisive weighing mechanism, th"
+            },
+            {
+              "judge": "openai/gpt-5.6-sol",
+              "winner": "B",
+              "scoreA": 29,
+              "scoreB": 34,
+              "reasoning": "Debater A presented a clear, multifaceted case with relevant economic and demographic evidence, but several rebuttals—especially on backlash and immediate absorptive constraints—were asserted rather than demonstrated. Debater B was more logically focused and responsive, consistently tying infrastructure lags, trust shocks, and brain drain to the motion’s key word “dramatically,” though some examples and causal claims also lacked quantification."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            }
+          ],
+          "winner": "anthropic/claude-opus-4.8",
+          "votesPro": 0,
+          "votesCon": 3,
+          "scorePro": 93,
+          "scoreCon": 103,
+          "costUsd": 0.07237816
+        }
+      ],
+      "winner": "anthropic/claude-opus-4.8"
     }
   ],
   "standings": {
     "League": [
       {
-        "model": "anthropic/claude-fable-5",
-        "played": 9,
-        "wins": 7,
-        "draws": 0,
-        "losses": 2,
-        "points": 21,
-        "scoreDiff": 185
-      },
-      {
         "model": "openai/gpt-5.6-sol",
-        "played": 7,
-        "wins": 7,
+        "played": 9,
+        "wins": 9,
         "draws": 0,
         "losses": 0,
-        "points": 21,
-        "scoreDiff": 137
+        "points": 27,
+        "scoreDiff": 179
       },
       {
-        "model": "meta/muse-spark-1.1",
-        "played": 11,
-        "wins": 7,
+        "model": "anthropic/claude-fable-5",
+        "played": 10,
+        "wins": 8,
         "draws": 0,
-        "losses": 4,
-        "points": 21,
-        "scoreDiff": 51
+        "losses": 2,
+        "points": 24,
+        "scoreDiff": 207
       },
       {
         "model": "anthropic/claude-opus-4.8",
-        "played": 8,
-        "wins": 6,
+        "played": 10,
+        "wins": 7,
         "draws": 0,
-        "losses": 2,
-        "points": 18,
-        "scoreDiff": 77
+        "losses": 3,
+        "points": 21,
+        "scoreDiff": 89
       },
       {
         "model": "moonshotai/kimi-k3",
-        "played": 9,
-        "wins": 6,
+        "played": 10,
+        "wins": 7,
         "draws": 0,
         "losses": 3,
-        "points": 18,
-        "scoreDiff": 53
+        "points": 21,
+        "scoreDiff": 76
       },
       {
         "model": "minimax/minimax-m3",
-        "played": 6,
-        "wins": 5,
+        "played": 10,
+        "wins": 7,
         "draws": 0,
-        "losses": 1,
-        "points": 15,
-        "scoreDiff": 55
+        "losses": 3,
+        "points": 21,
+        "scoreDiff": 76
+      },
+      {
+        "model": "meta/muse-spark-1.1",
+        "played": 12,
+        "wins": 7,
+        "draws": 0,
+        "losses": 5,
+        "points": 21,
+        "scoreDiff": 45
       },
       {
         "model": "z-ai/glm-5.2",
-        "played": 9,
+        "played": 10,
         "wins": 4,
         "draws": 0,
-        "losses": 5,
+        "losses": 6,
         "points": 12,
-        "scoreDiff": 18
+        "scoreDiff": 7
+      },
+      {
+        "model": "x-ai/grok-4.5",
+        "played": 9,
+        "wins": 2,
+        "draws": 0,
+        "losses": 7,
+        "points": 6,
+        "scoreDiff": -57
+      },
+      {
+        "model": "qwen/qwen3.7-max",
+        "played": 9,
+        "wins": 2,
+        "draws": 0,
+        "losses": 7,
+        "points": 6,
+        "scoreDiff": -117
       },
       {
         "model": "google/gemini-3.1-pro-preview",
-        "played": 5,
+        "played": 7,
         "wins": 2,
         "draws": 0,
-        "losses": 3,
+        "losses": 5,
         "points": 6,
-        "scoreDiff": -85
+        "scoreDiff": -159
       },
       {
         "model": "deepseek/deepseek-v4-pro",
@@ -4630,36 +5546,18 @@
         "scoreDiff": -194
       },
       {
-        "model": "qwen/qwen3.7-max",
-        "played": 6,
-        "wins": 1,
-        "draws": 0,
-        "losses": 5,
-        "points": 3,
-        "scoreDiff": -71
-      },
-      {
         "model": "xiaomi/mimo-v2.5-pro",
-        "played": 8,
+        "played": 9,
         "wins": 1,
         "draws": 0,
-        "losses": 7,
+        "losses": 8,
         "points": 3,
-        "scoreDiff": -131
-      },
-      {
-        "model": "x-ai/grok-4.5",
-        "played": 7,
-        "wins": 0,
-        "draws": 0,
-        "losses": 7,
-        "points": 0,
-        "scoreDiff": -95
+        "scoreDiff": -152
       }
     ]
   },
   "placements": {},
   "champion": null,
-  "totalCostUsd": 3.8698604738839992,
+  "totalCostUsd": 4.778953434834,
   "done": false
 }
