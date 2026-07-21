@@ -4,7 +4,7 @@
 process.env.API_DIVISION ??= "flagship"; // public site = one league, no dev division
 import { mkdirSync, rmSync, writeFileSync, copyFileSync } from "node:fs";
 import { join } from "node:path";
-import { summary, debateList, stats, debateDetail, verifiedSummary, gapTable, forecastView } from "./api.js";
+import { summary, debateList, stats, debateDetail, verifiedSummary, gapTable, forecastView, agenticView } from "./api.js";
 import { ROOT } from "./paths.js";
 
 const out = process.argv[2] ?? join(ROOT, "dist");
@@ -22,6 +22,7 @@ writeFileSync(join(out, "api", "stats.json"), JSON.stringify(stats()));
 writeFileSync(join(out, "api", "verified.json"), JSON.stringify(verifiedSummary()));
 writeFileSync(join(out, "api", "gap.json"), JSON.stringify(gapTable()));
 writeFileSync(join(out, "api", "forecast.json"), JSON.stringify(forecastView(Date.now())));
+writeFileSync(join(out, "api", "agentic.json"), JSON.stringify(agenticView(Date.now())));
 // A static snapshot has no live match; the leaderboard and archive carry the site.
 writeFileSync(join(out, "api", "live.json"), JSON.stringify({ status: "idle" }));
 for (const d of list) {

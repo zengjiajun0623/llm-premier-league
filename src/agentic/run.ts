@@ -51,7 +51,11 @@ export interface AgenticFile {
 }
 
 export function agenticRoster(): string[] {
-  return isSim() ? SIM_ROSTER : FLAGSHIP.competitors;
+  if (isSim()) return SIM_ROSTER;
+  // AGENTIC_MODELS (comma-separated slugs) scopes a run to a subset - used for
+  // cheap pilot poses before the full-roster nightly.
+  const override = process.env.AGENTIC_MODELS?.split(",").map((s) => s.trim()).filter(Boolean);
+  return override && override.length ? override : FLAGSHIP.competitors;
 }
 
 function isSim(): boolean {

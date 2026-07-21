@@ -12,6 +12,8 @@ import type { LegResult } from "./verified/types.js";
 import type { RunFile } from "./verified/run.js";
 import { loadAllForecasts } from "./forecast/run.js";
 import { forecastSummary } from "./forecast/score.js";
+import { agenticSummary } from "./agentic/score.js";
+import { readFileSync as _rf, existsSync as _ex } from "node:fs";
 
 export function allSeasons(): Season[] {
   const out: Season[] = [];
@@ -355,4 +357,27 @@ export function stats() {
 // fills in as questions mature. now() is read at request/export time.
 export function forecastView(nowMs: number) {
   return forecastSummary(loadAllForecasts(), nowMs);
+}
+
+// ---------- League 4 (agentic forecasting) ----------
+// Inlines each research transcript (compact tool-call trace) so the static
+// site can render "watch the model research" without file access.
+export function agenticView(nowMs: number) {
+  const s = agenticSummary(nowMs);
+  const traces: Record<string, { tool: string; arg: string; result: string }[]> = {};
+  for (const ref of s.transcripts.slice(0, 400)) {
+    try {
+      if (!_ex(ref.path)) continue;
+      const lines = _rf(ref.path, "utf8").trim().split("\n").filter(Boolean).slice(0, 20);
+      const steps = lines.map((ln) => {
+        const e = JSON.parse(ln);
+        const a = e.args ?? e.params ?? {};
+        const arg = a.query ?? a.id ?? (a.src ? String(a.src).slice(0, 80) : "");
+        const result = String(e.result ?? e.output ?? "").replace(/\s+/g, " ").slice(0, 160);
+        return { tool: e.tool ?? "", arg: String(arg).slice(0, 90), result };
+      });
+      traces[`${ref.qid}|${ref.model}`] = steps;
+    } catch { /* skip unreadable transcript */ }
+  }
+  return { ...s, traces };
 }

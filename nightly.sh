@@ -31,6 +31,10 @@ capped() {
   # matured questions across all sets (background league; board fills over days).
   capped 900 npx tsx src/forecast/run.ts pose --id "forecast-$(date +%Y%m%d)" >> "$LOG" 2>&1 || true
   npx tsx src/forecast/run.ts resolve >> "$LOG" 2>&1 || true
+  # League 4 (agentic forecasting): capped pose (resumable across nights) + resolve.
+  capped 3600 env AGENTIC_BUDGET=10 npx tsx src/agentic/run.ts pose --id "agentic-$(date +%Y%m%d)"
+  npx tsx src/agentic/run.ts resolve >> "$LOG" 2>&1 || true
+  npx tsx src/forecast/run.ts resolve >> "$LOG" 2>&1 || true
   # Refit happens at read time; export + deploy the public site.
   ./publish.sh
   echo "=== nightly done $(date) ==="

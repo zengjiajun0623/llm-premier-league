@@ -91,6 +91,15 @@
   .fq-model { font-size: 12px; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .fq-track { height: 10px; background: var(--line); border-radius: 5px; overflow: hidden; }
   .fq-fill { display: block; height: 100%; background: var(--green); }
+  .ag-row { margin: 2px 0 8px; }
+  .ag-trace { margin: 2px 0 4px 138px; font-size: 12px; }
+  .ag-trace summary { color: var(--muted); cursor: pointer; }
+  .ag-steps { margin-top: 6px; border-left: 2px solid var(--line); padding-left: 10px; }
+  .ag-step { margin-bottom: 6px; }
+  .ag-tool { display: inline-block; font-weight: 700; color: var(--green); font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; margin-right: 6px; }
+  .ag-arg { color: var(--ink); }
+  .ag-res { color: var(--muted); font-size: 11px; margin-top: 2px; white-space: pre-wrap; }
+  @media (max-width: 600px) { .ag-trace { margin-left: 0; } }
   .fq-pct { font-size: 12px; text-align: right; font-variant-numeric: tabular-nums; }
   @media (max-width: 600px) { .fq-bar { grid-template-columns: 90px 1fr 36px; } }
   .prov { font-size: 9px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: var(--orange); background: var(--orange-soft); padding: 1px 4px; border-radius: 3px; margin-left: 6px; vertical-align: middle; }
@@ -124,6 +133,7 @@
     <a href="#/persuasion" data-route="persuasion">Persuasion</a>
     <a href="#/gap" data-route="gap">Gap</a>
     <a href="#/forecast" data-route="forecast">Forecast</a>
+    <a href="#/agentic" data-route="agentic">Agentic</a>
     <a href="#/matches" data-route="matches">Matches</a>
   </nav>
   <div class="grid solo" id="grid">
@@ -397,6 +407,70 @@ async function viewVerified() {
 }
 
 // ---------- gap view (execution vs persuasion) ----------
+async function viewAgentic() {
+  const at = location.hash;
+  $("main").innerHTML = '<div class="card"><h2>Agentic</h2><div class="empty dots">Loading</div></div>';
+  let a;
+  try { a = await (await fetch("/api/agentic.json")).json(); }
+  catch { if (!stale(at)) $("main").innerHTML = '<div class="card"><h2>Agentic</h2><div class="empty">Could not load; try again.</div></div>'; return; }
+  if (stale(at)) return;
+  const pct = (x) => Math.round(100 * num(x)) + "%";
+  const dur = (ms) => { if (ms <= 0) return "resolving"; const h = ms/3.6e6; return h < 24 ? Math.round(h)+"h" : Math.round(h/24)+"d"; };
+  const traces = a.traces || {};
+  let h = "";
+
+  h += '<div class="card"><h2>Agentic forecasting - watch models research</h2>' +
+    '<div class="foot" style="margin-bottom:6px">Every model runs a full agent loop (search, read, run code) over a frozen per-question evidence pool, then forecasts. Reality grades it by Brier. Expand a model to see exactly what it searched, read, and computed - no human, no judge.</div></div>';
+
+  // Open agentic forecasts with expandable research traces.
+  const open = a.open || [];
+  if (open.length) {
+    for (const q of open) {
+      const preds = Object.entries(q.predictions || {}).sort((x,y)=>y[1]-x[1]);
+      h += '<div class="card"><div class="fq-head"><span class="fq-asset">' + esc(short(q.asset)) + ' &ge; ' + esc(String(q.threshold)) + '</span>' +
+        '<span class="fq-meta">' + esc(q.horizon) + ' &middot; resolves in ' + dur(q.msToResolve) + ' &middot; consensus ' + pct(q.consensus) + ' &middot; spread ' + Math.round(100*num(q.disagreement)) + 'pp</span></div>';
+      for (const [m, pv] of preds) {
+        const key = q.id + "|" + m;
+        const tr = traces[key] || [];
+        h += '<div class="ag-row">' +
+          '<div class="fq-bar"><span class="fq-model">' + mlink(m) + '</span>' +
+          '<span class="fq-track"><span class="fq-fill" style="width:' + pct(pv) + '"></span></span>' +
+          '<span class="fq-pct">' + pct(pv) + '</span></div>';
+        if (tr.length) {
+          h += '<details class="ag-trace"><summary>' + tr.length + ' research steps</summary><div class="ag-steps">';
+          for (const s of tr) {
+            h += '<div class="ag-step"><span class="ag-tool">' + esc(s.tool) + '</span>' +
+              (s.arg ? '<span class="ag-arg">' + esc(s.arg) + '</span>' : '') +
+              (s.result ? '<div class="ag-res">' + esc(s.result) + '</div>' : '') + '</div>';
+          }
+          h += '</div></details>';
+        }
+        h += '</div>';
+      }
+      h += '</div>';
+    }
+  } else {
+    h += '<div class="card"><div class="empty">No open agentic questions yet. The next run poses a fresh set with full research traces.</div></div>';
+  }
+
+  // Brier board (fills as questions resolve) + uplift.
+  h += '<div class="card"><h2>Agentic accuracy (Brier) &middot; ' + (a.counts ? a.counts.resolvedQuestions : 0) + ' resolved</h2>';
+  if (a.board && a.board.length && a.counts && a.counts.resolvedQuestions) {
+    h += '<table><tr><th>#</th><th>Model</th><th class="num">Rating</th><th class="num">Brier</th></tr>';
+    a.board.forEach((r,i)=>{ h += '<tr class="'+(i===0?"top1":"")+'"><td class="rankn">'+(i+1)+'</td><td class="model">'+mlink(r.model)+'</td><td class="num elo">'+num(r.rating)+'</td><td class="num">'+num(r.weightedBrier).toFixed(3)+'</td></tr>'; });
+    h += '</table>';
+  } else {
+    h += '<div class="empty">No resolved questions yet. Accuracy appears here as reality settles each forecast (hours to weeks).</div>';
+  }
+  h += '<div class="foot">Headline is agentic Brier once questions resolve. Uplift (vs the no-tools arm) is a diagnostic. Raw data + full transcripts: <a href="/api/agentic.json">agentic.json</a>.</div></div>';
+
+  h += '<div class="card method"><h2>How Agentic works</h2>' +
+    '<p>The same open agent harness (pi) drives every model identically: a full plan-search-read-compute loop with a fixed tool budget. Its web_search and web_fetch read a frozen evidence pool built once per question (news, market data, background), so every model sees the same evidence and only research skill varies - agency is preserved, timing luck is not.</p>' +
+    '<p>Questions are templated from public feeds (no model authors them); reality resolves each one; Brier scores it. No human or model judges anything.</p></div>';
+
+  $("main").innerHTML = h;
+}
+
 async function viewForecast() {
   const at = location.hash;
   $("main").innerHTML = '<div class="card"><h2>Forecast</h2><div class="empty dots">Loading</div></div>';
@@ -495,6 +569,7 @@ function route() {
   if (hash.startsWith("#/persuasion")) { name = "persuasion"; viewBoard(); }
   else if (hash.startsWith("#/gap")) { name = "gap"; viewGap(); }
   else if (hash.startsWith("#/forecast")) { name = "forecast"; viewForecast(); }
+  else if (hash.startsWith("#/agentic")) { name = "agentic"; viewAgentic(); }
   else if (hash.startsWith("#/matches")) { name = "matches"; viewMatches(); }
   else if (hash.startsWith("#/match/")) { name = "matches"; viewMatchDetail(parts[1]); }
   else if (hash.startsWith("#/model/")) { name = "matches"; viewModel(parts[1]); }
