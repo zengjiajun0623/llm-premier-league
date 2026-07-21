@@ -193,3 +193,12 @@ test("e2e: resume after truncation reproduces identical legs", async () => {
     assert.equal(resumed.legs[i].proverForfeit, full.legs[i].proverForfeit);
   }
 });
+
+test("string classes reject malformed (lone-surrogate) inputs the spec itself cannot survive", () => {
+  for (const cls of CORPUS.filter((c) => ["textmetrics", "caesar"].includes(c.id))) {
+    const inst = cls.generate(42);
+    assert.equal(cls.validateInput("\ud800", inst), false, `${cls.id} must reject a lone surrogate`);
+    assert.equal(cls.validateInput("a\udfff", inst), false, `${cls.id} must reject a trailing lone surrogate`);
+    assert.equal(cls.validateInput("ok\ud83d\ude00", inst), true, `${cls.id} must keep accepting well-formed astral pairs`);
+  }
+});

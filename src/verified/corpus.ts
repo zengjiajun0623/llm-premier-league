@@ -131,7 +131,7 @@ const caesar: ArtifactClass = {
     };
   },
   validateInput(input, inst) {
-    return typeof input === "string" && [...input].length <= 2000 && jsonBytes(input) <= this.envelope.maxInputBytes;
+    return typeof input === "string" && wellFormed(input) && [...input].length <= 2000 && jsonBytes(input) <= this.envelope.maxInputBytes;
   },
   checkOutput(input, output, inst) {
     if (typeof input !== "string" || typeof output !== "string") return false;
@@ -185,6 +185,12 @@ const caesar: ArtifactClass = {
 //    solve(expr) -> integer value of an arithmetic expression (+ - *, parens).
 // ===========================================================================
 // Recursive-descent reference with correct precedence. Returns null on a parse
+// A lone UTF-16 surrogate cannot be UTF-8 encoded: the reference itself would
+// crash, so such strings are outside every string-class envelope.
+function wellFormed(s: string): boolean {
+  return !/[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?<![\uD800-\uDBFF])[\uDC00-\uDFFF]/.test(s);
+}
+
 // error (used both to evaluate and, via validateInput, to enforce grammar Q).
 function calcEval(expr: string, mod: number): number | null {
   let i = 0;
@@ -505,7 +511,7 @@ const textmetrics: ArtifactClass = {
     };
   },
   validateInput(input, inst) {
-    return typeof input === "string" && [...input].length <= 2000 && jsonBytes(input) <= this.envelope.maxInputBytes;
+    return typeof input === "string" && wellFormed(input) && [...input].length <= 2000 && jsonBytes(input) <= this.envelope.maxInputBytes;
   },
   checkOutput(input, output, inst) {
     if (typeof input !== "string" || typeof output !== "object" || output === null) return false;

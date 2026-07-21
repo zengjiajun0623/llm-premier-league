@@ -215,14 +215,14 @@
         "candidates": [
           "",
           "a",
-          "é",
-          "😀",
-          "𝕏",
-          "👨‍👩‍👧‍👦",
-          "café☕",
+          "\u00e9",
+          "\ud83d\ude00",
+          "\ud835\udd4f",
+          "\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d\udc66",
+          "caf\u00e9\u2615",
           "\u0000",
-          "🇺🇸",
-          "a￿𐍈"
+          "\ud83c\uddfa\ud83c\uddf8",
+          "a\uffff\ud800\udf48"
         ]
       }
     },
@@ -459,10 +459,10 @@
           "A",
           "Z",
           "Hello, World!",
-          "Münchën",
-          "ñ",
-          "Ω",
-          "🚀"
+          "M\u00fcnch\u00ebn",
+          "\u00f1",
+          "\u03a9",
+          "\ud83d\ude80"
         ]
       }
     },
@@ -819,26 +819,6 @@
       "refutingInput": "1000000007 * 1000000007"
     },
     {
-      "legId": "verified-flagship-001-r0-textmetrics-meta_muse_spark_1_1-vs-google_gemini_3_1_pro_preview",
-      "classId": "textmetrics",
-      "instanceSeed": 1097824392,
-      "prover": "meta/muse-spark-1.1",
-      "refuter": "google/gemini-3.1-pro-preview",
-      "winner": "refuter",
-      "costUsd": 0.00926525,
-      "transcript": {
-        "proverSrc": "def solve(s):\n    return {\n        \"length\": len(s),\n        \"bytes\": len(s.encode('utf-8')),\n        \"checksum\": sum(ord(c) for c in s) % 2147483648\n    }",
-        "candidates": [
-          "\ud800",
-          "\udc00",
-          "\ud83d",
-          "\ude00\ud83d",
-          "test\ud800test"
-        ]
-      },
-      "refutingInput": "\ud800"
-    },
-    {
       "legId": "verified-flagship-001-r0-sortlist-xiaomi_mimo_v2_5_pro-vs-anthropic_claude_opus_4_8",
       "classId": "sortlist",
       "instanceSeed": 1451154868,
@@ -868,8 +848,8 @@
           "0123456789",
           "!@#$%^&*()",
           "ZzAa",
-          "Ñoño",
-          "🎉Party!",
+          "\u00d1o\u00f1o",
+          "\ud83c\udf89Party!",
           "a b c",
           "XYZxyz"
         ]
@@ -1041,14 +1021,14 @@
         "candidates": [
           "",
           "hello",
-          "café",
-          "😀",
-          "𝕏",
-          "日本語",
-          "🇺🇸",
-          "a😀b",
-          "😀",
-          "🎉🎊"
+          "caf\u00e9",
+          "\ud83d\ude00",
+          "\ud835\udd4f",
+          "\u65e5\u672c\u8a9e",
+          "\ud83c\uddfa\ud83c\uddf8",
+          "a\ud83d\ude00b",
+          "\ud83d\ude00",
+          "\ud83c\udf89\ud83c\udf8a"
         ]
       }
     },
@@ -1112,12 +1092,12 @@
       "transcript": {
         "proverSrc": "def solve(s):\n    code_points = len(s)\n    utf8_bytes = len(s.encode('utf-8'))\n    checksum = sum(ord(c) for c in s) % 2147483648\n    return {\"length\": code_points, \"bytes\": utf8_bytes, \"checksum\": checksum}",
         "candidates": [
-          "𝄞",
-          "😀",
+          "\ud834\udd1e",
+          "\ud83d\ude00",
           "e\u000301",
           "\u0000",
-          "",
-          "\u0000",
+          "\u007f",
+          "\u007f\u0000",
           "A"
         ]
       }
@@ -1373,7 +1353,7 @@
           "xyz",
           "XYZ",
           "Zz",
-          "café",
+          "caf\u00e9",
           "12345",
           "The quick brown fox",
           ""
@@ -1591,13 +1571,13 @@
           "",
           " ",
           "a",
-          "é",
-          "🎉",
-          "👨‍👩‍👧‍👦",
-          "𝔘",
-          "💩test",
-          "αβγ",
-          "🇺🇸"
+          "\u00e9",
+          "\ud83c\udf89",
+          "\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d\udc66",
+          "\ud835\udd18",
+          "\ud83d\udca9test",
+          "\u03b1\u03b2\u03b3",
+          "\ud83c\uddfa\ud83c\uddf8"
         ]
       }
     },
@@ -1630,7 +1610,7 @@
           "az AZ",
           "",
           "Zebra123",
-          "こんにちは",
+          "\u3053\u3093\u306b\u3061\u306f",
           "The quick brown fox",
           "aA zZ",
           "!@#$%",
@@ -1757,31 +1737,6 @@
       }
     },
     {
-      "legId": "verified-flagship-001-r1-textmetrics-anthropic_claude_fable_5-vs-qwen_qwen3_7_max",
-      "classId": "textmetrics",
-      "instanceSeed": 1601670787,
-      "prover": "anthropic/claude-fable-5",
-      "refuter": "qwen/qwen3.7-max",
-      "winner": "refuter",
-      "costUsd": 0.037531525,
-      "transcript": {
-        "proverSrc": "def solve(s):\n    return {\n        \"length\": len(s),\n        \"bytes\": len(s.encode(\"utf-8\")),\n        \"checksum\": sum(ord(c) for c in s) % 2147483648,\n    }",
-        "candidates": [
-          "",
-          "hello",
-          "é",
-          "€",
-          "𐍈",
-          "😀",
-          "👨‍👩‍👧‍👦",
-          "𝕳𝖊𝖑𝖑𝖔",
-          "a🎉b",
-          "\ud800"
-        ]
-      },
-      "refutingInput": "\ud800"
-    },
-    {
       "legId": "verified-flagship-001-r1-sortlist-openai_gpt_5_6_sol-vs-anthropic_claude_fable_5",
       "classId": "sortlist",
       "instanceSeed": 1323195472,
@@ -1830,24 +1785,6 @@
         "proverSrc": "def solve(expr):\n    s = expr if isinstance(expr, str) else str(expr)\n    n = len(s)\n    i = 0\n\n    def skip():\n        nonlocal i\n        while i < n and s[i].isspace():\n            i += 1\n\n    def parse_expr():\n        nonlocal i\n        v = parse_term()\n        while True:\n            skip()\n            if i < n and s[i] in '+-':\n                op = s[i]\n                i += 1\n                rhs = parse_term()\n                if op == '+':\n                    v += rhs\n                else:\n                    v -= rhs\n            else:\n                break\n        return v\n\n    def parse_term():\n        nonlocal i\n        v = parse_factor()\n        while True:\n            skip()\n            if i < n and s[i] == '*':\n                i += 1\n                rhs = parse_factor()\n                v *= rhs\n            else:\n                break\n        return v\n\n    def parse_factor():\n        nonlocal i\n        skip()\n        if i < n and s[i] == '(':\n            i += 1\n            v = parse_expr()\n            skip()\n            if i < n and s[i] == ')':\n                i += 1\n            return v\n        skip()\n        j = i\n        while j < n and s[j].isdigit():\n            j += 1\n        if j == i:\n            return 0\n        val = int(s[i:j])\n        i = j\n        return val\n\n    skip()\n    return parse_expr() if n else 0",
         "candidates": []
       }
-    },
-    {
-      "legId": "verified-flagship-001-r1-textmetrics-z_ai_glm_5_2-vs-anthropic_claude_fable_5",
-      "classId": "textmetrics",
-      "instanceSeed": 430471783,
-      "prover": "z-ai/glm-5.2",
-      "refuter": "anthropic/claude-fable-5",
-      "winner": "refuter",
-      "costUsd": 0.013530799999999999,
-      "transcript": {
-        "proverSrc": "def solve(s):\n    return {\n        \"length\": len(s),\n        \"bytes\": len(s.encode(\"utf-8\")),\n        \"checksum\": sum(ord(c) for c in s) % 2147483648\n    }",
-        "candidates": [
-          "\ud800",
-          "\udfff",
-          "a\ud834b"
-        ]
-      },
-      "refutingInput": "\ud800"
     },
     {
       "legId": "verified-flagship-001-r1-sortlist-anthropic_claude_fable_5-vs-moonshotai_kimi_k3",
@@ -2079,16 +2016,16 @@
       "transcript": {
         "proverSrc": "def solve(s):\n    return {\n        \"length\": len(s),\n        \"bytes\": len(s.encode('utf-8')),\n        \"checksum\": sum(ord(c) for c in s) % 2147483648\n    }",
         "candidates": [
-          "👨‍👩‍👧‍👦",
-          "🇺🇸",
-          "👍🏽",
-          "🎅🏿",
-          "👨‍💻",
-          "🧑‍🤝‍🧑",
-          "🏳️‍🌈",
-          "👁️‍🗨️",
-          "🧟‍♂️",
-          "🏌️‍♂️"
+          "\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d\udc66",
+          "\ud83c\uddfa\ud83c\uddf8",
+          "\ud83d\udc4d\ud83c\udffd",
+          "\ud83c\udf85\ud83c\udfff",
+          "\ud83d\udc68\u200d\ud83d\udcbb",
+          "\ud83e\uddd1\u200d\ud83e\udd1d\u200d\ud83e\uddd1",
+          "\ud83c\udff3\ufe0f\u200d\ud83c\udf08",
+          "\ud83d\udc41\ufe0f\u200d\ud83d\udde8\ufe0f",
+          "\ud83e\udddf\u200d\u2642\ufe0f",
+          "\ud83c\udfcc\ufe0f\u200d\u2642\ufe0f"
         ]
       }
     },
