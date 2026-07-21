@@ -1,7 +1,7 @@
 import http from "node:http";
 import { readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
-import { summary, debateList, debateDetail, stats, verifiedSummary, gapTable } from "./api.js";
+import { summary, debateList, debateDetail, stats, verifiedSummary, gapTable, forecastView } from "./api.js";
 import { resultsDir, ROOT } from "./paths.js";
 
 const PORT = Number(process.env.PORT ?? 5199);
@@ -30,6 +30,8 @@ const server = http.createServer((req, res) => {
       const slug = url.slice("/api/debate/".length, -".json".length);
       const d = debateDetail(slug);
       json(d ?? { error: "not found" }, d ? 200 : 404);
+    } else if (url === "/api/forecast.json") {
+      json(forecastView(Date.now()));
     } else if (url === "/api/stats.json") {
       json(stats());
     } else if (url === "/api/verified.json") {

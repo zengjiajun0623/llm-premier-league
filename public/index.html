@@ -82,6 +82,17 @@
   .hero tr.top1 td { background: var(--green-soft); }
   .hero tr.top1 .rankn, .hero tr.top1 .elo { color: var(--green); }
   .ci { display: block; font-size: 10px; font-weight: 400; color: var(--muted); }
+  .fq { border-bottom: 1px solid var(--line); padding: 12px 0; }
+  .fq:last-child { border-bottom: none; }
+  .fq-head { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; }
+  .fq-asset { font-weight: 700; font-size: 15px; }
+  .fq-meta { font-size: 12px; color: var(--muted); }
+  .fq-bar { display: grid; grid-template-columns: 130px 1fr 42px; gap: 8px; align-items: center; margin: 3px 0; }
+  .fq-model { font-size: 12px; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .fq-track { height: 10px; background: var(--line); border-radius: 5px; overflow: hidden; }
+  .fq-fill { display: block; height: 100%; background: var(--green); }
+  .fq-pct { font-size: 12px; text-align: right; font-variant-numeric: tabular-nums; }
+  @media (max-width: 600px) { .fq-bar { grid-template-columns: 90px 1fr 36px; } }
   .prov { font-size: 9px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: var(--orange); background: var(--orange-soft); padding: 1px 4px; border-radius: 3px; margin-left: 6px; vertical-align: middle; }
   .divtabs { display: flex; gap: 4px; margin-bottom: 12px; }
   .divtabs a { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; color: var(--muted); padding: 3px 10px; border: 1px solid var(--line); border-radius: 999px; }
@@ -112,6 +123,7 @@
     <a href="#/verified" data-route="verified">Verified</a>
     <a href="#/persuasion" data-route="persuasion">Persuasion</a>
     <a href="#/gap" data-route="gap">Gap</a>
+    <a href="#/forecast" data-route="forecast">Forecast</a>
     <a href="#/matches" data-route="matches">Matches</a>
   </nav>
   <div class="grid solo" id="grid">
@@ -385,6 +397,64 @@ async function viewVerified() {
 }
 
 // ---------- gap view (execution vs persuasion) ----------
+async function viewForecast() {
+  const at = location.hash;
+  $("main").innerHTML = '<div class="card"><h2>Forecast</h2><div class="empty dots">Loading</div></div>';
+  let f;
+  try { f = await (await fetch("/api/forecast.json")).json(); }
+  catch { if (!stale(at)) $("main").innerHTML = '<div class="card"><h2>Forecast</h2><div class="empty">Could not load; try again.</div></div>'; return; }
+  if (stale(at)) return;
+  const dur = (ms) => { if (ms <= 0) return "resolving"; const h = ms / 3.6e6; return h < 24 ? Math.round(h) + "h" : Math.round(h / 24) + "d"; };
+  const pct = (x) => Math.round(100 * num(x)) + "%";
+  let h = "";
+
+  // Live disagreement view (the point: watch models disagree before reality resolves).
+  h += '<div class="card"><h2>Open predictions - ' + (f.open ? f.open.length : 0) + ' live</h2>';
+  if (!f.open || !f.open.length) {
+    h += '<div class="empty">No open questions yet. The nightly run poses a fresh set.</div></div>';
+  } else {
+    h += '<div class="foot" style="margin-bottom:12px">Every model gives a probability that the asset closes at or above the threshold by the deadline. Consensus is the field average; spread is how much the models disagree. Reality resolves each one - no model or human judges.</div>';
+    for (const q of f.open) {
+      const models = Object.entries(q.predictions || {}).sort((a, b) => b[1] - a[1]);
+      h += '<div class="fq"><div class="fq-head"><span class="fq-asset">' + esc(short(q.asset)) +
+        ' &ge; ' + esc(String(q.threshold)) + '</span>' +
+        '<span class="fq-meta">' + esc(q.horizon) + ' &middot; resolves in ' + dur(q.msToResolve) +
+        ' &middot; consensus ' + pct(q.consensus) + ' &middot; spread ' + Math.round(100 * num(q.disagreement)) + 'pp</span></div>';
+      h += '<div class="fq-bars">';
+      for (const [m, pv] of models) {
+        h += '<div class="fq-bar"><span class="fq-model">' + mlink(m) + '</span>' +
+          '<span class="fq-track"><span class="fq-fill" style="width:' + pct(pv) + '"></span></span>' +
+          '<span class="fq-pct">' + pct(pv) + '</span></div>';
+      }
+      h += '</div></div>';
+    }
+    h += "</div>";
+  }
+
+  // Brier leaderboard (fills in as questions mature).
+  h += '<div class="card"><h2>Forecast accuracy (Brier)</h2>';
+  if (!f.leaderboard || !f.leaderboard.length) {
+    h += '<div class="empty">No resolved questions yet. Short-horizon questions settle within a day; long ones take up to a month. Scores appear here as reality resolves them.</div>';
+  } else {
+    h += '<table><tr><th>#</th><th>Model</th><th class="num">Rating</th><th class="num">Brier</th><th class="num">Resolved</th></tr>';
+    f.leaderboard.forEach((r, i) => {
+      h += '<tr class="' + (i === 0 ? "top1" : "") + '"><td class="rankn">' + (i + 1) + "</td>" +
+        '<td class="model">' + mlink(r.model) + "</td>" +
+        '<td class="num elo">' + num(r.rating) + "</td>" +
+        '<td class="num">' + num(r.weightedBrier).toFixed(3) + "</td>" +
+        '<td class="num">' + num(r.n) + "</td></tr>";
+    });
+    h += "</table>";
+  }
+  h += '<div class="foot">Brier score = (probability minus outcome) squared, lower is better; it rewards being both calibrated and confident-when-right. Short-horizon liquid-price questions are near random walks, so they are down-weighted in the rating (they are kept for liveness, not skill). Raw data: <a href="/api/forecast.json">forecast.json</a>.</div></div>';
+
+  h += '<div class="card method"><h2>How Forecasting works</h2>' +
+    '<p>Questions are generated mechanically: a seeded random draw picks an asset, a threshold, and a deadline from a public price feed. No model and no human chooses what to predict, so nobody can pick questions they have an edge on.</p>' +
+    '<p>Each model answers with a probability. When the deadline passes, the live price resolves the question to yes or no and every model is scored by a proper scoring rule (Brier). Reality is the only judge.</p></div>';
+
+  $("main").innerHTML = h;
+}
+
 async function viewGap() {
   const at = location.hash;
   $("main").innerHTML = '<div class="card"><h2>Persuasion vs execution gap</h2><div class="empty dots">Loading</div></div>';
@@ -424,6 +494,7 @@ function route() {
   let name = "verified";
   if (hash.startsWith("#/persuasion")) { name = "persuasion"; viewBoard(); }
   else if (hash.startsWith("#/gap")) { name = "gap"; viewGap(); }
+  else if (hash.startsWith("#/forecast")) { name = "forecast"; viewForecast(); }
   else if (hash.startsWith("#/matches")) { name = "matches"; viewMatches(); }
   else if (hash.startsWith("#/match/")) { name = "matches"; viewMatchDetail(parts[1]); }
   else if (hash.startsWith("#/model/")) { name = "matches"; viewModel(parts[1]); }

@@ -50,7 +50,7 @@ export async function predict(model: string, q: Question): Promise<number> {
       { role: "system", content: "You are a calibrated probabilistic forecaster. Answer with a single number in [0,1] only." },
       { role: "user", content: questionPrompt(q) },
     ],
-    16,
+    2000,
     { temperature: 0 },
   );
   const m = res.text.match(/-?\d*\.?\d+/);
@@ -69,7 +69,15 @@ export async function collectPredictions(
     if (q.resolved) continue; // never (re)predict a settled question
     for (const model of roster) {
       if (typeof q.predictions[model] === "number") continue; // resume: already done
-      const p = await predict(model, q);
+      let p: number;
+      try {
+        p = await predict(model, q);
+      } catch (err) {
+        // A flaky provider must not kill the pose; skip this (question, model)
+        // and let a later pose/resume fill it in.
+        console.error(`  !! ${q.id} ${model} skipped: ${(err as Error).message.slice(0, 100)}`);
+        continue;
+      }
       q.predictions[model] = p;
       onOne?.(q, model, p);
       save();

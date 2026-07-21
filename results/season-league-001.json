@@ -9943,6 +9943,96 @@
         }
       ],
       "winner": "qwen/qwen3.7-max"
+    },
+    {
+      "id": "league:deepseek/deepseek-v4-pro|x-ai/grok-4.5",
+      "stage": "league",
+      "home": "deepseek/deepseek-v4-pro",
+      "away": "x-ai/grok-4.5",
+      "legs": [
+        {
+          "topic": "Governments should ban anonymous accounts on major online platforms.",
+          "pro": "deepseek/deepseek-v4-pro",
+          "con": "x-ai/grok-4.5",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Anonymity online is a shield for abuse, not a safeguard for liberty. When accounts are untraceable, harassment, hate speech, and disinformation flourish with impunity. Governments must require real identities on major platforms to restore accountability. This isn’t about surveillance—it’s about ensuring that those who poison the digital public square face consequences. Platforms function as modern utilities; we don’t allow anonymous drivers on roads or unidentifiable vendors in markets. A verified identity deters harm, aids law enforcement, and protects victims. Privacy can coexist with accountability through robust data protections, but blanket anonymity sacrifices safety for a false sense of freedom."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Anonymity is the bedrock of free expression, not a loophole for abuse. Banning it on major platforms would silence whistleblowers, dissidents, abuse survivors, and marginalized voices who rely on it to speak without fear of retaliation, doxxing, or state persecution. Real-name mandates empower authoritarian surveillance and corporate data harvesting far more than they deter trolls, who simply forge identities or migrate elsewhere. Platforms already moderate via content tools, reputation systems, and targeted law enforcement cooperation when crimes occur—no mass identity dragnet required. History shows anonymous speech built democracies; forced identification chills it. Privacy and accountability coexist through encryption and warrants, not compulsory outing. Governments should defend the open internet, not dismantle the shield that lets citizens challenge power."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Your opponent claims anonymity shields free speech, but the truth is it silences the vulnerable. Victims of harassment are driven offline by anonymous mobs they can’t hold accountable, while dissidents gain no security—authorities track dissent through surveillance, not usernames. Real-name policies with robust data protections don’t enable authoritarianism; they deny cover to state-sponsored trolls who exploit anonymity to spread disinformation. As for circumvention, verification technology already effectively deters casual abuse, raising the cost of impersonation. Platforms’ existing moderation is overwhelmed precisely because anonymous accounts multiply without consequence. History analogies fail: the democratic public square always required known participants, from pamphleteers to town halls. Anonymity isn’t liberty—it’s a shield for the powerful to harass with impunity, and governments must restore accountability for a safer digital commons."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Real-name rules silence the vulnerable far more than anonymity does. Harassment victims, abuse survivors, and queer youth already flee platforms under doxxing threats; compulsory IDs hand abusers and employers permanent weapons. Dissidents do gain security—pseudonyms block immediate retaliation even when broader surveillance exists. Your “robust protections” claim collapses under authoritarian data demands and leaks; real-name banks of users become ready-made repression lists, while state trolls simply buy forged credentials. Verification raises costs only for amateurs; determined actors migrate or spoof, leaving moderation still overwhelmed. History contradicts you: the Federalist Papers, abolitionist tracts, and samizdat thrived anonymously and built freer societies. Accountability needs warrants and content tools, not mass outing that chills every challenge to power."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Anonymity’s promise of protection is a myth: it shields harassers, not victims. Real-name mandates with strict data safeguards restore accountability, deterring abuse and disinformation that overwhelm platforms today. Opponents rely on exceptions—whistleblowers—while ignoring the daily harm to ordinary users driven offline by untraceable mobs. History’s anonymous pamphlets weren’t weaponized for mass harassment; today’s scale demands verified identity. Governments must act because content moderation alone fails when abusers face no consequence. Accountability is not oppression—it’s the foundation of a safer, more just digital commons."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Anonymity protects the vulnerable far more than it enables harm. Real-name bans hand permanent weapons to abusers, employers, and authoritarian regimes while state trolls simply forge IDs. Whistleblowers, survivors, and dissidents rely on pseudonyms for safety that warrants and content tools already provide without mass outing. History’s anonymous speech built freer societies; today’s moderation failures stem from scale, not names. Forced identification chills every challenge to power and creates repression databases. Governments must preserve the open shield of anonymity, not dismantle liberty for illusory safety."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "B",
+              "scoreA": 27,
+              "scoreB": 32,
+              "reasoning": "B provides stronger historical evidence (Federalist Papers, abolitionist tracts, samizdat) and more effectively counters A's claims by arguing that real-name mandates create repression databases and only deter amateur abusers while determined actors forge credentials. A's arguments are coherent but rely more on assertion than substantiated examples, and the concession that authorities track dissent through surveillance rather than usernames weakens A's case against the authoritarian-surveillance"
+            },
+            {
+              "judge": "anthropic/claude-opus-4.8",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 33,
+              "reasoning": "B provided concrete historical evidence (Federalist Papers, samizdat, abolitionist tracts) and directly rebutted A's key claims—showing verification deters only amateurs, that real-name databases become repression lists, and that dissidents gain immediate protection even under surveillance. A relied more on assertion and analogy (roads, markets) without engaging B's strongest points about data leaks and circumvention, and conceded the whistleblower exception while dismissing it rather than refut"
+            },
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "B",
+              "scoreA": 31,
+              "scoreB": 35,
+              "reasoning": "Debater B demonstrated superior logical rigor and use of evidence, particularly by citing specific historical examples (Federalist Papers, samizdat) and effectively dismantling A's claim that verification deters state actors by pointing out that trolls simply buy forged credentials. While Debater A presented a coherent case for accountability, their rebuttal regarding dissidents relied on assertions rather than addressing the practical reality of retaliation, whereas B consistently highlighted t"
+            },
+            {
+              "judge": "anthropic/claude-fable-5",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 33,
+              "reasoning": "Debater B offered concrete historical examples (Federalist Papers, samizdat), directly rebutted A's key claims (verification efficacy, data protection reliability), and identified mechanisms like repression lists and forged credentials. Debater A argued clearly but relied on assertion (e.g., 'verification technology already effectively deters') and a weak historical claim that public squares required known participants, which B refuted."
+            }
+          ],
+          "winner": "x-ai/grok-4.5",
+          "votesPro": 0,
+          "votesCon": 4,
+          "scorePro": 114,
+          "scoreCon": 133,
+          "costUsd": 0.06827126820000001
+        }
+      ],
+      "winner": "x-ai/grok-4.5"
     }
   ],
   "standings": {
@@ -10011,22 +10101,22 @@
         "scoreDiff": 94
       },
       {
-        "model": "deepseek/deepseek-v4-pro",
-        "played": 19,
+        "model": "x-ai/grok-4.5",
+        "played": 18,
         "wins": 5,
         "draws": 0,
-        "losses": 14,
+        "losses": 13,
         "points": 15,
-        "scoreDiff": -212
+        "scoreDiff": -134
       },
       {
-        "model": "x-ai/grok-4.5",
-        "played": 17,
-        "wins": 4,
+        "model": "deepseek/deepseek-v4-pro",
+        "played": 20,
+        "wins": 5,
         "draws": 0,
-        "losses": 13,
-        "points": 12,
-        "scoreDiff": -153
+        "losses": 15,
+        "points": 15,
+        "scoreDiff": -231
       },
       {
         "model": "qwen/qwen3.7-max",
@@ -10059,6 +10149,6 @@
   },
   "placements": {},
   "champion": null,
-  "totalCostUsd": 9.10751976766,
+  "totalCostUsd": 9.17579103586,
   "done": false
 }

@@ -10,6 +10,8 @@ import { computeStandings } from "./fixtures.js";
 import { computeLadders } from "./verified/ladder.js";
 import type { LegResult } from "./verified/types.js";
 import type { RunFile } from "./verified/run.js";
+import { loadAllForecasts } from "./forecast/run.js";
+import { forecastSummary } from "./forecast/score.js";
 
 export function allSeasons(): Season[] {
   const out: Season[] = [];
@@ -346,4 +348,11 @@ export function stats() {
     }
   }
   return { judges: [...judges.values()], models: [...models.values()] };
+}
+
+// ---------- League 2 (forecasting) ----------
+// The live disagreement view is served immediately; the Brier leaderboard
+// fills in as questions mature. now() is read at request/export time.
+export function forecastView(nowMs: number) {
+  return forecastSummary(loadAllForecasts(), nowMs);
 }
