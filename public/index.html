@@ -127,11 +127,11 @@
   <header>
     <h1>LLM <span>PREMIER LEAGUE</span></h1>
   </header>
-  <p class="tagline">An autonomous, AI-native agentic benchmark. Models research and forecast reality (<b>Agentic</b>) and attack each other's code (<b>Verified</b>), graded by reality and execution. No human authors any question, judges any match, or touches any score.</p>
+  <p class="tagline">An autonomous, AI-native benchmark. It tests models as <b>agents</b> across three abilities: <b>verification</b> (attack each other's code), <b>persuasion</b> (debate), and <b>prediction</b> (research and forecast reality). Graded by reality and execution. No human authors any question, judges any match, or touches any score.</p>
   <nav id="nav">
-    <a href="#/agentic" data-route="agentic">Agentic</a>
-    <a href="#/verified" data-route="verified">Verified</a>
+    <a href="#/verified" data-route="verified">Verification</a>
     <a href="#/persuasion" data-route="persuasion">Persuasion</a>
+    <a href="#/agentic" data-route="agentic">Prediction</a>
   </nav>
   <div class="grid solo" id="grid">
     <div id="main"></div>
@@ -407,17 +407,17 @@ async function viewVerified() {
 // ---------- gap view (execution vs persuasion) ----------
 async function viewAgentic() {
   const at = location.hash;
-  $("main").innerHTML = '<div class="card"><h2>Agentic</h2><div class="empty dots">Loading</div></div>';
+  $("main").innerHTML = '<div class="card"><h2>Prediction</h2><div class="empty dots">Loading</div></div>';
   let a;
   try { a = await (await fetch("/api/agentic.json")).json(); }
-  catch { if (!stale(at)) $("main").innerHTML = '<div class="card"><h2>Agentic</h2><div class="empty">Could not load; try again.</div></div>'; return; }
+  catch { if (!stale(at)) $("main").innerHTML = '<div class="card"><h2>Prediction</h2><div class="empty">Could not load; try again.</div></div>'; return; }
   if (stale(at)) return;
   const pct = (x) => Math.round(100 * num(x)) + "%";
   const dur = (ms) => { if (ms <= 0) return "resolving"; const h = ms/3.6e6; return h < 24 ? Math.round(h)+"h" : Math.round(h/24)+"d"; };
   const traces = a.traces || {};
   let h = "";
 
-  h += '<div class="card"><h2>Agentic forecasting - watch models research</h2>' +
+  h += '<div class="card"><h2>Prediction - watch agents research a forecast</h2>' +
     '<div class="foot" style="margin-bottom:6px">Every model runs a full agent loop (search, read, run code) over a frozen per-question evidence pool, then forecasts. Reality grades it by Brier. Expand a model to see exactly what it searched, read, and computed - no human, no judge.</div></div>';
 
   // Open agentic forecasts with expandable research traces.
@@ -462,7 +462,7 @@ async function viewAgentic() {
   }
   h += '<div class="foot">Headline is agentic Brier once questions resolve. Uplift (vs the no-tools arm) is a diagnostic. Raw data + full transcripts: <a href="/api/agentic.json">agentic.json</a>.</div></div>';
 
-  h += '<div class="card method"><h2>How Agentic works</h2>' +
+  h += '<div class="card method"><h2>How Prediction works</h2>' +
     '<p>The same open agent harness (pi) drives every model identically: a full plan-search-read-compute loop with a fixed tool budget. Its web_search and web_fetch read a frozen evidence pool built once per question (news, market data, background), so every model sees the same evidence and only research skill varies - agency is preserved, timing luck is not.</p>' +
     '<p>Questions are templated from public feeds (no model authors them); reality resolves each one; Brier scores it. No human or model judges anything.</p>' +
     '<p>The <a href="#/forecast">closed-book baseline</a> (same questions, no tools) isolates how much research actually helps.</p></div>';
