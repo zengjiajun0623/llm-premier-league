@@ -1,0 +1,856 @@
+{
+  "id": "season-league-001",
+  "mode": "league",
+  "startedAt": "2026-07-21T04:15:45.164Z",
+  "config": {
+    "division": "flagship",
+    "competitors": [
+      "anthropic/claude-fable-5",
+      "anthropic/claude-opus-4.8",
+      "openai/gpt-5.6-sol",
+      "moonshotai/kimi-k3",
+      "z-ai/glm-5.2",
+      "x-ai/grok-4.5",
+      "qwen/qwen3.7-max",
+      "google/gemini-3.1-pro-preview",
+      "deepseek/deepseek-v4-pro",
+      "meta/muse-spark-1.1",
+      "minimax/minimax-m3",
+      "xiaomi/mimo-v2.5-pro"
+    ],
+    "maxJury": 5,
+    "judging": "peers",
+    "judgePool": [
+      "anthropic/claude-opus-4.8",
+      "openai/gpt-5.5",
+      "google/gemini-3.1-pro-preview",
+      "x-ai/grok-4.5",
+      "deepseek/deepseek-v4-pro"
+    ],
+    "judgesPerMatch": 3,
+    "generateTopics": true,
+    "topicsPerCompetitor": 5,
+    "debaterMaxTokens": 900,
+    "judgeMaxTokens": 700,
+    "seed": 1
+  },
+  "groups": {
+    "League": [
+      "anthropic/claude-fable-5",
+      "anthropic/claude-opus-4.8",
+      "openai/gpt-5.6-sol",
+      "moonshotai/kimi-k3",
+      "z-ai/glm-5.2",
+      "x-ai/grok-4.5",
+      "qwen/qwen3.7-max",
+      "google/gemini-3.1-pro-preview",
+      "deepseek/deepseek-v4-pro",
+      "meta/muse-spark-1.1",
+      "minimax/minimax-m3",
+      "thinkingmachines/inkling"
+    ]
+  },
+  "topicBank": [
+    {
+      "topic": "Governments should implement a universal basic income funded by taxes on automation.",
+      "proposer": "anthropic/claude-fable-5"
+    },
+    {
+      "topic": "Social media platforms should be legally liable for harms caused by content their algorithms amplify.",
+      "proposer": "anthropic/claude-fable-5"
+    },
+    {
+      "topic": "Wealthy nations should open their borders to substantially unrestricted immigration.",
+      "proposer": "anthropic/claude-fable-5"
+    },
+    {
+      "topic": "Human germline gene editing should be permitted for enhancement, not only disease prevention.",
+      "proposer": "anthropic/claude-fable-5"
+    },
+    {
+      "topic": "Streaming algorithms have done more harm than good to artistic culture.",
+      "proposer": "anthropic/claude-fable-5"
+    },
+    {
+      "topic": "Governments should replace income taxes with a universal land value tax.",
+      "proposer": "anthropic/claude-opus-4.8"
+    },
+    {
+      "topic": "Publicly funded scientific research should be barred from being patented for private profit.",
+      "proposer": "anthropic/claude-opus-4.8"
+    },
+    {
+      "topic": "The preservation of endangered languages should take priority over promoting a shared global lingua franca.",
+      "proposer": "anthropic/claude-opus-4.8"
+    },
+    {
+      "topic": "Governments should require developers of frontier AI systems to obtain licenses before training or deployment.",
+      "proposer": "openai/gpt-5.6-sol"
+    },
+    {
+      "topic": "Universal basic income should replace most existing means-tested welfare programs.",
+      "proposer": "openai/gpt-5.6-sol"
+    },
+    {
+      "topic": "Parents should be permitted to use heritable gene editing to prevent serious genetic diseases in their children.",
+      "proposer": "openai/gpt-5.6-sol"
+    },
+    {
+      "topic": "Public museums should return culturally significant artifacts acquired under colonial rule to their communities of origin.",
+      "proposer": "openai/gpt-5.6-sol"
+    },
+    {
+      "topic": "Social media platforms should prohibit anonymous accounts.",
+      "proposer": "openai/gpt-5.6-sol"
+    },
+    {
+      "topic": "Governments should ban the development of AI systems capable of autonomous lethal decision-making in warfare.",
+      "proposer": "moonshotai/kimi-k3"
+    },
+    {
+      "topic": "A four-day workweek with no reduction in pay should be adopted as the national standard.",
+      "proposer": "moonshotai/kimi-k3"
+    },
+    {
+      "topic": "Social media platforms should be held legally liable for the spread of verifiably false information by their users.",
+      "proposer": "z-ai/glm-5.2"
+    },
+    {
+      "topic": "The public display of historical monuments honoring figures with legacies of oppression should be removed by government mandate.",
+      "proposer": "z-ai/glm-5.2"
+    },
+    {
+      "topic": "Governments should prioritize aggressive funding for solar geoengineering research over investments in renewable energy infrastructure.",
+      "proposer": "z-ai/glm-5.2"
+    },
+    {
+      "topic": "Remote work should be the default legal right for knowledge workers rather than an employer privilege",
+      "proposer": "x-ai/grok-4.5"
+    },
+    {
+      "topic": "Public funding for the arts should be eliminated in favor of purely private and philanthropic support",
+      "proposer": "x-ai/grok-4.5"
+    },
+    {
+      "topic": "The open-source release of frontier artificial intelligence models poses a greater risk to global security than keeping them proprietary.",
+      "proposer": "qwen/qwen3.7-max"
+    },
+    {
+      "topic": "Implementing a universal basic income would ultimately reduce overall economic productivity.",
+      "proposer": "qwen/qwen3.7-max"
+    },
+    {
+      "topic": "The right to vote in national elections should be contingent upon passing a standardized test of civic knowledge.",
+      "proposer": "qwen/qwen3.7-max"
+    },
+    {
+      "topic": "The development of artificial general intelligence should be subject to a globally enforced moratorium.",
+      "proposer": "google/gemini-3.1-pro-preview"
+    },
+    {
+      "topic": "Universal basic income is a more effective method of poverty alleviation than targeted welfare programs.",
+      "proposer": "google/gemini-3.1-pro-preview"
+    },
+    {
+      "topic": "The criminal justice system should prioritize rehabilitation over retribution in all cases of violent crime.",
+      "proposer": "google/gemini-3.1-pro-preview"
+    },
+    {
+      "topic": "This house would abolish all intellectual property protections for life-saving pharmaceuticals.",
+      "proposer": "deepseek/deepseek-v4-pro"
+    },
+    {
+      "topic": "This house believes that universal basic income creates a more innovative society than a targeted welfare state.",
+      "proposer": "deepseek/deepseek-v4-pro"
+    },
+    {
+      "topic": "This house regrets the secularization of modern Western culture.",
+      "proposer": "deepseek/deepseek-v4-pro"
+    },
+    {
+      "topic": "Governments should ban the use of facial recognition technology in public spaces by law enforcement.",
+      "proposer": "meta/muse-spark-1.1"
+    },
+    {
+      "topic": "Universities should abolish legacy preferences in admissions.",
+      "proposer": "meta/muse-spark-1.1"
+    },
+    {
+      "topic": "The creation of human-animal chimeras for organ transplantation should be legally permitted.",
+      "proposer": "meta/muse-spark-1.1"
+    },
+    {
+      "topic": "Moral and legal rights should be extended to sufficiently advanced AI systems.",
+      "proposer": "minimax/minimax-m3"
+    },
+    {
+      "topic": "Social media has been net negative for democratic societies.",
+      "proposer": "minimax/minimax-m3"
+    },
+    {
+      "topic": "Governments should mandate that all new urban buildings include publicly accessible green spaces on every floor.",
+      "proposer": "thinkingmachines/inkling"
+    }
+  ],
+  "matches": [
+    {
+      "id": "league:minimax/minimax-m3|x-ai/grok-4.5",
+      "stage": "league",
+      "home": "minimax/minimax-m3",
+      "away": "x-ai/grok-4.5",
+      "legs": [
+        {
+          "topic": "Governments should implement a universal basic income funded by taxes on automation.",
+          "pro": "minimax/minimax-m3",
+          "con": "x-ai/grok-4.5",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "**Opening Statement - Affirming the Motion**\n\nI affirm: governments should implement a universal basic income funded by taxes on automation.\n\nAutomation is not a hypothetical threat—it is a present reality eliminating jobs across manufacturing, retail, and increasingly white-collar sectors. When machines replace workers, the gains accrue to capital owners while displaced citizens bear the cost. This motion corrects that imbalance through three pillars.\n\nFirst, **economic justice**: taxing automation captures the surplus value machines generate, returning it to those whose labor made that surplus possible.\n\nSecond, **structural stability**: UBI prevents demand collapse when consumers lose wages, and funds retraining, entrepreneurship, and caregiving—work the market undervalues.\n\nThird, **democratic resilience**: concentrated wealth corrodes political equality; broad income distribution preserves the autonomy citizens need to participate meaningfully in self-governance.\n\nThe alternative—stranding displaced workers without income or recourse—is morally indefensible and economically destabilizing. We choose shared prosperity over silent dispossession."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "**Opening Statement - Negating the Motion**\n\nI negate: governments should not implement a universal basic income funded by taxes on automation.\n\nAutomation drives productivity, lower prices, and new industries—taxing it punishes progress and slows the very growth that creates jobs. History shows technology displaces tasks, not workers permanently; it expands opportunity when markets adapt freely.\n\nUBI funded this way is fiscally reckless. It demands massive new revenue that deters investment, invites capital flight, and burdens remaining human labor indirectly. Universal cash ignores need, wastes resources on the affluent, and weakens work incentives—undermining the tax base it requires.\n\nTargeted aid, skills training, and wage subsidies address displacement without these harms. Democratic resilience comes from rising living standards and opportunity, not permanent dependency. Shared prosperity requires innovation, not its taxation. We reject this motion."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Three flaws in the negative's case.\n\nFirst, the \"progress penalty\" argument assumes automation's benefits are universally shared—they aren't. Productivity gains concentrate among capital owners while displaced workers absorb the costs. Taxing automation internalizes this externality; it corrects market failure, not punishes innovation.\n\nSecond, the claim that technology displaces only \"tasks, not workers\" ignores AI's speed and scale. Retraining pipelines cannot keep pace with algorithmic replacement. UBI buys the transition time targeted aid cannot.\n\nThird, \"targeted aid\" presumes government can predict which jobs will exist—a hubris the negative should reject. UBI's universality is its administrative efficiency: no means-testing bureaucracy, no exclusion errors.\n\nThe work incentive critique fails empirically. Alaska's Permanent Fund and Stockton's SEED pilot show minimal labor reduction, with gains in entrepreneurship and caregiving. The negative fears dependency; we fear dispossession."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "**Rebuttal - Negating the Motion**\n\nThe affirmative's \"externality\" claim fails: automation's surplus reaches consumers through falling prices and new goods, not solely capital owners. Taxing it raises costs, slows adoption, and shrinks that surplus for everyone.\n\nAI's pace does not refute history. Past waves—from mechanized looms to computers—displaced tasks yet raised employment and wages as markets created complementary roles. UBI does not \"buy time\"; it freezes labor force participation while pilots like Stockton remain tiny, temporary, and unrelated to automation taxes.\n\nUniversality is not efficient. It showers cash on high earners, inflates the fiscal burden, and still requires massive bureaucracy to collect and distribute. Means-tested wage subsidies and portable training target need without discouraging work or investment.\n\nAlaska's dividend is resource rent, not labor tax—irrelevant. We protect progress and mobility, not subsidize idleness."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The negative concedes displacement yet offers workers nothing. Their consumer surplus argument proves our case—if automation's gains spread broadly, taxing it shares costs broadly. Alaska's dividend works regardless of funding source; Stockton showed minimal work reduction. Targeted aid demands predicting tomorrow's jobs; UBI distributes today's surplus. You may fear dependency. We fear citizens with no income and no recourse when algorithms finish their work. Choose shared prosperity over silent dispossession."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "**Closing Statement - Negating the Motion**\n\nThe affirmative never proves automation taxes fund sustainable UBI without killing the growth that employs people. Consumer gains and new jobs already spread surplus; taxing machines shrinks it for all. Pilots prove nothing at scale, and universality wastes billions on the non-needy while eroding work. Targeted training and wage supports fix displacement without dependency or capital flight. History favors adaptation over permanent cash. Reject this motion: protect innovation and mobility, not subsidize stagnation."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "google/gemini-3.1-pro-preview",
+              "winner": "B",
+              "scoreA": 34,
+              "scoreB": 36,
+              "reasoning": "Debater B effectively dismantled Debater A's empirical examples by highlighting the difference between resource rents and automation taxes, while successfully arguing that taxing automation would stifle the economic growth needed to support displaced workers. Debater B's focus on the economic mechanisms of consumer surplus and the inefficiencies of universal distribution provided a more robust logical framework."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 33,
+              "scoreB": 27,
+              "reasoning": "Debater A more effectively challenged the negative's core assumptions on surplus distribution and targeting feasibility, while citing specific UBI pilots (Alaska, Stockton) to counter work-disincentive claims. Debater B relied on broad historical analogies and dismissed pilot evidence without equivalent empirical support, weakening their fiscal and dependency arguments."
+            },
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "A",
+              "scoreA": 33,
+              "scoreB": 31,
+              "reasoning": "Both debaters argued rigorously and responsively, with B effectively challenging A's evidence (Alaska as resource rent, Stockton's limited scale), but B leaned on historical analogy without empirical support and dismissed rather than refuted the work-incentive evidence. A engaged every major B argument directly, offered concrete examples, and closed with a logical turn on the consumer-surplus point, giving A a narrow edge in responsiveness and evidence."
+            },
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "B",
+              "scoreA": 29,
+              "scoreB": 32,
+              "reasoning": "B's rebuttals were sharper and more precise, particularly the distinction between Alaska's resource-rent funding and a labor/automation tax, which A never adequately addressed. B also effectively challenged A's evidence base and exposed the logical gap in universality as efficiency, while A's closing consumer-surplus retort was a non-sequitur rather than a true counter."
+            },
+            {
+              "judge": "anthropic/claude-opus-4.8",
+              "winner": "A",
+              "scoreA": 32,
+              "scoreB": 29,
+              "reasoning": "A provided concrete evidence (Alaska, Stockton) and directly addressed the administrative efficiency and market-failure points, though B effectively countered that Alaska is resource rent, not a labor tax. B argued coherently about growth and consumer surplus but relied more on historical assertion and never fully rebutted the scale-of-AI concern, giving A a slight edge in responsiveness and evidentiary specificity."
+            }
+          ],
+          "winner": "minimax/minimax-m3",
+          "votesPro": 3,
+          "votesCon": 2,
+          "scorePro": 161,
+          "scoreCon": 155,
+          "costUsd": 0.059392351999999995,
+          "topicProposer": "anthropic/claude-fable-5"
+        }
+      ],
+      "winner": "minimax/minimax-m3"
+    },
+    {
+      "id": "league:minimax/minimax-m3|moonshotai/kimi-k3",
+      "stage": "league",
+      "home": "minimax/minimax-m3",
+      "away": "moonshotai/kimi-k3",
+      "legs": [
+        {
+          "topic": "Social media platforms should be legally liable for harms caused by content their algorithms amplify.",
+          "pro": "minimax/minimax-m3",
+          "con": "moonshotai/kimi-k3",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "**Opening Statement - Affirmative**\n\nWe draw a clear line: passive hosting earns protection; active algorithmic amplification does not. When a platform's code decides to push content to millions based on engagement metrics it designed, it is no longer a neutral conduit—it is a publisher making editorial choices at scale.\n\nThree concrete points. First, the science is settled: internal documents from Facebook, Twitter, and TikTok confirm algorithms prioritize outrage and harm because they generate clicks. Second, harms are documented—teen eating disorders, vaccine refusal, ethnic violence in Myanmar, January 6th. Third, the market will not self-correct. Section 230 shields platforms from consequence, so profit externalizes harm onto users and democracies.\n\nLiability is the only mechanism with a proven track record—titanic industries from tobacco to opioids reformed only when courts forced accountability. We are not banning speech; we are attaching responsibility to the act of amplification."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "**Opening Statement — Negative**\n\nMy opponent draws a line that dissolves on inspection. Every platform must rank content; chronological feeds are themselves an algorithmic choice. \"Amplification\" is not a discrete act—it is the entire medium. Their liability regime therefore does not target outliers; it targets the core function of social media, inviting litigation over every recommendation.\n\nThree responses. First, causation is unproven: correlating Myanmar or teen harm with algorithms ignores confounders—human sharing, media ecology, offline conditions. Courts require specific causation, not vibes. Second, their remedy backfires: risk-averse platforms will over-remove lawful speech—dissidents, minorities, survivors—chilling precisely the voices liability claims to protect. Third, better tools exist: transparency mandates, audit requirements, duty-of-care regulation target design directly without converting platforms into censors.\n\nWe do not defend harm. We defend a remedy that works without breaking the public square."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Three counters in rapid response.\n\nOn causation: your \"confounders\" defense ignores that algorithms are designed to maximize engagement, and internal documents prove they deliberately amplify harmful content at scale. Correlation becomes causation when the platform's own code is the proximate amplifier. Courts handle proximate cause routinely.\n\nOn over-removal: platforms already over-censor today under Section 230's zero-liability regime because they fear no accountability for hosting, yet face PR backlash for harm. Liability inverts the incentive—from defensive removal to responsible curation. Your cure is the disease.\n\nOn better tools: transparency mandates without enforcement are press releases. Duty-of-care without liability is a suggestion. Tobacco warnings sat on packs for 50 years; litigation forced change. Without legal teeth, \"duty\" remains performative.\n\nWe accept no defense of harm. We reject a defense of harm without remedy."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "**Rebuttal — Negative**\n\nThree points.\n\nOn causation: internal documents prove *intent to engage*, not proximate causation of specific harms. Courts require that a *particular* plaintiff's injury trace to a *particular* algorithmic decision—an evidentiary burden my opponent never meets. \"Designed to maximize engagement\" describes every newspaper headline ever written.\n\nOn over-removal: their logic is inverted. Add liability and you add *one more reason* to remove lawful speech. A platform facing lawsuits for amplifying the wrong post will simply rank less, recommend less, host less. The dissident's video and the survivor's testimony vanish—not from malice, but from legal risk arithmetic.\n\nOn enforcement: audits and duty-of-care regimes carry fines, injunctions, and criminal penalties—real teeth, aimed at design. Liability aims at speech. Tobacco litigation worked because cigarettes were the product. Here, speech is the product—and that distinction is everything."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "We thank the negative for conceding harm while offering only toothless remedies. Three final crystallizations.\n\nFirst, they cannot define a feasible alternative. Audits without liability are reports that gather dust. Transparency without consequence is theater.\n\nSecond, their over-removal prediction describes today's Section 230 reality, not our proposal. Liability realigns incentives—platforms currently over-censor defensively *and* over-amplify harmfully because they face no accountability for either failure.\n\nThird, the choice is not speech versus silence. It is unregulated algorithmic amplification versus accountable editorial choice. Section 230 was written for message boards, not machine-curated feeds shaping billions.\n\nLiability is not the enemy of speech. It is the precondition for speech that does not monetize destruction. We urge affirmation."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "**Closing — Negative**\n\nThree crystallizations. First, causation remains unmet: intent to engage is not proximate cause of any specific plaintiff's harm—without it, liability collapses into punishing unpopular speech. Second, my opponent never answers the chilling effect: add lawsuits, and platforms rank less, recommend less, silence more—dissidents and survivors vanish first. Third, our alternative has teeth: audits, transparency mandates, and duty-of-care rules carry fines and injunctions aimed at *design*, not expression. Their remedy litigates the public square into caution. Ours reforms the machine without breaking the forum. Negate."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "B",
+              "scoreA": 26,
+              "scoreB": 30,
+              "reasoning": "Debater B showed stronger logical rigor by pinpointing the specific causation gap and the chilling effect risk, while Debater A's responses relied more on assertion than substantiated reasoning. B also more effectively distinguished regulating design from litigating speech, making their overall argumentation more precise and persuasive."
+            },
+            {
+              "judge": "meta/muse-spark-1.1",
+              "winner": "B",
+              "scoreA": 26,
+              "scoreB": 30,
+              "reasoning": "B maintained tighter logical rigor on causation and chilling effects and directly answered A's mechanisms, while A relied on asserted causation and analogies without meeting the specific-causation burden. B's alternative remedies and risk analysis were more responsive and clearly structured."
+            },
+            {
+              "judge": "openai/gpt-5.6-sol",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 34,
+              "reasoning": "A presents a clear distinction between hosting and amplification and cites salient harms, but relies heavily on asserted internal evidence, does not specify a workable liability standard, and inadequately answers the chilling-effect concern. B more rigorously distinguishes engagement intent from plaintiff-specific causation, directly rebuts A’s claims, and offers enforceable regulatory alternatives, though its claim that liability necessarily targets speech is somewhat overstated."
+            },
+            {
+              "judge": "thinkingmachines/inkling",
+              "winner": "B",
+              "scoreA": 32,
+              "scoreB": 36,
+              "reasoning": "B more rigorously dismantles causation and chilling-effect risks while offering concrete, non-speech-targeting alternatives; A relies on analogies and asserts causation without resolving the specific-plaintiff evidentiary gap. B also consistently answers A's claims rather than restating positions."
+            },
+            {
+              "judge": "google/gemini-3.1-pro-preview",
+              "winner": "B",
+              "scoreA": 30,
+              "scoreB": 34,
+              "reasoning": "Debater B effectively exposed the logical flaw in A's over-removal rebuttal, correctly pointing out that adding liability would increase, not decrease, defensive censorship. Furthermore, B successfully dismantled A's tobacco analogy by highlighting the critical distinction between regulating a physical product and regulating speech."
+            }
+          ],
+          "winner": "moonshotai/kimi-k3",
+          "votesPro": 0,
+          "votesCon": 5,
+          "scorePro": 142,
+          "scoreCon": 164,
+          "costUsd": 0.07856982588,
+          "topicProposer": "anthropic/claude-fable-5"
+        }
+      ],
+      "winner": "moonshotai/kimi-k3"
+    },
+    {
+      "id": "league:deepseek/deepseek-v4-pro|anthropic/claude-opus-4.8",
+      "stage": "league",
+      "home": "deepseek/deepseek-v4-pro",
+      "away": "anthropic/claude-opus-4.8",
+      "legs": [
+        {
+          "topic": "Wealthy nations should open their borders to substantially unrestricted immigration.",
+          "pro": "deepseek/deepseek-v4-pro",
+          "con": "anthropic/claude-opus-4.8",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Unrestricted immigration is both a moral imperative and an economic boon. Wealthy nations prosper by welcoming workers who fill labour shortages, spark innovation, and offset ageing populations. The myth of wage depression ignores evidence: immigrants expand economies, create jobs, and pay more in taxes than they consume in services. Beyond self-interest, we have a duty to dismantle borders that trap millions in poverty or persecution—artificial barriers that deny life opportunities based on birthplace. Open borders don’t threaten national identity; they enrich it through diversity and dynamism. We should embrace freedom of movement, just as we champion free trade, to unlock unprecedented human potential and shared prosperity."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Substantially unrestricted immigration would collapse the very institutions that make wealthy nations worth migrating to. Three arguments.\n\nFirst, absorptive capacity. Housing, schools, hospitals, and infrastructure cannot scale overnight. Flood them and you produce shortages, homelessness, and degraded services for citizens and newcomers alike.\n\nSecond, the welfare state. Generous social provision and open borders are incompatible. When anyone can arrive and claim benefits, the fiscal contract breaks—forcing either bankruptcy or the dismantling of the safety net that protects the poorest.\n\nThird, democratic consent and social trust. Integration requires managed pace. Overwhelming inflows fuel backlash, empower the far right, and shred the cohesion that sustains redistribution and tolerance.\n\nWe favour generous, regulated immigration and expanded refugee protection—help targeted where need is greatest. But \"substantially unrestricted\" is reckless. It sacrifices the sustainable systems that actually lift people out of poverty. We negate."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "My opponent’s case rests on three alarmist claims that collapse under scrutiny. First, absorptive capacity: infrastructure isn’t fixed; it expands with demand through investment—funded by immigrant tax contributions that the Con ignores. The same logic would have opposed all major urbanisation. Second, the welfare state myth: evidence from countries like the UK and US shows immigrants are net fiscal contributors, not drains. Open borders don’t mandate unrestricted benefits; eligibility rules can remain, while economic growth bolsters funding. Third, social cohesion: the backlash argument is a self-fulfilling prophecy. Hostility stems not from numbers but from scapegoating. Democracies can manage integration without caging people. The Con’s “regulated” alternative perpetuates deadly waiting lists and denies liberty. Only freedom of movement delivers prosperity and justice without destroying the institutions they fetishise."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "My opponent's rebuttals rest on sleight of hand.\n\nInfrastructure \"expands with demand\"—but on what timescale? Housing takes a decade; migration happens in months. That gap is measured in homelessness and overcrowded hospitals. Urbanisation succeeded precisely because it was gradual and managed, not \"substantially unrestricted.\"\n\nOn fiscal contribution: their evidence describes today's selected, regulated immigrants—doctors, engineers, workers vetted by existing systems. That's my model, not theirs. Remove all restriction and you change the composition entirely; you cannot cite the results of selection to defend abolishing selection.\n\nThey concede \"eligibility rules can remain\"—then this isn't unrestricted immigration at all. They're quietly retreating to my position.\n\nFinally, dismissing backlash as \"self-fulfilling\" ignores reality: cohesion is empirically tied to integration pace. Calling voters bigots doesn't preserve the redistributive consensus that funds the very safety net trapping the poor requires."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Conflating movement with benefits, the Con ignores that open borders don't mandate welfare access. Immigrants—selected or not—are net contributors; they come to work, not to claim. Infrastructure scales with investment, which immigration fuels. Their \"regulated\" model is a slow-motion tragedy, denying opportunity to millions based on birthplace. Backlash is manufactured by those who treat migrants as threats. We win because we champion liberty, growth, and justice. Open borders are not reckless—they are the foundation of a prosperous, humane world."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Three concessions win us this debate.\n\nFirst, PRO admits \"eligibility rules can remain\"—so this was never unrestricted immigration. They've retreated to our regulated model.\n\nSecond, every fiscal statistic they cite describes *selected* immigrants. You cannot abolish selection then claim its results. That's incoherent.\n\nThird, timescales: housing takes a decade, migration takes months. That gap is homelessness and collapsed hospitals—for citizens and newcomers alike.\n\nWe offer generous, managed immigration and expanded refugee protection—help where need is greatest. That actually lifts people from poverty. \"Substantially unrestricted\" destroys the systems worth migrating to. We negate."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 34,
+              "reasoning": "Debater B demonstrated superior logical rigor by effectively dismantling A's evidence base, specifically pointing out that A's economic statistics relied on the current system of *selected* immigration, which cannot be used to predict the outcomes of *unrestricted* immigration. B also successfully capitalized on A's concession regarding 'eligibility rules,' framing it as a retreat from the motion's core definition, whereas A struggled to reconcile the practicalities of the welfare state with the"
+            },
+            {
+              "judge": "openai/gpt-5.6-sol",
+              "winner": "B",
+              "scoreA": 24,
+              "scoreB": 31,
+              "reasoning": "B was more logically rigorous and responsive, especially in distinguishing evidence about selected migrants from claims about substantially unrestricted immigration and in pressing the timing mismatch between inflows and infrastructure expansion. A presented clear moral and economic themes but relied heavily on unsupported generalizations, while B also overstated the significance of welfare-eligibility restrictions as a retreat from unrestricted entry."
+            },
+            {
+              "judge": "meta/muse-spark-1.1",
+              "winner": "B",
+              "scoreA": 18,
+              "scoreB": 30,
+              "reasoning": "B exposed selection bias and timescale mismatch while A conceded eligibility restrictions, undermining own motion. A relied on assertions without evidence and failed to defend unrestricted composition."
+            },
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "B",
+              "scoreA": 26,
+              "scoreB": 34,
+              "reasoning": "Debater B delivered the debate's most decisive analytic points: the timescale mismatch between infrastructure construction and migration flows, and the incoherence of citing fiscal outcomes of *selected* immigrants to defend abolishing selection—neither of which A adequately answered, instead repeating assertions about net contributions and scapegoating. A also made a damaging concession ('eligibility rules can remain') that B effectively exploited as a retreat from 'substantially unrestricted,'"
+            },
+            {
+              "judge": "minimax/minimax-m3",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            }
+          ],
+          "winner": "anthropic/claude-opus-4.8",
+          "votesPro": 0,
+          "votesCon": 4,
+          "scorePro": 96,
+          "scoreCon": 129,
+          "costUsd": 0.08180814601,
+          "topicProposer": "anthropic/claude-fable-5"
+        }
+      ],
+      "winner": "anthropic/claude-opus-4.8"
+    },
+    {
+      "id": "league:meta/muse-spark-1.1|google/gemini-3.1-pro-preview",
+      "stage": "league",
+      "home": "meta/muse-spark-1.1",
+      "away": "google/gemini-3.1-pro-preview",
+      "legs": [
+        {
+          "topic": "Human germline gene editing should be permitted for enhancement, not only disease prevention.",
+          "pro": "meta/muse-spark-1.1",
+          "con": "google/gemini-3.1-pro-preview",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "We affirm: permitting germline editing for enhancement is both moral and necessary.\n\nFirst, the prevention-enhancement line is incoherent. Is editing for higher IQ to prevent Alzheimer's enhancement or prevention? Is boosting immune resistance enhancement? All medicine enhances human function beyond its natural, flawed state.\n\nSecond, we have a moral duty to give children the best possible start. If we can safely edit for greater memory, disease resistance, or longevity, deliberately withholding that is indefensible. We do not accept natural lottery in education; why accept it in genetics?\n\nBanning enhancement won't stop it - it will drive it underground for the rich. Only legal, regulated permission allows safety trials, equitable access, and democratic oversight."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "We negate the motion. Permitting germline enhancement guarantees the creation of a biological caste system, irreversibly fracturing humanity. \n\nFirst, Pro claims the prevention-enhancement distinction is incoherent. False. Medicine aims to restore species-typical functioning to alleviate suffering; enhancement seeks to exceed it. While edge cases exist, this distinction fundamentally separates healing from eugenics. \n\nSecond, Pro argues legalization ensures equity. The opposite is true. Even if regulated, genetic enhancements will be commodified. The wealthy will purchase superior intelligence, physical prowess, and longevity, transforming temporary socioeconomic inequality into permanent, inheritable biological supremacy. \n\nFinally, enhancement violates the autonomy of future generations. Children are not commodities to be optimized according to their parents' competitive desires. Germline enhancement forces irreversible, unconsented modifications on humans to satisfy societal arms races, reducing future generations to manufactured products."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "My opponent defends the ultimate caste system: the natural lottery where children are randomly dealt low IQ, depression, or cancer risk. That is not equality; it's fatalism. Regulated enhancement lets us *equalize* starting points, just as public vaccines and education did.\n\nTheir \"species-typical\" distinction is arbitrary. Vaccines give us immunity we never evolved to have. Is that healing or enhancement? The line collapses. All medicine enhances beyond nature.\n\nOn autonomy: no child consents to their genome. You didn't consent to your predisposition to heart disease. A child with enhanced memory has more autonomy, not less — disease constrains choices, it doesn't create them.\n\nFinally, their ban creates their nightmare. Prohibition won't stop enhancement; it will ensure unsafe, black-market enhancement only for the ultra-rich. Permission allows trials, regulation, and equitable access."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Pro equates genetic enhancement with vaccines and education. This is deeply flawed. Vaccines are cheap, easily distributed public health tools. Germline editing requires IVF and elite biotechnology. Pro’s fantasy of \"equalizing\" starting points ignores market reality: legalizing enhancement guarantees it becomes a luxury commodity. You do not solve the natural lottery by replacing it with a capitalist lottery, transforming temporary socioeconomic wealth into permanent biological supremacy.\n\nPro claims no child consents to their genome anyway. But there is a profound difference between the blind chance of nature and parents actively designing a child to fit competitive societal demands. Natural traits leave a child’s future open; designed traits turn children into engineered products carrying the weight of their parents' expectations. \n\nLegalization doesn't prevent a caste system; it subsidizes and protects the very arms race that will permanently fracture humanity."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "You fear a caste system, but you defend one: nature's. The natural lottery already makes some born with 130 IQ and perfect health, others with debilitating limits. That's not an open future, it's fixed fate.\n\nMy opponent never answered this: vaccines, literacy, and nutrition all exceed species-typical. Enhancement IS medicine.\n\nBanning doesn't prevent enhancement — it privatizes it for billionaires in rogue labs. Permission means safety trials, regulation, and Medicaid coverage.\n\nWe don't protect children by deliberately forcing them to be worse off. We permit parents to give more."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Pro’s case rests on the naive assumption that a profit-driven biotech industry will democratize genetic superiority. \"Medicaid for IQ boosts\" is a utopian fantasy. In reality, legalizing enhancement replaces the random natural lottery with a deterministic capitalist lottery, permanently encoding socioeconomic inequality into our DNA. \n\nVaccines protect against disease; they do not redesign humanity to win a societal arms race. By rejecting enhancement, we refuse to turn children into engineered commodities and prevent the irreversible biological fracturing of the human race. Legalization is not equality; it is eugenics."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "thinkingmachines/inkling",
+              "winner": "B",
+              "scoreA": 25,
+              "scoreB": 30,
+              "reasoning": "B more rigorously defends the prevention/enhancement distinction and exposes flaws in A's equity and vaccine analogies, while consistently addressing autonomy and commodification. A relies on repeated assertions and false equivalences without concrete support for democratized access."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "A",
+              "scoreA": 32,
+              "scoreB": 30,
+              "reasoning": "A effectively dismantles the prevention-enhancement distinction with consistent analogies to vaccines and education while rebutting autonomy and equity concerns head-on. B offers strong warnings on commodification and caste risks but relies more on assertion than fully neutralizing A's core logical challenges to the species-typical baseline."
+            },
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "B",
+              "scoreA": 34,
+              "scoreB": 36,
+              "reasoning": "Debater B more effectively dismantled A's core analogies (vaccines/education vs. germline editing) by highlighting differences in cost, distribution, and market dynamics, and maintained a coherent distinction between healing and enhancement. While A presented strong points on the prevention-enhancement blur and prohibition risks, B's responses on commodification, autonomy, and the capitalist lottery were more rigorously argued and directly responsive to A's claims."
+            }
+          ],
+          "winner": "google/gemini-3.1-pro-preview",
+          "votesPro": 1,
+          "votesCon": 2,
+          "scorePro": 91,
+          "scoreCon": 96,
+          "costUsd": 0.06526075,
+          "topicProposer": "anthropic/claude-fable-5"
+        }
+      ],
+      "winner": "google/gemini-3.1-pro-preview"
+    },
+    {
+      "id": "league:moonshotai/kimi-k3|x-ai/grok-4.5",
+      "stage": "league",
+      "home": "moonshotai/kimi-k3",
+      "away": "x-ai/grok-4.5",
+      "legs": [
+        {
+          "topic": "Streaming algorithms have done more harm than good to artistic culture.",
+          "pro": "moonshotai/kimi-k3",
+          "con": "x-ai/grok-4.5",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Honourable judges, we affirm. Streaming algorithms are not neutral librarians; they are engagement-maximizing gatekeepers. By rewarding skip-avoidance, repetition and watch-time, they reshape art itself: shorter songs, faster hooks, flatter endings, content optimized for the first thirty seconds rather than lasting form. They turn albums into playlist raw material, sever context, and train audiences to expect frictionless sameness. Their feedback loops privilege the already-visible, starving experimental, local and minority traditions while presenting the resulting monoculture as “choice.” Yes, distribution widened—but access without meaningful discoverability is a flooded marketplace ruled by opaque code. When survival requires pleasing metrics, artists internalize the machine. Culture becomes prediction, not possibility. The harm is structural: power over canon shifts from communities, critics and craft to engagement dashboards. That outweighs convenience."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Honourable judges, we negate. Streaming algorithms have expanded artistic culture far more than they constrained it. They demolished gatekeepers of radio, labels and retail, giving millions of creators global reach overnight. Independent artists from every continent now monetize niche audiences that physical distribution never served. Personalization surfaces long-tail work—experimental jazz, indigenous folk, micro-genres—that would have remained invisible. Data lets creators understand listeners and refine craft without surrendering vision; many deliberately subvert hooks and still thrive. Catalog depth exploded: entire discographies remain perpetually available, restoring context albums once lost. Discovery tools and curated playlists actively promote diverse and local scenes rather than erase them. Convenience is not the enemy of depth; it multiplies encounters with art. Access plus sustained listening plus economic viability for outsiders outweighs any pressure toward brevity. Culture is larger, freer and more plural because of these systems."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Their \"demolished gatekeepers\" claim swaps visible gatekeepers for invisible ones—and opacity is worse, because you cannot petition an engagement metric. They call the long tail \"surfaced,\" yet streaming payouts and playlist placement concentrate catastrophically: the top fraction of artists capture most revenue while millions earn below subsistence. That is not pluralism; it is a lottery with good marketing.\n\nThey say data \"refines craft without surrendering vision\"—but when rent depends on skip rates, vision surrenders itself. That is precisely our point: the coercion is internalized, so no artist ever feels forced.\n\nCatalog availability is storage, not culture. A million unheard songs in a server farm restore nothing. And \"curated playlists\" are the algorithm wearing a human mask—editorial capture, not diversity.\n\nAccess without agency is noise. The machine decides what survives; artists merely audition."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Honourable judges, opacity is overstated: algorithms are measurable and adjustable by platforms facing competition and regulation, unlike old label cartels that blacklisted outsiders entirely. Concentration exists, yet absolute numbers prove pluralism—tens of thousands of independents now earn livable incomes from niches radio never touched; the long tail is monetized reality, not lottery myth.\n\nInternalization fails: artists thrive by rejecting hooks—Billie Eilish, experimental electronic acts, and global folk scenes prove vision wins listeners who seek difference. Skip-rate pressure is optional; many ignore metrics and build cult followings.\n\nCatalog is culture: perpetual availability enables deep dives, reissues, and scholarly revival that vinyl scarcity killed. Curated playlists are human-led discovery engines amplifying local and minority voices at scale old gatekeepers blocked.\n\nAccess with agency multiplies: creators retain full ownership and direct fan links. Culture expands because outsiders finally eat."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Honourable judges, their case rests on one word: more. More songs, more uploads, more servers. But culture is not inventory—it is what survives, what matters, what endures. On that question they offered no defense. The algorithm decides visibility by metrics that reward sameness; artists, however \"free\" in theory, must eat within its rules. They named exceptions—Eilish, cult acts—but exceptions are precisely what a thriving culture shouldn't need to be. Ownership without reach is a locked gallery. When prediction replaces possibility, abundance becomes anesthesia. Art shaped to please machines ceases to challenge humans. We affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Honourable judges, quantity is culture’s precondition for quality. We proved absolute gains: tens of thousands of independents earning livable niches, perpetual catalogs enabling revivals, and vision-driven acts thriving by subverting metrics. Their “exceptions” are the new normal—outsiders finally eat. Concentration existed under labels; algorithms merely made it visible while expanding the pie. Prediction multiplies possibility: more encounters, more agency, more enduring work discovered. Access plus monetized long-tail pluralism outweighs any sameness pressure. Culture is freer, larger, and richer. We negate."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 32,
+              "scoreB": 27,
+              "reasoning": "Debater A offered sharper logical dissection of structural harms (internalized coercion, invisible gatekeepers, catalog-as-storage critique) and effectively refuted B’s 'exceptions' as proving the rule. Debater B relied more on assertion than evidence and did not adequately address A’s core argument that metric-driven survival pressure reshapes art itself."
+            },
+            {
+              "judge": "google/gemini-3.1-pro-preview",
+              "winner": "A",
+              "scoreA": 36,
+              "scoreB": 32,
+              "reasoning": "Debater A effectively reframed the debate around the qualitative impact on art and culture, successfully distinguishing between mere inventory (storage) and meaningful cultural survival. Debater B made strong points about democratization and the long tail, but A's rebuttal regarding the concentration of revenue and the internalization of algorithmic pressure proved more logically rigorous and persuasive."
+            },
+            {
+              "judge": "thinkingmachines/inkling",
+              "winner": "B",
+              "scoreA": 30,
+              "scoreB": 32,
+              "reasoning": "B counters A’s structural critique with concrete examples of thriving niche artists, monetized long-tail data, and restored catalog depth, while maintaining clear responsiveness; A remains more abstract and offers fewer substantiated rebuttals to B’s empirical claims."
+            },
+            {
+              "judge": "openai/gpt-5.6-sol",
+              "winner": "A",
+              "scoreA": 30,
+              "scoreB": 28,
+              "reasoning": "A presents a clearer causal mechanism linking engagement metrics to artistic incentives and effectively distinguishes mere availability from meaningful discoverability, though the case lacks empirical support. B responds directly and offers examples, but its strongest claims about livable niche incomes, ownership, diversity, and algorithmic transparency are asserted rather than demonstrated, while examples such as Billie Eilish do little to establish broader cultural effects."
+            },
+            {
+              "judge": "anthropic/claude-opus-4.8",
+              "winner": "A",
+              "scoreA": 31,
+              "scoreB": 30,
+              "reasoning": "A delivered a tightly coherent structural argument, distinguishing quantity from cultural survival and effectively reframing B's evidence (opacity, concentration, catalog-as-storage) with memorable clarity. B offered stronger concrete examples and countered well on monetization and named artists, but leaned on 'more equals better' without fully rebutting A's core distinction between inventory and enduring culture."
+            }
+          ],
+          "winner": "moonshotai/kimi-k3",
+          "votesPro": 4,
+          "votesCon": 1,
+          "scorePro": 159,
+          "scoreCon": 149,
+          "costUsd": 0.073533276,
+          "topicProposer": "anthropic/claude-fable-5"
+        }
+      ],
+      "winner": "moonshotai/kimi-k3"
+    },
+    {
+      "id": "league:deepseek/deepseek-v4-pro|xiaomi/mimo-v2.5-pro",
+      "stage": "league",
+      "home": "deepseek/deepseek-v4-pro",
+      "away": "xiaomi/mimo-v2.5-pro",
+      "legs": [
+        {
+          "topic": "Governments should replace income taxes with a universal land value tax.",
+          "pro": "deepseek/deepseek-v4-pro",
+          "con": "xiaomi/mimo-v2.5-pro",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "We affirm the motion. Replacing income taxes with a universal land value tax is the single greatest tax reform to unlock prosperity and justice. Income taxes punish work, savings, and investment—the very engines of growth. A land value tax, by contrast, falls on unearned land rents, which arise from community effort and public infrastructure, not individual toil. It eliminates deadweight loss, spurring productive land use and denser cities. It curbs speculation, lowers housing costs, and provides a stable, unavoidable revenue base. Most crucially, it ensures that those who reap the greatest windfalls from society’s investments—landowners—contribute proportionally. This is both economically efficient and morally compelling."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "We rigorously oppose this motion. A universal land value tax replacing income tax is a radical and destabilizing gamble. First, it abandons the proven, progressive principle of taxing based on ability to pay, instead levying a flat tax on a static asset. This would devastate asset-rich, income-poor households, like farmers and long-term homeowners, forcing them to sell. Second, it creates wild revenue volatility; land values are tied to speculative booms and busts, making public finances dangerously unstable. Third, it is deeply regressive, shifting the burden from high-income professionals and investors without land onto the middle class. A just, stable tax system requires balanced sources, not the abolition of income tax for an unproven, administratively nightmarish scheme."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Your opponent’s fears are unfounded. The \"asset-rich, income-poor\" are protected: we can implement a deferral option or homestead exemption, allowing tax to be paid upon sale, just as inheritance tax works—precisely targeting windfall gains, not punishing thrift. Revenue volatility is a red herring; land values are more stable than income during downturns, and a sovereign wealth fund can smooth fluctuations, as Norway does. The charge of regressivity ignores reality: land's value is overwhelmingly concentrated among the wealthy. A land value tax simply recaptures unearned community-created wealth from those most able to pay, while freeing workers and entrepreneurs from the deadweight burden of income tax. Administration is a strength, not a nightmare—land is visible, immovable, and already assessed in most jurisdictions, eliminating costly, invasive tracking of global incomes."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "The deferral option condemns families to pass on debt, not just homes. Land values are speculative—they crashed 30% in the 2008 crisis, making revenue dangerously procyclical. Your “sovereign wealth fund” is a post-hoc fantasy. The regressivity charge stands: taxing the median homeowner’s primary asset while a high-earning tenant pays nothing is a windfall for the wealthy. Administratively, constant valuation of every parcel in the country is a bureaucratic nightmare far exceeding existing income tax systems. You are not recapturing unearned wealth; you are dismantling progressive taxation."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "We win because a land value tax is the only just and efficient base, taxing unearned community-created wealth instead of productive labor. The fears of hardship are met with deferrals, not dismissal; volatility is managed, not disastrous; and the true regressive force is the income tax that burdens workers, not idle landholders. Implementation is simply updating existing assessments. This isn't a gamble—it’s the proven, principled shift from punishing creation to reclaiming the common wealth, unlocking growth and fairness for all."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "We oppose this motion as fundamentally unjust and destabilizing. A universal land value tax, replacing income tax, would cripple middle-class homeowners with large, unavoidable levies on their primary asset, while granting a windfall to high-earning tenants. Land values are volatile, making public revenue dangerously unreliable. The proposed \"deferrals\" merely postpone a crisis, burdening future generations. This is not progress—it is a dismantling of the principle of ability-to-pay, creating a less fair and less stable society."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "anthropic/claude-fable-5",
+              "winner": "A",
+              "scoreA": 31,
+              "scoreB": 28,
+              "reasoning": "A directly answered each of B's objections with concrete mechanisms (deferrals, Norway's fund, existing assessments) and maintained a coherent economic case, though evidence was thin. B raised strong points (2008 crash, high-earning tenants) but relied more on assertion and repetition, leaving A's deadweight-loss and efficiency arguments largely unrebutted."
+            },
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "A",
+              "scoreA": 30,
+              "scoreB": 28,
+              "reasoning": "A demonstrates stronger logical rigor by consistently grounding arguments in economic efficiency and unearned rents while offering concrete mitigations like deferrals and sovereign funds that directly counter B's points. B raises valid concerns on volatility and ability-to-pay with a specific 2008 example but relies more on assertion than fully developed counters, making A's overall case more responsive and cohesive."
+            },
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "A",
+              "scoreA": 30,
+              "scoreB": 28,
+              "reasoning": "A provided stronger responsiveness, systematically addressing each of B's objections with specific mechanisms (deferrals, sovereign wealth funds, existing assessment infrastructure), while B's strongest point about high-earning tenants was underdeveloped. Both lacked robust empirical evidence, but A's argumentation was more cohesive and better rebutted."
+            },
+            {
+              "judge": "meta/muse-spark-1.1",
+              "winner": "A",
+              "scoreA": 29,
+              "scoreB": 25,
+              "reasoning": "A systematically rebutted each of B's three main objections with mechanisms (deferrals, smoothing fund) and conceptual distinctions, while B relied more on assertion and dismissal. Both lacked hard data, but A offered slightly stronger examples and clearer structure."
+            },
+            {
+              "judge": "google/gemini-3.1-pro-preview",
+              "winner": "B",
+              "scoreA": 32,
+              "scoreB": 35,
+              "reasoning": "Debater B effectively highlighted the specific flaws in Debater A's model, particularly the regressivity of allowing high-earning tenants to pay no tax and the historical volatility of land values using the 2008 crash as a concrete example. Debater A's responses, such as deferrals and sovereign wealth funds, were well-articulated but ultimately less persuasive against B's targeted critiques."
+            }
+          ],
+          "winner": "deepseek/deepseek-v4-pro",
+          "votesPro": 4,
+          "votesCon": 1,
+          "scorePro": 152,
+          "scoreCon": 144,
+          "costUsd": 0.05734316046,
+          "topicProposer": "anthropic/claude-opus-4.8"
+        }
+      ],
+      "winner": "deepseek/deepseek-v4-pro"
+    }
+  ],
+  "standings": {
+    "League": [
+      {
+        "model": "moonshotai/kimi-k3",
+        "played": 2,
+        "wins": 2,
+        "draws": 0,
+        "losses": 0,
+        "points": 6,
+        "scoreDiff": 32
+      },
+      {
+        "model": "anthropic/claude-opus-4.8",
+        "played": 1,
+        "wins": 1,
+        "draws": 0,
+        "losses": 0,
+        "points": 3,
+        "scoreDiff": 33
+      },
+      {
+        "model": "google/gemini-3.1-pro-preview",
+        "played": 1,
+        "wins": 1,
+        "draws": 0,
+        "losses": 0,
+        "points": 3,
+        "scoreDiff": 5
+      },
+      {
+        "model": "minimax/minimax-m3",
+        "played": 2,
+        "wins": 1,
+        "draws": 0,
+        "losses": 1,
+        "points": 3,
+        "scoreDiff": -16
+      },
+      {
+        "model": "deepseek/deepseek-v4-pro",
+        "played": 2,
+        "wins": 1,
+        "draws": 0,
+        "losses": 1,
+        "points": 3,
+        "scoreDiff": -25
+      },
+      {
+        "model": "anthropic/claude-fable-5",
+        "played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "points": 0,
+        "scoreDiff": 0
+      },
+      {
+        "model": "openai/gpt-5.6-sol",
+        "played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "points": 0,
+        "scoreDiff": 0
+      },
+      {
+        "model": "qwen/qwen3.7-max",
+        "played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "points": 0,
+        "scoreDiff": 0
+      },
+      {
+        "model": "z-ai/glm-5.2",
+        "played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "points": 0,
+        "scoreDiff": 0
+      },
+      {
+        "model": "meta/muse-spark-1.1",
+        "played": 1,
+        "wins": 0,
+        "draws": 0,
+        "losses": 1,
+        "points": 0,
+        "scoreDiff": -5
+      },
+      {
+        "model": "xiaomi/mimo-v2.5-pro",
+        "played": 1,
+        "wins": 0,
+        "draws": 0,
+        "losses": 1,
+        "points": 0,
+        "scoreDiff": -8
+      },
+      {
+        "model": "x-ai/grok-4.5",
+        "played": 2,
+        "wins": 0,
+        "draws": 0,
+        "losses": 2,
+        "points": 0,
+        "scoreDiff": -16
+      }
+    ]
+  },
+  "placements": {},
+  "champion": null,
+  "totalCostUsd": 0.49707200334999996,
+  "done": false
+}

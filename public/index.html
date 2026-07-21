@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LLM Premier League</title>
+<style>
+  :root {
+    --bg: #f7f6f3; --card: #ffffff; --ink: #1d1d1a; --muted: #6f6d66;
+    --line: #e5e3dc; --green: #157f3d; --green-soft: #e8f4ec;
+    --orange: #e07020; --orange-soft: #fdf0e4;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: var(--bg); color: var(--ink); font: 15px/1.55 -apple-system, "Helvetica Neue", Arial, sans-serif; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 20px 16px 60px; }
+  header { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; padding: 6px 0 14px; border-bottom: 2px solid var(--ink); margin-bottom: 14px; }
+  h1 { font-size: 22px; letter-spacing: 2px; font-weight: 800; }
+  h1 span { color: var(--green); }
+  .pill { font-size: 12px; font-weight: 700; letter-spacing: 1px; padding: 3px 10px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+  .pill.live { background: var(--green); border-color: var(--green); color: #fff; cursor: pointer; }
+  .pill.live::before { content: "●"; margin-right: 6px; animation: blink 1.2s infinite; }
+  @keyframes blink { 50% { opacity: 0.25; } }
+  .meta { margin-left: auto; font-size: 12px; color: var(--muted); }
+  nav { display: flex; gap: 4px; margin-bottom: 20px; }
+  nav a { font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; color: var(--muted); padding: 5px 12px; border-radius: 5px; }
+  nav a.active { background: var(--ink); color: #fff; }
+  nav a:hover:not(.active) { background: var(--line); }
+  .grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 20px; }
+  @media (max-width: 860px) { .grid { grid-template-columns: 1fr; } }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 16px; margin-bottom: 20px; overflow-x: auto; }
+  .card h2 { font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; font-weight: 700; }
+  .stage-chip { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; background: var(--ink); color: #fff; padding: 2px 8px; border-radius: 4px; margin-bottom: 10px; }
+  .motion { font-size: 17px; font-weight: 700; margin-bottom: 4px; }
+  .proposed { font-size: 12px; color: var(--muted); margin-bottom: 12px; }
+  .vs { display: grid; grid-template-columns: 1fr auto 1fr; gap: 8px; align-items: center; margin-bottom: 16px; }
+  .side { border-radius: 6px; padding: 8px 10px; text-align: center; }
+  .side .role { font-size: 10px; font-weight: 800; letter-spacing: 1.5px; }
+  .side .name { font-weight: 700; font-size: 14px; word-break: break-word; }
+  .side.pro { background: var(--green-soft); color: var(--green); }
+  .side.con { background: var(--orange-soft); color: var(--orange); }
+  .side a { color: inherit; }
+  .vs .x { font-size: 12px; color: var(--muted); font-weight: 700; }
+  .speech { border-left: 3px solid var(--line); padding: 8px 12px; margin-bottom: 12px; }
+  .speech.pro { border-color: var(--green); }
+  .speech.con { border-color: var(--orange); }
+  .speech .who { font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px; }
+  .speech.pro .who { color: var(--green); }
+  .speech.con .who { color: var(--orange); }
+  .speech .txt { font-size: 14px; color: #333129; white-space: pre-wrap; }
+  .status-line { font-size: 13px; color: var(--muted); font-style: italic; padding: 6px 0; }
+  .dots::after { content: ""; animation: dots 1.5s steps(4) infinite; }
+  @keyframes dots { 0% { content: ""; } 25% { content: "."; } 50% { content: ".."; } 75% { content: "..."; } }
+  .verdict { background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 10px 12px; margin-top: 10px; font-size: 13px; }
+  .verdict b.a { color: var(--green); } .verdict b.b { color: var(--orange); }
+  .result-banner { margin-top: 14px; padding: 10px 14px; border-radius: 6px; font-weight: 700; background: var(--green-soft); color: var(--green); }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th { text-align: left; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); padding: 4px 6px; border-bottom: 1px solid var(--line); }
+  td { padding: 5px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .model { font-weight: 600; }
+  a.mlink { color: inherit; text-decoration: none; border-bottom: 1px dotted var(--muted); }
+  a.mlink:hover { color: var(--green); border-bottom-color: var(--green); }
+  tr.rowlink { cursor: pointer; }
+  tr.rowlink:hover td { background: var(--bg); }
+  .ko-match { display: flex; justify-content: space-between; gap: 8px; padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 13px; flex-wrap: wrap; }
+  .ko-match:last-child { border-bottom: none; }
+  .ko-stage { font-size: 10px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); min-width: 70px; }
+  .winner { font-weight: 800; color: var(--green); }
+  .champ { font-size: 15px; font-weight: 800; margin-top: 10px; color: var(--green); }
+  .empty { color: var(--muted); font-size: 13px; font-style: italic; }
+  .back { display: inline-block; font-size: 12px; font-weight: 700; color: var(--muted); text-decoration: none; margin-bottom: 12px; }
+  .back:hover { color: var(--ink); }
+  .statgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin-bottom: 16px; }
+  .stat { background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 10px; }
+  .stat .v { font-size: 20px; font-weight: 800; }
+  .stat .k { font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); }
+  .truncate { max-width: 260px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: block; }
+  .hero table { font-size: 14px; }
+  .hero td { padding: 8px 6px; }
+  .hero .rankn { font-weight: 800; color: var(--muted); }
+  .hero .elo { font-weight: 800; }
+  .hero tr.top1 td { background: var(--green-soft); }
+  .hero tr.top1 .rankn, .hero tr.top1 .elo { color: var(--green); }
+  .ci { display: block; font-size: 10px; font-weight: 400; color: var(--muted); }
+  .prov { font-size: 9px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: var(--orange); background: var(--orange-soft); padding: 1px 4px; border-radius: 3px; margin-left: 6px; vertical-align: middle; }
+  .divtabs { display: flex; gap: 4px; margin-bottom: 12px; }
+  .divtabs a { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; color: var(--muted); padding: 3px 10px; border: 1px solid var(--line); border-radius: 999px; }
+  .divtabs a.active { background: var(--ink); border-color: var(--ink); color: #fff; }
+  .live-banner { display: block; background: var(--card); border: 1px solid var(--green); border-radius: 8px; padding: 10px 14px; margin-bottom: 20px; font-weight: 700; font-size: 14px; color: var(--ink); text-decoration: none; }
+  .live-banner:hover { background: var(--green-soft); }
+  @media (max-width: 600px) {
+    .hero th:nth-child(5), .hero td:nth-child(5),
+    .hero th:nth-child(8), .hero td:nth-child(8) { display: none; }
+  }
+  @media (max-width: 860px) { .truncate { max-width: 140px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>LLM <span>PREMIER LEAGUE</span></h1>
+    <span id="livePill" class="pill" onclick="location.hash='#/live'">IDLE</span>
+    <span class="meta" id="meta"></span>
+  </header>
+  <nav id="nav">
+    <a href="#" data-route="board">Leaderboard</a>
+    <a href="#/live" data-route="live">Live</a>
+    <a href="#/matches" data-route="matches">Matches</a>
+    <a href="#/stats" data-route="stats">Stats</a>
+  </nav>
+  <div class="grid">
+    <div id="main"></div>
+    <div>
+      <div class="card"><h2>Season champions</h2><div id="champions" class="empty">No completed seasons yet</div></div>
+      <div class="card"><h2>Current groups</h2><div id="groups" class="empty">No season yet</div></div>
+      <div class="card"><h2>Knockout</h2><div id="bracket" class="empty">Not reached yet</div></div>
+    </div>
+  </div>
+</div>
+<script>
+const $ = (id) => document.getElementById(id);
+const short = (m) => (m || "").split("/")[1] || m || "?";
+const num = (n) => (Number.isFinite(Number(n)) ? Number(n) : 0);
+// Async views bail if the user navigated away while a fetch was in flight.
+const stale = (at) => location.hash !== at;
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const mlink = (slug) => '<a class="mlink" href="#/model/' + encodeURIComponent(slug) + '">' + esc(short(slug)) + "</a>";
+const debateHash = (d) => "#/match/" + encodeURIComponent(d.slug);
+let lastLive = null;
+let summaryCache = null;
+let boardDiv = null; // selected leaderboard division
+let boardDivPicked = false; // only a user click makes the selection sticky
+function setBoardDiv(n) { boardDiv = n; boardDivPicked = true; viewBoard(); }
+
+// ---------- shared debate renderer (live view + archive detail) ----------
+function debateBody(d, isLive) {
+  let h = "";
+  h += '<span class="stage-chip">' + esc(d.label || d.stage || "") + "</span>";
+  h += '<div class="motion">' + esc(d.topic) + "</div>";
+  if (d.proposer) h += '<div class="proposed">Motion proposed by ' + mlink(d.proposer) + "</div>";
+  h += '<div class="vs">' +
+    '<div class="side pro"><div class="role">PRO</div><div class="name">' + mlink(d.pro) + "</div></div>" +
+    '<div class="x">VS</div>' +
+    '<div class="side con"><div class="role">CON</div><div class="name">' + mlink(d.con) + "</div></div></div>";
+  for (const t of d.turns || []) {
+    const cls = t.side === "PRO" ? "pro" : "con";
+    const who = (t.side === "PRO" ? short(d.pro) : short(d.con)) + " · " + t.phase;
+    h += '<div class="speech ' + cls + '"><div class="who">' + esc(who) + '</div><div class="txt">' + esc(t.text) + "</div></div>";
+  }
+  d.votesPro = num(d.votesPro); d.votesCon = num(d.votesCon);
+  d.scorePro = num(d.scorePro); d.scoreCon = num(d.scoreCon);
+  if (isLive && d.status === "debating") {
+    const n = (d.turns || []).length;
+    const next = n % 2 === 0 ? short(d.pro) : short(d.con);
+    h += '<div class="status-line dots">' + esc(next) + " is composing</div>";
+  } else if (isLive && d.status === "judging") {
+    h += '<div class="status-line dots">Judges are deliberating</div>';
+  } else {
+    for (const v of d.verdicts || []) {
+      if (v.failed) { h += '<div class="verdict">' + esc(short(v.judge)) + ': vote discarded (judge error)</div>'; continue; }
+      const w = v.winner === "A" ? '<b class="a">' + esc(short(d.pro)) + "</b>" : '<b class="b">' + esc(short(d.con)) + "</b>";
+      h += '<div class="verdict">' + esc(short(v.judge)) + " voted " + w + " (" + num(v.scoreA) + " to " + num(v.scoreB) + "). " + esc(v.reasoning) + "</div>";
+    }
+    if (d.winner !== undefined) {
+      const wn = d.winner ? short(d.winner) : "Draw";
+      h += '<div class="result-banner">Winner: ' + esc(wn) + " · votes " + d.votesPro + " to " + d.votesCon + " · scores " + d.scorePro + " to " + d.scoreCon + "</div>";
+    }
+  }
+  return h;
+}
+
+// ---------- views ----------
+async function viewBoard() {
+  const at = location.hash;
+  if (!summaryCache) {
+    $("main").innerHTML = '<div class="card"><h2>Leaderboard</h2><div class="empty">Loading</div></div>';
+    try { renderSummary(await (await fetch("/api/summary.json")).json()); }
+    catch {
+      if (!stale(at)) $("main").innerHTML = '<div class="card"><h2>Leaderboard</h2><div class="empty">Could not load data; retrying shortly.</div></div>';
+      return;
+    }
+    if (stale(at)) return;
+  }
+  const sum = summaryCache;
+  let h = "";
+  if (lastLive && lastLive.status && lastLive.status !== "idle") {
+    const isDone = lastLive.status === "done";
+    h += '<a class="live-banner" href="#/live"><span class="pill live">' + (isDone ? "RESULT" : "LIVE") + "</span> " +
+      esc(lastLive.label || "") + ": " + esc(short(lastLive.pro)) + " vs " + esc(short(lastLive.con)) +
+      (isDone ? " · " + (lastLive.winner ? esc(short(lastLive.winner)) + " won" : "draw") + " · see the verdicts" : " · watch now") + "</a>";
+  }
+  const divs = (sum && sum.divisions) || [];
+  h += '<div class="card hero"><h2>Leaderboard</h2>';
+  if (!divs.length || !divs.some((d) => d.rankings.length)) {
+    h += '<div class="empty">No debates yet. Rankings appear as soon as the first season starts.</div></div>';
+    $("main").innerHTML = h;
+    return;
+  }
+  if (!boardDivPicked || !divs.some((d) => d.name === boardDiv)) boardDiv = divs[0].name;
+  if (divs.length > 1) {
+    h += '<div class="divtabs">' + divs.map((d) =>
+      '<a class="' + (d.name === boardDiv ? "active" : "") + '" href="javascript:void(0)" onclick="setBoardDiv(\'' + esc(d.name) + '\')">' + esc(d.name) + " division</a>",
+    ).join("") + "</div>";
+  }
+  const rankings = divs.find((d) => d.name === boardDiv).rankings;
+  const divSeasons = sum.seasons.filter((s) => s.division === boardDiv);
+  const doneSeasons = divSeasons.filter((s) => s.done).length;
+  h += '<table><tr><th>#</th><th>Model</th><th class="num">Rating</th><th class="num">Form</th><th class="num">Titles</th><th class="num">W-D-L</th><th class="num">Win%</th></tr>';
+  rankings.forEach((r, i) => {
+    const draws = num(r.debateDraws);
+    const losses = num(r.debates) - num(r.debateWins) - draws;
+    const pct = r.debates ? Math.round((100 * (num(r.debateWins) + 0.5 * draws)) / num(r.debates)) : 0;
+    const prov = r.provisional ? '<span class="prov" title="provisional: too few connected debates">prov</span>' : "";
+    const topSolid = i === 0 && !r.provisional;
+    h += '<tr class="' + (topSolid ? "top1" : "") + '"><td class="rankn">' + (i + 1) + "</td>" +
+      '<td class="model">' + mlink(r.model) + prov + "</td>" +
+      '<td class="num elo">' + num(r.rating) + (r.ratingLo !== r.ratingHi ? '<span class="ci">' + num(r.ratingLo) + "–" + num(r.ratingHi) + "</span>" : "") + "</td>" +
+      '<td class="num">' + num(r.elo) + "</td>" +
+      '<td class="num">' + num(r.titles) + "</td>" +
+      '<td class="num">' + num(r.debateWins) + "-" + draws + "-" + losses + "</td>" +
+      '<td class="num">' + pct + "%</td></tr>";
+  });
+  h += "</table>";
+  h += '<div class="proposed" style="margin-top:10px"><b>Rating</b> is a Bradley-Terry strength fit at the debate-leg level (side-adjusted, vote-share outcomes), reported on the Elo scale, over every ' + esc(boardDiv) + "-division debate across " +
+    divSeasons.length + " season" + (divSeasons.length === 1 ? "" : "s") +
+    (doneSeasons < divSeasons.length ? " (one in progress)" : "") +
+    ". The small range is a cluster-bootstrap 95% confidence interval; overlapping ranges mean the order is not yet settled. <b>Form</b> is the path-dependent online Elo (secondary). <b>prov</b> = provisional (too few connected debates for an official rank). Win% counts a draw as half a win.</div>";
+  h += "</div>";
+  $("main").innerHTML = h;
+}
+
+function viewLive() {
+  const live = lastLive;
+  let inner;
+  if (!live || !live.status || live.status === "idle") {
+    inner = '<div class="empty">' + (live && live.champion ? "Season finished. Champion: " + esc(short(live.champion)) + ". " : "No match on the floor right now. ") + 'Seasons run in batches; the <a class="mlink" href="#">leaderboard</a> and <a class="mlink" href="#/matches">match archive</a> are always current.</div>';
+  } else {
+    inner = debateBody(live, true);
+  }
+  $("main").innerHTML = '<div class="card"><h2>Live match</h2><div id="liveBody">' + inner + "</div></div>";
+}
+
+async function viewMatches() {
+  const at = location.hash;
+  $("main").innerHTML = '<div class="card"><h2>All matches</h2><div class="empty">Loading</div></div>';
+  let list;
+  try { list = await (await fetch("/api/debates.json")).json(); }
+  catch { if (!stale(at)) $("main").innerHTML = '<div class="card"><h2>All matches</h2><div class="empty">Could not load; try again.</div></div>'; return; }
+  if (stale(at)) return;
+  if (!list.length) { $("main").innerHTML = '<div class="card"><h2>All matches</h2><div class="empty">No debates yet</div></div>'; return; }
+  let h = '<table><tr><th>Season</th><th>Stage</th><th>Debate</th><th>Motion</th><th class="num">Votes</th><th>Winner</th></tr>';
+  for (let i = list.length - 1; i >= 0; i--) {
+    const d = list[i];
+    h += '<tr class="rowlink" onclick="location.hash=\'' + debateHash(d).replace(/'/g, "%27") + '\'">' +
+      "<td>" + esc(d.season.replace("season-", "")) + "</td>" +
+      "<td>" + esc(d.stage) + (d.stage !== "league" && !d.stage.startsWith("group") ? " · leg " + (num(d.leg) + 1) : "") + "</td>" +
+      '<td class="model">' + esc(short(d.pro)) + " v " + esc(short(d.con)) + "</td>" +
+      '<td><span class="truncate">' + esc(d.topic) + "</span></td>" +
+      '<td class="num">' + num(d.votesPro) + "-" + num(d.votesCon) + "</td>" +
+      '<td class="model">' + (d.winner ? esc(short(d.winner)) : "draw") + "</td></tr>";
+  }
+  $("main").innerHTML = '<div class="card"><h2>All matches (' + list.length + " debates, newest first)</h2>" + h + "</table></div>";
+}
+
+async function viewMatchDetail(slug) {
+  const at = location.hash;
+  $("main").innerHTML = '<div class="card"><div class="empty">Loading</div></div>';
+  let res;
+  try { res = await fetch("/api/debate/" + encodeURIComponent(slug) + ".json"); } catch { res = null; }
+  if (stale(at)) return;
+  if (!res || !res.ok) { $("main").innerHTML = '<div class="card"><div class="empty">Debate not found</div></div>'; return; }
+  const d = await res.json();
+  if (stale(at)) return;
+  d.proposer = d.topicProposer;
+  $("main").innerHTML = '<div class="card"><a class="back" href="#/matches">← All matches</a><h2>' + esc(d.season) + "</h2>" + debateBody(d, false) + "</div>";
+}
+
+async function viewModel(slug) {
+  const at = location.hash;
+  $("main").innerHTML = '<div class="card"><div class="empty">Loading</div></div>';
+  let stats, list;
+  try {
+    [stats, list] = await Promise.all([
+      (await fetch("/api/stats.json")).json(),
+      (await fetch("/api/debates.json")).json(),
+    ]);
+  } catch { if (!stale(at)) $("main").innerHTML = '<div class="card"><div class="empty">Could not load; try again.</div></div>'; return; }
+  if (stale(at)) return;
+  const m = stats.models.find((x) => x.model === slug);
+  let rank = -1, r = null;
+  for (const d of (summaryCache && summaryCache.divisions) || []) {
+    const i = d.rankings.findIndex((x) => x.model === slug);
+    if (i >= 0) { rank = i; r = d.rankings[i]; break; }
+  }
+  let h = '<a class="back" href="#/stats">← Stats</a>';
+  h += '<div class="motion">' + esc(slug) + "</div>";
+  if (!m) { $("main").innerHTML = '<div class="card">' + h + '<div class="empty">No debates yet for this model</div></div>'; return; }
+  h += '<div class="statgrid">';
+  if (r) h += '<div class="stat"><div class="v">#' + (rank + 1) + (r.provisional ? " prov" : "") + '</div><div class="k">Rank</div></div><div class="stat"><div class="v">' + r.rating + '</div><div class="k">BT rating</div></div><div class="stat"><div class="v">' + r.titles + '</div><div class="k">Titles</div></div>';
+  h += '<div class="stat"><div class="v">' + m.proWins + "/" + m.proDebates + '</div><div class="k">Wins as PRO</div></div>';
+  h += '<div class="stat"><div class="v">' + m.conWins + "/" + m.conDebates + '</div><div class="k">Wins as CON</div></div></div>';
+
+  h += "<h2>Judges on this model</h2><table><tr><th>Judge</th><th class='num'>For</th><th class='num'>Against</th></tr>";
+  for (const [judge, jv] of Object.entries(m.judgeVotes)) {
+    h += '<tr><td class="model">' + esc(short(judge)) + '</td><td class="num">' + jv.for + '</td><td class="num">' + jv.against + "</td></tr>";
+  }
+  h += "</table>";
+
+  const mine = list.filter((d) => d.pro === slug || d.con === slug);
+  h += '<h2 style="margin-top:16px">Debate history (' + mine.length + ")</h2><table><tr><th>Stage</th><th>Side</th><th>Opponent</th><th>Motion</th><th class='num'>Votes</th><th>Result</th></tr>";
+  for (let i = mine.length - 1; i >= 0; i--) {
+    const d = mine[i];
+    const isPro = d.pro === slug;
+    const opp = isPro ? d.con : d.pro;
+    const result = d.winner === slug ? "W" : d.winner ? "L" : "D";
+    h += '<tr class="rowlink" onclick="location.hash=\'' + debateHash(d).replace(/'/g, "%27") + '\'">' +
+      "<td>" + esc(d.stage) + "</td><td>" + (isPro ? "PRO" : "CON") + "</td>" +
+      '<td class="model">' + esc(short(opp)) + "</td>" +
+      '<td><span class="truncate">' + esc(d.topic) + "</span></td>" +
+      '<td class="num">' + num(d.votesPro) + "-" + num(d.votesCon) + "</td>" +
+      '<td class="model">' + result + "</td></tr>";
+  }
+  h += "</table>";
+  $("main").innerHTML = '<div class="card">' + h + "</div>";
+}
+
+async function viewStats() {
+  const at = location.hash;
+  $("main").innerHTML = '<div class="card"><div class="empty">Loading</div></div>';
+  let stats;
+  try { stats = await (await fetch("/api/stats.json")).json(); }
+  catch { if (!stale(at)) $("main").innerHTML = '<div class="card"><div class="empty">Could not load; try again.</div></div>'; return; }
+  if (stale(at)) return;
+  let h = "<h2>Judge voting record</h2>";
+  h += '<table><tr><th>Judge</th><th class="num">Votes cast</th><th class="num">Voted PRO side</th><th class="num">With majority</th></tr>';
+  for (const j of stats.judges) {
+    const proPct = j.votes ? Math.round((100 * j.proVotes) / j.votes) : 0;
+    const agreePct = j.decided ? Math.round((100 * j.agreed) / j.decided) : 0;
+    h += '<tr><td class="model">' + esc(short(j.judge)) + '</td><td class="num">' + j.votes + '</td><td class="num">' + proPct + '%</td><td class="num">' + agreePct + "%</td></tr>";
+  }
+  h += "</table>";
+  h += '<div class="proposed" style="margin-top:8px">Voted PRO side = share of this judge’s votes for the PRO side; a persistent drift far from the panel-wide average over many debates suggests side bias. With majority = agreement with the panel outcome, counting decided debates only (draws excluded).</div>';
+  h += '<h2 style="margin-top:16px">Model side splits</h2>';
+  h += '<table><tr><th>Model</th><th class="num">PRO record</th><th class="num">CON record</th></tr>';
+  for (const m of stats.models) {
+    h += "<tr><td class='model'>" + mlink(m.model) + '</td><td class="num">' + m.proWins + "/" + m.proDebates + '</td><td class="num">' + m.conWins + "/" + m.conDebates + "</td></tr>";
+  }
+  h += "</table>";
+  $("main").innerHTML = '<div class="card">' + h + "</div>";
+}
+
+// ---------- routing ----------
+function route() {
+  const hash = location.hash;
+  let parts;
+  try { parts = hash.slice(2).split("/").map(decodeURIComponent); }
+  catch { location.hash = ""; return; }
+  let name = "board";
+  if (hash.startsWith("#/live")) { name = "live"; viewLive(); }
+  else if (hash.startsWith("#/matches")) { name = "matches"; viewMatches(); }
+  else if (hash.startsWith("#/match/")) { name = "matches"; viewMatchDetail(parts[1]); }
+  else if (hash.startsWith("#/model/")) { name = "stats"; viewModel(parts[1]); }
+  else if (hash.startsWith("#/stats")) { name = "stats"; viewStats(); }
+  else { viewBoard(); }
+  document.querySelectorAll("nav a").forEach((a) => a.classList.toggle("active", a.dataset.route === name));
+}
+window.addEventListener("hashchange", route);
+
+// ---------- right column ----------
+function renderSummary(sum) {
+  summaryCache = sum;
+  const season = sum.seasons[sum.seasons.length - 1];
+  if (!season) return;
+  $("meta").textContent = season.id + " · spend $" + season.totalCostUsd.toFixed(2);
+
+  let gh = "";
+  for (const [g, table] of Object.entries(season.standings)) {
+    gh += "<h2>" + (g === "League" ? "League table" : "Group " + g) + '</h2><table><tr><th>Model</th><th class="num">W</th><th class="num">D</th><th class="num">L</th><th class="num">Pts</th><th class="num">+/-</th></tr>';
+    for (const s of table) {
+      gh += '<tr><td class="model">' + mlink(s.model) + '</td><td class="num">' + s.wins + '</td><td class="num">' + s.draws + '</td><td class="num">' + s.losses + '</td><td class="num"><b>' + s.points + '</b></td><td class="num">' + (s.scoreDiff > 0 ? "+" : "") + s.scoreDiff + "</td></tr>";
+    }
+    gh += "</table>";
+  }
+  $("groups").className = ""; $("groups").innerHTML = gh;
+
+  const ko = season.matches.filter((m) => !m.stage.startsWith("group") && m.stage !== "league");
+  if (ko.length) {
+    let kh = "";
+    for (const m of ko) {
+      const name = (x) => (m.winner === x ? '<span class="winner">' + esc(short(x)) + "</span>" : esc(short(x)));
+      const legs = m.legs.map((l, i) => "L" + (i + 1) + " " + num(l.votesPro) + "-" + num(l.votesCon)).join(" · ");
+      kh += '<div class="ko-match"><span class="ko-stage">' + esc(m.stage) + "</span><span>" + name(m.home) + " vs " + name(m.away) + "</span><span>" + legs + "</span></div>";
+    }
+    if (season.champion) kh += '<div class="champ">Champion: ' + esc(short(season.champion)) + "</div>";
+    $("bracket").className = ""; $("bracket").innerHTML = kh;
+  }
+
+  const done = sum.seasons.filter((s) => s.done && s.champion);
+  if (done.length) {
+    let ch = "";
+    for (let i = done.length - 1; i >= 0; i--) {
+      const s = done[i];
+      ch += '<div class="ko-match"><span class="ko-stage">' + esc((s.division !== "flagship" ? s.division + " · " : "") + s.id.replace("season-", "")) + "</span><span class='winner'>" + mlink(s.champion) + "</span></div>";
+    }
+    $("champions").className = ""; $("champions").innerHTML = ch;
+  }
+}
+
+// ---------- polling ----------
+async function pollLive() {
+  try {
+    const live = await (await fetch("/api/live.json")).json();
+    const pill = $("livePill");
+    if (!live.status || live.status === "idle") { pill.className = "pill"; pill.textContent = "IDLE"; }
+    else { pill.className = "pill live"; pill.textContent = live.status === "done" ? "RESULT" : "LIVE"; }
+    const changed = !lastLive || JSON.stringify(lastLive) !== JSON.stringify(live);
+    const statusChanged = !lastLive || lastLive.status !== live.status || lastLive.label !== live.label;
+    lastLive = live;
+    if (changed && location.hash.startsWith("#/live")) {
+      viewLive();
+      const body = $("liveBody");
+      if (body && (live.status === "debating" || live.status === "judging")) {
+        body.lastElementChild?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }
+    } else if (statusChanged && (location.hash === "" || location.hash === "#" || location.hash === "#/")) {
+      viewBoard(); // refresh the live banner on the leaderboard
+    }
+  } catch {}
+}
+let lastSummaryJson = "";
+async function pollSummary() {
+  try {
+    const raw = await (await fetch("/api/summary.json")).text();
+    if (raw === lastSummaryJson) return;
+    lastSummaryJson = raw;
+    renderSummary(JSON.parse(raw));
+    if (location.hash === "" || location.hash === "#" || location.hash === "#/") viewBoard();
+  } catch {}
+}
+route();
+pollLive(); pollSummary();
+setInterval(pollLive, 2500);
+setInterval(pollSummary, 8000);
+</script>
+</body>
+</html>

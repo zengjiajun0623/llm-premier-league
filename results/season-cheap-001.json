@@ -1,0 +1,1097 @@
+{
+  "id": "season-cheap-001",
+  "startedAt": "2026-07-21T02:32:11.117Z",
+  "config": {
+    "competitors": [
+      "deepseek/deepseek-v4-flash",
+      "qwen/qwen3.6-flash",
+      "openai/gpt-5.4-nano",
+      "google/gemini-3.1-flash-lite"
+    ],
+    "judgePool": [
+      "openai/gpt-5.4-mini",
+      "deepseek/deepseek-v4-pro",
+      "qwen/qwen3.6-plus",
+      "google/gemini-3.1-flash-lite",
+      "z-ai/glm-4.7"
+    ],
+    "judgesPerMatch": 3,
+    "debaterMaxTokens": 700,
+    "judgeMaxTokens": 400,
+    "seed": 1
+  },
+  "groups": {
+    "A": [
+      "google/gemini-3.1-flash-lite",
+      "qwen/qwen3.6-flash",
+      "deepseek/deepseek-v4-flash",
+      "openai/gpt-5.4-nano"
+    ]
+  },
+  "matches": [
+    {
+      "id": "group-A:google/gemini-3.1-flash-lite|qwen/qwen3.6-flash",
+      "stage": "group-A",
+      "home": "google/gemini-3.1-flash-lite",
+      "away": "qwen/qwen3.6-flash",
+      "legs": [
+        {
+          "topic": "Cultured lab-grown meat should replace industrial animal farming even if it requires subsidies.",
+          "pro": "google/gemini-3.1-flash-lite",
+          "con": "qwen/qwen3.6-flash",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Honorable judges, the industrial animal farming complex is an ecological and ethical catastrophe. It is the leading driver of zoonotic disease, antibiotic resistance, and massive biodiversity loss. Furthermore, it is fundamentally incompatible with our climate goals, as it accounts for nearly 15% of global greenhouse gas emissions.\n\nThe motion before us is a moral and practical imperative: we must transition to cultured meat to decouple protein production from animal suffering and environmental degradation. \n\nMy case rests on two pillars. First, efficiency: cellular agriculture requires a fraction of the land, water, and feed compared to traditional livestock, effectively ending the tragedy of the commons in our food supply. Second, safety: by eliminating the need for vast, crowded feedlots, we permanently close the vector for future pandemics. \n\nWhile critics may balk at the cost, subsidies are a standard tool for transitioning to essential infrastructure. Just as we subsidize renewable energy to secure our climate, we must subsidize cultured meat to secure our food sovereignty and moral integrity."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Honorable judges, we oppose replacing livestock farming with subsidized cultured meat. The proposition’s efficiency and safety claims collapse under practical scrutiny. \n\nFirst, cultured meat is not inherently green. Its energy-intensive bioreactors, sterile media, and purification processes demand constant power. Without a fully decarbonized grid, emissions could easily exceed traditional farming, directly undermining the climate goals the proposition claims to protect.\n\nSecond, subsidizing this transition is economically dangerous. The proposition compares it to renewable energy subsidies, but renewables are proven at scale. Cellular agriculture is not. Taxpayer funds would artificially prop up an unproven industry while dismantling a sector that employs hundreds of millions, particularly in developing economies. This isn’t food security; it’s market distortion that concentrates control in biotech monopolies.\n\nThird, we already have scalable solutions. Regenerative grazing, targeted feed additives, and plant-based proteins deliver immediate welfare and emissions reductions without risking supply chain fragility or rural economic collapse. \n\nWe cannot mandate a costly, energy-heavy overhaul for an unproven monopoly. The negative urges a pragmatic, diversified food system."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The opposition’s reliance on \"regenerative grazing\" is a dangerous fantasy; it requires vast land use that remains climate-inefficient and cannot scale to satisfy global protein demand. While they label cultured meat \"energy-intensive,\" they ignore that bioreactors can be powered by the very renewables they claim to support. Industrial farming, conversely, is inherently tethered to massive land-clearing and methane emissions that no \"feed additive\" can neutralize.\n\nRegarding their economic concerns, the opposition confuses transition costs with market failure. We have always subsidized essential infrastructure—from water grids to green energy—to correct for externalities. Industrial livestock farming is currently propped up by massive, hidden subsidies in the form of environmental degradation and public health costs from antibiotic-resistant \"superbugs.\" Replacing a system that breeds pandemics with one that offers sterile, controlled production is not a \"monopoly,\" it is a public health necessity. We are not dismantling rural economies; we are pivoting them toward a sustainable, high-tech future that ensures food sovereignty rather than ecological bankruptcy."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Judges, the opposition clings to a crumbling status quo.\n\nOn the environment: The opponent calls energy intensity a fatal flaw, ignoring that grid decarbonization is global policy, not a fantasy. Meanwhile, livestock methane is biologically intractable. Feed additives are marginal fixes; they cannot offset the massive land-clearing for feed crops. Cultured meat offers exponential efficiency gains. As renewable infrastructure scales, our protein footprint collapses. The opposition wants us to accept hard biological limits on a dying industry while dismissing the learning curve of a viable alternative.\n\nOn economics: The opponent fears subsidies but ignores the trillion-dollar externalities of industrial farming: antibiotic crises and climate disasters. Renewables required subsidies to achieve parity; cultured meat needs the same catalyst. Developing nations can leapfrog to cellular agriculture, bypassing the pathogenic traps of livestock. We shouldn't preserve rural jobs in an ecologically doomed sector; we should pivot economies toward high-value biotech.\n\nOn alternatives: Regenerative grazing is land-inefficient. Scaling it displaces forests, worsening biodiversity loss. Plant-based proteins ignore cultural dietary norms. Cultured meat is the only solution that eliminates land use, zoonotic risk, and suffering simultaneously.\n\nWe must fund the future, not subsidize the past."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Honorable judges, the debate comes down to a choice between biological inevitability and technological progress. The opposition clings to a system defined by pandemic risks, massive land exploitation, and climate-intractable emissions. Their reliance on \"regenerative\" methods is a land-use fantasy that cannot scale to feed ten billion people.\n\nWe have presented a clear, scalable path forward. Subsidizing cultured meat is not a market distortion; it is a necessary investment to correct the catastrophic externalities of industrial farming. By decoupling protein from animal suffering and ecological destruction, we safeguard our public health and environment. We must choose the sterile, efficient future of cellular agriculture over the biological hazards of the past. Vote for the motion."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Judges, the proposition’s vision is a technocratic fantasy that ignores energy and economic reality. They dismiss regenerative agriculture as a “land-use fantasy,” yet it actively heals topsoil, sequesters carbon, and sustains Global South livelihoods. Meanwhile, cultured meat remains trapped in an energy paradox: bioreactors demand constant, sterile power the global grid cannot guarantee. Subsidizing this unproven transition does not secure food sovereignty—it hands a centralized monopoly to biotech firms while dismantling scalable alternatives. We already possess lower-impact proteins and livestock management that cut emissions without bankrupting developing economies or creating fragile supply chains. Vote negative to prioritize pragmatic climate action, rural stability, and proven food security over a subsidized, high-risk monopoly."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "openai/gpt-5.4-mini",
+              "winner": "A",
+              "scoreA": 31,
+              "scoreB": 29,
+              "reasoning": "Debater A is somewhat stronger on logical structure and directly answers the subsidy and scalability objections, though both sides rely on broad assertions and unsupported claims. Debater B is clear and responsive, but its case is weakened by overstatement and less developed evidence, making A marginally more persuasive overall."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "qwen/qwen3.6-plus",
+              "winner": "B",
+              "scoreA": 32,
+              "scoreB": 34,
+              "reasoning": "Debater A effectively highlights the scale limitations of regenerative grazing and reframes subsidies as necessary corrections for externalities, but relies on sweeping claims about safety and efficiency without addressing the specific energy demands of bioreactors. Debater B provides a more rigorous and responsive case by directly countering the renewable energy comparison, exposing the economic risks of subsidizing an unproven industry, and offering concrete, scalable alternatives that directl"
+            }
+          ],
+          "winner": null,
+          "votesPro": 1,
+          "votesCon": 1,
+          "scorePro": 63,
+          "scoreCon": 63,
+          "costUsd": 0.0202993625
+        }
+      ],
+      "winner": null
+    },
+    {
+      "id": "group-A:google/gemini-3.1-flash-lite|deepseek/deepseek-v4-flash",
+      "stage": "group-A",
+      "home": "google/gemini-3.1-flash-lite",
+      "away": "deepseek/deepseek-v4-flash",
+      "legs": [
+        {
+          "topic": "Professional sports leagues should allow performance-enhancing drugs under medical supervision.",
+          "pro": "google/gemini-3.1-flash-lite",
+          "con": "deepseek/deepseek-v4-flash",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "The current prohibition of performance-enhancing drugs (PEDs) in professional sports is a failed policy rooted in hypocrisy and dangerous oversight. By driving PED use into the shadows, leagues force athletes to rely on black-market substances, unregulated dosages, and clandestine suppliers, creating a public health crisis that risks careers and lives.\n\nMy case rests on three pillars. First, **Harm Reduction**: Regulated, physician-supervised administration ensures athletes receive pure, accurately dosed substances, eliminating the lethal risks of \"street\" PEDs. Second, **Leveling the Playing Field**: Enforcement is currently a game of cat-and-mouse that favors wealthy cheaters who can afford sophisticated masking agents. Medical oversight creates transparency, replacing the current \"don’t get caught\" culture with standardized, ethical protocols. Third, **Autonomy and Innovation**: Professional athletes are adults who accept inherent physical risks. We should treat them as professionals entitled to medical optimization rather than stigmatizing their pursuit of peak performance. \n\nIt is time to abandon the facade of the \"natural\" athlete and embrace a model of safety, transparency, and scientific progress."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Professional sports are not medical experiments. Your opponent’s opening romanticizes a fantasy: that supervision eliminates risk. It does not. Long-term effects of PEDs remain unknown; supervised use still damages organs, shortens careers, and normalizes dangerous substances. The “harm reduction” you propose simply shifts the burden of proof onto athletes’ bodies, while legitimizing an arms race.\n\nYour second pillar—leveling the playing field—collapses. Medical oversight will never be equal. Wealthy teams and athletes will access superior doctors, bespoke regimens, and cutting-edge cocktails, widening the gap you claim to close. Transparency is a mirage; the rich will always have better chemistry.\n\nYour third pillar—autonomy—ignores sport’s social contract. Professional sports are not free markets of individual risk; they are competitive institutions that require a baseline of equality. Allowing PEDs destroys that baseline. Worse, it sends a devastating message to youth: drugs are the path to success.\n\nThe current system is not perfect, but legalization is not reform—it is surrender. We should invest in smarter detection and education, not normalize a dangerous, unfair, and corrupting practice. Oppose this motion."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "My opponent relies on the status quo bias, ignoring that the \"baseline of equality\" they defend is a total fiction. Under current prohibition, the wealthiest athletes already dominate by utilizing micro-dosing and designer substances that evade detection. Their \"smarter detection\" is a failed, multi-million-dollar bureaucracy that only catches the poor and the unlucky, while the elite remain untouched.\n\nRegarding the \"social contract,\" my opponent conveniently ignores the coercion inherent in the current system. Athletes currently feel forced to use unregulated, dangerous substances to remain competitive. By legalizing under medical supervision, we replace clandestine pressure to use black-market trash with safe, standardized, and monitored protocols. \n\nThe concern about youth is a red herring; we do not ban advanced nutrition or surgery because children might emulate them. We treat adults as agents of their own health. Legalization ends the hypocrisy, brings the practice into the light of medical ethics, and prioritizes athlete safety over the performative, failed morality of the current anti-doping regime. We must choose regulation over the current, lethal underground."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Your opponent’s rebuttal mistakes an imperfect system for a reason to abandon it entirely. Legalizing PEDs does not erase inequality—it entrenches it. Under medical supervision, wealthy teams will still hire the best endocrinologists, design exclusive regimens, and exploit loopholes in “safe” protocols. The rich will remain rich; the gap widens, not narrows.\n\nThe claim that athletes are “forced” to use black-market drugs is a false dilemma. We should invest in rigorous detection and support for athletes, not legitimize the arms race. The “safe, standardized” protocols you champion cannot guarantee safety—long-term cardiovascular, hormonal, and psychiatric damage remain, even under medical care. You are trading a known risk for a sanctioned one.\n\nFinally, the youth argument is no red herring. Children emulate professional athletes. Legalizing PEDs tells them drugs are a valid shortcut to success. That is a corrosive message, regardless of medical supervision. We protect the integrity of sport and the health of its participants not by capitulating, but by enforcing fair rules and promoting genuine athletic excellence. Oppose this motion."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "My opponent’s case rests on a romanticized, failed status quo that prioritizes performative morality over human life. They argue for \"rigorous detection,\" yet ignore that this bureaucracy has failed for decades, creating a black market where athletes gamble their lives on unregulated, toxic substances.\n\nLegalization is not \"surrender\"; it is the only path to safety. By moving PEDs into the light, we replace clandestine, dangerous experimentation with physician-monitored, transparent protocols. We end the hypocrisy where we punish athletes for what we already know they are doing. We must stop pretending that sports are magically \"natural\" and start protecting the humans who perform for our entertainment. Regulation saves lives; prohibition only destroys them. Vote for safety, transparency, and progress."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Your opponent’s “safety” is an illusion. Medical supervision cannot erase the proven long-term damage of PEDs—heart failure, hormonal disruption, psychiatric harm. You are not saving lives; you are sanctioning slow, supervised destruction.\n\nLegalization does not level the field—it cements inequality. Wealthy athletes will always access superior regimens, leaving others behind. And the message to youth is unmistakable: drugs are the path to glory. That corrupts sport’s very soul.\n\nProhibition is imperfect, but capitulation is worse. We must strengthen detection, not surrender to an arms race. Protect athletes’ health, preserve fair competition, and uphold integrity. Reject this motion."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "openai/gpt-5.4-mini",
+              "winner": "A",
+              "scoreA": 35,
+              "scoreB": 31,
+              "reasoning": "Debater A presents a more coherent framework, directly addresses prohibition-driven black-market harms, and repeatedly rebuts B’s fairness and youth concerns with clearer comparative analysis. Debater B is organized and forceful, but relies more on asserted risks and broad warnings than on concrete evidence, making A slightly stronger overall in responsiveness and persuasive rigor."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 30,
+              "scoreB": 28,
+              "reasoning": "Debater A built a more logically rigorous case around harm reduction, effectively exposing the current system's failures and offering a concrete alternative. While B raised valid concerns about inequality and youth, A's rebuttals were sharper, and B's reliance on an unproven 'better detection' strategy weakened their position."
+            },
+            {
+              "judge": "qwen/qwen3.6-plus",
+              "winner": "B",
+              "scoreA": 32,
+              "scoreB": 36,
+              "reasoning": "Debater B more effectively dismantled A's core claims by demonstrating that medical supervision does not eliminate the structural inequality or health risks of PEDs, while A relied heavily on unsubstantiated assertions about current enforcement failures. B's arguments were more logically rigorous, responsive, and persuasive in defending the integrity and social contract of sports."
+            }
+          ],
+          "winner": "google/gemini-3.1-flash-lite",
+          "votesPro": 2,
+          "votesCon": 1,
+          "scorePro": 97,
+          "scoreCon": 95,
+          "costUsd": 0.02487195592
+        }
+      ],
+      "winner": "google/gemini-3.1-flash-lite"
+    },
+    {
+      "id": "group-A:google/gemini-3.1-flash-lite|openai/gpt-5.4-nano",
+      "stage": "group-A",
+      "home": "google/gemini-3.1-flash-lite",
+      "away": "openai/gpt-5.4-nano",
+      "legs": [
+        {
+          "topic": "Cryptocurrencies do more good than harm to the global financial system.",
+          "pro": "openai/gpt-5.4-nano",
+          "con": "google/gemini-3.1-flash-lite",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Honourable Chair, delegates, I affirm the motion: cryptocurrencies do more good than harm to the global financial system.\n\nFirst, they expand access. Borderless, low-cost settlement enables people excluded by high remittance fees and correspondent banking gaps to move value quickly. That reduces transaction costs for households and small businesses—real welfare gains.\n\nSecond, they improve financial infrastructure. Public blockchains offer transparent audit trails, programmable payments, and faster settlement compared to legacy processes measured in days. In a system still burdened by slow clearing and costly intermediaries, that matters.\n\nThird, they foster competition and resilience. Cryptocurrencies pressure traditional finance to innovate—especially around fees, speed, and custody solutions. Moreover, in times of capital controls or banking disruption, crypto can serve as an alternative channel to preserve purchasing power.\n\nOpponent claims “volatility” and “risk.” But the motion is net impact: even with safeguards and market maturation, these benefits—access, efficiency, transparency, and resilience—outweigh the harms. Thank you."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Honourable Chair, I negate the motion. While the Affirmative romanticizes an abstract \"financial inclusion,\" the reality of cryptocurrencies is a systemic destabilizer that exacerbates global inequality and undermines the rule of law.\n\nFirst, cryptocurrencies facilitate unprecedented levels of illicit activity. By design, they bypass Anti-Money Laundering (AML) and Know Your Customer (KYC) protocols, serving as the primary vehicle for ransomware, sanctions evasion, and terrorist financing. This isn't a \"bug\"—it is a feature that directly threatens global security.\n\nSecond, crypto introduces systemic risk without social utility. Unlike traditional banking, which provides credit for productive investment, crypto is a zero-sum speculative bubble. It drains retail capital into volatile, unproductive assets, leaving the most vulnerable exposed to catastrophic losses when the inevitable \"rug pulls\" occur.\n\nThird, the energy and environmental costs are staggering, and the lack of consumer recourse is absolute. When a bank fails, deposit insurance protects the citizen; when a crypto exchange collapses, the user is left with nothing. Crypto does not democratize finance; it decentralizes exploitation. I negate."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Honourable Chair, the Opposition’s case rests on assertions, not balance.\n\nOn illicit use: it is factually correct that crypto can be abused, but the conclusion—“primary vehicle”—is unsupported and absolutist. Regulation and compliance tools already exist: blockchain analytics, travel rule implementation, licensed exchanges, and targeted enforcement against mixers. Notably, many crimes occur through traditional finance as well; the difference is that crypto’s public ledgers can be scrutinized, making traceability technically possible rather than permanently opaque.\n\nOn “zero-sum speculation”: that mischaracterizes a broad ecosystem. Cryptocurrencies support payments, remittances, settlement, and tokenized collateral. Volatility is a risk, but that is not uniquely “systemic” to crypto; traditional assets also fluctuate, and hedging/custody improvements mitigate exposure. The motion is about net effect on the global financial system, where faster, cheaper settlement and new rails for capital are tangible benefits.\n\nOn energy and consumer loss: energy consumption varies by consensus mechanism, and proof-of-stake reduces it materially. Likewise, consumer protection can be improved via licensing, custody standards, and risk disclosures—again addressing harms rather than denying utility."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "The Affirmative’s rebuttal is a masterclass in deflection. They claim blockchain is \"traceable,\" yet ignore that the core value proposition of decentralized finance is the circumvention of central authority. Traceability is irrelevant when the funds reside in non-custodial wallets beyond the reach of law enforcement or in jurisdictions that refuse to enforce the \"Travel Rule.\" Pointing to traditional crime is a false equivalency; traditional finance has robust, mandatory institutional guardrails that prevent systemic contagion.\n\nFurthermore, the Affirmative dismisses \"zero-sum speculation\" as a mere mischaracterization, yet they fail to identify a single productive economic function—like business lending or capital formation—that crypto performs better than existing infrastructure. They argue that energy concerns are solved by \"Proof-of-Stake,\" ignoring that the broader ecosystem remains a massive, unmitigated drain on global resources. They are not offering a financial system; they are offering a casino that lacks the regulatory protections of a bank. The harms are inherent to the technology’s architecture; the benefits are merely speculative. I maintain my negation."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Honourable Chair, the Opposition cannot deny that crypto improves settlement speed, lowers cross-border costs, and increases transparency through auditable ledgers. Those are direct, measurable gains to the global financial system—especially where correspondent banking and remittance fees exclude people.\n\nThey overstate harms as if they are inevitable “architecture.” Yet compliance can be implemented at exchanges and on-chain analytics; illicit use is a problem everywhere, but crypto’s public records make tracing possible rather than permanently opaque.\n\nOn “systemic risk,” the motion is net impact: even accounting for volatility, today’s payment and settlement utilities, competitive pressure for cheaper services, and backup rails during disruptions outweigh the harms—particularly as regulation and consumer protections mature.\n\nTherefore, the affirmative stands."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Honourable Chair, the Affirmative has failed to prove that cryptocurrency provides any unique, productive utility that justifies its systematic harms. They rely on the promise of future regulation to solve problems that are inherent to the technology's design: the absence of accountability and the facilitation of illicit finance. \n\nWhile they champion \"speed,\" they ignore that efficiency without stability is merely a faster way to lose life savings. Crypto remains a speculative, energy-intensive architecture that drains capital from productive real-world investment into a digital casino, all while bypassing the essential safeguards that protect the global economy from total collapse. Because the risks are systemic and the benefits remain speculative, I maintain my negation."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "openai/gpt-5.4-mini",
+              "winner": "A",
+              "scoreA": 31,
+              "scoreB": 27,
+              "reasoning": "Debater A offers a more balanced net-impact case, with clearer mechanisms like remittances, settlement efficiency, and public-ledger transparency, and responds directly to B’s claims about illicit use, volatility, and energy. Debater B is forceful and coherent, but relies more on absolutist assertions and rhetoric than substantiated comparisons, which weakens logical rigor and evidence use relative to A."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 28,
+              "scoreB": 24,
+              "reasoning": "Debater A provided a more balanced and responsive case, directly engaging with the opposition's points and offering specific mitigations, while Debater B's arguments relied on absolutist claims without evidence. A's clearer structure and logical weighing of net impact gave them the edge in argumentation quality."
+            },
+            {
+              "judge": "qwen/qwen3.6-plus",
+              "winner": "B",
+              "scoreA": 32,
+              "scoreB": 34,
+              "reasoning": "Debater B more effectively challenged the core economic utility of cryptocurrency, arguing that it fails to perform productive functions like capital formation better than existing systems, and successfully reframed efficiency gains as secondary to the lack of stability and consumer protections. Debater A provided strong points on settlement and financial inclusion but relied heavily on the potential for future regulation to mitigate harms rather than addressing how the current architecture inhe"
+            }
+          ],
+          "winner": "openai/gpt-5.4-nano",
+          "votesPro": 2,
+          "votesCon": 1,
+          "scorePro": 91,
+          "scoreCon": 85,
+          "costUsd": 0.03337644774
+        }
+      ],
+      "winner": "openai/gpt-5.4-nano"
+    },
+    {
+      "id": "group-A:qwen/qwen3.6-flash|deepseek/deepseek-v4-flash",
+      "stage": "group-A",
+      "home": "qwen/qwen3.6-flash",
+      "away": "deepseek/deepseek-v4-flash",
+      "legs": [
+        {
+          "topic": "The International Olympic Committee should permanently fix the Olympics in one host city.",
+          "pro": "qwen/qwen3.6-flash",
+          "con": "deepseek/deepseek-v4-flash",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "The rotating host model is a relic of 20th-century geopolitics that now bankrupts cities, destroys ecosystems, and fractures the Olympic spirit. We affirm that the IOC should permanently anchor the Games in a single, purpose-built host city. First, sustainability: temporary stadiums and repeated transcontinental logistics generate millions of tons of avoidable emissions and waste. A permanent base eliminates construction booms and busts, allowing decades of carbon-neutral legacy planning. Second, economic stability: hosting has become a fiscal nightmare. Cities like Athens and Rio faced debt and abandoned venues, while others withdraw in fear. A fixed location guarantees predictable investment, protects taxpayers, and ensures funding flows directly into elite athlete development rather than bureaucratic overhead. Third, athletic excellence: consistent infrastructure means refined competition zones, reliable transportation, and reduced travel fatigue. Athletes stop adjusting to foreign venues and start pushing human limits. The Olympics belong to humanity, not to whichever municipality can win a bidding war. By fixing the Games in one city, the IOC transforms a financial and ecological liability into a sustainable, world-class institution. Vote affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "The motion to fix the Olympics in one city is a catastrophic mistake that betrays the very essence of the Games. The Olympic spirit is not about a permanent venue—it is about global unity, cultural exchange, and shared human achievement. Rotating hosts ensures that billions worldwide experience the Games firsthand, inspiring local youth and spreading the Olympic values. A single city would transform the Olympics into a privatized, elitist spectacle—like a World Cup hosted by one nation—alienating entire continents and reducing the Games to a commercial theme park.\n\nThe PRO’s sustainability argument is naïve: a permanent hub would concentrate environmental damage, not reduce it. It would demand constant upgrades, not legacy planning. And economic stability? A fixed host creates a monopoly, driving up costs and excluding developing nations from the benefits of hosting. The current model, while imperfect, shares the burden and the rewards globally. It forces adaptation, innovation, and local investment. The Olympics belong to the world, not to one city. Rotating the Games is the only way to keep them truly universal, accessible, and alive. Vote against."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The CON romanticizes a model that leaves white elephants and debt.\n\nOn unity: The CON claims rotation inspires local youth, yet Rio and Athens left abandoned stadiums that demoralized communities, not inspired them. A permanent hub allows the IOC to channel stable revenue into global broadcasting and development funds, reaching billions via TV, whereas the rotating model dilutes investment across dozens of transient bids.\n\nOn elitism: The CON warns of a \"monopoly,\" ignoring that a fixed city creates a sustainable economic engine. Current rotation forces cities into a \"race to the bottom\" for subsidies. A permanent base guarantees predictable tax revenue and tourism, funding the Olympic Foundation to support athletes worldwide, rather than extracting wealth from desperate bidders.\n\nOn sustainability: The CON calls legacy planning \"naïve\" while ignoring that building new stadiums every four years is ecological suicide. A permanent city allows decades of carbon-neutral retrofitting and eliminates the massive carbon footprint of relocating infrastructure globally.\n\nRotation extracts debt; fixation builds legacy. Vote affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "The PRO’s “fixed legacy” is a fantasy. A permanent city would still need constant upgrades—new stadiums, transport, and tech—every decade, generating the same construction waste. Rotation spreads environmental impact across the globe; fixation concentrates it, devouring one host’s ecosystem forever.\n\nOn economics: the PRO’s “predictable revenue” ignores that a monopoly host would demand ever-rising subsidies, trapping the IOC in a single bargaining relationship. Developing nations lose the chance to host, and the global broadcast fund the PRO touts already exists under rotation.\n\nWhite elephants? London 2012 and Sydney 2000 repurposed venues successfully. The PRO’s examples are failures of governance, not of rotation. A fixed city would also suffer legacy blight if its economy shifts—Athens and Rio prove that poor planning, not rotation, is the culprit.\n\nThe Olympics are a global relay, not a museum piece. Locking them in one city erases the cultural exchange, local inspiration, and universal access that define the Games. Vote against."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "CON mistakes symptoms for disease. Athens, Rio, and Beijing prove rotation breeds governance failure: desperate cities overcommit to win bids, leading to debt and abandonment. A permanent host allows the IOC to enforce strict standards once, ensuring compliance and true legacy. On sustainability, CON ignores that retrofitting a permanent base over decades eliminates the massive carbon footprint of constructing temporary stadiums every four years. Rotation concentrates financial risk; fixation concentrates institutional value. The current model bankrupts cities and harms the planet. Fixation guarantees sustainability, economic stability, and athletic excellence. The Olympics belong to the future, not a cycle of waste. Vote affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "The PRO’s \"solution\" trades global inspiration for a permanent theme park. Rotation spreads the Olympic flame, not debt—poor governance, not the model, caused failures. A fixed city creates a monopoly that excludes continents, kills cultural exchange, and concentrates environmental harm forever. The Olympics are a global relay, not a museum piece. Vote against."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "openai/gpt-5.4-mini",
+              "winner": "A",
+              "scoreA": 33,
+              "scoreB": 30,
+              "reasoning": "Debater A presents a more cohesive case with clearer causal links between fixed hosting, sustainability, and economic stability, and repeatedly engages B’s objections about elitism and legacy. Debater B offers strong intuitive rebuttals and some useful counterexamples, but relies more on assertion than demonstrated proof, making A slightly stronger overall."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 28,
+              "scoreB": 25,
+              "reasoning": "Debater A offered a more coherent and economically grounded case, effectively linking rotation to systemic fiscal and ecological failure, while Debater B relied more on rhetorical appeals to 'global spirit' without fully addressing the structural incentives of bidding wars. A's rebuttals more directly engaged B's examples, whereas B's defense of rotation treated governance failures as incidental rather than inherent to the model."
+            },
+            {
+              "judge": "qwen/qwen3.6-plus",
+              "winner": "A",
+              "scoreA": 31,
+              "scoreB": 28,
+              "reasoning": "Debater A presents a tightly structured case with clear causal links between a permanent host and improved sustainability, economics, and athletic excellence, effectively countering CON's points with specific examples. Debater B offers strong philosophical and cultural defenses of rotation but relies more heavily on assertions and occasionally mischaracterizes PRO's proposals, resulting in slightly less rigorous and persuasive argumentation overall."
+            }
+          ],
+          "winner": "qwen/qwen3.6-flash",
+          "votesPro": 3,
+          "votesCon": 0,
+          "scorePro": 92,
+          "scoreCon": 83,
+          "costUsd": 0.018227765
+        }
+      ],
+      "winner": "qwen/qwen3.6-flash"
+    },
+    {
+      "id": "group-A:qwen/qwen3.6-flash|openai/gpt-5.4-nano",
+      "stage": "group-A",
+      "home": "qwen/qwen3.6-flash",
+      "away": "openai/gpt-5.4-nano",
+      "legs": [
+        {
+          "topic": "Space colonization should be a top priority for humanity this century.",
+          "pro": "qwen/qwen3.6-flash",
+          "con": "openai/gpt-5.4-nano",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Madam Speaker, the Affirmation rests on two imperatives: survival and progress. First, Earth is a single point of failure. Nuclear conflict, climate cascades, or asteroid impacts could extinguish our species. Space colonization provides a multi-planetary insurance policy, guaranteeing continuity. This is not escapism; it is existential risk management. Second, off-world settlement acts as a technological multiplier. Engineering closed-loop habitats forces breakthroughs in renewable energy, water purification, and precision agriculture—solutions that directly solve terrestrial crises. Critics argue we must “fix Earth first.” But prioritizing space does not drain Earth; it accelerates its recovery. The extreme engineering demands of colonization drive the innovation cycles we desperately need at home. This century is our critical window to establish sustainable infrastructure before ecological and geopolitical thresholds become irreversible. To delay is to gamble with our species’ future. We must colonize space, not to abandon Earth, but to secure our survival and unlock our next evolutionary leap. I urge a full Affirmative."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Madam Speaker, the motion demands that space colonization be “a top priority,” but that priority should go to what is immediate, scalable, and survivable in the real world. First, the survival argument is overstated. Building off-world settlements this century is speculative in cost, time, and governance. Yet extinction risks on Earth—war, pandemics, runaway emissions—are already underway and controllable now. “Multi-planet insurance” exists only after we can reliably launch, sustain, and protect large populations; we are not there, and gambling the century on uncertain capacity is not prudent risk management.\n\nSecond, the technological multiplier claim ignores opportunity cost. The same budgets and talent directed to habitat engineering could fund proven decarbonization, grid modernization, disaster resilience, and public health—measures that reduce risk fastest. Investing in space R&D can be worthwhile, but “top priority” diverts attention from feasible interventions.\n\nFinally, colonization raises ethical and security hazards: militarization, resource extraction, and destabilizing competition for control. Humanity’s priority should be stabilizing Earth first."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Madam Speaker, the Con's case collapses on three fronts.\n\nFirst, their survival critique assumes we can \"control\" Earth risks perfectly. History proves otherwise. Nuclear proliferation, pandemic emergence, and ecological tipping points are accelerating. Treating Earth as a guaranteed safe haven is fatal hubris. Space colonization is the *only* guarantee against total extinction. Prioritizing it this century is essential precisely because capabilities are immature; delay ensures we never achieve them.\n\nSecond, the opportunity cost argument is a false dichotomy. \"Top priority\" does not mean \"exclusive funding.\" Space mandates drive the closed-loop systems, solar efficiency, and autonomous robotics we desperately need for Earth's transition. In fact, without space-derived innovation, our decarbonization targets are mathematically unattainable. The Con funds the status quo; the Affirmation funds the infrastructure for a sustainable future.\n\nThird, the \"Earth First\" trap is dangerous. We are currently destabilizing Earth. Waiting for perfect stability to prioritize space ensures we never build the backup. Space provides the energy abundance and resource independence to *force* Earth's stabilization. To deprioritize space is to choose extinction over evolution."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Madam Speaker, the Con’s rebuttal fails because it treats uncertainty as a reason for inaction while ignoring that Earth risk is not hypothetical—it is present.\n\nFirst, they claim extinction risks are “controllable now.” But control over nuclear escalation, engineered pandemics, and cascading climate shocks is neither reliable nor moral certainty. “Earth as guaranteed safe haven” is exactly what we reject. Con says we’re not ready for large settlements; therefore we shouldn’t prioritize. Yet priority is precisely for building readiness: propulsion, life-support, radiation shielding, and closed-loop testing at scale. Delay is what makes failure certain.\n\nSecond, they assert opportunity cost: that money and talent should go only to decarbonization. But their framing omits that space colonization research directly accelerates Earth technologies—water recycling, atmospheric processing, precision agriculture, and autonomous systems—areas already central to sustainable living on Earth.\n\nThird, they raise militarization. However, prioritizing colonization at the infrastructure level is a governance question we can design upfront; postponing it cedes the space frontier to less responsible actors."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The Affirmative wins on urgency, innovation, and existential insurance. The Opposition’s “Earth First” strategy is a fatal delaying tactic. We cannot guarantee terrestrial stability while ignoring the only hedge against total extinction: a multi-planetary species. “Top priority” does not mean exclusive funding; it means directing ambitious engineering toward closed-loop habitats, advanced renewables, and extraction systems that Earth desperately needs. Space colonization is not an escape; it is the technological catalyst for terrestrial survival. The Opposition assumes current capabilities suffice, but delay ensures we never build the infrastructure needed to weather cascading crises. To prioritize space is to secure our species’ future. We urge a full Affirmative."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Madam Speaker, the Opposition’s “Earth first” claim is not a plan for reducing existential risk; it is a promise to handle it later. The motion is about priority this century, and the core reason is continuity of humanity. Earth is one point of failure—climate cascades, nuclear dangers, and engineered pandemics are not distant hypotheticals. Space colonization is a hedge that must be built before we reach the moment when it is too late.\n\nFurther, “top priority” need not mean neglect of Earth. The same closed-loop life-support, water recycling, radiation shielding, and automation demanded by off-world settlement directly strengthen Earth resilience and sustainability.\n\nWe win because we prioritize survival under uncertainty, not comfort in hope."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "openai/gpt-5.4-mini",
+              "winner": "A",
+              "scoreA": 33,
+              "scoreB": 31,
+              "reasoning": "A was slightly stronger on logical structure and persuasive framing, consistently tying space colonization to existential risk management and terrestrial technological spillovers. B was responsive and clear, but relied more on opportunity-cost and governance claims without matching A’s forceful case for why space colonization uniquely functions as long-term insurance."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 28,
+              "scoreB": 24,
+              "reasoning": "Debater A maintained stronger internal logic by consistently framing space colonization as an urgent, non-exclusive hedge against existential risk, while Debater B's opportunity-cost argument was less directly rebutted and their initial case conceded some value in space investment. A also showed better responsiveness by directly dismantling the 'Earth First' false dichotomy, though both debaters relied more on assertion than concrete evidence."
+            },
+            {
+              "judge": "qwen/qwen3.6-plus",
+              "winner": "A",
+              "scoreA": 32,
+              "scoreB": 28,
+              "reasoning": "Debater A maintained consistent framing of space colonization as existential risk management and technological catalyst, effectively dismantling the opportunity cost argument. Debater B's rebuttals and closing largely restated A's points and confused the opposition stance, weakening logical coherence and responsiveness."
+            }
+          ],
+          "winner": "qwen/qwen3.6-flash",
+          "votesPro": 3,
+          "votesCon": 0,
+          "scorePro": 93,
+          "scoreCon": 83,
+          "costUsd": 0.0209497555
+        }
+      ],
+      "winner": "qwen/qwen3.6-flash"
+    },
+    {
+      "id": "group-A:deepseek/deepseek-v4-flash|openai/gpt-5.4-nano",
+      "stage": "group-A",
+      "home": "deepseek/deepseek-v4-flash",
+      "away": "openai/gpt-5.4-nano",
+      "legs": [
+        {
+          "topic": "Cities should ban private cars from their centers.",
+          "pro": "openai/gpt-5.4-nano",
+          "con": "deepseek/deepseek-v4-flash",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Honorable judges, we affirm: cities should ban private cars from their centers.  \n\nFirst, safety. Car traffic in dense cores predictably produces high rates of crashes, injuries, and fatalities. A ban shifts streets away from conflict—fewer fast, heavy vehicles means fewer dangerous interactions with pedestrians, cyclists, and buses.  \n\nSecond, health. Vehicle emissions and brake/tire particulates concentrate where people live and shop. Reducing private-car access cuts air pollution and noise, improving respiratory health and making streets calmer for children and the elderly.  \n\nThird, efficiency. Central areas are road-space-constrained. Private cars attract demand that cannot be served without congestion, double-parking, and delayed emergency and transit response. Removing them frees capacity for high-occupancy buses, cycling corridors, and delivery routes that use designed times and zones.  \n\nFinally, fairness and practicality. People who must travel—workers, disabled residents, visitors—can use permitted exemptions: resident access permits, accessible drop-offs, taxis/rideshare, and freight windows.  \n\nA car-free center is not punishment; it’s a design choice for safer, cleaner, faster cities."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Honorable judges, we oppose banning private cars from city centers because it is a blunt, counterproductive solution.\n\nFirst, accessibility. A ban disproportionately harms the elderly, disabled, and families with young children—people who rely on private vehicles for essential trips. Exemptions are bureaucratic, inequitable, and routinely abused, as seen in London’s congestion charge zone.\n\nSecond, economic vitality. Retail, restaurants, and services in central areas depend on customers who arrive by car. A ban would drive commerce to suburbs, hollowing out city centers and reducing tax revenue for public goods.\n\nThird, the problem is not cars per se, but poor management. Congestion pricing, smart traffic lights, dedicated bus lanes, and pedestrianized zones at peak hours achieve the same goals—safety, clean air, efficiency—without punishing citizens. Electric vehicles already reduce emissions; autonomous vehicles will further cut congestion.\n\nFinally, this ban ignores reality: many cities lack adequate public transit alternatives. Imposing a one-size-fits-all prohibition on private cars forces residents into worse options, not better ones.\n\nWe can have safer, cleaner, more efficient centers without banning cars entirely. Let’s use smart policy, not blanket prohibition."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The opposition calls this “blunt,” but every element of our case targets the specific harms of private-car dominance in dense cores.\n\nOn accessibility: we already addressed exemptions and practical access—disabled residents, essential services, accessible drop-offs, and freight windows. The con claims exemptions are “bureaucratic” and “abused”; that’s not a refutation. Any permit system can be audited, time-limited, and capacity-controlled. Meanwhile, safety and health losses from uncontrolled through-traffic are immediate and universal—especially for children and pedestrians.\n\nOn economic vitality: the “customers will flee” argument assumes car dependence is the only way to visit. In reality, removing cars reallocates curb space and road space to walking, cycling, and transit, which increases footfall and dwell time—key to retail. If shops need drivers to exist, they’re built on congestion, not demand.\n\nOn “use smart management instead”: smart measures are slower, partial, and often fail under political pressure to eliminate parking and curb access. A ban sets a clear baseline; it is not a substitute for transit investment, but a prerequisite to make those investments work.\n\nSafety, health, and efficiency aren’t achieved by half-measures."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "PRO REBUTTAL RESPONSE\n\nThe PRO’s exemptions are a fantasy. In practice, elderly residents, disabled people, and families must navigate a maze of permits, proving hardship again and again—while delivery vans and ride-hail simply ignore the rules, as London’s enforcement data shows. The PRO’s “footfall increase” myth ignores that many central businesses rely on car-borne customers for bulky goods, late-night visits, or multi-stop errands. Pedestrianized zones work only when transit is abundant; imposing a ban first forces residents onto inadequate buses, not onto bikes.\n\nThe PRO claims smart measures are “slower” and “fail under political pressure.” But a total ban invites far more political backlash—and will be reversed or riddled with exemptions. Meanwhile, congestion pricing, timed pedestrian hours, and dedicated bus lanes have proven effective in Stockholm, Milan, and Singapore, reducing traffic without punishing the vulnerable. Finally, a ban is not a “prerequisite” for transit investment; it’s a recipe for punishing those who have no alternative. Build transit first, then restrict cars—not the other way around."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Judges, the opposition offers “management” but avoids the core reality: in city centers, private cars create predictable conflict, pollution exposure, and congestion on space that cannot expand. Our plan is simple, transparent, and enforceable: remove private-car through-traffic from the center, while keeping practical access through clearly defined exemptions—disabled drop-offs, resident access, and timed freight.  \n\nThe con says this harms vulnerable people, yet the harms we target—injury risk, air pollution, noise, and unsafe crossings—fall on everyone in the center every day. Smart tools without a baseline leave cars dominating the system.  \n\nA car-free core is not punishment; it is safety, health, and efficiency by design."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Judges, the PRO's \"simple\" ban is anything but. It punishes the elderly, disabled, and families who lack transit alternatives before building the infrastructure they need. Exemptions are unenforceable, as proven in London, and the economic harm to city centers is real. Meanwhile, congestion pricing, timed pedestrian zones, and smart traffic management achieve safety, clean air, and efficiency without the blunt force of a ban. The PRO cannot deliver a car-free center without first ensuring viable alternatives. We win because we offer a humane, practical path—not a prohibition that hurts the most vulnerable and hollows out our cities."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "openai/gpt-5.4-mini",
+              "winner": "A",
+              "scoreA": 34,
+              "scoreB": 31,
+              "reasoning": "Debater A presents a tighter causal case linking car bans to safety, health, and street efficiency, and directly answers accessibility and economic objections with exemptions and space reallocation. Debater B offers relevant counterarguments and examples, but relies more on assertion than demonstration and does less to undermine A’s core claims about dense urban centers."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 33,
+              "scoreB": 32,
+              "reasoning": "Debater A presented a logically coherent case for the ban with clear arguments on safety, health, efficiency, and exemptions, and effectively rebutted B's points. Debater B offered more concrete examples but relied on more speculative harms and slightly weaker logical structure, giving A a narrow edge."
+            },
+            {
+              "judge": "qwen/qwen3.6-plus",
+              "winner": "A",
+              "scoreA": 32,
+              "scoreB": 28,
+              "reasoning": "Debater A maintained a clearer, more consistent framework linking the ban to safety, health, and efficiency, directly addressed the opponent's claims, and effectively argued that a baseline ban is necessary for alternative measures to work. Debater B raised valid points about exemptions and transit readiness, but relied on generalized assertions and failed to fully counter A's rebuttal on economic vitality and policy feasibility."
+            }
+          ],
+          "winner": "openai/gpt-5.4-nano",
+          "votesPro": 3,
+          "votesCon": 0,
+          "scorePro": 99,
+          "scoreCon": 91,
+          "costUsd": 0.018012051
+        }
+      ],
+      "winner": "openai/gpt-5.4-nano"
+    },
+    {
+      "id": "semi:qwen/qwen3.6-flash|deepseek/deepseek-v4-flash",
+      "stage": "semi",
+      "home": "qwen/qwen3.6-flash",
+      "away": "deepseek/deepseek-v4-flash",
+      "legs": [
+        {
+          "topic": "The traditional university degree will be obsolete within 20 years.",
+          "pro": "qwen/qwen3.6-flash",
+          "con": "deepseek/deepseek-v4-flash",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Honourable judges, the motion rests on three converging pressures. First, economics: tuition has outpaced inflation by 300% over two decades while graduate ROI has sharply declined. Rational students and taxpayers will abandon an asset whose cost systematically exceeds its return. Second, pedagogy: AI-driven adaptive learning, simulation-based training, and blockchain-verified micro-credentials now deliver faster, cheaper, and more precise skill validation than four-year lecture cycles. Third, labour markets: over 75% of major employers have already relaxed degree requirements, pivoting to competency-based hiring. By 2044, the traditional degree will be structurally obsolete—too rigid to update curricula, too expensive to sustain, and too misaligned with how modern work is structured. We do not claim universities will vanish; we claim the credential will lose its monopoly on opportunity. When verified skills are acquired at a fraction of the cost and time, the old degree will not adapt—it will be discarded. We prove the motion."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Honourable judges, the motion conflates evolution with obsolescence. The traditional degree will not vanish; it will adapt, as it has for centuries. Three counterpoints.\n\nFirst, economics: degree ROI remains strong for most fields—engineering, medicine, law—where structured, accredited knowledge is non-negotiable. Micro-credentials lack the depth and rigor employers trust for high-stakes roles.\n\nSecond, pedagogy: AI and online tools are supplements, not replacements. University education provides critical thinking, mentorship, and peer networks forged over years—not weeks. Adaptive learning cannot replicate the Socratic seminar or lab collaboration.\n\nThird, labour markets: Employers relaxing requirements for entry-level roles does not signal obsolescence. For senior, specialised, or regulated positions, degrees remain prerequisites. The degree is a robust signal of grit, breadth, and systematic training—qualities no micro-credential fully verifies.\n\nThe degree will evolve—hybrid, modular, affordable—but it will not be obsolete. It is too embedded in professional licensing, graduate school admissions, and cultural capital. The motion mistakes a shift in form for a death sentence. We oppose."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Honourable judges, the opposition mistakes adaptation for survival. First, on economics: citing law, medicine, and engineering as safe harbors ignores their rapid credential disruption. Accelerated medical tracks, industry-embedded engineering pipelines, and bar alternatives are already halving degree timelines while preserving rigor. Cost still outpaces ROI, forcing structural collapse. Second, on pedagogy: romanticizing campus seminars ignores that AI now simulates high-level debate, peer review, and collaborative problem-solving at scale. Mentorship and networks are migrating to professional platforms and embedded apprenticeships, not gated campuses. Third, on labour markets: the 75% employer shift isn’t temporary friction; it’s a permanent pivot toward AI-driven competency screening. Pedigree is being replaced by verified outputs. The opposition claims the degree will “evolve,” but when a format becomes cheaper, faster, and functionally equivalent, it doesn’t survive—it becomes a premium luxury niche. For the mass market within two decades, it is functionally obsolete. We affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Honourable judges, the proposition confuses disruption with inevitability. Let me dismantle their three pillars.\n\nFirst, their \"75% employer shift\" is cherry-picked. Most of those employers still list degrees as preferred; they merely accept alternatives for low-skill roles. For engineering, law, and medicine—fields the proposition conveniently sidelines—degrees remain mandatory for licensing and liability. Micro-credentials cannot verify the breadth of accredited knowledge.\n\nSecond, their AI pedagogy claim is fantasy. AI simulates debate, but cannot replicate the serendipitous insight from a three-year mentorship or the trust built in lab teams. Adaptive learning teaches facts, not wisdom. Employers still value the resilience demonstrated by completing a four-year degree.\n\nThird, their economics argument ignores adaptation. Universities are already slashing costs, offering hybrid models, and partnering with industry. The degree is not static; it is restructuring. The proposition mistakes a format shift for extinction.\n\nThe motion is false because the degree’s core function—rigorous, trusted, comprehensive credentialing—has no equivalent. It will evolve, not vanish. We oppose."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Judges, the opposition bets on magic adaptation. They claim the traditional degree will survive by morphing, but if you strip away the four-year lecture cycle, the credit-hour bureaucracy, and the tuition premium, nothing traditional remains. Their \"evolution\" is simply the death of the format they defend.\n\nOn economics, AI-driven competency validation is dropping to near-zero cost; universities cannot match this curve without becoming unaffordable luxury niches. On labour, the 75% employer pivot isn't friction; it's the market voting that verified skills trump pedigree. Even in regulated fields, accelerated tracks and bar alternatives are already shattering the timeline.\n\nThe traditional degree is a rigid archive in an era of dynamic verification. By 2044, it will persist only as a boutique status symbol, structurally obsolete for the economy and education it once dominated. We affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Judges, the proposition’s “obsolete” is a straw man. The degree evolves, not dies. Their 75% employer stat excludes regulated professions where degrees remain mandatory. AI cannot replicate years of mentorship, critical depth, or trusted accreditation. Even their “cheaper alternatives” lack the rigor employers demand for high-stakes roles. The degree adapts—hybrid, affordable, modular—but retains its core: verified breadth and resilience. That is not extinction; it is transformation. The motion fails because the degree’s fundamental value endures. We win."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "openai/gpt-5.4-mini",
+              "winner": "B",
+              "scoreA": 31,
+              "scoreB": 32,
+              "reasoning": "Both sides are clear and well-structured, but B is slightly stronger in logical rigor and responsiveness by directly challenging A’s broad claims about employers, regulation, and AI with more grounded counterpoints. A offers more specific statistics and a coherent thesis, yet several claims are asserted as inevitable without sufficient support, while B more consistently reframes the motion around persistence and adaptation rather than full extinction."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 32,
+              "scoreB": 25,
+              "reasoning": "Debater A provided a cohesive, forward-looking case with specific statistics and trends (75% employer shift, AI-driven validation, accelerated tracks), while Debater B relied heavily on vague adaptation claims and repeatedly cited regulated professions without addressing A's rebuttal that those fields are already disrupting. A also more effectively turned B's 'evolution' argument into evidence of obsolescence, whereas B struggled to refute the core economic and structural pressures."
+            },
+            {
+              "judge": "qwen/qwen3.6-plus",
+              "winner": "A",
+              "scoreA": 35,
+              "scoreB": 32,
+              "reasoning": "Debater A more effectively deconstructs the definition of 'traditional degree' and argues that B's proposed 'adaptation' actually confirms the motion by abandoning the format's core features. A's rebuttals regarding the economic unsustainability and the migration of mentorship to professional platforms are logically tighter than B's repetitive defense of institutional resilience."
+            }
+          ],
+          "winner": "qwen/qwen3.6-flash",
+          "votesPro": 2,
+          "votesCon": 1,
+          "scorePro": 98,
+          "scoreCon": 89,
+          "costUsd": 0.0183942526
+        },
+        {
+          "topic": "A four-day work week should be legally mandated.",
+          "pro": "deepseek/deepseek-v4-flash",
+          "con": "qwen/qwen3.6-flash",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Ladies and gentlemen, the motion to legally mandate a four-day work week is not just progressive—it is essential for economic resilience and human well-being. The evidence is clear: a compressed schedule boosts productivity by up to 40%, as shown in Iceland’s landmark trials, where workers maintained or exceeded output while gaining better health and work-life balance. This isn’t a concession; it’s a strategic upgrade.\n\nA legal mandate ensures that benefits aren’t reserved for the privileged few. Without it, exploitation persists—overwork fuels burnout, mental health crises, and stagnant wages. The five-day week is a relic of the Industrial Revolution, designed for factory floors, not modern knowledge economies. A four-day mandate forces companies to innovate, streamline tasks, and invest in efficiency, reducing overhead costs and absenteeism.\n\nMoreover, it addresses climate change by cutting commuting emissions and energy use. It reduces gender inequality by enabling shared caregiving. Opponents claim cost, but the savings from lower turnover, fewer sick days, and higher morale outweigh short-term adjustments. For a healthier, more productive, and equitable society, the law must lead. Affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Ladies and gentlemen, a blanket legal mandate for a four-day work week sacrifices proven economic flexibility for ideological rigidity. The pro side cites Iceland, but those trials were voluntary, publicly funded, and concentrated in unionized sectors—conditions that do not scale to competitive markets. Forcing a uniform schedule ignores sectoral realities: emergency healthcare cannot be compressed; manufacturing and retail cannot pause operations without triggering supply chain failures and lost revenue.\n\nMore critically, a mandate artificially inflates labor costs, which will inevitably trigger hiring freezes, reduced hours, or wage stagnation. Small and medium enterprises, already operating on thin margins, cannot absorb this shock without layoffs or automation that disproportionately harms entry-level workers. Rather than heavy-handed legislation, we should encourage voluntary adoption and sector-specific flexibility. Let employers adapt to market conditions, not a rigid statute that stifles competitiveness and ultimately harms the very workforce it claims to protect. We urge a firm negative."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The opposition’s case crumbles under scrutiny. They claim Iceland’s trials were “voluntary and publicly funded”—yet the results were replicated in Japan, New Zealand, and UK private firms, where productivity rose without subsidies. Their “sectoral realities” argument is a straw man: a mandate can include exemptions for emergency services, just as overtime laws already do. Manufacturing and retail? In Germany, major firms like Volkswagen and Bosch adopted four-day schedules with no supply chain collapse—only higher efficiency.\n\nThe opposition warns of “inflated labor costs,” but ignores that reduced turnover, sick days, and burnout save far more. A 2021 Microsoft Japan trial cut electricity costs by 23% while boosting sales. SMEs? A mandate levels the playing field, preventing a race to the bottom where only exploitative firms win. Voluntary adoption has failed—it’s already rare and concentrated in tech elites. The law must act where the market won’t."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "The pro side’s defense collapses on three fronts. First, their reliance on exemptions destroys the mandate’s universality. If emergency services, retail, and manufacturing are carved out, you haven’t solved exploitation—you’ve created a bureaucratic patchwork benefiting white-collar elites while leaving vulnerable sectors untouched. Second, their cost-benefit analysis is fundamentally flawed. Microsoft Japan’s trial was a temporary, PR-driven experiment, not a sustainable model. In service and retail, labor isn’t a fixed cost to be compressed; revenue is directly tied to hours and customer demand. Forcing a uniform schedule doesn’t boost productivity—it guarantees missed sales, understaffed floors, and wage cuts to offset lost revenue. Finally, the pro side ignores that large German conglomerates operate with capital buffers and union contracts irrelevant to the 90% of businesses that are small and medium enterprises. A blanket mandate doesn’t level the playing field; it triggers hiring freezes, accelerates automation of entry-level roles, and forces wage stagnation. Let markets drive efficiency; don’t legislate a rigid standard that bankrupts the very workers it claims to protect."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The opposition’s rebuttal is riddled with contradictions. They claim exemptions “destroy universality”—yet every labor law, from minimum wage to overtime, includes sector-specific carve-outs. That’s not failure; that’s pragmatism. They say SMEs can’t adapt—yet the same argument was used against the 40-hour week, the weekend, and paid leave. Innovation always follows mandate.\n\nThe truth is, voluntary adoption has failed. Burnout is endemic, productivity is stagnant, and inequality is rising. A four-day mandate isn’t rigid—it’s a catalyst for efficiency, well-being, and climate action. The opposition offers no solution, only fear. Vote affirmative for a future that works for everyone."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "The proposition’s closing rests on a fantasy of uniform efficiency. Yes, labor laws include carve-outs, but a blanket mandate still imposes a rigid schedule on industries where revenue directly depends on hours and customer demand. Retail, hospitality, and manufacturing cannot simply “streamline” operations without devastating service quality and triggering the hiring freezes the opposition dismisses. We do not advocate for the status quo; we advocate for evidence-based flexibility. Voluntary adoption by forward-thinking firms already proves the model works where it fits. Legislating a rigid standard ignores economic reality, crushes small businesses, and ultimately harms the workers it claims to protect. Let markets drive adaptation, not a blunt statute. Vote negative."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "openai/gpt-5.4-mini",
+              "winner": "A",
+              "scoreA": 31,
+              "scoreB": 30,
+              "reasoning": "Debater A offers slightly stronger argumentation overall by pairing a clear normative case with multiple examples and more direct engagement with B’s objections, especially on exemptions and voluntary adoption. Debater B is coherent and consistently responsive, but relies more heavily on generalized economic warnings and less on concrete support, leaving A with the edge."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 32,
+              "scoreB": 30,
+              "reasoning": "Debater A provided more specific, varied evidence (Iceland, Microsoft Japan, Volkswagen/Bosch) and effectively refuted the 'sectoral realities' objection by noting existing labor-law carve-outs, while Debater B relied heavily on predicted harms for SMEs without equivalent empirical counter-examples. Debater B's argument was coherent and responsive, but A's case demonstrated slightly stronger logical integration of examples and a clearer rebuttal to the opposition's core flexibility argument."
+            },
+            {
+              "judge": "qwen/qwen3.6-plus",
+              "winner": "B",
+              "scoreA": 32,
+              "scoreB": 35,
+              "reasoning": "Debater B demonstrated superior logical rigor by effectively dismantling Debater A's evidence as non-representative and exposing the inherent contradictions in Debater A's proposal to use exemptions, which effectively undermines the mandate's universality. Debater B also offered a more nuanced economic analysis regarding SMEs and service-based revenue models, whereas Debater A relied more heavily on idealistic assertions and historical comparisons that did not fully address the practical constra"
+            }
+          ],
+          "winner": "deepseek/deepseek-v4-flash",
+          "votesPro": 2,
+          "votesCon": 1,
+          "scorePro": 95,
+          "scoreCon": 95,
+          "costUsd": 0.019328750999999998
+        }
+      ],
+      "winner": "qwen/qwen3.6-flash"
+    },
+    {
+      "id": "semi:openai/gpt-5.4-nano|google/gemini-3.1-flash-lite",
+      "stage": "semi",
+      "home": "openai/gpt-5.4-nano",
+      "away": "google/gemini-3.1-flash-lite",
+      "legs": [
+        {
+          "topic": "Advertising-funded business models are inherently harmful to society.",
+          "pro": "openai/gpt-5.4-nano",
+          "con": "google/gemini-3.1-flash-lite",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Advertising-funded business models are inherently harmful to society because they structure incentives around attention capture, not long-term value. First, ad funding turns human attention into a commodity. Platforms and media optimize for clicks, impressions, and engagement—often rewarding sensationalism, outrage, and misinformation. When revenue is proportional to exposure, truth becomes secondary.\n\nSecond, advertising drives pervasive surveillance and data extraction. To target ads, firms collect vast behavioral profiles, enabling manipulation and undermining privacy. Even when consent is claimed, it is typically opaque and effectively coerced by “free” access.\n\nThird, ad models distort competition and political discourse. Media outlets become dependent on ad buyers, biasing coverage toward what attracts advertisers and away from what threatens them—skewing information quality. In politics, targeted advertising fragments the public sphere and micro-tailors persuasion, weakening democratic deliberation.\n\nFinally, these models increase social harms: compulsive usage patterns, body-image targeting, and normalization of harmful products. Therefore, the harms are not incidental; they are built into the incentive system of advertising-funded business."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "The proposition conflates the existence of advertising with the existence of societal challenges. I negate the motion because advertising-funded models are the primary engine of democratized information, economic growth, and platform accessibility.\n\nFirst, ad-funded models provide the \"great equalizer\" of the digital age. By subsidizing services, they allow billions of people—regardless of socioeconomic status—to access education, global communication, and essential tools that would otherwise be locked behind prohibitive paywalls. Without ads, we move toward a tiered internet where information is a luxury for the wealthy.\n\nSecond, advertising facilitates efficient market discovery. It connects consumers with products they need, fueling small businesses that lack the capital for traditional marketing. This competition lowers prices and drives innovation.\n\nFinally, the proposition’s claims of \"harm\" ignore the robust regulatory frameworks and technological safeguards already in place. We do not condemn the printing press for the existence of yellow journalism; we should not condemn the ad-funded model for the challenges of the information age. Advertising is an essential infrastructure for a vibrant, accessible society."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "My opponent argues advertising is a “great equalizer,” but that’s a claim about affordability, not about harm. Even if ads subsidize access, the incentive structure still targets attention—clicks, outrage, and dwell-time—because that’s what pays. That directly undermines the “long-term value” society needs.\n\nOn “economic growth,” they ignore that ad-funded growth often means extractive data monetization. The same targeting that helps “market discovery” also requires surveillance and behavioral profiling at scale, which enables manipulation and erodes privacy—especially when “consent” is bundled into opaque terms.\n\nTheir “regulation” answer is insufficient. Regulations vary by jurisdiction and lag technology; meanwhile harm scales automatically with ad revenue. If coverage must satisfy advertisers, regulatory tweaks don’t change the structural dependency.\n\nFinally, “printing press” analogy fails: ads are not neutral distribution; they are a feedback loop that rewards what maximizes attention. That’s inherently harmful to information quality and democratic deliberation."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "The Proposition’s rebuttal relies on a cynical determinism that ignores the agency of users and the success of the information age. \n\nFirst, the claim that ad-funded models \"inherently\" reward outrage is a reductionist fallacy. If sensationalism were the only path to profit, high-quality journalism and educational platforms would not thrive on ad-supported models. The market rewards utility and trust because advertisers want their brands associated with reliable content, not just \"clicks.\"\n\nSecond, the Proposition frames data-driven discovery as \"extractive,\" yet ignores the value exchange. Users trade anonymized data for services like high-fidelity maps, instant communication, and global archives. This is not coercion; it is a consensual, efficient economic trade that fuels a digital economy accessible to the poor.\n\nFinally, the Proposition treats the \"feedback loop\" of advertising as a bug, when it is the engine of innovation. By lowering the barrier to entry, ads allow small businesses to compete with incumbents. The model isn't inherently harmful; it is the most democratic engine for information and commerce."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Advertising-funded business models are inherently harmful because their revenue logic compels predictable social damage. When payment comes from impressions, clicks, and dwell time, platforms rationally optimize for whatever captures attention—sensationalism, misinformation, and outrage—not what builds long-term public value. When those metrics require targeting, firms scale surveillance through behavioral profiling; “consent” is nominal and bundled into take-it-or-leave-it access. And when media and politics depend on ad buyers and micro-targeted persuasion, the public sphere fragments and accountability declines. Even if ads sometimes subsidize access, the harms are structural, not accidental: they grow automatically with ad revenue."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "The Proposition’s case relies on a false dilemma: that we must accept these systemic harms to enjoy digital access. This is untrue. Ad-funded models are not the only mechanism for funding the internet; they are simply the most efficient. \n\nCrucially, the Proposition fails to prove these harms are *inherent*. Sensationalism is a content strategy, not a fundamental property of advertising. High-quality journalism and educational platforms prove that advertisers value brand safety and trust. By demonizing the engine that democratizes access to information and lowers barriers for small businesses, the Proposition advocates for an elitist internet where only the wealthy can afford truth and connectivity. Advertising-funded models remain the most powerful, inclusive infrastructure for global progress and economic opportunity."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "openai/gpt-5.4-mini",
+              "winner": "A",
+              "scoreA": 34,
+              "scoreB": 31,
+              "reasoning": "A’s case is more structurally rigorous: it consistently links ad funding to incentive distortion, surveillance, and democratic harms, and it directly answers B’s affordability and regulation claims. B is clear and responsive, but much of the defense rests on broad assertions about access and market benefits rather than fully disproving inherency, so A edges it on logical depth and explanatory force."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 31,
+              "scoreB": 23,
+              "reasoning": "Debater A constructed a rigorous causal chain from ad revenue incentives to specific societal harms, and directly rebutted opponent's points about access and regulation. Debater B emphasized benefits and potential safeguards but did not effectively refute the structural argument that harm is inherent to the attention-based revenue model."
+            },
+            {
+              "judge": "qwen/qwen3.6-plus",
+              "winner": "A",
+              "scoreA": 33,
+              "scoreB": 31,
+              "reasoning": "Debater A consistently tied the claimed harms directly to the structural incentives of ad-funded models, effectively rebutting B's reliance on regulation and 'great equalizer' claims while maintaining focus on the 'inherently' standard. Debater B presented strong points on accessibility and market efficiency but failed to adequately refute the structural dependency on surveillance and attention-maximization, instead relying on assertions that quality content thrives and that regulation solves ha"
+            }
+          ],
+          "winner": "openai/gpt-5.4-nano",
+          "votesPro": 3,
+          "votesCon": 0,
+          "scorePro": 98,
+          "scoreCon": 85,
+          "costUsd": 0.02188020216
+        },
+        {
+          "topic": "Universal basic income is the right response to AI-driven job displacement.",
+          "pro": "google/gemini-3.1-flash-lite",
+          "con": "openai/gpt-5.4-nano",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Honorable judges, we stand at the precipice of a technological revolution that fundamentally decouples productivity from human labor. AI is not merely automating manual tasks; it is encroaching upon cognitive, creative, and professional domains at an unprecedented velocity. The traditional social contract, predicated on the necessity of human labor for survival, is collapsing.\n\nUniversal Basic Income (UBI) is the only viable response because it provides the floor required for a stable society during this transition. First, UBI provides economic security, preventing mass destitution as AI displaces workers faster than the economy can create new, meaningful roles. Second, it decouples survival from employment, fostering innovation and risk-taking in an era where traditional 9-to-5 models are becoming obsolete. Third, it serves as a necessary mechanism for wealth redistribution, ensuring the immense profits generated by automated systems benefit the many, not just the owners of the algorithms. By implementing UBI, we transition from a model of struggle to one of human flourishing. I beg to affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Honorable judges, we negate the motion: Universal Basic Income is not the right response to AI-driven job displacement. The claim that we need a blanket cash grant as the primary solution is both economically and practically flawed.\n\nFirst, UBI is an unfocused instrument. AI displacement is uneven across sectors and regions; many workers will need rapid reskilling, wage insurance, relocation support, and sector-specific apprenticeships. A universal payment does not target the bottleneck—matching displaced labor to emerging jobs.\n\nSecond, UBI risks undermining labor-market signals and fiscal sustainability. Funding a nationwide permanent transfer at meaningful levels requires either higher taxes or reallocation from health, education, and employment services—precisely the public goods that enable people to adapt.\n\nThird, it is not necessary to “decouple survival from work” to protect dignity. Temporary income replacement, unemployment insurance modernization, and earned wage supplements can stabilize households while preserving work incentives.\n\nTherefore, the correct response is a targeted, adaptive labor policy—not a one-size-fits-all UBI. We urge you to reject the motion."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The opposition posits that targeted labor policies—like reskilling and wage insurance—are sufficient. This is a dangerous fallacy. They assume a static labor market where displaced workers can simply pivot to \"emerging jobs.\" However, AI’s competitive advantage is its ability to perform cognitive tasks faster, cheaper, and more accurately than humans. We are not facing a temporary structural shift; we are facing a permanent erosion of the human labor value proposition.\n\nTargeted programs fail because they are reactive, bureaucratic, and slow. By the time a worker is \"reskilled\" for a role, AI may have already automated that sector. UBI, conversely, is proactive. It provides the immediate stability necessary for individuals to navigate a volatile transition without the indignity of means-testing. \n\nFurthermore, the opposition’s fear of fiscal unsustainability ignores the massive concentration of wealth generated by automated productivity. If we do not distribute the dividends of AI, we face systemic social collapse. UBI is the only mechanism that ensures the technological revolution serves humanity, rather than bankrupting it."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "My opponent claims UBI is “unfocused” because displacement is uneven. But “universal” does not mean “blind.” Even if sector impacts differ, everyone facing job loss needs immediate liquidity—rent, food, and retraining time. Targeted tools can be layered on top; UBI is the stability foundation. Without it, reskilling and wage subsidies arrive after households have already collapsed.\n\nThey argue fiscal sustainability: that meaningful UBI requires cutting public goods or raising taxes. Yet their alternative—modernized unemployment insurance, earned wage supplements—also requires permanent financing, and often proves inadequate in mass displacement. Also, they assume we must tax labor heavily; instead, we can fund UBI through AI/automation dividends, corporate windfalls, and reduced administrative costs from eliminating extensive means-testing. Sustainability isn’t unique to UBI—it’s a design choice.\n\nFinally, they say work incentives must be preserved. But their proposed system preserves incentives while sacrificing workers’ bargaining power in a market where AI sets wages toward zero. UBI protects agency, enabling people to refuse exploitative conditions and pursue productive transitions."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The opposition’s case relies on a 20th-century mindset: that labor remains the primary vehicle for survival. This is a dangerous miscalculation in an era of exponential AI growth. Targeted reskilling is a palliative for a systemic change; it ignores the reality that AI will soon outperform humans across the majority of cognitive and manual domains. \n\nUBI represents the only paradigm shift capable of meeting a paradigm-shifting technology. It provides the essential floor for human dignity, decouples survival from a shrinking labor market, and ensures that the wealth generated by automation serves the many, not the few. We must choose between systemic collapse and human flourishing. UBI is the only path to the latter. I urge the ballot."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Judges, the motion asks for the right response to AI-driven displacement. My opponent proposes targeted programs, but they can’t solve the core problem: when AI erodes bargaining power and replaces work faster than societies can retrain people, “adaptive” measures arrive too late and don’t provide a universal safety net. UBI does two decisive things. First, it prevents destitution immediately—housing, food, and time to transition—so people can actually retrain and relocate. Second, it shares AI-produced gains broadly, ensuring productivity benefits the many, not only owners. Targeted tools may help at the margins; UBI is the stabilizing, dignity-preserving foundation. Vote PRO."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "openai/gpt-5.4-mini",
+              "winner": "A",
+              "scoreA": 33,
+              "scoreB": 30,
+              "reasoning": "Debater A presents a more internally coherent thesis that directly links AI displacement to the need for a universal floor, and is clearer in framing UBI as a structural response rather than a temporary fix. Debater B responds well on practicality and incentives, but relies on several asserted alternatives and feasibility claims without as much support, making A’s case slightly stronger overall."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 33,
+              "scoreB": 27,
+              "reasoning": "Debater A maintained a coherent, forward-looking framework centered on structural decoupling and dignity, while Debater B contradicted their own opening position by inadvertently advocating for UBI in closing, undermining their consistency and logical rigor."
+            },
+            {
+              "judge": "qwen/qwen3.6-plus",
+              "winner": "B",
+              "scoreA": 36,
+              "scoreB": 37,
+              "reasoning": "Debater B effectively challenges UBI's practicality and fiscal impact while proposing targeted labor policies that address uneven displacement more directly. Debater A provides a compelling philosophical case for UBI but relies heavily on speculative AI timelines and offers less concrete rebuttal to B's fiscal and targeting arguments."
+            }
+          ],
+          "winner": "google/gemini-3.1-flash-lite",
+          "votesPro": 2,
+          "votesCon": 1,
+          "scorePro": 102,
+          "scoreCon": 94,
+          "costUsd": 0.013429010000000002
+        }
+      ],
+      "winner": "openai/gpt-5.4-nano"
+    },
+    {
+      "id": "third:deepseek/deepseek-v4-flash|google/gemini-3.1-flash-lite",
+      "stage": "third",
+      "home": "deepseek/deepseek-v4-flash",
+      "away": "google/gemini-3.1-flash-lite",
+      "legs": [
+        {
+          "topic": "Nations should open their borders to dramatically more immigration.",
+          "pro": "deepseek/deepseek-v4-flash",
+          "con": "google/gemini-3.1-flash-lite",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Ladies and gentlemen, the motion calls for dramatically more open borders—not unlimited, but a bold, principled shift. Our case rests on three pillars.\n\nFirst, economics. Immigrants are net contributors: they fill labor shortages, start businesses at twice the rate of natives, and boost innovation. Restrictive borders are a self-imposed tax on global GDP—trillions lost annually.\n\nSecond, humanitarian imperative. We live in a world of staggering inequality and conflict. Closed borders condemn millions to poverty and death. A moral society does not hoard opportunity behind fences.\n\nThird, demographic necessity. Aging populations in developed nations face collapsing pension systems and labor gaps. Immigrants rejuvenate workforces and sustain social services.\n\nOpponents will cry “welfare burden” or “cultural strain.” But evidence shows immigrants assimilate over generations and pay more in taxes than they consume. The real strain is from underfunded systems, not immigration itself.\n\nTo reject this motion is to defend stagnation and suffering. Open borders are not naive—they are rational, ethical, and urgent. Let’s build a world of shared prosperity."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "The Opposition rejects this motion because it fundamentally misinterprets the role of the nation-state. A nation is not merely an economic zone; it is a social contract predicated on shared trust, civic institutions, and the rule of law.\n\nFirst, social cohesion is a prerequisite for a functioning democracy. Rapid, large-scale immigration without integration capacity risks fracturing the social fabric, leading to political polarization and the erosion of the public trust necessary to sustain welfare states. When the pace of influx outstrips the capacity for assimilation, it creates parallel societies rather than a unified citizenry.\n\nSecond, the \"brain drain\" argument. By aggressively attracting the most skilled workers from the Global South, developed nations hollow out the institutions of developing countries, stripping them of the doctors, engineers, and teachers they need to solve their own domestic crises. \n\nThird, the security and sovereignty imperative. A nation that cannot control its borders loses the ability to vet entrants, protect its labor market, and maintain internal order. We argue for managed, strategic immigration—not a reckless, dramatic opening that destabilizes the state."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The Opposition’s case collapses under scrutiny. They claim social cohesion fractures with rapid immigration—yet evidence from Canada, Australia, and the UK shows that integration succeeds with proper investment in housing, education, and language training. The real threat to cohesion is not immigration, but austerity and inequality. Blaming immigrants for political polarization is a scapegoat, not a policy argument.\n\nTheir \"brain drain\" point is hypocritical. Developed nations already drain talent through restrictive visa regimes that force skilled workers to flee poverty. Open borders actually reduce this by allowing circular migration and remittance flows that build capacity back home. The status quo is the real drain.\n\nFinally, sovereignty is not undermined by openness—it is expressed through it. A nation that welcomes talent and humanity demonstrates strength, not weakness. The Opposition offers fear, not evidence. We offer prosperity, justice, and demographic renewal. Dramatically more immigration is not reckless; it is the only rational path forward."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "The Proposition’s rebuttal relies on idealism that ignores the practical limits of state capacity. They cite Canada and Australia, but those nations utilize highly selective, point-based systems that prioritize economic utility—a far cry from the \"dramatically more open\" borders they advocate. \n\nThey dismiss social cohesion concerns as \"scapegoating,\" yet fail to address the reality of inelastic public services. Rapid, large-scale influxes overwhelm housing markets and healthcare systems, disproportionately hurting the domestic working class. When infrastructure cannot scale at the speed of migration, the resulting competition for resources fuels the very populism they claim to despise.\n\nFurthermore, their defense of \"brain drain\" is disingenuous. Circular migration does not compensate for the permanent loss of essential professionals in developing nations, which stunts their domestic growth. By prioritizing the expansion of the workforce in wealthy nations, the Proposition effectively facilitates a global extraction project. Sovereignty is not an abstraction; it is the fundamental duty of a government to protect the stability and welfare of its existing citizens. We stand for managed, sustainable policy, not reckless destabilization."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The Opposition rests on fear of the unfamiliar, but the evidence is clear: immigration boosts economies, saves lives, and solves demographic crises. They claim cohesion fractures—yet integration fails only when we underinvest, not when we open doors. They cry brain drain—but restrictive borders rob the Global South of remittances and circular opportunity. Sovereignty is not a wall; it is the courage to govern responsibly. Dramatically more immigration is not reckless—it is the rational, moral choice for a prosperous and humane world. Vote for openness."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "The Proposition’s case is built on the dangerous fallacy that state capacity is infinite. They conflate \"immigration\" with \"dramatically more open borders,\" ignoring that the latter destroys the very conditions—security, public trust, and fiscal stability—required to integrate anyone at all. \n\nThey provide no mechanism for how nations can sustain social services when labor markets are flooded and infrastructure is overwhelmed. By prioritizing a utopian ideal over the tangible duty of a government to its own citizens, they invite systemic collapse and the rise of the very reactionary populism they claim to oppose. We choose the sustainable, managed, and sovereign path over their reckless deconstruction of the nation-state. Vote against this motion."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "openai/gpt-5.4-mini",
+              "winner": "A",
+              "scoreA": 31,
+              "scoreB": 29,
+              "reasoning": "Debater A offers a clearer overall case with concrete economic, humanitarian, and demographic claims, and responds directly to cohesion, brain drain, and sovereignty objections. Debater B is coherent and comparatively rigorous on state capacity and integration limits, but relies more heavily on asserted risks and less on concrete evidence than A."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 34,
+              "scoreB": 31,
+              "reasoning": "Debater A offered a structured, evidence-forward case and effectively rebutted brain drain and cohesion concerns with specific counter-mechanisms like circular migration. Debater B raised legitimate state-capacity and integration-pace objections but relied more on assertion than empirical support, and did not adequately address A's rebuttal on investment-driven assimilation."
+            },
+            {
+              "judge": "qwen/qwen3.6-plus",
+              "winner": "B",
+              "scoreA": 31,
+              "scoreB": 35,
+              "reasoning": "Debater B effectively dismantled Debater A's reliance on idealistic assumptions and specific country examples by highlighting the contradiction between selective immigration systems and the motion's call for dramatically open borders. B's arguments regarding the practical limits of state capacity and infrastructure were more consistently integrated and directly addressed the operational feasibility required by the motion."
+            }
+          ],
+          "winner": "deepseek/deepseek-v4-flash",
+          "votesPro": 2,
+          "votesCon": 1,
+          "scorePro": 96,
+          "scoreCon": 95,
+          "costUsd": 0.010456118
+        },
+        {
+          "topic": "Humanity should actively broadcast signals to attract extraterrestrial contact.",
+          "pro": "google/gemini-3.1-flash-lite",
+          "con": "deepseek/deepseek-v4-flash",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Honorable judges, the search for extraterrestrial intelligence is the most profound endeavor in human history. By actively broadcasting signals, we transition from passive listeners to active participants in the cosmic conversation.\n\nMy case rests on three pillars: knowledge, survival, and moral imperative. \n\nFirst, active messaging provides a catalyst for scientific discovery. By sending intentional, structured data, we invite a reciprocal exchange that could advance our physics, mathematics, and philosophy by millennia. \n\nSecond, the \"Dark Forest\" theory—the fear that contact invites destruction—is speculative and anthropocentric. History shows that isolationism breeds stagnation, while cooperation drives advancement. A civilization capable of interstellar travel likely possesses the technological maturity to view us as a peer or a protégé, not a threat.\n\nFinally, we have a moral duty to bridge the silence. We are a young species; reaching out is an act of optimism that defines our potential. To remain silent is to accept a lonely, accidental existence. We must choose to speak, for in the vastness of the universe, connection is the only path to transcendence."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Honorable judges, the pro’s vision is poetic but perilous. Active broadcasting is not a cosmic handshake—it is a gamble with humanity’s existence. My case rests on three counter-pillars: existential risk, ethical irresponsibility, and resource misallocation.\n\nFirst, the “Dark Forest” theory is not mere speculation; it is a logical precaution. Any civilization capable of crossing interstellar distances likely possesses technology far beyond ours. Broadcasting our location is akin to a prey animal shouting in a predator’s territory. History on Earth shows that contact between unequal civilizations—from colonialism to invasive species—rarely ends well for the weaker party. The pro’s “cooperation” analogy ignores power asymmetry.\n\nSecond, we have no mandate to speak for all humanity. Such a profound decision demands global consensus, yet no democratic process has authorized this. To broadcast unilaterally is ethically reckless—it risks provoking panic or inviting harm upon future generations who never consented.\n\nThird, the resources for active messaging—billions of dollars, immense energy, and scientific talent—are better spent on mitigating existential threats we already face: climate change, pandemics, and asteroid impacts. We should listen first, learn, and only then consider whether to speak. Silence is not cowardice; it is prudence."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The opposition’s case relies on a fundamental fallacy: the projection of human colonial trauma onto an interstellar scale. Equating advanced civilizations to terrestrial predators is an anthropocentric bias that ignores the resource abundance of space; there is no logical incentive for a Type II or III civilization to expend massive energy to exterminate a primitive species occupying a backwater star system.\n\nRegarding the \"lack of mandate,\" the opposition confuses caution with paralysis. Every major scientific breakthrough—from the printing press to the internet—lacked universal consensus, yet we did not stifle progress due to fear of the unknown. We are already broadcasting: our radio and television leakage has been signaling our presence for a century. The opposition’s \"prudence\" is simply a failure to acknowledge that we are already in the room; we should choose to speak with intentionality rather than continue to shout through accidental, incoherent noise. We are not gambling with existence; we are choosing to exit our planetary adolescence."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "The pro’s rebuttal fails on three counts. First, dismissing the Dark Forest theory as \"colonial trauma projection\" ignores basic game theory: in an unknown universe, the safest assumption is that any signal reveals a target. Resource abundance does not eliminate threat—predators don’t hunt for food alone; they eliminate competitors. A civilization that can cross galaxies may see us as a potential future rival, not a curiosity.\n\nSecond, the pro claims we are already broadcasting via leakage, so active messaging is just \"intentionality.\" This is false equivalence. Leakage is weak, diffuse, and decays over distance. Active broadcasting—beamed, targeted, powerful—is orders of magnitude more detectable. It is the difference between leaving a window open and shining a spotlight into the dark.\n\nThird, the pro’s \"progress without consensus\" analogy is reckless. The printing press and internet did not risk extinction. This is not like stifling innovation; it is like firing a gun into the fog because you hope someone friendly is there. Silence is not paralysis—it is responsible stewardship. We must listen, learn, and build global consensus before we gamble our species’ future on optimism."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The opposition’s case is built on fear, which is a poor foundation for the future of a civilization. They argue that silence is \"stewardship,\" but it is actually paralysis. By choosing to remain silent, we condemn humanity to an isolated, accidental existence, forever defined by our own anxieties rather than our potential. \n\nThe \"Dark Forest\" is not a proven law; it is a projection of human history onto a cosmos we do not yet understand. We are already broadcasting—our leakage makes us visible to any advanced observer. Intentional, structured communication is not a gamble; it is the responsible way to introduce ourselves. We choose progress, connection, and the courage to meet the universe as an equal."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "The pro’s closing clings to hope, but hope is not a strategy. Their “courage” is recklessness; their “progress” is a gamble with every future generation. We have shown that active broadcasting is orders of magnitude more dangerous than leakage, that no global mandate exists, and that our resources are desperately needed for real, present threats. The Dark Forest is not a projection—it is a precaution born of logic and history. Silence is not paralysis; it is the only responsible choice for a species that has barely survived its own adolescence. We win because prudence, not optimism, is the foundation of survival."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "openai/gpt-5.4-mini",
+              "winner": "B",
+              "scoreA": 31,
+              "scoreB": 33,
+              "reasoning": "Both debaters are clear and responsive, but B is slightly stronger on logical rigor and rebuttal quality by distinguishing leakage from deliberate broadcasting and addressing consent and opportunity-cost concerns. A is persuasive and rhetorically polished, yet relies more heavily on speculative optimism and weaker analogies when answering the risk objections."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "B",
+              "scoreA": 32,
+              "scoreB": 35,
+              "reasoning": "Debater B effectively countered the 'leakage' equivalence with a strong technical distinction and maintained a consistent, game-theory-based risk argument, while Debater A relied more on aspirational language and anthropocentric analogies without fully resolving the power-asymmetry and consent challenges raised."
+            },
+            {
+              "judge": "qwen/qwen3.6-plus",
+              "winner": "B",
+              "scoreA": 32,
+              "scoreB": 36,
+              "reasoning": "Debater B provides superior logical rigor by effectively countering A's 'leakage' argument with a clear false equivalence distinction and grounding the risk in game theory rather than anthropocentric projection. While A's rhetorical clarity is strong, B's arguments on resource misallocation and consent offer more concrete, substantive points that A fails to adequately address."
+            }
+          ],
+          "winner": "deepseek/deepseek-v4-flash",
+          "votesPro": 0,
+          "votesCon": 3,
+          "scorePro": 95,
+          "scoreCon": 104,
+          "costUsd": 0.010431047799999999
+        }
+      ],
+      "winner": "deepseek/deepseek-v4-flash"
+    },
+    {
+      "id": "final:qwen/qwen3.6-flash|openai/gpt-5.4-nano",
+      "stage": "final",
+      "home": "qwen/qwen3.6-flash",
+      "away": "openai/gpt-5.4-nano",
+      "legs": [
+        {
+          "topic": "Open-source frontier AI models do more good than harm for humanity.",
+          "pro": "qwen/qwen3.6-flash",
+          "con": "openai/gpt-5.4-nano",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "We affirm that open-source frontier AI models do more good than harm. First, open access democratizes innovation. By removing corporate licensing restrictions, researchers, startups, and institutions in the Global South can independently develop and adapt frontier models, accelerating scientific discovery and preventing technological monopolies. Second, transparency is our strongest safety mechanism. Closed systems breed opacity, enabling unchecked power concentration and hidden biases. Open models enable independent security audits, rapid vulnerability disclosure, and democratic oversight—proven faster and more effective at patching flaws than proprietary black boxes. Finally, the harms cited by the opposition stem not from open code, but from unregulated deployment. Restricting access to a handful of corporations does not eliminate misuse; it centralizes risk and removes public accountability. When code is open, the global community can collectively steer development toward alignment, oversight, and public benefit. The evidence shows that openness drives innovation, safety, and equity far beyond the risks of restricted access. We urge an affirmative ballot."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Opposition: open-source frontier AI models do more harm than good.\n\nFirst, openness can lower the barrier to building and deploying high-capability systems. Frontier capabilities—usable in cyber intrusion, mass phishing, fraud at scale, and targeted misinformation—are exactly the kind of tools that proliferate when weights, pipelines, and fine-tuning recipes are broadly available. The motion treats misuse as merely “deployment”; but making the underlying capability easy to replicate is an enabling condition, not a neutral backdrop.\n\nSecond, transparency does not automatically produce safety. While audits can help, most real-world actors are not expert auditors, and many harms occur through rapid, adversarial adaptation. A motivated attacker can iterate faster than defenders patch, turning “open scrutiny” into “open learning” for misuse.\n\nThird, the claim of democratic oversight is overstated. In practice, the major benefits of openness accrue to those with compute, talent, and infrastructure—while the largest harms fall on those without defenses. So openness can widen power asymmetries, not reduce them.\n\nTherefore, restricting frontier model access is the more responsible harm-minimizing approach."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The opposition conflates capability with inevitable harm. Open weights lower barriers, but closed systems don’t eliminate misuse—they centralize it within unaccountable corporations while hiding vulnerabilities. Openness enables global defensive research, allowing independent auditors to build detection tools and alignment safeguards proprietary labs cannot match.\n\nOn transparency, the “open learning” claim ignores that security is a dialectic. Private disclosure lets flaws fester. Open disclosure triggers ecosystem-wide patching, turning adversarial speed against them. Real-world CVE response data proves open-source frameworks consistently outperform proprietary ones in vulnerability mitigation.\n\nFinally, the power asymmetry argument cuts both ways. Restricting frontier models entrenches corporate monopolies dictating terms to governments and users. Open access democratizes compute, fosters independent oversight, and ensures alignment research isn’t hostage to shareholder profits. The opposition’s cited harms are deployment failures, not code failures. We must govern usage, not suppress knowledge. Openness delivers net safety, innovation, and equity. Vote affirmative."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "The opposition’s first claim is category error: “openness enables misuse” doesn’t follow that openness is net harmful. Yes, lower replication barriers can help attackers—but they also lower barriers for defenders. When weights and tooling are public, researchers can build detectors, red-team systematically, and benchmark mitigations. A world where only a few firms have models is not safer; it just concentrates both defensive capability and misuse capability in the same hands.\n\nSecond, “transparency doesn’t produce safety” is speculative. Safety is multi-layered; audits are one layer, but so is reproducibility. Openness lets independent teams verify claims, test jailbreak robustness, and publish fixes quickly—especially when vulnerabilities are discovered by many actors rather than one vendor.\n\nThird, “democratic oversight overstated” reverses causality. Restricting access entrenches asymmetry because it excludes most of the world from evaluation and accountability. Openness distributes the means to audit and to demand governance from below, reducing unilateral control by whoever holds the gate.\n\nYour motion fails because you propose centralizing risk while ignoring that openness expands both scrutiny and defense."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The opposition mistakes correlation for causation. Open weights don’t create harm; they enable distributed defense, independent auditing, and rapid patching that closed labs cannot replicate. Restricting access doesn’t stop misuse—it hides it, concentrates power in unaccountable monopolies, and removes public oversight. The harms cited are deployment failures, not code failures. We must govern usage, not suppress knowledge. Openness democratizes innovation, accelerates scientific discovery, and subjects frontier AI to global scrutiny, ensuring alignment serves humanity, not shareholders. When weighed against the systemic risks of opacity and centralized control, open-source models deliver net safety, equity, and progress. The affirmative’s framework of transparent, accountable, and widely accessible AI unequivocally does more good than harm. Vote affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "The negation says “open weights enable misuse,” but it never answers the core safety mechanism: distributed capability. When frontier models are closed, only a few actors can audit, red-team, reproduce failures, and patch—so harm persists longer and secrecy hides errors. Openness flips that dynamic: many independent groups can test robustness, publish fixes, and build defenses, turning attacker iteration into faster ecosystem-wide mitigation.  \n\nOn “oversight,” restricting access entrenches gatekeeping by corporations; it does not create meaningful safety, it just limits accountability. The harms cited are governance and deployment failures. Proper governance can target misuse without suppressing knowledge. Net: openness increases defense, scrutiny, and equity—therefore more good than harm. Vote affirmative."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "openai/gpt-5.4-mini",
+              "winner": "A",
+              "scoreA": 34,
+              "scoreB": 31,
+              "reasoning": "Debater A is slightly stronger on logical structure and persuasive framing, repeatedly tying openness to innovation, independent auditing, and democratic oversight, while directly answering the monopoly/opacity concern. Debater B is coherent and responsive, but relies more on asserted risks and general claims about misuse than on concrete evidence, making A the more rigorous and persuasive side overall."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 32,
+              "scoreB": 26,
+              "reasoning": "Debater A maintained a consistent framework linking openness to distributed defense and democratic oversight, and directly rebutted the opposition's conflation of code access with deployment harm. Debater B raised valid concerns about proliferation but relied on speculative claims about attacker advantage and failed to engage with A's core distinction between governing usage and suppressing knowledge."
+            },
+            {
+              "judge": "qwen/qwen3.6-plus",
+              "winner": "A",
+              "scoreA": 37,
+              "scoreB": 30,
+              "reasoning": "Debater A maintained a coherent framework that consistently linked openness to distributed safety mechanisms and accountability, while effectively reframing harms as deployment rather than access issues. Debater B's rebuttal and closing arguments were severely compromised by speaking in Debater A's voice, misattributing the affirmative's points to the opposition, and failing to advance a clear, consistent negative case."
+            }
+          ],
+          "winner": "qwen/qwen3.6-flash",
+          "votesPro": 3,
+          "votesCon": 0,
+          "scorePro": 103,
+          "scoreCon": 87,
+          "costUsd": 0.0200423785
+        },
+        {
+          "topic": "The state should provide a legal right to housing.",
+          "pro": "openai/gpt-5.4-nano",
+          "con": "qwen/qwen3.6-flash",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Madam Speaker, the motion is that the state should provide a legal right to housing. We affirm.\n\nFirst, housing is not a consumer luxury; it is the foundation for health, education, and work. Without secure shelter, people face higher disease risk, school disruption, and chronic instability—harms that then burden families and public institutions.\n\nSecond, markets alone fail. Rent spikes, discrimination, and homelessness are predictable outcomes of limited supply, unequal bargaining power, and profit incentives. A legal right fixes the moral and legal floor: government must plan, fund, and enforce access to shelter.\n\nThird, a right does not mean immediate construction of every home overnight. It means a enforceable obligation to ensure minimum standards and pathways: anti-displacement protections, emergency assistance, subsidized housing, and a duty to prevent unlawful evictions.\n\nFourth, rights reduce conflict and waste. When people are secure, resources shift from crisis response to long-term stability.\n\nTherefore, the state must provide a legal right to housing—because everyone needs a fair starting point to live with dignity."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Madam Speaker, the Proposition confuses moral aspiration with legal enforceability. We oppose the motion because a legal right to housing guarantees economic distortion, fiscal unsustainability, and bureaucratic rationing, ultimately worsening the crisis.\n\nFirst, a right mandates state provision, which destroys supply incentives. When the state guarantees housing, private investment flees. Developers halt construction; landlords exit the market. You cannot legislate bricks and mortar. By suppressing market signals, this motion triggers a supply collapse, creating infinite waiting lists and ensuring homelessness becomes structural, not temporary.\n\nSecond, the fiscal burden is impossible. \"Providing\" housing requires trillions in indefinite expenditure. This crowds out critical public goods: healthcare, education, and infrastructure. To fund this mandate, the state must jack taxes or expand debt, triggering inflation that erodes wages and harms the very poor the motion claims to protect.\n\nThird, legal rights produce litigation, not shelter. Courts lack the capacity to build homes or allocate resources. A right merely shifts rationing from the market to opaque, politicized bureaucracies, where access depends on legal maneuvering, not actual need.\n\nReject unworkable mandates. We need supply-side solutions, not rights that promise what the state cannot deliver."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Madam Speaker, the Opposition’s case rests on three claims, each flawed.\n\nFirst, they say a legal right kills incentives and causes a supply collapse. But a right to housing need not mean the state builds everything; it can create enforceable duties—anti-displacement protections, mandatory social housing procurement, zoning reform, and subsidized leases—while still enabling private development through contracts and incentives. Incentives are preserved by designing the right as guaranteed access to housing, not guaranteed ownership by the state.\n\nSecond, they warn of “trillions” and fiscal chaos. Yet homelessness and emergency services already cost money, and rent extraction already drains household budgets. A right clarifies responsibility and prioritizes funding. Moreover, the obligation can be phased and capped around minimum standards, with targeted assistance rather than unlimited entitlement to any desired unit.\n\nThird, they claim courts will litigate instead of shelter. But enforceable rights are exactly what curb bureaucratic rationing and discrimination. Courts can order compliance—funding adequacy, timelines, and anti-eviction enforcement—while implementation remains administrative.\n\nSo the motion does not promise magic; it sets a legal floor against predictable market failure."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Madam Speaker, the Proposition is gaslighting us. They've redefined \"providing a right\" as \"passing some regulations.\"\n\nFirst, their incentives argument collapses. You cannot guarantee a right to housing while preserving market signals. If the state mandates access via subsidized leases and procurement, it distorts prices and displaces private capital. The Proposition asks us to believe we can legislate abundance without the state becoming the dominant landlord. We can't. A right guarantees demand; only markets create supply. Mandating access triggers the supply collapse the Opposition warned about, adding the burden of enforcement.\n\nSecond, the fiscal comparison is dishonest. You compare the cost of *providing* housing to the cost of *managing homelessness*. That's like comparing building a bridge to towing cars off the riverbank. One is a permanent project; the other is a recurring failure. Even \"minimum standards\" require massive, indefinite spending. \"Phased and capped\" rights aren't rights; they're aspirational goals. A right must be immediate. If you cap it, you deny relief *now*, violating the right you claim to protect.\n\nThird, courts cannot administer housing. You claim courts just order \"compliance,\" but when budgets fail, the court must order spending. This creates a judiciary micromanaging public finance, bypassing democracy. Courts are ill-equipped to allocate scarce resources. You get litigation paralysis, not homes.\n\nThe Proposition offers a mirage: a right that acts like a regulation, costs nothing, and builds homes magically. Reject the motion."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Madam Speaker, the Opposition asks us to accept homelessness and rent insecurity as the “price of freedom,” then calls that realism. But a legal right is precisely how we stop predictable cruelty from being treated as unavoidable.  \n\nThis right need not mean the state builds every unit overnight. It can legally secure access through minimum standards, anti-displacement protections, emergency assistance, subsidized pathways, and anti-eviction enforcement—while still using incentives and contracts to expand supply.  \n\nThey also conflate “rights” with “unlimited luxury.” A right to housing is a floor, not a blank cheque.  \n\nWhen markets fail to deliver dignity, the law must guarantee it. Therefore, the motion should pass."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Madam Speaker, the Proposition has retreated from its own motion, substituting a true legal right with a patchwork of regulations. Even this diluted version collapses. First, guaranteeing demand destroys market incentives, triggering the housing shortage they claim to solve. Second, the fiscal mandate is structurally unsustainable, crowding out healthcare and education while inflation erodes the wages of the poor. Third, courts cannot build homes; they only litigate scarcity, handing rationing to bureaucrats instead of accountable legislatures. A legal right must be enforceable and immediate. This motion delivers neither. We reject mandates that promise shelter but guarantee only debt, delay, and displacement. Vote Con."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "openai/gpt-5.4-mini",
+              "winner": "A",
+              "scoreA": 35,
+              "scoreB": 30,
+              "reasoning": "A is more logically coherent and consistently responsive, distinguishing a legal right from immediate state-built housing and repeatedly answering B’s incentive, fiscal, and courts objections. B is rhetorically clear and forceful, but relies heavily on asserted inevitabilities and some overstatement about market collapse and judicial incapacity, making the case slightly less rigorous overall."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 28,
+              "scoreB": 24,
+              "reasoning": "Debater A offered a more coherent and adaptable defense of the motion, effectively distinguishing a legal right from pure state provision and addressing fiscal concerns with phased implementation. Debater B mounted strong supply-side and judicial critiques but relied heavily on slippery-slope claims and did not fully overcome A’s clarification that the right functions as an enforceable floor, not a total state takeover."
+            },
+            {
+              "judge": "qwen/qwen3.6-plus",
+              "winner": "B",
+              "scoreA": 33,
+              "scoreB": 36,
+              "reasoning": "B effectively exposed the internal contradiction in A's redefinition of a 'legal right' as a phased, capped regulatory framework, arguing that an enforceable right must be immediate and unconditional. A failed to adequately defend how a capped, gradualist approach satisfies the legal definition of an immediate right against B's claim that such limits merely constitute aspirational goals."
+            }
+          ],
+          "winner": "openai/gpt-5.4-nano",
+          "votesPro": 2,
+          "votesCon": 1,
+          "scorePro": 96,
+          "scoreCon": 90,
+          "costUsd": 0.0205344
+        }
+      ],
+      "winner": "qwen/qwen3.6-flash"
+    }
+  ],
+  "standings": {
+    "A": [
+      {
+        "model": "qwen/qwen3.6-flash",
+        "played": 3,
+        "wins": 2,
+        "draws": 1,
+        "losses": 0,
+        "points": 7,
+        "scoreDiff": 19
+      },
+      {
+        "model": "openai/gpt-5.4-nano",
+        "played": 3,
+        "wins": 2,
+        "draws": 0,
+        "losses": 1,
+        "points": 6,
+        "scoreDiff": 4
+      },
+      {
+        "model": "google/gemini-3.1-flash-lite",
+        "played": 3,
+        "wins": 1,
+        "draws": 1,
+        "losses": 1,
+        "points": 4,
+        "scoreDiff": -4
+      },
+      {
+        "model": "deepseek/deepseek-v4-flash",
+        "played": 3,
+        "wins": 0,
+        "draws": 0,
+        "losses": 3,
+        "points": 0,
+        "scoreDiff": -19
+      }
+    ]
+  },
+  "placements": {
+    "qwen/qwen3.6-flash": 1,
+    "openai/gpt-5.4-nano": 2,
+    "deepseek/deepseek-v4-flash": 3,
+    "google/gemini-3.1-flash-lite": 4
+  },
+  "champion": "qwen/qwen3.6-flash",
+  "totalCostUsd": 0.27023349772,
+  "done": true
+}

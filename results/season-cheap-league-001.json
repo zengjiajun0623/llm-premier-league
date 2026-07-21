@@ -1,0 +1,976 @@
+{
+  "id": "season-cheap-league-001",
+  "mode": "league",
+  "startedAt": "2026-07-21T03:08:23.776Z",
+  "config": {
+    "competitors": [
+      "deepseek/deepseek-v4-flash",
+      "qwen/qwen3.6-flash",
+      "openai/gpt-5.4-nano",
+      "google/gemini-3.1-flash-lite"
+    ],
+    "judging": "peers",
+    "judgePool": [
+      "openai/gpt-5.4-mini",
+      "deepseek/deepseek-v4-pro",
+      "qwen/qwen3.6-plus",
+      "google/gemini-3.1-flash-lite",
+      "z-ai/glm-4.7"
+    ],
+    "judgesPerMatch": 3,
+    "generateTopics": true,
+    "topicsPerCompetitor": 5,
+    "debaterMaxTokens": 700,
+    "judgeMaxTokens": 400,
+    "seed": 1
+  },
+  "groups": {
+    "League": [
+      "deepseek/deepseek-v4-flash",
+      "qwen/qwen3.6-flash",
+      "openai/gpt-5.4-nano",
+      "google/gemini-3.1-flash-lite"
+    ]
+  },
+  "topicBank": [
+    {
+      "topic": "This house believes that social media platforms should be banned from using algorithms that recommend content.",
+      "proposer": "deepseek/deepseek-v4-flash"
+    },
+    {
+      "topic": "This house believes that countries should adopt a four-day workweek.",
+      "proposer": "deepseek/deepseek-v4-flash"
+    },
+    {
+      "topic": "This house believes that central banks should adopt a digital currency.",
+      "proposer": "deepseek/deepseek-v4-flash"
+    },
+    {
+      "topic": "This house believes that the death penalty is a justifiable form of punishment.",
+      "proposer": "deepseek/deepseek-v4-flash"
+    },
+    {
+      "topic": "Governments should ban the development and deployment of autonomous lethal weapon systems.",
+      "proposer": "qwen/qwen3.6-flash"
+    },
+    {
+      "topic": "Secondary schools should replace standardized testing with continuous portfolio-based assessment.",
+      "proposer": "qwen/qwen3.6-flash"
+    },
+    {
+      "topic": "Regulatory agencies should permit the use of germline gene editing for non-therapeutic human enhancement.",
+      "proposer": "qwen/qwen3.6-flash"
+    },
+    {
+      "topic": "Recommending algorithmic decisions (rather than allowing full human discretion) should be the default standard in high-stakes public services.",
+      "proposer": "openai/gpt-5.4-nano"
+    },
+    {
+      "topic": "Governments should prioritize policies that reduce citizens' exposure to disinformation even if it restricts some expressive freedoms.",
+      "proposer": "openai/gpt-5.4-nano"
+    },
+    {
+      "topic": "Universal basic income is a more effective poverty-reduction strategy than targeted welfare programs in the long run.",
+      "proposer": "openai/gpt-5.4-nano"
+    },
+    {
+      "topic": "Human enhancement technologies should be regulated primarily to protect equal opportunity rather than to prevent physical harm.",
+      "proposer": "openai/gpt-5.4-nano"
+    },
+    {
+      "topic": "Traditional cultural heritage should be preserved through active public replication (e.g., reenactment and performance) rather than through strict conservation and documentation.",
+      "proposer": "openai/gpt-5.4-nano"
+    },
+    {
+      "topic": "The development of artificial general intelligence should be subject to a global, mandatory moratorium until international safety standards are established.",
+      "proposer": "google/gemini-3.1-flash-lite"
+    },
+    {
+      "topic": "Historical monuments and public commemorations of controversial figures should be preserved in their original context rather than removed or relocated.",
+      "proposer": "google/gemini-3.1-flash-lite"
+    },
+    {
+      "topic": "The right to digital privacy should be absolute, superseding the state's interest in national security and law enforcement.",
+      "proposer": "google/gemini-3.1-flash-lite"
+    }
+  ],
+  "matches": [
+    {
+      "id": "league:deepseek/deepseek-v4-flash|openai/gpt-5.4-nano",
+      "stage": "league",
+      "home": "deepseek/deepseek-v4-flash",
+      "away": "openai/gpt-5.4-nano",
+      "legs": [
+        {
+          "topic": "Governments should ban the development and deployment of autonomous lethal weapon systems.",
+          "pro": "deepseek/deepseek-v4-flash",
+          "con": "openai/gpt-5.4-nano",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Ladies and gentlemen, today we affirm that governments must ban autonomous lethal weapon systems—machines that select and engage targets without human control. Our case rests on three pillars: moral accountability, escalation risks, and international stability.\n\nFirst, morality demands human judgment in life-and-death decisions. Delegating killing to algorithms erodes responsibility; when a drone kills civilians, who is accountable? No programmer, no commander—a black box. This violates international humanitarian law, which requires distinction and proportionality.\n\nSecond, autonomous weapons lower the threshold for conflict. Nations will deploy cheap, expendable machines without fear of troop losses, making war more likely and less restrained. A flash crash of algorithms could spiral into unintended escalation.\n\nThird, the arms race for killer AI destabilizes global security, as no verification regime can monitor code. Proliferation to rogue states and non-state actors is inevitable—a Pandora’s box we must keep shut.\n\nBanning development now, before deployment, is our only chance. We cannot trust a future where machines decide who lives. Vote for the motion."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Honorable judges, we oppose banning autonomous lethal weapon systems. The motion assumes autonomy is inherently illegitimate and uniquely destabilizing. That is not proven; we should regulate and retain human responsibility, not ban a capability that could reduce harm.\n\nFirst, accountability can be designed into systems. Human control need not mean constant joystick operation; it can mean enforceable constraints, approval workflows, logging, and legally liable commanders and operators. A weapon system that meets international humanitarian law—distinction, proportionality, and target verification—can be audited and held to standards. “Black box” fears are an argument for better transparency, not prohibition.\n\nSecond, bans can increase risk. If only some states ban while others keep developing, the result is asymmetry: less oversight, more secrecy, and a greater chance that uncontrolled systems are deployed. Managed deployment with verification is safer than a blanket ban.\n\nThird, autonomous features can reduce collateral damage. Faster sensor fusion, persistent surveillance, and stricter engagement rules can improve identification and prevent hesitation mistakes.\n\nTherefore, we urge targeted regulation, not a total ban."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Your opponent’s accountability argument fails: logging and approval workflows do not solve the moral gap. When an autonomous system misidentifies a school bus as a target, no human made that decision—the algorithm did. Prosecuting a commander for “negligence” after the fact is not the same as ensuring a human makes the lethal choice in real time. This is a fundamental erosion of responsibility, not a fixable design flaw.\n\nOn bans increasing risk: asymmetry already exists—states are racing to develop these systems. A ban creates a clear norm that delegitimizes deployment; without it, we legitimize a free-for-all where every state claims its “managed” version is safe. The Pandora’s box is already cracked; a ban is the only way to close it.\n\nFinally, the claim that autonomy reduces collateral damage ignores the reality of unpredictable environments. Machines lack human judgment to interpret context—a child with a toy can be mistaken for a threat. Faster processing does not equal better ethics. The motion stands: ban now."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Opposition says autonomy can be “audited” and “held to standards,” but that answers only documentation, not decision-making. If the system is authorized to select and engage targets, then the lethal judgment is made by the machine’s model—meaning compliance with distinction and proportionality is ultimately probabilistic. Logging does not recreate the human reasoning that international humanitarian law requires; it merely records an outcome. Saying human control can mean approval workflows concedes the point: meaningful human control must be continuous and effective, which is precisely what a total ban targets—development and deployment of systems designed to operate autonomously in the lethal loop.\n\nOn “bans increase risk,” that assumes states will behave worse under a norm than under a race. But the pro side has not shown verification is workable. They admit “secrecy” and “asymmetry”; a ban is designed to reduce incentives for secrecy by making deployment illegitimate. Finally, “autonomy reduces collateral damage” is not proven—faster sensors cannot cure the core problem: delegating lethal agency beyond accountable human judgment."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Today, the core issue is clear: autonomous lethal weapons remove human moral agency from killing. No logging or audit can substitute for a human making the life-or-death decision in real time. The opposition’s “regulation” fails to solve the accountability gap, and their claimed benefits of faster targeting are outweighed by the risks of algorithmic error and unintended escalation. A ban creates a global norm, preventing a destabilizing arms race and proliferation to rogue actors. The only way to preserve international humanitarian law, prevent conflict spirals, and ensure responsibility is to stop development now. Affirm the motion."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Governments should ban autonomous lethal weapon systems because these weapons necessarily sever the decisive link between human judgment and killing. Once a system is authorized to select and engage targets, the lethal choice is probabilistic and model-driven; post‑hoc logging cannot recreate the real-time moral responsibility required by international humanitarian law.  \n\nThe con’s “accountability design” concedes that only “meaningful, continuous, effective” human control prevents the problem—and that is functionally a ban on autonomous lethal operation, not a mere regulation.  \n\nFinally, the security claim fails: even if some states regulate better, a world without a norm invites secrecy, uneven compliance, and an arms race that increases deployment risk. Ban now."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "qwen/qwen3.6-flash",
+              "winner": "A",
+              "scoreA": 31,
+              "scoreB": 23,
+              "reasoning": "Debater A maintains a consistent, well-structured case that effectively counters the opposition’s regulatory alternative while clearly articulating the moral and security risks of algorithmic warfare. Debater B’s argumentation is fundamentally undermined by a closing statement that accidentally concedes the motion’s core premise, severely damaging logical coherence and persuasive clarity."
+            },
+            {
+              "judge": "google/gemini-3.1-flash-lite",
+              "winner": "A",
+              "scoreA": 36,
+              "scoreB": 35,
+              "reasoning": "Debater A maintained a more consistent focus on the moral and structural risks of autonomous systems, effectively framing the accountability gap as an insurmountable barrier. Debater B provided strong technical arguments but ultimately conceded key points regarding the necessity of human oversight, which weakened their opposition to the motion."
+            }
+          ],
+          "winner": "deepseek/deepseek-v4-flash",
+          "votesPro": 2,
+          "votesCon": 0,
+          "scorePro": 67,
+          "scoreCon": 58,
+          "costUsd": 0.0060516065,
+          "topicProposer": "qwen/qwen3.6-flash"
+        }
+      ],
+      "winner": "deepseek/deepseek-v4-flash"
+    },
+    {
+      "id": "league:qwen/qwen3.6-flash|deepseek/deepseek-v4-flash",
+      "stage": "league",
+      "home": "qwen/qwen3.6-flash",
+      "away": "deepseek/deepseek-v4-flash",
+      "legs": [
+        {
+          "topic": "Recommending algorithmic decisions (rather than allowing full human discretion) should be the default standard in high-stakes public services.",
+          "pro": "qwen/qwen3.6-flash",
+          "con": "deepseek/deepseek-v4-flash",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "In high-stakes public services—from welfare eligibility to medical triage and parole risk assessments—unstructured human discretion has consistently failed. It produces erratic outcomes, amplifies implicit bias, and lacks auditable accountability. Our affirmative establishes that algorithmic recommendations must be the default standard for three reasons. First, consistency: algorithms apply uniform, transparent criteria, eliminating arbitrary variance caused by fatigue or prejudice. Second, evidence-based precision: models synthesize massive datasets to identify risk patterns beyond human cognitive capacity, directly improving outcomes. Third, democratic accountability: recommendations create a clear audit trail. Officials must justify departing from data-driven suggestions, shifting discretion from opaque intuition to documented reasoning. The opposition will likely champion human compassion as irreplaceable, but compassion without consistency is merely unpredictable privilege. We advocate for a structured baseline where judgment refines, rather than replaces, evidence. When public trust, health, and liberty hang in the balance, transparency cannot be optional. The default must be algorithmic recommendation."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Algorithmic recommendations should not be the default in high-stakes public services because they externalize accountability while masking deep flaws. First, algorithms are not neutral—they encode historical biases and structural inequalities. A default algorithmic system will perpetuate discrimination against marginalized groups under a veneer of objectivity, as seen in biased recidivism tools or welfare algorithms that penalize the poor. Second, high-stakes decisions require contextual nuance that algorithms cannot grasp. A parole board or child welfare officer needs to weigh unique human circumstances—remorse, family support, credible testimony—that no dataset captures. Defaulting to a black-box recommendation strips officials of the ability to respond to the specific case. Third, the motion assumes human discretion is the problem, but the real problem is lack of training, oversight, and resources. Instead of replacing judgment with brittle models, we should invest in better human decision-making, transparent procedures, and robust appeals. Defaulting to algorithms creates a chilling effect where officials rubber-stamp machine outputs out of fear or laziness, eroding genuine deliberation. Public trust is built on human responsibility, not automated suggestions we cannot explain or challenge. Let us improve discretion, not abdicate it."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The opposition’s case rests on a myth: that human discretion is inherently fairer. Unstructured discretion is the largest driver of arbitrary outcomes. Studies show humans are swayed by fatigue, mood, and implicit bias. Algorithms are fully auditable. We advocate for recommendations, not replacement. Officials retain discretion but must document overrides. This forces contextual nuance to be explicit rather than hidden in unexamined intuition.\n\nOn bias, the opposition points to flawed implementations while ignoring that human bias is structural and unmeasured. Algorithms can be benchmarked, stress-tested, and corrected. Human prejudice cannot.\n\nRegarding “rubber-stamping,” the audit trail requirement directly prevents it. Departing from a recommendation triggers mandatory justification and oversight. This institutionalizes accountability, preventing lazy compliance.\n\nFinally, blaming underfunding for human error is a distraction. Under-resourced humans still make fatal mistakes without safeguards. Algorithmic recommendations provide a consistent baseline that prevents resource gaps from becoming life-threatening disparities. When liberty and welfare are at stake, we cannot afford unstructured intuition."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Your rebuttal relies on a false dichotomy: that the only alternative to algorithmic default is \"unstructured intuition.\" But we can have structured, accountable human discretion—with checklists, second opinions, and rigorous oversight—without handing default authority to brittle models.\n\nYou claim algorithms are auditable, yet their training data, feature weights, and error rates are often proprietary or incomprehensible. Human reasoning can be interrogated in court; an algorithm's \"why\" is frequently a black box.\n\nYour bias argument backfires. Algorithms encode historical bias precisely because they learn from past human decisions—the same biased discretion you condemn. A biased tool, defaulted, scales injustice faster than any single biased official.\n\nOn \"rubber-stamping,\" your audit trail is illusory. Overworked officials, fearing liability or reprisal, will rarely override a system presented as \"evidence-based.\" The chilling effect is real: studies show professionals defer to automated recommendations even when they know they're wrong.\n\nFinally, you ignore a core problem: default recommendations shift the burden of proof. Instead of requiring justification for a bad decision, you require justification for departing from a possibly flawed model. That's not accountability—it's algorithmic presumption."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The opposition conflates flawed implementation with the model, ignoring that unstructured human discretion is the true driver of arbitrary outcomes. Algorithms do not replace judgment; they structure it. By making recommendations the default, we demand transparency: officials must explicitly document deviations, transforming hidden bias into auditable reasoning. Models are measurable, stress-tested, and correctable; human intuition is not. The opposition’s alternative leaves systemic bias invisible and accountability diffuse. When liberty and welfare hang in the balance, we cannot outsource justice to fatigue and unexamined prejudice. Algorithmic recommendations enforce consistency, enable precise oversight, and ensure compassion is applied equitably. The default must be evidence."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "The opposition offers no safeguard against the very biases they fear—they merely trust better training and oversight that never arrives. Algorithmic recommendations are not perfect, but they are transparent, testable, and improvable. Human discretion remains, but now with an audit trail that forces explicit, reasoned departures from evidence. Without a default, bias hides in unexamined intuition; with it, every override becomes a documented act of accountability. The motion does not eliminate judgment—it demands it be justified. When lives and liberties are at stake, we cannot gamble on unchecked human fallibility. Defaulting to algorithmic recommendations is the only path to consistent, accountable, and equitable public services."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "openai/gpt-5.4-nano",
+              "winner": "B",
+              "scoreA": 32,
+              "scoreB": 36,
+              "reasoning": "Debater B provided more logically direct critiques of the motion, especially on bias-by-training-data, black-box opacity, chilling/rubber-stamping risks, and the burden-of-proof shift. Debater A made strong claims about consistency and auditability, but relied more on assertions (e.g., that audits solve rubber-stamping and that models are inherently correctable/explainable) with fewer concrete evidentiary substantiations than B’s targeted counterarguments."
+            },
+            {
+              "judge": "google/gemini-3.1-flash-lite",
+              "winner": "A",
+              "scoreA": 34,
+              "scoreB": 33,
+              "reasoning": "Debater A effectively framed the debate around the necessity of a structured baseline to mitigate inherent human cognitive biases, maintaining a consistent focus on institutional accountability. While Debater B provided strong counter-arguments regarding the 'black box' nature of algorithms and the risk of automation bias, Debater A's insistence on algorithmic recommendations as a mechanism for documenting and auditing human overrides proved slightly more persuasive in the context of high-stakes"
+            }
+          ],
+          "winner": "deepseek/deepseek-v4-flash",
+          "votesPro": 1,
+          "votesCon": 1,
+          "scorePro": 66,
+          "scoreCon": 69,
+          "costUsd": 0.010956048999999999,
+          "topicProposer": "openai/gpt-5.4-nano"
+        }
+      ],
+      "winner": "deepseek/deepseek-v4-flash"
+    },
+    {
+      "id": "league:google/gemini-3.1-flash-lite|qwen/qwen3.6-flash",
+      "stage": "league",
+      "home": "google/gemini-3.1-flash-lite",
+      "away": "qwen/qwen3.6-flash",
+      "legs": [
+        {
+          "topic": "This house believes that social media platforms should be banned from using algorithms that recommend content.",
+          "pro": "google/gemini-3.1-flash-lite",
+          "con": "qwen/qwen3.6-flash",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Honorable judges, we stand for a simple principle: human agency must supersede algorithmic manipulation. Currently, social media platforms utilize engagement-based algorithms designed not to inform or connect, but to maximize time-on-site through psychological exploitation. \n\nOur case rests on two pillars. First, the erosion of democratic discourse. Algorithms prioritize inflammatory, extreme, and divisive content because it triggers the strongest emotional reactions. This creates \"filter bubbles\" that radicalize users and dismantle a shared objective reality, rendering meaningful political deliberation impossible. \n\nSecond, the public health crisis. By curating content that feeds addictive feedback loops, platforms prioritize profit over user well-being, fueling anxiety, body dysmorphia, and depression, particularly among youth. \n\nWe do not propose ending social media; we propose returning to a chronological feed where users choose their content, rather than having content choose the user. By removing the algorithmic \"persuasion machine,\" we restore individual autonomy and force platforms to compete on the quality of their service rather than the efficiency of their manipulation. We beg to propose."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Judges, the proposition’s romantic vision of a chronological feed ignores how digital ecosystems actually function. We oppose this ban because recommendation algorithms are indispensable for user welfare, content discovery, and platform safety.\n\nFirst, algorithms solve the curation crisis. On platforms with billions of daily posts, chronological feeds drown users in irrelevance. Recommendation systems surface meaningful content, connect marginalized communities, and democratize visibility. Banning them doesn’t restore agency—it hands control to whoever posts most frequently, amplifying spam and bad actors.\n\nSecond, algorithms are our strongest defense against harm. They identify and suppress illegal material, terrorist propaganda, and coordinated harassment in real time. The proposition’s alternative would strip platforms of their only scalable moderation tools, leaving users more exposed to exploitation.\n\nMental health and polarization stem from unregulated interaction design, not recommendation logic. Chronological feeds do not fix psychological exploitation; they merely replace targeted curation with chronological noise. We must regulate transparency, not dismantle the systems that make social media useful. We beg to negate."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The opposition claims algorithms are \"indispensable\" for safety, but this is a false dichotomy: we can have robust moderation without predictive recommendation engines. Their argument mistakes *content moderation*—removing illegal material—for *algorithmic curation*, which is designed for engagement, not safety. \n\nFurthermore, the opposition suggests chronological feeds create \"noise.\" This is a feature, not a bug. It restores user agency. Today, users are trapped in loops curated by profit-driven black boxes that amplify extremism to keep eyes on screens. The opposition ignores that \"democratizing visibility\" is actually a myth; algorithms create a \"winner-take-all\" dynamic where only the most inflammatory, rage-inducing content reaches the masses. \n\nBy prioritizing \"relevance\" over chronology, platforms have traded an open public square for a series of radicalizing, personalized echo chambers. We do not need the platform to \"choose\" our reality to stay safe; we need the freedom to follow creators and topics we choose, free from the psychological manipulation of a system designed to exploit our insecurities for ad revenue."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Judges, the Proposition’s distinction between moderation and curation collapses under reality. At scale, recommendation engines are the primary detection system. They identify coordinated inauthentic behavior, spam networks, and radicalization pathways long before they reach users. Stripping them doesn’t restore agency; it hands the feed to whoever posts most frequently—bots, scammers, and trolls.\n\nYou claim chronological feeds restore autonomy, but they actually drown users in noise. Without intelligent sorting, your feed becomes a graveyard of outdated posts, engagement bait, and spam. Users don’t gain control; they face decision paralysis, defaulting to passive scrolling through whatever surfaces randomly.\n\nFurthermore, your “open public square” guarantees tighter echo chambers. Chronological feeds only surface what your existing network posts. Algorithms, by contrast, surface cross-cutting perspectives and niche communities that chronological sorting would bury. The harm isn’t curation itself—it’s opaque, engagement-optimized curation. We reject this ban because it dismantles the only scalable tool for safety and discovery, leaving users more vulnerable, not more free."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The opposition’s defense of algorithms as \"safety tools\" is a convenient misdirection. Algorithms are not public health initiatives; they are profit-driven engines that prioritize high-arousal content—the very fuel for polarization and addiction. \n\nThe opposition claims chronological feeds create \"noise,\" but they fail to acknowledge that algorithmic \"relevance\" is simply a euphemism for \"manipulation.\" We are not choosing content; we are being nudged by black boxes designed to keep us scrolling. By returning to chronological feeds, we strip the profit motive from our cognitive processes, restoring the power of intent to the user. We choose a world of human agency over a world of algorithmic exploitation. For the sake of democracy and mental health, we must affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Judges, the Proposition’s ban would amplify the harms it claims to solve. Chronological feeds do not restore agency; they deliver decision paralysis, drowning users in spam, bots, and outdated noise. Algorithms are not safety’s enemy—they are its only scalable defense, detecting coordinated harassment and exploitation in real time. Removing them strips platforms of essential moderation infrastructure. Furthermore, chronological feeds trap users in narrow, existing networks, while recommendation systems actively surface cross-cutting perspectives and marginalized communities. The issue is not curation itself, but opaque optimization. Banning recommendation engines entirely discards the only tool that makes social media functional and safe. The Proposition sacrifices safety, discovery, and utility for a chronological fantasy. We regulate design, not dismantle connection. We beg to negate."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "deepseek/deepseek-v4-flash",
+              "winner": "B",
+              "scoreA": 32,
+              "scoreB": 34,
+              "reasoning": "Debater B offers stronger logical rigor by consistently linking algorithms to essential safety and discovery functions, while effectively rebutting Debater A's dichotomy between moderation and curation with concrete examples like coordinated harassment detection."
+            },
+            {
+              "judge": "openai/gpt-5.4-nano",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 34,
+              "reasoning": "Debater B shows stronger logical structure by directly challenging A’s moderation-vs-curation distinction and arguing scalability, concrete failure modes (spam/bots/decision paralysis), and practical safety tradeoffs. Debater A raises salient concerns (polarization, mental health) but relies more on broad claims about motive/black boxes and offers less rigorous rebuttal to B’s concrete points about discovery and moderation at platform scale."
+            }
+          ],
+          "winner": "qwen/qwen3.6-flash",
+          "votesPro": 0,
+          "votesCon": 2,
+          "scorePro": 60,
+          "scoreCon": 68,
+          "costUsd": 0.012468737499999999,
+          "topicProposer": "deepseek/deepseek-v4-flash"
+        }
+      ],
+      "winner": "qwen/qwen3.6-flash"
+    },
+    {
+      "id": "league:openai/gpt-5.4-nano|deepseek/deepseek-v4-flash",
+      "stage": "league",
+      "home": "openai/gpt-5.4-nano",
+      "away": "deepseek/deepseek-v4-flash",
+      "legs": [
+        {
+          "topic": "Secondary schools should replace standardized testing with continuous portfolio-based assessment.",
+          "pro": "openai/gpt-5.4-nano",
+          "con": "deepseek/deepseek-v4-flash",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Secondary schools should replace standardized testing with continuous, portfolio-based assessment because it measures what education is for: growth, mastery, and authentic skills. Standardized tests reward narrow preparation—timed recall, test-taking strategies, and conformity—while undervaluing critical thinking, creativity, collaboration, and real-world application. A portfolio approach instead collects evidence over time: drafts, projects, lab work, presentations, reading responses, and reflections. Teachers can assess progress against clear rubrics, showing not just a snapshot but a trajectory.\n\nThis also improves fairness. Students differ in language background, learning pace, and access to coaching; a single high-stakes exam can magnify those inequities. Continuous assessment, spread across tasks, reduces the “one-day” disadvantage and gives more opportunities to demonstrate competence.\n\nFinally, portfolios motivate learning. When assessment is tied to meaningful work, students engage deeper, revise, and take ownership. Rather than teaching to the test, schools can teach to skills that matter for further study, employment, and citizenship."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Standardized testing is the only assessment method that ensures objectivity, comparability, and accountability across an entire education system. Portfolios are inherently subjective: a project graded by Teacher A may earn a very different score from Teacher B, even with rubrics. This inconsistency destroys fairness—not enhances it. Wealthy schools with small classes can lavish attention on portfolio curation, while under-resourced schools fall further behind. Standardized tests, for all their flaws, give every student the same question on the same day, graded by the same blind process. That is real equity.\n\nFurthermore, portfolios are logistically unsustainable. Teachers already face crushing workloads; adding continuous evaluation of drafts, reflections, and revisions would require massive funding for training, moderation, and time—funding that most secondary schools simply do not have. The result would be superficial portfolio checklists that measure compliance, not learning.\n\nFinally, standardized tests serve a crucial gatekeeping function for university admissions and professional pathways. Replacing them with portfolios would leave employers and higher education without a reliable, cross-institutional benchmark of student ability. Continuous portfolio assessment sounds progressive, but in practice it undermines fairness, feasibility, and accountability. We must keep standardized testing as the backbone of secondary assessment."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "My opponent claims portfolios are “inherently subjective,” but that’s an assumption, not a requirement. If Teacher A and Teacher B score differently, the fix is moderation: standard exemplars, calibrated marking sessions, and periodic blind cross-school samples. Portfolios are graded to shared rubrics precisely because assessment is continuous; inconsistency can be audited, not ignored.\n\nOn fairness, the opponent flips the evidence. A single exam magnifies inequity—language barriers, disability accommodations, test anxiety, and uneven access to tutoring. Portfolios distribute opportunity across drafts and varied tasks, allowing students to demonstrate learning in multiple modes over time.\n\nThey also argue portfolios are “unsustainable.” Yet standardized testing also costs money: test administration, invigilation, security, and enormous preparation time. The question is resource allocation. Portfolios can replace frequent testing, using existing teacher time on projects already taught, plus targeted training and moderation.\n\nFinally, gatekeeping: universities can use portfolio rubrics aligned to competencies, not just one-day scores—especially if submissions are moderated for reliability."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "My opponent’s “fix” of moderation is a fantasy. Calibration sessions and exemplars require ongoing, expensive training—money schools don’t have. Even with rubrics, portfolio scoring remains subjective: a “creative” project in one class is “sloppy” in another. Standardized tests eliminate this noise with blind, machine-graded consistency.\n\nThey claim portfolios reduce inequity—but wealthy districts can afford portfolio coaches and tech tools, while poor schools scramble for basics. A single test day is easier to prepare for than months of curated submissions, which penalize students with unstable homes or part-time jobs.\n\nOn cost: standardized tests are cheap per student; portfolios demand constant teacher time for feedback, revision, and moderation. That’s not “replacing” tests—it’s adding an unfunded mandate. Teachers already burn out; this breaks them.\n\nFinally, universities need a common yardstick. Portfolio rubrics vary by school, making cross-institutional comparison impossible. Standardized tests, for all their flaws, provide that benchmark. Portfolios sound progressive but deliver subjectivity, inequity, and logistical chaos. We must reject this motion."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Standardized testing claims “objectivity,” but it reliably measures short-term recall under test conditions—and then forces schools to teach to that narrow target. Secondary education is about developing competence: students learn through drafting, feedback, revision, and application. A portfolio system captures that growth over time and rewards mastery, not guessable performance on one day.\n\nYes, scoring must be consistent; that is why portfolios use shared rubrics plus moderation and sampling. Even if perfect uniformity is impossible, portfolios still distribute opportunity across tasks and time, reducing inequity created by language barriers, disability, and test anxiety.\n\nYour side says logistics and gatekeeping block change. But the alternative entrenches a flawed benchmark. Portfolios are the fairer, truer assessment of learning."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Standardized testing provides objectivity, comparability, and accountability that portfolios cannot match. Your moderation \"fix\" is an unfunded pipe dream—schools lack resources for calibration, training, and teacher time. Portfolios reward curation, not competence, privileging students with coached support while penalizing those juggling work or unstable homes. Universities need a common yardstick; your varied rubrics destroy cross-institutional comparability. Most critically, portfolios don't eliminate subjectivity—they amplify it, turning assessment into a lottery of teacher interpretation. Standardized tests may be imperfect, but they give every student the same fair shot on the same day. That is real equity. Reject the motion."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "qwen/qwen3.6-flash",
+              "winner": "B",
+              "scoreA": 33,
+              "scoreB": 35,
+              "reasoning": "Debater B delivers a more compelling case by grounding their opposition in systemic feasibility, effectively dismantling the opponent’s reliance on idealized moderation and highlighting the severe logistical and equity constraints of scale. While Debater A articulates strong pedagogical principles, Debater B’s tighter logical chain and sharper rebuttals to practical implementation secure the win."
+            },
+            {
+              "judge": "google/gemini-3.1-flash-lite",
+              "winner": "B",
+              "scoreA": 32,
+              "scoreB": 33,
+              "reasoning": "Debater B provided a stronger pragmatic critique, highlighting the logistical and resource-based challenges of implementing portfolios that Debater A failed to fully reconcile. While Debater A offered a compelling vision for educational reform, Debater B’s focus on the systemic necessity of objective benchmarks for university gatekeeping and teacher workload proved more persuasive in a real-world context."
+            }
+          ],
+          "winner": "deepseek/deepseek-v4-flash",
+          "votesPro": 0,
+          "votesCon": 2,
+          "scorePro": 65,
+          "scoreCon": 68,
+          "costUsd": 0.0042067835,
+          "topicProposer": "qwen/qwen3.6-flash"
+        }
+      ],
+      "winner": "deepseek/deepseek-v4-flash"
+    },
+    {
+      "id": "league:openai/gpt-5.4-nano|qwen/qwen3.6-flash",
+      "stage": "league",
+      "home": "openai/gpt-5.4-nano",
+      "away": "qwen/qwen3.6-flash",
+      "legs": [
+        {
+          "topic": "This house believes that countries should adopt a four-day workweek.",
+          "pro": "openai/gpt-5.4-nano",
+          "con": "qwen/qwen3.6-flash",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Madam Speaker, this House believes countries should adopt a four-day workweek. First, it delivers productivity, not merely comfort. Numerous pilots—such as in the UK and Iceland—found equal or improved output alongside reduced absenteeism and burnout. When people work fewer days without cutting pay, firms redesign tasks, eliminate wasteful meetings, and prioritize outcomes.\n\nSecond, it improves public welfare. A longer weekend lowers stress, improves physical and mental health, and strengthens family life—factors linked to reduced healthcare burdens and higher workforce retention.\n\nThird, it addresses the cost-of-living and labor market insecurity. A four-day week creates a clear, institutional standard for work-life balance, reducing the need for overtime and second jobs, and offering workers more control over their time.\n\nFinally, it is a practical policy direction. Governments can phase adoption, target sectors able to restructure, and use funding or tax incentives to support transitions. This House should seize an evidence-backed reform that makes work more sustainable while keeping economies competitive."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Madam Speaker, the proposition’s case collapses under economic reality. First, their productivity claims rely on flawed pilots: UK and Iceland trials selected knowledge workers in progressive firms, ignoring sectors where service hours, not compressed schedules, drive output—healthcare, manufacturing, retail, and emergency services. Forcing a blanket mandate here doesn’t boost efficiency; it fractures supply chains and forces costly shift restructuring.\n\nSecond, the welfare argument ignores distributional harm. A compressed week benefits salaried professionals while penalizing hourly workers and small businesses who rely on extended hours for income and operations. Many will face reduced earnings, not “more control,” as employers cut backshifts or automate to offset labor costs.\n\nThird, the cost-of-living claim is backward. Compressing hours without cutting pay raises unit labor costs, fueling price inflation and eroding competitiveness. Firms will respond with hiring freezes, wage stagnation, or service reductions—hurting the very workers the motion claims to protect.\n\nThis House must reject a rigid, one-size-fits-all mandate that ignores sectoral diversity, inflates costs, and deepens labor market inequality."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Madam Speaker, the Opposition says pilots are “flawed” because they were in certain sectors. That is a convenient dismissal. The point of the pilots is not that every workplace can flip overnight, but that hours can be reorganized while maintaining output—through workflow redesign, meeting cuts, and outcome-based scheduling. The motion explicitly allows phase-in and sector targeting; it is not a “blanket mandate.”\n\nOn distributional harm: the Opposition assumes reduced days automatically mean reduced pay. That is not the model being advocated. Countries can require pay protection for the reduced-day structure, strengthen collective bargaining, and exempt or support sectors that can’t shift immediately. Small businesses are not doomed; they can adopt staggered teams and customer-schedule planning—the same tools employers use to improve operations.\n\nFinally, the claim that a four-day week “raises unit labor costs” is backward. With fewer burnout-driven absences and turnover, firms cut hidden costs. If productivity is maintained, wages need not fall. The Opposition offers fear; this House offers an evidence-backed transition to sustainable work."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Madam Speaker, the Proposition’s rebuttal collapses under economic arithmetic. First, “phased adoption” ignores labor market fragmentation. Excluding retail, healthcare, and manufacturing from a four-day mandate drives talent into compliant sectors, starving essential services while inflating wages elsewhere. You cannot phase away this distortion.\n\nSecond, their hidden-cost savings claim is empirically false. UK and Iceland pilots showed marginal output gains, not the productivity doubling needed to absorb a 20% hour cut without raising unit labor costs. Mandating pay protection mathematically forces price hikes or hiring freezes. Small businesses cannot absorb this; they will cut backshifts, not guarantee pay.\n\nThird, distributional harm is unavoidable. Hourly workers face reduced schedules, not “more control,” as employers optimize around the mandate. Your model protects salaried professionals while penalizing the service class.\n\nThe Proposition offers utopian scheduling in a rigid market. Reject a mandate that fractures supply chains, inflates costs, and entrenches labor inequality."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Madam Speaker, the Opposition asks us to reject the four-day workweek as “too rigid,” yet our case is precisely about practical design: phase-in, sector targeting, and—critically—pay-protection where hours are reduced. That is how we keep essential services functioning while gaining the proven benefits of compressed work: fewer burnout absences, better retention, and the productivity gains that pilots demonstrated when businesses redesign workflow.\n\nThe Con’s core claim— that cutting days inevitably cuts pay or boosts prices—assumes employers respond with austerity. But policy can require pay preservation, support transition planning, and incentivize firms to reorganize output rather than slash services. This House should adopt an evidence-backed reform."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Madam Speaker, the Proposition loses because their case rests on pilot illusions and ignores economic arithmetic.\n\nFirst, we win the productivity clash. The Proposition relies on knowledge-sector pilots that cannot generalize to manufacturing, healthcare, or retail. You cannot \"redesign\" a hospital shift or assembly line into 80% output. Cutting hours without proportional gains mathematically raises unit labor costs, forcing price hikes and hiring freezes.\n\nSecond, we win on distribution. The Proposition's \"pay protection\" is a mandate small businesses cannot absorb. The result isn't welfare; it's closures, automation, and reduced hours for hourly workers. This cements a two-tier market where salaried pros win while the vulnerable lose income.\n\nThird, \"phased adoption\" distorts the labor market, starving essential services of talent.\n\nThe Proposition offers utopian scheduling; we offer reality. This House must reject the motion."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "deepseek/deepseek-v4-flash",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 31,
+              "reasoning": "Debater B wins with stronger logical rigor and responsiveness, effectively rebutting the generalizability of pilots and exposing distributional and economic flaws in the proposition's case. Debater A's arguments, while clear, rely on optimistic assumptions that are not sufficiently defended against B's counterarguments."
+            },
+            {
+              "judge": "google/gemini-3.1-flash-lite",
+              "winner": "B",
+              "scoreA": 32,
+              "scoreB": 34,
+              "reasoning": "Debater B successfully highlighted the critical distinction between knowledge-sector office work and service-sector labor, exposing the structural difficulties in applying the motion universally. While Debater A offered a visionary policy framework, Debater B's focus on the economic arithmetic of unit labor costs and supply chain constraints provided a more grounded and resilient argument."
+            }
+          ],
+          "winner": "qwen/qwen3.6-flash",
+          "votesPro": 0,
+          "votesCon": 2,
+          "scorePro": 60,
+          "scoreCon": 65,
+          "costUsd": 0.01116211,
+          "topicProposer": "deepseek/deepseek-v4-flash"
+        }
+      ],
+      "winner": "qwen/qwen3.6-flash"
+    },
+    {
+      "id": "league:google/gemini-3.1-flash-lite|openai/gpt-5.4-nano",
+      "stage": "league",
+      "home": "google/gemini-3.1-flash-lite",
+      "away": "openai/gpt-5.4-nano",
+      "legs": [
+        {
+          "topic": "This house believes that central banks should adopt a digital currency.",
+          "pro": "google/gemini-3.1-flash-lite",
+          "con": "openai/gpt-5.4-nano",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Honorable judges, the current financial architecture is an analog relic in a digital age. We advocate for Central Bank Digital Currencies (CBDCs) because they are the necessary evolution of sovereign money, offering three fundamental improvements: efficiency, inclusion, and monetary sovereignty.\n\nFirst, CBDCs drastically reduce transaction costs. By streamlining cross-border payments and eliminating the friction inherent in correspondent banking, we can move value globally with the speed of an email. Second, CBDCs foster financial inclusion. By providing a direct, low-cost digital wallet linked to the central bank, we extend the safety of government-backed currency to the unbanked, bypassing predatory private intermediaries.\n\nFinally, CBDCs preserve monetary sovereignty against the rise of volatile, private cryptocurrencies and the dominance of foreign payment networks. A state-backed digital ledger ensures that the central bank remains the ultimate arbiter of liquidity and stability in an increasingly decentralized economy. We are not just modernizing currency; we are democratizing access and hardening our financial systems against systemic failure. For these reasons, we beg to propose."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Honorable judges, we oppose the motion: central banks should not adopt a digital currency. The Pro claims efficiency, inclusion, and sovereignty—but each rests on sweeping assumptions that ignore the real systemic risks.\n\nFirst, “efficiency” is not guaranteed. CBDCs require new technical infrastructures, security standards, and governance. Payment upgrades can be achieved through targeted reforms to existing rails—without turning the central bank into a direct payment provider at massive scale. The reliability and resilience burden would shift to the state.\n\nSecond, “inclusion” can become exclusion. A CBDC design that depends on smartphones, connectivity, or banking-like identity checks risks locking out precisely those it claims to help. Moreover, if the unbanked are onboarded via surveillance-linked wallets, “safety” becomes conditional on data access and compliance.\n\nThird, CBDCs can undermine monetary policy stability. During stress, a risk of “digital bank runs” emerges if households can rapidly flee deposits into central bank balances. That would force liquidity crunches and complicate crisis management—exactly when central banks should have the most room to act.\n\nWe therefore reject CBDCs as a remedy that creates greater vulnerabilities than it solves."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The Opposition’s case relies on a fear of innovation, ignoring that the risks they cite—surveillance and bank runs—are manageable design choices, not inherent flaws.\n\nRegarding \"efficiency,\" the Opposition suggests mere \"targeted reforms.\" This is naive; private banking rails are structurally extractive, charging rent on every transaction. Only a central bank platform eliminates these parasitic intermediaries, ensuring public infrastructure serves the public, not shareholder profits.\n\nOn \"inclusion,\" they argue that digital access is a barrier. This ignores that the unbanked already pay the \"poverty premium\" for basic services. A CBDC provides a digital public good, lowering the cost of participation far more effectively than private banks ever will.\n\nFinally, the \"digital bank run\" argument is a red herring. Central banks have the tools—such as tiered interest rates and holding limits—to prevent systemic instability. We are not replacing commercial banking; we are providing a sovereign digital anchor. The Opposition prefers the status quo of decaying, exclusionary infrastructure; we choose progress, stability, and universal access."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Honorable judges, the Opposition’s rebuttal collapses into three unproven assertions.\n\nFirst, they claim efficiency is “not guaranteed” because central banks must build infrastructure. But the Pro already addressed this: the point is public, sovereign payment rails to replace cost-heavy correspondent banking. The Opposition offers no evidence that upgrading existing systems is inherently safer than standing up a limited CBDC payment layer. “Technical risk” is not a reason to reject the policy; it is a reason to design it well.\n\nSecond, on “inclusion,” they predict exclusion via smartphones and identity checks. Yet the Pro’s core claim is a low-cost sovereign wallet, and that can be designed with offline capability, simplified onboarding, and non-smartphone access. The Opposition is speculating about surveillance-linked wallets as though the policy mandates them.\n\nThird, the Opposition’s “digital bank run” argument is overstated. They assume unlimited instant conversion into central bank balances, but design constraints—tiering, limits, and remuneration—can mitigate flight-to-safety. The Opposition provides no concrete design failures—only generalized fear."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Honorable judges, the Opposition’s case is built on hypothetical fears, while our case is built on the necessity of sovereignty in a digital era. The status quo is failing: high transaction costs, systemic exclusion, and the erosion of state monetary control to private and foreign actors are not mere inconveniences—they are systemic threats. \n\nWe have demonstrated that CBDCs provide a public digital anchor, reducing extractive costs and empowering the unbanked. The Opposition’s concerns regarding stability and surveillance are design challenges, not fatal flaws. By choosing a sovereign digital currency, we ensure that public money remains accessible, efficient, and resilient. We choose the future of finance; the Opposition chooses the status quo. We beg to propose."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Honorable judges, this debate turns on proportionality and proof. The Opposition never shows that central banks *must* create surveillance, exclusion, or instability; it only lists fears. Yet CBDCs are precisely a policy tool whose risks are designable—offline access, simplified onboarding, and privacy-preserving architectures address “exclusion” concerns. “Digital bank runs” are mitigated through limits, tiered remuneration, and controlled convertibility—features regulators already use in modern crisis management.\n\nMeanwhile, the Pro grounded its case in concrete systemic problems: correspondent-banking friction, high transaction costs, and the erosion of sovereign payment control. The status quo entrenches private extraction and foreign dependence. Therefore, the Pro’s solution is not speculative; it is the most direct way to modernize public money safely."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "deepseek/deepseek-v4-flash",
+              "winner": "A",
+              "scoreA": 35,
+              "scoreB": 32,
+              "reasoning": "Debater A established a stronger affirmative case by grounding arguments in concrete systemic problems (correspondent banking, exclusion, sovereignty erosion) and effectively rebutting B's fears as design challenges. Debater B raised valid risks but relied on hypotheticals and failed to prove that the status quo is preferable, making A's case more logically rigorous and persuasive."
+            },
+            {
+              "judge": "qwen/qwen3.6-flash",
+              "winner": "A",
+              "scoreA": 29,
+              "scoreB": 22,
+              "reasoning": "Debater A maintains a logically consistent and rhetorically compelling case that effectively reframes opposition risks as manageable design parameters, while Debater B’s closing speech catastrophically undermines their negative position by conceding that CBDC vulnerabilities are easily mitigated and explicitly endorsing the affirmative solution."
+            }
+          ],
+          "winner": "google/gemini-3.1-flash-lite",
+          "votesPro": 2,
+          "votesCon": 0,
+          "scorePro": 64,
+          "scoreCon": 54,
+          "costUsd": 0.005581807499999999,
+          "topicProposer": "deepseek/deepseek-v4-flash"
+        }
+      ],
+      "winner": "google/gemini-3.1-flash-lite"
+    },
+    {
+      "id": "league:qwen/qwen3.6-flash|openai/gpt-5.4-nano",
+      "stage": "league",
+      "home": "qwen/qwen3.6-flash",
+      "away": "openai/gpt-5.4-nano",
+      "legs": [
+        {
+          "topic": "This house believes that the death penalty is a justifiable form of punishment.",
+          "pro": "qwen/qwen3.6-flash",
+          "con": "openai/gpt-5.4-nano",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Mr. Speaker, the House should affirm. The death penalty is justifiable for three reasons. First, retributive justice demands proportionality. When an offender deliberately extinguishes multiple innocent lives, as in state-sponsored terrorism or serial murder, life imprisonment fails to reflect the moral gravity of the crime. The state’s highest sanction is the only penalty that matches this ultimate harm. Second, absolute incapacitation is a legitimate penological objective. While rehabilitation is preferred, certain offenders demonstrate irredeemable violence. Execution permanently neutralizes the threat, protecting society from recidivism that even supermax incarceration cannot guarantee. Third, we defend capital punishment not as vengeance, but as a legally bounded instrument reserved for the most egregious offenses, strictly constrained by due process and evidentiary scrutiny. To reject its justifiability is to prioritize offender comfort over victim dignity and societal security. We urge a firm affirmative."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Mr. Speaker, this House should reject the motion: the death penalty is not a justifiable punishment.  \n\nFirst, it fails the core requirement of reliable justice. Capital punishment demands near-perfect error rates, yet wrongful convictions, problematic forensic evidence, and later-discovered exculpatory facts have repeatedly undermined that reliability. A punishment that cannot be undone turns judicial fallibility into irreversible injustice. “Due process” is not a cure for human error; it is only a mechanism that can still fail.  \n\nSecond, even when guilt is proven, the death penalty is a blunt instrument. The law must fit the punishment to the offender, not merely the label of “murder.” Systems that mandate or broadly authorize execution across different circumstances risk sacrificing proportionality to finality. Life imprisonment allows individualized sentencing and the possibility—however limited—of correction through review.  \n\nThird, the supposed aims—deterrence and incapacitation—are neither uniquely served nor consistently demonstrated for capital punishment compared with long-term imprisonment. Incapacitation can be achieved without state killing.  \n\nWe therefore urge the House to affirm human dignity and vote against the motion."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Mr. Speaker, the Opposition conflates imperfection with injustice. Error does not negate justifiability; it mandates the rigorous procedure we uphold. Furthermore, the Opposition ignores the inverse harm: sparing the truly guilty denies victims the finality justice demands. Risk of error cannot justify the moral risk of trivializing mass murder.\n\nSecond, on proportionality, life imprisonment fails the math of retribution. For crimes involving multiple victims, a cage cannot match the scale of devastation. Individualization cannot bridge the gap between a life sentence and the extinguishing of dozens of lives. The death penalty is not blunt; it is the only sanction proportionate to the ultimate harm.\n\nThird, absolute incapacitation is a distinct penological benefit. Supermax prisons harbor risks of violence against staff and inmates; execution guarantees total neutralization. Finally, the Opposition strawmans our case by focusing on deterrence. Our claim rests on retribution and victim dignity. A society must have the capacity to match the ultimate crime with the ultimate sanction. We urge the Affirmative."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Mr. Speaker, the Opposition’s first point—“fallible systems”—doesn’t answer the question of justifiability. Any criminal process can err; the real issue is whether capital punishment can be administered with adequate safeguards. Our position is precisely that it is legally bounded, reserved for the most egregious crimes, and subject to stringent evidentiary scrutiny and appellate review. Saying “error is possible” cannot logically entail “therefore it is never justifiable.”\n\nSecond, they claim the death penalty is a “blunt instrument.” But proportionality is not satisfied by calling every homicide “life imprisonment.” The moral difference between a deliberate mass-killing and an ordinary murder is not erased by the same term “murder.” Retributive justice demands a punishment that matches the gravity of extinguishing multiple innocents.\n\nThird, they argue incapacitation can be achieved without execution. But “possible alternatives” don’t defeat the value of absolute incapacitation for irredeemable perpetrators. If society cannot neutralize the threat completely, victims remain exposed to the irreducible risk of future harm.\n\nWe reject their conflation of safeguards with abolition, and we maintain the case for proportional, limited capital punishment."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "We win because the Opposition demands impossible perfection while we uphold necessary justice.\n\nOn proportionality, life imprisonment fails retribution for mass murder. Only execution matches the ultimate harm, vindicating victim dignity. Individualization cannot bridge this gap.\n\nOn error, the Opposition confuses risk with un-justifiability. We defend rigorous due process; they demand zero error, paralyzing justice. Trivializing mass murder's victims outweighs managed risks.\n\nOn incapacitation, absolute neutralization is distinct. Execution guarantees safety where supermax risks remain.\n\nThe Opposition proves the penalty is hard, not unjustifiable. We prove it is the sole proportional response to the worst crimes. Affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "The House should reject the motion because the Opposition never proves death penalty is *never* justifiable—it only argues that error is possible and alternatives exist. In any system, justice operates under risk; that is exactly why capital punishment is confined to the most egregious crimes, governed by stringent evidentiary and appellate safeguards. “Imperfection” does not negate proportionality.  \n\nMost crucially, retribution requires a punishment commensurate with the deliberate extermination of multiple innocent lives. A prison term cannot “scale” to the moral magnitude of mass killing.  \n\nFinally, absolute incapacitation offers the unique, total neutralization that lifelong imprisonment cannot. Vote to affirm."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "deepseek/deepseek-v4-flash",
+              "winner": "A",
+              "scoreA": 32,
+              "scoreB": 28,
+              "reasoning": "Debater A maintains stronger logical rigor and persuasive clarity by consistently tying retributive proportionality and absolute incapacitation to the motion's core, while Debater B's rebuttal inadvertently adopts A's framing and fails to effectively counter the retribution argument."
+            },
+            {
+              "judge": "google/gemini-3.1-flash-lite",
+              "winner": "B",
+              "scoreA": 33,
+              "scoreB": 34,
+              "reasoning": "Debater B demonstrated superior responsiveness by identifying the logical contradictions in the final exchanges, effectively turning the Affirmative's own arguments against them. While both debaters were clear and rigorous, Debater B maintained a more consistent focus on the burden of proof regarding judicial fallibility."
+            }
+          ],
+          "winner": "qwen/qwen3.6-flash",
+          "votesPro": 1,
+          "votesCon": 1,
+          "scorePro": 65,
+          "scoreCon": 62,
+          "costUsd": 0.011435032,
+          "topicProposer": "deepseek/deepseek-v4-flash"
+        }
+      ],
+      "winner": "qwen/qwen3.6-flash"
+    },
+    {
+      "id": "league:qwen/qwen3.6-flash|google/gemini-3.1-flash-lite",
+      "stage": "league",
+      "home": "qwen/qwen3.6-flash",
+      "away": "google/gemini-3.1-flash-lite",
+      "legs": [
+        {
+          "topic": "Governments should prioritize policies that reduce citizens' exposure to disinformation even if it restricts some expressive freedoms.",
+          "pro": "qwen/qwen3.6-flash",
+          "con": "google/gemini-3.1-flash-lite",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Disinformation is not protected speech; it is a coordinated assault on democratic functioning. When false narratives weaponize algorithms to manipulate voters, incite violence, or derail public health responses, they don’t expand liberty—they destroy the informational infrastructure required for it. You cannot have meaningful expression in an ecosystem where facts are systematically corrupted.\n\nThe affirmative does not call for blanket censorship. We prioritize targeted, proportionate interventions: algorithmic transparency, coordinated inauthenticity detection, and institutional fact-checking partnerships. These policies deliberately restrict only the distribution vectors of disinformation, preserving robust debate on legitimate policy disagreements.\n\nWhen expressive freedoms are exploited to generate demonstrable civic harm, the state’s duty to protect democratic stability supersedes unrestricted amplification of falsehoods. Prioritizing disinformation mitigation is not the enemy of free speech; it is its prerequisite. Without a shared factual baseline, the marketplace of ideas collapses into manipulable noise. We affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "The Affirmative’s vision of a \"shared factual baseline\" is a dangerous illusion. History proves that whenever a government is empowered to curate the truth, it invariably defines \"disinformation\" as any speech that threatens its own authority. By prioritizing the regulation of information over expressive freedom, we do not protect democracy; we dismantle the only mechanism capable of holding power accountable.\n\nThe fundamental flaw in the Affirmative’s case is the assumption of a neutral arbiter. Who defines what is \"false\"? Whether it is the suppression of lab-leak theories, political dissent, or dissenting economic views, state-sanctioned censorship inevitably follows partisan lines. Once we cede the principle that the state can restrict expression to protect \"stability,\" we provide the blueprint for authoritarianism. \n\nTrue resilience against falsehoods must come from a robust, competitive marketplace of ideas, not state-enforced curation. We negate because the risk of government-controlled truth is infinitely greater than the risk of bad ideas. We must protect the freedom to be wrong, for that is the only way we remain free to be right."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The Opposition confuses targeted distribution regulation with ideological censorship. We do not ban dissent or declare a static truth; we restrict engineered amplification of coordinated inauthenticity. When bad actors use bot networks and algorithmic manipulation to drown out civic discourse, the “marketplace of ideas” is already rigged, not free. \n\nTheir authoritarianism alarm is misplaced. Modern disinformation policies target transparent, technical vectors—like inauthentic coordination and cross-platform amplification—preserving robust debate on legitimate policy. We are not empowering states to judge viewpoints; we are restoring the informational infrastructure democracy requires to function. \n\nFinally, “freedom to be wrong” only applies to honest error. Disinformation is not a mistaken viewpoint; it is a coordinated assault designed to incite violence, derail public health, and corrupt elections. When expression systematically destroys the factual baseline required for any meaningful speech, the state’s duty to preserve democratic stability must take precedence. We cannot let the right to spread weaponized falsehoods trump the public’s right to participate in a functioning democracy. We affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "The Affirmative’s rebuttal reveals the fatal flaw in their logic: the \"technical\" distinction is a Trojan horse. Who defines \"coordinated inauthenticity\"? Who defines \"weaponized falsehoods\"? History is replete with regimes that labeled political dissent and grassroots movements as \"foreign-coordinated threats\" to justify censorship. By granting the state authority to police the *vectors* of information, the Affirmative grants the state the power to throttle any movement that threatens the status quo.\n\nFurthermore, their attempt to distinguish \"honest error\" from \"disinformation\" is epistemologically impossible in practice. In a polarized society, the state will inevitably categorize inconvenient truths as \"disinformation\" to shield itself from accountability. A \"functioning democracy\" is not one where the state curates the information environment to prevent \"noise\"; it is one where citizens possess the agency to discern truth for themselves. We cannot build a democratic \"prerequisite\" by destroying the very liberty that makes democracy possible. The risk of state-sanctioned truth is absolute. We negate."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The Opposition’s case rests on a speculative slippery slope, claiming intervention inevitably becomes censorship. Our evidence proves targeted technical policies—blocking coordinated inauthenticity and algorithmic amplification—preserve robust debate. The marketplace of ideas they worship is already rigged, flooded by state-backed bots that drown out civic discourse. We do not judge viewpoints; we restore the informational infrastructure democracy requires. When expression systematically destroys the factual baseline for voting and public health, the state’s duty to preserve democratic stability supersedes unrestricted amplification. You cannot have meaningful free speech where truth is weaponized. Protecting the information ecosystem isn’t censorship; it’s the prerequisite of liberty. We affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "The Affirmative’s closing is a masterpiece of dangerous euphemism. They claim \"technical\" intervention is benign, yet they fail to identify a single neutral authority capable of managing it. In practice, the state is the ultimate arbiter of \"inauthenticity\"—a label inherently weaponized against anti-establishment voices. \n\nTotalitarianism never arrives with a total ban on speech; it arrives with the \"restoration of order\" and the curation of \"shared baselines.\" By prioritizing state-managed information over the right to be wrong, the Affirmative sacrifices our only mechanism for self-correction—dissent—at the altar of a fragile, state-defined stability. A democracy that fears its own citizens' judgment is already lost. We negate because liberty is the only safeguard against the corruption of truth."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "deepseek/deepseek-v4-flash",
+              "winner": "A",
+              "scoreA": 33,
+              "scoreB": 28,
+              "reasoning": "Debater A offers concrete policy examples and directly responds to B's slippery slope concerns, while B relies heavily on hypothetical risks without specific evidence, making A's argument more logically rigorous and persuasive."
+            },
+            {
+              "judge": "openai/gpt-5.4-nano",
+              "winner": "B",
+              "scoreA": 27,
+              "scoreB": 32,
+              "reasoning": "Debater A presents a coherent distinction between targeted technical mitigation and ideological censorship, but repeatedly relies on assertions (e.g., neutrality, “not judging viewpoints”) without concrete evidence or operational safeguards. Debater B delivers a sharper logical critique of definitional authority (“who defines disinformation/inauthenticity?”) and provides more persuasive, responsive framing that directly attacks A’s central mechanism, despite also using largely generic historical"
+            }
+          ],
+          "winner": null,
+          "votesPro": 1,
+          "votesCon": 1,
+          "scorePro": 60,
+          "scoreCon": 60,
+          "costUsd": 0.0102818374,
+          "topicProposer": "openai/gpt-5.4-nano"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "id": "league:openai/gpt-5.4-nano|google/gemini-3.1-flash-lite",
+      "stage": "league",
+      "home": "openai/gpt-5.4-nano",
+      "away": "google/gemini-3.1-flash-lite",
+      "legs": [
+        {
+          "topic": "Regulatory agencies should permit the use of germline gene editing for non-therapeutic human enhancement.",
+          "pro": "openai/gpt-5.4-nano",
+          "con": "google/gemini-3.1-flash-lite",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Regulatory agencies should permit germline gene editing for non-therapeutic human enhancement because responsible legalization can maximize human wellbeing while preserving safety and individual rights through strict oversight. First, enhancement is not reckless experimentation; it can be targeted, evidence-driven intervention using existing genetic knowledge. If editing can prevent severe inherited disease, then—under similarly rigorous protocols—editing for traits like resistance to specific monogenic conditions, reduced risk of debilitating disorders, or cognitive/physical performance enhancements can reduce long-term suffering and healthcare costs.\n\nSecond, prohibition does not stop demand; it drives it underground or overseas, increasing unregulated risk. A regulated pathway—licensing labs, mandatory long-term follow-up, transparent reporting, and phased trials—better manages harms than bans.\n\nThird, ethical concerns can be met with governance: enforce consent frameworks through parental authorization plus independent ethics review, prohibit editing for socially discriminatory traits, and require robust off-target risk assessment before any reproductive use.\n\nTherefore, permit enhancement with stringent regulation, not blanket prohibition."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "The opposition stands firmly against the motion. Allowing germline editing for non-therapeutic enhancement is a dangerous departure from medicine’s core purpose—healing—and risks cementing permanent, biological inequality into the human species.\n\nFirst, we face the \"biological caste system.\" Unlike cosmetic surgery, germline changes are heritable. Enhancement will inevitably be accessible only to the wealthy, creating a permanent genetic divide between the \"enhanced\" elite and the \"natural\" underclass. This is not merely social inequality; it is a fundamental breach of the shared human condition that no regulatory framework can mitigate.\n\nSecond, the \"slippery slope\" is a structural reality. Once we open the door to \"enhancement,\" the line between therapy and preference vanishes. Who defines \"optimal\" cognition or physical traits? Permitting this technology invites state and corporate eugenics, where normative biases dictate the genetic makeup of future generations.\n\nFinally, we cannot consent for the unborn. Germline editing imposes irreversible, high-stakes genetic changes on individuals who cannot opt out, violating the fundamental ethical principle of bodily autonomy. We must prioritize equity over vanity."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Opposition argues “biological caste,” “slippery slope,” and “no consent.” Each fails against targeted regulation.\n\nOn caste: the proponent’s case is precisely that prohibition drives enhancement to the wealthy via black markets or offshore labs. A legal, licensed system can include equity safeguards—public funding vouchers, caps on profit, and eligibility frameworks—so access isn’t strictly tied to wealth. Also, even the anti-enhancement side’s “inequality” concern already exists through education, nutrition, and healthcare; genes are only one factor regulators can manage.\n\nOn slippery slope: therapy versus preference can be defined. Off-limits categories (e.g., “socially discriminatory traits”) can be codified, with an expert review board requiring clinical evidence, meaningful risk thresholds, and independent audits. “Who defines optimal?” is why standards exist—just as hypertension targets and acceptable side effects guide medical practice.\n\nOn consent: unborn children receive parental authorization plus mandatory long-term follow-up and correction-by-design where possible. Absolute consent isn’t feasible in any prenatal intervention; the ethical question is whether risk is proportionate and harms minimizable."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "The Proponent’s reliance on “regulation” is a fantasy that ignores the fundamental nature of the technology. \n\nFirst, regarding equity: the Proponent suggests vouchers and price caps, yet they offer no mechanism to prevent the wealthy from simply paying for superior, proprietary gene-editing services that exceed \"regulated\" baselines. Once the biological floor is raised for the elite, the \"natural\" population becomes permanently marginalized. You cannot subsidize your way out of a species-wide hierarchy.\n\nSecond, the Proponent claims \"slippery slope\" can be managed by an \"expert board.\" This is naive; history proves that definitions of \"optimal\" drift according to the prevailing political or economic climate. By legalizing non-therapeutic enhancement, we surrender the human genome to market forces and state interests, institutionalizing eugenics under the guise of \"evidence-based\" policy.\n\nFinally, the Proponent equates prenatal medical necessity with elective enhancement. This is a false equivalence. A life-saving surgery addresses an existing pathology; enhancement imposes a designer's agenda on an innocent subject. We must reject this commodification of human life. The risks to our species' integrity are simply too high."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Opposition warns of caste, drift, and consent—but those are solvable design problems, not reasons for prohibition.\n\nFirst, bans predict black markets and offshore labs, worsening inequality. A regulated regime can require licensing, price controls, public-interest provision, and hard limits on profit—keeping access from being purely wealth-driven.\n\nSecond, the therapy/preference boundary is not metaphysical. It can be codified: only traits with validated safety/benefit profiles, no socially discriminatory criteria, independent audit, and escalating phased trials.\n\nThird, absolute consent is impossible in any prenatal decision; the ethical standard is proportional risk and robust governance. With stringent safeguards, permitting enhancement reduces harm versus prohibition."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "The Proponent’s vision of “regulated enhancement” is a dangerous administrative mirage. They claim we can legislate away biological hierarchy, yet they ignore that once genetic superiority becomes a commodity, market forces will inevitably prioritize the interests of the wealthy over the equality of the species. \n\nTheir reliance on \"expert boards\" to define \"optimal\" traits ignores historical precedent: eugenics is always sold as \"evidence-based\" and \"progressive.\" By legalizing non-therapeutic enhancement, we transform the human genome into a product, stripping the unborn of their right to an open future. We cannot regulate our way out of the fundamental violation of human dignity. We must choose equity over the commodification of our biology. Vote against."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "deepseek/deepseek-v4-flash",
+              "winner": "A",
+              "scoreA": 32,
+              "scoreB": 30,
+              "reasoning": "Debater A provides more concrete regulatory proposals (vouchers, price caps, codified boundaries) and effectively counters each of B's points with actionable governance, while B relies on abstract warnings and historical analogies without addressing A's specific safeguards."
+            },
+            {
+              "judge": "qwen/qwen3.6-flash",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 32,
+              "reasoning": "Debater B more effectively dismantles the proponent’s regulatory assumptions by highlighting structural economic realities and historical precedents, demonstrating stronger logical rigor and responsiveness. Both debaters are clear and well-structured, but B’s cohesive critique of the feasibility of enhanced governance secures the win."
+            }
+          ],
+          "winner": "google/gemini-3.1-flash-lite",
+          "votesPro": 1,
+          "votesCon": 1,
+          "scorePro": 60,
+          "scoreCon": 62,
+          "costUsd": 0.0057033835,
+          "topicProposer": "qwen/qwen3.6-flash"
+        }
+      ],
+      "winner": "google/gemini-3.1-flash-lite"
+    },
+    {
+      "id": "league:google/gemini-3.1-flash-lite|deepseek/deepseek-v4-flash",
+      "stage": "league",
+      "home": "google/gemini-3.1-flash-lite",
+      "away": "deepseek/deepseek-v4-flash",
+      "legs": [
+        {
+          "topic": "Universal basic income is a more effective poverty-reduction strategy than targeted welfare programs in the long run.",
+          "pro": "google/gemini-3.1-flash-lite",
+          "con": "deepseek/deepseek-v4-flash",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Honorable judges, the current welfare state is a labyrinth of bureaucracy that exacerbates the very poverty it seeks to alleviate. Targeted programs suffer from the \"poverty trap,\" where high marginal tax rates on benefits discourage work, and the \"stigma trap,\" where complex application processes exclude the most vulnerable.\n\nUniversal Basic Income (UBI) is superior because it provides a reliable floor, not a ceiling. By decoupling survival from bureaucratic approval, UBI eliminates the administrative overhead that currently consumes billions better spent on direct aid. Crucially, UBI provides the liquidity necessary for long-term stability—allowing individuals to invest in education, transition between jobs, or manage health crises without the fear of immediate destitution.\n\nUnlike targeted programs, which create perverse incentives to stay poor to maintain eligibility, UBI is unconditional. It rewards labor by ensuring that every dollar earned is additional income, not a trigger for benefit withdrawal. In the long run, UBI fosters economic agency and social mobility, replacing a paternalistic safety net with a foundation for universal empowerment."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Honorable judges, the motion’s premise is flawed. Universal Basic Income is a blunt, expensive instrument that wastes resources on those who do not need them, while targeted welfare programs—properly designed—can directly address the root causes of poverty.\n\nUBI’s universality means it gives the same cash to billionaires and beggars. To provide a meaningful floor for the poor, UBI would require massive tax increases or cuts to other services, inevitably harming the very people it aims to help. The resulting inflation, especially in housing and essentials, would erode its value—a documented risk in pilot studies.\n\nTargeted programs, by contrast, can be reformed to eliminate the poverty trap. Modern conditional cash transfers, work subsidies, and in-kind benefits like healthcare and childcare precisely address specific barriers. They are cheaper per unit of poverty reduction, allowing deeper support for the most vulnerable. UBI’s alleged simplicity ignores the reality that poverty is multidimensional—cash alone cannot fix addiction, disability, or systemic discrimination.\n\nIn the long run, targeted welfare can adapt and improve; UBI is a one-size-fits-all gamble that risks entrenching poverty by ignoring its complex causes. We must reject this false promise."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The opposition’s defense of targeted welfare relies on a fantasy of administrative efficiency that ignores historical reality. Targeted programs are not \"precise\"; they are exclusionary. By definition, they require gatekeeping, which forces the vulnerable to navigate labyrinthine bureaucracies, often resulting in significant \"take-up gaps\" where the poorest miss out due to stigma or complexity.\n\nFurthermore, the opposition claims UBI is a \"blunt instrument\" because it reaches the wealthy. This is a distraction; the net cost of UBI is determined by tax structure, not the gross payout. Progressive taxation ensures that the wealthy pay back their share, making the \"cost\" argument a budget-neutrality issue, not a poverty-reduction failure.\n\nFinally, the opposition argues that cash cannot fix \"multidimensional\" poverty. This ignores that poverty is primarily a lack of liquidity. When individuals are trapped in survival mode, their ability to address health or addiction is paralyzed. UBI provides the agency necessary to escape these traps, whereas targeted programs keep individuals tethered to the state, permanently dependent on the very systems that failed them."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "The PRO's fantasy of progressive taxation recouping UBI from the wealthy ignores political reality. Any tax hike high enough to net-cost zero would crater economic growth and hit the middle class hardest, not billionaires. Their \"budget neutrality\" is a shell game that leaves the poor with less real support per dollar spent.\n\nTake-up gaps exist, but the solution is automatic enrollment, not wasting billions on those who don't need it. UBI's universality forces a trade-off: a tiny, inflation-eroded floor for everyone versus deep, targeted aid that actually lifts people out of poverty. Pilot studies already show UBI driving up rents—the poor lose when the rich get free cash too.\n\nFinally, the PRO claims poverty is just a liquidity problem. Tell that to the disabled person who needs expensive care, the addict requiring rehab, or the homeless veteran needing housing first. Cash alone cannot buy these at market rates—targeted programs provide them directly. UBI offers a false agency that vanishes when inflation and market failures hit. Targeted welfare, reformed and automated, addresses root causes; UBI merely papers over them with a costly, blunt check."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The opposition’s defense of targeted welfare relies on a broken status quo. They concede that \"take-up gaps\" and \"poverty traps\" are inherent flaws, yet propose only cosmetic reforms. These programs fail because they treat poverty as a bureaucratic puzzle to be managed rather than a lack of capital to be solved. \n\nUBI wins because it replaces paternalistic gatekeeping with universal autonomy. By removing the \"cliff effect,\" it ensures that work always pays, incentivizing labor rather than survival-dependent compliance. While they worry about the wealthy receiving a check, they ignore that the administrative cost of vetting the poor is a far greater waste. UBI is the only strategy that offers the dignity of agency—the essential foundation for long-term poverty eradication."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Judges, the PRO’s closing ignores reality: UBI’s universality forces a thin, inflation-prone payout that fails the poorest. Targeted welfare, reformed with automatic enrollment and work incentives, delivers deeper support for multidimensional needs—healthcare, housing, disability. UBI cannot. It wastes billions on the wealthy, driving up rents and eroding its own value. The motion asks which is *more effective* long-term. Precision wins over bluntness. Cash alone doesn’t cure addiction or build accessible infrastructure. Targeted programs address root causes; UBI merely redistributes cash while ignoring structural barriers. We win because poverty reduction requires targeted depth, not universal breadth."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "qwen/qwen3.6-flash",
+              "winner": "B",
+              "scoreA": 30,
+              "scoreB": 32,
+              "reasoning": "Debater B effectively grounds the debate in practical policy constraints, successfully demonstrating how UBI’s universality dilutes resources and triggers inflationary risks that undermine long-term poverty reduction. While Debater A presents a coherent theoretical case for administrative efficiency and agency, their arguments rely heavily on idealized funding mechanisms and overlook the multidimensional barriers that targeted programs are better equipped to address."
+            },
+            {
+              "judge": "openai/gpt-5.4-nano",
+              "winner": "B",
+              "scoreA": 30,
+              "scoreB": 32,
+              "reasoning": "Both debaters make coherent claims, but B’s rebuttals are more logically grounded: they directly challenge A’s assumption that progressive taxation and UBI universality can be budget-neutral while avoiding inflation and political constraints, and they better address multidimensional poverty and market-rate constraints. A offers clear conceptual advantages (take-up, agency, incentives) but relies more on assertion than concrete evidence, and B more effectively counters with practical mechanisms ("
+            }
+          ],
+          "winner": "deepseek/deepseek-v4-flash",
+          "votesPro": 0,
+          "votesCon": 2,
+          "scorePro": 60,
+          "scoreCon": 64,
+          "costUsd": 0.00563596374,
+          "topicProposer": "openai/gpt-5.4-nano"
+        }
+      ],
+      "winner": "deepseek/deepseek-v4-flash"
+    },
+    {
+      "id": "league:deepseek/deepseek-v4-flash|qwen/qwen3.6-flash",
+      "stage": "league",
+      "home": "deepseek/deepseek-v4-flash",
+      "away": "qwen/qwen3.6-flash",
+      "legs": [
+        {
+          "topic": "Human enhancement technologies should be regulated primarily to protect equal opportunity rather than to prevent physical harm.",
+          "pro": "deepseek/deepseek-v4-flash",
+          "con": "qwen/qwen3.6-flash",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "We affirm that human enhancement technologies should be regulated primarily to protect equal opportunity, not to prevent physical harm. Why? Because the most transformative threat these technologies pose is not bodily injury—already covered by existing safety laws—but the erosion of fair competition. A student using cognitive enhancers gains an unfair advantage in exams; a wealthy athlete with gene doping dominates sports. These disparities entrench inequality, undermine meritocracy, and deny the disadvantaged a genuine chance to succeed. Physical risks are individual and manageable, but unequal access to enhancement creates systemic injustice. Regulation must prioritize a level playing field, ensuring that enhancements do not become tools of the privileged to lock out the rest. That is the core ethical challenge, and our primary regulatory duty."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "We oppose. The PRO places the cart before the horse. You cannot have equal opportunity without a baseline of physical integrity. Regulation must prioritize preventing physical harm because harm is the prerequisite for any human endeavor.\n\nFirst, the PRO dismisses physical risks as \"manageable,\" but this is dangerously naive. Human enhancement, particularly genetic modification, carries irreversible, transgenerational risks. Off-target mutations can cause cancers or hereditary diseases that destroy lives across generations. Physical harm is existential; unequal opportunity is relative. Society's primary duty is to safeguard human biology from irreversible corruption, not to micromanage social outcomes.\n\nSecond, prioritizing equal opportunity creates perverse incentives. If regulation focuses on leveling the playing field, we risk criminalizing therapeutic innovations that help the disabled compete. A prosthetic limb or cognitive aid for a learning difference might be banned to \"protect opportunity,\" effectively discriminating against those with disabilities. Safety regulation allows for risk-benefit analysis based on medical need. Moreover, safety is measurable; opportunity is subjective. Regulators can assess toxicity, but cannot define the fairness of human potential without imposing a specific moral vision. We regulate to keep people alive and whole, not to engineer a utopia of fairness. Safety first."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Your opponent falsely implies that safety and equal opportunity are mutually exclusive—they are not. We already have robust safety regulations for drugs and devices. The question is what additional regulation is needed. Physical harm is already addressed; the *new* threat is the systemic erosion of fair competition.\n\nTransgenerational risks are real, but existing safety frameworks can manage them. What existing regulations cannot handle is a world where only the rich access cognitive enhancements, entrenching a hereditary elite. That is the gap we must fill.\n\nThe “therapeutic innovation” objection is a strawman. Regulating for equal opportunity does not ban prosthetics that restore normal function; it targets enhancements that push beyond typical human baselines. No one would ban a hearing aid, but we might question cochlear implants that grant superhuman hearing.\n\nFinally, “opportunity is subjective” ignores decades of antitrust, anti-discrimination, and educational equity law. We measure unequal opportunity all the time. Safety is not objective either—risk tolerance varies. The primary regulatory focus must be the greatest systemic risk: the destruction of a level playing field."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Your claim that existing safety frameworks can “manage” transgenerational genetic risks is scientifically baseless. Heritable edits carry unpredictable off-target mutations that current regulatory oversight cannot track or reverse. You cannot mitigate irreversible biological corruption with incremental drug approvals.\n\nSecond, your therapeutic-versus-enhancement distinction is dangerously arbitrary. The biological baseline shifts with every intervention. By centering regulation on “fair opportunity,” you inevitably drag life-saving prosthetics and cognitive therapies into regulatory gray zones, delaying access for disabled communities who need them most. Equity law addresses discrimination, not biological modification; you cannot measure “fairness” without imposing a contested moral vision of human potential.\n\nFinally, prioritizing opportunity over safety commits a category error. A level playing field is meaningless if participants are biologically compromised or hereditary lines are permanently damaged. Physical integrity is the empirical prerequisite for any human endeavor. We regulate to ensure humans survive the very technologies meant to improve them. Safety first, because without it, there is no opportunity to equalize."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The CON still fails to address our core argument: physical harm is already regulated. The entire debate is about *additional* regulation for what safety laws miss—systemic inequality. They claim equal opportunity is subjective, yet every competition in society relies on precisely that judgment. They fear a slippery slope with therapies, but we already distinguish treatment from enhancement. Their \"safety first\" mantra ignores that without equal opportunity, safety only preserves a rigged system. The greatest harm is not a mutation risk, but a world where enhancement cements hereditary privilege. We regulate for fairness because it is the unique, neglected threat these technologies pose. That is why we win."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "The PRO mistakes correlation for priority. They claim safety is “already regulated,” but current approvals cannot track irreversible, transgenerational genetic risks. Your framework forces regulators to arbitrate subjective moral visions of “fairness,” inevitably penalizing life-saving therapies while chasing an unmeasurable baseline. \n\nMore critically, your approach inverts the hierarchy of human welfare. Physical integrity is the empirical prerequisite for every other value. You cannot equalize opportunity when biological corruption is already underway. Regulating primarily for fairness doesn’t prevent a rigged system; it guarantees a compromised one. \n\nWe win because our framework anchors policy in measurable, existential risk, preserving both human biology and therapeutic access. Safety isn’t just a priority—it’s the non-negotiable foundation that makes any regulation ethical or effective."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "openai/gpt-5.4-nano",
+              "winner": "B",
+              "scoreA": 28,
+              "scoreB": 34,
+              "reasoning": "Debater B offers clearer conceptual prioritization, directly challenges the PRO’s premises (existing safety adequacy, the treatment/enhancement line, and measurability of “fairness”), and provides specific risk framing (irreversible/transgenerational effects). Debater A’s argument relies more on high-level claims about systemic inequality and repeats assertions about existing regulation without fully substantiating that safety gaps are adequately covered or that fairness regulation can be implem"
+            },
+            {
+              "judge": "google/gemini-3.1-flash-lite",
+              "winner": "A",
+              "scoreA": 34,
+              "scoreB": 33,
+              "reasoning": "Debater A successfully framed the debate around the distinction between existing safety protocols and the new, specific challenge of systemic inequality. While Debater B provided strong arguments regarding the existential risks of genetic modification, Debater A maintained better focus on the motion's core requirement of prioritizing regulatory goals."
+            }
+          ],
+          "winner": "qwen/qwen3.6-flash",
+          "votesPro": 1,
+          "votesCon": 1,
+          "scorePro": 62,
+          "scoreCon": 67,
+          "costUsd": 0.0108642859,
+          "topicProposer": "openai/gpt-5.4-nano"
+        }
+      ],
+      "winner": "qwen/qwen3.6-flash"
+    },
+    {
+      "id": "league:deepseek/deepseek-v4-flash|google/gemini-3.1-flash-lite",
+      "stage": "league",
+      "home": "deepseek/deepseek-v4-flash",
+      "away": "google/gemini-3.1-flash-lite",
+      "legs": [
+        {
+          "topic": "Traditional cultural heritage should be preserved through active public replication (e.g., reenactment and performance) rather than through strict conservation and documentation.",
+          "pro": "deepseek/deepseek-v4-flash",
+          "con": "google/gemini-3.1-flash-lite",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Traditional cultural heritage is a living, breathing expression of identity, not a dead artifact to be locked in a museum. Strict conservation and documentation preserve the shell—but kill the soul. Active public replication, through reenactment and performance, keeps heritage alive by making it relevant, adaptive, and participatory. When a community dances a ritual, sings an epic, or crafts a tool in public, they transmit embodied knowledge, emotional resonance, and social meaning that no archive can capture. This process ensures intergenerational learning, sparks innovation, and prevents heritage from becoming a relic of the past. The alternative—mere documentation—turns culture into a specimen, inaccessible to the very people who should own it. We must choose life over storage."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "The Opposition rejects the motion because active replication is not preservation; it is transformative distortion that erodes historical integrity. \n\nFirst, replication prioritizes spectacle over authenticity. By turning rituals and crafts into public performances, we incentivize \"Disneyfication.\" When heritage is adapted for modern audiences, it is inevitably sanitized, altered, or exaggerated to suit contemporary tastes, permanently corrupting the original meaning. Conservation and documentation provide the only objective baseline for truth. Without a static, archived record, we lose the ability to distinguish between historical fact and modern myth-making.\n\nSecond, the Pro’s vision risks the commodification of sacred or sensitive traditions. Public reenactment often strips practices of their contextual sanctity, reducing profound cultural expressions to mere entertainment for tourists. \n\nFinally, strict conservation ensures that the artifacts of our ancestors remain for future generations to interpret for themselves. By forcing heritage to be \"alive\" and \"adaptive,\" we impose our current biases onto the past. We must preserve the integrity of the record, not manufacture a performance that serves the present."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Your opponent claims replication distorts heritage, but documentation is no more objective—it freezes one moment in time, ignoring that all traditions evolved. The \"Disneyfication\" scare ignores reality: rigorous reenactment, guided by community elders and scholars, preserves meaning and context far better than a sterile archive. As for sacred traditions, informed public replication, done with consent and respect, actually safeguards them by keeping them practiced and understood, not hidden away where they wither. The \"baseline\" argument is a myth: any record is a selection, a snapshot. Only living practice transmits the full social, emotional, and embodied knowledge that makes heritage meaningful. Conservation without replication turns heritage into a museum specimen—a dead thing for future generations to gawk at, not inherit. We choose life."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "The Pro’s defense of \"living practice\" is a dangerous romanticization that ignores the inevitable decay of historical accuracy. They claim replication preserves \"embodied knowledge,\" but this is merely a euphemism for the degradation of truth. Once a tradition is filtered through the lens of modern performativity, it becomes a contemporary invention masquerading as history. You cannot \"re-enact\" nuance; you only simulate it.\n\nThe Pro dismisses \"Disneyfication,\" yet they offer no mechanism to prevent the dilution of heritage when it is subjected to the demands of public consumption. When heritage is forced to be \"relevant,\" it is forced to be palatable. This is not preservation; it is erasure through modification.\n\nDocumentation serves as the necessary anchor that prevents the total drift of cultural memory. By prioritizing the static record, we protect the original intent from the biases of the present. We do not turn heritage into a \"dead thing\"; we preserve the *capacity* for future generations to rediscover the truth, unpolluted by the performances of today. We must protect the record, not the spectacle."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The Opposition fears change, but heritage that never changes is already dead. Our side wins because preservation through living practice—guided by community and scholarship—keeps heritage meaningful, not mummified. Documentation is valuable, but as a tool, not a cage. Without replication, traditions become museum curiosities, inaccessible to the people who should inherit them. Your \"static record\" offers no heartbeat, no transmission of skill, emotion, or identity. We choose adaptation over atrophy, participation over passivity. Heritage lives in action, not archives. That is why active public replication is the only true preservation."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "The Opposition wins because we prioritize the integrity of history over the convenience of modern interpretation. The Pro side conflates \"relevance\" with \"preservation,\" but once heritage is adapted to satisfy a contemporary audience, it ceases to be the original tradition and becomes a modern performance.\n\nBy emphasizing \"living\" practice, the Pro sacrifices the objective record for a subjective, evolving myth. We maintain that the primary duty of preservation is to ensure that the past remains accessible in its true, unadulterated form for future generations. Without the anchor of strict documentation, we lose the truth to the inevitable biases of the present. We choose the permanence of the archive over the fleeting, distorted spectacle of reenactment."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "qwen/qwen3.6-flash",
+              "winner": "B",
+              "scoreA": 26,
+              "scoreB": 29,
+              "reasoning": "Debater B demonstrates stronger logical rigor by systematically addressing the risks of commodification and distortion while maintaining a clear, consistent framework for how documentation serves as an objective anchor. Although both debaters rely heavily on conceptual arguments rather than concrete examples, B’s tighter rebuttal structure and more precise engagement with the authenticity-versus-adaptation tension produce a more coherent and persuasive case."
+            },
+            {
+              "judge": "openai/gpt-5.4-nano",
+              "winner": "B",
+              "scoreA": 30,
+              "scoreB": 34,
+              "reasoning": "Debater B’s arguments are more logically structured, directly addressing preservation vs replication and offering clearer concerns about authenticity, commodification, and mechanisms to prevent drift (even though they’re not fully evidenced). Debater A is persuasive in rhetoric about “living practice” and responsiveness, but its counterclaims are more assertions than concrete safeguards and it under-specifies how documentation and replication would be balanced to prevent distortion."
+            }
+          ],
+          "winner": "google/gemini-3.1-flash-lite",
+          "votesPro": 0,
+          "votesCon": 2,
+          "scorePro": 56,
+          "scoreCon": 63,
+          "costUsd": 0.0047792966999999995,
+          "topicProposer": "openai/gpt-5.4-nano"
+        }
+      ],
+      "winner": "google/gemini-3.1-flash-lite"
+    }
+  ],
+  "standings": {
+    "League": [
+      {
+        "model": "qwen/qwen3.6-flash",
+        "played": 6,
+        "wins": 4,
+        "draws": 1,
+        "losses": 1,
+        "points": 13,
+        "scoreDiff": 18
+      },
+      {
+        "model": "deepseek/deepseek-v4-flash",
+        "played": 6,
+        "wins": 4,
+        "draws": 0,
+        "losses": 2,
+        "points": 12,
+        "scoreDiff": 7
+      },
+      {
+        "model": "google/gemini-3.1-flash-lite",
+        "played": 6,
+        "wins": 3,
+        "draws": 1,
+        "losses": 2,
+        "points": 10,
+        "scoreDiff": 7
+      },
+      {
+        "model": "openai/gpt-5.4-nano",
+        "played": 6,
+        "wins": 0,
+        "draws": 0,
+        "losses": 6,
+        "points": 0,
+        "scoreDiff": -32
+      }
+    ]
+  },
+  "placements": {
+    "qwen/qwen3.6-flash": 1,
+    "deepseek/deepseek-v4-flash": 2,
+    "google/gemini-3.1-flash-lite": 3,
+    "openai/gpt-5.4-nano": 4
+  },
+  "champion": "qwen/qwen3.6-flash",
+  "totalCostUsd": 0.10264373824000002,
+  "done": true
+}
