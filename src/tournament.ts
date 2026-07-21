@@ -191,8 +191,16 @@ export async function runLeague(cfg: Config, seasonId: string): Promise<Season> 
     queue = deferred;
   }
   if (queue.length) {
-    log(`\nWARNING: ${queue.length} matches unplayable after 3 passes (provider outages); season completes without them:`);
+    log(`\nWARNING: ${queue.length} matches unplayable after 3 passes (provider outages):`);
     for (const f of queue) log(`  - ${f.id}`);
+  }
+  // Integrity guard: a season only seals when nearly complete. Mass provider
+  // failure (rate limits, exhausted keys) must leave the season resumable,
+  // never crown a champion from a fraction of the table.
+  if (season.matches.length < Math.ceil(schedule.length * 0.9)) {
+    log(`Season NOT sealed: ${season.matches.length}/${schedule.length} played (< 90%). Resume when providers recover.`);
+    h.save();
+    return season;
   }
 
   season.standings.League = computeStandings(cfg.competitors, season.matches);

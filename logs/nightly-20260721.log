@@ -1,0 +1,1038 @@
+=== nightly start Tue Jul 21 03:15:00 EDT 2026 ===
+1/3 typecheck
+2/3 tests (unit + simulated end-to-end season + server API + frontend consistency)
+TAP version 13
+# Subtest: gates: admissible proposal passes all three gates
+ok 1 - gates: admissible proposal passes all three gates
+  ---
+  duration_ms: 10310.866125
+  type: 'test'
+  ...
+# Subtest: gates: vacuous-checker proposal is rejected by the mutation gate
+ok 2 - gates: vacuous-checker proposal is rejected by the mutation gate
+  ---
+  duration_ms: 6594.04675
+  type: 'test'
+  ...
+# Subtest: gates: trivially-unbreakable class is rejected by the difficulty gate
+ok 3 - gates: trivially-unbreakable class is rejected by the difficulty gate
+  ---
+  duration_ms: 7888.283291
+  type: 'test'
+  ...
+# Subtest: propose: admissible proposal is admitted to CORPUS_DIR/proposed with metadata
+ok 4 - propose: admissible proposal is admitted to CORPUS_DIR/proposed with metadata
+  ---
+  duration_ms: 4572.584375
+  type: 'test'
+  ...
+# Subtest: propose: vacuous proposal is filed under CORPUS_DIR/rejected with a mutation reason
+ok 5 - propose: vacuous proposal is filed under CORPUS_DIR/rejected with a mutation reason
+  ---
+  duration_ms: 4301.543375
+  type: 'test'
+  ...
+# Subtest: sim: canned proposals split admissible vs vacuous by proposer hash
+ok 6 - sim: canned proposals split admissible vs vacuous by proposer hash
+  ---
+  duration_ms: 7272.745583
+  type: 'test'
+  ...
+# Subtest: runtime: adapter yields a playable class whose reference passes and mutant is refutable
+ok 7 - runtime: adapter yields a playable class whose reference passes and mutant is refutable
+  ---
+  duration_ms: 5031.79975
+  type: 'test'
+  ...
+# Subtest: runtime: allClasses merges corpus + proposals; proposerOf + exclusion correct
+ok 8 - runtime: allClasses merges corpus + proposals; proposerOf + exclusion correct
+  ---
+  duration_ms: 3022.972291
+  type: 'test'
+  ...
+# Generating topic bank: 4 models x 5 motions
+#   pooled 20 unique motions
+#   curator (sim/alpha) kept 20/20
+# [League 1/12] delta (PRO) vs alpha (CON)
+#   Debate: delta (PRO) vs alpha (CON)
+#   Motion: Sim motion by sim/beta \#0: society should adopt policy 0 despite the tradeoffs.
+# [League 2/12] alpha (PRO) vs gamma (CON)
+#   Debate: alpha (PRO) vs gamma (CON)
+#   Motion: Sim motion by sim/beta \#1: society should adopt policy 1 despite the tradeoffs.
+# [League 3/12] alpha (PRO) vs beta (CON)
+#   Debate: alpha (PRO) vs beta (CON)
+#   Motion: Sim motion by sim/gamma \#0: society should adopt policy 0 despite the tradeoffs.
+#     PRO opening done (delta)
+#     PRO opening done (alpha)
+#     PRO opening done (alpha)
+#     CON opening done (alpha)
+#     CON opening done (gamma)
+#     CON opening done (beta)
+#     PRO rebuttal done (delta)
+#     PRO rebuttal done (alpha)
+#     PRO rebuttal done (alpha)
+#     CON rebuttal done (alpha)
+#     CON rebuttal done (gamma)
+#     CON rebuttal done (beta)
+#     PRO closing done (delta)
+#     PRO closing done (alpha)
+#     PRO closing done (alpha)
+#     CON closing done (alpha)
+#     CON closing done (gamma)
+#     CON closing done (beta)
+#   → winner: delta (votes 1-0, scores 20-23) [$0.000]
+#   → winner: alpha (votes 1-0, scores 22-7) [$0.000]
+#   → winner: alpha (votes 1-0, scores 31-29) [$0.000]
+# [League 4/12] beta (PRO) vs alpha (CON)
+#   Debate: beta (PRO) vs alpha (CON)
+#   Motion: Sim motion by sim/gamma \#0: society should adopt policy 0 despite the tradeoffs.
+# [League 5/12] delta (PRO) vs gamma (CON)
+#   Debate: delta (PRO) vs gamma (CON)
+#   Motion: Sim motion by sim/alpha \#0: society should adopt policy 0 despite the tradeoffs.
+# [League 6/12] beta (PRO) vs gamma (CON)
+#   Debate: beta (PRO) vs gamma (CON)
+#   Motion: Sim motion by sim/alpha \#1: society should adopt policy 1 despite the tradeoffs.
+#     PRO opening done (beta)
+#     PRO opening done (delta)
+#     PRO opening done (beta)
+#     CON opening done (alpha)
+#     CON opening done (gamma)
+#     CON opening done (gamma)
+#     PRO rebuttal done (beta)
+#     PRO rebuttal done (delta)
+#     PRO rebuttal done (beta)
+#     CON rebuttal done (alpha)
+#     CON rebuttal done (gamma)
+#     CON rebuttal done (gamma)
+#     PRO closing done (beta)
+#     PRO closing done (delta)
+#     PRO closing done (beta)
+#     CON closing done (alpha)
+#     CON closing done (gamma)
+#     CON closing done (gamma)
+#   → winner: beta (votes 1-0, scores 21-6) [$0.000]
+#   → winner: gamma (votes 0-1, scores 34-25) [$0.000]
+#   → winner: gamma (votes 0-1, scores 24-12) [$0.000]
+# [League 7/12] delta (PRO) vs beta (CON)
+#   Debate: delta (PRO) vs beta (CON)
+#   Motion: Sim motion by sim/alpha \#2: society should adopt policy 2 despite the tradeoffs.
+# [League 8/12] alpha (PRO) vs delta (CON)
+#   Debate: alpha (PRO) vs delta (CON)
+#   Motion: Sim motion by sim/beta \#0: society should adopt policy 0 despite the tradeoffs.
+# [League 9/12] beta (PRO) vs delta (CON)
+#   Debate: beta (PRO) vs delta (CON)
+#   Motion: Sim motion by sim/alpha \#2: society should adopt policy 2 despite the tradeoffs.
+#     PRO opening done (delta)
+#     PRO opening done (alpha)
+#     PRO opening done (beta)
+#     CON opening done (beta)
+#     CON opening done (delta)
+#     CON opening done (delta)
+#     PRO rebuttal done (delta)
+#     PRO rebuttal done (alpha)
+#     PRO rebuttal done (beta)
+#     CON rebuttal done (beta)
+#     CON rebuttal done (delta)
+#     CON rebuttal done (delta)
+#     PRO closing done (delta)
+#     PRO closing done (alpha)
+#     PRO closing done (beta)
+#     CON closing done (beta)
+#     CON closing done (delta)
+#     CON closing done (delta)
+#   → winner: beta (votes 0-1, scores 33-28) [$0.000]
+#   → winner: alpha (votes 1-0, scores 33-23) [$0.000]
+#   → winner: delta (votes 0-1, scores 26-26) [$0.000]
+# [League 10/12] gamma (PRO) vs beta (CON)
+#   Debate: gamma (PRO) vs beta (CON)
+#   Motion: Sim motion by sim/alpha \#1: society should adopt policy 1 despite the tradeoffs.
+# [League 11/12] gamma (PRO) vs alpha (CON)
+#   Debate: gamma (PRO) vs alpha (CON)
+#   Motion: Sim motion by sim/beta \#1: society should adopt policy 1 despite the tradeoffs.
+# [League 12/12] gamma (PRO) vs delta (CON)
+#   Debate: gamma (PRO) vs delta (CON)
+#   Motion: Sim motion by sim/alpha \#0: society should adopt policy 0 despite the tradeoffs.
+#     PRO opening done (gamma)
+#     PRO opening done (gamma)
+#     PRO opening done (gamma)
+#     CON opening done (beta)
+#     CON opening done (alpha)
+#     CON opening done (delta)
+#     PRO rebuttal done (gamma)
+#     PRO rebuttal done (gamma)
+#     PRO rebuttal done (gamma)
+#     CON rebuttal done (beta)
+#     CON rebuttal done (alpha)
+#     CON rebuttal done (delta)
+#     PRO closing done (gamma)
+#     PRO closing done (gamma)
+#     PRO closing done (gamma)
+#     CON closing done (beta)
+#     CON closing done (alpha)
+#     CON closing done (delta)
+#   → winner: beta (votes 0-1, scores 32-25) [$0.000]
+#   → winner: gamma (votes 1-0, scores 26-6) [$0.000]
+#   → winner: delta (votes 0-1, scores 28-9) [$0.000]
+# 🏆 season-simtest-001 CHAMPION: sim/beta (season cost $0.00)
+# Generating topic bank: 4 models x 5 motions
+#   pooled 20 unique motions
+#   curator (sim/alpha) kept 20/20
+# [League 1/12] gamma (PRO) vs beta (CON)
+#   Debate: gamma (PRO) vs beta (CON)
+#   Motion: Sim motion by sim/alpha \#0: society should adopt policy 0 despite the tradeoffs.
+# [League 2/12] delta (PRO) vs beta (CON)
+#   Debate: delta (PRO) vs beta (CON)
+#   Motion: Sim motion by sim/alpha \#1: society should adopt policy 1 despite the tradeoffs.
+# [League 3/12] alpha (PRO) vs beta (CON)
+#   Debate: alpha (PRO) vs beta (CON)
+#   Motion: Sim motion by sim/gamma \#0: society should adopt policy 0 despite the tradeoffs.
+#     PRO opening done (gamma)
+#     PRO opening done (delta)
+#     PRO opening done (alpha)
+#     CON opening done (beta)
+#     CON opening done (beta)
+#     CON opening done (beta)
+#     PRO rebuttal done (gamma)
+#     PRO rebuttal done (delta)
+#     PRO rebuttal done (alpha)
+#     CON rebuttal done (beta)
+#     CON rebuttal done (beta)
+#     CON rebuttal done (beta)
+#     PRO closing done (gamma)
+#     PRO closing done (delta)
+#     PRO closing done (alpha)
+#     CON closing done (beta)
+#     CON closing done (beta)
+#     CON closing done (beta)
+#   → winner: beta (votes 0-1, scores 24-8) [$0.000]
+#   → winner: beta (votes 0-1, scores 23-25) [$0.000]
+#   → winner: alpha (votes 1-0, scores 31-29) [$0.000]
+# [League 4/12] gamma (PRO) vs alpha (CON)
+#   Debate: gamma (PRO) vs alpha (CON)
+#   Motion: Sim motion by sim/beta \#0: society should adopt policy 0 despite the tradeoffs.
+# [League 5/12] delta (PRO) vs alpha (CON)
+#   Debate: delta (PRO) vs alpha (CON)
+#   Motion: Sim motion by sim/beta \#1: society should adopt policy 1 despite the tradeoffs.
+# [League 6/12] beta (PRO) vs alpha (CON)
+#   Debate: beta (PRO) vs alpha (CON)
+#   Motion: Sim motion by sim/gamma \#0: society should adopt policy 0 despite the tradeoffs.
+#     PRO opening done (gamma)
+#     PRO opening done (delta)
+#     PRO opening done (beta)
+#     CON opening done (alpha)
+#     CON opening done (alpha)
+#     CON opening done (alpha)
+#     PRO rebuttal done (gamma)
+#     PRO rebuttal done (delta)
+#     PRO rebuttal done (beta)
+#     CON rebuttal done (alpha)
+#     CON rebuttal done (alpha)
+#     CON rebuttal done (alpha)
+#     PRO closing done (gamma)
+#     PRO closing done (delta)
+#     PRO closing done (beta)
+#     CON closing done (alpha)
+#     CON closing done (alpha)
+#     CON closing done (alpha)
+#   → winner: alpha (votes 0-1, scores 29-20) [$0.000]
+#   → winner: delta (votes 1-0, scores 32-28) [$0.000]
+#   → winner: beta (votes 1-0, scores 21-6) [$0.000]
+# [League 7/12] beta (PRO) vs delta (CON)
+#   Debate: beta (PRO) vs delta (CON)
+#   Motion: Sim motion by sim/alpha \#1: society should adopt policy 1 despite the tradeoffs.
+# [League 8/12] alpha (PRO) vs delta (CON)
+#   Debate: alpha (PRO) vs delta (CON)
+#   Motion: Sim motion by sim/beta \#1: society should adopt policy 1 despite the tradeoffs.
+# [League 9/12] delta (PRO) vs gamma (CON)
+#   Debate: delta (PRO) vs gamma (CON)
+#   Motion: Sim motion by sim/alpha \#2: society should adopt policy 2 despite the tradeoffs.
+#     PRO opening done (beta)
+#     PRO opening done (alpha)
+#     PRO opening done (delta)
+#     CON opening done (delta)
+#     CON opening done (delta)
+#     CON opening done (gamma)
+#     PRO rebuttal done (beta)
+#     PRO rebuttal done (alpha)
+#     PRO rebuttal done (delta)
+#     CON rebuttal done (delta)
+#     CON rebuttal done (delta)
+#     CON rebuttal done (gamma)
+#     PRO closing done (beta)
+#     PRO closing done (alpha)
+#     PRO closing done (delta)
+#     CON closing done (delta)
+#     CON closing done (delta)
+#     CON closing done (gamma)
+#   → winner: beta (votes 1-0, scores 29-30) [$0.000]
+#   → winner: delta (votes 0-1, scores 31-19) [$0.000]
+#   → winner: delta (votes 1-0, scores 31-16) [$0.000]
+# [League 10/12] gamma (PRO) vs delta (CON)
+#   Debate: gamma (PRO) vs delta (CON)
+#   Motion: Sim motion by sim/alpha \#2: society should adopt policy 2 despite the tradeoffs.
+# [League 11/12] beta (PRO) vs gamma (CON)
+#   Debate: beta (PRO) vs gamma (CON)
+#   Motion: Sim motion by sim/alpha \#0: society should adopt policy 0 despite the tradeoffs.
+# [League 12/12] alpha (PRO) vs gamma (CON)
+#   Debate: alpha (PRO) vs gamma (CON)
+#   Motion: Sim motion by sim/beta \#0: society should adopt policy 0 despite the tradeoffs.
+#     PRO opening done (gamma)
+#     PRO opening done (beta)
+#     PRO opening done (alpha)
+#     CON opening done (delta)
+#     CON opening done (gamma)
+#     CON opening done (gamma)
+#     PRO rebuttal done (gamma)
+#     PRO rebuttal done (beta)
+#     PRO rebuttal done (alpha)
+#     CON rebuttal done (delta)
+#     CON rebuttal done (gamma)
+#     CON rebuttal done (gamma)
+#     PRO closing done (gamma)
+#     PRO closing done (beta)
+#     PRO closing done (alpha)
+#     CON closing done (delta)
+#     CON closing done (gamma)
+#     CON closing done (gamma)
+#   → winner: gamma (votes 1-0, scores 25-16) [$0.000]
+#   → winner: gamma (votes 0-1, scores 23-15) [$0.000]
+#   → winner: gamma (votes 0-1, scores 22-32) [$0.000]
+# 🏆 season-simtest-002 CHAMPION: sim/beta (season cost $0.00)
+# Resuming season-simtest-001 (4 matches already played)
+# [League 5/12] delta (PRO) vs gamma (CON)
+#   Debate: delta (PRO) vs gamma (CON)
+#   Motion: Sim motion by sim/alpha \#0: society should adopt policy 0 despite the tradeoffs.
+# [League 6/12] beta (PRO) vs gamma (CON)
+#   Debate: beta (PRO) vs gamma (CON)
+#   Motion: Sim motion by sim/alpha \#1: society should adopt policy 1 despite the tradeoffs.
+# [League 7/12] delta (PRO) vs beta (CON)
+#   Debate: delta (PRO) vs beta (CON)
+#   Motion: Sim motion by sim/alpha \#2: society should adopt policy 2 despite the tradeoffs.
+#     PRO opening done (delta)
+#     PRO opening done (beta)
+#     PRO opening done (delta)
+#     CON opening done (gamma)
+#     CON opening done (gamma)
+#     CON opening done (beta)
+#     PRO rebuttal done (delta)
+#     PRO rebuttal done (beta)
+#     PRO rebuttal done (delta)
+#     CON rebuttal done (gamma)
+#     CON rebuttal done (gamma)
+#     CON rebuttal done (beta)
+#     PRO closing done (delta)
+#     PRO closing done (beta)
+#     PRO closing done (delta)
+#     CON closing done (gamma)
+#     CON closing done (gamma)
+#     CON closing done (beta)
+#   → winner: gamma (votes 0-1, scores 34-25) [$0.000]
+#   → winner: gamma (votes 0-1, scores 24-12) [$0.000]
+#   → winner: beta (votes 0-1, scores 33-28) [$0.000]
+# [League 8/12] alpha (PRO) vs delta (CON)
+#   Debate: alpha (PRO) vs delta (CON)
+#   Motion: Sim motion by sim/beta \#0: society should adopt policy 0 despite the tradeoffs.
+# [League 9/12] beta (PRO) vs delta (CON)
+#   Debate: beta (PRO) vs delta (CON)
+#   Motion: Sim motion by sim/alpha \#2: society should adopt policy 2 despite the tradeoffs.
+# [League 10/12] gamma (PRO) vs beta (CON)
+#   Debate: gamma (PRO) vs beta (CON)
+#   Motion: Sim motion by sim/alpha \#1: society should adopt policy 1 despite the tradeoffs.
+#     PRO opening done (alpha)
+#     PRO opening done (beta)
+#     PRO opening done (gamma)
+#     CON opening done (delta)
+#     CON opening done (delta)
+#     CON opening done (beta)
+#     PRO rebuttal done (alpha)
+#     PRO rebuttal done (beta)
+#     PRO rebuttal done (gamma)
+#     CON rebuttal done (delta)
+#     CON rebuttal done (delta)
+#     CON rebuttal done (beta)
+#     PRO closing done (alpha)
+#     PRO closing done (beta)
+#     PRO closing done (gamma)
+#     CON closing done (delta)
+#     CON closing done (delta)
+#     CON closing done (beta)
+#   → winner: alpha (votes 1-0, scores 33-23) [$0.000]
+#   → winner: delta (votes 0-1, scores 26-26) [$0.000]
+#   → winner: beta (votes 0-1, scores 32-25) [$0.000]
+# [League 11/12] gamma (PRO) vs alpha (CON)
+#   Debate: gamma (PRO) vs alpha (CON)
+#   Motion: Sim motion by sim/beta \#1: society should adopt policy 1 despite the tradeoffs.
+# [League 12/12] gamma (PRO) vs delta (CON)
+#   Debate: gamma (PRO) vs delta (CON)
+#   Motion: Sim motion by sim/alpha \#0: society should adopt policy 0 despite the tradeoffs.
+#     PRO opening done (gamma)
+#     PRO opening done (gamma)
+#     CON opening done (alpha)
+#     CON opening done (delta)
+#     PRO rebuttal done (gamma)
+#     PRO rebuttal done (gamma)
+#     CON rebuttal done (alpha)
+#     CON rebuttal done (delta)
+#     PRO closing done (gamma)
+#     PRO closing done (gamma)
+#     CON closing done (alpha)
+#     CON closing done (delta)
+#   → winner: gamma (votes 1-0, scores 26-6) [$0.000]
+#   → winner: delta (votes 0-1, scores 28-9) [$0.000]
+# 🏆 season-simtest-001 CHAMPION: sim/beta (season cost $0.00)
+# Subtest: season completes: 12 matches, placements 1-4, champion = table top
+ok 9 - season completes: 12 matches, placements 1-4, champion = table top
+  ---
+  duration_ms: 105.416209
+  type: 'test'
+  ...
+# Subtest: both legs of a pairing share the motion with sides swapped
+ok 10 - both legs of a pairing share the motion with sides swapped
+  ---
+  duration_ms: 1.826541
+  type: 'test'
+  ...
+# Subtest: a model never debates nor judges its own motion; judges exclude debaters
+ok 11 - a model never debates nor judges its own motion; judges exclude debaters
+  ---
+  duration_ms: 0.49225
+  type: 'test'
+  ...
+# Subtest: maxJury: seeded rotating jury respects cap, exclusions, and rotates
+ok 12 - maxJury: seeded rotating jury respects cap, exclusions, and rotates
+  ---
+  duration_ms: 332.255084
+  type: 'test'
+  ...
+# Subtest: interrupted season resumes to an identical result
+ok 13 - interrupted season resumes to an identical result
+  ---
+  duration_ms: 58.474292
+  type: 'test'
+  ...
+# Subtest: server API: divisions are ordered, disjoint, and never mix Elo pools
+ok 14 - server API: divisions are ordered, disjoint, and never mix Elo pools
+  ---
+  duration_ms: 7601.476625
+  type: 'test'
+  ...
+# Subtest: server API: debates list and detail are consistent
+ok 15 - server API: debates list and detail are consistent
+  ---
+  duration_ms: 44.364584
+  type: 'test'
+  ...
+# Subtest: API_DIVISION filter: public export sees only the chosen division
+ok 16 - API_DIVISION filter: public export sees only the chosen division
+  ---
+  duration_ms: 67.680375
+  type: 'test'
+  ...
+# Subtest: server API: stats expose judge votes and side splits
+ok 17 - server API: stats expose judge votes and side splits
+  ---
+  duration_ms: 2.22175
+  type: 'test'
+  ...
+# Subtest: roundRobinPairs: n models -> n*(n-1)/2 pairs
+ok 18 - roundRobinPairs: n models -> n*(n-1)/2 pairs
+  ---
+  duration_ms: 0.886208
+  type: 'test'
+  ...
+# Subtest: computeStandings: points, draws, score diff
+ok 19 - computeStandings: points, draws, score diff
+  ---
+  duration_ms: 11.743417
+  type: 'test'
+  ...
+# Subtest: computeStandings: aggregate head-to-head breaks equal points and diff
+ok 20 - computeStandings: aggregate head-to-head breaks equal points and diff
+  ---
+  duration_ms: 1.543375
+  type: 'test'
+  ...
+# Subtest: knockoutPairs: single group of 4 -> 1v4, 2v3
+ok 21 - knockoutPairs: single group of 4 -> 1v4, 2v3
+  ---
+  duration_ms: 0.1105
+  type: 'test'
+  ...
+# Subtest: aggregate: draws are counted as draws, not losses
+ok 22 - aggregate: draws are counted as draws, not losses
+  ---
+  duration_ms: 670.605
+  type: 'test'
+  ...
+# Subtest: aggregate: bootstrap CI is deterministic and brackets the point estimate
+ok 23 - aggregate: bootstrap CI is deterministic and brackets the point estimate
+  ---
+  duration_ms: 1418.166083
+  type: 'test'
+  ...
+# Subtest: rateBT: recovers strength order and PRO-side advantage
+ok 24 - rateBT: recovers strength order and PRO-side advantage
+  ---
+  duration_ms: 3056.344708
+  type: 'test'
+  ...
+# Subtest: rateBT: unplayed / disconnected models are flagged provisional
+ok 25 - rateBT: unplayed / disconnected models are flagged provisional
+  ---
+  duration_ms: 95.357666
+  type: 'test'
+  ...
+# Subtest: rateBT is deterministic (seeded bootstrap)
+ok 26 - rateBT is deterministic (seeded bootstrap)
+  ---
+  duration_ms: 504.457667
+  type: 'test'
+  ...
+# Subtest: aggregate exposes a BT rating and provisional flag
+ok 27 - aggregate exposes a BT rating and provisional flag
+  ---
+  duration_ms: 545.829375
+  type: 'test'
+  ...
+# Subtest: selectJury: excludes debaters, proposer, and their lab families
+ok 28 - selectJury: excludes debaters, proposer, and their lab families
+  ---
+  duration_ms: 0.208458
+  type: 'test'
+  ...
+# Subtest: selectJury: deterministic and resume-stable
+ok 29 - selectJury: deterministic and resume-stable
+  ---
+  duration_ms: 0.115833
+  type: 'test'
+  ...
+# Subtest: selectJury: family exclusion relaxes if it would starve the jury
+ok 30 - selectJury: family exclusion relaxes if it would starve the jury
+  ---
+  duration_ms: 0.122959
+  type: 'test'
+  ...
+# Subtest: divisionOf: config wins, cheap ids fall back to dev, else flagship
+ok 31 - divisionOf: config wins, cheap ids fall back to dev, else flagship
+  ---
+  duration_ms: 0.069375
+  type: 'test'
+  ...
+# Subtest: discover: filters cover new/enrolled/family/stale/overpriced
+ok 32 - discover: filters cover new/enrolled/family/stale/overpriced
+  ---
+  duration_ms: 1.686166
+  type: 'test'
+  ...
+# Subtest: familyKey: org + first two dash tokens
+ok 33 - familyKey: org + first two dash tokens
+  ---
+  duration_ms: 0.100083
+  type: 'test'
+  ...
+# Subtest: enroll: first run seeds bootstrap roster from FLAGSHIP
+ok 34 - enroll: first run seeds bootstrap roster from FLAGSHIP
+  ---
+  duration_ms: 87.659042
+  type: 'test'
+  ...
+# Subtest: enroll: caps at 2 per run and queues the overflow (earliest first)
+ok 35 - enroll: caps at 2 per run and queues the overflow (earliest first)
+  ---
+  duration_ms: 73.078375
+  type: 'test'
+  ...
+# Subtest: enroll: dry-run does not write roster.json
+ok 36 - enroll: dry-run does not write roster.json
+  ---
+  duration_ms: 4.981666
+  type: 'test'
+  ...
+# Subtest: enroll: idempotent - second run enrolls nothing new
+ok 37 - enroll: idempotent - second run enrolls nothing new
+  ---
+  duration_ms: 230.606
+  type: 'test'
+  ...
+# Subtest: saveRoster: writes atomically via tmp + rename (no .tmp left behind)
+ok 38 - saveRoster: writes atomically via tmp + rename (no .tmp left behind)
+  ---
+  duration_ms: 6.329917
+  type: 'test'
+  ...
+# Subtest: inline script parses
+ok 39 - inline script parses
+  ---
+  duration_ms: 0.831292
+  type: 'test'
+  ...
+# Subtest: frontend does not use retired top-level API fields
+ok 40 - frontend does not use retired top-level API fields
+  ---
+  duration_ms: 0.103292
+  type: 'test'
+  ...
+# Subtest: every fetch() path the frontend uses exists in the server routes
+ok 41 - every fetch() path the frontend uses exists in the server routes
+  ---
+  duration_ms: 3.086667
+  type: 'test'
+  ...
+# Subtest: new verified + gap endpoints are fetched, routed, and exported
+ok 42 - new verified + gap endpoints are fetched, routed, and exported
+  ---
+  duration_ms: 0.655458
+  type: 'test'
+  ...
+# Subtest: verifiedSummary() on the pilot file yields two ladders + finite composite
+ok 43 - verifiedSummary() on the pilot file yields two ladders + finite composite
+  ---
+  duration_ms: 1847.218417
+  type: 'test'
+  ...
+# Subtest: gapTable() returns well-formed overlap rows
+ok 44 - gapTable() returns well-formed overlap rows
+  ---
+  duration_ms: 5054.779375
+  type: 'test'
+  ...
+# Subtest: corpus/sortlist: reference solution passes smoke + edges
+ok 45 - corpus/sortlist: reference solution passes smoke + edges
+  ---
+  duration_ms: 2468.643375
+  type: 'test'
+  ...
+# Subtest: corpus/sortlist: buggy solution passes smoke but is refutable by an in-envelope input
+ok 46 - corpus/sortlist: buggy solution passes smoke but is refutable by an in-envelope input
+  ---
+  duration_ms: 2334.611417
+  type: 'test'
+  ...
+# Subtest: corpus/sortlist: broken solution fails smoke (forfeit trigger)
+ok 47 - corpus/sortlist: broken solution fails smoke (forfeit trigger)
+  ---
+  duration_ms: 1625.430667
+  type: 'test'
+  ...
+# Subtest: corpus/caesar: reference solution passes smoke + edges
+ok 48 - corpus/caesar: reference solution passes smoke + edges
+  ---
+  duration_ms: 1470.431209
+  type: 'test'
+  ...
+# Subtest: corpus/caesar: buggy solution passes smoke but is refutable by an in-envelope input
+ok 49 - corpus/caesar: buggy solution passes smoke but is refutable by an in-envelope input
+  ---
+  duration_ms: 1188.885416
+  type: 'test'
+  ...
+# Subtest: corpus/caesar: broken solution fails smoke (forfeit trigger)
+ok 50 - corpus/caesar: broken solution fails smoke (forfeit trigger)
+  ---
+  duration_ms: 307.67575
+  type: 'test'
+  ...
+# Subtest: corpus/calc: reference solution passes smoke + edges
+ok 51 - corpus/calc: reference solution passes smoke + edges
+  ---
+  duration_ms: 893.914334
+  type: 'test'
+  ...
+# Subtest: corpus/calc: buggy solution passes smoke but is refutable by an in-envelope input
+ok 52 - corpus/calc: buggy solution passes smoke but is refutable by an in-envelope input
+  ---
+  duration_ms: 850.521458
+  type: 'test'
+  ...
+# Subtest: corpus/calc: broken solution fails smoke (forfeit trigger)
+ok 53 - corpus/calc: broken solution fails smoke (forfeit trigger)
+  ---
+  duration_ms: 400.663208
+  type: 'test'
+  ...
+# Subtest: corpus/subsetsum: reference solution passes smoke + edges
+ok 54 - corpus/subsetsum: reference solution passes smoke + edges
+  ---
+  duration_ms: 721.864042
+  type: 'test'
+  ...
+# Subtest: corpus/subsetsum: buggy solution passes smoke but is refutable by an in-envelope input
+ok 55 - corpus/subsetsum: buggy solution passes smoke but is refutable by an in-envelope input
+  ---
+  duration_ms: 641.234167
+  type: 'test'
+  ...
+# Subtest: corpus/subsetsum: broken solution fails smoke (forfeit trigger)
+ok 56 - corpus/subsetsum: broken solution fails smoke (forfeit trigger)
+  ---
+  duration_ms: 293.611833
+  type: 'test'
+  ...
+# Subtest: corpus/textmetrics: reference solution passes smoke + edges
+ok 57 - corpus/textmetrics: reference solution passes smoke + edges
+  ---
+  duration_ms: 910.162083
+  type: 'test'
+  ...
+# Subtest: corpus/textmetrics: buggy solution passes smoke but is refutable by an in-envelope input
+ok 58 - corpus/textmetrics: buggy solution passes smoke but is refutable by an in-envelope input
+  ---
+  duration_ms: 803.942125
+  type: 'test'
+  ...
+# Subtest: corpus/textmetrics: broken solution fails smoke (forfeit trigger)
+ok 59 - corpus/textmetrics: broken solution fails smoke (forfeit trigger)
+  ---
+  duration_ms: 317.986625
+  type: 'test'
+  ...
+# Subtest: leg: broken prover forfeits (smoke gate), leg goes to refuter
+ok 60 - leg: broken prover forfeits (smoke gate), leg goes to refuter
+  ---
+  duration_ms: 110.560666
+  type: 'test'
+  ...
+# Subtest: leg: buggy prover is refuted with a reproducible input (winner refuter)
+ok 61 - leg: buggy prover is refuted with a reproducible input (winner refuter)
+  ---
+  duration_ms: 865.285417
+  type: 'test'
+  ...
+# Subtest: leg: correct prover survives (winner prover, no refutingInput)
+ok 62 - leg: correct prover survives (winner prover, no refutingInput)
+  ---
+  duration_ms: 821.949292
+  type: 'test'
+  ...
+#   [e2e wall-clock] 3533 ms for 6 legs
+# Subtest: e2e: full sim ladder (small roster, 1 round) with two BT ladders
+ok 63 - e2e: full sim ladder (small roster, 1 round) with two BT ladders
+  ---
+  duration_ms: 4150.975084
+  type: 'test'
+  ...
+# Subtest: e2e: resume after truncation reproduces identical legs
+ok 64 - e2e: resume after truncation reproduces identical legs
+  ---
+  duration_ms: 6336.33875
+  type: 'test'
+  ...
+1..64
+# tests 64
+# suites 0
+# pass 64
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 51124.672959
+3/3 done - ALL VERIFICATIONS PASSED
+=== enroll 2026-07-21T07:15:58.714Z ===
+seeded roster.json from FLAGSHIP: 14 bootstrap models
+discovered 4 eligible new model(s):
+  - moonshotai/kimi-k2.7-code  (created 2026-06-12, $0.82/M in)
+  - google/gemini-3-pro-image  (created 2026-06-18, $2.00/M in)
+  - anthropic/claude-sonnet-5  (created 2026-06-30, $2.00/M in)
+  - thinkingmachines/inkling  (created 2026-07-17, $1.00/M in)
+enrolled 2 (cap 2):
+  + moonshotai/kimi-k2.7-code  [provisional for 24 legs]
+  + google/gemini-3-pro-image  [provisional for 24 legs]
+queued 2 for a later run:
+  ~ anthropic/claude-sonnet-5
+  ~ thinkingmachines/inkling
+roster.json now has 14 models
+Starting League-1 run verified-nightly-20260721: 12 models, 1 round(s), roster=FLAGSHIP
+  [retry 1] minimax/minimax-m3: HTTP 403 from minimax/minimax-m3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 1] minimax/minimax-m3: HTTP 403 from minimax/minimax-m3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 1] minimax/minimax-m3: HTTP 403 from minimax/minimax-m3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 1] openai/gpt-5.6-sol: HTTP 403 from openai/gpt-5.6-sol: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 1] moonshotai/kimi-k3: HTTP 403 from moonshotai/kimi-k3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 1] anthropic/claude-opus-4.8: HTTP 403 from anthropic/claude-opus-4.8: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3
+  [retry 2] minimax/minimax-m3: HTTP 403 from minimax/minimax-m3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 2] minimax/minimax-m3: HTTP 403 from minimax/minimax-m3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 2] openai/gpt-5.6-sol: HTTP 403 from openai/gpt-5.6-sol: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 2] minimax/minimax-m3: HTTP 403 from minimax/minimax-m3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 2] moonshotai/kimi-k3: HTTP 403 from moonshotai/kimi-k3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 2] anthropic/claude-opus-4.8: HTTP 403 from anthropic/claude-opus-4.8: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3
+  [retry 3] minimax/minimax-m3: HTTP 403 from minimax/minimax-m3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 3] anthropic/claude-opus-4.8: HTTP 403 from anthropic/claude-opus-4.8: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3
+  [retry 3] minimax/minimax-m3: HTTP 403 from minimax/minimax-m3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 3] moonshotai/kimi-k3: HTTP 403 from moonshotai/kimi-k3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 3] minimax/minimax-m3: HTTP 403 from minimax/minimax-m3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 3] openai/gpt-5.6-sol: HTTP 403 from openai/gpt-5.6-sol: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 4] minimax/minimax-m3: HTTP 403 from minimax/minimax-m3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 4] minimax/minimax-m3: HTTP 403 from minimax/minimax-m3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 4] anthropic/claude-opus-4.8: HTTP 403 from anthropic/claude-opus-4.8: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3
+  [retry 4] minimax/minimax-m3: HTTP 403 from minimax/minimax-m3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 4] openai/gpt-5.6-sol: HTTP 403 from openai/gpt-5.6-sol: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 4] moonshotai/kimi-k3: HTTP 403 from moonshotai/kimi-k3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  !! leg verified-nightly-20260721-r0-caesar-minimax_minimax_m3-vs-z_ai_glm_5_2 deferred: chat() failed for minimax/minimax-m3: HTTP 403 from minimax/minimax-m3: {"error":{"message":"Key limit exceeded (total l
+  !! leg verified-nightly-20260721-r0-subsetsum-minimax_minimax_m3-vs-google_gemini_3_1_pro_preview deferred: chat() failed for minimax/minimax-m3: HTTP 403 from minimax/minimax-m3: {"error":{"message":"Key limit exceeded (total l
+  !! leg verified-nightly-20260721-r0-textmetrics-anthropic_claude_opus_4_8-vs-minimax_minimax_m3 deferred: chat() failed for anthropic/claude-opus-4.8: HTTP 403 from anthropic/claude-opus-4.8: {"error":{"message":"Key limit exc
+  !! leg verified-nightly-20260721-r0-longest-increasing-subarray-minimax_minimax_m3-vs-xiaomi_mimo_v2_5_pro deferred: chat() failed for minimax/minimax-m3: HTTP 403 from minimax/minimax-m3: {"error":{"message":"Key limit exceeded (total l
+  !! leg verified-nightly-20260721-r0-calc-openai_gpt_5_6_sol-vs-minimax_minimax_m3 deferred: chat() failed for openai/gpt-5.6-sol: HTTP 403 from openai/gpt-5.6-sol: {"error":{"message":"Key limit exceeded (total l
+  [retry 1] qwen/qwen3.7-max: HTTP 403 from qwen/qwen3.7-max: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6
+  !! leg verified-nightly-20260721-r0-sortlist-moonshotai_kimi_k3-vs-minimax_minimax_m3 deferred: chat() failed for moonshotai/kimi-k3: HTTP 403 from moonshotai/kimi-k3: {"error":{"message":"Key limit exceeded (total l
+  [retry 1] minimax/minimax-m3: HTTP 403 from minimax/minimax-m3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 1] anthropic/claude-fable-5: HTTP 403 from anthropic/claude-fable-5: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a
+  [retry 1] z-ai/glm-5.2: HTTP 403 from z-ai/glm-5.2: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e069
+  [retry 1] minimax/minimax-m3: HTTP 403 from minimax/minimax-m3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 1] meta/muse-spark-1.1: HTTP 403 from meta/muse-spark-1.1: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d
+  [retry 2] qwen/qwen3.7-max: HTTP 403 from qwen/qwen3.7-max: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6
+  [retry 2] minimax/minimax-m3: HTTP 403 from minimax/minimax-m3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 2] anthropic/claude-fable-5: HTTP 403 from anthropic/claude-fable-5: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a
+  [retry 2] z-ai/glm-5.2: HTTP 403 from z-ai/glm-5.2: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e069
+  [retry 2] minimax/minimax-m3: HTTP 403 from minimax/minimax-m3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 2] meta/muse-spark-1.1: HTTP 403 from meta/muse-spark-1.1: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d
+  [retry 3] anthropic/claude-fable-5: HTTP 403 from anthropic/claude-fable-5: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a
+  [retry 3] minimax/minimax-m3: HTTP 403 from minimax/minimax-m3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 3] meta/muse-spark-1.1: HTTP 403 from meta/muse-spark-1.1: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d
+  [retry 3] minimax/minimax-m3: HTTP 403 from minimax/minimax-m3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 3] z-ai/glm-5.2: HTTP 403 from z-ai/glm-5.2: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e069
+  [retry 3] qwen/qwen3.7-max: HTTP 403 from qwen/qwen3.7-max: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6
+  [retry 4] minimax/minimax-m3: HTTP 403 from minimax/minimax-m3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 4] anthropic/claude-fable-5: HTTP 403 from anthropic/claude-fable-5: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a
+  [retry 4] meta/muse-spark-1.1: HTTP 403 from meta/muse-spark-1.1: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d
+  [retry 4] minimax/minimax-m3: HTTP 403 from minimax/minimax-m3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 4] z-ai/glm-5.2: HTTP 403 from z-ai/glm-5.2: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e069
+  [retry 4] qwen/qwen3.7-max: HTTP 403 from qwen/qwen3.7-max: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6
+  !! leg verified-nightly-20260721-r0-caesar-minimax_minimax_m3-vs-x_ai_grok_4_5 deferred: chat() failed for minimax/minimax-m3: HTTP 403 from minimax/minimax-m3: {"error":{"message":"Key limit exceeded (total l
+  !! leg verified-nightly-20260721-r0-calc-anthropic_claude_fable_5-vs-minimax_minimax_m3 deferred: chat() failed for anthropic/claude-fable-5: HTTP 403 from anthropic/claude-fable-5: {"error":{"message":"Key limit excee
+  !! leg verified-nightly-20260721-r0-textmetrics-meta_muse_spark_1_1-vs-minimax_minimax_m3 deferred: chat() failed for meta/muse-spark-1.1: HTTP 403 from meta/muse-spark-1.1: {"error":{"message":"Key limit exceeded (total
+  !! leg verified-nightly-20260721-r0-subsetsum-minimax_minimax_m3-vs-deepseek_deepseek_v4_pro deferred: chat() failed for minimax/minimax-m3: HTTP 403 from minimax/minimax-m3: {"error":{"message":"Key limit exceeded (total l
+  [retry 1] moonshotai/kimi-k3: HTTP 403 from moonshotai/kimi-k3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  !! leg verified-nightly-20260721-r0-longest-increasing-subarray-z_ai_glm_5_2-vs-moonshotai_kimi_k3 deferred: chat() failed for z-ai/glm-5.2: HTTP 403 from z-ai/glm-5.2: {"error":{"message":"Key limit exceeded (total limit). Manag
+  [retry 1] google/gemini-3.1-pro-preview: HTTP 403 from google/gemini-3.1-pro-preview: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d2
+  !! leg verified-nightly-20260721-r0-caesar-qwen_qwen3_7_max-vs-minimax_minimax_m3 deferred: chat() failed for qwen/qwen3.7-max: HTTP 403 from qwen/qwen3.7-max: {"error":{"message":"Key limit exceeded (total limit
+  [retry 1] moonshotai/kimi-k3: HTTP 403 from moonshotai/kimi-k3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 1] x-ai/grok-4.5: HTTP 403 from x-ai/grok-4.5: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e06
+  [retry 1] xiaomi/mimo-v2.5-pro: HTTP 403 from xiaomi/mimo-v2.5-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4
+  [retry 1] moonshotai/kimi-k3: HTTP 403 from moonshotai/kimi-k3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 2] moonshotai/kimi-k3: HTTP 403 from moonshotai/kimi-k3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 2] google/gemini-3.1-pro-preview: HTTP 403 from google/gemini-3.1-pro-preview: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d2
+  [retry 2] moonshotai/kimi-k3: HTTP 403 from moonshotai/kimi-k3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 2] x-ai/grok-4.5: HTTP 403 from x-ai/grok-4.5: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e06
+  [retry 2] xiaomi/mimo-v2.5-pro: HTTP 403 from xiaomi/mimo-v2.5-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4
+  [retry 2] moonshotai/kimi-k3: HTTP 403 from moonshotai/kimi-k3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 3] moonshotai/kimi-k3: HTTP 403 from moonshotai/kimi-k3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 3] google/gemini-3.1-pro-preview: HTTP 403 from google/gemini-3.1-pro-preview: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d2
+  [retry 3] moonshotai/kimi-k3: HTTP 403 from moonshotai/kimi-k3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 3] x-ai/grok-4.5: HTTP 403 from x-ai/grok-4.5: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e06
+  [retry 3] xiaomi/mimo-v2.5-pro: HTTP 403 from xiaomi/mimo-v2.5-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4
+  [retry 3] moonshotai/kimi-k3: HTTP 403 from moonshotai/kimi-k3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 4] moonshotai/kimi-k3: HTTP 403 from moonshotai/kimi-k3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 4] moonshotai/kimi-k3: HTTP 403 from moonshotai/kimi-k3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 4] google/gemini-3.1-pro-preview: HTTP 403 from google/gemini-3.1-pro-preview: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d2
+  [retry 4] x-ai/grok-4.5: HTTP 403 from x-ai/grok-4.5: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e06
+  [retry 4] xiaomi/mimo-v2.5-pro: HTTP 403 from xiaomi/mimo-v2.5-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4
+  [retry 4] moonshotai/kimi-k3: HTTP 403 from moonshotai/kimi-k3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  !! leg verified-nightly-20260721-r0-sortlist-moonshotai_kimi_k3-vs-openai_gpt_5_6_sol deferred: chat() failed for moonshotai/kimi-k3: HTTP 403 from moonshotai/kimi-k3: {"error":{"message":"Key limit exceeded (total l
+  !! leg verified-nightly-20260721-r0-caesar-moonshotai_kimi_k3-vs-qwen_qwen3_7_max deferred: chat() failed for moonshotai/kimi-k3: HTTP 403 from moonshotai/kimi-k3: {"error":{"message":"Key limit exceeded (total l
+  !! leg verified-nightly-20260721-r0-caesar-google_gemini_3_1_pro_preview-vs-moonshotai_kimi_k3 deferred: chat() failed for google/gemini-3.1-pro-preview: HTTP 403 from google/gemini-3.1-pro-preview: {"error":{"message":"Key l
+  !! leg verified-nightly-20260721-r0-longest-increasing-subarray-x_ai_grok_4_5-vs-moonshotai_kimi_k3 deferred: chat() failed for x-ai/grok-4.5: HTTP 403 from x-ai/grok-4.5: {"error":{"message":"Key limit exceeded (total limit). Man
+  !! leg verified-nightly-20260721-r0-subsetsum-xiaomi_mimo_v2_5_pro-vs-moonshotai_kimi_k3 deferred: chat() failed for xiaomi/mimo-v2.5-pro: HTTP 403 from xiaomi/mimo-v2.5-pro: {"error":{"message":"Key limit exceeded (tot
+  [retry 1] moonshotai/kimi-k3: HTTP 403 from moonshotai/kimi-k3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 1] moonshotai/kimi-k3: HTTP 403 from moonshotai/kimi-k3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 1] openai/gpt-5.6-sol: HTTP 403 from openai/gpt-5.6-sol: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 1] deepseek/deepseek-v4-pro: HTTP 403 from deepseek/deepseek-v4-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a
+  [retry 1] z-ai/glm-5.2: HTTP 403 from z-ai/glm-5.2: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e069
+  !! leg verified-nightly-20260721-r0-calc-moonshotai_kimi_k3-vs-anthropic_claude_opus_4_8 deferred: chat() failed for moonshotai/kimi-k3: HTTP 403 from moonshotai/kimi-k3: {"error":{"message":"Key limit exceeded (total l
+  [retry 1] anthropic/claude-opus-4.8: HTTP 403 from anthropic/claude-opus-4.8: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3
+  [retry 2] moonshotai/kimi-k3: HTTP 403 from moonshotai/kimi-k3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 2] moonshotai/kimi-k3: HTTP 403 from moonshotai/kimi-k3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 2] openai/gpt-5.6-sol: HTTP 403 from openai/gpt-5.6-sol: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 2] deepseek/deepseek-v4-pro: HTTP 403 from deepseek/deepseek-v4-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a
+  [retry 2] z-ai/glm-5.2: HTTP 403 from z-ai/glm-5.2: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e069
+  [retry 2] anthropic/claude-opus-4.8: HTTP 403 from anthropic/claude-opus-4.8: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3
+  [retry 3] moonshotai/kimi-k3: HTTP 403 from moonshotai/kimi-k3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 3] moonshotai/kimi-k3: HTTP 403 from moonshotai/kimi-k3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 3] openai/gpt-5.6-sol: HTTP 403 from openai/gpt-5.6-sol: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 3] deepseek/deepseek-v4-pro: HTTP 403 from deepseek/deepseek-v4-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a
+  [retry 3] z-ai/glm-5.2: HTTP 403 from z-ai/glm-5.2: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e069
+  [retry 3] anthropic/claude-opus-4.8: HTTP 403 from anthropic/claude-opus-4.8: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3
+  [retry 4] moonshotai/kimi-k3: HTTP 403 from moonshotai/kimi-k3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 4] moonshotai/kimi-k3: HTTP 403 from moonshotai/kimi-k3: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 4] deepseek/deepseek-v4-pro: HTTP 403 from deepseek/deepseek-v4-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a
+  [retry 4] openai/gpt-5.6-sol: HTTP 403 from openai/gpt-5.6-sol: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 4] z-ai/glm-5.2: HTTP 403 from z-ai/glm-5.2: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e069
+  [retry 4] anthropic/claude-opus-4.8: HTTP 403 from anthropic/claude-opus-4.8: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3
+  !! leg verified-nightly-20260721-r0-calc-moonshotai_kimi_k3-vs-meta_muse_spark_1_1 deferred: chat() failed for moonshotai/kimi-k3: HTTP 403 from moonshotai/kimi-k3: {"error":{"message":"Key limit exceeded (total l
+  !! leg verified-nightly-20260721-r0-sortlist-moonshotai_kimi_k3-vs-anthropic_claude_fable_5 deferred: chat() failed for moonshotai/kimi-k3: HTTP 403 from moonshotai/kimi-k3: {"error":{"message":"Key limit exceeded (total l
+  !! leg verified-nightly-20260721-r0-caesar-deepseek_deepseek_v4_pro-vs-moonshotai_kimi_k3 deferred: chat() failed for deepseek/deepseek-v4-pro: HTTP 403 from deepseek/deepseek-v4-pro: {"error":{"message":"Key limit excee
+  !! leg verified-nightly-20260721-r0-subsetsum-openai_gpt_5_6_sol-vs-z_ai_glm_5_2 deferred: chat() failed for openai/gpt-5.6-sol: HTTP 403 from openai/gpt-5.6-sol: {"error":{"message":"Key limit exceeded (total l
+  [retry 1] z-ai/glm-5.2: HTTP 403 from z-ai/glm-5.2: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e069
+  [retry 1] qwen/qwen3.7-max: HTTP 403 from qwen/qwen3.7-max: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6
+  !! leg verified-nightly-20260721-r0-textmetrics-z_ai_glm_5_2-vs-google_gemini_3_1_pro_preview deferred: chat() failed for z-ai/glm-5.2: HTTP 403 from z-ai/glm-5.2: {"error":{"message":"Key limit exceeded (total limit). Manag
+  [retry 1] anthropic/claude-fable-5: HTTP 403 from anthropic/claude-fable-5: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a
+  [retry 1] z-ai/glm-5.2: HTTP 403 from z-ai/glm-5.2: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e069
+  [retry 1] z-ai/glm-5.2: HTTP 403 from z-ai/glm-5.2: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e069
+  !! leg verified-nightly-20260721-r0-longest-increasing-subarray-anthropic_claude_opus_4_8-vs-z_ai_glm_5_2 deferred: chat() failed for anthropic/claude-opus-4.8: HTTP 403 from anthropic/claude-opus-4.8: {"error":{"message":"Key limit exc
+  [retry 1] meta/muse-spark-1.1: HTTP 403 from meta/muse-spark-1.1: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d
+  [retry 2] qwen/qwen3.7-max: HTTP 403 from qwen/qwen3.7-max: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6
+  [retry 2] z-ai/glm-5.2: HTTP 403 from z-ai/glm-5.2: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e069
+  [retry 2] anthropic/claude-fable-5: HTTP 403 from anthropic/claude-fable-5: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a
+  [retry 2] z-ai/glm-5.2: HTTP 403 from z-ai/glm-5.2: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e069
+  [retry 2] z-ai/glm-5.2: HTTP 403 from z-ai/glm-5.2: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e069
+  [retry 2] meta/muse-spark-1.1: HTTP 403 from meta/muse-spark-1.1: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d
+  [retry 3] qwen/qwen3.7-max: HTTP 403 from qwen/qwen3.7-max: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6
+  [retry 3] z-ai/glm-5.2: HTTP 403 from z-ai/glm-5.2: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e069
+  [retry 3] z-ai/glm-5.2: HTTP 403 from z-ai/glm-5.2: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e069
+  [retry 3] anthropic/claude-fable-5: HTTP 403 from anthropic/claude-fable-5: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a
+  [retry 3] z-ai/glm-5.2: HTTP 403 from z-ai/glm-5.2: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e069
+  [retry 3] meta/muse-spark-1.1: HTTP 403 from meta/muse-spark-1.1: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d
+  [retry 4] qwen/qwen3.7-max: HTTP 403 from qwen/qwen3.7-max: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6
+  [retry 4] z-ai/glm-5.2: HTTP 403 from z-ai/glm-5.2: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e069
+  [retry 4] anthropic/claude-fable-5: HTTP 403 from anthropic/claude-fable-5: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a
+  [retry 4] z-ai/glm-5.2: HTTP 403 from z-ai/glm-5.2: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e069
+  [retry 4] z-ai/glm-5.2: HTTP 403 from z-ai/glm-5.2: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e069
+  [retry 4] meta/muse-spark-1.1: HTTP 403 from meta/muse-spark-1.1: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d
+  !! leg verified-nightly-20260721-r0-sortlist-qwen_qwen3_7_max-vs-z_ai_glm_5_2 deferred: chat() failed for qwen/qwen3.7-max: HTTP 403 from qwen/qwen3.7-max: {"error":{"message":"Key limit exceeded (total limit
+  !! leg verified-nightly-20260721-r0-sortlist-z_ai_glm_5_2-vs-xiaomi_mimo_v2_5_pro deferred: chat() failed for z-ai/glm-5.2: HTTP 403 from z-ai/glm-5.2: {"error":{"message":"Key limit exceeded (total limit). Manag
+  !! leg verified-nightly-20260721-r0-subsetsum-anthropic_claude_fable_5-vs-z_ai_glm_5_2 deferred: chat() failed for anthropic/claude-fable-5: HTTP 403 from anthropic/claude-fable-5: {"error":{"message":"Key limit excee
+  !! leg verified-nightly-20260721-r0-calc-z_ai_glm_5_2-vs-x_ai_grok_4_5 deferred: chat() failed for z-ai/glm-5.2: HTTP 403 from z-ai/glm-5.2: {"error":{"message":"Key limit exceeded (total limit). Manag
+  !! leg verified-nightly-20260721-r0-textmetrics-z_ai_glm_5_2-vs-deepseek_deepseek_v4_pro deferred: chat() failed for z-ai/glm-5.2: HTTP 403 from z-ai/glm-5.2: {"error":{"message":"Key limit exceeded (total limit). Manag
+  [retry 1] google/gemini-3.1-pro-preview: HTTP 403 from google/gemini-3.1-pro-preview: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d2
+  [retry 1] openai/gpt-5.6-sol: HTTP 403 from openai/gpt-5.6-sol: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 1] x-ai/grok-4.5: HTTP 403 from x-ai/grok-4.5: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e06
+  [retry 1] xiaomi/mimo-v2.5-pro: HTTP 403 from xiaomi/mimo-v2.5-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4
+  [retry 1] openai/gpt-5.6-sol: HTTP 403 from openai/gpt-5.6-sol: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  !! leg verified-nightly-20260721-r0-longest-increasing-subarray-meta_muse_spark_1_1-vs-z_ai_glm_5_2 deferred: chat() failed for meta/muse-spark-1.1: HTTP 403 from meta/muse-spark-1.1: {"error":{"message":"Key limit exceeded (total
+  [retry 1] openai/gpt-5.6-sol: HTTP 403 from openai/gpt-5.6-sol: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 2] google/gemini-3.1-pro-preview: HTTP 403 from google/gemini-3.1-pro-preview: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d2
+  [retry 2] openai/gpt-5.6-sol: HTTP 403 from openai/gpt-5.6-sol: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 2] x-ai/grok-4.5: HTTP 403 from x-ai/grok-4.5: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e06
+  [retry 2] openai/gpt-5.6-sol: HTTP 403 from openai/gpt-5.6-sol: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 2] xiaomi/mimo-v2.5-pro: HTTP 403 from xiaomi/mimo-v2.5-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4
+  [retry 2] openai/gpt-5.6-sol: HTTP 403 from openai/gpt-5.6-sol: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 3] google/gemini-3.1-pro-preview: HTTP 403 from google/gemini-3.1-pro-preview: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d2
+  [retry 3] openai/gpt-5.6-sol: HTTP 403 from openai/gpt-5.6-sol: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 3] x-ai/grok-4.5: HTTP 403 from x-ai/grok-4.5: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e06
+  [retry 3] openai/gpt-5.6-sol: HTTP 403 from openai/gpt-5.6-sol: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 3] xiaomi/mimo-v2.5-pro: HTTP 403 from xiaomi/mimo-v2.5-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4
+  [retry 3] openai/gpt-5.6-sol: HTTP 403 from openai/gpt-5.6-sol: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 4] openai/gpt-5.6-sol: HTTP 403 from openai/gpt-5.6-sol: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 4] google/gemini-3.1-pro-preview: HTTP 403 from google/gemini-3.1-pro-preview: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d2
+  [retry 4] x-ai/grok-4.5: HTTP 403 from x-ai/grok-4.5: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e06
+  [retry 4] openai/gpt-5.6-sol: HTTP 403 from openai/gpt-5.6-sol: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 4] xiaomi/mimo-v2.5-pro: HTTP 403 from xiaomi/mimo-v2.5-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4
+  [retry 4] openai/gpt-5.6-sol: HTTP 403 from openai/gpt-5.6-sol: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  !! leg verified-nightly-20260721-r0-caesar-openai_gpt_5_6_sol-vs-anthropic_claude_opus_4_8 deferred: chat() failed for openai/gpt-5.6-sol: HTTP 403 from openai/gpt-5.6-sol: {"error":{"message":"Key limit exceeded (total l
+  !! leg verified-nightly-20260721-r0-sortlist-google_gemini_3_1_pro_preview-vs-openai_gpt_5_6_sol deferred: chat() failed for google/gemini-3.1-pro-preview: HTTP 403 from google/gemini-3.1-pro-preview: {"error":{"message":"Key l
+  !! leg verified-nightly-20260721-r0-textmetrics-x_ai_grok_4_5-vs-openai_gpt_5_6_sol deferred: chat() failed for x-ai/grok-4.5: HTTP 403 from x-ai/grok-4.5: {"error":{"message":"Key limit exceeded (total limit). Man
+  !! leg verified-nightly-20260721-r0-subsetsum-openai_gpt_5_6_sol-vs-qwen_qwen3_7_max deferred: chat() failed for openai/gpt-5.6-sol: HTTP 403 from openai/gpt-5.6-sol: {"error":{"message":"Key limit exceeded (total l
+  !! leg verified-nightly-20260721-r0-calc-xiaomi_mimo_v2_5_pro-vs-openai_gpt_5_6_sol deferred: chat() failed for xiaomi/mimo-v2.5-pro: HTTP 403 from xiaomi/mimo-v2.5-pro: {"error":{"message":"Key limit exceeded (tot
+  !! leg verified-nightly-20260721-r0-longest-increasing-subarray-openai_gpt_5_6_sol-vs-anthropic_claude_fable_5 deferred: chat() failed for openai/gpt-5.6-sol: HTTP 403 from openai/gpt-5.6-sol: {"error":{"message":"Key limit exceeded (total l
+  [retry 1] openai/gpt-5.6-sol: HTTP 403 from openai/gpt-5.6-sol: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 1] deepseek/deepseek-v4-pro: HTTP 403 from deepseek/deepseek-v4-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a
+  [retry 1] anthropic/claude-opus-4.8: HTTP 403 from anthropic/claude-opus-4.8: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3
+  [retry 1] google/gemini-3.1-pro-preview: HTTP 403 from google/gemini-3.1-pro-preview: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d2
+  [retry 1] qwen/qwen3.7-max: HTTP 403 from qwen/qwen3.7-max: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6
+  [retry 1] google/gemini-3.1-pro-preview: HTTP 403 from google/gemini-3.1-pro-preview: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d2
+  [retry 2] openai/gpt-5.6-sol: HTTP 403 from openai/gpt-5.6-sol: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 2] deepseek/deepseek-v4-pro: HTTP 403 from deepseek/deepseek-v4-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a
+  [retry 2] anthropic/claude-opus-4.8: HTTP 403 from anthropic/claude-opus-4.8: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3
+  [retry 2] qwen/qwen3.7-max: HTTP 403 from qwen/qwen3.7-max: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6
+  [retry 2] google/gemini-3.1-pro-preview: HTTP 403 from google/gemini-3.1-pro-preview: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d2
+  [retry 2] google/gemini-3.1-pro-preview: HTTP 403 from google/gemini-3.1-pro-preview: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d2
+  [retry 3] openai/gpt-5.6-sol: HTTP 403 from openai/gpt-5.6-sol: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 3] deepseek/deepseek-v4-pro: HTTP 403 from deepseek/deepseek-v4-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a
+  [retry 3] anthropic/claude-opus-4.8: HTTP 403 from anthropic/claude-opus-4.8: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3
+  [retry 3] google/gemini-3.1-pro-preview: HTTP 403 from google/gemini-3.1-pro-preview: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d2
+  [retry 3] qwen/qwen3.7-max: HTTP 403 from qwen/qwen3.7-max: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6
+  [retry 3] google/gemini-3.1-pro-preview: HTTP 403 from google/gemini-3.1-pro-preview: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d2
+  [retry 4] openai/gpt-5.6-sol: HTTP 403 from openai/gpt-5.6-sol: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4
+  [retry 4] deepseek/deepseek-v4-pro: HTTP 403 from deepseek/deepseek-v4-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a
+  [retry 4] anthropic/claude-opus-4.8: HTTP 403 from anthropic/claude-opus-4.8: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3
+  [retry 4] google/gemini-3.1-pro-preview: HTTP 403 from google/gemini-3.1-pro-preview: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d2
+  [retry 4] qwen/qwen3.7-max: HTTP 403 from qwen/qwen3.7-max: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6
+  [retry 4] google/gemini-3.1-pro-preview: HTTP 403 from google/gemini-3.1-pro-preview: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d2
+  !! leg verified-nightly-20260721-r0-caesar-openai_gpt_5_6_sol-vs-meta_muse_spark_1_1 deferred: chat() failed for openai/gpt-5.6-sol: HTTP 403 from openai/gpt-5.6-sol: {"error":{"message":"Key limit exceeded (total l
+  !! leg verified-nightly-20260721-r0-sortlist-deepseek_deepseek_v4_pro-vs-openai_gpt_5_6_sol deferred: chat() failed for deepseek/deepseek-v4-pro: HTTP 403 from deepseek/deepseek-v4-pro: {"error":{"message":"Key limit excee
+  !! leg verified-nightly-20260721-r0-calc-anthropic_claude_opus_4_8-vs-google_gemini_3_1_pro_preview deferred: chat() failed for anthropic/claude-opus-4.8: HTTP 403 from anthropic/claude-opus-4.8: {"error":{"message":"Key limit exc
+  !! leg verified-nightly-20260721-r0-subsetsum-google_gemini_3_1_pro_preview-vs-xiaomi_mimo_v2_5_pro deferred: chat() failed for google/gemini-3.1-pro-preview: HTTP 403 from google/gemini-3.1-pro-preview: {"error":{"message":"Key l
+  !! leg verified-nightly-20260721-r0-sortlist-qwen_qwen3_7_max-vs-google_gemini_3_1_pro_preview deferred: chat() failed for qwen/qwen3.7-max: HTTP 403 from qwen/qwen3.7-max: {"error":{"message":"Key limit exceeded (total limit
+  [retry 1] anthropic/claude-fable-5: HTTP 403 from anthropic/claude-fable-5: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a
+  !! leg verified-nightly-20260721-r0-longest-increasing-subarray-google_gemini_3_1_pro_preview-vs-x_ai_grok_4_5 deferred: chat() failed for google/gemini-3.1-pro-preview: HTTP 403 from google/gemini-3.1-pro-preview: {"error":{"message":"Key l
+  [retry 1] google/gemini-3.1-pro-preview: HTTP 403 from google/gemini-3.1-pro-preview: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d2
+  [retry 1] meta/muse-spark-1.1: HTTP 403 from meta/muse-spark-1.1: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d
+  [retry 1] x-ai/grok-4.5: HTTP 403 from x-ai/grok-4.5: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e06
+  [retry 1] anthropic/claude-opus-4.8: HTTP 403 from anthropic/claude-opus-4.8: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3
+  [retry 1] xiaomi/mimo-v2.5-pro: HTTP 403 from xiaomi/mimo-v2.5-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4
+  [retry 2] anthropic/claude-fable-5: HTTP 403 from anthropic/claude-fable-5: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a
+  [retry 2] google/gemini-3.1-pro-preview: HTTP 403 from google/gemini-3.1-pro-preview: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d2
+  [retry 2] x-ai/grok-4.5: HTTP 403 from x-ai/grok-4.5: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e06
+  [retry 2] anthropic/claude-opus-4.8: HTTP 403 from anthropic/claude-opus-4.8: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3
+  [retry 2] xiaomi/mimo-v2.5-pro: HTTP 403 from xiaomi/mimo-v2.5-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4
+  [retry 2] meta/muse-spark-1.1: HTTP 403 from meta/muse-spark-1.1: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d
+  [retry 3] google/gemini-3.1-pro-preview: HTTP 403 from google/gemini-3.1-pro-preview: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d2
+  [retry 3] anthropic/claude-fable-5: HTTP 403 from anthropic/claude-fable-5: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a
+  [retry 3] x-ai/grok-4.5: HTTP 403 from x-ai/grok-4.5: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e06
+  [retry 3] xiaomi/mimo-v2.5-pro: HTTP 403 from xiaomi/mimo-v2.5-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4
+  [retry 3] anthropic/claude-opus-4.8: HTTP 403 from anthropic/claude-opus-4.8: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3
+  [retry 3] meta/muse-spark-1.1: HTTP 403 from meta/muse-spark-1.1: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d
+  [retry 4] google/gemini-3.1-pro-preview: HTTP 403 from google/gemini-3.1-pro-preview: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d2
+  [retry 4] x-ai/grok-4.5: HTTP 403 from x-ai/grok-4.5: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e06
+  [retry 4] anthropic/claude-fable-5: HTTP 403 from anthropic/claude-fable-5: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a
+  [retry 4] anthropic/claude-opus-4.8: HTTP 403 from anthropic/claude-opus-4.8: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3
+  [retry 4] xiaomi/mimo-v2.5-pro: HTTP 403 from xiaomi/mimo-v2.5-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4
+  [retry 4] meta/muse-spark-1.1: HTTP 403 from meta/muse-spark-1.1: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d
+  !! leg verified-nightly-20260721-r0-caesar-google_gemini_3_1_pro_preview-vs-deepseek_deepseek_v4_pro deferred: chat() failed for google/gemini-3.1-pro-preview: HTTP 403 from google/gemini-3.1-pro-preview: {"error":{"message":"Key l
+  !! leg verified-nightly-20260721-r0-longest-increasing-subarray-x_ai_grok_4_5-vs-anthropic_claude_opus_4_8 deferred: chat() failed for x-ai/grok-4.5: HTTP 403 from x-ai/grok-4.5: {"error":{"message":"Key limit exceeded (total limit). Man
+  !! leg verified-nightly-20260721-r0-sortlist-anthropic_claude_fable_5-vs-google_gemini_3_1_pro_preview deferred: chat() failed for anthropic/claude-fable-5: HTTP 403 from anthropic/claude-fable-5: {"error":{"message":"Key limit excee
+  !! leg verified-nightly-20260721-r0-caesar-anthropic_claude_opus_4_8-vs-qwen_qwen3_7_max deferred: chat() failed for anthropic/claude-opus-4.8: HTTP 403 from anthropic/claude-opus-4.8: {"error":{"message":"Key limit exc
+  [retry 1] anthropic/claude-opus-4.8: HTTP 403 from anthropic/claude-opus-4.8: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3
+  [retry 1] anthropic/claude-opus-4.8: HTTP 403 from anthropic/claude-opus-4.8: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3
+  [retry 1] deepseek/deepseek-v4-pro: HTTP 403 from deepseek/deepseek-v4-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a
+  !! leg verified-nightly-20260721-r0-subsetsum-xiaomi_mimo_v2_5_pro-vs-anthropic_claude_opus_4_8 deferred: chat() failed for xiaomi/mimo-v2.5-pro: HTTP 403 from xiaomi/mimo-v2.5-pro: {"error":{"message":"Key limit exceeded (tot
+  [retry 1] qwen/qwen3.7-max: HTTP 403 from qwen/qwen3.7-max: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6
+  [retry 1] xiaomi/mimo-v2.5-pro: HTTP 403 from xiaomi/mimo-v2.5-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4
+  !! leg verified-nightly-20260721-r0-calc-meta_muse_spark_1_1-vs-google_gemini_3_1_pro_preview deferred: chat() failed for meta/muse-spark-1.1: HTTP 403 from meta/muse-spark-1.1: {"error":{"message":"Key limit exceeded (total
+  [retry 1] anthropic/claude-fable-5: HTTP 403 from anthropic/claude-fable-5: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a
+  [retry 2] anthropic/claude-opus-4.8: HTTP 403 from anthropic/claude-opus-4.8: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3
+  [retry 2] anthropic/claude-opus-4.8: HTTP 403 from anthropic/claude-opus-4.8: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3
+  [retry 2] deepseek/deepseek-v4-pro: HTTP 403 from deepseek/deepseek-v4-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a
+  [retry 2] qwen/qwen3.7-max: HTTP 403 from qwen/qwen3.7-max: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6
+  [retry 2] xiaomi/mimo-v2.5-pro: HTTP 403 from xiaomi/mimo-v2.5-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4
+  [retry 2] anthropic/claude-fable-5: HTTP 403 from anthropic/claude-fable-5: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a
+  [retry 3] anthropic/claude-opus-4.8: HTTP 403 from anthropic/claude-opus-4.8: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3
+  [retry 3] anthropic/claude-opus-4.8: HTTP 403 from anthropic/claude-opus-4.8: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3
+  [retry 3] deepseek/deepseek-v4-pro: HTTP 403 from deepseek/deepseek-v4-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a
+  [retry 3] xiaomi/mimo-v2.5-pro: HTTP 403 from xiaomi/mimo-v2.5-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4
+  [retry 3] qwen/qwen3.7-max: HTTP 403 from qwen/qwen3.7-max: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6
+  [retry 3] anthropic/claude-fable-5: HTTP 403 from anthropic/claude-fable-5: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a
+  [retry 4] anthropic/claude-opus-4.8: HTTP 403 from anthropic/claude-opus-4.8: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3
+  [retry 4] anthropic/claude-opus-4.8: HTTP 403 from anthropic/claude-opus-4.8: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3
+  [retry 4] deepseek/deepseek-v4-pro: HTTP 403 from deepseek/deepseek-v4-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a
+  [retry 4] qwen/qwen3.7-max: HTTP 403 from qwen/qwen3.7-max: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6
+  [retry 4] xiaomi/mimo-v2.5-pro: HTTP 403 from xiaomi/mimo-v2.5-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4
+  [retry 4] anthropic/claude-fable-5: HTTP 403 from anthropic/claude-fable-5: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a
+  !! leg verified-nightly-20260721-r0-calc-anthropic_claude_opus_4_8-vs-meta_muse_spark_1_1 deferred: chat() failed for anthropic/claude-opus-4.8: HTTP 403 from anthropic/claude-opus-4.8: {"error":{"message":"Key limit exc
+  !! leg verified-nightly-20260721-r0-sortlist-anthropic_claude_opus_4_8-vs-anthropic_claude_fable_5 deferred: chat() failed for anthropic/claude-opus-4.8: HTTP 403 from anthropic/claude-opus-4.8: {"error":{"message":"Key limit exc
+  !! leg verified-nightly-20260721-r0-caesar-deepseek_deepseek_v4_pro-vs-anthropic_claude_opus_4_8 deferred: chat() failed for deepseek/deepseek-v4-pro: HTTP 403 from deepseek/deepseek-v4-pro: {"error":{"message":"Key limit excee
+  !! leg verified-nightly-20260721-r0-caesar-qwen_qwen3_7_max-vs-xiaomi_mimo_v2_5_pro deferred: chat() failed for qwen/qwen3.7-max: HTTP 403 from qwen/qwen3.7-max: {"error":{"message":"Key limit exceeded (total limit
+  !! leg verified-nightly-20260721-r0-textmetrics-xiaomi_mimo_v2_5_pro-vs-x_ai_grok_4_5 deferred: chat() failed for xiaomi/mimo-v2.5-pro: HTTP 403 from xiaomi/mimo-v2.5-pro: {"error":{"message":"Key limit exceeded (tot
+  [retry 1] meta/muse-spark-1.1: HTTP 403 from meta/muse-spark-1.1: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d
+  [retry 1] xiaomi/mimo-v2.5-pro: HTTP 403 from xiaomi/mimo-v2.5-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4
+  !! leg verified-nightly-20260721-r0-longest-increasing-subarray-anthropic_claude_fable_5-vs-xiaomi_mimo_v2_5_pro deferred: chat() failed for anthropic/claude-fable-5: HTTP 403 from anthropic/claude-fable-5: {"error":{"message":"Key limit excee
+  [retry 1] qwen/qwen3.7-max: HTTP 403 from qwen/qwen3.7-max: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6
+  [retry 1] qwen/qwen3.7-max: HTTP 403 from qwen/qwen3.7-max: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6
+  [retry 1] x-ai/grok-4.5: HTTP 403 from x-ai/grok-4.5: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e06
+  [retry 1] deepseek/deepseek-v4-pro: HTTP 403 from deepseek/deepseek-v4-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a
+  [retry 2] meta/muse-spark-1.1: HTTP 403 from meta/muse-spark-1.1: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d
+  [retry 2] xiaomi/mimo-v2.5-pro: HTTP 403 from xiaomi/mimo-v2.5-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4
+  [retry 2] qwen/qwen3.7-max: HTTP 403 from qwen/qwen3.7-max: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6
+  [retry 2] qwen/qwen3.7-max: HTTP 403 from qwen/qwen3.7-max: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6
+  [retry 2] x-ai/grok-4.5: HTTP 403 from x-ai/grok-4.5: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e06
+  [retry 2] deepseek/deepseek-v4-pro: HTTP 403 from deepseek/deepseek-v4-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a
+  [retry 3] meta/muse-spark-1.1: HTTP 403 from meta/muse-spark-1.1: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d
+  [retry 3] qwen/qwen3.7-max: HTTP 403 from qwen/qwen3.7-max: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6
+  [retry 3] x-ai/grok-4.5: HTTP 403 from x-ai/grok-4.5: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e06
+  [retry 3] qwen/qwen3.7-max: HTTP 403 from qwen/qwen3.7-max: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6
+  [retry 3] deepseek/deepseek-v4-pro: HTTP 403 from deepseek/deepseek-v4-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a
+  [retry 3] xiaomi/mimo-v2.5-pro: HTTP 403 from xiaomi/mimo-v2.5-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4
+  [retry 4] meta/muse-spark-1.1: HTTP 403 from meta/muse-spark-1.1: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d
+  [retry 4] qwen/qwen3.7-max: HTTP 403 from qwen/qwen3.7-max: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6
+  [retry 4] x-ai/grok-4.5: HTTP 403 from x-ai/grok-4.5: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6e06
+  [retry 4] deepseek/deepseek-v4-pro: HTTP 403 from deepseek/deepseek-v4-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a
+  [retry 4] qwen/qwen3.7-max: HTTP 403 from qwen/qwen3.7-max: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4d4f6
+  [retry 4] xiaomi/mimo-v2.5-pro: HTTP 403 from xiaomi/mimo-v2.5-pro: {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/28bdaf5c52cf0c67ec3c195be8a5d3a815a3d206c3a4be4

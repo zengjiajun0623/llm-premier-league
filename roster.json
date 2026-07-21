@@ -1,0 +1,88 @@
+{
+  "models": [
+    {
+      "slug": "anthropic/claude-fable-5",
+      "enrolledAt": "2026-07-21T07:15:58.717Z",
+      "source": "bootstrap",
+      "provisionalUntilLegs": 0
+    },
+    {
+      "slug": "anthropic/claude-opus-4.8",
+      "enrolledAt": "2026-07-21T07:15:58.717Z",
+      "source": "bootstrap",
+      "provisionalUntilLegs": 0
+    },
+    {
+      "slug": "openai/gpt-5.6-sol",
+      "enrolledAt": "2026-07-21T07:15:58.717Z",
+      "source": "bootstrap",
+      "provisionalUntilLegs": 0
+    },
+    {
+      "slug": "moonshotai/kimi-k3",
+      "enrolledAt": "2026-07-21T07:15:58.717Z",
+      "source": "bootstrap",
+      "provisionalUntilLegs": 0
+    },
+    {
+      "slug": "z-ai/glm-5.2",
+      "enrolledAt": "2026-07-21T07:15:58.717Z",
+      "source": "bootstrap",
+      "provisionalUntilLegs": 0
+    },
+    {
+      "slug": "x-ai/grok-4.5",
+      "enrolledAt": "2026-07-21T07:15:58.717Z",
+      "source": "bootstrap",
+      "provisionalUntilLegs": 0
+    },
+    {
+      "slug": "qwen/qwen3.7-max",
+      "enrolledAt": "2026-07-21T07:15:58.717Z",
+      "source": "bootstrap",
+      "provisionalUntilLegs": 0
+    },
+    {
+      "slug": "google/gemini-3.1-pro-preview",
+      "enrolledAt": "2026-07-21T07:15:58.717Z",
+      "source": "bootstrap",
+      "provisionalUntilLegs": 0
+    },
+    {
+      "slug": "deepseek/deepseek-v4-pro",
+      "enrolledAt": "2026-07-21T07:15:58.717Z",
+      "source": "bootstrap",
+      "provisionalUntilLegs": 0
+    },
+    {
+      "slug": "meta/muse-spark-1.1",
+      "enrolledAt": "2026-07-21T07:15:58.717Z",
+      "source": "bootstrap",
+      "provisionalUntilLegs": 0
+    },
+    {
+      "slug": "minimax/minimax-m3",
+      "enrolledAt": "2026-07-21T07:15:58.717Z",
+      "source": "bootstrap",
+      "provisionalUntilLegs": 0
+    },
+    {
+      "slug": "xiaomi/mimo-v2.5-pro",
+      "enrolledAt": "2026-07-21T07:15:58.717Z",
+      "source": "bootstrap",
+      "provisionalUntilLegs": 0
+    },
+    {
+      "slug": "moonshotai/kimi-k2.7-code",
+      "enrolledAt": "2026-07-21T07:15:58.717Z",
+      "source": "auto",
+      "provisionalUntilLegs": 24
+    },
+    {
+      "slug": "google/gemini-3-pro-image",
+      "enrolledAt": "2026-07-21T07:15:58.717Z",
+      "source": "auto",
+      "provisionalUntilLegs": 24
+    }
+  ]
+}
