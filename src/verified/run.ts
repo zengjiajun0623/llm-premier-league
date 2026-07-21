@@ -81,13 +81,20 @@ export async function executeRun(opts: RunOptions): Promise<RunFile> {
       completed++;
       continue;
     }
-    const result = await runLeg({
-      legId: pl.legId,
-      cls: pl.cls,
-      instance: pl.instance,
-      prover: pl.prover,
-      refuter: pl.refuter,
-    });
+    let result;
+    try {
+      result = await runLeg({
+        legId: pl.legId,
+        cls: pl.cls,
+        instance: pl.instance,
+        prover: pl.prover,
+        refuter: pl.refuter,
+      });
+    } catch (err) {
+      // A flaky provider must not kill the run: skip; the leg replays on resume.
+      console.error(`  !! leg ${pl.legId} deferred: ${(err as Error).message.slice(0, 120)}`);
+      continue;
+    }
     byId.set(pl.legId, result);
     file.legs = plan.filter((p) => byId.has(p.legId)).map((p) => byId.get(p.legId)!);
     file.updatedAt = new Date().toISOString();

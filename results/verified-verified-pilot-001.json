@@ -1,0 +1,272 @@
+{
+  "id": "verified-pilot-001",
+  "createdAt": "2026-07-21T05:12:21.838Z",
+  "updatedAt": "2026-07-21T05:37:47.873Z",
+  "rounds": 2,
+  "roster": [
+    "deepseek/deepseek-v4-flash",
+    "qwen/qwen3.6-flash",
+    "openai/gpt-5.4-nano",
+    "google/gemini-3.1-flash-lite"
+  ],
+  "sandbox": "podman",
+  "refuterBudgetK": 10,
+  "legs": [
+    {
+      "legId": "verified-pilot-001-r0-sortlist-deepseek_deepseek_v4_flash-vs-qwen_qwen3_6_flash",
+      "classId": "sortlist",
+      "instanceSeed": 608728872,
+      "prover": "deepseek/deepseek-v4-flash",
+      "refuter": "qwen/qwen3.6-flash",
+      "winner": "prover",
+      "costUsd": 0.00149846,
+      "transcript": {
+        "proverSrc": "def solve(nums):\n    return sorted(nums, reverse=True)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-pilot-001-r0-caesar-qwen_qwen3_6_flash-vs-openai_gpt_5_4_nano",
+      "classId": "caesar",
+      "instanceSeed": 865011477,
+      "prover": "qwen/qwen3.6-flash",
+      "refuter": "openai/gpt-5.4-nano",
+      "winner": "prover",
+      "costUsd": 0.00251895,
+      "transcript": {
+        "proverSrc": "def solve(s):\n    res = []\n    for c in s:\n        if 'A' <= c <= 'Z':\n            res.append(chr((ord(c) - ord('A') + 6) % 26 + ord('A')))\n        elif 'a' <= c <= 'z':\n            res.append(chr((ord(c) - ord('a') + 6) % 26 + ord('a')))\n        else:\n            res.append(c)\n    return \"\".join(res)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-pilot-001-r0-calc-google_gemini_3_1_flash_lite-vs-qwen_qwen3_6_flash",
+      "classId": "calc",
+      "instanceSeed": 353756608,
+      "prover": "google/gemini-3.1-flash-lite",
+      "refuter": "qwen/qwen3.6-flash",
+      "winner": "refuter",
+      "costUsd": 0.00046625,
+      "transcript": {
+        "proverSrc": "def solve(expr):\n    import ast, operator as o\n    ops = {'+': o.add, '-': o.sub, '*': o.mul}\n    M = 1000000007\n    def ev(n):\n        if isinstance(n, ast.Constant): return n.value % M\n        if isinstance(n, ast.BinOp):\n            l, r = ev(n.left), ev(n.right)\n            return ops[type(n.op).__name__](l, r) % M\n        return ev(n.value)\n    return ev(ast.parse(expr, mode='eval').body)",
+        "candidates": []
+      },
+      "proverForfeit": true,
+      "forfeitReason": "smoke crash: exit 1: Traceback (most recent call last):\n  File \"<string>\", line 18, in <module>\n  File \"<string>\", line 16, in __run\n  File \"<string>\", line 12, in solve\n  File \"<string>\", line 10, in ev\nKeyError: 'Add'\n"
+    },
+    {
+      "legId": "verified-pilot-001-r0-textmetrics-deepseek_deepseek_v4_flash-vs-google_gemini_3_1_flash_lite",
+      "classId": "textmetrics",
+      "instanceSeed": 1432717391,
+      "prover": "deepseek/deepseek-v4-flash",
+      "refuter": "google/gemini-3.1-flash-lite",
+      "winner": "prover",
+      "costUsd": 0.0004054736,
+      "transcript": {
+        "proverSrc": "def solve(s):\n    length = len(s)\n    utf8_bytes = len(s.encode('utf-8'))\n    checksum = sum(ord(c) for c in s) % 2147483648\n    return {\"length\": length, \"bytes\": utf8_bytes, \"checksum\": checksum}",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-pilot-001-r0-sortlist-google_gemini_3_1_flash_lite-vs-openai_gpt_5_4_nano",
+      "classId": "sortlist",
+      "instanceSeed": 1991690071,
+      "prover": "google/gemini-3.1-flash-lite",
+      "refuter": "openai/gpt-5.4-nano",
+      "winner": "prover",
+      "costUsd": 0.00041755,
+      "transcript": {
+        "proverSrc": "def solve(nums):\n    return sorted(nums, reverse=True)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-pilot-001-r1-caesar-deepseek_deepseek_v4_flash-vs-openai_gpt_5_4_nano",
+      "classId": "caesar",
+      "instanceSeed": 1285430076,
+      "prover": "deepseek/deepseek-v4-flash",
+      "refuter": "openai/gpt-5.4-nano",
+      "winner": "prover",
+      "costUsd": 0.00061822,
+      "transcript": {
+        "proverSrc": "def solve(s):\n    result = []\n    for ch in s:\n        if 'a' <= ch <= 'z':\n            # shift lowercase letter\n            new_ord = ord(ch) + 16\n            if new_ord > ord('z'):\n                new_ord -= 26\n            result.append(chr(new_ord))\n        elif 'A' <= ch <= 'Z':\n            # shift uppercase letter\n            new_ord = ord(ch) + 16\n            if new_ord > ord('Z'):\n                new_ord -= 26\n            result.append(chr(new_ord))\n        else:\n            # non-letter character remains unchanged\n            result.append(ch)\n    return ''.join(result)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-pilot-001-r1-subsetsum-deepseek_deepseek_v4_flash-vs-qwen_qwen3_6_flash",
+      "classId": "subsetsum",
+      "instanceSeed": 938402942,
+      "prover": "deepseek/deepseek-v4-flash",
+      "refuter": "qwen/qwen3.6-flash",
+      "winner": "prover",
+      "costUsd": 0.013943622499999999,
+      "transcript": {
+        "proverSrc": "def solve(inp):\n    nums = inp[\"nums\"]\n    target = inp[\"target\"]\n    n = len(nums)\n    \n    # Empty subset is valid only for target 0\n    if target == 0:\n        return []\n    \n    # Iterate over all non-empty subsets\n    for mask in range(1, 1 << n):\n        s = 0\n        indices = []\n        for i in range(n):\n            if mask & (1 << i):\n                s += nums[i]\n                indices.append(i)\n        if s == target:\n            return indices\n    return None",
+        "candidates": [
+          {
+            "nums": [
+              0
+            ],
+            "target": 0
+          },
+          {
+            "nums": [
+              1,
+              -1
+            ],
+            "target": 0
+          },
+          {
+            "nums": [],
+            "target": 0
+          },
+          {
+            "nums": [
+              5,
+              5,
+              5
+            ],
+            "target": 10
+          },
+          {
+            "nums": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18
+            ],
+            "target": 0
+          },
+          {
+            "nums": [
+              1000000,
+              1000000,
+              1000000,
+              1000000,
+              1000000,
+              1000000,
+              1000000,
+              1000000,
+              1000000,
+              1000000
+            ],
+            "target": 10000000
+          },
+          {
+            "nums": [
+              -1000000,
+              -1000000,
+              -1000000,
+              -1000000,
+              -1000000,
+              -1000000,
+              -1000000,
+              -1000000,
+              -1000000,
+              -1000000
+            ],
+            "target": -10000000
+          },
+          {
+            "nums": [
+              1,
+              2,
+              4,
+              8,
+              16,
+              32,
+              64,
+              128,
+              256,
+              512,
+              1024,
+              2048,
+              4096,
+              8192,
+              16384,
+              32768,
+              65536,
+              131072
+            ],
+            "target": 262143
+          }
+        ]
+      }
+    },
+    {
+      "legId": "verified-pilot-001-r1-textmetrics-openai_gpt_5_4_nano-vs-google_gemini_3_1_flash_lite",
+      "classId": "textmetrics",
+      "instanceSeed": 1050009130,
+      "prover": "openai/gpt-5.4-nano",
+      "refuter": "google/gemini-3.1-flash-lite",
+      "winner": "refuter",
+      "costUsd": 0.00087195,
+      "transcript": {
+        "proverSrc": "def solve(s):\n    if not isinstance(s, str):\n        s = \"\" if s is None else str(s)\n    code_points = len(s)\n    b = s.encode(\"utf-8\")\n    checksum = sum(ord(ch) for ch in s) % 2147483648\n    return {\"length\": code_points, \"bytes\": len(b), \"checksum\": checksum}",
+        "candidates": [
+          "😀",
+          "𝄞",
+          "𐍈",
+          "a😀",
+          "😀",
+          "abc\udc00",
+          "𠜎𠜱𠝹𠱓𠱸𠲖𠳏",
+          "é",
+          "a😀b",
+          "𝄞"
+        ]
+      },
+      "refutingInput": "abc\udc00"
+    },
+    {
+      "legId": "verified-pilot-001-r1-sortlist-qwen_qwen3_6_flash-vs-openai_gpt_5_4_nano",
+      "classId": "sortlist",
+      "instanceSeed": 1986993597,
+      "prover": "qwen/qwen3.6-flash",
+      "refuter": "openai/gpt-5.4-nano",
+      "winner": "prover",
+      "costUsd": 0.00045911249999999997,
+      "transcript": {
+        "proverSrc": "def solve(nums):\n    return sorted(nums, reverse=True)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-pilot-001-r1-caesar-google_gemini_3_1_flash_lite-vs-qwen_qwen3_6_flash",
+      "classId": "caesar",
+      "instanceSeed": 744981055,
+      "prover": "google/gemini-3.1-flash-lite",
+      "refuter": "qwen/qwen3.6-flash",
+      "winner": "prover",
+      "costUsd": 0.00800025,
+      "transcript": {
+        "proverSrc": "def solve(s: str) -> str:\n    result = []\n    for char in s:\n        code = ord(char)\n        if 65 <= code <= 90:  # Uppercase A-Z\n            result.append(chr((code - 65 + 7) % 26 + 65))\n        elif 97 <= code <= 122:  # Lowercase a-z\n            result.append(chr((code - 97 + 7) % 26 + 97))\n        else:\n            result.append(char)\n    return \"\".join(result)",
+        "candidates": [
+          "",
+          "Hello, World!",
+          "abcXYZ",
+          "zZ",
+          "12345",
+          "!@#$%",
+          "äöü",
+          "🎉",
+          "a"
+        ]
+      }
+    }
+  ]
+}

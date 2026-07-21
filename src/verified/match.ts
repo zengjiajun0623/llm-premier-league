@@ -103,7 +103,7 @@ function refuterPrompt(cls: ArtifactClass, inst: ProblemInstance, proverSrc: str
 }
 
 async function askProver(model: string, cls: ArtifactClass, inst: ProblemInstance): Promise<{ src: string; cost: number }> {
-  const r = await chat(model, [{ role: "user", content: proverPrompt(cls, inst) }], 1200, {});
+  const r = await chat(model, [{ role: "user", content: proverPrompt(cls, inst) }], 2500, {});
   return { src: stripFences(r.text), cost: r.costUsd };
 }
 
@@ -113,7 +113,7 @@ async function askRefuter(
   inst: ProblemInstance,
   proverSrc: string,
 ): Promise<{ candidates: unknown[]; cost: number }> {
-  const r = await chat(model, [{ role: "user", content: refuterPrompt(cls, inst, proverSrc) }], 1200, { json: true });
+  const r = await chat(model, [{ role: "user", content: refuterPrompt(cls, inst, proverSrc) }], 2500, { json: true });
   let parsed: unknown = [];
   try {
     const t = stripFences(r.text);

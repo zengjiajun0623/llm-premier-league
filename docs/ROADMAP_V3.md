@@ -71,3 +71,11 @@ Definition of shipped:
 M2 ≈ $0.5 · M3 ≈ $8-15 (measure at M2, don't guess) · nightly ≈ $3-5 capped.
 Auto top-up is on; the cap is in config and enforced by the runner, not by
 intention.
+
+## M2 gate record (2026-07-21)
+
+GO. Pilot verified-pilot-001, cheap roster, podman sandbox, 10 rated legs:
+cost/leg $0.0029 (band: <$0.10), void rate 0% (band: <10%), forfeit rate 10%,
+refutations reproduced 3/3. Role split confirmed informative (gemini: weakest
+prover, top refuter). Refutation legs ~30x cheaper per rating bit than judged
+debate. Proceeding to M3.
