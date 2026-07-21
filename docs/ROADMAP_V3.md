@@ -88,3 +88,14 @@ baseline fails 97%, band >= 30%). Wired into the ladder rotation with
 proposer exclusion; it gets rated in the next verified round. Follow-up:
 re-propose the five bootstrap classes through the same gates and retire any
 that fail (queued for a coming night).
+
+## Standing policy: incident to guard (2026-07-21)
+
+Every incident closes with two artifacts, never one: the fix, and the
+mechanical check that would have caught it, wired into verify.sh / audit /
+publish gates. Applied so far: reasoning-model empty completions (token
+budgets + sim probes), provider outages (deferral + retry passes), division
+mixing (disjointness test), false championship (90% seal guard + audit),
+misread analysis fields (domain checks + canonical reporter), out-of-envelope
+refutations (retroactive envelope re-validation). This policy is self-
+initiated: guards are built when the incident is found, not when requested.

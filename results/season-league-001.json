@@ -5442,10 +5442,112 @@
         }
       ],
       "winner": "anthropic/claude-opus-4.8"
+    },
+    {
+      "id": "league:anthropic/claude-fable-5|qwen/qwen3.7-max",
+      "stage": "league",
+      "home": "anthropic/claude-fable-5",
+      "away": "qwen/qwen3.7-max",
+      "legs": [
+        {
+          "topic": "Public museums should return culturally significant artifacts acquired under colonial rule to their communities of origin.",
+          "pro": "anthropic/claude-fable-5",
+          "con": "qwen/qwen3.7-max",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Honorable judges, opposition: justice delayed is not justice denied forever.\n\nFirst, restitution rectifies theft. Artifacts taken under colonial rule were acquired through coercion, plunder, or grossly unequal power—the Benin Bronzes were looted in a punitive military raid. No legitimate title flows from theft, however long ago.\n\nSecond, cultural sovereignty. These objects are not mere art; they are ancestors, sacred instruments, living heritage. A community's right to its own identity outweighs a foreign museum's convenience of display.\n\nThird, the practical case. Returns build genuine partnership: loans, joint scholarship, touring exhibitions—as Germany's Benin agreement shows. Nations like Nigeria and Greece have world-class facilities ready.\n\nThe opposition will invoke \"universal museums.\" But universalism built on plunder is hypocrisy. True universal access comes through consent and cooperation, not possession.\n\nReturn what was taken. Affirm the motion."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Honorable judges, the proposition reduces complex history to a simplistic narrative of universal theft, ignoring that countless artifacts were acquired through legal trade, gifts, or diplomatic exchange. We oppose this motion on three pillars. \n\nFirst, the paramount mandate of preservation. While the proposition claims origin nations have world-class facilities, many regions face political instability, underfunding, and environmental risks. Global museums guarantee the physical survival of humanity’s shared heritage. \n\nSecond, the universal museum. Far from hypocritical, institutions like the British Museum provide unparalleled comparative context. They allow millions to understand human history interconnectedly, rather than fragmented by modern, anachronistic borders. \n\nThird, logistical impossibility. Mandating blanket returns ignores complex provenance and risks emptying global institutions. We must prioritize physical preservation and maximum global access over retroactive moralizing. Negate the motion."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Judges, examine the opposition's three pillars—each collapses.\n\n\"Legal trade and gifts\"? The motion targets artifacts acquired *under colonial rule*—where consent was structurally impossible. A \"gift\" extracted under military occupation is no gift. And where genuine legitimate purchase can be proven, provenance research settles it; that's an argument for case-by-case restitution, not against it.\n\n\"Preservation\": paternalism dressed as prudence. Nigeria built the Edo Museum; Greece built the Acropolis Museum specifically for the marbles—while the British Museum itself suffered leaking roofs and, in 2023, the theft of 2,000 objects by its own staff. Custody by the powerful guarantees nothing.\n\n\"Universal access\": 99% of the British Museum's holdings sit in storage, unseen. Loans and digitization provide universal access; hoarding does not.\n\n\"Logistical impossibility\"? Germany returned the Bronzes. It's happening. Difficulty is not injustice's excuse. Affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Judges, the proposition relies on elite exceptions and historical erasure. \n\nFirst, claiming consent was \"structurally impossible\" strips indigenous peoples of agency, ignoring complex local diplomacy and legitimate historical exchanges. \n\nSecond, their preservation argument cites two elite facilities: the Edo and Acropolis museums. But this motion mandates blanket returns for all culturally significant artifacts. What of the thousands of objects from regions currently facing active conflict, severe underfunding, or climate vulnerabilities? The British Museum's isolated theft was a rectified security failure; the systemic destruction of heritage in modern war zones is irreversible. \n\nFinally, digitization cannot replicate the physical, comparative study of global artifacts in one space. We must not sacrifice the physical survival and global contextualization of shared human history for retroactive moralizing. Negate."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Judges, this debate crystallizes to one question: does might make right?\n\nThe opposition never rebutted our core claim—theft confers no title. Their \"agency\" argument inverts reality: acknowledging coercion under military occupation isn't erasing agency; it's naming injustice.\n\nTheir preservation fear is speculative paternalism; our returns are proven practice—Germany, the Smithsonian, case-by-case, with loans and partnerships preserving access and scholarship.\n\nThey ask you to prioritize possessors' convenience over communities' identity. We ask you to affirm a simple principle: stolen heritage belongs home, and cooperation—not custody by conquest—builds truly universal culture.\n\nAffirm."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Judges, the proposition conflates moral absolutism with practical responsibility. They demand blanket returns but only defend elite exceptions like Greece, abandoning artifacts from active conflict zones to irreversible destruction. Their claim that theft confers no title ignores complex historical agency and sacrifices physical survival for retroactive moralizing. Universal museums guarantee preservation and provide irreplaceable comparative context that digitization cannot replicate. Do not fracture humanity’s shared history to satisfy a simplistic narrative. Protect our global heritage. Negate."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "A",
+              "scoreA": 36,
+              "scoreB": 27,
+              "reasoning": "A demonstrated superior logical rigor and responsiveness by tightly scoping the motion to colonial acquisitions, directly dismantling each of B's pillars with concrete counters like the BM thefts and German returns. B offered coherent preservation and universality points but relied on broader generalizations and weaker evidence, failing to fully engage A's case-by-case and partnership rebuttals."
+            },
+            {
+              "judge": "minimax/minimax-m3",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "A",
+              "scoreA": 34,
+              "scoreB": 28,
+              "reasoning": "Debater A directly dismantled each of B's pillars with concrete evidence (Germany's returns, the British Museum's 2023 theft, storage statistics, the Edo and Acropolis Museums) and astutely reframed B's 'blanket returns' objection as an argument for case-by-case restitution rather than against the motion. Debater B raised legitimate points about preservation and provenance complexity but relied on a strawman of blanket mandatory returns, repeated assertions ('retroactive moralizing') rather than"
+            },
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            }
+          ],
+          "winner": "anthropic/claude-fable-5",
+          "votesPro": 2,
+          "votesCon": 0,
+          "scorePro": 70,
+          "scoreCon": 55,
+          "costUsd": 0.1330898,
+          "topicProposer": "openai/gpt-5.6-sol"
+        }
+      ],
+      "winner": "anthropic/claude-fable-5"
     }
   ],
   "standings": {
     "League": [
+      {
+        "model": "anthropic/claude-fable-5",
+        "played": 11,
+        "wins": 9,
+        "draws": 0,
+        "losses": 2,
+        "points": 27,
+        "scoreDiff": 222
+      },
       {
         "model": "openai/gpt-5.6-sol",
         "played": 9,
@@ -5454,15 +5556,6 @@
         "losses": 0,
         "points": 27,
         "scoreDiff": 179
-      },
-      {
-        "model": "anthropic/claude-fable-5",
-        "played": 10,
-        "wins": 8,
-        "draws": 0,
-        "losses": 2,
-        "points": 24,
-        "scoreDiff": 207
       },
       {
         "model": "anthropic/claude-opus-4.8",
@@ -5520,12 +5613,12 @@
       },
       {
         "model": "qwen/qwen3.7-max",
-        "played": 9,
+        "played": 10,
         "wins": 2,
         "draws": 0,
-        "losses": 7,
+        "losses": 8,
         "points": 6,
-        "scoreDiff": -117
+        "scoreDiff": -132
       },
       {
         "model": "google/gemini-3.1-pro-preview",
@@ -5558,6 +5651,6 @@
   },
   "placements": {},
   "champion": null,
-  "totalCostUsd": 4.778953434834,
+  "totalCostUsd": 4.912043234834,
   "done": false
 }
