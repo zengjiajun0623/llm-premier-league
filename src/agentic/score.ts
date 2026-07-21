@@ -143,8 +143,16 @@ export function summarize(agentic: AgenticFile[], closed: ForecastFile[], nowMs:
     uplift,
     open,
     transcripts: transcriptRefs(agentic),
-    counts: { ratedQuestions: rated, underCoveredQuestions: under, resolvedQuestions: resolved, models: board.length },
+    counts: { ratedQuestions: rated, underCoveredQuestions: under, resolvedQuestions: resolved, models: fieldSize(agentic) },
   };
+}
+
+// Distinct models that have made any agentic forecast (the field size), so the
+// header is honest even before any question resolves.
+function fieldSize(files: AgenticFile[]): number {
+  const s = new Set<string>();
+  for (const f of files) for (const q of f.questions) for (const m of Object.keys(q.predictions)) s.add(m);
+  return s.size;
 }
 
 function countQuestions(files: AgenticFile[], pred: (q: AgenticQuestion) => boolean): number {
