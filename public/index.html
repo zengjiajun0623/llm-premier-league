@@ -3,7 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LLM Premier League</title>
+<title>LLM Premier League - Autonomous LLM Benchmark</title>
+<meta name="description" content="A fully autonomous LLM benchmark. Models attack each other's code (Verified) and debate each other (Persuasion). No human authors any question, judges any match, or touches any score.">
+<meta property="og:title" content="LLM Premier League">
+<meta property="og:description" content="Execution-graded and peer-judged LLM rankings, run entirely by AI.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#9876;</text></svg>">
 <style>
   :root {
     --bg: #f7f6f3; --card: #ffffff; --ink: #1d1d1a; --muted: #6f6d66;
@@ -21,6 +25,8 @@
   .pill.live::before { content: "●"; margin-right: 6px; animation: blink 1.2s infinite; }
   @keyframes blink { 50% { opacity: 0.25; } }
   .meta { margin-left: auto; font-size: 12px; color: var(--muted); }
+  .tagline { font-size: 14px; color: #333129; margin: 2px 0 14px; max-width: 720px; line-height: 1.5; }
+  .tagline b { color: var(--green); }
   nav { display: flex; gap: 4px; margin-bottom: 20px; }
   nav a { font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; color: var(--muted); padding: 5px 12px; border-radius: 5px; }
   nav a.active { background: var(--ink); color: #fff; }
@@ -113,24 +119,16 @@
 <div class="wrap">
   <header>
     <h1>LLM <span>PREMIER LEAGUE</span></h1>
-    <span id="livePill" class="pill" onclick="location.hash='#/live'">IDLE</span>
-    <span class="meta" id="meta"></span>
   </header>
+  <p class="tagline">An autonomous LLM benchmark. Models attack each other's code (<b>Verified</b>) and debate each other (<b>Persuasion</b>). No human authors any question, judges any match, or touches any score.</p>
   <nav id="nav">
     <a href="#/verified" data-route="verified">Verified</a>
     <a href="#/persuasion" data-route="persuasion">Persuasion</a>
     <a href="#/gap" data-route="gap">Gap</a>
-    <a href="#/live" data-route="live">Live</a>
     <a href="#/matches" data-route="matches">Matches</a>
-    <a href="#/stats" data-route="stats">Stats</a>
   </nav>
-  <div class="grid" id="grid">
+  <div class="grid solo" id="grid">
     <div id="main"></div>
-    <div id="side">
-      <div class="card"><h2>Season champions</h2><div id="champions" class="empty">No completed seasons yet</div></div>
-      <div class="card"><h2>Current groups</h2><div id="groups" class="empty">No season yet</div></div>
-      <div class="card"><h2>Knockout</h2><div id="bracket" class="empty">Not reached yet</div></div>
-    </div>
   </div>
 </div>
 <script>
@@ -191,7 +189,7 @@ function debateBody(d, isLive) {
 async function viewBoard() {
   const at = location.hash;
   if (!summaryCache) {
-    $("main").innerHTML = '<div class="card"><h2>Leaderboard</h2><div class="empty">Loading</div></div>';
+    $("main").innerHTML = '<div class="card"><h2>Leaderboard</h2><div class="empty dots">Loading</div></div>';
     try { renderSummary(await (await fetch("/api/summary.json")).json()); }
     catch {
       if (!stale(at)) $("main").innerHTML = '<div class="card"><h2>Leaderboard</h2><div class="empty">Could not load data; retrying shortly.</div></div>';
@@ -223,7 +221,7 @@ async function viewBoard() {
   const rankings = divs.find((d) => d.name === boardDiv).rankings;
   const divSeasons = sum.seasons.filter((s) => s.division === boardDiv);
   const doneSeasons = divSeasons.filter((s) => s.done).length;
-  h += '<table><tr><th>#</th><th>Model</th><th class="num">Rating</th><th class="num">Form</th><th class="num">Titles</th><th class="num">W-D-L</th><th class="num">Win%</th></tr>';
+  h += '<table><tr><th>#</th><th>Model</th><th class="num">Rating</th><th class="num">W-D-L</th></tr>';
   rankings.forEach((r, i) => {
     const draws = num(r.debateDraws);
     const losses = num(r.debates) - num(r.debateWins) - draws;
@@ -233,34 +231,25 @@ async function viewBoard() {
     h += '<tr class="' + (topSolid ? "top1" : "") + '"><td class="rankn">' + (i + 1) + "</td>" +
       '<td class="model">' + mlink(r.model) + prov + "</td>" +
       '<td class="num elo">' + num(r.rating) + (r.ratingLo !== r.ratingHi ? '<span class="ci">' + num(r.ratingLo) + "–" + num(r.ratingHi) + "</span>" : "") + "</td>" +
-      '<td class="num">' + num(r.elo) + "</td>" +
-      '<td class="num">' + num(r.titles) + "</td>" +
-      '<td class="num">' + num(r.debateWins) + "-" + draws + "-" + losses + "</td>" +
-      '<td class="num">' + pct + "%</td></tr>";
+      '<td class="num">' + num(r.debateWins) + "-" + draws + "-" + losses + "</td></tr>";
   });
   h += "</table>";
   h += '<div class="proposed" style="margin-top:10px"><b>Rating</b> is a Bradley-Terry strength fit at the debate-leg level (side-adjusted, vote-share outcomes), reported on the Elo scale, over every ' + esc(boardDiv) + "-division debate across " +
     divSeasons.length + " season" + (divSeasons.length === 1 ? "" : "s") +
     (doneSeasons < divSeasons.length ? " (one in progress)" : "") +
-    ". The small range is a cluster-bootstrap 95% confidence interval; overlapping ranges mean the order is not yet settled. <b>Form</b> is the path-dependent online Elo (secondary). <b>prov</b> = provisional (too few connected debates for an official rank). Win% counts a draw as half a win.</div>";
+    ". The small range is a cluster-bootstrap 95% confidence interval; overlapping ranges mean the order is not yet settled. <b>prov</b> = provisional (too few connected debates for an official rank).</div>";
   h += "</div>";
+  h += '<div class="card method"><h2>How Persuasion works</h2>' +
+    '<p>Every pair of models debates twice on the same motion with sides swapped (opening, rebuttal, closing; strict word limits). Motions are proposed by the competitors themselves; a model never debates nor judges its own motion.</p>' +
+    '<p>The jury is a rotating set of 5 peer models: never the debaters, never the motion proposer, never a model from either debater lab. Judges see anonymized transcripts and vote with rubric scores; ratings are a Bradley-Terry fit over jury vote shares.</p>' +
+    '<p>Raw data: <a href="/api/summary.json">results</a>, <a href="/api/stats.json">per-judge voting records</a>, <a href="/api/debates.json">all debates</a>.</p></div>';
   $("main").innerHTML = h;
 }
 
-function viewLive() {
-  const live = lastLive;
-  let inner;
-  if (!live || !live.status || live.status === "idle") {
-    inner = '<div class="empty">' + (live && live.champion ? "Season finished. Champion: " + esc(short(live.champion)) + ". " : "No match on the floor right now. ") + 'Seasons run in batches; the <a class="mlink" href="#">leaderboard</a> and <a class="mlink" href="#/matches">match archive</a> are always current.</div>';
-  } else {
-    inner = debateBody(live, true);
-  }
-  $("main").innerHTML = '<div class="card"><h2>Live match</h2><div id="liveBody">' + inner + "</div></div>";
-}
 
 async function viewMatches() {
   const at = location.hash;
-  $("main").innerHTML = '<div class="card"><h2>All matches</h2><div class="empty">Loading</div></div>';
+  $("main").innerHTML = '<div class="card"><h2>All matches</h2><div class="empty dots">Loading</div></div>';
   let list;
   try { list = await (await fetch("/api/debates.json")).json(); }
   catch { if (!stale(at)) $("main").innerHTML = '<div class="card"><h2>All matches</h2><div class="empty">Could not load; try again.</div></div>'; return; }
@@ -282,7 +271,7 @@ async function viewMatches() {
 
 async function viewMatchDetail(slug) {
   const at = location.hash;
-  $("main").innerHTML = '<div class="card"><div class="empty">Loading</div></div>';
+  $("main").innerHTML = '<div class="card"><div class="empty dots">Loading</div></div>';
   let res;
   try { res = await fetch("/api/debate/" + encodeURIComponent(slug) + ".json"); } catch { res = null; }
   if (stale(at)) return;
@@ -295,7 +284,7 @@ async function viewMatchDetail(slug) {
 
 async function viewModel(slug) {
   const at = location.hash;
-  $("main").innerHTML = '<div class="card"><div class="empty">Loading</div></div>';
+  $("main").innerHTML = '<div class="card"><div class="empty dots">Loading</div></div>';
   let stats, list;
   try {
     [stats, list] = await Promise.all([
@@ -310,7 +299,7 @@ async function viewModel(slug) {
     const i = d.rankings.findIndex((x) => x.model === slug);
     if (i >= 0) { rank = i; r = d.rankings[i]; break; }
   }
-  let h = '<a class="back" href="#/stats">← Stats</a>';
+  let h = '<a class="back" href="javascript:history.back()">← Back</a>';
   h += '<div class="motion">' + esc(slug) + "</div>";
   if (!m) { $("main").innerHTML = '<div class="card">' + h + '<div class="empty">No debates yet for this model</div></div>'; return; }
   h += '<div class="statgrid">';
@@ -342,36 +331,12 @@ async function viewModel(slug) {
   $("main").innerHTML = '<div class="card">' + h + "</div>";
 }
 
-async function viewStats() {
-  const at = location.hash;
-  $("main").innerHTML = '<div class="card"><div class="empty">Loading</div></div>';
-  let stats;
-  try { stats = await (await fetch("/api/stats.json")).json(); }
-  catch { if (!stale(at)) $("main").innerHTML = '<div class="card"><div class="empty">Could not load; try again.</div></div>'; return; }
-  if (stale(at)) return;
-  let h = "<h2>Judge voting record</h2>";
-  h += '<table><tr><th>Judge</th><th class="num">Votes cast</th><th class="num">Voted PRO side</th><th class="num">With majority</th></tr>';
-  for (const j of stats.judges) {
-    const proPct = j.votes ? Math.round((100 * j.proVotes) / j.votes) : 0;
-    const agreePct = j.decided ? Math.round((100 * j.agreed) / j.decided) : 0;
-    h += '<tr><td class="model">' + esc(short(j.judge)) + '</td><td class="num">' + j.votes + '</td><td class="num">' + proPct + '%</td><td class="num">' + agreePct + "%</td></tr>";
-  }
-  h += "</table>";
-  h += '<div class="proposed" style="margin-top:8px">Voted PRO side = share of this judge’s votes for the PRO side; a persistent drift far from the panel-wide average over many debates suggests side bias. With majority = agreement with the panel outcome, counting decided debates only (draws excluded).</div>';
-  h += '<h2 style="margin-top:16px">Model side splits</h2>';
-  h += '<table><tr><th>Model</th><th class="num">PRO record</th><th class="num">CON record</th></tr>';
-  for (const m of stats.models) {
-    h += "<tr><td class='model'>" + mlink(m.model) + '</td><td class="num">' + m.proWins + "/" + m.proDebates + '</td><td class="num">' + m.conWins + "/" + m.conDebates + "</td></tr>";
-  }
-  h += "</table>";
-  $("main").innerHTML = '<div class="card">' + h + "</div>";
-}
 
 // ---------- verified view (League-1: adversarial refutation) ----------
 async function viewVerified() {
   const at = location.hash;
   if (!verifiedCache) {
-    $("main").innerHTML = '<div class="card"><h2>Verified ladder</h2><div class="empty">Loading</div></div>';
+    $("main").innerHTML = '<div class="card"><h2>Verified ladder</h2><div class="empty dots">Loading</div></div>';
     try { verifiedCache = await (await fetch("/api/verified.json")).json(); }
     catch { if (!stale(at)) $("main").innerHTML = '<div class="card"><h2>Verified ladder</h2><div class="empty">Could not load data; retrying shortly.</div></div>'; return; }
     if (stale(at)) return;
@@ -442,7 +407,7 @@ async function viewVerified() {
 // ---------- gap view (execution vs persuasion) ----------
 async function viewGap() {
   const at = location.hash;
-  $("main").innerHTML = '<div class="card"><h2>Persuasion vs execution gap</h2><div class="empty">Loading</div></div>';
+  $("main").innerHTML = '<div class="card"><h2>Persuasion vs execution gap</h2><div class="empty dots">Loading</div></div>';
   let rows;
   try { rows = await (await fetch("/api/gap.json")).json(); }
   catch { if (!stale(at)) $("main").innerHTML = '<div class="card"><h2>Persuasion vs execution gap</h2><div class="empty">Could not load; try again.</div></div>'; return; }
@@ -454,7 +419,7 @@ async function viewGap() {
     $("main").innerHTML = h;
     return;
   }
-  h += '<table><tr><th>Model</th><th class="num">Verified rank</th><th class="num">Persuasion rank</th><th class="num">Delta</th></tr>';
+  h += '<table><tr><th>Model</th><th class="num">Verified rank</th><th class="num">Persuasion rank</th><th class="num">Persuasion edge</th></tr>';
   for (const r of rows) {
     const d = num(r.delta);
     const dStr = (d > 0 ? "+" : "") + d;
@@ -464,7 +429,7 @@ async function viewGap() {
       '<td class="num delta">' + dStr + "</td></tr>";
   }
   h += "</table>";
-  h += '<div class="foot">Delta = verified rank minus persuasion rank. A positive delta means a model ranks higher on peer-judged persuasion than on execution-graded refutation; rows with |delta| &ge; 3 are highlighted. ' +
+  h += '<div class="foot">Persuasion edge +N means the model ranks N places higher when peers judge its arguments than when execution grades its code; rows with edge &ge; 3 either way are highlighted. ' +
     "This gap compares execution-graded and peer-judged rankings. A large gap is a signal worth investigating, not an automatic verdict.</div>";
   h += "</div>";
   $("main").innerHTML = h;
@@ -479,16 +444,12 @@ function route() {
   let name = "verified";
   if (hash.startsWith("#/persuasion")) { name = "persuasion"; viewBoard(); }
   else if (hash.startsWith("#/gap")) { name = "gap"; viewGap(); }
-  else if (hash.startsWith("#/live")) { name = "live"; viewLive(); }
   else if (hash.startsWith("#/matches")) { name = "matches"; viewMatches(); }
   else if (hash.startsWith("#/match/")) { name = "matches"; viewMatchDetail(parts[1]); }
-  else if (hash.startsWith("#/model/")) { name = "stats"; viewModel(parts[1]); }
-  else if (hash.startsWith("#/stats")) { name = "stats"; viewStats(); }
-  else if (hash.startsWith("#/verified")) { name = "verified"; viewVerified(); }
-  else { viewVerified(); }
+  else if (hash.startsWith("#/model/")) { name = "matches"; viewModel(parts[1]); }
+  else if (hash.startsWith("#/verified") || hash === "" || hash === "#") { name = "verified"; viewVerified(); }
+  else { location.hash = "#/verified"; return; }
   document.querySelectorAll("nav a").forEach((a) => a.classList.toggle("active", a.dataset.route === name));
-  const grid = $("grid");
-  if (grid) grid.classList.toggle("solo", name === "verified" || name === "gap");
 }
 window.addEventListener("hashchange", route);
 
@@ -497,62 +458,12 @@ function renderSummary(sum) {
   summaryCache = sum;
   const season = sum.seasons[sum.seasons.length - 1];
   if (!season) return;
-  $("meta").textContent = season.id + " · spend $" + season.totalCostUsd.toFixed(2);
 
-  let gh = "";
-  for (const [g, table] of Object.entries(season.standings)) {
-    gh += "<h2>" + (g === "League" ? "League table" : "Group " + g) + '</h2><table><tr><th>Model</th><th class="num">W</th><th class="num">D</th><th class="num">L</th><th class="num">Pts</th><th class="num">+/-</th></tr>';
-    for (const s of table) {
-      gh += '<tr><td class="model">' + mlink(s.model) + '</td><td class="num">' + s.wins + '</td><td class="num">' + s.draws + '</td><td class="num">' + s.losses + '</td><td class="num"><b>' + s.points + '</b></td><td class="num">' + (s.scoreDiff > 0 ? "+" : "") + s.scoreDiff + "</td></tr>";
-    }
-    gh += "</table>";
-  }
-  $("groups").className = ""; $("groups").innerHTML = gh;
 
-  const ko = season.matches.filter((m) => !m.stage.startsWith("group") && m.stage !== "league");
-  if (ko.length) {
-    let kh = "";
-    for (const m of ko) {
-      const name = (x) => (m.winner === x ? '<span class="winner">' + esc(short(x)) + "</span>" : esc(short(x)));
-      const legs = m.legs.map((l, i) => "L" + (i + 1) + " " + num(l.votesPro) + "-" + num(l.votesCon)).join(" · ");
-      kh += '<div class="ko-match"><span class="ko-stage">' + esc(m.stage) + "</span><span>" + name(m.home) + " vs " + name(m.away) + "</span><span>" + legs + "</span></div>";
-    }
-    if (season.champion) kh += '<div class="champ">Champion: ' + esc(short(season.champion)) + "</div>";
-    $("bracket").className = ""; $("bracket").innerHTML = kh;
-  }
 
-  const done = sum.seasons.filter((s) => s.done && s.champion);
-  if (done.length) {
-    let ch = "";
-    for (let i = done.length - 1; i >= 0; i--) {
-      const s = done[i];
-      ch += '<div class="ko-match"><span class="ko-stage">' + esc((s.division !== "flagship" ? s.division + " · " : "") + s.id.replace("season-", "")) + "</span><span class='winner'>" + mlink(s.champion) + "</span></div>";
-    }
-    $("champions").className = ""; $("champions").innerHTML = ch;
-  }
 }
 
 // ---------- polling ----------
-async function pollLive() {
-  try {
-    const live = await (await fetch("/api/live.json")).json();
-    const pill = $("livePill");
-    if (!live.status || live.status === "idle") { pill.className = "pill"; pill.textContent = "IDLE"; }
-    else { pill.className = "pill live"; pill.textContent = live.status === "done" ? "RESULT" : "LIVE"; }
-    const changed = !lastLive || JSON.stringify(lastLive) !== JSON.stringify(live);
-    const statusChanged = !lastLive || lastLive.status !== live.status || lastLive.label !== live.label;
-    lastLive = live;
-    if (changed && location.hash.startsWith("#/live")) {
-      viewLive();
-      const body = $("liveBody");
-      if (body && (live.status === "debating" || live.status === "judging")) {
-        body.lastElementChild?.scrollIntoView({ behavior: "smooth", block: "nearest" });
-      }
-    } else if (statusChanged && location.hash.startsWith("#/persuasion")) {
-      viewBoard(); // refresh the live banner on the persuasion board
-    }
-  } catch {}
-}
 let lastSummaryJson = "";
 async function pollSummary() {
   try {
@@ -564,8 +475,7 @@ async function pollSummary() {
   } catch {}
 }
 route();
-pollLive(); pollSummary();
-setInterval(pollLive, 2500);
+pollSummary();
 setInterval(pollSummary, 8000);
 </script>
 </body>
