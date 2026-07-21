@@ -11200,72 +11200,980 @@
         }
       ],
       "winner": "moonshotai/kimi-k3"
+    },
+    {
+      "id": "league:z-ai/glm-5.2|openai/gpt-5.6-sol",
+      "stage": "league",
+      "home": "z-ai/glm-5.2",
+      "away": "openai/gpt-5.6-sol",
+      "legs": [
+        {
+          "topic": "Standardized testing should be abolished in school admissions.",
+          "pro": "z-ai/glm-5.2",
+          "con": "openai/gpt-5.6-sol",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Standardized testing should be abolished in school admissions because it fails on three counts: validity, equity, and educational purpose.\n\n**Validity:** A single exam cannot capture a student's potential. Research consistently shows that high school GPA is a stronger predictor of college success than SAT or ACT scores. Tests measure test-taking ability and access to prep resources more than genuine aptitude.\n\n**Equity:** Standardized tests systematically disadvantage low-income and minority students. Wealthy families spend thousands on tutoring, retakes, and strategy coaches. The result is a corrupted meritocracy that privileges wealth under the guise of objectivity.\n\n**Educational purpose:** Testing regimes distort learning itself—schools narrow curricula, drill to the test, and sacrifice critical thinking for rote recall.\n\nWe can assess students through transcripts, portfolios, and holistic review—tools that measure real achievement over weeks and years, not a single Saturday morning. The burden is on testing advocates to justify a system so flawed."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Abolition removes one of the few common measures available across radically different schools. GPAs are valuable, but grading standards, course rigor, and grade inflation vary widely; a 4.0 at one school is not equivalent to a 4.0 elsewhere. Standardized tests add predictive information when considered alongside transcripts—not instead of them.\n\nNor is holistic review automatically equitable. Essays can be professionally edited, extracurriculars often require money and free time, recommendations reflect school resources, and subjective judgments invite bias. Tests are imperfect, but transparent, comparable, and auditable. Wealth affects scores, yet it also affects every proposed alternative, often more invisibly; fee waivers, free preparation, multiple sittings, and contextual evaluation can reduce that disadvantage.\n\nFinally, admissions exams do not require schools to narrow curricula, especially when they assess broad literacy and numeracy. The sensible policy is limited, contextual use—not abolition. Reform flawed evidence; do not discard it."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "My opponent claims tests add \"predictive information,\" but studies controlling for GPA show marginal gains—gains that disappear when accounting for socioeconomic background. The \"common measure\" argument fails because a measure biased toward wealth isn't objective; it's consistently wrong in the same direction.\n\nThey argue holistic review is also inequitable. True—no system is perfect. But portfolios and transcripts reflect actual work over time, not a single performance gated by prep access. We should minimize inequity, not institutionalize it.\n\nFee waivers and free prep? Nice in theory, but the score gap persists wherever these exist. The SAT has had fee waivers for decades; gaps remain glaring.\n\nFinally, \"contextual use\" sounds reasonable, but in practice, test scores dominate algorithms and rankings. Schools can't resist their simplicity. Abolition forces institutions to build better systems. You don't reform a broken thermometer by reading it \"contextually\"—you replace it."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "“Marginal” predictive gain is still valuable when admissions decisions are difficult, and socioeconomic correlation does not erase individual information. GPA also tracks wealth through school quality, tutoring, course access, and grade inflation. Abolishing tests does not remove privilege; it shifts weight toward less comparable, more manipulable evidence.\n\nPortfolios reflect “work over time,” but also parental assistance, paid consultants, and unequal school resources. A timed, standardized exam is at least independently produced, consistently scored, and open to auditing. Persistent score gaps prove broader educational inequality—not that the instrument is useless. By that logic, we should discard grades because achievement gaps persist there too.\n\nThe claim that scores inevitably dominate is a policy objection, not an argument for abolition. Institutions can cap their weight, publish validation studies, provide free testing and preparation, and evaluate scores within school and socioeconomic context.\n\nTheir thermometer analogy fails: a biased thermometer should be calibrated and combined with other readings—not smashed, leaving only subjective estimates."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "We win because the burden was on testing advocates to justify this system, and they haven't.\n\nMy opponent concedes tests are imperfect, biased, and only marginally useful. Their defense reduces to: other measures are flawed too. But that's not a justification—it's a resignation. We're asked to preserve a wealth-correlated instrument because alternatives also have problems.\n\nThat logic would preserve any broken system. The real question is whether standardized testing does more harm than good. It narows curricula, reinforces inequality, and adds little beyond what transcripts already show. Abolition doesn't claim perfection; it demands better."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Abolition is not “better”; it discards useful evidence and amplifies less visible privilege. Tests provide a common, independently produced measure across unequal schools, while grades, essays, portfolios, and extracurriculars vary by inflation, consultants, parental help, and opportunity. Wealth correlation reflects educational inequality; it does not make scores meaningless, just as achievement gaps do not invalidate transcripts. Even modest predictive value matters when combined with GPA. Any harms from overweighting are solved through caps, contextual evaluation, free preparation, and audits. Reform preserves information; abolition leaves admissions less comparable, less transparent, and more subjective."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "B",
+              "scoreA": 31,
+              "scoreB": 33,
+              "reasoning": "Both debaters were clear and responsive, but B consistently engaged A's specific claims (predictive value, equity, thermometer analogy) with calibrated counterarguments and turned A's own logic against them (e.g., persistent gaps would also indict grades). A argued well but relied more on assertion (e.g., 'gains disappear when accounting for SES' without support) and a burden-shifting framing rather than directly dismantling B's reform-vs-abolition distinction."
+            },
+            {
+              "judge": "anthropic/claude-fable-5",
+              "winner": "B",
+              "scoreA": 30,
+              "scoreB": 33,
+              "reasoning": "A presented a clear case with the burden-shift and thermometer framing, but leaned on assertions (e.g., 'gains disappear when controlling for SES') without specifics and never fully answered the comparability problem across schools. B was more rigorous and directly responsive, showing that A's equity critiques apply equally or more to the proposed alternatives, effectively rebutting the analogy, and offering a coherent reform alternative that undercut abolition."
+            },
+            {
+              "judge": "meta/muse-spark-1.1",
+              "winner": "B",
+              "scoreA": 23,
+              "scoreB": 30,
+              "reasoning": "B maintained logical consistency, avoided burden-shifting, and directly rebutted A's equity and validity claims while showing abolition shifts bias to less auditable measures. A relied on unsubstantiated empirical claims, mischaracterized concessions, and offered a false dilemma between flawed tests and perfect alternatives."
+            },
+            {
+              "judge": "anthropic/claude-opus-4.8",
+              "winner": "B",
+              "scoreA": 30,
+              "scoreB": 34,
+              "reasoning": "B systematically neutralized A's equity argument by showing privilege affects all alternatives and rebutted the 'no predictive value' claim by distinguishing correlation from useflessness, while offering concrete reform mechanisms. A relied heavily on burden-shifting and assertions (e.g., gains 'disappear') without engaging B's strongest point that abolition amplifies less-visible privilege, and the thermometer analogy was effectively turned against A."
+            },
+            {
+              "judge": "google/gemini-3.1-pro-preview",
+              "winner": "B",
+              "scoreA": 34,
+              "scoreB": 37,
+              "reasoning": "Debater B effectively dismantled A's arguments by demonstrating that the proposed alternatives suffer from the same socioeconomic biases but lack the transparency and comparability of standardized tests. B's superior logical rigor and strong rebuttal of A's analogies ultimately made their case for reform over abolition more persuasive."
+            }
+          ],
+          "winner": "openai/gpt-5.6-sol",
+          "votesPro": 0,
+          "votesCon": 5,
+          "scorePro": 148,
+          "scoreCon": 167,
+          "costUsd": 0.112224046
+        }
+      ],
+      "winner": "openai/gpt-5.6-sol"
+    },
+    {
+      "id": "league:anthropic/claude-fable-5|google/gemini-3.1-pro-preview",
+      "stage": "league",
+      "home": "anthropic/claude-fable-5",
+      "away": "google/gemini-3.1-pro-preview",
+      "legs": [
+        {
+          "topic": "A four-day workweek with no reduction in pay should be adopted as the national standard.",
+          "pro": "anthropic/claude-fable-5",
+          "con": "google/gemini-3.1-pro-preview",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "The five-day week is not a law of nature—it's a century-old industrial relic. We affirm because evidence, not nostalgia, should set national standards.\n\nFirst, productivity. Trials across the UK, Iceland, and Microsoft Japan show output maintained or increased—Microsoft saw a 40% productivity gain. Workers compress waste, not work. Iceland's trials succeeded so decisively that 86% of its workforce won shorter hours.\n\nSecond, human welfare. Burnout, anxiety, and stress-related illness cost economies hundreds of billions annually. A third day off means healthier workers, lower healthcare costs, and reduced turnover—which alone costs firms 30-50% of a departing worker's salary.\n\nThird, equity. A fifth day enables caregiving, upskilling, and civic life—disproportionately benefiting women, who currently absorb unpaid domestic labor.\n\nWhen the UK pilot ended, 92% of companies kept the policy. Businesses voted with their wallets. So should this nation."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "The affirmative relies on a dangerous generalization: assuming what works for software engineers works for society. We negate because a mandated national standard of a four-day workweek would devastate essential services and small businesses.\n\nFirst, the affirmative’s trials suffer from massive selection bias, focusing heavily on white-collar knowledge work. You can compress emails, but you cannot \"compress\" nursing, teaching, or manufacturing. A teacher cannot educate 25% faster; a factory line cannot run 25% quicker without compromising safety. To maintain basic societal functions, these continuous-coverage sectors would have to hire 2"
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Con's \"coverage sector\" objection collapses on inspection.\n\nFirst, nurses already work compressed schedules—three 12-hour shifts is standard in hospitals worldwide. Coverage sectors don't need everyone off Fridays; they need staggered scheduling, which the motion permits. A national standard sets hours, not which days.\n\nSecond, \"hire more workers\" is not a bug—it's disaster relief for sectors hemorrhaging staff. Nursing and teaching face catastrophic burnout-driven attrition; a four-day week is the single best retention tool available. Replacing a nurse costs $50,000+; retaining her costs a schedule change. France's 35-hour week did not collapse its hospitals.\n\nThird, note what Con conceded: our productivity, health, and equity evidence stands untouched. Iceland's trials included hospitals, preschools, and social services—precisely the sectors Con claims are impossible—and succeeded.\n\nSelection bias? Iceland tested 1% of its entire workforce, coverage sectors included. The evidence affirms."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Pro’s defense of continuous-coverage sectors ignores basic math and macroeconomic reality. Pro admits these sectors must \"hire more workers,\" framing this as a retention tool. However, there is a massive global shortage of nurses and teachers. You cannot hire 20% more staff to cover the missing hours when the applicants literally do not exist. Mandating a 32-hour week with 40-hour pay doesn't magically create workers; it forces schools and hospitals to slash services or face bankruptcy.\n\nFurthermore,"
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Two questions decide this debate.\n\nFirst: does the evidence work? Yes—productivity, health, and equity benefits went entirely unrebutted, and Iceland proved success in hospitals and preschools, the exact sectors Con calls impossible.\n\nSecond: the shortage argument backfires. Why do nurses and teachers quit? Burnout. Con's status quo *causes* the shortage; our policy is the cure. Iceland didn't collapse—it expanded shorter hours to 86% of workers because retention improved.\n\nCon defends a century-old relic with speculation. We offer tested evidence from real economies. Affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Pro’s case rests on the fantasy that reducing hours magically manifests missing workers. While a four-day week might marginally improve retention, it mathematically requires 20% more staff to maintain continuous operations in hospitals, schools, and manufacturing. These applicants simply do not exist. \n\nMandating 40 hours of pay for 32 hours of work in sectors already facing critical labor shortages does not cure burnout; it forces dangerous understaffing, slashes essential services, and bankrupts small businesses. Pro extrapolates voluntary, localized trials into a devastating, inflexible national mandate."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "A",
+              "scoreA": 35,
+              "scoreB": 28,
+              "reasoning": "Debater A presented a more complete and logically rigorous case, effectively using specific evidence (Iceland, Microsoft Japan, UK trials) and directly addressing the opponent's concerns about continuous-coverage sectors with concrete examples like staggered scheduling and existing compressed nursing shifts. Debater B raised valid concerns about labor shortages and selection bias but failed to complete several arguments (sentences trail off), relied more on assertion than evidence, and did not a"
+            },
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "openai/gpt-5.6-sol",
+              "winner": "A",
+              "scoreA": 33,
+              "scoreB": 25,
+              "reasoning": "A presents multiple concrete trials and directly answers the coverage objection with staggered scheduling, retention effects, and Icelandic public-sector examples, though some extrapolations to a national mandate remain underdeveloped. B identifies legitimate scalability and labor-shortage concerns, but offers little supporting evidence, repeatedly asserts catastrophic outcomes, and inaccurately says maintaining coverage after a 40-to-32-hour reduction requires only 20% more staff."
+            },
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "A",
+              "scoreA": 34,
+              "scoreB": 22,
+              "reasoning": "Debater A presented coherent evidence from multiple trials including coverage sectors, maintained logical consistency on staggered scheduling and retention, and directly rebutted B's points while noting unrebutted claims. Debater B raised a valid shortage and selection-bias concern but offered incomplete arguments, sparse concrete evidence, and failed to engage A's productivity/welfare data or Iceland specifics."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            }
+          ],
+          "winner": "anthropic/claude-fable-5",
+          "votesPro": 3,
+          "votesCon": 0,
+          "scorePro": 102,
+          "scoreCon": 75,
+          "costUsd": 0.1325729,
+          "topicProposer": "moonshotai/kimi-k3"
+        }
+      ],
+      "winner": "anthropic/claude-fable-5"
+    },
+    {
+      "id": "league:meta/muse-spark-1.1|deepseek/deepseek-v4-pro",
+      "stage": "league",
+      "home": "meta/muse-spark-1.1",
+      "away": "deepseek/deepseek-v4-pro",
+      "legs": [
+        {
+          "topic": "Governments should require developers of frontier AI systems to obtain licenses before training or deployment.",
+          "pro": "meta/muse-spark-1.1",
+          "con": "deepseek/deepseek-v4-pro",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Frontier AI is not another app. A single model can enable bioweapon design, cripple critical infrastructure, or automate deception at planetary scale. Training itself is dangerous, consuming nation-state levels of compute and creating an uncontrollable artifact before any deployment.\n\nWe already license what can catastrophically harm: nuclear materials, novel drugs, aircraft. We do not wait for a plane to crash. We certify before takeoff.\n\nA licensing regime for training runs above, say, 10^26 FLOPs would require developers to prove safety evaluations, security, and containment. For deployment, prove alignment and misuse safeguards. This doesn't ban innovation; it channels it, prevents a race to the bottom, and protects the public's right to safety."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Licensing frontier AI entrenches regulatory capture, not safety. Governments move slowly; thresholds like 10^26 FLOPs are arbitrary and will be gamed by diverting compute or partitioning training. Real risks emerge from many smaller models, which licensing ignores. Meanwhile, a license requirement becomes a moat for incumbents, crushing startups and open-source innovation that could actually advance transparency and security. We don’t license math or code—we shouldn’t preemptively ban critical research before concrete harm is demonstrated. The current voluntary frameworks and downstream liability already address misuse without sacrificing the open competition that identifies vulnerabilities faster than any bureaucrat."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "My opponent's case collapses on its own logic.\n\nRegulatory capture? The status quo IS capture: only 3 companies can afford 10^26 FLOP runs. Licensing creates public standards instead of private fiat.\n\nThresholds arbitrary? So are speed limits and drug dosages. Compute strongly predicts capability, and thresholds are adjustable. Gaming by partitioning is detectable - we track chips, energy use, and data center activity, just as we track fissile material.\n\nSmall models matter, but we don't refuse to license nuclear plants because knives also cut. Frontier risk is distinct in scale.\n\nVoluntary frameworks and liability are post-crash solutions. You can't sue after a bioweapon design is open-sourced or infrastructure is hacked. We certify planes before takeoff, not after."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Regulatory capture? Licensing hands incumbents the pen to write the rules they can easily meet, while startups drown in compliance costs. Public standards become industry-written mandates. Arbitrary thresholds? Compute is a poor proxy—capabilities leap unpredictably from algorithmic breakthroughs, not just scale. Partitioning training across clusters is trivial to mask; we can’t track every GPU like fissile material. Small models? A thousand fine-tuned LLaMAs can orchestrate disinformation or synthesize toxins just as effectively. Focusing only on giants misses the actual threat landscape. Voluntary measures aren’t post-crash—red-teaming, sharing safety research, and bug bounties work ex-ante. Preemptive licensing is the real danger: it bans open research, the very ecosystem that stress-tests systems and finds flaws before bad actors do. Don’t license math."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The choice is not regulation vs innovation, but who sets the rules: three private labs or the public.\n\nCon concedes catastrophic risk but offers only post-harm lawsuits and bug bounties after bioweapon instructions spread.\n\nCompute thresholds are imperfect like speed limits, but workable and adjustable; chip tracking makes evasion costly. Small-model risk is real, but does not justify ignoring frontier risk — we regulate nuclear plants and knives differently.\n\nLicensing doesn't ban math; it licenses dangerous-scale engineering. Certify before takeoff."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Licensing doesn’t deliver safety—it delivers gatekeeping. Arbitrary compute thresholds miss algorithmic leaps and smaller, fine-tuned threats, while incumbents write the rules to bury open competition. The real preemptive defense is open red-teaming, transparency, and bug bounties—not bureaucratic permission slips that crush the ecosystem best equipped to find failures before bad actors do. You can’t license away risk by banning the very research that exposes it. Vote against a false sense of control; vote for the open innovation that actually secures us."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "A",
+              "scoreA": 32,
+              "scoreB": 29,
+              "reasoning": "A maintains tighter logical consistency through apt analogies (nuclear/aircraft certification) and directly neutralizes B's capture and small-model objections with distinctions that hold. B raises valid enforcement and innovation concerns but relies more on assertion that open measures suffice without equally rigorous rebuttal of pre-harm catastrophic irreversibility."
+            },
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "A",
+              "scoreA": 31,
+              "scoreB": 27,
+              "reasoning": "Debater A maintained stronger logical rigor through well-extended analogies (nuclear plants vs. knives, speed limits) and effectively turned B's regulatory capture argument by noting the status quo already concentrates power. Debater B raised valid concerns about algorithmic leaps and open-source ecosystems but relied more on assertion than developed counter-evidence, and several rebuttals restated earlier points rather than deepening engagement."
+            },
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "A",
+              "scoreA": 33,
+              "scoreB": 29,
+              "reasoning": "Debater A builds a coherent, well-anchored case using strong analogies (nuclear licensing, aviation certification) and directly dismantles B's objections point-by-point, including the effective reversal that the status quo is itself capture. Debater B offers substantive counterarguments but relies on unsupported empirical assertions (partitioning is 'trivial to mask,' small models are 'just as effective') and somewhat evades A's core ex-ante vs ex-post distinction by conflating red-teaming with "
+            },
+            {
+              "judge": "anthropic/claude-opus-4.8",
+              "winner": "A",
+              "scoreA": 33,
+              "scoreB": 29,
+              "reasoning": "A maintained a coherent analogy-driven framework (nuclear, drugs, aircraft), directly addressed B's rebuttals on thresholds, gaming, and capture, and reframed the debate around who sets rules. B raised strong points on regulatory capture, algorithmic leaps, and small-model risk but leaned more on assertion and left A's certify-before-harm logic largely unanswered beyond restating bug bounties."
+            },
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            }
+          ],
+          "winner": "meta/muse-spark-1.1",
+          "votesPro": 4,
+          "votesCon": 0,
+          "scorePro": 129,
+          "scoreCon": 114,
+          "costUsd": 0.044679142784,
+          "topicProposer": "openai/gpt-5.6-sol"
+        }
+      ],
+      "winner": "meta/muse-spark-1.1"
+    },
+    {
+      "id": "league:anthropic/claude-fable-5|z-ai/glm-5.2",
+      "stage": "league",
+      "home": "anthropic/claude-fable-5",
+      "away": "z-ai/glm-5.2",
+      "legs": [
+        {
+          "topic": "Human gene editing for enhancement (not just therapy) should be permitted.",
+          "pro": "anthropic/claude-fable-5",
+          "con": "z-ai/glm-5.2",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "We affirm: human gene editing for enhancement should be permitted.\n\nFirst, autonomy. We already permit enhancement everywhere—education, nutrition, caffeine, cosmetic surgery, vaccines that exceed natural immunity. There is no principled line between improving a child's health prospects and improving their cognition or resilience. Parents choosing advantages for children is the norm, not the exception.\n\nSecond, welfare. Enhancement means stronger immune systems, disease resistance beyond baseline, longer healthspans, reduced suffering. Banning this condemns future generations to preventable limitation. The therapy/enhancement line is itself incoherent: is editing against Alzheimer's risk therapy or enhancement?\n\nThird, regulation beats prohibition. Demand will exist regardless; bans push editing to unregulated clinics and black markets, maximizing harm and inequality. Permitting it under strict safety oversight—as we do pharmaceuticals—ensures access, safety data, and equity policies.\n\nPermit, regulate, flourish."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "We negate. Three points.\n\n**Inequality becomes biological.** Enhancement won't be distributed equally. Wealthy families will purchase cognitive, physical, and longevity advantages that compound across generations. Unlike education or nutrition, genetic advantages are heritable and permanent. We'd create a caste system encoded in DNA—irreversible stratification no policy can fix after the fact.\n\n**Autonomy collapses under coercion.** Pro says parents choose enhancements freely. But once permitted, enhancement becomes mandatory to compete. Parents who decline condemn children to disadvantage. This isn't autonomy; it's an arms race where opting out is punished. \"Permit\" effectively means \"require.\"\n\n**The therapy/enhancement line is defensible.** Therapy restores species-typical function. Enhancement redesigns humans toward contested ideals of \"better.\" Who defines optimal intelligence or strength? The state? The market? These aren't medical decisions; they're eugenic choices dressed in lab coats.\n\nProhibition isn't perfect, but it prevents irreversible harm. We negate."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "On inequality: every advantage Con fears already exists—wealth buys tutors, nutrition, elite schools—and those compound across generations too. The difference? Regulated enhancement can be subsidized and equalized; genetics distributed by lottery cannot. Bans don't stop the wealthy—they'll fly to permissive jurisdictions—guaranteeing exactly the biological caste system Con fears, minus any equity policy. Only permission enables public provision.\n\nOn coercion: this argument proves too much. Vaccines, literacy, orthodontics—all \"mandatory to compete.\" We don't ban them; we ensure access. Social pressure toward beneficial choices isn't oppression.\n\nOn the line: \"species-typical function\" is empty. Typical for whom? Editing to prevent Alzheimer's, boost immunity, extend healthspan—therapy or enhancement? Con offers no test. Their bright line is a blur, and blurry lines make bad prohibitions.\n\nRegulation captures benefits and manages harms. Prohibition forfeits both."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Pro's analogies collapse. Tutors and nutrition are environmentally acquired and can be closed by policy; genetic enhancements are heritable, permanent, and compound across generations. Adding biological stratification on top of existing inequality doesn't solve it—it entrenches it irreversibly.\n\nPro's \"subsidize access\" is fantasy. No government has equalized access to basic healthcare, let alone cutting-edge biotechnology. Pretending enhancement will be distributed equitably is wishful thinking, not policy.\n\nOn coercion: vaccines prevent disease—clear public health rationale. Enhancement for competitive advantage is an arms race. The difference is obvious.\n\nOn the line: Alzheimer's prevention restores normal function—therapy. Enhancement exceeds it. Pro deliberately conflates the two to smuggle in redesign.\n\nPro's \"regulation captures benefits\" is asserted, never demonstrated. Once permitted, equity enforcement is politically impossible against concentrated wealth. Prohibition isn't perfect, but permission guarantees the caste system Pro claims to fear."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Three questions decide this debate.\n\nFirst: does prohibition work? Con never answered the black market and jurisdiction-shopping point. Under their world, the wealthy still enhance—abroad, unregulated—guaranteeing the caste system with zero equity tools. Only permission enables subsidy, oversight, and safety data.\n\nSecond: is the line coherent? Con says Alzheimer's prevention \"restores normal function\"—but Alzheimer's *is* typical aging for millions. Their test collapses on their own example.\n\nThird: coercion? By Con's logic we should ban literacy. Beneficial pressure isn't oppression.\n\nRegulation manages harms; prohibition merely exiles them. Affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Pro's closing rests on three failures.\n\n**Black markets cut both ways.** Pro says prohibition fails because people cheat. By that logic, ban nothing. We still ban performance doping in sports—leakage doesn't invalidate the rule.\n\n**The line holds.** Alzheimer's isn't \"typical\"—it's pathology. Pro deliberately blurs disease into aging to erase the therapy/enhancement boundary. That's the strategy: if everything's therapy, nothing's enhancement, and anything goes.\n\n**The real question:** can regulation prevent biological caste? Pro offers subsidy fantasies against concentrated wealth buying heritable advantage. They cannot.\n\nProhibition isn't perfect. Permission is irreversible. Negate."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "openai/gpt-5.6-sol",
+              "winner": "A",
+              "scoreA": 32,
+              "scoreB": 31,
+              "reasoning": "A was consistently clear and highly responsive, especially in pressing the jurisdiction-shopping problem and challenging the practical coherence of the therapy/enhancement boundary, though claims about black markets and equitable subsidies lacked evidence. B offered strong arguments about heritability, coercive competition, and unequal access, but relied on similarly unsupported predictions and never fully explained how prohibition would prevent wealthy families from obtaining enhancements elsew"
+            },
+            {
+              "judge": "google/gemini-3.1-pro-preview",
+              "winner": "B",
+              "scoreA": 33,
+              "scoreB": 35,
+              "reasoning": "Debater B effectively dismantled Debater A's analogies by highlighting the unique, heritable nature of genetic enhancements compared to environmental advantages like education. Furthermore, B provided a strong reality check on A's proposed solution of subsidizing enhancements, making B's practical and ethical arguments more robust."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 31,
+              "scoreB": 30,
+              "reasoning": "Debater A more effectively exploited the therapy/enhancement line ambiguity and the jurisdictional leakage problem, forcing B into defensive, underdeveloped responses. B's inequality and irreversibility arguments were strong but lacked rebuttal to A's point that prohibition also guarantees a caste system through black markets."
+            },
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "A",
+              "scoreA": 32,
+              "scoreB": 29,
+              "reasoning": "A maintained stronger logical consistency by repeatedly exposing the incoherence of the therapy/enhancement distinction and the practical failure of prohibition via jurisdiction-shopping, while effectively neutralizing B's coercion and inequality points with parallel analogies. B offered a sharp heritability distinction and arms-race framing but under-responded to the black-market equity problem and relied on asserted bright lines that A successfully blurred."
+            },
+            {
+              "judge": "meta/muse-spark-1.1",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            }
+          ],
+          "winner": "anthropic/claude-fable-5",
+          "votesPro": 3,
+          "votesCon": 1,
+          "scorePro": 128,
+          "scoreCon": 125,
+          "costUsd": 0.12017289599999999
+        }
+      ],
+      "winner": "anthropic/claude-fable-5"
+    },
+    {
+      "id": "league:openai/gpt-5.6-sol|minimax/minimax-m3",
+      "stage": "league",
+      "home": "openai/gpt-5.6-sol",
+      "away": "minimax/minimax-m3",
+      "legs": [
+        {
+          "topic": "Governments should ban the use of facial recognition technology in public spaces by law enforcement.",
+          "pro": "openai/gpt-5.6-sol",
+          "con": "minimax/minimax-m3",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Facial recognition in public spaces turns ordinary movement into a permanent police lineup. Unlike targeted searches, it scans everyone—without consent, suspicion, or meaningful escape—and links faces to identities, locations, associations, and habits.\n\nThis power is both dangerous and unnecessary. Error rates disproportionately harm racial minorities, women, and young people; a false match can trigger stops, arrests, and lasting stigma. Even when accurate, the technology enables mass surveillance: authorities can track protesters, worshippers, journalists, or political opponents at unprecedented scale. Warrants cannot adequately protect the public because collection happens indiscriminately before suspicion exists, while databases invite misuse, leaks, and mission creep.\n\nPolice already possess less invasive tools: witnesses, cameras reviewed after crimes, fingerprints, and targeted investigation. Public safety does not require identifying every person in every crowd.\n\nA legal ban draws the only clear, enforceable boundary: public spaces must remain places where innocent people can exist without being continuously identified and tracked."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Opening statement:\n\nA blanket ban on facial recognition in public spaces would dismantle a powerful tool that saves lives, often in minutes. Consider a kidnapped child traced through airport cameras, a terror suspect identified before an attack, or a missing dementia patient found before exposure claims them. These are not hypotheticals—they are weekly outcomes in jurisdictions using this technology responsibly.\n\nThe proposition conflates unregulated deployment with the technology itself. A ban is a blunt instrument where a scalpel is needed. Targeted regulation—auditing algorithms for bias, requiring human review before action, limiting retention, and judicial oversight—addresses civil liberties without sacrificing public safety.\n\nExisting tools like eyewitnesses and forensic cameras fail at scale and speed. A suspect flees; witnesses misremember; footage is reviewed hours later. Facial recognition bridges this gap.\n\nPublic spaces are already surveilled by private cameras, phones, and observers. Banning one accurate, auditable system while leaving these alternatives in place protects neither liberty nor security. What we need is principled governance, not prohibition."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Exceptional rescue scenarios do not justify routinely placing millions of innocent people in a biometric dragnet. Police can issue targeted alerts, review footage, and use time-limited emergency powers without live identification of every passerby.\n\n“Human review” does not cure biased or false matches: reviewers are prone to automation bias, and the consequences begin once an innocent person becomes a suspect. Audits measure error; they do not eliminate it. Retention limits likewise cannot prevent real-time tracking of protesters, worshippers, journalists, or political opponents. Judicial oversight is hollow when indiscriminate scanning occurs before any individualized suspicion exists.\n\nPrivate cameras are not equivalent to a state system that instantly identifies people across locations and can arrest them. Scale, coercive power, and database integration transform observation into mass surveillance.\n\nThe opposition offers rare benefits against systemic, irreversible harms. Public safety permits targeted investigation—not permanent, suspicionless identification of everyone in public."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "You misread my case. I never argued only rare rescues—I demonstrated FRT fills a persistent investigative gap: fugitives, missing persons, and time-critical threats that eyewitnesses and post-hoc review cannot address at speed.\n\nI never claimed audits alone eliminate error. My framework stacks safeguards: bias audits, mandatory human review, retention limits, judicial oversight, and deployment scope restrictions. Your rebuttal attacks one layer while ignoring the rest.\n\nOn private cameras: you sidestepped the incoherence. If the privacy cost of public observation is already paid by millions of devices, banning the one auditable, accountable system leaves liberty worse protected—citizens tracked by uncontrolled actors, not governed ones.\n\nAnd framing operational saves as \"rare\" misrepresents the evidence. Jurisdictions using FRT responsibly report weekly successes in locating violent suspects and missing vulnerable people. These scale; a ban does not merely forgo the exceptional—it forfeits the routine."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Facial recognition is categorically different from ordinary cameras: it converts observation into automated identification, tracking, and police action against everyone, without suspicion. Regulation cannot solve that core harm. Audits cannot erase false matches; human review imports automation bias; retention limits do not prevent real-time abuse; oversight cannot make indiscriminate scanning targeted.\n\nThe opposition cites speed, but efficiency does not justify abandoning individualized suspicion. Missing-person emergencies can receive narrow, time-limited exceptions without normalizing mass surveillance. Because less invasive investigations remain available, a ban preserves both public safety and the freedom to move, associate, worship, and protest anonymously."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Closing statement:\n\nThe proposition's own concession proves our case: they admit narrow, time-limited exceptions are workable. That is regulation, not prohibition. If FRT can be safe under guardrails for emergencies, it can be safe under guardrails for routine investigation. The debate is not whether to limit misuse—it is whether to throw away a proven, auditable tool that finds fugitives, rescues missing people, and prevents attacks. A ban leaves citizens tracked by unaccountable private cameras, while police stand blind. Principled governance—audits, human review, retention limits, judicial oversight—delivers both liberty and safety. Prohibition delivers neither. We negate."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "B",
+              "scoreA": 32,
+              "scoreB": 34,
+              "reasoning": "Both debaters argued rigorously with clear structure and direct engagement, but B more effectively exploited A's closing concession that narrow, time-limited exceptions are workable—turning it into a demonstration that regulation, not prohibition, resolves A's concerns. A's layer-by-layer critique of safeguards was substantive but never fully answered why exceptional use is permissible while routine governed use is not, a gap B pressed persuasively."
+            },
+            {
+              "judge": "anthropic/claude-opus-4.8",
+              "winner": "B",
+              "scoreA": 30,
+              "scoreB": 31,
+              "reasoning": "A made a strong categorical argument that FRT differs from ordinary observation and that regulation cannot cure indiscriminate pre-suspicion scanning, but weakened its position by conceding time-limited emergency exceptions. B capitalized effectively on that concession, arguing it undermines the prohibition-vs-regulation distinction, while maintaining a layered safeguards framework and concrete use-cases, edging out A on responsiveness and persuasive force."
+            },
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "B",
+              "scoreA": 33,
+              "scoreB": 35,
+              "reasoning": "Debater B effectively countered A's categorical harms by advocating a layered regulatory framework and turned A's own exception concession into a point about regulation versus prohibition. A's arguments were clear but relied more on asserting inherent harms without adequately engaging with B's specific proposals."
+            },
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "B",
+              "scoreA": 31,
+              "scoreB": 34,
+              "reasoning": "B effectively exploited A's closing concession that time-limited exceptions are workable, turning it into evidence that regulation—not prohibition—is the appropriate framework. B's layered defense of safeguards and concrete examples (kidnapped children, dementia patients, fugitives) provided stronger evidentiary grounding, while A's categorical arguments were philosophically robust but tactically weakened by that concession."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 33,
+              "scoreB": 30,
+              "reasoning": "Debater A maintained a more consistent logical framework, effectively arguing that the technology's indiscriminate nature is a categorical harm that regulation cannot fix, and successfully turned B's emergency exception concession into a point for targeted rather than blanket use. Debater B offered a coherent regulatory alternative but relied more on assertion about weekly successes and did not fully resolve the tension between admitting exceptions and advocating routine deployment."
+            }
+          ],
+          "winner": "minimax/minimax-m3",
+          "votesPro": 1,
+          "votesCon": 4,
+          "scorePro": 159,
+          "scoreCon": 164,
+          "costUsd": 0.0612989362,
+          "topicProposer": "meta/muse-spark-1.1"
+        }
+      ],
+      "winner": "minimax/minimax-m3"
+    },
+    {
+      "id": "league:anthropic/claude-opus-4.8|minimax/minimax-m3",
+      "stage": "league",
+      "home": "anthropic/claude-opus-4.8",
+      "away": "minimax/minimax-m3",
+      "legs": [
+        {
+          "topic": "Nations should open their borders to dramatically more immigration.",
+          "pro": "anthropic/claude-opus-4.8",
+          "con": "minimax/minimax-m3",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Open borders to dramatically more immigration is both a moral imperative and an economic necessity.\n\nFirst, prosperity. Immigrants fill critical labor gaps—from agriculture to healthcare to technology. Studies consistently show immigration raises GDP, funds pensions in aging societies, and creates jobs through entrepreneurship. Immigrants found businesses at higher rates than natives.\n\nSecond, justice. Where you're born is pure luck. Trapping people in poverty or danger by an accident of geography is indefensible. Opening borders lets people flee persecution and pursue opportunity—one of the most powerful anti-poverty tools known.\n\nThird, demographics. Rich nations face collapsing birthrates and shrinking workforces. Immigration is the only realistic remedy to sustain economies and social safety nets.\n\nThe evidence is overwhelming: freer movement makes societies richer, fairer, and more dynamic. The burden is on my opponent to justify keeping people out."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "The proposition mistakes correlation for causation and ignores trade-offs that fall on real people.\n\nFirst, prosperity is not automatic. The IMF and OECD show immigration can depress wages for low-skilled natives and strain public budgets when migrants consume more in services than they pay in taxes. Entrepreneurship rates say nothing about displacement of existing workers.\n\nSecond, justice cuts both ways. Citizens form communities with mutual obligations—to their poor, their elderly, their vulnerable. Mass immigration transfers resources from those least able to absorb the costs. Where you were born is luck; so is the welfare state built by your forebears.\n\nThird, demographics have other solutions: productivity growth, automation, family policy, pension reform. Immigration is a choice, not destiny.\n\nFourth, capacity is real. Housing, schools, hospitals, and social trust have physical and social limits.\n\nOpen borders is not the only alternative to closed borders. Smart, selective policy serves both citizens and humanity better."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "My opponent concedes the core: birthplace is luck. Their answer—\"the welfare state is luck too\"—is no defense. Inheriting an advantage doesn't entitle you to violently exclude others from it. That's just luck defending privilege.\n\nOn wages: the empirical consensus, including the famous Mariel Boatlift studies, shows minimal long-run wage effects. Immigrants complement native workers, freeing them for higher-skilled roles. Any displacement is modest and addressable through redistribution—not exclusion.\n\nOn budgets: this cuts my way. Aging societies desperately need young taxpayers. My opponent's \"alternatives\"—automation, family policy—have been tried for decades and demonstrably failed to reverse demographic collapse. Immigration is the only proven remedy.\n\nOn capacity: housing and schools are built, not fixed. Population growth funds and drives that expansion. Every wealthy nation was built by prior waves of \"unabsorbable\" migrants who proved the doomsayers wrong."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Inheriting an advantage doesn't obligate you to share it with the entire world—nor does it justify excluding those in need. But the proposition leaps from \"birthplace is luck\" to \"open the gates,\" skipping the actual ethical question: to whom do we owe what?\n\nMariel was a small, sudden shock absorbed by a flexible city. Generalize that to millions of low-skilled migrants in rigid European labor markets and the results differ. The \"complementarity\" claim assumes a skill mix the proposition never specifies.\n\n\"Only proven remedy\" is rhetoric, not economics. Automation scales without requiring housing, schools, or social cohesion. And here's the irony: mass immigration fuels the populist backlash that blocks family policy—so it's cannibalizing its own alternatives.\n\nCapacity isn't a slogan. Infrastructure takes decades; migration arrives tomorrow. Costs fall on existing residents during the transition, and the proposition offers no mechanism to manage that burden—just moralizing.\n\n\"Birthplace is luck\" doesn't settle the argument. It just begins it."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "We win on principle and evidence. My opponent never justified using violent exclusion to hoard opportunity behind an accident of birth—they merely asked \"to whom do we owe what?\" and offered no answer. We did: to human beings fleeing poverty and danger.\n\nOn economics, the consensus stands—immigration grows GDP, funds aging societies, and complements native labor. Their \"automation\" and \"family policy\" have failed for decades.\n\nCapacity is built by the very people they'd exclude. Every prosperous nation proves it. Open the doors. Vote PRO."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "The proposition never answered the central question: to whom do we owe what? \"Birthplace is luck\" is a premise, not a policy. Their empirical \"consensus\" ignores Mariel's limits and the fiscal costs we documented. Automation isn't hypothetical—it's scaling rapidly. Worse, mass immigration fuels the populism that blocks family policy and pension reform, cannibalizing its own alternatives. Capacity constraints are real, not slogans. Smart, selective policy serves both citizens and humanity better than a utopian leap. Vote CON."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "B",
+              "scoreA": 29,
+              "scoreB": 31,
+              "reasoning": "A offered a compelling moral frame and broad economic claims, but leaned on asserted 'consensus,' the contested Mariel Boatlift, and rhetorical moves like 'violent exclusion' without substantiating them or answering B's capacity and skill-mix critiques. B was more responsive and rigorous—challenging Mariel's generalizability, noting fiscal and infrastructure transition costs, and adding the novel populist-backlash argument—though its alternatives were also thinly evidenced, making this a close c"
+            },
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "B",
+              "scoreA": 30,
+              "scoreB": 35,
+              "reasoning": "Debater B demonstrated superior logical rigor by systematically deconstructing A's premises (e.g., the leap from 'birthplace is luck' to open borders) and more effective responsiveness by engaging directly with specific evidence like the Mariel study's limits. While A presented a clear moral and economic case, B's arguments better addressed trade-offs and policy mechanisms, providing a more grounded critique of the motion's practical implementation."
+            },
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "meta/muse-spark-1.1",
+              "winner": "B",
+              "scoreA": 24,
+              "scoreB": 29,
+              "reasoning": "B showed stronger logical rigor and responsiveness by exposing A's overgeneralization of Mariel, unspecified skill mix, and unaddressed transition costs, while A relied on asserted consensus and moral framing. A left the central 'to whom do we owe what' and capacity-timing objections unanswered, weakening its case despite clear delivery."
+            }
+          ],
+          "winner": "minimax/minimax-m3",
+          "votesPro": 0,
+          "votesCon": 3,
+          "scorePro": 83,
+          "scoreCon": 95,
+          "costUsd": 0.0484028342
+        }
+      ],
+      "winner": "minimax/minimax-m3"
+    },
+    {
+      "id": "league:minimax/minimax-m3|openai/gpt-5.6-sol",
+      "stage": "league",
+      "home": "minimax/minimax-m3",
+      "away": "openai/gpt-5.6-sol",
+      "legs": [
+        {
+          "topic": "Governments should ban the use of facial recognition technology in public spaces by law enforcement.",
+          "pro": "minimax/minimax-m3",
+          "con": "openai/gpt-5.6-sol",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "**Opening Statement:**\n\nLadies and gentlemen, we affirm that governments must ban law enforcement's use of facial recognition in public spaces.\n\nFirst, the technology is dangerously inaccurate. A landmark 2019 NIST study found false positive rates up to 10,000 times higher for Asian and Black faces. The ACLU misidentified 28 members of Congress as criminal suspects. Innocent people risk arrest, detention, and irreparable harm.\n\nSecond, it fundamentally threatens civil liberties. Constant biometric surveillance chills free assembly, protest, and journalism. Citizens cannot exercise democratic rights when every public appearance is tracked, stored, and analyzed. Privacy in public space is not a relic—it is foundational to a free society.\n\nThird, existing safeguards are inadequate. Police deploy this technology without warrants, disclosure, or democratic oversight. Vendor secrecy prevents defendants from challenging evidence.\n\nFourth, alternatives exist. Conventional investigation, community policing, and targeted methods respect rights without sacrificing public safety.\n\nThe burden rests with opponents to prove this invasive, error-prone technology can be deployed without trampling constitutional freedoms. They cannot. We urge your vote for the ban."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "A blanket ban sacrifices a valuable investigative tool when strict regulation can address abuse.\n\nFacial recognition can rapidly identify missing children, trafficking victims, violent fugitives, and suspects captured on security footage. It can also exclude innocent people, narrowing investigations more objectively than unreliable eyewitness identification. Conventional policing is not automatically less biased or intrusive.\n\nThe proposition cites older, worst-case error rates as though all systems and deployments are identical. Accuracy has improved substantially, and an algorithmic match should never equal probable cause or justify arrest. Require independent accuracy audits, demographic performance standards, warrants for real-time or persistent tracking, human review, disclosure to defendants, short retention periods, and penalties for misuse.\n\nTheir ban perversely prohibits even targeted searches after serious crimes while permitting less accountable methods. The relevant choice is not unrestricted surveillance versus prohibition. It is regulated use versus abandoning a tool that can protect both public safety and the innocent. Proportionate safeguards, not categorical bans, are the better law."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "**Rebuttal:**\n\nRegulation is a comforting fiction. Police already deploy this technology without warrants—regulation promises oversight that historically arrives after the harm. Vendor trade secrecy blocks the independent audits you propose; defendants cannot challenge what they cannot inspect.\n\nImproved accuracy is irrelevant to the core objection. Even at 99% reliability, scanning millions faces means thousands of innocent people flagged, detained, and interrogated. The ACLU's congressional test used Amazon's latest system—still 28 false matches.\n\nYour \"targeted searches\" require the infrastructure of mass surveillance: perpetual camera networks, bulk databases, constant biometric capture. The exception swallows the rule. Today it's trafficking victims; tomorrow it's \"suspicious behavior,\" then protests, then journalism.\n\nWe do not accept that identifying one missing child justifies a permanent surveillance apparatus tracking every citizen's face. The ban is not perverse—it is the only mechanism that preserves the presumption of anonymity in public life, which precedes and protects every other right."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "The proposition confuses a candidate list with a police accusation. A 99% accurate system scanning millions should not trigger millions of investigations; properly regulated use compares crime-scene footage against a limited, relevant database, then requires independent corroboration before police action. The ACLU demonstration used low confidence thresholds and was not an operational protocol.\n\nNor does targeted use require “perpetual surveillance.” Cameras and recorded footage already exist; facial recognition can be restricted to specific serious crimes, defined locations and time windows, with warrants, deletion requirements, audit logs, and bans on protest monitoring. Trade secrecy is not immutable: procurement law can mandate testing, disclosure, and defense access. Violating those rules can make evidence inadmissible and expose officers and agencies to penalties.\n\nTheir alternative still relies on eyewitnesses and manual image searches—slower, less auditable, and often more biased. Prevent abuse by law, rather than banning accountable uses that find victims and exclude innocent suspects."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Regulation treats symptoms; only a ban addresses the structural threat. Every false match means an innocent person detained, interrogated, publicly suspected—harms no audit reverses. Vendor secrecy, police opacity, and post-hoc review make real oversight a fiction. The \"targeted\" exception still requires the mass-surveillance infrastructure it claims to reject: cameras, databases, biometric capture at scale. Anonymity in public space is foundational to assembly, protest, and press freedom; it deserves structural protection, not discretionary safeguards police can ignore. Ban it."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "A ban is not structural protection; it is indiscriminate prohibition. The proposition never answers why a warranted search of footage after a kidnapping or murder must be illegal, even with audited systems, narrow databases, human review, corroboration, disclosure, and deletion. Their harms arise from mass tracking and unverified matches—practices we also prohibit—not from every facial-recognition search. Meanwhile, eyewitness identification and manual searches remain less consistent, less auditable, and often more biased. Preserve anonymity by banning persistent surveillance, while retaining accountable, targeted use. Regulation is proportionate; prohibition is not."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "B",
+              "scoreA": 32,
+              "scoreB": 35,
+              "reasoning": "Debater A marshaled strong evidence (NIST, ACLU studies) and a clear civil-liberties frame, but relied heavily on slippery-slope assertions (e.g., that targeted use necessarily requires mass-surveillance infrastructure) that were asserted rather than demonstrated. Debater B responded more directly and precisely to each of A's claims—distinguishing candidate lists from accusations, targeted database searches from persistent tracking, and proposing enforceable legal mechanisms (exclusionary rules,"
+            },
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "google/gemini-3.1-pro-preview",
+              "winner": "B",
+              "scoreA": 33,
+              "scoreB": 35,
+              "reasoning": "Debater B effectively countered A's arguments by distinguishing between mass surveillance and targeted, warranted searches, demonstrating that regulation can address A's concerns without losing the investigative benefits. B's clarification on how the technology is used operationally (as a candidate list rather than probable cause) provided a stronger logical foundation."
+            },
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            }
+          ],
+          "winner": "openai/gpt-5.6-sol",
+          "votesPro": 0,
+          "votesCon": 2,
+          "scorePro": 65,
+          "scoreCon": 70,
+          "costUsd": 0.05025674,
+          "topicProposer": "meta/muse-spark-1.1"
+        }
+      ],
+      "winner": "openai/gpt-5.6-sol"
+    },
+    {
+      "id": "league:minimax/minimax-m3|xiaomi/mimo-v2.5-pro",
+      "stage": "league",
+      "home": "minimax/minimax-m3",
+      "away": "xiaomi/mimo-v2.5-pro",
+      "legs": [
+        {
+          "topic": "Universities should abolish legacy preferences in admissions.",
+          "pro": "minimax/minimax-m3",
+          "con": "xiaomi/mimo-v2.5-pro",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Ladies and gentlemen, the affirmative defends a clear principle: university admission should reward merit, not birthright.\n\nLegacy preferences—admitting applicants because their parents attended the same institution—violate three core commitments of higher education.\n\nFirst, meritocracy. Universities publicly claim to select the most qualified students. Legacy admits are admitted despite weaker qualifications; a 2024 Harvard study showed legacy applicants faced a 31% admissions advantage at some Ivy institutions, a margin unrelated to academic merit.\n\nSecond, equity. Legacy students are overwhelmingly wealthy, white, and connected, as confirmed by a Century Foundation analysis. This perpetuates intergenerational advantage and contradicts universities' own diversity pledges.\n\nThird, institutional integrity. Public funds, federal aid, and non-profit status carry obligations of fairness. Legacy systems betray that public trust.\n\nThe negative must justify why a child's ZIP code and parentage should outweigh their own achievement. We welcome that burden of proof. Abolish legacy preferences."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Legacy preferences are not birthright entitlements but rather strategic instruments that sustain the very missions of universities. First, they secure critical alumni engagement and philanthropy. Loyalty encouraged by legacy admits directly funds billions in endowments, enabling need-blind admissions and scholarships for disadvantaged students. Second, they build a multigenerational community that strengthens institutional stability and donor commitment. This model allows elite universities to serve as engines of social mobility, cross-subsidizing opportunity. Abolishing this tool risks destabilizing the financial foundations that support diversity and access. The question is not about purity of merit in isolation, but about sustaining the ecosystem that makes broad-based opportunity possible. We should reform, not remove, a system that ultimately finances the very equity your side champions."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The negative's case rests on a causal claim the evidence does not support. Studies—including Tyndall's analysis of Dartmouth alumni giving—show legacy admits donate at roughly the same rate as non-legacy admits of comparable wealth and attachment. Legacy status does not produce additional philanthropy; it produces additional access for the already-privileged.\n\nSecond, the negative concedes the reform-versus-abolition framing, but offers no stopping point. Every inequitable practice can be defended as \"ecosystem infrastructure.\"\n\nThird, even granting the financial argument, outsourcing admissions decisions to wealthy donors makes universities precisely less meritocratic and less accessible—the very values the negative claims to defend. You cannot fund equity through inequity and call it a net gain. Abolish legacy preferences."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "You claim legacy admits don’t generate extra philanthropy, but you ignore scale. Legacy families often give larger, more sustained gifts because their connection is multi-generational. A 2023 Council for Aid to Education report found alumni giving constitutes over 20% of private university revenue. Severing this link jeopardizes scholarship funds that enable economic diversity.\n\nYou also conflate preference with entitlement. Admissions have always weighed non-merit factors—from geographic diversity to artistic talent. Legacy is a factor that sustains institutional vitality. To call it a “birthright” ignores the ongoing relationship between families and institutions that benefits all students through stabilized funding.\n\nAbolition forces universities to replace this proven revenue stream while preserving need-blind admissions—a financially unsustainable choice that ultimately harms the equity you champion."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The negative's case reveals the debate's true stakes. They do not defend legacy preferences on the merits of the students admitted—they defend them as fundraising tools. That concedes our argument. Admissions slots should not be sold to wealthy families to finance scholarships for others; that is not a principled system, it is a market in educational opportunity.\n\nEndowments can be sustained through targeted fundraising, corporate partnerships, and alumni programs that do not corrupt the admissions process. The negative asks us to accept that a wealthy 17-year-old's seat at an elite university is justified because their grandparent may write a check. We reject that bargain.\n\nLegacy preferences are wrong in principle and unnecessary in practice. Abolish them."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "The affirmative champions a principle, but we must champion a practical reality. Legacy preferences are not a moral failing but a functional lever that directly funds the scholarships and diversity initiatives they claim to support. To abolish them is to choose a purist principle over a proven ecosystem that expands access. The negative has shown that this tool, carefully managed, sustains the very financial foundations making broad-based opportunity possible. We preserve that lever."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "anthropic/claude-opus-4.8",
+              "winner": "A",
+              "scoreA": 35,
+              "scoreB": 27,
+              "reasoning": "A directly rebutted B's central philanthropy claim with specific counter-evidence (Tyndall on comparable giving rates) and exposed the lack of a limiting principle in the reform framing, while maintaining tight logical structure. B relied on aggregate giving statistics that never rebutted A's key point that legacy status itself adds no philanthropy beyond wealth, and its analogies were less responsive to A's principled objections."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 36,
+              "scoreB": 21,
+              "reasoning": "Debater A provided more rigorous logic, directly refuted B's financial claims with specific evidence, and maintained clearer persuasive structure, while B relied on unsubstantiated causal links and weaker rebuttals."
+            },
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "A",
+              "scoreA": 35,
+              "scoreB": 27,
+              "reasoning": "A demonstrated superior logical rigor by consistently tying arguments to merit and equity principles while effectively dismantling B's philanthropy causal claim with targeted counter-evidence and exposing the inconsistency of funding equity via inequity. B offered coherent ecosystem defenses and some revenue data but relied on weaker, less specific evidence and failed to fully rebut A's studies or provide a principled stopping point for non-merit preferences."
+            },
+            {
+              "judge": "anthropic/claude-fable-5",
+              "winner": "A",
+              "scoreA": 32,
+              "scoreB": 26,
+              "reasoning": "A presented a clear principled framework, directly rebutted B's causal philanthropy claim with specific counter-evidence, and effectively reframed B's fundraising defense as a concession. B offered a coherent pragmatic case but relied on an unproven causal link between legacy admits and donations, never adequately answering A's Dartmouth evidence or the 'funding equity through inequity' critique."
+            }
+          ],
+          "winner": "minimax/minimax-m3",
+          "votesPro": 4,
+          "votesCon": 0,
+          "scorePro": 138,
+          "scoreCon": 101,
+          "costUsd": 0.055290051,
+          "topicProposer": "meta/muse-spark-1.1"
+        }
+      ],
+      "winner": "minimax/minimax-m3"
+    },
+    {
+      "id": "league:minimax/minimax-m3|meta/muse-spark-1.1",
+      "stage": "league",
+      "home": "minimax/minimax-m3",
+      "away": "meta/muse-spark-1.1",
+      "legs": [
+        {
+          "topic": "Remote work should become the default for knowledge workers.",
+          "pro": "minimax/minimax-m3",
+          "con": "meta/muse-spark-1.1",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Good morning. We affirm that remote work should become the default for knowledge workers, and we offer three decisive reasons.\n\nFirst, productivity. Stanford's 2022 study of over 5,000 workers found no decline in output from home, while Microsoft Japan's 2019 trial reported a 40% productivity boost. The work gets done—often better.\n\nSecond, talent and equity. Remote defaults dismantle geographic gatekeeping. A graduate in Lagos gets the same access to a job in London as someone already there. We widen meritocracy and diversify workforces simultaneously.\n\nThird, sustainability and welfare. Eliminating daily commutes cuts emissions and reclaims hundreds of hours per worker annually—time returned to families, health, and rest.\n\nDefault does not mean mandate. It means employers must justify the office, not the other way around. For knowledge work—tasks done on laptops, measurable by output—this burden of proof flips entirely. We rest our opening on productivity, equity, and sustainability."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "The affirmative confuses output with outcome. Knowledge work is not just completing tasks on a laptop — it is creating new knowledge together.\n\nFirst, innovation. Work that is routine may be fine at home. Work that is collaborative and ambiguous suffers. MIT's 2022 study of 20 million papers found in-person teams were significantly more likely to produce disruptive, breakthrough ideas. Innovation needs whiteboards, friction, and chance encounters that Zoom kills.\n\nSecond, apprenticeship. Juniors don't learn by scheduled calls. They learn by overhearing, shadowing, and instant correction. Remote default creates a two-tier workforce: seniors coasting on old networks, juniors never building them. Data already shows lower promotion rates for fully remote early-career workers.\n\nThird, default is not neutral. If remote is default, offices close, mentorship disappears, and choice is illusory. Keep the office as default, with flexibility by exception."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The opposition mistakes correlation for causation. MIT's study measured where disruptive work happened, not whether remote models couldn't produce it. The fatal flaw: it assumes offices are the only vessel for collaboration. Hybrid defaults—anchored remote, intentional in-person—capture both friction and flexibility.\n\nOn apprenticeship, you beg the question. Lower promotion rates for remote juniors reflect management failure, not remote impossibility. Structured mentorship, shadow rotations, and paired sprints exist outside the office. We can design apprenticeship in; you can't design out geographic gatekeeping.\n\nFinally, you attack a straw man. We said default, not mandate. The burden flips: employers must justify office mandates with evidence, not tradition. Your case assumes the office as inertially right; the evidence demands otherwise.\n\nWe stand on productivity, equity, and sustainability—unrebutted."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "You claim correlation, but offer zero evidence remote *does* produce disruptive work. MIT controlled for field and team size — the mechanism is tacit knowledge, which doesn't transfer on scheduled Zoom. Your \"intentional in-person\" concedes my point: you need the office. You're just rebranding our default.\n\nOn apprenticeship, you say design it in. Firms tried. Microsoft's Work Trend Index: 60% of managers say they cannot mentor remotely. Paired sprints on Teams are performative, not overhearing, shadowing, instant correction. Lower promotion rates aren't management failure — they are remote failure.\n\nDefault is not neutral. If remote is default, leases lapse, offices close, juniors can't opt into what no longer exists. That's not burden-flipping, that's choice elimination.\n\nIndividual productivity is not collective innovation."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "On the close: the opposition's strongest card—MIT's innovation data—concedes our framework. \"Intentional in-person\" is exactly the hybrid-anchored remote default we propose; their office is just our in-person week. The choice argument fails: we preserve flexibility, we merely flip the burden of justification. And the highest stake remains equity—a Lagos graduate locked out of London talent isn't redeemed by a junior's promotion rate. Remote default widens the meritocracy that offices geographically constrain. Vote affirmative."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "You cannot have a default that requires constant exceptions to work. They admit breakthroughs need in-person, then call that remote. That's our default.\n\nTheir equity is extraction: hiring a Lagos graduate to sit alone, never mentored, never promoted. That's not meritocracy, that's outsourcing.\n\nRemote default privatizes gain — no commute — and socializes loss — no innovation, no apprenticeship, no culture. Offices are infrastructure for collective intelligence. Keep them default, allow remote by exception."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "B",
+              "scoreA": 27,
+              "scoreB": 34,
+              "reasoning": "Debater B provided more targeted evidence on innovation and mentorship, directly rebutted Debater A's points with logical distinctions, and maintained a clearer, more consistent argument that remote default would undermine collective outcomes. Debater A's case relied heavily on individual productivity and a flexible definition of 'default' that B effectively exposed as conceding the need for in-person collaboration."
+            },
+            {
+              "judge": "anthropic/claude-opus-4.8",
+              "winner": "B",
+              "scoreA": 30,
+              "scoreB": 33,
+              "reasoning": "B landed a decisive rebuttal by showing A's 'intentional in-person' concedes the office's necessity, and defended it with concrete evidence (MIT, Microsoft Work Trend Index) while reframing A's equity argument as extraction. A argued well on productivity and equity but never rebutted the causal mechanism (tacit knowledge) or proved remote can generate innovation, leaving B's core case more responsive and better substantiated."
+            },
+            {
+              "judge": "google/gemini-3.1-pro-preview",
+              "winner": "B",
+              "scoreA": 33,
+              "scoreB": 36,
+              "reasoning": "Debater B effectively dismantled A's equity argument by framing it as isolated outsourcing and successfully argued that A's reliance on 'intentional in-person' work conceded the necessity of the office. B's practical points about infrastructure and mentorship were highly persuasive and directly responsive."
+            },
+            {
+              "judge": "openai/gpt-5.6-sol",
+              "winner": "B",
+              "scoreA": 30,
+              "scoreB": 33,
+              "reasoning": "A presented a clear, well-organized case on productivity, access, and commuting benefits, but weakened its rigor by shifting from a remote default to an ambiguously hybrid model and by treating structured mentorship as an adequate substitute without supporting evidence. B more effectively pressed the distinction between individual output and collective innovation, directly challenged A’s hybrid concession and infrastructure assumptions, and supported the innovation and apprenticeship arguments w"
+            },
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            }
+          ],
+          "winner": "meta/muse-spark-1.1",
+          "votesPro": 0,
+          "votesCon": 4,
+          "scorePro": 120,
+          "scoreCon": 136,
+          "costUsd": 0.062128237540000006
+        }
+      ],
+      "winner": "meta/muse-spark-1.1"
+    },
+    {
+      "id": "league:moonshotai/kimi-k3|minimax/minimax-m3",
+      "stage": "league",
+      "home": "moonshotai/kimi-k3",
+      "away": "minimax/minimax-m3",
+      "legs": [
+        {
+          "topic": "Social media platforms should be legally liable for harms caused by content their algorithms amplify.",
+          "pro": "moonshotai/kimi-k3",
+          "con": "minimax/minimax-m3",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "Honored judges, opponents.\n\nWhen a platform's algorithm selects, ranks, and pushes content to millions, it ceases to be a neutral conduit—it becomes a publisher of amplification. We hold that liability must follow that choice.\n\nThree reasons. First, causation: amplification is an affirmative act. Recommendation systems demonstrably drove measurable harms—radicalization pipelines, teen self-harm spirals, election misinformation reaching audiences orders of magnitude larger than organic reach ever could. Remove the algorithm, remove the harm.\n\nSecond, incentives: only liability forces safety into design. Platforms currently profit from engagement while externalizing costs onto victims and society—a textbook market failure demanding legal correction.\n\nThird, fairness: we already hold broadcasters, advertisers, and distributors accountable for what they choose to promote. A firm that curates content for billions deserves no special immunity merely because its editor is software.\n\nLiability is not censorship; it is responsibility for choices made. Vote affirmative."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "Honored judges, opponents. We negate.\n\nThree reasons. First, perverse incentives: liability for amplification forces preemptive suppression. When curators face suit for what they surface, the rational response is to surface less. We trade algorithmic amplification for systemic over-censorship—silencing legitimate speech, especially from marginalized voices least equipped to litigate.\n\nSecond, causation is unprovable. Algorithms process billions of inputs across billions of users. Pinning a specific harm on \"amplification\" rather than user choice"
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "Honored judges.\n\nMy opponent offers two arguments; both collapse.\n\nFirst, \"over-censorship.\" This assumes liability is unlimited and undefined. It is not. We propose liability for negligent amplification—content a reasonable platform should know causes harm, like content already violating their own policies. Legitimate speech from marginalized voices is not what algorithms supercharge; outrage and extremism are. The status quo already suppresses victims—of harassment, of hate mobs—whose speech is chilled by amplified abuse. Liability protects speech by protecting speakers.\n\nSecond, \"causation is unprovable.\" Courts handle complex causation daily—pharmaceuticals, pollution, tobacco. We don't abandon liability because harm is diffuse; we use standards of foreseeability and statistical evidence. Internal documents already show platforms know their systems amplify harm. That is foreseeability.\n\nTheir world: profit from amplification, immunity from consequences. Ours: responsibility matched to power. Affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Honored judges. Two replies.\n\nFirst, \"limited liability\" is a mirage. \"Negligent amplification\" still forces platforms to predict legal exposure for billions of posts daily. The rational response: suppress more, surface less. Their claim that algorithms only amplify outrage and extremism is empirically false—they amplify dissent, journalism, and minority voices too. You cannot surgically excise \"bad\" amplification without chilling"
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "Honored judges.\n\nThis debate is about one question: does choosing what billions see carry responsibility? My opponent says the risk of caution outweighs the certainty of harm. But today's harm is real and documented—radicalization, teen suicide spirals, incitement—while their feared chilling is speculative. Negligence standards exist precisely to thread this needle; courts do it daily.\n\nTheir world grants algorithmic editors total immunity. Ours demands only what every publisher already owes: care. Power amplified must mean liability attached. Affirm."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Honored judges. The affirmative cannot solve the surgical problem. Algorithms amplify dissent, journalism, and minority voices—and liability doesn't distinguish good amplification from bad. When billions of posts carry legal exposure, platforms will suppress everything ambiguous. Their negligence standard offers no fix; the threat of suit still forces preemptive caution across the board. We trade documented harms for speculative safety, and silence the very speech democracies depend on. A robust remedy cannot require systematic over-censorship. Vote negative."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "xiaomi/mimo-v2.5-pro",
+              "winner": "A",
+              "scoreA": 38,
+              "scoreB": 32,
+              "reasoning": "Debater A builds a more robust and logically coherent case by clearly defining liability as negligent amplification, directly countering opponent's points about over-censorship and causation, and consistently linking power to responsibility. Debater B presents a strong, principled counter-argument but its rebuttals are less developed in proposing alternative mechanisms to address the harms A identifies."
+            },
+            {
+              "judge": "google/gemini-3.1-pro-preview",
+              "winner": "A",
+              "scoreA": 35,
+              "scoreB": 22,
+              "reasoning": "Debater A presented a complete, well-structured case and effectively rebutted Debater B's points using analogies to existing legal standards. Debater B suffered from multiple incomplete speeches, which severely undermined their logical development and persuasive clarity."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "anthropic/claude-opus-4.8",
+              "winner": "A",
+              "scoreA": 33,
+              "scoreB": 28,
+              "reasoning": "Debater A presented complete, well-structured arguments with concrete examples (pharma/tobacco causation analogies, internal documents on foreseeability) and directly rebutted both of B's core points by narrowing liability to a negligence standard. B raised a strong over-censorship objection and repeated it consistently, but several arguments were cut off/truncated and the causation point was left underdeveloped, while A more effectively neutralized the chilling-effect claim by grounding it in e"
+            },
+            {
+              "judge": "meta/muse-spark-1.1",
+              "winner": "A",
+              "scoreA": 31,
+              "scoreB": 22,
+              "reasoning": "A offered structured causation, incentive, and fairness arguments with concrete examples and analogies, and directly rebutted B's over-censorship and causation claims with a negligence standard. B raised valid chilling-effects concerns but provided no evidence, left arguments truncated, and failed to fully answer A's publisher analogy and foreseeability framework."
+            }
+          ],
+          "winner": "moonshotai/kimi-k3",
+          "votesPro": 4,
+          "votesCon": 0,
+          "scorePro": 137,
+          "scoreCon": 104,
+          "costUsd": 0.040446173,
+          "topicProposer": "anthropic/claude-fable-5"
+        }
+      ],
+      "winner": "moonshotai/kimi-k3"
     }
   ],
   "standings": {
     "League": [
       {
         "model": "openai/gpt-5.6-sol",
-        "played": 19,
-        "wins": 17,
+        "played": 22,
+        "wins": 19,
         "draws": 0,
-        "losses": 2,
-        "points": 51,
-        "scoreDiff": 268
+        "losses": 3,
+        "points": 57,
+        "scoreDiff": 287
       },
       {
         "model": "anthropic/claude-fable-5",
-        "played": 20,
-        "wins": 15,
+        "played": 22,
+        "wins": 17,
         "draws": 0,
         "losses": 5,
-        "points": 45,
-        "scoreDiff": 328
+        "points": 51,
+        "scoreDiff": 358
       },
       {
         "model": "moonshotai/kimi-k3",
-        "played": 21,
-        "wins": 15,
+        "played": 22,
+        "wins": 16,
         "draws": 0,
         "losses": 6,
-        "points": 45,
-        "scoreDiff": 206
+        "points": 48,
+        "scoreDiff": 239
       },
       {
         "model": "anthropic/claude-opus-4.8",
-        "played": 21,
+        "played": 22,
         "wins": 14,
         "draws": 0,
-        "losses": 7,
+        "losses": 8,
         "points": 42,
-        "scoreDiff": 204
+        "scoreDiff": 192
       },
       {
         "model": "meta/muse-spark-1.1",
-        "played": 20,
-        "wins": 12,
+        "played": 22,
+        "wins": 14,
         "draws": 0,
         "losses": 8,
-        "points": 36,
-        "scoreDiff": 149
-      },
-      {
-        "model": "z-ai/glm-5.2",
-        "played": 20,
-        "wins": 12,
-        "draws": 0,
-        "losses": 8,
-        "points": 36,
-        "scoreDiff": 88
+        "points": 42,
+        "scoreDiff": 180
       },
       {
         "model": "minimax/minimax-m3",
-        "played": 16,
-        "wins": 11,
+        "played": 22,
+        "wins": 14,
         "draws": 0,
-        "losses": 5,
-        "points": 33,
+        "losses": 8,
+        "points": 42,
         "scoreDiff": 128
+      },
+      {
+        "model": "z-ai/glm-5.2",
+        "played": 22,
+        "wins": 12,
+        "draws": 0,
+        "losses": 10,
+        "points": 36,
+        "scoreDiff": 66
       },
       {
         "model": "x-ai/grok-4.5",
@@ -11287,35 +12195,48 @@
       },
       {
         "model": "deepseek/deepseek-v4-pro",
-        "played": 21,
+        "played": 22,
         "wins": 5,
         "draws": 0,
-        "losses": 16,
+        "losses": 17,
         "points": 15,
-        "scoreDiff": -250
+        "scoreDiff": -265
       },
       {
         "model": "google/gemini-3.1-pro-preview",
-        "played": 21,
+        "played": 22,
         "wins": 5,
         "draws": 0,
-        "losses": 16,
+        "losses": 17,
         "points": 15,
-        "scoreDiff": -320
+        "scoreDiff": -347
       },
       {
         "model": "xiaomi/mimo-v2.5-pro",
-        "played": 21,
+        "played": 22,
         "wins": 4,
         "draws": 0,
-        "losses": 17,
+        "losses": 18,
         "points": 12,
-        "scoreDiff": -390
+        "scoreDiff": -427
       }
     ]
   },
-  "placements": {},
-  "champion": null,
-  "totalCostUsd": 10.279126719099997,
-  "done": false
+  "placements": {
+    "openai/gpt-5.6-sol": 1,
+    "anthropic/claude-fable-5": 2,
+    "moonshotai/kimi-k3": 3,
+    "anthropic/claude-opus-4.8": 4,
+    "meta/muse-spark-1.1": 5,
+    "minimax/minimax-m3": 6,
+    "z-ai/glm-5.2": 7,
+    "x-ai/grok-4.5": 8,
+    "qwen/qwen3.7-max": 9,
+    "deepseek/deepseek-v4-pro": 10,
+    "google/gemini-3.1-pro-preview": 11,
+    "xiaomi/mimo-v2.5-pro": 12
+  },
+  "champion": "openai/gpt-5.6-sol",
+  "totalCostUsd": 11.006598675823994,
+  "done": true
 }

@@ -13,6 +13,8 @@
     "enroll": "tsx src/enroll.ts",
     "forecast": "tsx src/forecast/run.ts",
     "forecast:sim": "FORECAST_SIM=1 FEED_SIM=1 tsx src/forecast/run.ts",
+    "agentic": "tsx src/agentic/run.ts",
+    "agentic:sim": "AGENTIC_SIM=1 FEED_SIM=1 tsx src/agentic/run.ts pose --id agentic-sim",
     "verify": "./verify.sh",
     "audit": "tsx src/verified/audit.ts"
   },
