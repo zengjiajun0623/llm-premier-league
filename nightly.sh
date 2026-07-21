@@ -21,6 +21,8 @@ capped() {
   ./verify.sh || { echo "VERIFY RED - night aborted"; exit 1; }
   # Sandbox runtime up (best-effort; verified legs void->defer if down).
   /opt/podman/bin/podman machine start nicenode-machine >/dev/null 2>&1 || true
+  # M8: poll the catalog and enroll newly listed frontier models (best-effort).
+  npx tsx src/enroll.ts >> "$LOG" 2>&1 || true
   # League 1: one fresh verified round per night (~66 legs, ~$0.8), wall-capped.
   SANDBOX=podman capped 7200 npx tsx src/verified/run.ts --id "verified-nightly-$(date +%Y%m%d)" --rounds 1
   # League 3 (persuasion): capped debate chunk (~45 min wall clock, resume-safe).

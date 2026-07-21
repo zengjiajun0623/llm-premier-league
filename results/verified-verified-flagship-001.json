@@ -1,7 +1,7 @@
 {
   "id": "verified-flagship-001",
   "createdAt": "2026-07-21T05:38:47.941Z",
-  "updatedAt": "2026-07-21T06:30:08.251Z",
+  "updatedAt": "2026-07-21T06:34:29.591Z",
   "rounds": 12,
   "roster": [
     "anthropic/claude-fable-5",
@@ -1075,6 +1075,227 @@
       "costUsd": 0.0015953412,
       "transcript": {
         "proverSrc": "def solve(s):\n    result = []\n    for c in s:\n        if 'a' <= c <= 'z':\n            result.append(chr((ord(c) - ord('a') + 24) % 26 + ord('a')))\n        elif 'A' <= c <= 'Z':\n            result.append(chr((ord(c) - ord('A') + 24) % 26 + ord('A')))\n        else:\n            result.append(c)\n    return ''.join(result)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r0-calc-xiaomi_mimo_v2_5_pro-vs-x_ai_grok_4_5",
+      "classId": "calc",
+      "instanceSeed": 45475896,
+      "prover": "xiaomi/mimo-v2.5-pro",
+      "refuter": "x-ai/grok-4.5",
+      "winner": "refuter",
+      "costUsd": 0.0056049578,
+      "transcript": {
+        "proverSrc": "def solve(s):\n s=s.replace(\" \",\"\");M=10**9+7;i=[0]\n def e():\n  v=t()\n  while i[0]<len(s) and s[i[0]] in'+-':\n   o=s[i[0]];i[0]+=1;r=t();v=(v+r)%M if o=='+' else(v-r)%M\n  return v\n def t():\n  v=f()\n  while i[0]<len(s) and s[i[0]]=='*':\n   i[0]+=1;v=v*f()%M\n  return v\n def f():\n  if s[i[0]]=='(':\n   i[0]+=1;v=e();i[0]+=1;return v\n  n=0\n  while i[0]<len(s) and s[i[0]].isdigit():\n   n=n*10+int(s[i[0]]);i[0]+=1\n  return n\n return e()",
+        "candidates": [
+          "1000000007",
+          "1000000008",
+          "0+1000000007",
+          "1*1000000007",
+          "(1000000008)",
+          "2-1000000009",
+          "10*10*10*10*10*10*10*10*10",
+          "999999999999"
+        ]
+      },
+      "refutingInput": "1000000007"
+    },
+    {
+      "legId": "verified-flagship-001-r0-textmetrics-xiaomi_mimo_v2_5_pro-vs-deepseek_deepseek_v4_pro",
+      "classId": "textmetrics",
+      "instanceSeed": 1383744362,
+      "prover": "xiaomi/mimo-v2.5-pro",
+      "refuter": "deepseek/deepseek-v4-pro",
+      "winner": "prover",
+      "costUsd": 0.0008132712,
+      "transcript": {
+        "proverSrc": "def solve(s):\n    code_points = len(s)\n    utf8_bytes = len(s.encode('utf-8'))\n    checksum = sum(ord(c) for c in s) % 2147483648\n    return {\"length\": code_points, \"bytes\": utf8_bytes, \"checksum\": checksum}",
+        "candidates": [
+          "𝄞",
+          "😀",
+          "e\u000301",
+          "\u0000",
+          "",
+          "\u0000",
+          "A"
+        ]
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r0-sortlist-meta_muse_spark_1_1-vs-xiaomi_mimo_v2_5_pro",
+      "classId": "sortlist",
+      "instanceSeed": 1694874345,
+      "prover": "meta/muse-spark-1.1",
+      "refuter": "xiaomi/mimo-v2.5-pro",
+      "winner": "prover",
+      "costUsd": 0.00854905,
+      "transcript": {
+        "proverSrc": "def solve(nums):\n    return sorted(nums, reverse=True)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r0-caesar-x_ai_grok_4_5-vs-qwen_qwen3_7_max",
+      "classId": "caesar",
+      "instanceSeed": 1117840340,
+      "prover": "x-ai/grok-4.5",
+      "refuter": "qwen/qwen3.7-max",
+      "winner": "prover",
+      "costUsd": 0.0088019,
+      "transcript": {
+        "proverSrc": "def solve(s: str) -> str:\n    result = []\n    for c in s:\n        if 'a' <= c <= 'z':\n            result.append(chr((ord(c) - ord('a') + 18) % 26 + ord('a')))\n        elif 'A' <= c <= 'Z':\n            result.append(chr((ord(c) - ord('A') + 18) % 26 + ord('A')))\n        else:\n            result.append(c)\n    return ''.join(result)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r0-calc-qwen_qwen3_7_max-vs-anthropic_claude_fable_5",
+      "classId": "calc",
+      "instanceSeed": 159450925,
+      "prover": "qwen/qwen3.7-max",
+      "refuter": "anthropic/claude-fable-5",
+      "winner": "prover",
+      "costUsd": 0.051647275,
+      "transcript": {
+        "proverSrc": "def solve(expr):\n    MOD = 1000000007\n    tokens = []\n    i = 0\n    s = expr\n    while i < len(s):\n        if s[i].isspace():\n            i += 1\n        elif s[i].isdigit():\n            j = i\n            while j < len(s) and s[j].isdigit():\n                j += 1\n            tokens.append(int(s[i:j]))\n            i = j\n        elif s[i] in '+-*()':\n            tokens.append(s[i])\n            i += 1\n        else:\n            i += 1\n\n    pos = [0]\n\n    def parse_expr():\n        result = parse_term()\n        while pos[0] < len(tokens) and tokens[pos[0]] in ('+', '-'):\n            op = tokens[pos[0]]\n            pos[0] += 1\n            right = parse_term()\n            if op == '+':\n                result = (result + right) % MOD\n            else:\n                result = (result - right) % MOD\n        return result\n\n    def parse_term():\n        result = parse_factor()\n        while pos[0] < len(tokens) and tokens[pos[0]] == '*':\n            pos[0] += 1\n            right = parse_factor()\n            result = (result * right) % MOD\n        return result\n\n    def parse_factor():\n        if pos[0] < len(tokens) and tokens[pos[0]] == '(':\n            pos[0] += 1\n            result = parse_expr()\n            pos[0] += 1\n            return result\n        else:\n            val = tokens[pos[0]]\n            pos[0] += 1\n            return val % MOD\n\n    return parse_expr() % MOD",
+        "candidates": [
+          "1 - 2",
+          "0 - 1000000007",
+          "1000000007",
+          "2 - 3 * 4",
+          "((1+2)*(3-4))-5*6",
+          "0",
+          "1 - 2 - 3",
+          "1000000006 + 1"
+        ]
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r0-textmetrics-qwen_qwen3_7_max-vs-meta_muse_spark_1_1",
+      "classId": "textmetrics",
+      "instanceSeed": 1819507365,
+      "prover": "qwen/qwen3.7-max",
+      "refuter": "meta/muse-spark-1.1",
+      "winner": "prover",
+      "costUsd": 0.014767450000000001,
+      "transcript": {
+        "proverSrc": "def solve(s):\n    return {\n        \"length\": len(s),\n        \"bytes\": len(s.encode('utf-8')),\n        \"checksum\": sum(ord(c) for c in s) % 2147483648\n    }",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r0-sortlist-anthropic_claude_fable_5-vs-x_ai_grok_4_5",
+      "classId": "sortlist",
+      "instanceSeed": 936884255,
+      "prover": "anthropic/claude-fable-5",
+      "refuter": "x-ai/grok-4.5",
+      "winner": "prover",
+      "costUsd": 0.0064424,
+      "transcript": {
+        "proverSrc": "def solve(nums):\n    return sorted(nums, reverse=True)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r0-calc-meta_muse_spark_1_1-vs-x_ai_grok_4_5",
+      "classId": "calc",
+      "instanceSeed": 1629997169,
+      "prover": "meta/muse-spark-1.1",
+      "refuter": "x-ai/grok-4.5",
+      "winner": "prover",
+      "costUsd": 0.0182359,
+      "transcript": {
+        "proverSrc": "def solve(s):\n    MOD = 1000000007\n    vals = []\n    ops = []\n    prec = {'+': 1, '-': 1, '*': 2}\n\n    def apply():\n        op = ops.pop()\n        b = vals.pop()\n        a = vals.pop()\n        if op == '+':\n            vals.append((a + b) % MOD)\n        elif op == '-':\n            vals.append((a - b) % MOD)\n        else:\n            vals.append((a * b) % MOD)\n\n    i = 0\n    n = len(s)\n    while i < n:\n        c = s[i]\n        if c.isspace():\n            i += 1\n            continue\n        if c.isdigit():\n            j = i\n            while j < n and s[j].isdigit():\n                j += 1\n            vals.append(int(s[i:j]) % MOD)\n            i = j\n            continue\n        if c == '(':\n            ops.append(c)\n        elif c == ')':\n            while ops and ops[-1] != '(':\n                apply()\n            if ops and ops[-1] == '(':\n                ops.pop()\n        else:  # + - *\n            while ops and ops[-1] != '(' and prec[ops[-1]] >= prec[c]:\n                apply()\n            ops.append(c)\n        i += 1\n    while ops:\n        apply()\n    return vals[0] % MOD if vals else 0",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r0-subsetsum-deepseek_deepseek_v4_pro-vs-anthropic_claude_fable_5",
+      "classId": "subsetsum",
+      "instanceSeed": 1473047893,
+      "prover": "deepseek/deepseek-v4-pro",
+      "refuter": "anthropic/claude-fable-5",
+      "winner": "refuter",
+      "costUsd": 0.006098128,
+      "transcript": {
+        "proverSrc": "```python\ndef solve(inp):\n    nums = inp[\"nums\"]\n    target = inp[\"target\"]\n    # The empty list is always valid for target 0\n    if target == 0:\n        return []\n    n = len(nums)\n    if n == 0:\n        return None\n\n    # Use DP over subsets to compute sums in O(2^n)\n    sums = [0] * (1 << n)\n    for mask in range(1, 1 << n):\n        lsb = mask & -mask\n        i = lsb.bit_length() - 1\n        s = sums[mask ^ lsb] + nums[i]\n        sums[mask] = s",
+        "candidates": []
+      },
+      "proverForfeit": true,
+      "forfeitReason": "smoke crash: exit 1:   File \"<string>\", line 2\n    ```python\n    ^\nSyntaxError: invalid syntax\n"
+    },
+    {
+      "legId": "verified-flagship-001-r0-textmetrics-anthropic_claude_fable_5-vs-meta_muse_spark_1_1",
+      "classId": "textmetrics",
+      "instanceSeed": 751672399,
+      "prover": "anthropic/claude-fable-5",
+      "refuter": "meta/muse-spark-1.1",
+      "winner": "prover",
+      "costUsd": 0.016902,
+      "transcript": {
+        "proverSrc": "def solve(s):\n    return {\n        \"length\": len(s),\n        \"bytes\": len(s.encode(\"utf-8\")),\n        \"checksum\": sum(ord(c) for c in s) % 2147483648,\n    }",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r0-sortlist-meta_muse_spark_1_1-vs-deepseek_deepseek_v4_pro",
+      "classId": "sortlist",
+      "instanceSeed": 89098757,
+      "prover": "meta/muse-spark-1.1",
+      "refuter": "deepseek/deepseek-v4-pro",
+      "winner": "prover",
+      "costUsd": 0.0020742392,
+      "transcript": {
+        "proverSrc": "def solve(nums):\n    return sorted(nums, reverse=True)",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-caesar-xiaomi_mimo_v2_5_pro-vs-anthropic_claude_opus_4_8",
+      "classId": "caesar",
+      "instanceSeed": 1734783888,
+      "prover": "xiaomi/mimo-v2.5-pro",
+      "refuter": "anthropic/claude-opus-4.8",
+      "winner": "prover",
+      "costUsd": 0.0051473544,
+      "transcript": {
+        "proverSrc": "def solve(s: str) -> str:\n    result = []\n    for ch in s:\n        if 'a' <= ch <= 'z':\n            shifted = chr((ord(ch) - ord('a') + 21) % 26 + ord('a'))\n            result.append(shifted)\n        elif 'A' <= ch <= 'Z':\n            shifted = chr((ord(ch) - ord('A') + 21) % 26 + ord('A'))\n            result.append(shifted)\n        else:\n            result.append(ch)\n    return ''.join(result)",
+        "candidates": [
+          "Hello, World!",
+          "abc",
+          "xyz",
+          "XYZ",
+          "Zz",
+          "café",
+          "12345",
+          "The quick brown fox",
+          ""
+        ]
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-textmetrics-x_ai_grok_4_5-vs-xiaomi_mimo_v2_5_pro",
+      "classId": "textmetrics",
+      "instanceSeed": 1167882916,
+      "prover": "x-ai/grok-4.5",
+      "refuter": "xiaomi/mimo-v2.5-pro",
+      "winner": "prover",
+      "costUsd": 0.0017710264000000001,
+      "transcript": {
+        "proverSrc": "def solve(s):\n    length = len(s)\n    raw = s.encode('utf-8')\n    nbytes = len(raw)\n    total = 0\n    for ch in s:\n        total += ord(ch)\n    checksum = total % 2147483648\n    return {\"length\": length, \"bytes\": nbytes, \"checksum\": checksum}",
+        "candidates": []
+      }
+    },
+    {
+      "legId": "verified-flagship-001-r1-sortlist-xiaomi_mimo_v2_5_pro-vs-qwen_qwen3_7_max",
+      "classId": "sortlist",
+      "instanceSeed": 1766580879,
+      "prover": "xiaomi/mimo-v2.5-pro",
+      "refuter": "qwen/qwen3.7-max",
+      "winner": "prover",
+      "costUsd": 0.0024466762,
+      "transcript": {
+        "proverSrc": "def solve(nums):\n    return sorted(nums)",
         "candidates": []
       }
     }

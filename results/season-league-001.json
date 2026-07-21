@@ -1007,6 +1007,187 @@
         }
       ],
       "winner": "meta/muse-spark-1.1"
+    },
+    {
+      "id": "league:anthropic/claude-fable-5|xiaomi/mimo-v2.5-pro",
+      "stage": "league",
+      "home": "anthropic/claude-fable-5",
+      "away": "xiaomi/mimo-v2.5-pro",
+      "legs": [
+        {
+          "topic": "Universal basic income should replace most existing means-tested welfare programs.",
+          "pro": "anthropic/claude-fable-5",
+          "con": "xiaomi/mimo-v2.5-pro",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "We affirm: UBI should replace most means-tested welfare.\n\nFirst, dignity and efficiency. Means-testing forces the poor through humiliating bureaucratic gauntlets—paperwork, audits, stigma. Roughly one in five eligible Americans never receives benefits they qualify for. UBI reaches everyone automatically, cutting administrative overhead that consumes billions.\n\nSecond, it eliminates the poverty trap. Means-tested programs punish work: earn a dollar, lose benefits, facing effective marginal tax rates exceeding 80%. UBI never phases out, so work always pays. Evidence from Alaska's dividend and pilots in Stockton and Kenya shows recipients work, invest, and report better health—no mass idleness.\n\nThird, resilience. A universal floor adapts instantly to shocks—pandemics, automation, gig-economy volatility—while categorical programs leave millions in gaps.\n\nWe keep targeted disability and healthcare support; we replace the paternalistic maze with a simple, unconditional foundation. Proudly affirmed."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "We acknowledge the inefficiencies in current welfare but contend that replacing it with UBI is a profound error.\n\nFirst, the prohibitive cost. Providing a meaningful UBI to all citizens would require either slashing other essential public services or economically crippling tax hikes, disproportionately harming the very people it aims to help.\n\nSecond, the bluntness of UBI fails the most vulnerable. A flat payment ignores vastly different needs. A person with severe disabilities or a single parent in a high-cost city requires targeted support—housing vouchers, medical benefits, childcare—that a uniform cash grant cannot adequately replace. Replacing these programs abandons nuanced assistance for a one-size-fits-all approach that benefits the middle more than the poor.\n\nFinally, it does not truly eliminate the poverty trap. Funding UBI by cannibalizing existing programs could leave many worse off, creating a new trap of inadequate support. The solution is to simplify and better integrate means-tested benefits, not dismantle them."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "On cost: Con ignores net cost. UBI is a gross transfer largely clawed back through taxes on higher earners; the true fiscal cost is a fraction of the headline figure, offset by eliminating overlapping bureaucracies and the billions lost to administration and fraud detection. Every serious costing—Widerquist, Hoynes—confirms this.\n\nOn bluntness: We explicitly retained disability and healthcare supports. That answer stands undisputed. What remains—cash for food, rent, income support—is precisely what evidence shows the poor allocate better themselves than paternalistic vouchers, which restrict choice and miss local prices.\n\nOn \"new traps\": Con concedes 80%+ effective marginal tax rates but offers only \"simplify and integrate\"—the same promise made for fifty years while one in five eligible people still get nothing. A universal floor cannot leave gaps; means-testing definitionally does.\n\nTheir alternative is the status quo with better paperwork. Ours ends poverty's bureaucracy."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "Your \"net cost\" argument is mathematically fragile. It relies on perfectly clawing back UBI from higher earners through a politically seamless, avoidance-proof tax system—a fantasy. Existing tax gaps and avoidance prove we’d face either unsustainable deficits or new, regressive taxes hitting the middle class you claim to protect.\n\nYou concede UBI must be supplemented for disability and healthcare, but that directly undermines your \"universal floor.\" Means-tested programs provide *structured*, essential support—a housing voucher secures an apartment; Medicaid guarantees care. A single cash check cannot replicate this, leaving the vulnerable exposed to market failures and personal crisis.\n\nFinally, your \"better paperwork\" straw man ignores that we advocate for integrated, digital benefit systems—proven in places like Estonia—not the status quo. Your plan requires a monumental, untested tax overhaul to fund a blunt instrument, while ours can be incrementally improved to actually deliver targeted help."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "This debate comes down to one uncontested fact: means-testing fails one in five eligible people and taxes work at 80%+ rates. Con's answer—\"Estonia-style integration\"—is the fifty-year-old promise of better paperwork, never delivered. Our answer is structural: a floor that cannot leave gaps. On cost, Con calls tax clawback \"fantasy\" while proposing their own untested digital overhaul—the risk cuts both ways, but only our plan ends the poverty trap. We kept disability and healthcare; we replaced stigma and bureaucracy with dignity and choice. That trade wins. Proudly affirmed."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Our victory is clear: UBI is a fiscal fantasy that would bankrupt systems and abandon the vulnerable. It cannot replicate the structured, essential support of vouchers and targeted programs. Your model ignores real-world tax avoidance and market failures, leaving the disabled and poorest exposed. The alternative isn’t bureaucracy, but a smarter, digital safety net that reaches all who qualify. We defend precise help over a blunt, unaffordable instrument. Reject this risky, simplistic motion."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "meta/muse-spark-1.1",
+              "winner": "A",
+              "scoreA": 32,
+              "scoreB": 25,
+              "reasoning": "A maintained logical consistency by pre-emptively retaining disability/healthcare, directly rebutted cost with net-cost framing and cited pilots, while B mischaracterized that carve-out as a concession and relied on speculative tax-avoidance claims. A was more responsive to the 80% marginal tax and non-take-up points and clearer in structure across all speeches."
+            },
+            {
+              "judge": "z-ai/glm-5.2",
+              "winner": "A",
+              "scoreA": 34,
+              "scoreB": 30,
+              "reasoning": "Debater A provided stronger empirical evidence (Alaska, Stockton, Kenya, Widerquist) and effectively cornered Debater B on the concession of 80%+ marginal tax rates and the unfulfilled promise of bureaucratic simplification. Debater B made logically sound counterarguments regarding tax avoidance and structured support, but lacked the same depth of specific evidence and struggled to fully escape the 'better paperwork' critique."
+            },
+            {
+              "judge": "deepseek/deepseek-v4-pro",
+              "winner": "A",
+              "scoreA": 31,
+              "scoreB": 25,
+              "reasoning": "Debater A offered more cogent mechanisms (net fiscal cost via tax clawback, elimination of poverty traps with 80%+ MTRs) and consistently addressed counterarguments, while Debater B relied heavily on cost unsustainability and bluntness critiques without convincingly rebutting A's evidence on take-up gaps or the specific carve-outs for disability/healthcare."
+            },
+            {
+              "judge": "x-ai/grok-4.5",
+              "winner": "A",
+              "scoreA": 33,
+              "scoreB": 26,
+              "reasoning": "A demonstrated stronger logical consistency by retaining targeted supports while citing specific pilots, studies, and statistics on take-up and marginal rates, and directly rebutted each of B's points. B raised valid cost and targeting concerns but offered weaker evidence, more assertions about tax fantasy and Estonia, and less precise engagement with A's net-cost and poverty-trap arguments."
+            },
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "A",
+              "scoreA": 34,
+              "scoreB": 31,
+              "reasoning": "Debater A presented a more cohesive and structurally sound case, effectively defending the 'net cost' distinction and consistently leveraging the 'one in five' statistic and the poverty trap argument to neutralize B's efficiency critiques. While Debater B raised strong points regarding market failures and the necessity of structured support (vouchers vs. cash), A's strategic concession of healthcare and disability services successfully blunted the 'vulnerable populations' attack, allowing A to c"
+            }
+          ],
+          "winner": "anthropic/claude-fable-5",
+          "votesPro": 5,
+          "votesCon": 0,
+          "scorePro": 164,
+          "scoreCon": 137,
+          "costUsd": 0.095123060524,
+          "topicProposer": "openai/gpt-5.6-sol"
+        }
+      ],
+      "winner": "anthropic/claude-fable-5"
+    },
+    {
+      "id": "league:z-ai/glm-5.2|x-ai/grok-4.5",
+      "stage": "league",
+      "home": "z-ai/glm-5.2",
+      "away": "x-ai/grok-4.5",
+      "legs": [
+        {
+          "topic": "Parents should be permitted to use heritable gene editing to prevent serious genetic diseases in their children.",
+          "pro": "z-ai/glm-5.2",
+          "con": "x-ai/grok-4.5",
+          "turns": [
+            {
+              "side": "PRO",
+              "phase": "opening",
+              "text": "We affirm that parents should be permitted to use heritable gene editing to prevent serious genetic diseases in their children.\n\nOur case rests on three pillars.\n\n**First, the moral imperative.** When we can prevent Huntington's, Tay-Sachs, or cystic fibrosis before a child is born, inaction is a choice with consequences. Parents have a duty to protect their children from foreseeable suffering. Denying them this tool is not neutrality; it is complicity in preventable harm.\n\n**Second, the medical reality.** Today's alternatives — screening and embryo selection — are crude. They cannot fix dominant mutations when one parent is affected, and they cannot address diseases where every available embryo carries the defect. Gene editing fills gaps no existing technology can.\n\n**Third, the regulatory principle.** \"Permitted\" means governed — restricted to serious diseases, subject to rigorous safety review, and overseen by medical authorities.\n\nWe are not arguing for enhancement or reckless experimentation. We are arguing that parents deserve a proven tool to spare their children devastating illness. That is both compassionate and responsible."
+            },
+            {
+              "side": "CON",
+              "phase": "opening",
+              "text": "We negate. Heritable gene editing must not be permitted to prevent serious genetic diseases.\n\nFirst, irreversible multi-generational harm. CRISPR and similar tools still produce off-target mutations, mosaicism, and incomplete edits. These errors enter every cell of the child and all descendants. No long-term human data exists; animal studies already show unexpected developmental defects. Once released into the germline, mistakes cannot be recalled.\n\nSecond, existing alternatives already work. Preimplantation genetic diagnosis and embryo selection prevent transmission of Huntington’s, Tay-Sachs, and cystic fibrosis without altering the human germline. Where no unaffected embryo exists, gamete donation or adoption remain available. Editing is not a medical necessity; it is an unproven shortcut.\n\nThird, the permission principle collapses. “Serious disease” is elastic. Once the door opens under regulation, pressure for broader uses—enhancements, trait selection—follows inevitably. Consent of future persons is impossible. Society must not authorize permanent genetic experiments on the unborn."
+            },
+            {
+              "side": "PRO",
+              "phase": "rebuttal",
+              "text": "The opposition's case collapses on three fronts.\n\n**On safety:** Every medical breakthrough carries risk. We don't ban chemotherapy because it has side effects; we regulate it. \"Permitted\" means conditional on safety validation — clinical trials, animal data, phased rollout. The opponent demands zero risk, which is a standard no medicine meets. Meanwhile, the certain harm of Huntington's or Tay-Sachs is 100% guaranteed.\n\n**On alternatives:** The opponent is simply wrong. When one parent has a dominant mutation, up to half of embryos are affected — selection works. But when *both* parents carry recessive alleles, every embryo may be affected. Telling parents \"just adopt\" is breathtakingly dismissive of their reproductive autonomy. Gamete donation breaks genetic ties that parents legitimately value.\n\n**On the slippery slope:** This is a logical fallacy. We permit morphine for pain while banning recreational heroin. Regulation distinguishes therapy from enhancement every day. The line is clear: disease prevention, not trait selection.\n\nPermission with guardrails is not a slippery slope — it's responsible medicine."
+            },
+            {
+              "side": "CON",
+              "phase": "rebuttal",
+              "text": "PRO’s safety analogy fails. Chemotherapy treats existing patients who can consent; germline edits impose unrecallable, multi-generational risks on non-consenting descendants. Animal data already reveal off-target defects and mosaicism—no phased human trial erases that permanence.\n\nOn alternatives: even dual carriers rarely produce 100% affected embryos; PGD plus multiple cycles routinely yields unaffected ones. Where none appear, donation or adoption prevent disease without rewriting the germline. Genetic ties do not justify experimental permanent alteration.\n\nThe slope is not fallacy but observed pattern: every reproductive technology expanded beyond initial “serious disease” limits. Once permitted, “serious” redefines under parental pressure and market demand. Regulation cannot bind future generations or reverse heritable errors."
+            },
+            {
+              "side": "PRO",
+              "phase": "closing",
+              "text": "The opposition never answers the central question: when medicine *can* prevent devastating disease, what justifies saying it *must not*?\n\nTheir case demands impossible certainty — zero risk for new tools while accepting 100% certainty of suffering from genetic disease. That is not precaution; it is cruelty dressed as caution.\n\nTheir alternatives fail real families: dual carriers, affected parents wanting biological children, diseases where selection simply cannot deliver. \"Just adopt\" is not a medical answer.\n\nWe win because permission with regulation is how every medical advance moves forward — carefully, conditionally, and compassionately. Denial is not neutrality. It is a choice to let preventable harm continue."
+            },
+            {
+              "side": "CON",
+              "phase": "closing",
+              "text": "Heritable editing imposes irreversible, multi-generational risks on non-consenting descendants—off-target mutations and mosaicism that no trial can recall. Alternatives already prevent these diseases without rewriting the germline: PGD succeeds for dual carriers; donation and adoption spare suffering ethically. “Serious disease” expands under pressure, as every prior technology shows. Regulation cannot bind futures or reverse errors. Precaution here is not cruelty—it is refusing permanent experiments on the unborn. We win because existing tools protect children without endangering humanity’s shared genome."
+            }
+          ],
+          "verdicts": [
+            {
+              "judge": "google/gemini-3.1-pro-preview",
+              "winner": "B",
+              "scoreA": 33,
+              "scoreB": 35,
+              "reasoning": "Debater B effectively dismantled A's safety analogy by highlighting the crucial differences in patient consent and multi-generational permanence. Furthermore, B successfully countered A's claims about the necessity of gene editing by explaining the practical efficacy of PGD across multiple cycles."
+            },
+            {
+              "judge": "minimax/minimax-m3",
+              "winner": "A",
+              "scoreA": 0,
+              "scoreB": 0,
+              "reasoning": "judge failed",
+              "failed": true
+            },
+            {
+              "judge": "qwen/qwen3.7-max",
+              "winner": "A",
+              "scoreA": 34,
+              "scoreB": 32,
+              "reasoning": "Debater A more effectively addressed the core trade-off between certain disease harm and regulated, conditional permission, and offered sharper rebuttals on alternatives (dual carriers, dominant mutations) and the slippery slope with concrete analogies. Debater B presented strong safety and consent arguments but overreached on claims like PGD 'routinely' succeeding for dual carriers and relied on a broad slippery-slope assertion without sufficient case-specific evidence, slightly weakening logic"
+            },
+            {
+              "judge": "anthropic/claude-fable-5",
+              "winner": "A",
+              "scoreA": 33,
+              "scoreB": 31,
+              "reasoning": "A directly answered B's core objections with concrete distinctions (recessive dual-carrier cases where selection fails, therapy/enhancement line via regulation) and maintained a coherent framework of conditional permission. B argued rigorously on irreversibility and consent, but slightly overstated PGD's sufficiency for dual carriers and relied on assertion for the slippery-slope 'observed pattern' without specific examples."
+            },
+            {
+              "judge": "moonshotai/kimi-k3",
+              "winner": "A",
+              "scoreA": 31,
+              "scoreB": 29,
+              "reasoning": "Debater A offered sharper framing and stronger analogies (chemotherapy, morphine) that directly dismantled B's zero-risk standard and slippery-slope claim, and maintained consistent persuasive clarity throughout. B raised the important consent-of-descendants argument that A never answered, and correctly caught A's factual overstatement about embryo selection, but B's key empirical claims (animal studies, 'every prior technology expanded') were asserted without support, weakening evidentiary weig"
+            }
+          ],
+          "winner": "z-ai/glm-5.2",
+          "votesPro": 3,
+          "votesCon": 1,
+          "scorePro": 131,
+          "scoreCon": 127,
+          "costUsd": 0.077991975,
+          "topicProposer": "openai/gpt-5.6-sol"
+        }
+      ],
+      "winner": "z-ai/glm-5.2"
     }
   ],
   "standings": {
@@ -1048,6 +1229,15 @@
         "scoreDiff": 33
       },
       {
+        "model": "anthropic/claude-fable-5",
+        "played": 1,
+        "wins": 1,
+        "draws": 0,
+        "losses": 0,
+        "points": 3,
+        "scoreDiff": 27
+      },
+      {
         "model": "meta/muse-spark-1.1",
         "played": 2,
         "wins": 1,
@@ -1066,25 +1256,16 @@
         "scoreDiff": 5
       },
       {
-        "model": "anthropic/claude-fable-5",
-        "played": 0,
-        "wins": 0,
+        "model": "z-ai/glm-5.2",
+        "played": 1,
+        "wins": 1,
         "draws": 0,
         "losses": 0,
-        "points": 0,
-        "scoreDiff": 0
+        "points": 3,
+        "scoreDiff": 4
       },
       {
         "model": "openai/gpt-5.6-sol",
-        "played": 0,
-        "wins": 0,
-        "draws": 0,
-        "losses": 0,
-        "points": 0,
-        "scoreDiff": 0
-      },
-      {
-        "model": "z-ai/glm-5.2",
         "played": 0,
         "wins": 0,
         "draws": 0,
@@ -1102,27 +1283,27 @@
         "scoreDiff": -3
       },
       {
-        "model": "xiaomi/mimo-v2.5-pro",
-        "played": 1,
+        "model": "x-ai/grok-4.5",
+        "played": 3,
         "wins": 0,
         "draws": 0,
-        "losses": 1,
+        "losses": 3,
         "points": 0,
-        "scoreDiff": -8
+        "scoreDiff": -20
       },
       {
-        "model": "x-ai/grok-4.5",
+        "model": "xiaomi/mimo-v2.5-pro",
         "played": 2,
         "wins": 0,
         "draws": 0,
         "losses": 2,
         "points": 0,
-        "scoreDiff": -16
+        "scoreDiff": -35
       }
     ]
   },
   "placements": {},
   "champion": null,
-  "totalCostUsd": 0.65733575191,
+  "totalCostUsd": 0.830450787434,
   "done": false
 }

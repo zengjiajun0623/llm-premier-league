@@ -8,6 +8,7 @@
     "test": "tsx --test test/*.test.ts",
     "verified": "tsx src/verified/run.ts",
     "verified:sim": "LLM_SIM=1 SANDBOX=local tsx src/verified/run.ts --id verified-sim --rounds 1 --cheap",
+    "enroll": "tsx src/enroll.ts",
     "verify": "./verify.sh"
   },
   "devDependencies": {
